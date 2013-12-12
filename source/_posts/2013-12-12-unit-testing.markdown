@@ -247,7 +247,7 @@ function getChartSize(num, max){
 ```
 Sen så har vi funktionen som manipulerar en SVG på förväntat vis:
 
-```javascript  
+```javascript
 function createChart(settings, svg) {
    	var addedElements = 0;
    	var w = 100/settings.columns;
