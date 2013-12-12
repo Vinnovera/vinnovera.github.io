@@ -6,8 +6,6 @@ comments: true
 categories: blog
 ---
 
-## Förutsägbarhet och återanvändning
-
 När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.
 
 När vi utvecklar hållbara och långsiktiga applikationer är det viktigt att koden vi skriver beter sig konsekvent. Det måste gå att förutse hur en funktion eller ett plugin beter sig som vi har förväntat oss, även när den används under nya omständigheter.
@@ -75,21 +73,21 @@ Det som krävs för att köra tester med QUnit är att ta hem en javascriptfil o
 
 ```html
 <html>
-       <head>
-           <link rel="stylesheet" href="css/qunit-1.12.0.css">
-       </head>
-       <body>
-           <div id="qunit"></div>
-           <div id="qunit-fixture">
-               <ul id="myList"></ul>
-           </div>
-           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-           <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-           <script src="js/vendor/qunit-1.12.0.js"></script>
-           <script src="js/main.js"></script>
-           <script src="js/tests.js"></script>
-       </body>
-   </html>
+	<head>
+		<link rel="stylesheet" href="css/qunit-1.12.0.css">
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture">
+			<ul id="myList"></ul>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+		<script src="js/vendor/qunit-1.12.0.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/tests.js"></script>
+	</body>
+</html>
 ```
 #### Tester
 I exemplet ovan har jag själva funktionerna jag vill testa i main.js, och testerna i tests.js. Så här ser ett enkelt test ut:
