@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blog | My Octopress Blog]]></title>
   <link href="http://Vinnovera.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://Vinnovera.github.io/"/>
-  <updated>2013-12-12T15:07:26+01:00</updated>
+  <updated>2013-12-12T15:54:27+01:00</updated>
   <id>http://Vinnovera.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,9 +18,7 @@
     <link href="http://Vinnovera.github.io/blog/2013/12/12/unit-testing/"/>
     <updated>2013-12-12T14:22:24+01:00</updated>
     <id>http://Vinnovera.github.io/blog/2013/12/12/unit-testing</id>
-    <content type="html"><![CDATA[<h2>Förutsägbarhet och återanvändning</h2>
-
-<p>När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.</p>
+    <content type="html"><![CDATA[<p>När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.</p>
 
 <p>När vi utvecklar hållbara och långsiktiga applikationer är det viktigt att koden vi skriver beter sig konsekvent. Det måste gå att förutse hur en funktion eller ett plugin beter sig som vi har förväntat oss, även när den används under nya omständigheter.</p>
 
@@ -89,23 +87,23 @@
 <p>```html
 <html></p>
 
-<pre><code>   &lt;head&gt;
-       &lt;link rel="stylesheet" href="css/qunit-1.12.0.css"&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-       &lt;div id="qunit"&gt;&lt;/div&gt;
-       &lt;div id="qunit-fixture"&gt;
-           &lt;ul id="myList"&gt;&lt;/ul&gt;
-       &lt;/div&gt;
-       &lt;script src="http://Vinnovera.github.io//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
-       &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.10.1.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
-       &lt;script src="js/vendor/qunit-1.12.0.js"&gt;&lt;/script&gt;
-       &lt;script src="js/main.js"&gt;&lt;/script&gt;
-       &lt;script src="js/tests.js"&gt;&lt;/script&gt;
-   &lt;/body&gt;
+<pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="css/qunit-1.12.0.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="qunit"&gt;&lt;/div&gt;
+    &lt;div id="qunit-fixture"&gt;
+        &lt;ul id="myList"&gt;&lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;script src="http://Vinnovera.github.io//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.10.1.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+    &lt;script src="js/vendor/qunit-1.12.0.js"&gt;&lt;/script&gt;
+    &lt;script src="js/main.js"&gt;&lt;/script&gt;
+    &lt;script src="js/tests.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
 </code></pre>
 
-<p>   </html>
+<p></html>
 ```</p>
 
 <h4>Tester</h4>
