@@ -15,6 +15,10 @@
 
 If you are lazy, you can skip step 6-10 and run `sh publish.sh`
 
+## Preview
+
+If you run `rake preview` you can watch the site with changes in real-time, locally at http://localhost:4000
+
 ## License
 (The MIT License)
 
