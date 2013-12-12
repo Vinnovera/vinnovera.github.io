@@ -13,6 +13,8 @@
 9. `git commit -m "New post!"` to commit your post to the source branch
 10. And finally `git push origin source` to push your commit
 
+If you are lazy, you can skip step 6-10 and run `sh publish.sh`
+
 ## License
 (The MIT License)
 
