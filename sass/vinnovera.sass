@@ -1,0 +1,401 @@
+@import "config"
+@import "components/normalize"
+@import "core/typo"
+
+%clearfix
+	&:before,
+	&:after
+		content: " "
+		display: table
+
+html
+	-webkit-font-smoothing: antialiased
+	
+body
+	text-rendering: optimizeLegibility
+	font: 400 14px/20px "Roboto Slab", serif
+	color: $gray
+	
+	> .to-top
+		width: 60px
+		height: 60px
+		text-indent: -9999px
+		background-image: url('/images/logoSymbolBlack.png')
+		position: fixed
+		top:  10px
+		left: 10px
+		z-index:  1
+		
+	> footer
+		padding: 40px 0
+		text-align:  center
+		
+		span, a
+			margin: 0 8px
+	
+	> header
+		height: 80px
+		background:  $black
+		position: relative
+		z-index: 2
+		
+		&.small
+			position: fixed
+			top: 0
+			left: -20px
+			right: -20px
+			height: 40px
+			background: white
+			z-index: 1
+			box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2)
+			
+			> h1
+				width: 60px
+				height: 60px
+				margin-top:  -30px
+				background-image: url('/images/logoSymbolBlack.png')
+			
+			> nav > a
+				font-size: 14px
+				line-height: 40px
+				color: $black
+		
+		> h1
+			width: 38px
+			height: 38px
+			background: url('/images/logo.png') no-repeat
+			margin: 0
+			text-indent: -9999px
+			position: absolute
+			top: 50%
+			left: 40px
+			margin-top: -19px
+			
+		> nav
+			text-align: center
+			
+			> a
+				line-height: 80px
+				padding: 0 15px
+				color: white
+				text-decoration: none
+				font-size: 20px
+				font-family: $brandFontStack
+				
+				&.labs
+					width: 200px
+					height: 123px
+					position: absolute
+					top: 0
+					right: 0
+					text-indent: -9999px
+					background: url('/images/labs.png') no-repeat
+					padding: 0
+				
+	> section
+		padding: 100px 0
+		
+		&.about
+			background: $blue
+			color: white
+			
+			> img
+				display: block
+				margin: 0 auto 50px
+				
+			> .wrapper
+				max-width: 750px
+				margin: 0 auto
+				padding: 0 20px
+				
+				> .hisspitch
+					font: 300 36px/1.1 $brandFontStack
+					
+					strong
+						font-weight: 500
+				
+				> .contact
+					font-size: 18px
+					text-align: center
+					margin-top: 50px
+					
+					a
+						color: white
+						padding-bottom: 2px
+						border-bottom: 2px solid white
+						margin: 0 8px
+						
+					span
+						margin: 0 8px
+					
+		&.what-we-do
+			a
+				color: $gray
+				
+			.link
+				color: $blue
+		
+			> .featured
+				border-bottom: 1px solid #f5f5f5
+				
+				.img
+					float: left
+					width: 62%
+					padding-right: 40px
+					box-sizing: border-box
+					
+					> img
+						display: block
+						
+				.content
+					padding-top: 40px
+					
+			.category
+				color: #666
+				font-family: $brandFontStack
+				display: block
+				
+			.projects
+				@extend %clearfix
+				margin-left: -30px
+				margin-top: 40px
+				
+				> article
+					width: 33.333%
+					padding-left: 30px
+					box-sizing: border-box
+					float: left
+					
+					.category
+						padding-top: 20px
+						margin-top: 0
+						margin-bottom:  0
+						
+					> img
+						display: block
+						margin-bottom: 0
+			
+		&.blog
+			background: $orange
+			color: white
+			
+			h1
+				text-align: left
+				width: 50%
+				box-sizing: border-box
+				padding-right: 20px
+				color: white
+				
+				> span
+					padding-bottom: 10px
+					border-bottom: 5px solid white
+					display: block
+				
+			h2
+				color: white
+				
+			.link
+				color: white
+				text-decoration: none
+				padding-bottom: 2px
+				border-bottom: 2px solid white
+				
+			.articles
+				margin-left: -40px
+				overflow: hidden
+				word-spacing: -1px
+				font-size: 0
+				
+				> article
+					display: inline-block
+					width: 50%
+					padding-left: 40px
+					box-sizing: border-box
+					margin-top: 20px
+					word-spacing: normal
+					font-size: 14px
+					vertical-align:  top
+					
+					> .inner
+						padding-bottom: 20px
+						border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+						
+						> a
+							color: white
+				
+						.link
+							color: white
+						
+						time
+							display: block
+							font-size: 11px
+							margin-top: -15px
+							
+			.fetch > a
+				border: none
+				background: white
+				color: $orange !important
+				padding: 10px 20px
+							
+		&.people
+			.humans
+				margin-left: -30px
+				margin-top: -30px
+				word-spacing: -1px
+				font-size: 0
+				
+				> article
+					display:  inline-block
+					width: 16.666%
+					font-size: 14px
+					word-spacing:  normal
+					padding-left: 30px
+					margin-top: 30px
+					vertical-align: top
+					box-sizing: border-box
+					text-align: center
+					font-size: 12px
+					
+					> img
+						border-radius: 50%
+						display: block
+						margin: 0 auto 10px
+						
+					> strong
+						display: block
+						font-size: 18px
+						font-family: $brandFontStack
+						font-weight:  400
+						
+					> span
+						display: block
+			
+		&.contact
+			background: url('/images/map.png') center center no-repeat
+			background-size: cover
+			height: 380px
+			
+			.wrapper
+				height: 100%
+			
+			article
+				position: absolute
+				top: 50%
+				left: 0
+				padding: 20px
+				background: white
+				box-sizing: border-box
+				width: 370px
+				height: 225px
+				margin-top: -140px
+				
+				> section
+					overflow: hidden
+					padding-top: 20px
+					margin-top: 20px
+					border-top: 1px solid #ccc
+					
+					&:first-child
+						padding-top: 0
+						margin-top: 0
+						border: none
+					
+					> .label
+						float: left
+						color: #666
+						
+					> .value
+						float: right
+						text-align: right
+						
+						> span
+							display: block
+							
+		&.post
+			max-width: 530px
+		
+			> article
+				> header
+					padding-bottom: 20px
+					border-bottom: 2px solid #666
+					margin-bottom: 40px
+					
+					> h1
+						margin-bottom: 15px
+					
+					> p
+						margin: 0
+						text-align:  center
+						
+						> .tag
+							color: $orange
+							
+				h2
+					margin-top: 30px
+					
+				h3
+					margin-top: 30px
+				
+				p
+					margin: 30px 0 0
+					
+				ul
+					margin: 30px 0
+							
+		&.post-extra
+			background: $orange
+			color: white
+			
+			h2
+				color: white
+				padding-bottom: 10px
+				border-bottom: 2px solid white
+				margin-bottom: 30px
+			
+			.splits
+				margin-left: -40px
+				@extend %clearfix
+				
+				> .split-half
+					float: left
+					padding-left:  40px
+					width: 50%
+					box-sizing: border-box
+					
+			.post
+				padding-top: 20px
+				margin-top: 20px
+				border-top: 1px solid white
+				
+				&:first-child
+					padding-top: 0
+					margin-top: 0
+					border-top: none
+			
+				a
+					color: white
+					display: block
+					
+			.link
+				color: white
+				text-decoration: none
+				padding-bottom: 2px
+				border-bottom: 2px solid white
+			
+.wrapper
+	max-width:  960px
+	margin: 0 auto
+	@extend %clearfix
+	position: relative
+	
+.fetch
+	text-align: center
+	margin-top: 40px
+	
+	> a
+		border-radius: 3px
+		background: $blue
+		color: white !important
+		padding: 10px 20px
+		font-family: $brandFontStack
+		font-weight: 700

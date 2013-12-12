@@ -1,29 +1,215 @@
 ---
 layout: default
+title: "index"
+date: 2013-12-10 14:40
+comments: true
+sharing: true
+footer: true
 ---
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+<section class="about">
+	<img src="/images/logoSymbol@2x.png" width="445" height="120">
+	
+	<div class="wrapper">
+		<p class="hisspitch"><strong>Vinnovera</strong> ser gränssnitt för desktop, läsplattor och mobil som sitt hantverk. Vi vill jobba med kunder som tycker att kvalite är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+		<p class="contact">
+			<span class="adr">
+				<span class="street-address">Västerlånggatan 27</span> – 
+				<span class="postal-code">111 29</span>
+				<span class="locality">Stockholm</span>
+			</span>
+
+			<span class="tel">08 - 5000 10 90</span>
+			<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a>
+		</p>
+	</div>
+</section>
+
+<section class="what-we-do" id="projekt">
+	<h1>Vad vi gör</h1>
+
+	<article class="featured">
+		<div class="wrapper">
+			<a href="#">
+				<div class="img">
+					<img src="/images/projekt.jpg" alt="">
+				</div>
+				<div class="content">
+					<span class="category">Responsive</span>
+					<h2>Photowall.se</h2>
+					<p>Probatus qui id. Ut ubique docendi eto percipit sed, aeque assueverit ergos concludaturque ad nam.</p>
+					<p>14/20pt debitis dolorem eam ad, id phaedrum senserit tincidunt ius. Legimus vituperata te eam, ea eirmod virtute offendit vix, nam eu nullam semper. Nam te choro ornatus. Vulputate adversarium usu te, sed utinam scribentur ea.</p>
+					<p><span class="link" href="#">Läs mer om vårt projekt</span></p>
+				</div>
+			</a>
+		</div>
+	</article>
+	
+	<div class="wrapper">
+		<div class="projects">
+			<article>
+				<a href="#">
+					<img src="/images/projekt_2.jpg">
+				
+					<span class="category">Responsive</span>
+					<h2>.SE</h2>
+					<p>Ditis dolorem eam ad, id phaedrum senserit erg tincidunt ius. Legimus vituperata te eam.</p>
+					<p><span class="link" href="#">Läs mer om hur vi gjorde</span></p>
+				</a>
+			</article>
+			
+			<article>
+				<a href="#">
+					<img src="/images/projekt_3.jpg">
+				
+					<span class="category">Spel</span>
+					<h2>Team Messi – Adidas</h2>
+					<p>Ditis dolorem eam ad, id phaedrum senserit erg tincidunt ius. Legimus vituperata te eam.</p>
+					<p><span class="link" href="#">Läs mer om hur vi gjorde</span></p>
+				</a>
+			</article>
+			
+			<article>
+				<a href="#">
+					<img src="/images/projekt_4.jpg">
+				
+					<span class="category">Webbshop</span>
+					<h2>Picard</h2>
+					<p>Ditis dolorem eam ad, id phaedrum senserit erg tincidunt ius. Legimus vituperata te eam.</p>
+					<p><span class="link" href="#">Läs mer om hur vi gjorde</span></p>
+				</a>
+			</article>
+		</div>
+		
+		<div class="fetch"><a href="#">Fler projekt</a></div>
+	</div>
+</section>
+
+<section class="blog" id="blogg">
+	<div class="wrapper">
+		<h1><span>Våra tankar om webb</span></h1>
+		
+		<div class="articles">
+			{% for post in site.posts limit: site.recent_posts %}
+			<article>
+				<div class="inner">
+					<a href="{{ root_url }}{{ post.url }}">
+						<h2>{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</h2>
+						<time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
+						{{ post.content | excerpt }}
+						<p><span class="link">Läs mer</span></p>
+					</a>
+				</div>
+			</article>
+			{% endfor %}
+		</div>
+		
+		<div class="fetch"><a href="#">Fler artiklar</a></div>
+	</div>
+</section>
+
+<section class="people" id="kontakt">
+	<h1>Det är vi som är Vinnovera</h1>
+	
+	<div class="wrapper">
+		<div class="humans">
+			<article>
+				<img src="/images/human_1.jpg">
+				<strong>Andreas</strong>
+				<span>Svetsare</span>
+				<span>070 233 22 38</span>
+				<a href="#">andreas@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/human_2.jpg">
+				<strong>Tobias</strong>
+				<span>Kung</span>
+				<span>070 233 22 38</span>
+				<a href="#">tobias@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/human_3.jpg">
+				<strong>Jakob</strong>
+				<span>Blöjbytare</span>
+				<span>070 233 22 38</span>
+				<a href="#">jakob@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/human_4.jpg">
+				<strong>Sandra</strong>
+				<span>HTML Email Ninja</span>
+				<span>070 233 22 38</span>
+				<a href="#">sandra@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/human_5.jpg">
+				<strong>Björn-Olle</strong>
+				<span>Mr Bossman</span>
+				<span>070 233 22 38</span>
+				<a href="#">b-o@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/human_6.jpg">
+				<strong>Jonas</strong>
+				<span>SVG Addict</span>
+				<span>070 233 22 38</span>
+				<a href="#">jonas@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/human_7.jpg">
+				<strong>Per</strong>
+				<span>Android owner</span>
+				<span>070 233 22 38</span>
+				<a href="#">per@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/human_8.jpg">
+				<strong>Johnny</strong>
+				<span>Punkare</span>
+				<span>070 233 22 38</span>
+				<a href="#">johnny@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/human_9.jpg">
+				<strong>Gustav</strong>
+				<span>Mobile Jedi</span>
+				<span>070 233 22 38</span>
+				<a href="#">gustav@vinnovera.se</a>
+			</article>
+			<article>
+				<img src="/images/no_human_yet.jpg">
+				<strong>We want you!</strong>
+				<span>Your skill</span>
+				<span>Your phone</span>
+				<a href="#">you@vinnovera.se</a>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section class="contact">
+	<div class="wrapper">
+		<article>
+			<section>
+				<div class="label">Adress</div>
+				<div class="value">
+					<span class="street-address">Västerlånggatan 27</span>
+					<span class="postal-code">111 29</span>
+					<span class="locality">Stockholm</span>
+				</div>
+			</section>
+			<section>
+				<div class="label">Telefon</div>
+				<div class="value">
+					<span>08 - 5000 10 90</span>
+				</div>
+			</section>
+			<section>
+				<div class="label">E-post</div>
+				<div class="value">
+					<span><a href="#">info@vinnovera.se</a></span>
+				</div>
+			</section>
+		</article>
+	</div>
+</section>

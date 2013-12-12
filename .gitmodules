@@ -1,0 +1,3 @@
+[submodule ".themes/vinnoveraTheme"]
+	path = .themes/vinnoveraTheme
+	url = https://github.com/Vinnovera/theme.git
