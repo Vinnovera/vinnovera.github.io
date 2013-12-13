@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bildmanipulering I JavaScript - Vinnovera</title>
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<meta name="description" content="Bildmanipulering I JavaScript När det läggs ett digitalt filter över en bild manipuleras pixeldatan i bilden. Färgerna i bilden räknas om för varje &hellip;">
+		
+		
+		<link rel="canonical" href="">
+		<link href="/favicon.png" rel="icon">
+		<link href="/atom.xml" rel="alternate" title="Vinnovera" type="application/atom+xml">
+		
+			
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/vinnovera.css">
+		
+	</head>
+
+<body   >
+  <header id="header">
+	<h1>
+		
+		<a href="/">Vinnovera</a>
+		
+	</h1>
+	
+	
+	<nav>
+		<a href="/#projekt">Projekt</a>
+		<a href="/#blogg">Blogg</a>
+		<a href="/#kontakt">Kontakt</a>
+		<a class="labs" href="http://labs.vinnovera.se">Labs</a>
+	</nav>
+	
+</header>
+
+<a href="#" class="to-top">Till toppen</a>
+  <section class="wrapper post">
+	<article>
+		<header>
+			<h1>Bildmanipulering I JavaScript</h1>
+			
+			
+			
+		</header>
+	
+		<div>
+			<p>När det läggs ett digitalt filter över en bild manipuleras pixeldatan i bilden. Färgerna i bilden räknas om för varje pixel och sedan visas en ny bild med de nya värderna. I fortsättningen kommer jag att använda termen filter för att beskriva manipuleringen<!--more--> av bildens data med hjälp av Javascript.</p>
+
+<p>Några vanligt förekommande filter är inverterade färger, sepia, blur, kontrastökning, gråskala med mera.</p>
+
+<p>I dagsläget är det vanligast att manipulera bilderna i t.ex. Photoshop innan de används på en hemsida, men det finns alternativ och ett av dom är Javascript.</p>
+
+<h4>1.1 Varför ska man använda filter?</h4>
+
+<p>De som underhåller webbplatser är oftast inte själva utvecklare eller grafiker. Vill de placera samma bild på flera olika ställen men med olika filter behöver de inte själva editera bilden med hjälp av externa verktyg.</p>
+
+<p>Om en sida har flera olika instanser av samma bild med olika filter, t.ex. porträttbilder av Andy Warhol, behöver browsern endast hämta bilden en gång. Det kan leda till en snabbare site med färre anrop.</p>
+
+<h4>1.2 Kan man använda filter?</h4>
+
+<p>Om browsern stödjer canvas-objektet kan man använda filter. Idag har följande browsers stöd för canvas:</p>
+
+<ul>
+<li>Internet Explorer 9+</li>
+<li>Firefox</li>
+<li>Opera</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Mobile browsers</li>
+</ul>
+
+
+<p>I Android 4.0 ursprungs browser finns det, vad som antas vara, en bugg som gör att anges alpha i något annat än 0 eller 255 ändras pixelns färg istället.</p>
+
+<p>Prestandan för canvas skiljer sig åt på olika plattformar. Desktop har generellt bra prestanda men mobila browsers kan vara långsammare.</p>
+
+<h2>2. Hur fungerar filter?</h2>
+
+<p>Som nämnt tidigare handlar det om att räkna om värden i bildens pixeldata. För att kunna manipulera bilder behövs ett canvas att rita på och ett ImageData-objekt.</p>
+
+<p>Ett ImageData-objekt är en del av ett canvas, inte en bild eller en form. Objektet innehåller information för varje pixel inom den delen. Informationen består av fyra delar per pixel, RGBA:</p>
+
+<p>R &ndash; Röd        (0-255) <br />
+G &ndash; Grön       (0-255) <br />
+B &ndash; Blå        (0-255) <br />
+A &ndash; Alpha   (0-255, 0 = helt osynlig &ndash; 255 = helt synlig)</p>
+
+<p>Är en pixel röd och synlig har den värdet (255,0,0,255) och det är de värden som lagras i data-egenskapen hos ImageData-objektet. Principen för att rita på ett canvas är samma för bilder som för andra objekt, därför beskrivs först hur man ritar en simpel form.</p>
+
+<h3>2.1 Form</h3>
+
+<p>Koden nedan skapar ett objekt som är 100 x 100 px, där varje pixel är blå, och placerar objektet på ett canvas 10px från kanterna.</p>
+
+<pre><code>var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+
+//Skapa ett objekt att arbeta med
+var imageData=ctx.createImageData(100,100);
+
+//Loopa igenom pixlarna
+for (var i=0;i&lt;imageData.data.length;i+=4)
+ {
+    imageData.data[i+0]=0;      //red
+        imageData.data[i+1]=0;      //green
+        imageData.data[i+2]=255;    //blue
+        imageData.data[i+3]=255;    //alpha
+}
+
+//Skriv ut objektet på canvaset
+ctx.putImageData(imageData,10,10);
+</code></pre>
+
+<p>Resultat:<br /><img src="https://lh3.googleusercontent.com/eMaoG_Om5swKW1iyfLoZ36M_zw7LRuYk0A6oxVqzYV7JKblIScg7ILDyGDiVkGCNh3S-BOKydcM18rtiZBt4-9Xvvi5BiCMMpupJPnzMiNmvc2qFkxBVHYJJlA" alt="" /></p>
+
+<h4>2.1.1 Funktioner</h4>
+
+<h5>createImageData():</h5>
+
+<p>Skapar ett nytt tomt ImageData-objekt. Objektets pixelvärden är ursprungligen (0,0,0,0), svarta och genomskinliga. Metoden används om det inte redan innan finns ett objekt att arbeta med, t.ex en bild, eller om ett objekt ska kopieras.</p>
+
+<p>Syntax:</p>
+
+<p>Det finns två versioner av metoden,</p>
+
+<pre><code>var imgData = ctx.createImageData(width,height)
+</code></pre>
+
+<ul>
+<li>width = Bredden på det nya ImageData-objektet i px.</li>
+<li>height = Höjden på det nya ImageData-objektet i px.</li>
+</ul>
+
+
+<pre><code>var imgData = ctx.createImageData(imageData)
+</code></pre>
+
+<ul>
+<li>imageData = ett annat ImageData-objekt.</li>
+</ul>
+
+
+<h5>putImageData():</h5>
+
+<p>Skriver ut pixeldatan från ett specificerat ImageData-objekt på canvaset.</p>
+
+<p>Syntax:</p>
+
+<pre><code>ctx.putImageData(imgData, x, y, dirtyX, dirtyY, dirtyWidth, dirtyHeight)
+</code></pre>
+
+<ul>
+<li>imgData = Det imageData-objekt som ska skrivas ut på canvaset.</li>
+<li>x = x-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
+<li>y = y-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
+<li>dirtyX = (optional) Det horizontella x-värdet att placera bilden på, angivet i px.</li>
+<li>dirtyY = (optional) Det horizontella y-värdet att placera bilden på, angivet i px.</li>
+<li>dirtyWidth = (optional) Bredden som ska användas för att rita ut bilden på canvaset.</li>
+<li>dirtyHeight =(optional) Höjden som ska användas för att rita ut bilden på canvaset.</li>
+</ul>
+
+
+<h3>2.2 Bild</h3>
+
+<p>För att manipulera en bild behövs två ytterligare funktioner, drawImage och getImageData. Funktionen createImageData används när man vill kopiera en existerande bild eller för att skapa en tom yta.</p>
+
+<p>Html:</p>
+
+<pre><code>&lt;img id="image" src="src.jpg" alt="" width="220" height="277"&gt;
+
+&lt;canvas id="myCanvas" width="220" height="277"&gt;&lt;/canvas&gt;
+</code></pre>
+
+<p>Script:</p>
+
+<pre><code>document.getElementById("image").onload=function(){
+        var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+
+    //Hämta bild
+    var img=document.getElementById("image");
+
+        //Rita ut bild på canvas
+    ctx.drawImage(img,0,0);
+
+    //Hämta bilddata
+    var imgData=ctx.getImageData(0,0,c.width,c.height);
+
+    // invertera färgerna i bilden
+    for (var i=0;i&lt;imgData.data.length;i+=4) {
+            imgData.data[i]=255-imgData.data[i];
+            imgData.data[i+1]=255-imgData.data[i+1];
+            imgData.data[i+2]=255-imgData.data[i+2];
+            imgData.data[i+3]=255;
+    }
+
+    //Skriv ut den manipulerade bilden på canvaset
+    ctx.putImageData(imgData,0,0);
+}
+</code></pre>
+
+<p>Resultat:<br /><img src="https://lh6.googleusercontent.com/BZDl6xazl4AZS4_vbJJK2ZzWN_MVIR8KWM3F7dwCTHGiI0Ryk-Ejqr8_GlsFN0JZH8w_dj61KYmrRL4Ad5_niAfjblRPSGIiA4gVDstauj-G7bkLTt2Q2O31Pg" alt="" /></p>
+
+<h4>2.2.1 Funktioner</h4>
+
+<h5>drawImage():</h5>
+
+<p>Ritar ut en bild, video eller ett canvas på ett canvas. Metoden kan även rita ut delar av en bild och ändra en bilds eller videos storlek.</p>
+
+<p>Syntax:</p>
+
+<pre><code>context.drawImage(img,x,y);
+context.drawImage(img,x,y,width,height);
+ctx.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+</code></pre>
+
+<ul>
+<li>img = Det element som ska användas &ndash; bild, canvas eller video.</li>
+<li>x = x-koordinaten där elementet ska placeras.</li>
+<li>y = y-koordinaten där elementet ska placeras.</li>
+<li>width = (optional)  vidden av elementet som ska användas (öka el. minska strl på elem).</li>
+<li>height = (optional) höjden av elementet som ska användas (öka el. minska strl på elem).</li>
+<li>sx = (optional) x-koordinaten där bilden ska börja skäras.</li>
+<li>sy = (optional) y-koordinaten där bilden ska börja skäras.</li>
+<li>swidth = (optional) vidden av den beskurna bilden.</li>
+<li>sheight = (optional) höjden av den beskurna bilden.</li>
+</ul>
+
+
+<h5>getImageData():</h5>
+
+<p>Retunerar ett ImageData-objekt som kopierat pixeldatan från en specificerad del av canvaset.</p>
+
+<p>Syntax:</p>
+
+<pre><code>ctx.getImageData(x, y, width, height)
+</code></pre>
+
+<ul>
+<li>x = x-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
+<li>y = y-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
+<li>width = Bredden på det du vill kopiera.</li>
+<li>height =Höjden på det du vill kopiera.</li>
+</ul>
+
+
+<h2>3. Slutsatser</h2>
+
+<p>När jag jämförde två sidor, en där jag hade två bilder och en där jag hade en bild som jag skrev ut två gånger med hjälp av filter-funktioner, fick jag följande resultat:</p>
+
+<table>
+<tr>
+<td></td>
+<td><p>Javascript&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+<td><p>två bilder</p></td>
+</tr>
+<tr>
+<td><p>Antal requests</p></td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><p>kb överfört</p></td>
+<td>149</td>
+<td>285</td>
+</tr>
+<tr>
+<td><p>paint (ms)</p></td>
+<td>3.0</td>
+<td>39.2</td>
+</tr>
+<tr>
+<td><p>hämta bild/bilder (ms)&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+<td>23</td>
+<td>150</td>
+</tr>
+<tr>
+<td><p>finished loading (ms)</p></td>
+<td>117</td>
+<td>198</td>
+</tr>
+</table>
+
+
+<p>Jag fick inte de resultat jag hade väntat mig och det beror främst på att jag trodde att paint-tiden skulle vara högre när jag använde canvas-objektet. Tittar man på ‘kb överfört’ tycker jag att man tydligt ser att fördelen men att använda filter är att man bara behöver ladda ner en bild. Tänker man den situationen i större skala med t.ex tio stycken bilder blir filter betydligt snabbare. Javascriptet jag använde var minimalt och använder man ett komplexare skript skulle tiden öka för att exekvera skriptet.</p>
+
+<p>Ett ytterligare alternativ som är värt att nämna är web-kit filter. Varför jag inte anser att det är användbart än är att två av de störta webbläsarna, Firefox och Internet Explorer, inte har stöd för det. Skulle de utveckla stöd kan det bli ett starkt alternativ.</p>
+
+<h3>3.1 Bibliotek</h3>
+
+<p>Jag tror inte att det kommer att vara tidseffektivt att skriva ett eget Javascript-plugin. Uträkningarna är komplexa och det krävs väldigt noga testning för att inte slöa ner webbsidor. Nedan är några av de bibliotek som jag hittat som verkar ha potential.</p>
+
+<p>Det bibliotek som verkar användas mest för tillfället är fabricjs. Det kan bero på att det innehåller väldigt mycket mer än bara filter &ndash; t.ex. former, drag-n-drop, resize med flera. Jag har även tittat på följande:</p>
+
+<ul>
+<li>Filterr2 <a href="https://github.com/alexmic/filtrr/tree/master/filtrr2">https://github.com/alexmic/filtrr/tree/master/filtrr2</a></li>
+<li>Open source som inte känns helt färdigutvecklat. Senaste buggfixen var fem månader sedan.*   Pixastic <a href="http://www.pixastic.com/lib/docs/">http://www.pixastic.com/lib/docs</a>/</li>
+<li>Ett gratis bibliotek där du själv kan välja vilka komponenter du vill ladda ner.*   glfx.js <a href="https://github.com/evanw/glfx.js">https://github.com/evanw/glfx.js</a></li>
+<li>Ett bibliotek som använder WebGL. Stödjs endast av de senaste browsers.*   camanjs <a href="http://camanjs.com/">http://camanjs.com/</a></li>
+</ul>
+
+
+<p>Jag tror att camanjs har störts potential att vara användbart. Biblioteket har noga utförd dokumentation, uppdateras kontinuerligt, uppmanar till tester och är helt gratis.</p>
+
+<h2>Referenser</h2>
+
+<p><a href="http://www.khronos.org/registry/typedarray/specs/latest/#7.1">http://www.khronos.org/registry/typedarray/specs/latest/#7.1</a></p>
+
+<p><a href="http://www.w3schools.com/tags/ref_canvas.asp">http://www.w3schools.com/tags/ref_canvas.asp</a></p>
+
+<p><a href="http://html5doctor.com/video-canvas-magic/">http://html5doctor.com/video-canvas-magic/</a></p>
+
+<p><a href="http://caniuse.com/css-filters">http://caniuse.com/css-filters</a></p>
+
+<p>Codepen :
+(Egna bilder behövs för att testa skripten) <br />
+Länk till Javascript version: <a href="http://codepen.io/Sandra/pen/LjGgh">http://codepen.io/Sandra/pen/LjGgh</a> <br />
+Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjvJ">http://codepen.io/Sandra/pen/lrjvJ</a></p>
+
+		</div>
+	</article>
+</section>
+
+
+<section>
+	<div class="wrapper">
+		<h1>Disskutera</h1>
+		<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'vinnovera'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+	</div>
+</section>
+
+  <footer role="contentinfo"><span class="adr">
+	<span class="street-address">Västerlånggatan 27</span> – 
+	<span class="postal-code">111 29</span>
+	<span class="locality">Stockholm</span>
+</span>
+
+<span class="tel">08 - 5000 10 90</span>
+<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a></footer>
+  <script src="/javascripts/components/mootools.js"></script>
+<script src="/javascripts/vinnovera.js"></script>
+</body>
+</html>
