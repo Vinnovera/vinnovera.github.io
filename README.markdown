@@ -15,6 +15,16 @@
 
 If you are lazy, you can skip step 6-10 and run `sh publish.sh`
 
+## Update theme
+
+The theme is in its own github repo located at: https://github.com/Vinnovera/theme. Everytime you make changes there, you need to update the site with the following steps:
+
+1. Pull the theme with `git submodule foreach git pull origin master`
+2. Reinstall the theme with `rake install['vinnoveraTheme']` and say yes!
+3. Publish the changes (`rake generate && rake deploy`) or preview (`rake preview`)
+
+If you are lazy you can just run `sh preview_theme.sh` or `sh deploy_theme.sh`.
+
 ## Preview
 
 If you run `rake preview` you can watch the site with changes in real-time, locally at http://localhost:4000
