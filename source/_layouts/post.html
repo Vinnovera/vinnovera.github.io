@@ -11,6 +11,9 @@ single: true
 			{% capture category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
 			{% unless category == '0' %}
 			<p class="meta">
+			  <strong>Publicerad</strong>: <time datetime="{{ page.date | datetime | date_to_xmlschema }}" pubdate>{{ page.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
+			
+			  | <strong>Taggar</strong>:
 			  {% if post %}
 			    {{ post.categories | category_links }}
 			  {% else %}
@@ -19,6 +22,9 @@ single: true
 			</p>
 			{% endunless %}
 		</header>
+		
+		<div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+		<div class="g-plusone" data-size="medium"></div>
 	
 		<div>
 			{{ content }}
@@ -34,3 +40,18 @@ single: true
 	</div>
 </section>
 {% endif %}
+
+<nav class="post-navigation">
+	{% if page.next.url %}
+		<a class="basic-alignment next" href="{{page.next.url}}" title="Nästa inlägg: {{page.next.title}}">Nästa inlägg</a>
+	{% else %}
+	<span class="next">Nästa inlägg</span>
+	{% endif %}
+	<span class="current">{{ site.posts | size }}</span>
+	<span class="total">{{ site.posts | size }}</span>
+	{% if page.previous.url %}
+		<a class="basic-alignment prev" href="{{page.previous.url}}" title="Föregående inlägg: {{page.previous.title}}">Föregående inlägg</a>
+	{% else %}
+	<span class="prev">Föregående inlägg</span>
+	{% endif %}
+</nav>
