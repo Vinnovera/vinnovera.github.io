@@ -7,18 +7,19 @@
 		{% endif %}
 	</h1>
 	
-	{% if page %}
-	<nav>
-		<a href="/#projekt">Projekt</a>
-		<a href="/#blogg">Blogg</a>
-		<a href="/#kontakt">Kontakt</a>
-		<a class="labs" href="http://labs.vinnovera.se">Labs</a>
-	</nav>
-	{% else %}
+	{% if page.index %}
 	<nav>
 		<a href="#projekt">Projekt</a>
 		<a href="#blogg">Blogg</a>
 		<a href="#kontakt">Kontakt</a>
+		<a class="labs" href="http://labs.vinnovera.se">Labs</a>
+	</nav>
+	{% else %}
+	<nav>
+		<a href="/">Hem</a>
+		<a href="/projekt">Projekt</a>
+		<a href="/blogg">Blogg</a>
+		<a href="/#kontakt">Kontakt</a>
 		<a class="labs" href="http://labs.vinnovera.se">Labs</a>
 	</nav>
 	{% endif %}
