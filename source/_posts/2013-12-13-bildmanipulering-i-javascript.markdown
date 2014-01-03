@@ -4,6 +4,7 @@ title: "Bildmanipulering i JavaScript"
 date: 2013-12-13 16:17:13 +0100
 comments: true
 categories: [Javascript, Filter]
+author: Alexandra Munter
 ---
 
 När det läggs ett digitalt filter över en bild manipuleras pixeldatan i bilden. Färgerna i bilden räknas om för varje pixel och sedan visas en ny bild med de nya värderna. I fortsättningen kommer jag att använda termen filter för att beskriva manipuleringen<!--more--> av bildens data med hjälp av Javascript.
