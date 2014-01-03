@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Javascript | Vinnovera]]></title>
+  <link href="http://Vinnovera.github.io/blogg/tagg/javascript/atom.xml" rel="self"/>
+  <link href="http://Vinnovera.github.io/"/>
+  <updated>2014-01-03T14:44:06+01:00</updated>
+  <id>http://Vinnovera.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Bildmanipulering I JavaScript]]></title>
+    <link href="http://Vinnovera.github.io/blogg/2013/12/13/bildmanipulering-i-javascript/"/>
+    <updated>2013-12-13T16:17:13+01:00</updated>
+    <id>http://Vinnovera.github.io/blogg/2013/12/13/bildmanipulering-i-javascript</id>
+    <content type="html"><![CDATA[<p>När det läggs ett digitalt filter över en bild manipuleras pixeldatan i bilden. Färgerna i bilden räknas om för varje pixel och sedan visas en ny bild med de nya värderna. I fortsättningen kommer jag att använda termen filter för att beskriva manipuleringen<!--more--> av bildens data med hjälp av Javascript.</p>
+
+<p>Några vanligt förekommande filter är inverterade färger, sepia, blur, kontrastökning, gråskala med mera.</p>
+
+<p>I dagsläget är det vanligast att manipulera bilderna i t.ex. Photoshop innan de används på en hemsida, men det finns alternativ och ett av dom är Javascript.</p>
+
+<h4>1.1 Varför ska man använda filter?</h4>
+
+<p>De som underhåller webbplatser är oftast inte själva utvecklare eller grafiker. Vill de placera samma bild på flera olika ställen men med olika filter behöver de inte själva editera bilden med hjälp av externa verktyg.</p>
+
+<p>Om en sida har flera olika instanser av samma bild med olika filter, t.ex. porträttbilder av Andy Warhol, behöver browsern endast hämta bilden en gång. Det kan leda till en snabbare site med färre anrop.</p>
+
+<h4>1.2 Kan man använda filter?</h4>
+
+<p>Om browsern stödjer canvas-objektet kan man använda filter. Idag har följande browsers stöd för canvas:</p>
+
+<ul>
+<li>Internet Explorer 9+</li>
+<li>Firefox</li>
+<li>Opera</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Mobile browsers</li>
+</ul>
+
+
+<p>I Android 4.0 ursprungs browser finns det, vad som antas vara, en bugg som gör att anges alpha i något annat än 0 eller 255 ändras pixelns färg istället.</p>
+
+<p>Prestandan för canvas skiljer sig åt på olika plattformar. Desktop har generellt bra prestanda men mobila browsers kan vara långsammare.</p>
+
+<h2>2. Hur fungerar filter?</h2>
+
+<p>Som nämnt tidigare handlar det om att räkna om värden i bildens pixeldata. För att kunna manipulera bilder behövs ett canvas att rita på och ett ImageData-objekt.</p>
+
+<p>Ett ImageData-objekt är en del av ett canvas, inte en bild eller en form. Objektet innehåller information för varje pixel inom den delen. Informationen består av fyra delar per pixel, RGBA:</p>
+
+<p>R &ndash; Röd        (0-255) <br />
+G &ndash; Grön       (0-255) <br />
+B &ndash; Blå        (0-255) <br />
+A &ndash; Alpha   (0-255, 0 = helt osynlig &ndash; 255 = helt synlig)</p>
+
+<p>Är en pixel röd och synlig har den värdet (255,0,0,255) och det är de värden som lagras i data-egenskapen hos ImageData-objektet. Principen för att rita på ett canvas är samma för bilder som för andra objekt, därför beskrivs först hur man ritar en simpel form.</p>
+
+<h3>2.1 Form</h3>
+
+<p>Koden nedan skapar ett objekt som är 100 x 100 px, där varje pixel är blå, och placerar objektet på ett canvas 10px från kanterna.</p>
+
+<pre><code>var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+
+//Skapa ett objekt att arbeta med
+var imageData=ctx.createImageData(100,100);
+
+//Loopa igenom pixlarna
+for (var i=0;i&lt;imageData.data.length;i+=4)
+ {
+    imageData.data[i+0]=0;      //red
+        imageData.data[i+1]=0;      //green
+        imageData.data[i+2]=255;    //blue
+        imageData.data[i+3]=255;    //alpha
+}
+
+//Skriv ut objektet på canvaset
+ctx.putImageData(imageData,10,10);
+</code></pre>
+
+<p>Resultat:<br /><img src="https://lh3.googleusercontent.com/eMaoG_Om5swKW1iyfLoZ36M_zw7LRuYk0A6oxVqzYV7JKblIScg7ILDyGDiVkGCNh3S-BOKydcM18rtiZBt4-9Xvvi5BiCMMpupJPnzMiNmvc2qFkxBVHYJJlA" alt="" /></p>
+
+<h4>2.1.1 Funktioner</h4>
+
+<h5>createImageData():</h5>
+
+<p>Skapar ett nytt tomt ImageData-objekt. Objektets pixelvärden är ursprungligen (0,0,0,0), svarta och genomskinliga. Metoden används om det inte redan innan finns ett objekt att arbeta med, t.ex en bild, eller om ett objekt ska kopieras.</p>
+
+<p>Syntax:</p>
+
+<p>Det finns två versioner av metoden,</p>
+
+<pre><code>var imgData = ctx.createImageData(width,height)
+</code></pre>
+
+<ul>
+<li>width = Bredden på det nya ImageData-objektet i px.</li>
+<li>height = Höjden på det nya ImageData-objektet i px.</li>
+</ul>
+
+
+<pre><code>var imgData = ctx.createImageData(imageData)
+</code></pre>
+
+<ul>
+<li>imageData = ett annat ImageData-objekt.</li>
+</ul>
+
+
+<h5>putImageData():</h5>
+
+<p>Skriver ut pixeldatan från ett specificerat ImageData-objekt på canvaset.</p>
+
+<p>Syntax:</p>
+
+<pre><code>ctx.putImageData(imgData, x, y, dirtyX, dirtyY, dirtyWidth, dirtyHeight)
+</code></pre>
+
+<ul>
+<li>imgData = Det imageData-objekt som ska skrivas ut på canvaset.</li>
+<li>x = x-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
+<li>y = y-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
+<li>dirtyX = (optional) Det horizontella x-värdet att placera bilden på, angivet i px.</li>
+<li>dirtyY = (optional) Det horizontella y-värdet att placera bilden på, angivet i px.</li>
+<li>dirtyWidth = (optional) Bredden som ska användas för att rita ut bilden på canvaset.</li>
+<li>dirtyHeight =(optional) Höjden som ska användas för att rita ut bilden på canvaset.</li>
+</ul>
+
+
+<h3>2.2 Bild</h3>
+
+<p>För att manipulera en bild behövs två ytterligare funktioner, drawImage och getImageData. Funktionen createImageData används när man vill kopiera en existerande bild eller för att skapa en tom yta.</p>
+
+<p>Html:</p>
+
+<pre><code>&lt;img id="image" src="src.jpg" alt="" width="220" height="277"&gt;
+
+&lt;canvas id="myCanvas" width="220" height="277"&gt;&lt;/canvas&gt;
+</code></pre>
+
+<p>Script:</p>
+
+<pre><code>document.getElementById("image").onload=function(){
+        var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+
+    //Hämta bild
+    var img=document.getElementById("image");
+
+        //Rita ut bild på canvas
+    ctx.drawImage(img,0,0);
+
+    //Hämta bilddata
+    var imgData=ctx.getImageData(0,0,c.width,c.height);
+
+    // invertera färgerna i bilden
+    for (var i=0;i&lt;imgData.data.length;i+=4) {
+            imgData.data[i]=255-imgData.data[i];
+            imgData.data[i+1]=255-imgData.data[i+1];
+            imgData.data[i+2]=255-imgData.data[i+2];
+            imgData.data[i+3]=255;
+    }
+
+    //Skriv ut den manipulerade bilden på canvaset
+    ctx.putImageData(imgData,0,0);
+}
+</code></pre>
+
+<p>Resultat:<br /><img src="https://lh6.googleusercontent.com/BZDl6xazl4AZS4_vbJJK2ZzWN_MVIR8KWM3F7dwCTHGiI0Ryk-Ejqr8_GlsFN0JZH8w_dj61KYmrRL4Ad5_niAfjblRPSGIiA4gVDstauj-G7bkLTt2Q2O31Pg" alt="" /></p>
+
+<h4>2.2.1 Funktioner</h4>
+
+<h5>drawImage():</h5>
+
+<p>Ritar ut en bild, video eller ett canvas på ett canvas. Metoden kan även rita ut delar av en bild och ändra en bilds eller videos storlek.</p>
+
+<p>Syntax:</p>
+
+<pre><code>context.drawImage(img,x,y);
+context.drawImage(img,x,y,width,height);
+ctx.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+</code></pre>
+
+<ul>
+<li>img = Det element som ska användas &ndash; bild, canvas eller video.</li>
+<li>x = x-koordinaten där elementet ska placeras.</li>
+<li>y = y-koordinaten där elementet ska placeras.</li>
+<li>width = (optional)  vidden av elementet som ska användas (öka el. minska strl på elem).</li>
+<li>height = (optional) höjden av elementet som ska användas (öka el. minska strl på elem).</li>
+<li>sx = (optional) x-koordinaten där bilden ska börja skäras.</li>
+<li>sy = (optional) y-koordinaten där bilden ska börja skäras.</li>
+<li>swidth = (optional) vidden av den beskurna bilden.</li>
+<li>sheight = (optional) höjden av den beskurna bilden.</li>
+</ul>
+
+
+<h5>getImageData():</h5>
+
+<p>Retunerar ett ImageData-objekt som kopierat pixeldatan från en specificerad del av canvaset.</p>
+
+<p>Syntax:</p>
+
+<pre><code>ctx.getImageData(x, y, width, height)
+</code></pre>
+
+<ul>
+<li>x = x-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
+<li>y = y-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
+<li>width = Bredden på det du vill kopiera.</li>
+<li>height =Höjden på det du vill kopiera.</li>
+</ul>
+
+
+<h2>3. Slutsatser</h2>
+
+<p>När jag jämförde två sidor, en där jag hade två bilder och en där jag hade en bild som jag skrev ut två gånger med hjälp av filter-funktioner, fick jag följande resultat:</p>
+
+<table>
+<tr>
+<td></td>
+<td><p>Javascript&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+<td><p>två bilder</p></td>
+</tr>
+<tr>
+<td><p>Antal requests</p></td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><p>kb överfört</p></td>
+<td>149</td>
+<td>285</td>
+</tr>
+<tr>
+<td><p>paint (ms)</p></td>
+<td>3.0</td>
+<td>39.2</td>
+</tr>
+<tr>
+<td><p>hämta bild/bilder (ms)&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+<td>23</td>
+<td>150</td>
+</tr>
+<tr>
+<td><p>finished loading (ms)</p></td>
+<td>117</td>
+<td>198</td>
+</tr>
+</table>
+
+
+<p>Jag fick inte de resultat jag hade väntat mig och det beror främst på att jag trodde att paint-tiden skulle vara högre när jag använde canvas-objektet. Tittar man på ‘kb överfört’ tycker jag att man tydligt ser att fördelen men att använda filter är att man bara behöver ladda ner en bild. Tänker man den situationen i större skala med t.ex tio stycken bilder blir filter betydligt snabbare. Javascriptet jag använde var minimalt och använder man ett komplexare skript skulle tiden öka för att exekvera skriptet.</p>
+
+<p>Ett ytterligare alternativ som är värt att nämna är web-kit filter. Varför jag inte anser att det är användbart än är att två av de störta webbläsarna, Firefox och Internet Explorer, inte har stöd för det. Skulle de utveckla stöd kan det bli ett starkt alternativ.</p>
+
+<h3>3.1 Bibliotek</h3>
+
+<p>Jag tror inte att det kommer att vara tidseffektivt att skriva ett eget Javascript-plugin. Uträkningarna är komplexa och det krävs väldigt noga testning för att inte slöa ner webbsidor. Nedan är några av de bibliotek som jag hittat som verkar ha potential.</p>
+
+<p>Det bibliotek som verkar användas mest för tillfället är fabricjs. Det kan bero på att det innehåller väldigt mycket mer än bara filter &ndash; t.ex. former, drag-n-drop, resize med flera. Jag har även tittat på följande:</p>
+
+<ul>
+<li>Filterr2 <a href="https://github.com/alexmic/filtrr/tree/master/filtrr2">https://github.com/alexmic/filtrr/tree/master/filtrr2</a></li>
+<li>Open source som inte känns helt färdigutvecklat. Senaste buggfixen var fem månader sedan.*   Pixastic <a href="http://www.pixastic.com/lib/docs/">http://www.pixastic.com/lib/docs</a>/</li>
+<li>Ett gratis bibliotek där du själv kan välja vilka komponenter du vill ladda ner.*   glfx.js <a href="https://github.com/evanw/glfx.js">https://github.com/evanw/glfx.js</a></li>
+<li>Ett bibliotek som använder WebGL. Stödjs endast av de senaste browsers.*   camanjs <a href="http://camanjs.com/">http://camanjs.com/</a></li>
+</ul>
+
+
+<p>Jag tror att camanjs har störts potential att vara användbart. Biblioteket har noga utförd dokumentation, uppdateras kontinuerligt, uppmanar till tester och är helt gratis.</p>
+
+<h2>Referenser</h2>
+
+<p><a href="http://www.khronos.org/registry/typedarray/specs/latest/#7.1">http://www.khronos.org/registry/typedarray/specs/latest/#7.1</a></p>
+
+<p><a href="http://www.w3schools.com/tags/ref_canvas.asp">http://www.w3schools.com/tags/ref_canvas.asp</a></p>
+
+<p><a href="http://html5doctor.com/video-canvas-magic/">http://html5doctor.com/video-canvas-magic/</a></p>
+
+<p><a href="http://caniuse.com/css-filters">http://caniuse.com/css-filters</a></p>
+
+<p>Codepen :
+(Egna bilder behövs för att testa skripten) <br />
+Länk till Javascript version: <a href="http://codepen.io/Sandra/pen/LjGgh">http://codepen.io/Sandra/pen/LjGgh</a> <br />
+Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjvJ">http://codepen.io/Sandra/pen/lrjvJ</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Unit Testing]]></title>
+    <link href="http://Vinnovera.github.io/blogg/2013/12/12/unit-testing/"/>
+    <updated>2013-12-12T14:22:24+01:00</updated>
+    <id>http://Vinnovera.github.io/blogg/2013/12/12/unit-testing</id>
+    <content type="html"><![CDATA[<p>När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.</p>
+
+<p>När vi utvecklar hållbara och långsiktiga applikationer är det viktigt att koden vi skriver beter sig konsekvent. Det måste gå att förutse hur en funktion eller ett plugin beter sig som vi har förväntat oss, även när den används under nya omständigheter.</p>
+
+<p>Det är därför vi måste testa.</p>
+
+<h2>Testning</h2>
+
+<h3>När och hur kan man testa</h3>
+
+<p>Det finns olika stadier av testning, inte sällan grupperade som “validation testing”, “integration testing” samt “unit testing” och det är det senare jag tänker ta upp i närmare detalj här, då det är den testprocess som ligger närmast mig som utvecklare. Men först en kvick genomgång av de olika stadierna.</p>
+
+<h4>Unit testing</h4>
+
+<p>Unit testing är när man bryter isär alla delar i en applikation i så små testbara enheter som möjligt, och testar varje enhet separat. Ofta är en unit t.ex. en funktion, men kan ibland också vara en hel modul eller ett interface såsom en klass. Varje unit testas ihop med ett dataset för att se att varje del är redo att användas.</p>
+
+<h4>Integration testing</h4>
+
+<p>När alla units är bedömda att vara fungerande så kan man testa dem ihop, vilket kallas för Integration testing. Här använder man sig oftast av testplaner, en systematisk testordning som skall spegla ett tänkt workflow. I det här skedet tittar man också på interaktioner mellan olika units för att se om de fungerar som tänkt.</p>
+
+<h4>Validation testing</h4>
+
+<p>I det här skedet testar man huruvida applikationen uppfyller de krav som ställts av beställare och användare. Den här typen av tester bör vara möjliga att utföra av en tredje part, utan insikt i hur applikationen är byggd rent tekniskt.</p>
+
+<h2>Testdriven utveckling</h2>
+
+<h3>Test först, kod sen</h3>
+
+<p>När man ägnar sig åt testdriven utveckling, så betyder det normalt att man börjar med att identifiera vad en applikation skall utföra, för att sedan bryta ned detta i sådana beståndsdelar att de går att identifiera som enskilda units. Sedan, istället för att direkt börja skriva programkod, så börjar man med att utveckla tester för varje unit. När alla testerna är färdigskrivna inleds arbetet med själva programkoden, och när alla tester validerar så är uniten färdig. Detta ger en tydligare bild av vad varje enskild del av applikationen skall klara av och hur den skall fungera.</p>
+
+<h3>Refactoring</h3>
+
+<p>Det andra alternativet, när det av olika anledningar inte är praktiskt att skriva tester i förväg, är att skriva om koden i efterhand för att göra den testningsbar. Detta innebär att förändra koden, utan att egentligen förändra vad koden är menad att göra.</p>
+
+<h2>Unit testing</h2>
+
+<h3>Vad är en unit</h3>
+
+<p>Så, vad är då en unit? En unit är de minsta beståndsdelarna vi kan bryta ned en applikation till. Oftast är det funktioner och metoder, men det kan ibland också röra sig om interfaces.</p>
+
+<h4>Metoder och funktioner</h4>
+
+<p>Det typiska för en testbar funktion är att den kräver att någonting stoppas in, och att vi får något annat tillbaka. T.ex. kan det här vara en funktion som förvandlar en datumform till en annan (från &lsquo;130402&rsquo; till &lsquo;Andra april, 2013&rsquo;), eller som gör en avståndsberäkning eller liknande. Det är dock också möjligt att göra tester av funktioner som inte svarar med något, utan som istället påverkar ett annat objekt.</p>
+
+<h4>Interface och klasser</h4>
+
+<p>Ibland behöver vi testa sådant som inte ger ett direkt resultat, som t.ex. att flytta på ett objekt. Det kan också vara så att det vi testar inte är ett publikt värde utan en privat variabel. I sådana fall skriver man tester mot interfacet snarare än en enskild metod. Man kör en metod med ett visst värde, och när metoden är genomförd görs en kontroll mot ett värde eller kontrollfunktion i interfacet för att se om förändringen är den förväntade. T.ex. kan vi köra funktionen &ldquo;moveBulletTowardsShip&rdquo; i ett spel, och när metoden är körd kan vi testa om vår &ldquo;bullet&rdquo; har flyttat sig på det vis vi förväntat oss.</p>
+
+<h3>Vad är ett test</h3>
+
+<h4>Vad stoppar vi in, vad föväntar vi oss ut</h4>
+
+<p>Låt säga att jag har en funktion som delar upp ett textstycke i ett antal enskilda rader, där varje rad är högst 60 tecken. Vad vi då låter testet skicka in till funktionen som vi testar är ett antal textstycken av olika längd. I varje test behöver vi också skicka med ett förväntat resultat, i det här fallet skulle vi t.ex. kunna titta på antalet rader vi får tillbaka, samt längden på varje enskild rad.</p>
+
+<h2>Ramverk för javascript</h2>
+
+<p>Det finns många olika ramverk som används för att testa javascript, som Buster.JS, Sinon.js, Jasmine, QUnit eller Mocha. Jag har här valt att titta närmare på QUnit och Mocha, då de är bra exempel på olika angreppsvinklar på javascript-testning.</p>
+
+<h3>QUnit</h3>
+
+<p>QUnit är ett relativt lättviktigt testramverk. Det är ett ramverk som fokuserar helt på att testa javascript som körs i browsern. Då det är det testramverk som används vid utveckling av jQuery är det ett verktyg som är särskilt enkelt att komma igång med om man behöver testa mycket DOM-manipulation.</p>
+
+<h4>Setup</h4>
+
+<p>Det som krävs för att köra tester med QUnit är att ta hem en javascriptfil och en css-fil, samt skapa en HTML-fil som kör testerna. HTML-filen behöver åtminstone en holder att skriva ut testresultaten i (&lsquo;qunit&rsquo;) och om du ska testa DOM-manipulation behövs en holder för QUnit att skapa DOM-elementen i (&lsquo;qunit-fixture&rsquo;).</p>
+
+<p>```html
+<html></p>
+
+<pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="css/qunit-1.12.0.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="qunit"&gt;&lt;/div&gt;
+    &lt;div id="qunit-fixture"&gt;
+        &lt;ul id="myList"&gt;&lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;script src="http://Vinnovera.github.io//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.10.1.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+    &lt;script src="js/vendor/qunit-1.12.0.js"&gt;&lt;/script&gt;
+    &lt;script src="js/main.js"&gt;&lt;/script&gt;
+    &lt;script src="js/tests.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p></html>
+```</p>
+
+<h4>Tester</h4>
+
+<p>I exemplet ovan har jag själva funktionerna jag vill testa i main.js, och testerna i tests.js. Så här ser ett enkelt test ut:</p>
+
+<p>```javascript
+test(&ldquo;multiLineText-test&rdquo;, function() {</p>
+
+<pre><code>   deepEqual(multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
+</code></pre>
+
+<p>   });
+```
+Med QUnit skapas ett test genom att köra &ldquo;test&rdquo;-funktionen. Till den skickar man in en beskrivning av testet (&ldquo;multiLineText-test&rdquo;) samt en funktion. I den här funktionen kan du köra kod, samt framförallt göra s.k. &ldquo;assertions&rdquo;. QUnit har i huvudsak två typer av assertions, &ldquo;ok&rdquo; och &ldquo;equal&rdquo;. Till &ldquo;ok&rdquo; behöver man bara skicka in ett argument, och om argumentet är &ldquo;true&rdquo; är testet godkänt. Till &ldquo;equal&rdquo; skickar man in två argument, och om de stämmer överens är testet godkänt. I exemplet ovan används en variant på equal som används för att jämföra t.ex. objekt och listor.</p>
+
+<p>Här är ett exempel på ett test av DOM-manipulation</p>
+
+<p>```javascript
+test(&lsquo;DOM manipulation&rsquo;, function(){</p>
+
+<pre><code>var items = ['Item 1', 'Second item', 'Item the 3rd', 'Fourth one'];
+for(var i=0;i&lt;items.length;i++){
+    $('#myList').append('&lt;li&gt;'+items[i]+'&lt;/li&gt;');
+}
+equal($('#myList').children().length, 4);
+</code></pre>
+
+<p>   });
+```</p>
+
+<h3>Mocha</h3>
+
+<p>Mocha är klart mer omfattande än QUnit, men har också fler användningsområden. En av de viktigare skillnaderna är att Mocha kan testa javascript utanför en browser, t.ex. i en Node-applikation. Du installerar Mocha via npm, och kör Mocha via terminalen.</p>
+
+<p>I min app.js har jag samma funktion som ovan (&ldquo;multiLineText&rdquo;, fast tillgängliggjord i exports):</p>
+
+<p>```javascript
+  exports.multiLineText = function(myString, maxWidth){</p>
+
+<pre><code> ...
+</code></pre>
+
+<p>  }
+```
+I roten på projektet har jag även skapat en folder som heter &ldquo;test&rdquo;, vilket är den folder Mocha letar efter tester i. Här har jag en fil som heter t.ex. &ldquo;mytest.js&rdquo;, som innehåller själva testet:</p>
+
+<p>```javascript
+   var assert = require(&ldquo;assert&rdquo;);
+   var app = require(&ldquo;../app&rdquo;);</p>
+
+<p>   describe(&ldquo;multiLineText&rdquo;, function() {</p>
+
+<pre><code>it("should return correct array", function() {
+        assert.deepEqual(app.multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
+});
+</code></pre>
+
+<p>   });
+```
+Sedan kör jag Mocha via terminalen via ett enkelt kommando:</p>
+
+<p>   mocha</p>
+
+<p>Jag får följande resultat att 1 test (av 1 möjliga) är lyckat:</p>
+
+<p>   1 passing (5 ms)</p>
+
+<p>Mocha har många kraftfulla features, som att få Mocha att köra tester automatiskt när kod har uppdaterats, eller att använda andra testbibliotek för att köra testerna (t.ex. Jasmine).</p>
+
+<h2>Exempelapplikation</h2>
+
+<p>Som avslutning tänkte jag visa en liten exempelapplikation, och exempel på hur man kan skriva tester till den. Applikationen skall klara av att visa ett diagram där en andel av ett antal figurer är markerade, t.ex. &ldquo;22 av 30 deltagare&rdquo;. Diagrammet skall vara en SVG-bild.</p>
+
+<h3>Krav- och funktionslista</h3>
+
+<p>För att kunna åstadkomma det här diagrammet behöver vi följande funktioner:</p>
+
+<ul>
+<li>En funktion som kan räkna ut antal figurer per rad, baserat på värdet och maxvärdet (t.ex. &ldquo;22&rdquo; och &ldquo;30&rdquo;)</li>
+<li>En funktion som ritar ut figurerna.</li>
+</ul>
+
+
+<h3>Test</h3>
+
+<p>Det första testet vi skriver är därför ett test som kontrollerar vår uträkningsfunktion. Vi vet att vi vill kunna skala antal figurer per rad baserat på maxantalet, samt behöver få ut antalet rader, kolumner, och vilka rader som är markerade, och hur många som är markerade per rad.</p>
+
+<p>```javascript
+test(&lsquo;Get rows, columns and figurenumber&rsquo;, function(){</p>
+
+<pre><code>deepEqual(getChartSize(7,10), {
+    rows: 2,
+    columns: 5,
+    lastMarkedRow: 2,
+    markedAtLastMarkedRow: 2,
+    lastRowLength: 5
+});
+deepEqual(getChartSize(24,66), {
+    rows: 4,
+    columns: 20,
+    lastMarkedRow: 2,
+    markedAtLastMarkedRow: 4,
+    lastRowLength: 6
+});
+deepEqual(getChartSize(13,24), {
+    rows: 3,
+    columns: 10,
+    lastMarkedRow: 2,
+    markedAtLastMarkedRow: 3,
+    lastRowLength: 4
+});
+</code></pre>
+
+<p>   });
+```
+Det nästa testet är till för att se så att vår DOM-manipulation gör vad vi förväntar oss. I det här fallet kollar jag att det finns rätt antal av &ldquo;märkta&rdquo; respektive &ldquo;omärkta&rdquo; figurer, samt kontrollerar att SVGn har rätt storlek.</p>
+
+<p>```javascript
+module(&lsquo;Create and manipulate SVG&rsquo;);
+   test(&lsquo;Create and manipulate SVG with 7 10&rsquo;, function(){</p>
+
+<pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+document.getElementById('qunit-fixture').appendChild(svg);
+createChart(getChartSize(7, 10), svg);
+equal($('svg .marked').length, 7);
+equal($('svg .unmarked').length, 3);
+equal($(svg).height(), 40);
+</code></pre>
+
+<p>   });
+   test(&lsquo;Create and manipulate SVG with 24 66&rsquo;, function(){</p>
+
+<pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+document.getElementById('qunit-fixture').appendChild(svg);
+createChart(getChartSize(24, 66), svg);
+equal($('svg .marked').length, 24);
+equal($('svg .unmarked').length, 42);
+equal($(svg).height(), 20);
+</code></pre>
+
+<p>   });
+   test(&lsquo;Create and manipulate SVG with 13 24&rsquo;, function(){</p>
+
+<pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+document.getElementById('qunit-fixture').appendChild(svg);
+createChart(getChartSize(13, 24), svg);
+equal($('svg .marked').length, 13);
+equal($('svg .unmarked').length, 11);
+equal($(svg).height(), 30);
+</code></pre>
+
+<p>   });
+```</p>
+
+<h3>Funktion</h3>
+
+<p>Först har vi funktionen som tar fram hur många figurer vi behöver visa:</p>
+
+<p>```javascript
+function getChartSize(num, max){</p>
+
+<pre><code>var rows = 0,
+    columns = 0,
+    lastMarkedRow = 0,
+    markedAtLastMarkedRow = 0,
+    lastRowLength = 0
+;
+
+if(max &lt;= 10){
+    columns = 5;
+} else if(max &lt;= 40){
+    columns = 10;
+} else if(max &lt;= 140){
+    columns = 20;
+} else {
+    columns = 40;
+}
+
+rows = Math.ceil(max / columns);
+lastMarkedRow = Math.ceil(num / columns);
+markedAtLastMarkedRow = num % columns;
+lastRowLength = columns - ((rows * columns) - max);
+
+return {
+    rows: rows,
+    columns: columns,
+    lastMarkedRow: lastMarkedRow,
+    markedAtLastMarkedRow: markedAtLastMarkedRow,
+    lastRowLength: lastRowLength
+};
+</code></pre>
+
+<p>   }
+```
+Sen så har vi funktionen som manipulerar en SVG på förväntat vis:</p>
+
+<p>```javascript
+function createChart(settings, svg) {</p>
+
+<pre><code>var addedElements = 0;
+var w = 100/settings.columns;
+var h = w;
+for(var i=0;i&lt;settings.rows;i++){
+    for(var j=0;j&lt;settings.columns;j++){
+        if(addedElements &lt; (settings.lastMarkedRow * settings.columns) - (settings.columns - settings.markedAtLastMarkedRow)){
+            var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            rect.setAttribute('class', 'marked');
+            rect.setAttribute('height', h);
+            rect.setAttribute('width', w);
+            rect.setAttribute('x', j*w);
+            rect.setAttribute('y', i*h);
+            rect.setAttribute('fill', '#ff0000');
+            svg.appendChild(rect);
+            addedElements++;
+        } else if(addedElements &lt; (settings.columns * (settings.rows-1)) + settings.lastRowLength){
+            var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            rect.setAttribute('class', 'unmarked');
+            rect.setAttribute('height', h);
+            rect.setAttribute('width', w);
+            rect.setAttribute('x', j*w);
+            rect.setAttribute('y', i*h);
+            rect.setAttribute('fill', '#0000ff');
+            svg.appendChild(rect);
+            addedElements++;
+        }
+    }
+}
+svg.setAttribute('height', (settings.rows*h)+'px')
+svg.setAttribute('width', (settings.columns*w)+'px');
+</code></pre>
+
+<p>   }
+```</p>
+
+<p>Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.</p>
+]]></content>
+  </entry>
+  
+</feed>
