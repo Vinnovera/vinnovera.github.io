@@ -30,16 +30,16 @@ single: true
 			{{ content }}
 		</div>
 	</article>
-</section>
-
-{% if site.disqus_short_name and page.comments == true %}
-<section>
-	<div class="wrapper comments">
-		<h2>Kommentera</h2>
-		<div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>
+	
+	{% if site.disqus_short_name and page.comments == true %}
+	<div>
+		<div class="wrapper comments">
+			<h2>Kommentera</h2>
+			<div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>
+		</div>
 	</div>
+	{% endif %}
 </section>
-{% endif %}
 
 <nav class="post-navigation">
 	{% if page.next.url %}

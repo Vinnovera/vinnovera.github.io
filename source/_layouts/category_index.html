@@ -1,3 +1,30 @@
 ---
 layout: default
 ---
+
+<section class="wrapper post">
+	{% for post in site.categories[page.category] %}
+	<article>
+		<header>
+			<h1><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+			
+			{% capture post.category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
+			{% unless category == '0' %}
+			<p class="meta">
+				Taggar: 
+			  {% if post %}
+			    {{ post.categories | category_links }}
+			  {% else %}
+			    {{ page.categories | category_links }}
+			  {% endif %}
+			</p>
+			{% endunless %}
+		</header>
+	
+		<div>
+			{{ post.content | excerpt }}
+			<p><a href="{{ root_url }}{{ post.url }}">Läs mer</a></p>
+		</div>
+	</article>
+	{% endfor %}
+</section>
