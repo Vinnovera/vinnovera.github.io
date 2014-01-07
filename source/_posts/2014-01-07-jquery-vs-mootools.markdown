@@ -7,7 +7,7 @@ author: Tobias Bleckert
 categories: [Javascript, jQuery, Mootools]
 ---
 
-“jQuery eller Mootools” är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.
+"jQuery eller Mootools" är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.
 
 Innan jag börjar jämföra dessa vill jag presentera dem lite<!--more--> först. Jag vill även påpeka att jag har jobbat med dessa två bibliotek ett par år, och även om jag har en favorit hoppas jag att det inte lyser igenom för mycket.
 
@@ -25,26 +25,26 @@ Jag har fått den uppfattningen att många tror att Mootools är gammalt och ur�
 
 Sanningen är dock den att Mootools uppdateras relativt ofta, inte lika ofta som jQuery men det behöver inte vara något dåligt.
 
-Mootools är ett javascript bibliotek precis som jQuery men ändå inte. Mootools inriktar sig på “intermediate to advanced JavaScript developers”. Istället för att förändra sättet du skriver Javascript på försöker Mootools göra det kraftfullare med en mer objekt orienterad approach. Även här finns cross-browser stöd, HTML manipulering, events och så vidare.
+Mootools är ett javascript bibliotek precis som jQuery men ändå inte. Mootools inriktar sig på "intermediate to advanced JavaScript developers". Istället för att förändra sättet du skriver Javascript på försöker Mootools göra det kraftfullare med en mer objekt orienterad approach. Även här finns cross-browser stöd, HTML manipulering, events och så vidare.
 
 ## Tekniska skillnader
 
 Jag börjar med de direkt synliga skillnaderna mellan dessa två bibliotek: syntax.
 
-“jQuery has changed the way that millions of people write JavaScript” - skriver jQuery på deras webbplats.
+"jQuery has changed the way that millions of people write JavaScript" - skriver jQuery på deras webbplats.
 
-Mycket riktigt skiljer sig jQuery en del från “vanilla” JavaScript. Mootools å andra sidan har fokuserat mer på att göra JavaScript kraftfullare, hellre än att ändra sättet att skriva på. Vi tittar på lite exempel.
+Mycket riktigt skiljer sig jQuery en del från "vanilla" JavaScript. Mootools å andra sidan har fokuserat mer på att göra JavaScript kraftfullare, hellre än att ändra sättet att skriva på. Vi tittar på lite exempel.
 
 ### Skapa ett element
 
-Vi börjar med enklast möjliga, skapa ett HTML element som ska ha klassen “new” som vi sedan ska lägga till i body taggen.
+Vi börjar med enklast möjliga, skapa ett HTML element som ska ha klassen "new" som vi sedan ska lägga till i body taggen.
 
 #### jQuery
 
 Enligt dokumentationen föreslås [append][0] funktionen:
 
 ```javascript
-$(‘body’).append(‘<div class=”new” />’);
+$('body').append('<div class="new" />');
 ```
 
 #### Mootools
@@ -52,8 +52,8 @@ $(‘body’).append(‘<div class=”new” />’);
 Mootools erbjuder en [Element][1] klass som vi använder för detta ändamål:
 
 ```javascript
-var newElement = new Element(‘div’, {
-	‘class’: ‘new’
+var newElement = new Element('div', {
+	'class': 'new'
 });
 
 document.body.grab(newElement);
@@ -64,9 +64,9 @@ document.body.grab(newElement);
 För att tydligt se likheter och skillnader jämför vi med ren och fin JavaScript:
 
 ```javascript
-var newElement = document.createElement(‘div’);
+var newElement = document.createElement('div');
 
-newElement.className = ‘new’;
+newElement.className = 'new';
 document.body.appendChild(newElement);
 ```
 
@@ -85,21 +85,21 @@ För att demonstrera detta ska vi hitta __body__ taggen och lägga på en klass.
 #### jQuery
 
 ```javascript
-$(‘body’).addClass(‘my-body’);
+$('body').addClass('my-body');
 ```
 
 #### Mootools
 
 ```javascript
-document.body.addClass(‘my-body’);
+document.body.addClass('my-body');
 ```
 
 #### Summering
 
-Det som händer när vi använder `$(‘body’)` är att jQuery processar strängen ‘body’, försöker klura ut om vi vill hitta något eller skapa något och, när den är klar, returnerar en array som innehåller `document.body`. Alltså det vi använde direkt i Mootools exemplet. Du kan nog räkna ut själv vad som är snabbast. För att kunna snabba upp jQuery lite kan vi ändra koden enligt följande:
+Det som händer när vi använder `$('body')` är att jQuery processar strängen 'body', försöker klura ut om vi vill hitta något eller skapa något och, när den är klar, returnerar en array som innehåller `document.body`. Alltså det vi använde direkt i Mootools exemplet. Du kan nog räkna ut själv vad som är snabbast. För att kunna snabba upp jQuery lite kan vi ändra koden enligt följande:
 
 ```javascript
-$(document.body).addClass(‘my-body’); 
+$(document.body).addClass('my-body'); 
 ```
 
 Det som händer nu är att jQuery vet vad vi vill och kan hitta elementet lite snabbare. Men som jag nämnde ovan, returneras en array, vilket gör att arrayen först loopas igenom och funktionen [addClass][3] läggs på varje item i arrayen, om det är ett element. Detta sker alltså även om vi från början visste att vi bara hade 1 element.
@@ -111,23 +111,23 @@ Jag känner mig extra snäll idag, så jag bjuder på ett exempel till. Något s
 #### jQuery
 
 ```javascript
-$(‘#coolBox’).animate({
-	width: ‘100px’, 
-	backgroundColor: ‘#ff0’
+$('#coolBox').animate({
+	width: '100px', 
+	backgroundColor: '#ff0'
 }, 'short', 'linear');
 ```
 
 #### Mootools
 
 ```javascript
-var coolBox = document.id('coolBox’), morph = new Fx.Morph(coolBox, {
-	duration: ‘short’,
-	transition: ‘linear’
+var coolBox = document.id('coolBox'), morph = new Fx.Morph(coolBox, {
+	duration: 'short',
+	transition: 'linear'
 });
 
 morph.start({
-	width: ‘100px’,
-	backgroundColor: ‘#ff0’
+	width: '100px',
+	backgroundColor: '#ff0'
 });
 ```
 
