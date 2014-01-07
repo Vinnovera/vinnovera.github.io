@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		
-		<meta name="description" content="jQuery vs Mootools Tobias Bleckert | 2014-01-07 | Javascript, Mootools, jQuery “jQuery eller Mootools” är frågan många utvecklare ställer sig. Det &hellip;">
+		<meta name="description" content="jQuery vs Mootools Tobias Bleckert | 2014-01-07 | Javascript, Mootools, jQuery &ldquo;jQuery eller Mootools&rdquo; är frågan många utvecklare &hellip;">
 		
 		
 		<link rel="canonical" href="">
@@ -67,7 +67,7 @@
 		<div class="g-plusone" data-size="medium"></div>
 	
 		<div>
-			<p>“jQuery eller Mootools” är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.</p>
+			<p>&ldquo;jQuery eller Mootools&rdquo; är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.</p>
 
 <p>Innan jag börjar jämföra dessa vill jag presentera dem lite<!--more--> först. Jag vill även påpeka att jag har jobbat med dessa två bibliotek ett par år, och även om jag har en favorit hoppas jag att det inte lyser igenom för mycket.</p>
 
@@ -85,26 +85,26 @@
 
 <p>Sanningen är dock den att Mootools uppdateras relativt ofta, inte lika ofta som jQuery men det behöver inte vara något dåligt.</p>
 
-<p>Mootools är ett javascript bibliotek precis som jQuery men ändå inte. Mootools inriktar sig på “intermediate to advanced JavaScript developers”. Istället för att förändra sättet du skriver Javascript på försöker Mootools göra det kraftfullare med en mer objekt orienterad approach. Även här finns cross-browser stöd, HTML manipulering, events och så vidare.</p>
+<p>Mootools är ett javascript bibliotek precis som jQuery men ändå inte. Mootools inriktar sig på &ldquo;intermediate to advanced JavaScript developers&rdquo;. Istället för att förändra sättet du skriver Javascript på försöker Mootools göra det kraftfullare med en mer objekt orienterad approach. Även här finns cross-browser stöd, HTML manipulering, events och så vidare.</p>
 
 <h2>Tekniska skillnader</h2>
 
 <p>Jag börjar med de direkt synliga skillnaderna mellan dessa två bibliotek: syntax.</p>
 
-<p>“jQuery has changed the way that millions of people write JavaScript” &ndash; skriver jQuery på deras webbplats.</p>
+<p>&ldquo;jQuery has changed the way that millions of people write JavaScript&rdquo; &ndash; skriver jQuery på deras webbplats.</p>
 
-<p>Mycket riktigt skiljer sig jQuery en del från “vanilla” JavaScript. Mootools å andra sidan har fokuserat mer på att göra JavaScript kraftfullare, hellre än att ändra sättet att skriva på. Vi tittar på lite exempel.</p>
+<p>Mycket riktigt skiljer sig jQuery en del från &ldquo;vanilla&rdquo; JavaScript. Mootools å andra sidan har fokuserat mer på att göra JavaScript kraftfullare, hellre än att ändra sättet att skriva på. Vi tittar på lite exempel.</p>
 
 <h3>Skapa ett element</h3>
 
-<p>Vi börjar med enklast möjliga, skapa ett HTML element som ska ha klassen “new” som vi sedan ska lägga till i body taggen.</p>
+<p>Vi börjar med enklast möjliga, skapa ett HTML element som ska ha klassen &ldquo;new&rdquo; som vi sedan ska lägga till i body taggen.</p>
 
 <h4>jQuery</h4>
 
 <p>Enligt dokumentationen föreslås <a href="http://api.jquery.com/append/">append</a> funktionen:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="err">‘</span><span class="nx">body</span><span class="err">’</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="err">‘</span><span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="err">”</span><span class="k">new</span><span class="err">”</span> <span class="o">/&gt;</span><span class="err">’</span><span class="p">);</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;div class=&quot;new&quot; /&gt;&#39;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -117,8 +117,8 @@
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">newElement</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Element</span><span class="p">(</span><span class="err">‘</span><span class="nx">div</span><span class="err">’</span><span class="p">,</span> <span class="p">{</span>
-</span><span class='line'>  <span class="err">‘</span><span class="kr">class</span><span class="err">’</span><span class="o">:</span> <span class="err">‘</span><span class="k">new</span><span class="err">’</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">newElement</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Element</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>  <span class="s1">&#39;class&#39;</span><span class="o">:</span> <span class="s1">&#39;new&#39;</span>
 </span><span class='line'><span class="p">});</span>
 </span><span class='line'>
 </span><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">grab</span><span class="p">(</span><span class="nx">newElement</span><span class="p">);</span>
@@ -133,9 +133,9 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">newElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="err">‘</span><span class="nx">div</span><span class="err">’</span><span class="p">);</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">newElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">newElement</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="err">‘</span><span class="k">new</span><span class="err">’</span><span class="p">;</span>
+</span><span class='line'><span class="nx">newElement</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;new&#39;</span><span class="p">;</span>
 </span><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newElement</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -155,23 +155,23 @@
 <h4>jQuery</h4>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="err">‘</span><span class="nx">body</span><span class="err">’</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="err">‘</span><span class="nx">my</span><span class="o">-</span><span class="nx">body</span><span class="err">’</span><span class="p">);</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;my-body&#39;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <h4>Mootools</h4>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="err">‘</span><span class="nx">my</span><span class="o">-</span><span class="nx">body</span><span class="err">’</span><span class="p">);</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;my-body&#39;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <h4>Summering</h4>
 
-<p>Det som händer när vi använder <code>$(‘body’)</code> är att jQuery processar strängen ‘body’, försöker klura ut om vi vill hitta något eller skapa något och, när den är klar, returnerar en array som innehåller <code>document.body</code>. Alltså det vi använde direkt i Mootools exemplet. Du kan nog räkna ut själv vad som är snabbast. För att kunna snabba upp jQuery lite kan vi ändra koden enligt följande:</p>
+<p>Det som händer när vi använder <code>$('body')</code> är att jQuery processar strängen &lsquo;body&rsquo;, försöker klura ut om vi vill hitta något eller skapa något och, när den är klar, returnerar en array som innehåller <code>document.body</code>. Alltså det vi använde direkt i Mootools exemplet. Du kan nog räkna ut själv vad som är snabbast. För att kunna snabba upp jQuery lite kan vi ändra koden enligt följande:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="err">‘</span><span class="nx">my</span><span class="o">-</span><span class="nx">body</span><span class="err">’</span><span class="p">);</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;my-body&#39;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -187,9 +187,9 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="err">‘#</span><span class="nx">coolBox</span><span class="err">’</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
-</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="err">‘</span><span class="mi">100</span><span class="nx">px</span><span class="err">’</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">backgroundColor</span><span class="o">:</span> <span class="err">‘#</span><span class="nx">ff0</span><span class="err">’</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#coolBox&#39;</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="s1">&#39;100px&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;#ff0&#39;</span>
 </span><span class='line'><span class="p">},</span> <span class="s1">&#39;short&#39;</span><span class="p">,</span> <span class="s1">&#39;linear&#39;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -205,14 +205,14 @@
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">coolBox</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">id</span><span class="p">(</span><span class="err">&#39;</span><span class="nx">coolBox</span><span class="err">’</span><span class="p">),</span> <span class="nx">morph</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fx</span><span class="p">.</span><span class="nx">Morph</span><span class="p">(</span><span class="nx">coolBox</span><span class="p">,</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">duration</span><span class="o">:</span> <span class="err">‘</span><span class="kr">short</span><span class="err">’</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">transition</span><span class="o">:</span> <span class="err">‘</span><span class="nx">linear</span><span class="err">’</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">coolBox</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">id</span><span class="p">(</span><span class="s1">&#39;coolBox&#39;</span><span class="p">),</span> <span class="nx">morph</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fx</span><span class="p">.</span><span class="nx">Morph</span><span class="p">(</span><span class="nx">coolBox</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">duration</span><span class="o">:</span> <span class="s1">&#39;short&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">transition</span><span class="o">:</span> <span class="s1">&#39;linear&#39;</span>
 </span><span class='line'><span class="p">});</span>
 </span><span class='line'>
 </span><span class='line'><span class="nx">morph</span><span class="p">.</span><span class="nx">start</span><span class="p">({</span>
-</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="err">‘</span><span class="mi">100</span><span class="nx">px</span><span class="err">’</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">backgroundColor</span><span class="o">:</span> <span class="err">‘#</span><span class="nx">ff0</span><span class="err">’</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="s1">&#39;100px&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;#ff0&#39;</span>
 </span><span class='line'><span class="p">});</span>
 </span></code></pre></td></tr></table></div></figure>
 
