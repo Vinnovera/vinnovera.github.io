@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery vs Mootools - Vinnovera</title>
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<meta name="description" content="jQuery vs Mootools Tobias Bleckert | 2014-01-07 | Javascript, Mootools, jQuery “jQuery eller Mootools” är frågan många utvecklare ställer sig. Det &hellip;">
+		
+		
+		<link rel="canonical" href="">
+		<link href="/favicon.png" rel="icon">
+		<link href="/atom.xml" rel="alternate" title="Vinnovera" type="application/atom+xml">
+		
+			
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/vinnovera.css">
+		
+	</head>
+
+<body   >
+  <header id="header">
+	<h1>
+		
+		<a href="/">Vinnovera</a>
+		
+	</h1>
+	
+	
+	<nav>
+		<a href="/">Hem</a>
+		<a href="/projekt">Projekt</a>
+		<a href="/blogg">Blogg</a>
+		<a href="/#kontakt">Kontakt</a>
+		<a class="labs" href="http://labs.vinnovera.se">Labs</a>
+	</nav>
+	
+</header>
+
+<a href="#" class="to-top">Till toppen</a>
+  <section class="wrapper post">
+	<article>
+		<header>
+			<h1>jQuery vs Mootools</h1>
+			
+			
+			
+			<p class="meta">
+				<span>Tobias Bleckert</span>
+				| <time datetime="2014-01-07T14:41:39+01:00" pubdate><span class='year'>2014</span>-<span class='month'>01</span>-<span class='day'>07</span></time>
+
+				|
+				
+				<a class='category' href='/blogg/tagg/javascript/'>Javascript</a>, <a class='category' href='/blogg/tagg/mootools/'>Mootools</a>, <a class='category' href='/blogg/tagg/jquery/'>jQuery</a>
+				
+			</p>
+			
+		</header>
+		
+		<div class="fb-like" data-href="http://Vinnovera.github.io/blogg/2014/01/07/jquery-vs-mootools/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+		<div class="g-plusone" data-size="medium"></div>
+	
+		<div>
+			<p>“jQuery eller Mootools” är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.</p>
+
+<p>Innan jag börjar jämföra dessa vill jag presentera dem lite<!--more--> först. Jag vill även påpeka att jag har jobbat med dessa två bibliotek ett par år, och även om jag har en favorit hoppas jag att det inte lyser igenom för mycket.</p>
+
+<h2>Vad är jQuery</h2>
+
+<p>jQuery behöver knappast någon presentation, har du jobbat med gränssnittsutveckling känns det rätt rimligt att anta att du någon gång har kommit över jQuery.</p>
+
+<p>jQuery är kort sagt ett javascript bibliotek som riktar in sig på att förenkla ditt sätt att arbeta med HTML manipulering, effekter, event med mera genom ett enkelt API som fungerar genom olika webbläsare.</p>
+
+<p>Jag ska inte tråka ut dig med siffror, men antalet användare är med marginal högst på marknaden (bland javascript bibliotek) och webbplatser som Wordpress och Wikipedia använder sig utav jQuery, vilket de även stolt visar upp.</p>
+
+<h2>Mootools</h2>
+
+<p>Jag har fått den uppfattningen att många tror att Mootools är gammalt och uråldrat. Vad det beror på vet jag inte och det är inget jag tänker analysera heller.</p>
+
+<p>Sanningen är dock den att Mootools uppdateras relativt ofta, inte lika ofta som jQuery men det behöver inte vara något dåligt.</p>
+
+<p>Mootools är ett javascript bibliotek precis som jQuery men ändå inte. Mootools inriktar sig på “intermediate to advanced JavaScript developers”. Istället för att förändra sättet du skriver Javascript på försöker Mootools göra det kraftfullare med en mer objekt orienterad approach. Även här finns cross-browser stöd, HTML manipulering, events och så vidare.</p>
+
+<h2>Tekniska skillnader</h2>
+
+<p>Jag börjar med de direkt synliga skillnaderna mellan dessa två bibliotek: syntax.</p>
+
+<p>“jQuery has changed the way that millions of people write JavaScript” &ndash; skriver jQuery på deras webbplats.</p>
+
+<p>Mycket riktigt skiljer sig jQuery en del från “vanilla” JavaScript. Mootools å andra sidan har fokuserat mer på att göra JavaScript kraftfullare, hellre än att ändra sättet att skriva på. Vi tittar på lite exempel.</p>
+
+<h3>Skapa ett element</h3>
+
+<p>Vi börjar med enklast möjliga, skapa ett HTML element som ska ha klassen “new” som vi sedan ska lägga till i body taggen.</p>
+
+<h4>jQuery</h4>
+
+<p>Enligt dokumentationen föreslås <a href="http://api.jquery.com/append/">append</a> funktionen:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="err">‘</span><span class="nx">body</span><span class="err">’</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="err">‘</span><span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="err">”</span><span class="k">new</span><span class="err">”</span> <span class="o">/&gt;</span><span class="err">’</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Mootools</h4>
+
+<p>Mootools erbjuder en <a href="http://mootools.net/docs/core/Element/Element">Element</a> klass som vi använder för detta ändamål:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">newElement</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Element</span><span class="p">(</span><span class="err">‘</span><span class="nx">div</span><span class="err">’</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>  <span class="err">‘</span><span class="kr">class</span><span class="err">’</span><span class="o">:</span> <span class="err">‘</span><span class="k">new</span><span class="err">’</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">grab</span><span class="p">(</span><span class="nx">newElement</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Vanilla</h4>
+
+<p>För att tydligt se likheter och skillnader jämför vi med ren och fin JavaScript:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">newElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="err">‘</span><span class="nx">div</span><span class="err">’</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">newElement</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="err">‘</span><span class="k">new</span><span class="err">’</span><span class="p">;</span>
+</span><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newElement</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Summering</h4>
+
+<p>jQuery, med deras sätt att ändra på hur du skriver JavaScript, klarade uppgiften på 1 rad. I Mootools exemplet ser vi tydligt att det är mer objekt orienterat. Sista exemplet säger jag inte så mycket om, men som du ser är det väldigt likt Mootools exemplet.</p>
+
+<p>En sak du kanske märker om vi går tillbaka till Mootools exemplet är att jag även där (såsom i sista exemplet) använder <code>document.body</code> som alltså inte tillhör Mootools api:t. Mer om det längre ner.</p>
+
+<h3>Manipulera HTML dokument</h3>
+
+<p>Här finns en stor skillnad som är viktig att komma ihåg. Som nämnt tidigare förändrar jQuery sättet vi skriver på och detta blir väldigt tydligt här. För att kunna jobba med element i jQuery måste det vara ett <a href="http://api.jquery.com/jQuery/">jQuery objekt</a>. Mootools bygger ut JavaScript och kan därför användas rakt av.</p>
+
+<p>För att demonstrera detta ska vi hitta <strong>body</strong> taggen och lägga på en klass.</p>
+
+<h4>jQuery</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="err">‘</span><span class="nx">body</span><span class="err">’</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="err">‘</span><span class="nx">my</span><span class="o">-</span><span class="nx">body</span><span class="err">’</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Mootools</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="err">‘</span><span class="nx">my</span><span class="o">-</span><span class="nx">body</span><span class="err">’</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Summering</h4>
+
+<p>Det som händer när vi använder <code>$(‘body’)</code> är att jQuery processar strängen ‘body’, försöker klura ut om vi vill hitta något eller skapa något och, när den är klar, returnerar en array som innehåller <code>document.body</code>. Alltså det vi använde direkt i Mootools exemplet. Du kan nog räkna ut själv vad som är snabbast. För att kunna snabba upp jQuery lite kan vi ändra koden enligt följande:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="err">‘</span><span class="nx">my</span><span class="o">-</span><span class="nx">body</span><span class="err">’</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Det som händer nu är att jQuery vet vad vi vill och kan hitta elementet lite snabbare. Men som jag nämnde ovan, returneras en array, vilket gör att arrayen först loopas igenom och funktionen <a href="http://api.jquery.com/addClass/">addClass</a> läggs på varje item i arrayen, om det är ett element. Detta sker alltså även om vi från början visste att vi bara hade 1 element.</p>
+
+<h3>Ett sista exempel</h3>
+
+<p>Jag känner mig extra snäll idag, så jag bjuder på ett exempel till. Något som är kul och oftast används är <strong>effekter</strong>. Både jQuery och Mootools stödjer detta men skiljer sig väldigt mycket. I exemplena nedan ska vi få ett element att ändra bredd och färg med en övergång.</p>
+
+<h4>jQuery</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="err">‘#</span><span class="nx">coolBox</span><span class="err">’</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="err">‘</span><span class="mi">100</span><span class="nx">px</span><span class="err">’</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">backgroundColor</span><span class="o">:</span> <span class="err">‘#</span><span class="nx">ff0</span><span class="err">’</span>
+</span><span class='line'><span class="p">},</span> <span class="s1">&#39;short&#39;</span><span class="p">,</span> <span class="s1">&#39;linear&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Mootools</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">coolBox</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">id</span><span class="p">(</span><span class="err">&#39;</span><span class="nx">coolBox</span><span class="err">’</span><span class="p">),</span> <span class="nx">morph</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fx</span><span class="p">.</span><span class="nx">Morph</span><span class="p">(</span><span class="nx">coolBox</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">duration</span><span class="o">:</span> <span class="err">‘</span><span class="kr">short</span><span class="err">’</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">transition</span><span class="o">:</span> <span class="err">‘</span><span class="nx">linear</span><span class="err">’</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">morph</span><span class="p">.</span><span class="nx">start</span><span class="p">({</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="err">‘</span><span class="mi">100</span><span class="nx">px</span><span class="err">’</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">backgroundColor</span><span class="o">:</span> <span class="err">‘#</span><span class="nx">ff0</span><span class="err">’</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Summering</h4>
+
+<p>Ganska stora skillnader igen. jQuery klarar det på en rad och lite mer krävs för Mootools. Stora skillnaden är att Mootools erbjuder en <a href="http://mootools.net/docs/core/Fx/Fx.Morph">Morph</a> klass där du kan sätta en config (t.ex. duration och transition) och via funktionen <a href="http://mootools.net/docs/core/Fx/Fx.Morph#Fx-Morph:start">start</a> startar du animationen med dom css attributen du vill animera och configen som du satte tidigare används.</p>
+
+<h2>Inga mer exempel, vad gör vi nu?</h2>
+
+<p>Att välja mellan dessa två är inte lika enkelt som att välja mellan Coca Cola eller Pepsi. Oftast kommer du in i ett projekt eller jobbar i ett team, oftast kommer det också vara jQuery som gäller.</p>
+
+<p>Har man något att säga till om eller det är ditt eget projekt kan det vara värt att fundera på Mootools. Mootools blir väldigt kraftfullt i stora projekt, även i stora team. Med deras objekt orienterade sätt att jobba tvingas alla att skriva på samma sätt och jag personligen tycker att Mootools känns mer moget.</p>
+
+<p>Fördelen med jQuery är att det är snabbt att lära sig även om man inte talar JavaScript i sömnen. jQuery blir riktigt användbart för designers eller för utvecklare med liten till ingen förståelse för JavaScript.</p>
+
+<p>Självklart är det en stor fördel att känna till båda två. Det var allt, ut och lek nu!</p>
+
+		</div>
+	</article>
+	
+	
+	<div>
+		<div class="wrapper comments">
+			<h2>Kommentera</h2>
+			<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'vinnovera'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+		</div>
+	</div>
+	
+</section>
+
+<nav class="post-navigation">
+	
+	<span class="next">Nästa inlägg</span>
+	
+	<span class="current">3</span>
+	<span class="total">3</span>
+	
+		<a class="basic-alignment prev" href="/blogg/2013/12/13/bildmanipulering-i-javascript/" title="Föregående inlägg: Bildmanipulering i JavaScript">Föregående inlägg</a>
+	
+</nav>
+  <footer role="contentinfo"><span class="adr">
+	<span class="street-address">Västerlånggatan 27</span> – 
+	<span class="postal-code">111 29</span>
+	<span class="locality">Stockholm</span>
+</span>
+
+<span class="tel">08 - 5000 10 90</span>
+<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a></footer>
+  <script src="/javascripts/components/mootools.js"></script>
+<script src="/javascripts/vinnovera.js"></script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=160052377400785";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+  window.___gcfg = {lang: 'sv'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</body>
+</html>
