@@ -1,5 +1,12 @@
 # Vinnovera web
 
+## Setup
+
+1. Clone this repo `git clone https://github.com/Vinnovera/vinnovera.github.io.git vinnovera`
+2. Checkout the __source__ branch `git checkout source`
+3. Run setup `sh setup.sh`
+4. Now you are ready to create a post or update the theme
+
 ## Create a post
 
 1. Open the terminal
