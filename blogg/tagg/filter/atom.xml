@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Filter | Vinnovera]]></title>
   <link href="http://Vinnovera.github.io/blogg/tagg/filter/atom.xml" rel="self"/>
   <link href="http://Vinnovera.github.io/"/>
-  <updated>2014-01-07T15:29:19+01:00</updated>
+  <updated>2014-01-07T16:50:51+01:00</updated>
   <id>http://Vinnovera.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -24,13 +24,13 @@
 
 <p>I dagsläget är det vanligast att manipulera bilderna i t.ex. Photoshop innan de används på en hemsida, men det finns alternativ och ett av dom är Javascript.</p>
 
-<h4>1.1 Varför ska man använda filter?</h4>
+<h2>Varför ska man använda filter?</h2>
 
 <p>De som underhåller webbplatser är oftast inte själva utvecklare eller grafiker. Vill de placera samma bild på flera olika ställen men med olika filter behöver de inte själva editera bilden med hjälp av externa verktyg.</p>
 
 <p>Om en sida har flera olika instanser av samma bild med olika filter, t.ex. porträttbilder av Andy Warhol, behöver browsern endast hämta bilden en gång. Det kan leda till en snabbare site med färre anrop.</p>
 
-<h4>1.2 Kan man använda filter?</h4>
+<h2>Kan man använda filter?</h2>
 
 <p>Om browsern stödjer canvas-objektet kan man använda filter. Idag har följande browsers stöd för canvas:</p>
 
@@ -48,45 +48,46 @@
 
 <p>Prestandan för canvas skiljer sig åt på olika plattformar. Desktop har generellt bra prestanda men mobila browsers kan vara långsammare.</p>
 
-<h2>2. Hur fungerar filter?</h2>
+<h2>Hur fungerar filter?</h2>
 
 <p>Som nämnt tidigare handlar det om att räkna om värden i bildens pixeldata. För att kunna manipulera bilder behövs ett canvas att rita på och ett ImageData-objekt.</p>
 
 <p>Ett ImageData-objekt är en del av ett canvas, inte en bild eller en form. Objektet innehåller information för varje pixel inom den delen. Informationen består av fyra delar per pixel, RGBA:</p>
 
-<p>R &ndash; Röd        (0-255) <br />
-G &ndash; Grön       (0-255) <br />
+<p>R &ndash; Röd    (0-255) <br />
+G &ndash; Grön   (0-255) <br />
 B &ndash; Blå        (0-255) <br />
 A &ndash; Alpha   (0-255, 0 = helt osynlig &ndash; 255 = helt synlig)</p>
 
 <p>Är en pixel röd och synlig har den värdet (255,0,0,255) och det är de värden som lagras i data-egenskapen hos ImageData-objektet. Principen för att rita på ett canvas är samma för bilder som för andra objekt, därför beskrivs först hur man ritar en simpel form.</p>
 
-<h3>2.1 Form</h3>
+<h3>Form</h3>
 
-<p>Koden nedan skapar ett objekt som är 100 x 100 px, där varje pixel är blå, och placerar objektet på ett canvas 10px från kanterna.</p>
+<p>Koden nedan skapar ett objekt som är 100 x 100 px, där varje pixel är blå, och placerar objektet på ett canvas 10px från kanterna.
+```javascript
+var c = document.getElementById(&ldquo;myCanvas&rdquo;);
+var ctx = c.getContext(&ldquo;2d&rdquo;);</p>
 
-<pre><code>var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
+<p>//Skapa ett objekt att arbeta med
+var imageData = ctx.createImageData(100,100);</p>
 
-//Skapa ett objekt att arbeta med
-var imageData=ctx.createImageData(100,100);
+<p>//Loopa igenom pixlarna
+for (var i=0; i&lt;imageData.data.length; i+=4) {</p>
 
-//Loopa igenom pixlarna
-for (var i=0;i&lt;imageData.data.length;i+=4)
- {
-    imageData.data[i+0]=0;      //red
-        imageData.data[i+1]=0;      //green
-        imageData.data[i+2]=255;    //blue
-        imageData.data[i+3]=255;    //alpha
-}
-
-//Skriv ut objektet på canvaset
-ctx.putImageData(imageData,10,10);
+<pre><code>imageData.data[i+0] = 0;      //red
+imageData.data[i+1] = 0;      //green
+imageData.data[i+2] = 255;    //blue
+imageData.data[i+3] = 255;    //alpha
 </code></pre>
 
-<p>Resultat:<br /><img src="https://lh3.googleusercontent.com/eMaoG_Om5swKW1iyfLoZ36M_zw7LRuYk0A6oxVqzYV7JKblIScg7ILDyGDiVkGCNh3S-BOKydcM18rtiZBt4-9Xvvi5BiCMMpupJPnzMiNmvc2qFkxBVHYJJlA" alt="" /></p>
+<p>}</p>
 
-<h4>2.1.1 Funktioner</h4>
+<p>//Skriv ut objektet på canvaset
+ctx.putImageData(imageData,10,10);
+```
+Resultat:<br /><img src="https://lh3.googleusercontent.com/eMaoG_Om5swKW1iyfLoZ36M_zw7LRuYk0A6oxVqzYV7JKblIScg7ILDyGDiVkGCNh3S-BOKydcM18rtiZBt4-9Xvvi5BiCMMpupJPnzMiNmvc2qFkxBVHYJJlA" alt="" /></p>
+
+<h4>Funktioner</h4>
 
 <h5>createImageData():</h5>
 
@@ -94,10 +95,10 @@ ctx.putImageData(imageData,10,10);
 
 <p>Syntax:</p>
 
-<p>Det finns två versioner av metoden,</p>
-
-<pre><code>var imgData = ctx.createImageData(width,height)
-</code></pre>
+<p>Det finns två versioner av metoden,
+<code>javascript
+var imgData = ctx.createImageData(width,height);
+</code></p>
 
 <ul>
 <li>width = Bredden på det nya ImageData-objektet i px.</li>
@@ -105,8 +106,9 @@ ctx.putImageData(imageData,10,10);
 </ul>
 
 
-<pre><code>var imgData = ctx.createImageData(imageData)
-</code></pre>
+<p><code>javascript
+var imgData = ctx.createImageData(imageData)
+</code></p>
 
 <ul>
 <li>imageData = ett annat ImageData-objekt.</li>
@@ -117,107 +119,95 @@ ctx.putImageData(imageData,10,10);
 
 <p>Skriver ut pixeldatan från ett specificerat ImageData-objekt på canvaset.</p>
 
-<p>Syntax:</p>
+<p>Syntax:
+<code>javascript
+ctx.putImageData(imgData, x, y, dirtyX, dirtyY, dirtyWidth, dirtyHeight)
+</code>
+*   imgData = Det imageData-objekt som ska skrivas ut på canvaset.
+*   x = x-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.
+*   y = y-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.
+*   dirtyX = (optional) Det horizontella x-värdet att placera bilden på, angivet i px.
+*   dirtyY = (optional) Det horizontella y-värdet att placera bilden på, angivet i px.
+*   dirtyWidth = (optional) Bredden som ska användas för att rita ut bilden på canvaset.
+*   dirtyHeight =(optional) Höjden som ska användas för att rita ut bilden på canvaset.</p>
 
-<pre><code>ctx.putImageData(imgData, x, y, dirtyX, dirtyY, dirtyWidth, dirtyHeight)
-</code></pre>
-
-<ul>
-<li>imgData = Det imageData-objekt som ska skrivas ut på canvaset.</li>
-<li>x = x-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
-<li>y = y-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
-<li>dirtyX = (optional) Det horizontella x-värdet att placera bilden på, angivet i px.</li>
-<li>dirtyY = (optional) Det horizontella y-värdet att placera bilden på, angivet i px.</li>
-<li>dirtyWidth = (optional) Bredden som ska användas för att rita ut bilden på canvaset.</li>
-<li>dirtyHeight =(optional) Höjden som ska användas för att rita ut bilden på canvaset.</li>
-</ul>
-
-
-<h3>2.2 Bild</h3>
+<h3>Bild</h3>
 
 <p>För att manipulera en bild behövs två ytterligare funktioner, drawImage och getImageData. Funktionen createImageData används när man vill kopiera en existerande bild eller för att skapa en tom yta.</p>
 
-<p>Html:</p>
-
-<pre><code>&lt;img id="image" src="src.jpg" alt="" width="220" height="277"&gt;
-
+<p>Html:
+<code>html
+&lt;img id="image" src="src.jpg" alt="" width="220" height="277"&gt;
 &lt;canvas id="myCanvas" width="220" height="277"&gt;&lt;/canvas&gt;
-</code></pre>
+</code>
+Script:
+```javascript
+document.getElementById(&ldquo;image&rdquo;).onload = function(){</p>
 
-<p>Script:</p>
+<pre><code>var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
 
-<pre><code>document.getElementById("image").onload=function(){
-        var c=document.getElementById("myCanvas");
-    var ctx=c.getContext("2d");
+//Hämta bild
+var img = document.getElementById("image");
 
-    //Hämta bild
-    var img=document.getElementById("image");
+    //Rita ut bild på canvas
+ctx.drawImage(img,0,0);
 
-        //Rita ut bild på canvas
-    ctx.drawImage(img,0,0);
+//Hämta bilddata
+var imgData = ctx.getImageData(0,0,c.width,c.height);
 
-    //Hämta bilddata
-    var imgData=ctx.getImageData(0,0,c.width,c.height);
-
-    // invertera färgerna i bilden
-    for (var i=0;i&lt;imgData.data.length;i+=4) {
-            imgData.data[i]=255-imgData.data[i];
-            imgData.data[i+1]=255-imgData.data[i+1];
-            imgData.data[i+2]=255-imgData.data[i+2];
-            imgData.data[i+3]=255;
-    }
-
-    //Skriv ut den manipulerade bilden på canvaset
-    ctx.putImageData(imgData,0,0);
+// invertera färgerna i bilden
+for (var i=0; i&lt;imgData.data.length; i+=4) {
+    imgData.data[i]=255-imgData.data[i];
+    imgData.data[i+1]=255-imgData.data[i+1];
+    imgData.data[i+2]=255-imgData.data[i+2];
+    imgData.data[i+3]=255;
 }
+
+//Skriv ut den manipulerade bilden på canvaset
+ctx.putImageData(imgData,0,0);
 </code></pre>
 
-<p>Resultat:<br /><img src="https://lh6.googleusercontent.com/BZDl6xazl4AZS4_vbJJK2ZzWN_MVIR8KWM3F7dwCTHGiI0Ryk-Ejqr8_GlsFN0JZH8w_dj61KYmrRL4Ad5_niAfjblRPSGIiA4gVDstauj-G7bkLTt2Q2O31Pg" alt="" /></p>
+<p>}
+```
+Resultat:<br /><img src="https://lh6.googleusercontent.com/BZDl6xazl4AZS4_vbJJK2ZzWN_MVIR8KWM3F7dwCTHGiI0Ryk-Ejqr8_GlsFN0JZH8w_dj61KYmrRL4Ad5_niAfjblRPSGIiA4gVDstauj-G7bkLTt2Q2O31Pg" alt="" /></p>
 
-<h4>2.2.1 Funktioner</h4>
+<h4>Funktioner</h4>
 
 <h5>drawImage():</h5>
 
 <p>Ritar ut en bild, video eller ett canvas på ett canvas. Metoden kan även rita ut delar av en bild och ändra en bilds eller videos storlek.</p>
 
-<p>Syntax:</p>
-
-<pre><code>context.drawImage(img,x,y);
+<p>Syntax:
+<code>javascript
+context.drawImage(img,x,y);
 context.drawImage(img,x,y,width,height);
 ctx.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
-</code></pre>
-
-<ul>
-<li>img = Det element som ska användas &ndash; bild, canvas eller video.</li>
-<li>x = x-koordinaten där elementet ska placeras.</li>
-<li>y = y-koordinaten där elementet ska placeras.</li>
-<li>width = (optional)  vidden av elementet som ska användas (öka el. minska strl på elem).</li>
-<li>height = (optional) höjden av elementet som ska användas (öka el. minska strl på elem).</li>
-<li>sx = (optional) x-koordinaten där bilden ska börja skäras.</li>
-<li>sy = (optional) y-koordinaten där bilden ska börja skäras.</li>
-<li>swidth = (optional) vidden av den beskurna bilden.</li>
-<li>sheight = (optional) höjden av den beskurna bilden.</li>
-</ul>
-
+</code>
+*   img = Det element som ska användas &ndash; bild, canvas eller video.
+*   x = x-koordinaten där elementet ska placeras.
+*   y = y-koordinaten där elementet ska placeras.
+*   width = (optional)  vidden av elementet som ska användas (öka el. minska strl på elem).
+*   height = (optional) höjden av elementet som ska användas (öka el. minska strl på elem).
+*   sx = (optional) x-koordinaten där bilden ska börja skäras.
+*   sy = (optional) y-koordinaten där bilden ska börja skäras.
+*   swidth = (optional) vidden av den beskurna bilden.
+*   sheight = (optional) höjden av den beskurna bilden.</p>
 
 <h5>getImageData():</h5>
 
 <p>Retunerar ett ImageData-objekt som kopierat pixeldatan från en specificerad del av canvaset.</p>
 
-<p>Syntax:</p>
+<p>Syntax:
+<code>javascript
+ctx.getImageData(x, y, width, height)
+</code>
+*   x = x-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.
+*   y = y-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.
+*   width = Bredden på det du vill kopiera.
+*   height =Höjden på det du vill kopiera.</p>
 
-<pre><code>ctx.getImageData(x, y, width, height)
-</code></pre>
-
-<ul>
-<li>x = x-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
-<li>y = y-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
-<li>width = Bredden på det du vill kopiera.</li>
-<li>height =Höjden på det du vill kopiera.</li>
-</ul>
-
-
-<h2>3. Slutsatser</h2>
+<h2>Slutsatser</h2>
 
 <p>När jag jämförde två sidor, en där jag hade två bilder och en där jag hade en bild som jag skrev ut två gånger med hjälp av filter-funktioner, fick jag följande resultat:</p>
 
@@ -259,7 +249,7 @@ ctx.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
 
 <p>Ett ytterligare alternativ som är värt att nämna är web-kit filter. Varför jag inte anser att det är användbart än är att två av de störta webbläsarna, Firefox och Internet Explorer, inte har stöd för det. Skulle de utveckla stöd kan det bli ett starkt alternativ.</p>
 
-<h3>3.1 Bibliotek</h3>
+<h3>Bibliotek</h3>
 
 <p>Jag tror inte att det kommer att vara tidseffektivt att skriva ett eget Javascript-plugin. Uträkningarna är komplexa och det krävs väldigt noga testning för att inte slöa ner webbsidor. Nedan är några av de bibliotek som jag hittat som verkar ha potential.</p>
 
