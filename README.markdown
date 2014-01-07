@@ -1,13 +1,14 @@
 # Vinnovera web
 
+__IMPORTANT__ always use sh deploy.sh instead of rake deploy when deploying.
+
 ## Setup
 
 1. Clone this repo `git clone https://github.com/Vinnovera/vinnovera.github.io.git vinnovera`
 2. Checkout the __source__ branch `git checkout source`
 3. Installera bundler `gem install bundler`
 4. Installera dependencies `bundle install`
-5. Run setup `sh setup.sh`
-6. Now you are ready to create a post or update the theme
+5. Now you are ready to create a post or update the theme
 
 ## Create a post
 
