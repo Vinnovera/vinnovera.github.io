@@ -108,18 +108,21 @@ body
 		&.about
 			background: $blue
 			color: white
-			
-			> img
-				display: block
-				margin: 0 auto 50px
 				
 			> .wrapper
 				max-width: 750px
 				margin: 0 auto
-				padding: 0 20px
+				padding: 0 40px
+				
+				> img
+					display: block
+					margin: 0 auto 50px
 				
 				> .hisspitch
 					font: 300 36px/1.1 $brandFontStack
+					
+					+bp(masta-killa)
+						font-size: 24px
 					
 					strong
 						font-weight: 500
@@ -128,6 +131,7 @@ body
 					font-size: 18px
 					text-align: center
 					margin-top: 50px
+					line-height: 1.5
 					
 					a
 						color: white
@@ -147,18 +151,40 @@ body
 		
 			> .featured
 				border-bottom: 1px solid #f5f5f5
+				overflow: hidden
+				
+				.wrapper
+					overflow: hidden
+					position: relative
+					min-height: 322px
 				
 				.img
-					float: left
+					position: absolute
+					bottom: 0
+					left: 0
 					width: 62%
 					padding-right: 40px
 					box-sizing: border-box
 					
+					+bp(ol-dirty-bastard)
+						position: static
+						width: 100%
+						padding: 0
+						text-align: center
+					
 					> img
 						display: block
+						margin: 0 auto
 						
 				.content
 					padding-top: 40px
+					float: right
+					width: 38%
+					
+					+bp(ol-dirty-bastard)
+						float: none
+						width: 100%
+						margin-bottom: 20px
 					
 			.category
 				color: #666
@@ -169,12 +195,20 @@ body
 				@extend %clearfix
 				margin-left: -30px
 				margin-top: 40px
+				overflow: hidden
 				
 				> article
 					width: 33.333%
 					padding-left: 30px
 					box-sizing: border-box
 					float: left
+					
+					+bp(ol-dirty-bastard)
+						width: 50%
+						margin-bottom: 40px
+						
+					+bp(masta-killa)
+						width: 100%
 					
 					.category
 						padding-top: 20px
@@ -257,6 +291,9 @@ body
 					font-size: 16px
 					vertical-align:  top
 					
+					+bp(ol-dirty-bastard)
+						width: 100%
+					
 					> .inner
 						padding-bottom: 20px
 						border-bottom: 1px solid rgba(255, 255, 255, 0.4)
@@ -296,6 +333,15 @@ body
 					box-sizing: border-box
 					text-align: center
 					font-size: 12px
+					
+					+bp(gza)
+						width: 25%
+						
+					+bp(ol-dirty-bastard)
+						width: 33.333%
+						
+					+bp(masta-killa)
+						width: 50%
 					
 					> img
 						border-radius: 50%
@@ -475,6 +521,8 @@ body
 	margin: 0 auto
 	@extend %clearfix
 	position: relative
+	padding-left: 40px
+	padding-right: 40px
 	
 .fetch
 	text-align: center

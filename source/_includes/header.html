@@ -1,9 +1,9 @@
 <header id="header">
 	<h1>
-		{% if page %}
-		<a href="/">Vinnovera</a>
-		{% else %}
+		{% if page.index %}
 		Vinnovera
+		{% else %}
+		<a href="/">Vinnovera</a>
 		{% endif %}
 	</h1>
 	
@@ -12,7 +12,7 @@
 		<a href="#projekt">Projekt</a>
 		<a href="#blogg">Blogg</a>
 		<a href="#kontakt">Kontakt</a>
-		<a class="labs" href="http://labs.vinnovera.se">Labs</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
 	</nav>
 	{% else %}
 	<nav>
@@ -20,7 +20,7 @@
 		<a href="/projekt">Projekt</a>
 		<a href="/blogg">Blogg</a>
 		<a href="/#kontakt">Kontakt</a>
-		<a class="labs" href="http://labs.vinnovera.se">Labs</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
 	</nav>
 	{% endif %}
 </header>
