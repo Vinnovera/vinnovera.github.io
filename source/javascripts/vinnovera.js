@@ -4,12 +4,17 @@
 	
 	window.addEvent('domready', function () {
 	
-		/*var header = document.id('header'),
-		    smallHeader = header.clone().addClass('small');
+		var scroll, scrollUp = document.id('scrollUp');
+		
+		window.addEvent('scroll', function (e) {
+			scroll = document.documentElement.scrollTop || document.body.scrollTop;
 			
-			console.log(header);
-			
-		header.grab(smallHeader, 'after');*/
+			if (scroll > 200) {
+				scrollUp.addClass('visible');
+			} else {
+				scrollUp.removeClass('visible');
+			}
+		});
 		
 	});
 	
