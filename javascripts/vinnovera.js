@@ -4,12 +4,37 @@
 	
 	window.addEvent('domready', function () {
 	
-		/*var header = document.id('header'),
-		    smallHeader = header.clone().addClass('small');
+		var scroll, scrollUp = document.id('scrollUp'), bodyTween;
+		
+		// Body animation
+		bodyTween = new Fx.Scroll(window);
+		
+		// Show to top button
+		window.addEvent('scroll', function (e) {
+			scroll = document.documentElement.scrollTop || document.body.scrollTop;
 			
-			console.log(header);
+			if (scroll > 200) {
+				scrollUp.addClass('visible');
+			} else {
+				scrollUp.removeClass('visible');
+			}
+		});
+		
+		// Scroll to top
+		scrollUp.addEvent('click', function (e) {
+			e.stop();
 			
-		header.grab(smallHeader, 'after');*/
+			bodyTween.start(0, 0);
+		});
+		
+		document.body.addEvent('click:relay(nav > a)', function (e) {
+			e.stop();
+			
+			var hash = this.hash.substr(1),
+			    top  = document.id(hash).getPosition().y;
+			
+			bodyTween.start(0, top);
+		});
 		
 	});
 	
