@@ -27,7 +27,7 @@
 			bodyTween.start(0, 0);
 		});
 		
-		document.body.addEvent('click:relay(nav > a)', function (e) {
+		document.body.addEvent('click:relay(.startpage > a)', function (e) {
 			e.stop();
 			
 			var hash = this.hash.substr(1),
