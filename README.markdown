@@ -27,13 +27,8 @@ If you are lazy, you can skip step 6-10 and run `sh publish.sh`
 
 ## Update theme
 
-The theme is in its own github repo located at: https://github.com/Vinnovera/theme. Everytime you make changes there, you need to update the site with the following steps:
-
-1. Pull the theme with `git submodule foreach git pull origin master`
-2. Reinstall the theme with `rake install['vinnoveraTheme']` and say yes!
-3. Publish the changes (`rake generate && rake deploy`) or preview (`rake preview`)
-
-If you are lazy you can just run `sh preview_theme.sh` or `sh deploy_theme.sh`.
+Theme files is in the __source__ directory and styles in the __sass__ directory. Octopress will autogenerate everything when you save a file in those two directories if you have started previewing (rake preview).
+Don't mind the __themes__ directory and __never__ run `rake install[...]`
 
 ## Preview
 
