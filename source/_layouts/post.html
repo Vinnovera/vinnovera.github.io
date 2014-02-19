@@ -45,8 +45,6 @@ single: true
 	{% else %}
 	<span class="next">Nästa inlägg</span>
 	{% endif %}
-	<span class="current">{{ site.posts | size }}</span>
-	<span class="total">{{ site.posts | size }}</span>
 	{% if page.previous.url %}
 		<a class="basic-alignment prev" href="{{page.previous.url}}" title="Föregående inlägg: {{page.previous.title}}">Föregående inlägg</a>
 	{% else %}
