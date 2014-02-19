@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Stiftelsen för internetinfrastruktur"
+title: ".SE"
 date: 2013-12-13 15:51
 comments: false
 sharing: true
