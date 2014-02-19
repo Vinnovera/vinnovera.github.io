@@ -4,11 +4,11 @@ single: true
 ---
 
 <nav class="post-navigation">
-	{% if page.next.url %}
-		<a class="basic-alignment next" href="{{page.next.url}}" title="Nästa inlägg: {{page.next.title}}">Nästa</a>
-	{% endif %}
 	{% if page.previous.url %}
-		<a class="basic-alignment prev" href="{{page.previous.url}}" title="Föregående inlägg: {{page.previous.title}}">Föregående</a>
+		<a class="basic-alignment next" href="{{page.previous.url}}" title="Nästa inlägg: {{page.previous.title}}">Nästa</a>
+	{% endif %}
+	{% if page.next.url %}
+		<a class="basic-alignment prev" href="{{page.next.url}}" title="Föregående inlägg: {{page.next.title}}">Föregående</a>
 	{% endif %}
 </nav>
 
