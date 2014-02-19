@@ -36,6 +36,18 @@
 			bodyTween.start(0, top);
 		});
 		
+		document.body.addEvent('click:relay(#toggle-menu)', function (e) {
+			e.stop();
+			
+			var open = this.hasClass('open');
+			
+			if(open) {
+				this.removeClass('open');
+			} else {
+				this.addClass('open');
+			}
+
+		});
 	});
 	
 }();
