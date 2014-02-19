@@ -1,23 +1,25 @@
 .post-navigation
-	position: fixed
-	top: 50%
-	right: 0
-	margin-top: -65px
-	width: 40px
-	height: 130px
-	background: black
-	color: white
-	text-align: center
+	width: 100%
+	position: relative
+	z-index: 105
 	
 	+bp(ol-dirty-bastard)
 		display: none
 	
 	> a, > span
-		display: block
+		display: inline-block
 		font-size: 18px
+		+box-sizing(border-box)
+		letter-spacing: normal
+		position: fixed
+		top: 40%
+		display: inline-block
+		width: 150px
+		color: white
+		+transition(margin 0.2s)
 		
-	> span
-		line-height: 36px
+		&:hover
+			margin: 0
 		
 	> .total
 		color: #999
@@ -25,16 +27,21 @@
 		display: inline-block
 		
 	> .next
-		background: inline-image('next_arrow.png') center center no-repeat
-		width: 100%
-		height: 65px
-		text-indent: -9999px
+		background: #000 inline-image('next_arrow.png') left center no-repeat
+		height: 50px
+		right: 0
+		margin-right: -116px
+		line-height: 50px
+		padding-left: 37px 
 		
 	> .prev
-		background: inline-image('prev_arrow.png') center center no-repeat
-		width: 100%
-		height: 65px
-		text-indent: -9999px
+		background: #000 inline-image('prev_arrow.png') right center no-repeat
+		height: 50px
+		line-height: 50px
+		margin-left: -116px
+		left: 0
+		padding-right: 37px 
+		text-align: right
 		
 	> span.next, > span.prev
 		opacity: 0.5

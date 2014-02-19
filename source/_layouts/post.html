@@ -3,6 +3,15 @@ layout: default
 single: true
 ---
 
+<nav class="post-navigation">
+	{% if page.next.url %}
+		<a class="basic-alignment next" href="{{page.next.url}}" title="Nästa inlägg: {{page.next.title}}">Nästa</a>
+	{% endif %}
+	{% if page.previous.url %}
+		<a class="basic-alignment prev" href="{{page.previous.url}}" title="Föregående inlägg: {{page.previous.title}}">Föregående</a>
+	{% endif %}
+</nav>
+
 <section class="wrapper post">
 	<article>
 		<header>
@@ -38,16 +47,3 @@ single: true
 	</div>
 	{% endif %}
 </section>
-
-<nav class="post-navigation">
-	{% if page.next.url %}
-		<a class="basic-alignment next" href="{{page.next.url}}" title="Nästa inlägg: {{page.next.title}}">Nästa inlägg</a>
-	{% else %}
-	<span class="next">Nästa inlägg</span>
-	{% endif %}
-	{% if page.previous.url %}
-		<a class="basic-alignment prev" href="{{page.previous.url}}" title="Föregående inlägg: {{page.previous.title}}">Föregående inlägg</a>
-	{% else %}
-	<span class="prev">Föregående inlägg</span>
-	{% endif %}
-</nav>
