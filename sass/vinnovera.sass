@@ -27,7 +27,7 @@ body
 		text-indent: -9999px
 		background-image: url('/images/logoSymbolBlack.png')
 		position: fixed
-		top:  10px
+		top:  -60px
 		left: 10px
 		z-index:  5
 		opacity: 0
@@ -35,6 +35,7 @@ body
 		
 		&.visible
 			opacity: 1
+			top: 10px
 			
 			+bp(slick-rick)
 				opacity: 0
@@ -476,6 +477,12 @@ body
 			h3, h4
 				margin-bottom: -15px
 			
+			a
+				max-width: 100%
+				overflow: hidden
+				display: inline-block
+				text-overflow: ellipsis
+				
 			.comments
 				max-width: 600px
 				margin-top: 80px
