@@ -49,6 +49,42 @@ body
 			
 			+bp(masta-killa)
 				display: block
+				text-align: right
+				margin: 0
+		> span
+			+bp(masta-killa)
+				border-bottom: 1px solid #ccc
+				padding-bottom: 20px
+				margin-top: 20px
+				position: relative
+			
+			&:before
+				+bp(masta-killa)
+					content: "Telefon"
+					position: absolute
+					left: 0
+					top: 0
+					color: #666
+					
+			&:first-child
+				&:before
+					+bp(masta-killa)
+						content: "Adress"
+		> a
+			+bp(masta-killa)
+				margin-top: 20px
+				position: relative
+				
+				&:before
+					content: "E-post"
+					position: absolute
+					left: 0
+					top: 0
+					color: #666
+				
+		+bp(masta-killa)
+			padding: 0px 20px 40px
+			border-top: 1px solid #ccc
 	
 	> header
 		height: 80px
@@ -375,6 +411,9 @@ body
 		&.contact
 			height: 380px
 			position: relative
+			
+			+bp(masta-killa)
+				display: none
 			
 			> a
 				display: block
