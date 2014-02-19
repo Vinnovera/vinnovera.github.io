@@ -2,30 +2,38 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://Vinnovera.github.io/blogg/2013/12/12/unit-testing/</loc>
-        <lastmod>2014-01-07T14:57:44+01:00</lastmod>
+        <lastmod>2014-02-19T13:18:59+01:00</lastmod>
     </url>
     <url>
         <loc>http://Vinnovera.github.io/blogg/2013/12/13/bildmanipulering-i-javascript/</loc>
-        <lastmod>2014-01-07T16:50:36+01:00</lastmod>
+        <lastmod>2014-02-19T13:18:59+01:00</lastmod>
     </url>
     <url>
         <loc>http://Vinnovera.github.io/blogg/2014/01/07/jquery-vs-mootools/</loc>
-        <lastmod>2014-01-07T14:57:44+01:00</lastmod>
+        <lastmod>2014-02-19T13:18:59+01:00</lastmod>
     </url>
     <url>
         <loc>http://Vinnovera.github.io/blogg/</loc>
-        <lastmod>2014-01-07T16:50:36+01:00</lastmod>
+        <lastmod>2014-02-10T15:23:59+01:00</lastmod>
     </url>
     <url>
         <loc>http://Vinnovera.github.io/</loc>
-        <lastmod>2014-01-29T14:36:29+01:00</lastmod>
+        <lastmod>2014-02-19T13:28:39+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://Vinnovera.github.io/projekt/iis/</loc>
+        <lastmod>2014-02-19T14:07:02+01:00</lastmod>
     </url>
     <url>
         <loc>http://Vinnovera.github.io/projekt/</loc>
-        <lastmod>2014-01-07T16:50:36+01:00</lastmod>
+        <lastmod>2014-02-10T15:23:59+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://Vinnovera.github.io/projekt/photowall/</loc>
+        <lastmod>2014-02-19T14:07:02+01:00</lastmod>
     </url>
     <url>
         <loc>http://Vinnovera.github.io/projekt/picard/</loc>
-        <lastmod>2014-01-07T14:57:44+01:00</lastmod>
+        <lastmod>2014-02-19T14:07:02+01:00</lastmod>
     </url>
 </urlset>

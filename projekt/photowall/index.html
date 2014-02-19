@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Photowall - Vinnovera</title>
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<meta name="description" content="Photowall Tillsammans med talangfulla fotografer och designers från hela världen skapar Photowall inspirerande och unik väggdekor. De erbjuder &hellip;">
+		
+		
+		<link rel="canonical" href="">
+		<link href="/favicon.png" rel="icon">
+		<link href="/atom.xml" rel="alternate" title="Vinnovera" type="application/atom+xml">
+		
+			
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/vinnovera.css">
+		
+	</head>
+
+<body   >
+  <header id="header">
+	<h1>
+		
+		<a href="/">Vinnovera</a>
+		
+	</h1>
+	
+	<a href="#" class="toggle-menu" id="toggle-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<nav>
+		<a href="/">Hem</a>
+		<a href="/#projekt">Projekt</a>
+		<a href="/#blogg">Blogg</a>
+		<a href="/#kontakt">Kontakt</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
+	</nav>
+</header>
+
+<a href="#" class="to-top" id="scrollUp">Till toppen</a>
+  <section class="wrapper post">
+	<article>
+		<header>
+			<h1>Photowall</h1>
+		</header>
+	
+		<div>
+			<p><img src="/images/content/projects/photowall/screenshot.jpg" alt="Skärmdump photowall.se" /></p>
+
+<p>Tillsammans med talangfulla fotografer och designers från hela världen skapar Photowall inspirerande och unik väggdekor. De erbjuder skräddarsydda tapeter och canvastavlor från ett stort utbud och möjligheten att skapa sin egen speciella miljö.</p>
+
+<p>De arbetar också med licensierade varumärken och är officiell partner för Disney, Star Wars, Modesty Blaise, Moomin Characters mfl.</p>
+
+<h2>Vinnoveras roll</h2>
+
+<p>Vår roll i projektet var projektledning, kravställning, interaktionsdesign och front-end-utveckling. Vi samarbetade med Kristoffer Gustafsson på Parsley.se som gjorde interaktion/design och LarvIT som kodade back-end tillsammans med Photowalls in-house programmerare.</p>
+
+<p><img src="/images/content/projects/photowall/responsive.jpg" alt="Skärmdumpar photowall.se" /></p>
+
+<h2>Teknik</h2>
+
+<h3>Frontend</h3>
+
+<p>Frontend
+Mycket av utmaningen låg i en kodbas som hanterar olika typer av enheter, skärmstorlekar och interaktionssätt. Eftersom motiven storleksanpassas i webbläsaren av kunden, behövde gränssnittet fungera både på en dator med mus och tangentbord och en mobiltelefon med pekskärm.</p>
+
+<p><img src="/images/content/projects/photowall/crop1.jpg" alt="Beskräning på desktop" />
+<em>Bilden beskärs direkt på sidan på större skärmupplösningar</em></p>
+
+<p><img src="/images/content/projects/photowall/crop2.jpg" alt="Beskräning på mobil" />
+<em>Bilen beskärs i fullskärmsläge på mindre skärmar. T.ex. mobiltelefoner</em></p>
+
+<h4>Tekniker som använts</h4>
+
+<ul>
+<li>CSS media queries (responsive)</li>
+<li>InuitCSS &ndash; <a href="http://inuitcss.com/">http://inuitcss.com/</a></li>
+<li>Sass CSS &ndash; <a href="http://sass-lang.com/">http://sass-lang.com/</a></li>
+<li>Compass &ndash; <a href="http://compass-style.org/">http://compass-style.org/</a></li>
+<li>Modernizr &ndash; <a href="http://modernizr.com/">http://modernizr.com/</a></li>
+<li>iScroll &ndash; <a href="http://cubiq.org/iscroll-4">http://cubiq.org/iscroll-4</a></li>
+<li>J.Resig JavaScript Micro-Templating &ndash; <a href="http://ejohn.org/blog/javascript-micro-templating/">http://ejohn.org/blog/javascript-micro-templating/</a></li>
+<li>jQuery &ndash; <a href="http://jquery.com/">http://jquery.com/</a></li>
+</ul>
+
+
+<h3>Frontend-optimeringar</h3>
+
+<p>Med ett stigande besökarantal på enheter med sämre internetuppkopplingar behövdes ett mer optimerat frontend. Vinnovera hjälpte Photowall optimera sajten med en cachelösning byggd på Varnish. Det lades även stort fokus på att få ner storleken och antalet resurser som laddas in när sajten besöks.</p>
+
+<h4>Tekniker som använts</h4>
+
+<ul>
+<li>Varnish cache &ndash; <a href="https://www.varnish-software.com/">https://www.varnish-software.com/</a></li>
+<li>Minifiering och komprimering av resurser</li>
+</ul>
+
+
+<h3>Continuous integration</h3>
+
+<p>För att hålla en hög utvecklingstakt, hög kvalité på kodbasen och med ett utvecklarteam som är utspritt över sverige och ukraina, hade Vinnovera i uppgift att sätta upp en CI-lösning baserad på Jenkins.</p>
+
+<p><img src="/images/content/projects/photowall/jenkins.jpg" alt="Jenkins" /></p>
+
+<h4>Tekniker som använts</h4>
+
+<ul>
+<li>Jenkins &ndash; <a href="http://jenkins-ci.org/">http://jenkins-ci.org/</a></li>
+<li>GitHub &ndash; <a href="https://github.com/">https://github.com/</a></li>
+<li>PHPUnit &ndash; <a href="http://phpunit.de/">http://phpunit.de/</a></li>
+<li>QUnit &ndash; <a href="http://qunitjs.com/">http://qunitjs.com/</a></li>
+<li>Selenium &ndash; <a href="http://www.seleniumhq.org/">http://www.seleniumhq.org/</a></li>
+</ul>
+
+
+<h3>Selenium-tester</h3>
+
+<p>Med seleniumtester testas sajten regelbundet för att försäkra att bl.a. köpflödet fungerar i en mängd olika webbläsare. Seleniumtesterna körs i molntjänsten SauceLabs.</p>
+
+<p><img src="/images/content/projects/photowall/saucelabs.jpg" alt="SauceLabs" /></p>
+
+<h4>Tekniker som använts</h4>
+
+<ul>
+<li>NodeJS &ndash; <a href="http://nodejs.org/">http://nodejs.org/</a></li>
+<li>Node Webdriver &ndash; <a href="https://github.com/admc/wd">https://github.com/admc/wd</a></li>
+<li>Selenium &ndash; <a href="http://www.seleniumhq.org/">http://www.seleniumhq.org/</a></li>
+<li>SauceLabs &ndash; <a href="http://saucelabs.com/">http://saucelabs.com/</a></li>
+</ul>
+
+
+		</div>
+	</article>
+</section>
+
+
+  <footer role="contentinfo"><span class="adr">
+	<span class="street-address">Västerlånggatan 27</span> – 
+	<span class="postal-code">111 29</span>
+	<span class="locality">Stockholm</span>
+</span>
+
+<span class="tel">08 - 5000 10 90</span>
+<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a></footer>
+  <script src="/javascripts/components/mootools.js"></script>
+<script src="/javascripts/components/mootools-more.js"></script>
+<script src="/javascripts/vinnovera.js"></script>
+</body>
+</html>
