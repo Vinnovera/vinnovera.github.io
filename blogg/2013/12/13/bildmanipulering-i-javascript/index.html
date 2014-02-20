@@ -343,34 +343,34 @@ A &ndash; Alpha   (0-255, 0 = helt osynlig &ndash; 255 = helt synlig)</p>
 
 <p>När jag jämförde två sidor, en där jag hade två bilder och en där jag hade en bild som jag skrev ut två gånger med hjälp av filter-funktioner, fick jag följande resultat:</p>
 
-<table>
+<table class="airy">
 <tr>
 <td></td>
-<td><p>Javascript&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
-<td><p>två bilder</p></td>
+<td>Javascript</td>
+<td>två bilder</td>
 </tr>
 <tr>
-<td><p>Antal requests</p></td>
+<td>Antal requests</td>
 <td>2</td>
 <td>3</td>
 </tr>
 <tr>
-<td><p>kb överfört</p></td>
+<td>kb överfört</td>
 <td>149</td>
 <td>285</td>
 </tr>
 <tr>
-<td><p>paint (ms)</p></td>
+<td>paint (ms)</td>
 <td>3.0</td>
 <td>39.2</td>
 </tr>
 <tr>
-<td><p>hämta bild/bilder (ms)&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+<td>hämta bild/bilder (ms)</td>
 <td>23</td>
 <td>150</td>
 </tr>
 <tr>
-<td><p>finished loading (ms)</p></td>
+<td>finished loading (ms)</td>
 <td>117</td>
 <td>198</td>
 </tr>
@@ -388,24 +388,26 @@ A &ndash; Alpha   (0-255, 0 = helt osynlig &ndash; 255 = helt synlig)</p>
 <p>Det bibliotek som verkar användas mest för tillfället är fabricjs. Det kan bero på att det innehåller väldigt mycket mer än bara filter &ndash; t.ex. former, drag-n-drop, resize med flera. Jag har även tittat på följande:</p>
 
 <ul>
-<li>Filterr2 <a href="https://github.com/alexmic/filtrr/tree/master/filtrr2">https://github.com/alexmic/filtrr/tree/master/filtrr2</a></li>
-<li>Open source som inte känns helt färdigutvecklat. Senaste buggfixen var fem månader sedan.*   Pixastic <a href="http://www.pixastic.com/lib/docs/">http://www.pixastic.com/lib/docs</a>/</li>
-<li>Ett gratis bibliotek där du själv kan välja vilka komponenter du vill ladda ner.*   glfx.js <a href="https://github.com/evanw/glfx.js">https://github.com/evanw/glfx.js</a></li>
-<li>Ett bibliotek som använder WebGL. Stödjs endast av de senaste browsers.*   camanjs <a href="http://camanjs.com/">http://camanjs.com/</a></li>
+<li>Filterr2 <a href="https://github.com/alexmic/filtrr/tree/master/filtrr2">https://github.com/alexmic/filtrr/tree/master/filtrr2</a><br />
+Open source som inte känns helt färdigutvecklat. Senaste buggfixen var fem månader sedan.</li>
+<li>Pixastic <a href="http://www.pixastic.com/lib/docs/">http://www.pixastic.com/lib/docs</a><br />
+Ett gratis bibliotek där du själv kan välja vilka komponenter du vill ladda ner.</li>
+<li>glfx.js <a href="https://github.com/evanw/glfx.js">https://github.com/evanw/glfx.js</a><br />
+Ett bibliotek som använder WebGL. Stödjs endast av de senaste browsers.</li>
+<li>camanjs <a href="http://camanjs.com/">http://camanjs.com/</a><br />
+Jag tror att camanjs har störts potential att vara användbart. Biblioteket har noga utförd dokumentation, uppdateras kontinuerligt, uppmanar till tester och är helt gratis.</li>
 </ul>
 
 
-<p>Jag tror att camanjs har störts potential att vara användbart. Biblioteket har noga utförd dokumentation, uppdateras kontinuerligt, uppmanar till tester och är helt gratis.</p>
-
 <h2>Referenser</h2>
 
-<p><a href="http://www.khronos.org/registry/typedarray/specs/latest/#7.1">http://www.khronos.org/registry/typedarray/specs/latest/#7.1</a></p>
+<ul>
+<li><a href="http://www.khronos.org/registry/typedarray/specs/latest/#7.1">http://www.khronos.org/registry/typedarray/specs/latest/#7.1</a></li>
+<li><a href="http://www.w3schools.com/tags/ref_canvas.asp">http://www.w3schools.com/tags/ref_canvas.asp</a></li>
+<li><a href="http://html5doctor.com/video-canvas-magic/">http://html5doctor.com/video-canvas-magic/</a></li>
+<li><a href="http://caniuse.com/css-filters">http://caniuse.com/css-filters</a></li>
+</ul>
 
-<p><a href="http://www.w3schools.com/tags/ref_canvas.asp">http://www.w3schools.com/tags/ref_canvas.asp</a></p>
-
-<p><a href="http://html5doctor.com/video-canvas-magic/">http://html5doctor.com/video-canvas-magic/</a></p>
-
-<p><a href="http://caniuse.com/css-filters">http://caniuse.com/css-filters</a></p>
 
 <p>Codepen :
 (Egna bilder behövs för att testa skripten) <br />
