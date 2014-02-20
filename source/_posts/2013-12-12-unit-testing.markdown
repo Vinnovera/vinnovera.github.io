@@ -95,8 +95,8 @@ I exemplet ovan har jag själva funktionerna jag vill testa i main.js, och teste
 
 ```javascript
 test("multiLineText-test", function() {
-       deepEqual(multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
-   });
+	deepEqual(multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
+});
 ```
 Med QUnit skapas ett test genom att köra "test"-funktionen. Till den skickar man in en beskrivning av testet ("multiLineText-test") samt en funktion. I den här funktionen kan du köra kod, samt framförallt göra s.k. "assertions". QUnit har i huvudsak två typer av assertions, "ok" och "equal". Till "ok" behöver man bara skicka in ett argument, och om argumentet är "true" är testet godkänt. Till "equal" skickar man in två argument, och om de stämmer överens är testet godkänt. I exemplet ovan används en variant på equal som används för att jämföra t.ex. objekt och listor.
 
@@ -104,12 +104,12 @@ Här är ett exempel på ett test av DOM-manipulation
 
 ```javascript
 test('DOM manipulation', function(){
-   	var items = ['Item 1', 'Second item', 'Item the 3rd', 'Fourth one'];
-   	for(var i=0;i<items.length;i++){
-   		$('#myList').append('<li>'+items[i]+'</li>');
-   	}
-   	equal($('#myList').children().length, 4);
-   });
+	var items = ['Item 1', 'Second item', 'Item the 3rd', 'Fourth one'];
+	for(var i=0;i<items.length;i++){
+		$('#myList').append('<li>'+items[i]+'</li>');
+	}
+	equal($('#myList').children().length, 4);
+});
 ```
 ### Mocha
 Mocha är klart mer omfattande än QUnit, men har också fler användningsområden. En av de viktigare skillnaderna är att Mocha kan testa javascript utanför en browser, t.ex. i en Node-applikation. Du installerar Mocha via npm, och kör Mocha via terminalen.
@@ -117,21 +117,21 @@ Mocha är klart mer omfattande än QUnit, men har också fler användningsområd
 I min app.js har jag samma funktion som ovan ("multiLineText", fast tillgängliggjord i exports):
 
 ```javascript
-  exports.multiLineText = function(myString, maxWidth){
-     ...
-  }
+exports.multiLineText = function(myString, maxWidth){
+	...
+}
 ```
 I roten på projektet har jag även skapat en folder som heter "test", vilket är den folder Mocha letar efter tester i. Här har jag en fil som heter t.ex. "mytest.js", som innehåller själva testet:
 
 ```javascript
-   var assert = require("assert");
-   var app = require("../app");
+var assert = require("assert");
+var app = require("../app");
 
-   describe("multiLineText", function() {
-   	it("should return correct array", function() {
-     		assert.deepEqual(app.multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
-   	});
-   });
+describe("multiLineText", function() {
+	it("should return correct array", function() {
+		assert.deepEqual(app.multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
+	});
+});
 ```
 Sedan kör jag Mocha via terminalen via ett enkelt kommando:
 
@@ -156,129 +156,129 @@ Det första testet vi skriver är därför ett test som kontrollerar vår uträk
 
 ```javascript
 test('Get rows, columns and figurenumber', function(){
-   	deepEqual(getChartSize(7,10), {
-   		rows: 2,
-   		columns: 5,
-   		lastMarkedRow: 2,
-   		markedAtLastMarkedRow: 2,
-   		lastRowLength: 5
-   	});
-   	deepEqual(getChartSize(24,66), {
-   		rows: 4,
-   		columns: 20,
-   		lastMarkedRow: 2,
-   		markedAtLastMarkedRow: 4,
-   		lastRowLength: 6
-   	});
-   	deepEqual(getChartSize(13,24), {
-   		rows: 3,
-   		columns: 10,
-   		lastMarkedRow: 2,
-   		markedAtLastMarkedRow: 3,
-   		lastRowLength: 4
-   	});
-   });
+	deepEqual(getChartSize(7,10), {
+		rows: 2,
+		columns: 5,
+		lastMarkedRow: 2,
+		markedAtLastMarkedRow: 2,
+		lastRowLength: 5
+	});
+	deepEqual(getChartSize(24,66), {
+		rows: 4,
+		columns: 20,
+		lastMarkedRow: 2,
+		markedAtLastMarkedRow: 4,
+		lastRowLength: 6
+	});
+	deepEqual(getChartSize(13,24), {
+		rows: 3,
+		columns: 10,
+		lastMarkedRow: 2,
+		markedAtLastMarkedRow: 3,
+		lastRowLength: 4
+	});
+});
 ```
 Det nästa testet är till för att se så att vår DOM-manipulation gör vad vi förväntar oss. I det här fallet kollar jag att det finns rätt antal av "märkta" respektive "omärkta" figurer, samt kontrollerar att SVGn har rätt storlek.
 
 ```javascript
 module('Create and manipulate SVG');
-   test('Create and manipulate SVG with 7 10', function(){
-   	var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-   	document.getElementById('qunit-fixture').appendChild(svg);
-   	createChart(getChartSize(7, 10), svg);
-   	equal($('svg .marked').length, 7);
-   	equal($('svg .unmarked').length, 3);
-   	equal($(svg).height(), 40);
-   });
-   test('Create and manipulate SVG with 24 66', function(){
-   	var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-   	document.getElementById('qunit-fixture').appendChild(svg);
-   	createChart(getChartSize(24, 66), svg);
-   	equal($('svg .marked').length, 24);
-   	equal($('svg .unmarked').length, 42);
-   	equal($(svg).height(), 20);
-   });
-   test('Create and manipulate SVG with 13 24', function(){
-   	var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-   	document.getElementById('qunit-fixture').appendChild(svg);
-   	createChart(getChartSize(13, 24), svg);
-   	equal($('svg .marked').length, 13);
-   	equal($('svg .unmarked').length, 11);
-   	equal($(svg).height(), 30);
-   });
+test('Create and manipulate SVG with 7 10', function(){
+	var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+	document.getElementById('qunit-fixture').appendChild(svg);
+	createChart(getChartSize(7, 10), svg);
+	equal($('svg .marked').length, 7);
+	equal($('svg .unmarked').length, 3);
+	equal($(svg).height(), 40);
+});
+test('Create and manipulate SVG with 24 66', function(){
+	var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+	document.getElementById('qunit-fixture').appendChild(svg);
+	createChart(getChartSize(24, 66), svg);
+	equal($('svg .marked').length, 24);
+	equal($('svg .unmarked').length, 42);
+	equal($(svg).height(), 20);
+});
+test('Create and manipulate SVG with 13 24', function(){
+	var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+	document.getElementById('qunit-fixture').appendChild(svg);
+	createChart(getChartSize(13, 24), svg);
+	equal($('svg .marked').length, 13);
+	equal($('svg .unmarked').length, 11);
+	equal($(svg).height(), 30);
+});
 ```
 ### Funktion
 Först har vi funktionen som tar fram hur många figurer vi behöver visa:
 
 ```javascript
 function getChartSize(num, max){
-   	var rows = 0,
-   	    columns = 0,
-   	    lastMarkedRow = 0,
-   	    markedAtLastMarkedRow = 0,
-   	    lastRowLength = 0
-   	;
+	var rows = 0,
+	    columns = 0,
+	    lastMarkedRow = 0,
+	    markedAtLastMarkedRow = 0,
+	    lastRowLength = 0
+	;
 
-   	if(max <= 10){
-   		columns = 5;
-   	} else if(max <= 40){
-   		columns = 10;
-   	} else if(max <= 140){
-   		columns = 20;
-   	} else {
-   		columns = 40;
-   	}
+	if(max <= 10){
+		columns = 5;
+	} else if(max <= 40){
+		columns = 10;
+	} else if(max <= 140){
+		columns = 20;
+	} else {
+		columns = 40;
+	}
 
-   	rows = Math.ceil(max / columns);
-   	lastMarkedRow = Math.ceil(num / columns);
-   	markedAtLastMarkedRow = num % columns;
-   	lastRowLength = columns - ((rows * columns) - max);
+	rows = Math.ceil(max / columns);
+	lastMarkedRow = Math.ceil(num / columns);
+	markedAtLastMarkedRow = num % columns;
+	lastRowLength = columns - ((rows * columns) - max);
 
-   	return {
-   		rows: rows,
-   		columns: columns,
-   		lastMarkedRow: lastMarkedRow,
-   		markedAtLastMarkedRow: markedAtLastMarkedRow,
-   		lastRowLength: lastRowLength
-   	};
-   }
+	return {
+		rows: rows,
+		columns: columns,
+		lastMarkedRow: lastMarkedRow,
+		markedAtLastMarkedRow: markedAtLastMarkedRow,
+		lastRowLength: lastRowLength
+	};
+}
 ```
 Sen så har vi funktionen som manipulerar en SVG på förväntat vis:
 
 ```javascript
 function createChart(settings, svg) {
-   	var addedElements = 0;
-   	var w = 100/settings.columns;
-   	var h = w;
-   	for(var i=0;i<settings.rows;i++){
-   		for(var j=0;j<settings.columns;j++){
-   			if(addedElements < (settings.lastMarkedRow * settings.columns) - (settings.columns - settings.markedAtLastMarkedRow)){
-   				var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-   				rect.setAttribute('class', 'marked');
-   				rect.setAttribute('height', h);
-   				rect.setAttribute('width', w);
-   				rect.setAttribute('x', j*w);
-   				rect.setAttribute('y', i*h);
-   				rect.setAttribute('fill', '#ff0000');
-   				svg.appendChild(rect);
-   				addedElements++;
-   			} else if(addedElements < (settings.columns * (settings.rows-1)) + settings.lastRowLength){
-   				var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-   				rect.setAttribute('class', 'unmarked');
-   				rect.setAttribute('height', h);
-   				rect.setAttribute('width', w);
-   				rect.setAttribute('x', j*w);
-   				rect.setAttribute('y', i*h);
-   				rect.setAttribute('fill', '#0000ff');
-   				svg.appendChild(rect);
-   				addedElements++;
-   			}
-   		}
-   	}
-   	svg.setAttribute('height', (settings.rows*h)+'px')
-   	svg.setAttribute('width', (settings.columns*w)+'px');
-   }
+	var addedElements = 0;
+	var w = 100/settings.columns;
+	var h = w;
+	for(var i=0;i<settings.rows;i++){
+		for(var j=0;j<settings.columns;j++){
+			if(addedElements < (settings.lastMarkedRow * settings.columns) - (settings.columns - settings.markedAtLastMarkedRow)){
+				var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+				rect.setAttribute('class', 'marked');
+				rect.setAttribute('height', h);
+				rect.setAttribute('width', w);
+				rect.setAttribute('x', j*w);
+				rect.setAttribute('y', i*h);
+				rect.setAttribute('fill', '#ff0000');
+				svg.appendChild(rect);
+				addedElements++;
+			} else if(addedElements < (settings.columns * (settings.rows-1)) + settings.lastRowLength){
+				var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+				rect.setAttribute('class', 'unmarked');
+				rect.setAttribute('height', h);
+				rect.setAttribute('width', w);
+				rect.setAttribute('x', j*w);
+				rect.setAttribute('y', i*h);
+				rect.setAttribute('fill', '#0000ff');
+				svg.appendChild(rect);
+				addedElements++;
+			}
+		}
+	}
+	svg.setAttribute('height', (settings.rows*h)+'px')
+	svg.setAttribute('width', (settings.columns*w)+'px');
+}
 ```
 
 Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.
