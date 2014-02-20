@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Javascript | Vinnovera]]></title>
   <link href="http://Vinnovera.github.io/blogg/tagg/javascript/atom.xml" rel="self"/>
   <link href="http://Vinnovera.github.io/"/>
-  <updated>2014-02-20T14:59:30+01:00</updated>
+  <updated>2014-02-20T15:24:53+01:00</updated>
   <id>http://Vinnovera.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -749,10 +749,10 @@ Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjv
 <p>```javascript
 test(&ldquo;multiLineText-test&rdquo;, function() {</p>
 
-<pre><code>   deepEqual(multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
+<pre><code>deepEqual(multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
 </code></pre>
 
-<p>   });
+<p>});
 ```
 Med QUnit skapas ett test genom att köra &ldquo;test&rdquo;-funktionen. Till den skickar man in en beskrivning av testet (&ldquo;multiLineText-test&rdquo;) samt en funktion. I den här funktionen kan du köra kod, samt framförallt göra s.k. &ldquo;assertions&rdquo;. QUnit har i huvudsak två typer av assertions, &ldquo;ok&rdquo; och &ldquo;equal&rdquo;. Till &ldquo;ok&rdquo; behöver man bara skicka in ett argument, och om argumentet är &ldquo;true&rdquo; är testet godkänt. Till &ldquo;equal&rdquo; skickar man in två argument, och om de stämmer överens är testet godkänt. I exemplet ovan används en variant på equal som används för att jämföra t.ex. objekt och listor.</p>
 
@@ -768,7 +768,7 @@ for(var i=0;i&lt;items.length;i++){
 equal($('#myList').children().length, 4);
 </code></pre>
 
-<p>   });
+<p>});
 ```</p>
 
 <h3>Mocha</h3>
@@ -778,27 +778,27 @@ equal($('#myList').children().length, 4);
 <p>I min app.js har jag samma funktion som ovan (&ldquo;multiLineText&rdquo;, fast tillgängliggjord i exports):</p>
 
 <p>```javascript
-  exports.multiLineText = function(myString, maxWidth){</p>
+exports.multiLineText = function(myString, maxWidth){</p>
 
-<pre><code> ...
+<pre><code>...
 </code></pre>
 
-<p>  }
+<p>}
 ```
 I roten på projektet har jag även skapat en folder som heter &ldquo;test&rdquo;, vilket är den folder Mocha letar efter tester i. Här har jag en fil som heter t.ex. &ldquo;mytest.js&rdquo;, som innehåller själva testet:</p>
 
 <p>```javascript
-   var assert = require(&ldquo;assert&rdquo;);
-   var app = require(&ldquo;../app&rdquo;);</p>
+var assert = require(&ldquo;assert&rdquo;);
+var app = require(&ldquo;../app&rdquo;);</p>
 
-<p>   describe(&ldquo;multiLineText&rdquo;, function() {</p>
+<p>describe(&ldquo;multiLineText&rdquo;, function() {</p>
 
 <pre><code>it("should return correct array", function() {
-        assert.deepEqual(app.multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
+    assert.deepEqual(app.multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
 });
 </code></pre>
 
-<p>   });
+<p>});
 ```
 Sedan kör jag Mocha via terminalen via ett enkelt kommando:</p>
 
@@ -854,13 +854,13 @@ deepEqual(getChartSize(13,24), {
 });
 </code></pre>
 
-<p>   });
+<p>});
 ```
 Det nästa testet är till för att se så att vår DOM-manipulation gör vad vi förväntar oss. I det här fallet kollar jag att det finns rätt antal av &ldquo;märkta&rdquo; respektive &ldquo;omärkta&rdquo; figurer, samt kontrollerar att SVGn har rätt storlek.</p>
 
 <p>```javascript
 module(&lsquo;Create and manipulate SVG&rsquo;);
-   test(&lsquo;Create and manipulate SVG with 7 10&rsquo;, function(){</p>
+test(&lsquo;Create and manipulate SVG with 7 10&rsquo;, function(){</p>
 
 <pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 document.getElementById('qunit-fixture').appendChild(svg);
@@ -870,8 +870,8 @@ equal($('svg .unmarked').length, 3);
 equal($(svg).height(), 40);
 </code></pre>
 
-<p>   });
-   test(&lsquo;Create and manipulate SVG with 24 66&rsquo;, function(){</p>
+<p>});
+test(&lsquo;Create and manipulate SVG with 24 66&rsquo;, function(){</p>
 
 <pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 document.getElementById('qunit-fixture').appendChild(svg);
@@ -881,8 +881,8 @@ equal($('svg .unmarked').length, 42);
 equal($(svg).height(), 20);
 </code></pre>
 
-<p>   });
-   test(&lsquo;Create and manipulate SVG with 13 24&rsquo;, function(){</p>
+<p>});
+test(&lsquo;Create and manipulate SVG with 13 24&rsquo;, function(){</p>
 
 <pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 document.getElementById('qunit-fixture').appendChild(svg);
@@ -892,7 +892,7 @@ equal($('svg .unmarked').length, 11);
 equal($(svg).height(), 30);
 </code></pre>
 
-<p>   });
+<p>});
 ```</p>
 
 <h3>Funktion</h3>
@@ -933,7 +933,7 @@ return {
 };
 </code></pre>
 
-<p>   }
+<p>}
 ```
 Sen så har vi funktionen som manipulerar en SVG på förväntat vis:</p>
 
@@ -972,7 +972,7 @@ svg.setAttribute('height', (settings.rows*h)+'px')
 svg.setAttribute('width', (settings.columns*w)+'px');
 </code></pre>
 
-<p>   }
+<p>}
 ```</p>
 
 <p>Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.</p>
