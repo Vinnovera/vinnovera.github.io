@@ -11,7 +11,12 @@
 		{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
 		<meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
 		{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
-		
+
+		<meta property="og:title" content="Vinnovera.se" />
+		<meta property="og:url" content="http://www.vinnovera.se.net" />
+		<meta property="og:image" content="http://www.vinnovera.se/images/logoSymbolBlack@2x.png" />
+		<meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}." />
+
 		<!--[if lt IE 9]>
 		<script>
 		    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
@@ -23,7 +28,7 @@
 		</script><![endif]-->
 		
 		<link rel="canonical" href="{{ canonical }}">
-		<link href="{{ root_url }}/favicon.ico" rel="icon">
+		<link href="{{ root_url }}/favicon.ico?1" rel="icon">
 		<link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
 
 		{% include stylesheets.html %}
