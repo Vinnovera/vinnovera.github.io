@@ -1,11 +1,12 @@
 <header id="header">
-	<h1>
-		{% if page.index %}
-		Vinnovera
-		{% else %}
-		<a href="/">Vinnovera</a>
-		{% endif %}
-	</h1>
+	
+	{% if page.index %}
+		<h1 class="index">Vinnovera</h1>
+	{% else %}
+		<h1>
+			<a href="/">Vinnovera</a>
+		</h1>
+	{% endif %}
 	
 	<a href="#" class="toggle-menu" id="toggle-menu">
 		<span></span>

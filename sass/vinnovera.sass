@@ -126,6 +126,14 @@ body
 			left: 40px
 			margin-top: -19px
 			
+			+bp(retina)
+				background: url('/images/logox2.png') no-repeat
+				background-size: 150px 38px
+			
+			+bp(slick-rick)
+				&.index
+					display: none
+			
 			> a
 				display: block
 				width: 100%
@@ -480,6 +488,9 @@ body
 			max-width: 640px
 			font-size: 18px
 			line-height: 1.5
+			
+			+bp(slick-rick)
+				padding-top: 50px
 			
 			h2
 				font-size: 28px
