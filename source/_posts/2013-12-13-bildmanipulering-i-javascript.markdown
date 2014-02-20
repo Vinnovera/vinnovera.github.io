@@ -179,34 +179,34 @@ ctx.getImageData(x, y, width, height)
 ## Slutsatser
 
 När jag jämförde två sidor, en där jag hade två bilder och en där jag hade en bild som jag skrev ut två gånger med hjälp av filter-funktioner, fick jag följande resultat:
-<table>
+<table class="airy">
 <tr>
 <td></td>
-<td><p>Javascript&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
-<td><p>två bilder</p></td>
+<td>Javascript</td>
+<td>två bilder</td>
 </tr>
 <tr>
-<td><p>Antal requests</p></td>
+<td>Antal requests</td>
 <td>2</td>
 <td>3</td>
 </tr>
 <tr>
-<td><p>kb överfört</p></td>
+<td>kb överfört</td>
 <td>149</td>
 <td>285</td>
 </tr>
 <tr>
-<td><p>paint (ms)</p></td>
+<td>paint (ms)</td>
 <td>3.0</td>
 <td>39.2</td>
 </tr>
 <tr>
-<td><p>hämta bild/bilder (ms)&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+<td>hämta bild/bilder (ms)</td>
 <td>23</td>
 <td>150</td>
 </tr>
 <tr>
-<td><p>finished loading (ms)</p></td>
+<td>finished loading (ms)</td>
 <td>117</td>
 <td>198</td>
 </tr>
@@ -222,22 +222,21 @@ Jag tror inte att det kommer att vara tidseffektivt att skriva ett eget Javascri
 
 Det bibliotek som verkar användas mest för tillfället är fabricjs. Det kan bero på att det innehåller väldigt mycket mer än bara filter - t.ex. former, drag-n-drop, resize med flera. Jag har även tittat på följande:
 
-*   Filterr2 https://github.com/alexmic/filtrr/tree/master/filtrr2
-*   Open source som inte känns helt färdigutvecklat. Senaste buggfixen var fem månader sedan.*   Pixastic [http://www.pixastic.com/lib/docs](http://www.pixastic.com/lib/docs/)/
-*   Ett gratis bibliotek där du själv kan välja vilka komponenter du vill ladda ner.*   glfx.js https://github.com/evanw/glfx.js
-*   Ett bibliotek som använder WebGL. Stödjs endast av de senaste browsers.*   camanjs http://camanjs.com/
-
+*   Filterr2 https://github.com/alexmic/filtrr/tree/master/filtrr2<br />
+Open source som inte känns helt färdigutvecklat. Senaste buggfixen var fem månader sedan.
+*   Pixastic [http://www.pixastic.com/lib/docs](http://www.pixastic.com/lib/docs/)<br />
+Ett gratis bibliotek där du själv kan välja vilka komponenter du vill ladda ner.
+*   glfx.js https://github.com/evanw/glfx.js<br />
+Ett bibliotek som använder WebGL. Stödjs endast av de senaste browsers.
+*   camanjs http://camanjs.com/<br />
 Jag tror att camanjs har störts potential att vara användbart. Biblioteket har noga utförd dokumentation, uppdateras kontinuerligt, uppmanar till tester och är helt gratis.
 
 ## Referenser
 
-http://www.khronos.org/registry/typedarray/specs/latest/#7.1
-
-http://www.w3schools.com/tags/ref_canvas.asp
-
-http://html5doctor.com/video-canvas-magic/
-
-http://caniuse.com/css-filters
+* http://www.khronos.org/registry/typedarray/specs/latest/#7.1
+* http://www.w3schools.com/tags/ref_canvas.asp
+* http://html5doctor.com/video-canvas-magic/
+* http://caniuse.com/css-filters
 
 Codepen :
 (Egna bilder behövs för att testa skripten) <br />

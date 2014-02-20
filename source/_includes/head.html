@@ -12,12 +12,20 @@
 		<meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
 		{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 		
+		<!--[if lt IE 9]>
+		<script>
+		    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+		        i = e.length;
+		
+		    for(i; i--;) {
+		        document.createElement(e[i]);
+		    }
+		</script><![endif]-->
+		
 		<link rel="canonical" href="{{ canonical }}">
 		<link href="{{ root_url }}/favicon.png" rel="icon">
 		<link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
-		
-		<script src="/javascripts/components/modernizr.js"></script>
-			
+
 		{% include stylesheets.html %}
 		{% include google_analytics.html %}
 	</head>

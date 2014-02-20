@@ -483,6 +483,7 @@ body
 				overflow: hidden
 				display: inline-block
 				text-overflow: ellipsis
+				vertical-align: top
 				
 			.comments
 				max-width: 600px
@@ -522,8 +523,6 @@ body
 						
 						> .tag
 							color: $orange
-						> a
-							display: inline
 					
 					
 				h2
@@ -658,3 +657,14 @@ body
 						opacity: 0
 				&:last-child
 					+transform(rotate(-45deg) translate(3px, -3px))
+
+table
+	&.airy
+		margin-top: 15px
+		
+		td
+			padding-right: 20px
+			text-align: center
+			
+			&:first-child
+				text-align: left
