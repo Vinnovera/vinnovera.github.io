@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Filter | Vinnovera]]></title>
-  <link href="http://Vinnovera.github.io/blogg/tagg/filter/atom.xml" rel="self"/>
-  <link href="http://Vinnovera.github.io/"/>
-  <updated>2014-02-20T16:21:15+01:00</updated>
-  <id>http://Vinnovera.github.io/</id>
+  <link href="http://vinnovera.se/blogg/tagg/filter/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-02-20T16:27:36+01:00</updated>
+  <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Bildmanipulering i JavaScript]]></title>
-    <link href="http://Vinnovera.github.io/blogg/2013/12/13/bildmanipulering-i-javascript/"/>
+    <link href="http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript/"/>
     <updated>2013-12-13T16:17:13+01:00</updated>
-    <id>http://Vinnovera.github.io/blogg/2013/12/13/bildmanipulering-i-javascript</id>
+    <id>http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript</id>
     <content type="html"><![CDATA[<p>När det läggs ett digitalt filter över en bild manipuleras pixeldatan i bilden. Färgerna i bilden räknas om för varje pixel och sedan visas en ny bild med de nya värderna. I fortsättningen kommer jag att använda termen filter för att beskriva manipuleringen<!--more--> av bildens data med hjälp av Javascript.</p>
 
 <p>Några vanligt förekommande filter är inverterade färger, sepia, blur, kontrastökning, gråskala med mera.</p>

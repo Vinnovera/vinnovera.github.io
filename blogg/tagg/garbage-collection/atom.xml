@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Garbage Collection | Vinnovera]]></title>
-  <link href="http://Vinnovera.github.io/blogg/tagg/garbage-collection/atom.xml" rel="self"/>
-  <link href="http://Vinnovera.github.io/"/>
-  <updated>2014-02-20T16:21:15+01:00</updated>
-  <id>http://Vinnovera.github.io/</id>
+  <link href="http://vinnovera.se/blogg/tagg/garbage-collection/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-02-20T16:27:36+01:00</updated>
+  <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Garbage Collection]]></title>
-    <link href="http://Vinnovera.github.io/blogg/2014/02/19/garbage-collection/"/>
+    <link href="http://vinnovera.se/blogg/2014/02/19/garbage-collection/"/>
     <updated>2014-02-19T17:54:05+01:00</updated>
-    <id>http://Vinnovera.github.io/blogg/2014/02/19/garbage-collection</id>
+    <id>http://vinnovera.se/blogg/2014/02/19/garbage-collection</id>
     <content type="html"><![CDATA[<p>Garbage collection (GC) är automatiserad minneshantering i datorprogram. Det finns många olika algoritmer för garbage collection, men problemet som de alla försöker att lösa är detsamma: att identifiera använt minne som applikationen inte längre klarar av att nå, och rensa det.</p>
 
 <!--more-->

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Javascript | Vinnovera]]></title>
-  <link href="http://Vinnovera.github.io/blogg/tagg/javascript/atom.xml" rel="self"/>
-  <link href="http://Vinnovera.github.io/"/>
-  <updated>2014-02-20T16:21:15+01:00</updated>
-  <id>http://Vinnovera.github.io/</id>
+  <link href="http://vinnovera.se/blogg/tagg/javascript/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-02-20T16:27:36+01:00</updated>
+  <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Garbage Collection]]></title>
-    <link href="http://Vinnovera.github.io/blogg/2014/02/19/garbage-collection/"/>
+    <link href="http://vinnovera.se/blogg/2014/02/19/garbage-collection/"/>
     <updated>2014-02-19T17:54:05+01:00</updated>
-    <id>http://Vinnovera.github.io/blogg/2014/02/19/garbage-collection</id>
+    <id>http://vinnovera.se/blogg/2014/02/19/garbage-collection</id>
     <content type="html"><![CDATA[<p>Garbage collection (GC) är automatiserad minneshantering i datorprogram. Det finns många olika algoritmer för garbage collection, men problemet som de alla försöker att lösa är detsamma: att identifiera använt minne som applikationen inte längre klarar av att nå, och rensa det.</p>
 
 <!--more-->
@@ -223,9 +223,9 @@ När du vill skapa ett nytt objekt plockar du det ur arrayen</code>objectPool<co
   
   <entry>
     <title type="html"><![CDATA[jQuery vs Mootools]]></title>
-    <link href="http://Vinnovera.github.io/blogg/2014/01/07/jquery-vs-mootools/"/>
+    <link href="http://vinnovera.se/blogg/2014/01/07/jquery-vs-mootools/"/>
     <updated>2014-01-07T14:41:39+01:00</updated>
-    <id>http://Vinnovera.github.io/blogg/2014/01/07/jquery-vs-mootools</id>
+    <id>http://vinnovera.se/blogg/2014/01/07/jquery-vs-mootools</id>
     <content type="html"><![CDATA[<p>&ldquo;jQuery eller Mootools&rdquo; är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.</p>
 
 <p>Innan jag börjar jämföra dessa vill jag presentera dem lite<!--more--> först. Jag vill även påpeka att jag har jobbat med dessa två bibliotek ett par år, och även om jag har en favorit hoppas jag att det inte lyser igenom för mycket.</p>
@@ -380,9 +380,9 @@ backgroundColor: '#ff0'
   
   <entry>
     <title type="html"><![CDATA[Bildmanipulering i JavaScript]]></title>
-    <link href="http://Vinnovera.github.io/blogg/2013/12/13/bildmanipulering-i-javascript/"/>
+    <link href="http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript/"/>
     <updated>2013-12-13T16:17:13+01:00</updated>
-    <id>http://Vinnovera.github.io/blogg/2013/12/13/bildmanipulering-i-javascript</id>
+    <id>http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript</id>
     <content type="html"><![CDATA[<p>När det läggs ett digitalt filter över en bild manipuleras pixeldatan i bilden. Färgerna i bilden räknas om för varje pixel och sedan visas en ny bild med de nya värderna. I fortsättningen kommer jag att använda termen filter för att beskriva manipuleringen<!--more--> av bildens data med hjälp av Javascript.</p>
 
 <p>Några vanligt förekommande filter är inverterade färger, sepia, blur, kontrastökning, gråskala med mera.</p>
@@ -651,9 +651,9 @@ Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjv
   
   <entry>
     <title type="html"><![CDATA[Unit Testing]]></title>
-    <link href="http://Vinnovera.github.io/blogg/2013/12/12/unit-testing/"/>
+    <link href="http://vinnovera.se/blogg/2013/12/12/unit-testing/"/>
     <updated>2013-12-12T14:22:24+01:00</updated>
-    <id>http://Vinnovera.github.io/blogg/2013/12/12/unit-testing</id>
+    <id>http://vinnovera.se/blogg/2013/12/12/unit-testing</id>
     <content type="html"><![CDATA[<p>När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.</p>
 
 <p>När vi utvecklar hållbara och långsiktiga applikationer är det viktigt att koden vi skriver beter sig konsekvent. Det måste gå att förutse hur en funktion eller ett plugin beter sig som vi har förväntat oss, även när den används under nya omständigheter.</p>
@@ -731,7 +731,7 @@ Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjv
     &lt;div id="qunit-fixture"&gt;
         &lt;ul id="myList"&gt;&lt;/ul&gt;
     &lt;/div&gt;
-    &lt;script src="http://Vinnovera.github.io//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="http://vinnovera.se//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
     &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.10.1.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
     &lt;script src="js/vendor/qunit-1.12.0.js"&gt;&lt;/script&gt;
     &lt;script src="js/main.js"&gt;&lt;/script&gt;

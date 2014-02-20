@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Unit Testing | Vinnovera]]></title>
-  <link href="http://Vinnovera.github.io/blogg/tagg/unit-testing/atom.xml" rel="self"/>
-  <link href="http://Vinnovera.github.io/"/>
-  <updated>2014-02-20T16:21:15+01:00</updated>
-  <id>http://Vinnovera.github.io/</id>
+  <link href="http://vinnovera.se/blogg/tagg/unit-testing/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-02-20T16:27:36+01:00</updated>
+  <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Unit Testing]]></title>
-    <link href="http://Vinnovera.github.io/blogg/2013/12/12/unit-testing/"/>
+    <link href="http://vinnovera.se/blogg/2013/12/12/unit-testing/"/>
     <updated>2013-12-12T14:22:24+01:00</updated>
-    <id>http://Vinnovera.github.io/blogg/2013/12/12/unit-testing</id>
+    <id>http://vinnovera.se/blogg/2013/12/12/unit-testing</id>
     <content type="html"><![CDATA[<p>När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.</p>
 
 <p>När vi utvecklar hållbara och långsiktiga applikationer är det viktigt att koden vi skriver beter sig konsekvent. Det måste gå att förutse hur en funktion eller ett plugin beter sig som vi har förväntat oss, även när den används under nya omständigheter.</p>
@@ -95,7 +95,7 @@
     &lt;div id="qunit-fixture"&gt;
         &lt;ul id="myList"&gt;&lt;/ul&gt;
     &lt;/div&gt;
-    &lt;script src="http://Vinnovera.github.io//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="http://vinnovera.se//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
     &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.10.1.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
     &lt;script src="js/vendor/qunit-1.12.0.js"&gt;&lt;/script&gt;
     &lt;script src="js/main.js"&gt;&lt;/script&gt;
