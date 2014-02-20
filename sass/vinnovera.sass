@@ -33,15 +33,17 @@ body
 		opacity: 0
 		+transition(opacity .5s)
 		
+		+bp(retina)
+			background: url('/images/logoSymbolBlack@2x.png') no-repeat
+			background-size: 60px 60px
+		
 		&.visible
 			opacity: 1
 			top: 10px
 			
 			+bp(slick-rick)
 				opacity: 0
-		+bp(retina)
-			background: url('/images/logoSymbolBlack@2x.png') no-repeat
-			background-size: 150px 38px
+		
 		
 	> footer
 		padding: 40px 0
