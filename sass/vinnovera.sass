@@ -58,11 +58,17 @@ body
 				text-align: right
 				margin: 0
 		> span
+			.map-link
+				display: none
+				
 			+bp(masta-killa)
 				border-bottom: 1px solid #ccc
 				padding-bottom: 20px
 				margin-top: 20px
 				position: relative
+				
+				.map-link
+					display: block
 			
 			&:before
 				+bp(masta-killa)
@@ -71,11 +77,12 @@ body
 					left: 0
 					top: 0
 					color: #666
-					
+						
 			&:first-child
 				&:before
 					+bp(masta-killa)
 						content: "Adress"
+	
 		> a
 			+bp(masta-killa)
 				margin-top: 20px
