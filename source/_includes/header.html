@@ -14,7 +14,11 @@
 		<span></span>
 	</a>
 	<nav>
+		{% if page.index %}
+			<span>Hem</span>
+		{% else %}
 		<a href="/">Hem</a>
+		{% endif %}
 		<a href="/#projekt">Kunder &amp; projekt</a>
 		<a href="/#blogg">Blogg</a>
 		<a href="/#kontakt">Kontakt</a>
