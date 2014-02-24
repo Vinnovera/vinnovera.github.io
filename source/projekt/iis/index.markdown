@@ -23,7 +23,7 @@ Vi hjälpte till med att ta fram det responsiva konceptet och utvecklade HTML-ma
 * jQuery - http://jquery.com/
 * Modernizr - http://modernizr.com/
 
-## Web Serivce Award 2013
+## Web Service Award 2013
 .SE och iis.se utsågs till vinnare av Web Service Award 2013!
 > **Juryns motivering:**
 >
