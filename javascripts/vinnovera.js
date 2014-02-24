@@ -12,7 +12,6 @@
 		// Show to top button
 		window.addEvent('scroll', function (e) {
 			scroll = document.documentElement.scrollTop || document.body.scrollTop;
-			
 			if (scroll > 200) {
 				scrollUp.addClass('visible');
 			} else {
@@ -46,8 +45,23 @@
 			} else {
 				this.addClass('open');
 			}
-
 		});
+		
+		if(document.body.hasClass('index')) {
+			var fxScroll = new Fx.Scroll($(document.body), {
+				wait: false,
+				duration: 800,
+				offset: {'x': 0, 'y': 0},
+				transition: Fx.Transitions.Quad.easeInOut
+			});
+			
+			document.body.addEvent('click:relay(#navigation > a)', function (e) {
+				e.stop();
+				console.log(document.body);
+				var href = this.getAttribute('href').split('#')[1];
+				fxScroll.toElement(href);
+			});
+		}
 	});
 	
 }();
