@@ -58,17 +58,12 @@ body
 				text-align: right
 				margin: 0
 		> span
-			.map-link
-				display: none
 				
 			+bp(masta-killa)
 				border-bottom: 1px solid #ccc
 				padding-bottom: 20px
 				margin-top: 20px
 				position: relative
-				
-				.map-link
-					display: block
 			
 			&:before
 				+bp(masta-killa)
@@ -276,8 +271,11 @@ body
 				
 				+bp(ol-dirty-bastard)
 					margin: 0 20px
+					border-bottom: 1px solid #ddd
 					> div
-						padding: 0
+						padding: 0 
+					
+						
 			.category
 				color: #666
 				font-family: $brandFontStack
@@ -308,7 +306,7 @@ body
 						padding-bottom: 20px
 						margin: 40px 0 0
 						padding-left: 0px
-						border-bottom: 1px solid #f5f5f5
+						border-bottom: 1px solid #ddd
 					
 					.category
 						padding-top: 20px
