@@ -136,6 +136,9 @@ body
 				background: url('/images/logox2.png') no-repeat
 				background-size: 150px 38px
 			
+			+bp(danger-doom)
+				left: 20px
+			
 			+bp(slick-rick)
 				&.index
 					display: none
@@ -171,6 +174,10 @@ body
 					text-indent: -9999px
 					background: url('/images/labs.png') no-repeat
 					padding: 0
+					
+			+bp(danger-doom)
+				padding-left: 58px
+				
 				
 	> section
 		padding: 100px 0
@@ -711,7 +718,7 @@ body
 	padding: 10px 7px
 	+box-sizing(border-box)
 	
-	+bp(slick-rick)
+	+bp(celph-titled)
 		display: block
 		+ nav
 			position: absolute
@@ -722,11 +729,17 @@ body
 			height: 0px
 			overflow: hidden
 			+transition(height .3s)
-			> a
+			> a, > span
 				display: block
 				color: #333
 				line-height: 55px
 				border-bottom: 1px solid #ddd
+				&:hover
+					color: #666
+			> span
+				&:hover
+					color: #333
+					
 		> span
 			width: 18px
 			height: 2px
@@ -739,6 +752,7 @@ body
 			+ nav
 				height: 224px
 				+transition(height .3s)
+				padding: 0
 			> span
 				&:first-child
 					+transform(rotate(45deg) translate(4px, 4px))
