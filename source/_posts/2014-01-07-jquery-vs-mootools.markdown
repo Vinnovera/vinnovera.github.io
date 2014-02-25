@@ -7,7 +7,7 @@ author: Tobias Bleckert
 categories: [Javascript, jQuery, Mootools]
 authorDescription: Tobias Bleckert jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/tobias.jpg
-authorMail: tobisa@vinnovera.se
+authorMail: tobias@vinnovera.se
 ---
 
 "jQuery eller Mootools" är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.

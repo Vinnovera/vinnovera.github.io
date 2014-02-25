@@ -604,10 +604,57 @@ body
 					&:visited
 						color: #609
 						border-color: #609
+						
 			.authorDescription
-				a:visited
-					color: white
-					border-color: white
+				background-color: #333
+				color: white
+				padding: 20px
+				overflow: hidden
+				font-size: 12px
+				line-height: 20px
+				
+				> div
+					width: 75%
+					display: inline-block
+					+box-sizing(border-box)
+					float: left
+					padding-left: 20px
+					vertical-align: top
+					
+					&:first-child
+						width: 25%
+						padding: 0
+						
+						> a
+							text-align: center
+							display: block
+							
+					+bp(slick-rick)
+						width: 100%
+						&:first-child
+							display: none
+							
+					p
+						margin-top: 10px
+					a
+						color: white
+						
+						&.tel
+							text-decoration: none
+						&:visited
+							color: white				
+					img
+						display: block
+						+border-radius(50%)
+						margin: 0 auto 10px
+				h3
+					margin: 0 8px 0 0
+					display: inline
+					font-size: 18px
+					
+					+ a
+						text-decoration: none
+						padding-top: 2px
 				
 			.comments
 				max-width: 600px
@@ -818,47 +865,3 @@ table
 			
 			&:first-child
 				text-align: left
-.authorDescription
-	background-color: #333
-	color: white
-	padding: 20px
-	overflow: hidden
-	font-size: 12px
-	line-height: 20px
-	
-	> div
-		width: 75%
-		display: inline-block
-		+box-sizing(border-box)
-		float: left
-		padding-left: 20px
-		vertical-align: top
-		
-		&:first-child
-			width: 25%
-			padding: 0
-			
-			> a
-				text-align: center
-				display: block
-		p
-			margin-top: 10px
-		a
-			color: white
-			
-			&.tel
-				text-decoration: none
-			&:visited
-				color: white				
-		img
-			display: block
-			+border-radius(50%)
-			margin: 0 auto 10px
-	h3
-		margin: 0 8px 0 0
-		display: inline
-		font-size: 18px
-		
-		+ a
-			text-decoration: none
-			padding-top: 2px

@@ -5,7 +5,6 @@ date: 2013-12-13 15:51
 comments: false
 sharing: true
 footer: true
-caseCoOp: Parsley
 ---
 ![Skärmdump photowall.se](/images/content/projects/photowall/screenshot.jpg)
 
