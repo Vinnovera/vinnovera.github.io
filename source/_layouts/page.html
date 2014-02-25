@@ -13,6 +13,21 @@ single: true
 			{{ content }}
 		</div>
 	</article>
+	
+	<article class="authorDescription">
+		<div>
+			<img src="/images/logoPost.png" alt="Vinnovera" />
+		</div>
+		<div>
+			<h3>{{ page.title }}</h3>
+			<a href="mailto: info@vinnovera.se">(info@vinnovera.se)</a>
+			{% if page.caseCoOp %}
+				<p>Samarbetspartners: {{ page.caseCoOp }}</p>
+			{% endif %}
+			<p>Vi är specialister på frontend-utveckling och ser gränssnitt för desktop, läsplattor och mobil som vårt hantverk. Vi vill jobba med kunder som tycker att kvalité är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+			<p><a href="/#projekt">Tillbaka till kunder & projekt</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
+		</div>
+	</article>
 </section>
 
 {% if site.disqus_short_name and page.comments == true %}
