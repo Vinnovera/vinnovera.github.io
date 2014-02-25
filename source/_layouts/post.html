@@ -39,8 +39,22 @@ single: true
 	</article>
 	
 	{% if page.authorDescription %}
-		<article>
-			{{ page.authorDescription }}
+		<article class="authorDescription">
+			<div>
+				{% if page.authorImage %}
+					<img src="{{ page.authorImage }}" alt="{{ page.author }}" />
+				{% else %}
+					<img src="/images/logoPost.png" alt="Vinnovera" />
+				{% endif %}
+				<a href="" class="tel">{{ page.authorTel }}</a>
+				<a href="mailto: {{ page.authorMail }}">{{ page.authorMail }}</a>
+			</div>
+			<div>
+				<h3>{{ page.author }}</h3>
+				<p>{{ page.authorDescription }}</p>
+				<p>Vi är specialister på frontend-uteckling och ser gränssnitt för desktop, läsplattor och mobil som vårt hantverk. Vi vill jobba med kunder som tycker att kvalité är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+				<a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a>
+			</div>
 		</article>
 	{% endif %}
 	

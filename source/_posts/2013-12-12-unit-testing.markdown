@@ -5,7 +5,10 @@ date: 2013-12-12 14:22:24 +0100
 comments: true
 categories: [Javascript, Unit Testing]
 author: Jonas Stattin
-authorDescription: description/jonas.html
+authorDescription: Jonas Stattin jobbar med frontend på Vinnovera.
+authorImage: /images/profiles/jonas.jpg
+authorTel: 070-952 97 71
+authorMail: jonas@vinnovera.se
 ---
 
 När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.
