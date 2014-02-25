@@ -7,7 +7,6 @@ categories: [Javascript, Unit Testing]
 author: Jonas Stattin
 authorDescription: Jonas Stattin jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/jonas.jpg
-authorTel: 070-952 97 71
 authorMail: jonas@vinnovera.se
 ---
 

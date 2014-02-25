@@ -5,6 +5,9 @@ date: 2014-02-19 17:54:05 +0100
 comments: true
 author: Per Stenström
 categories: [Javascript, Garbage Collection]
+authorDescription: Per Stenström jobbar med frontend på Vinnovera.
+authorImage: /images/profiles/per.jpg
+authorMail: per@vinnovera.se
 ---
 Garbage collection (GC) är automatiserad minneshantering i datorprogram. Det finns många olika algoritmer för garbage collection, men problemet som de alla försöker att lösa är detsamma: att identifiera använt minne som applikationen inte längre klarar av att nå, och rensa det.
 <!--more-->
