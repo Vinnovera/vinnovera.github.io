@@ -2,6 +2,7 @@
 layout: post
 title: "Om Vinnovera"
 date: 2013-11-18 12:44:24 +0100
+description: test
 ---
 
 När farmor och farfar var små gick man till skräddare, bagaren, skomakaren och möbelsnickaren. Alla tog sitt hantverk på allvar och fann en njutning i att skapa resultat av hög kvalitet. Med omsorg och yrkesstolthet<!--more--> vårdade man sitt rykte inom sitt skrå.
