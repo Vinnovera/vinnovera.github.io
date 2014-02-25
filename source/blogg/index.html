@@ -11,7 +11,11 @@ layout: default
 			{% capture category %}{{ post.categories | category_links | size }}{% endcapture %}
 			{% unless category == '0' %}
 			<p class="meta">
-				Taggar: 
+			  {% if post.author %}
+			  	<span>{{ post.author }}</span> 
+			  {% endif %}
+			  | <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='year'>%Y</span>-<span class='month'>%m</span>-<span class='day'>%d</span>"}}</time>
+			  | Taggar: 
 			  {% if post %}
 			    {{ post.categories | category_links }}
 			  {% else %}
