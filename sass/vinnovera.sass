@@ -32,6 +32,7 @@ body
 		z-index:  5
 		opacity: 0
 		+transition(opacity .5s)
+		border: 0px
 		
 		+bp(retina)
 			background: url('/images/logoSymbolBlack@2x.png') no-repeat
@@ -158,6 +159,8 @@ body
 				text-decoration: none
 				font-size: 20px
 				font-family: $brandFontStack
+				border: 0px
+				
 				&:hover
 					color: $whitehover
 				
@@ -246,6 +249,9 @@ body
 				
 			.link
 				color: $blue
+				border-bottom: 2px solid $blue
+				line-height: 25px
+				
 				&:hover
 					color: #3790cf
 		
@@ -510,6 +516,7 @@ body
 					position: absolute
 					top: 0
 					left: 0
+					border: 0px
 					z-index: 1
 				
 				.wrapper
@@ -549,6 +556,8 @@ body
 							
 							> span
 								display: block
+								> a
+									line-height: 25px
 							
 		&.post
 			max-width: 640px
@@ -580,6 +589,7 @@ body
 					
 					&:visited
 						color: #609
+						border-color: #609
 				
 			.comments
 				max-width: 600px
@@ -717,6 +727,7 @@ body
 	margin-top: -16px
 	padding: 10px 7px
 	+box-sizing(border-box)
+	border: 0px
 	
 	+bp(celph-titled)
 		display: block
@@ -729,6 +740,7 @@ body
 			height: 0px
 			overflow: hidden
 			+transition(height .3s)
+			padding: 0
 			> a, > span
 				display: block
 				color: #333
@@ -752,7 +764,6 @@ body
 			+ nav
 				height: 224px
 				+transition(height .3s)
-				padding: 0
 			> span
 				&:first-child
 					+transform(rotate(45deg) translate(4px, 4px))
