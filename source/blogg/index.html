@@ -8,7 +8,9 @@ layout: default
 		<header>
 			<h1><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
 			
-			{% capture post.category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
+			{% capture category %}
+				{{ post.categories | category_links | size }}
+			{% endcapture %}
 			{% unless category == '0' %}
 			<p class="meta">
 				Taggar: 
