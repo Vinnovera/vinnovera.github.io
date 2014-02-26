@@ -8,7 +8,7 @@ footer: true
 ---
 ![Skärmdump photowall.se](/images/content/projects/photowall/screenshot.jpg)
 
-Tillsammans med talangfulla fotografer och designers från hela världen skapar <a href="www.photowall.se">Photowall</a> inspirerande och unik väggdekor. De erbjuder skräddarsydda tapeter och canvastavlor från ett stort utbud och möjligheten att skapa sin egen speciella miljö.
+Tillsammans med talangfulla fotografer och designers från hela världen skapar <a href="http://www.photowall.se">Photowall</a> inspirerande och unik väggdekor. De erbjuder skräddarsydda tapeter och canvastavlor från ett stort utbud och möjligheten att skapa sin egen speciella miljö.
 
 De arbetar också med licensierade varumärken och är officiell partner för Disney, Star Wars, Modesty Blaise, Moomin Characters mfl.
 
