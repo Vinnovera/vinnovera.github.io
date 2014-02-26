@@ -665,7 +665,8 @@ body
 			&.listing
 				h1
 					margin-bottom: 60px
-	
+					+bp(q-tip)
+						font-size: 36px
 				> article
 					margin-top: 40px
 			
@@ -692,7 +693,8 @@ body
 							border: 0
 							text-decoration: none
 							color: #333
-					
+							+bp(q-tip)
+								font-size: 32px
 					> p
 						margin: 0
 						text-align:  center
@@ -834,7 +836,7 @@ body
 		
 		&.open
 			+ nav
-				height: 224px
+				height: 280px
 				+transition(height .3s)
 			> span
 				&:first-child
