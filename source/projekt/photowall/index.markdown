@@ -8,19 +8,18 @@ footer: true
 ---
 ![Skärmdump photowall.se](/images/content/projects/photowall/screenshot.jpg)
 
-Tillsammans med talangfulla fotografer och designers från hela världen skapar Photowall inspirerande och unik väggdekor. De erbjuder skräddarsydda tapeter och canvastavlor från ett stort utbud och möjligheten att skapa sin egen speciella miljö.
+Tillsammans med talangfulla fotografer och designers från hela världen skapar <a href="www.photowall.se">Photowall</a> inspirerande och unik väggdekor. De erbjuder skräddarsydda tapeter och canvastavlor från ett stort utbud och möjligheten att skapa sin egen speciella miljö.
 
 De arbetar också med licensierade varumärken och är officiell partner för Disney, Star Wars, Modesty Blaise, Moomin Characters mfl.
 
 ## Vinnoveras roll
 
-Vår roll i projektet var projektledning, kravställning, interaktionsdesign och front-end-utveckling. Vi samarbetade med Kristoffer Gustafsson på Parsley.se som gjorde interaktion/design och LarvIT som kodade back-end tillsammans med Photowalls in-house programmerare.
+Vår roll i projektet var projektledning, kravställning, interaktionsdesign och front-end-utveckling. Vi samarbetade med Kristoffer Gustafsson på Parsley.se som gjorde interaktion/design och LarvIT som kodade back-end tillsammans med Photowalls in-house-programmerare.
 
 ![Skärmdumpar photowall.se](/images/content/projects/photowall/responsive.jpg)
 
 ## Teknik
 ### Frontend
-Frontend
 Mycket av utmaningen låg i en kodbas som hanterar olika typer av enheter, skärmstorlekar och interaktionssätt. Eftersom motiven storleksanpassas i webbläsaren av kunden, behövde gränssnittet fungera både på en dator med mus och tangentbord och en mobiltelefon med pekskärm.
 
 ![Beskräning på desktop](/images/content/projects/photowall/crop1.jpg)
@@ -47,7 +46,7 @@ Med ett stigande besökarantal på enheter med sämre internetuppkopplingar beh�
 * Minifiering och komprimering av resurser
 
 ### Continuous integration
-För att hålla en hög utvecklingstakt, hög kvalité på kodbasen och med ett utvecklarteam som är utspritt över sverige och ukraina, hade Vinnovera i uppgift att sätta upp en CI-lösning baserad på Jenkins.
+För att hålla en hög utvecklingstakt, hög kvalité på kodbasen och med ett utvecklarteam som är utspritt över Sverige och Ukraina, hade Vinnovera i uppgift att sätta upp en CI-lösning baserad på Jenkins.
 
 ![Jenkins](/images/content/projects/photowall/jenkins.jpg)
 
