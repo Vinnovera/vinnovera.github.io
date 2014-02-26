@@ -57,7 +57,7 @@
 			
 			document.body.addEvent('click:relay(#navigation > a)', function (e) {
 				e.stop();
-				console.log(document.body);
+
 				var href = this.getAttribute('href').split('#')[1];
 				fxScroll.toElement(href);
 			});
