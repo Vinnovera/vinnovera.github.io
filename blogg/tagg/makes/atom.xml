@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Makes | Vinnovera]]></title>
+  <link href="http://vinnovera.se/blogg/tagg/makes/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-02-28T18:04:18+01:00</updated>
+  <id>http://vinnovera.se/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Inflyttningspresent]]></title>
+    <link href="http://vinnovera.se/blogg/2014/02/28/inflyttningspresent-till-earth-people/"/>
+    <updated>2014-02-28T11:28:22+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/02/28/inflyttningspresent-till-earth-people</id>
+    <content type="html"><![CDATA[<p>Våra vänner på <a href="http://earthpeople.se/">earth people</a> har flyttat till nytt kontor i Gamla Stan. Eftersom <a href="https://twitter.com/fjallstrom">Peder</a> hos dem rantat om hur ointressanta 3D-skrivare är, så kände vi att en 3D-utskriven inflyttningspresent var på sin plats.</p>
+
+<!--more-->
+
+
+<h2>Bygget</h2>
+
+<p><img src="/images/content/posts/inflyttningspresent-till-earth-people/bed.jpg" alt="Printbädd" />
+Utskriven logotyp i genomskinlig PLA</p>
+
+<p><img src="/images/content/posts/inflyttningspresent-till-earth-people/prototyper.jpg" alt="Prototyper" />
+Många versioner blev det</p>
+
+<p><img src="/images/content/posts/inflyttningspresent-till-earth-people/breadboard.jpg" alt="Breadboard-prototyp" />
+Breadboard-prototyp med RGB-lysdioder drivna av en Arduino</p>
+
+<p><img src="/images/content/posts/inflyttningspresent-till-earth-people/elektronik.jpg" alt="Elektronik" />
+Elektroniken nedskalad med ett ATtiny45-chip</p>
+
+<p><img src="/images/content/posts/inflyttningspresent-till-earth-people/lysdioder.jpg" alt="Lysdioder" />
+Lysdioder på ovansidan av foten</p>
+
+<p><img src="/images/content/posts/inflyttningspresent-till-earth-people/undersida.jpg" alt="Undersida" />
+Undersidan och locket till foten med Vinnoveras logga</p>
+
+<h2>Resultatet</h2>
+
+<p><img src="/images/content/posts/inflyttningspresent-till-earth-people/farger.jpg" alt="Färger" /></p>
+
+<iframe width="640" height="360" src="http://vinnovera.se//www.youtube.com/embed/L3gmu9un4Ic?rel=0&autohide=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Mer!</h2>
+
+<ul>
+<li><a href="http://www.thingiverse.com/thing:260050">3D-modeller på Thingiverse</a></li>
+<li><a href="http://www.instructables.com/id/Attiny-RGB-Mood-Light/?ALLSTEPS">Instructables &ndash; Attiny RGB Mood Light</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
