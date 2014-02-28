@@ -50,7 +50,7 @@ indextitle: "Specialister på frontend-utveckling med HTML5, CSS och JavaScript"
 					<a href="{{ root_url }}{{ post.url }}">
 						<h2>{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</h2>
 						<time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
-						{{ post.content | excerpt }}
+						{{ post.content | excerpt | strip_html }}
 						<p><span class="link">Läs mer</span></p>
 					</a>
 				</div>
