@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Inflyttningspresent"
+title: "Inflyttningspresenten"
 date: 2014-02-28 11:28:22 +0100
 comments: true
 author: Jakob Öhman
@@ -33,7 +33,9 @@ Undersidan och locket till foten med Vinnoveras logga
 
 ## Resultatet
 ![Färger](/images/content/posts/inflyttningspresent-till-earth-people/farger.jpg)
-<iframe width="640" height="360" src="//www.youtube.com/embed/L3gmu9un4Ic?rel=0&autohide=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+<div class="video youtube">
+	<iframe width="640" height="360" src="//www.youtube.com/embed/L3gmu9un4Ic?rel=0&autohide=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Mer!
 * [3D-modeller på Thingiverse](http://www.thingiverse.com/thing:260050)

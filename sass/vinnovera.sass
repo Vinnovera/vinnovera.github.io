@@ -589,19 +589,18 @@ body
 			h3, h4
 				margin-bottom: -15px
 
-			div
-				a
-					max-width: 100%
-					overflow: hidden
-					display: inline-block
-					text-overflow: ellipsis
-					vertical-align: top
-					white-space: nowrap
-					
-					&:visited
-						color: #609
-						border-color: #609
-						
+			li a
+				max-width: 100%
+				overflow: hidden
+				display: inline-block
+				text-overflow: ellipsis
+				vertical-align: top
+				white-space: nowrap
+
+			div a:visited
+				color: #609
+				border-color: #609
+
 			.authorDescription
 				background-color: #333
 				color: white
@@ -693,8 +692,9 @@ body
 							border: 0
 							text-decoration: none
 							color: #333
-							+bp(q-tip)
-								font-size: 32px
+						+bp(q-tip)
+							font-size: 30px
+							font-size: 9vw
 					> p
 						margin: 0
 						text-align:  center
@@ -720,6 +720,17 @@ body
 					
 				ul
 					margin: 30px 0
+
+				.video
+					position: relative
+
+					&.youtube
+						padding-bottom: 56%
+
+					> iframe
+						position: absolute
+						width: 100%
+						height: 100%
 					
 		.comments
 			max-width: 600px
