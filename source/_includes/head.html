@@ -13,7 +13,7 @@
 		{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
 		<meta property="og:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}{% if page.indextitle %} - {{page.indextitle}} {% endif %}" />
-		<meta property="og:url" content="http://www.vinnovera.se" />
+		<meta property="og:url" content="{{ site.url }}{{ page.url | remove:'index.html' }}" />
 		<meta property="og:image" content="http://www.vinnovera.se/images/logoOgImage.png" />
 		<meta property="og:description" content="{{ description | condense_spaces | truncate:150 }}" />
 
@@ -26,8 +26,7 @@
 		        document.createElement(e[i]);
 		    }
 		</script><![endif]-->
-		
-		<link rel="canonical" href="{{ canonical }}">
+
 		<link href="{{ root_url }}/favicon.ico?1" rel="icon">
 		<link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
 
