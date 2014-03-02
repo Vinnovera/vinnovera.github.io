@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Makes | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/makes/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-02-28T18:04:18+01:00</updated>
+  <updated>2014-03-02T09:41:51+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Inflyttningspresent]]></title>
+    <title type="html"><![CDATA[Inflyttningspresenten]]></title>
     <link href="http://vinnovera.se/blogg/2014/02/28/inflyttningspresent-till-earth-people/"/>
     <updated>2014-02-28T11:28:22+01:00</updated>
     <id>http://vinnovera.se/blogg/2014/02/28/inflyttningspresent-till-earth-people</id>
@@ -47,7 +47,9 @@ Undersidan och locket till foten med Vinnoveras logga</p>
 
 <p><img src="/images/content/posts/inflyttningspresent-till-earth-people/farger.jpg" alt="Färger" /></p>
 
-<iframe width="640" height="360" src="http://vinnovera.se//www.youtube.com/embed/L3gmu9un4Ic?rel=0&autohide=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+<div class="video youtube">
+    <iframe width="640" height="360" src="http://vinnovera.se//www.youtube.com/embed/L3gmu9un4Ic?rel=0&autohide=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 <h2>Mer!</h2>
