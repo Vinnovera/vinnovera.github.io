@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Nyheter | Vinnovera]]></title>
+  <link href="http://vinnovera.se/blogg/tagg/nyheter/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-03-14T16:41:02+01:00</updated>
+  <id>http://vinnovera.se/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hittat på nätet #1]]></title>
+    <link href="http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-1/"/>
+    <updated>2014-03-14T15:17:50+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-1</id>
+    <content type="html"><![CDATA[<p>Länkar till intressanta artiklar, verktyg och tjänster som vi tycker är värda att uppmärksamma.</p>
+
+<!--more-->
+
+
+<h2>Nytt API från Trafikverket</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-1/trafikapi.jpg" alt="TrafikAPI" />
+<a href="http://www.trafiklab.se/">Nytt API från Trafikverket &ndash; Öppet API (Beta)</a><br/>
+Ett samarbete med bland annat SL och Trafikverket erbjuder ett nytt öppet API med spännande trafikdata. Vi har redan börjat spåna på tjänster baserade på den här datan och möjligheterna är många.</p>
+
+<h2>Designing the Perfect Hyperlink</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-1/hyperlinks.jpg" alt="Hyperlinks" />
+<a href="http://sixrevisions.com/usability/hyperlink-design/">Designing the Perfect Hyperlink — It’s Not as Simple as You Think</a><br/>
+Webben är uppbyggd av hyperlänkar och det är värt att fundera ett extra varv på hur de skall formgivas. Det finns mycket att hämta i att respektera traditionerna, samtidigt som de i sig kan innebära problem.</p>
+
+<h2>Responsive prototypes in Axure RP7</h2>
+
+<p><a href="http://uxdesign.smashingmagazine.com/2014/02/26/creating-responsive-prototypes-adaptive-views-axure-rp-7/">Responsive prototypes in Axure RP7</a><br/>
+Axure RP är ett verktyg som används för &ldquo;wireframing&rdquo; och &ldquo;rapid prototyping&rdquo;. I RP7 finns det stöd för att göra prototyper av responsiva webbplatser, och har här publicerat en genomgång av hur de verktygen kan användas.</p>
+
+<h2>App-pocalypse Now</h2>
+
+<p><a href="http://blog.codinghorror.com/app-pocalypse-now/">App-pocalypse Now &ndash; I&rsquo;m getting pretty sick of being nagged to install your damn apps.</a><br/>
+När det gäller onlinetjänster blir det allt snårigare med huruvida de gör sig bäst som appar eller webbplatser, och inte sällan utvecklas t.ex. telefonappar som skulle fungera minst lika bra som en webbappar. Här är en bloggpost som lite raljant tar upp problemen med appmarknaden.</p>
+
+<h2>Hamburger Not the Best Choice?</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-1/icontest.jpg" alt="BurgerIcon" />
+<a href="http://exisweb.net/mobile-menu-abtest">Mobile Menu AB Tested: Hamburger Not the Best Choice?</a><br/>
+Det enda sättet att faktiskt veta hur användare interagerar med ens webbplats är att testa och mäta. Här bjuds vi på ett litet A/B-test på en webbplats som undersöker den numera ganska typiska smalskärmsikonen för att indikera en meny.</p>
+
+<h2>Golden Ratio Typography Calculator</h2>
+
+<p><a href="http://www.pearsonified.com/typography/">Golden Ratio Typography Calculator</a><br/>
+För den som önskar få hjälp med att avgöra lämpliga inställningar för teckensnitten på sin webbplats finns det här verktyget. Baserat på teckenmängd per rad, innehållets bredd, teckensnittets generella utseende och annat får man här stöd för att ta fram så behaglig brödtext som möjligt.</p>
+
+<h2>DHTMLConf 2014</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-1/dhtmlconf.jpg" alt="DHTMLConf" />
+<a href="http://dhtmlconf.com/">DHTMLConf 2014</a><br/>
+Det här verkar vara en väldigt givande tillställning, en DHTML-konferens som en del av JSFest.</p>
+
+<h2>ATOM</h2>
+
+<p><a href="http://atom.io/">ATOM &ndash; A hackable text editorfor the 21st Century</a><br/>
+GitHub är i lanseringstagen för sin nya textediter Atom, som kommer att vara byggd på för webbutvecklare bekanta teknologier för att underlätta utveckling av tillägg och att göra sin texteditor mer personlig.</p>
+
+<h2>Vinnovera</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-1/vinnovera.jpg" alt="DHTMLConf" />
+<a href="http://www.vinnovera.se/">Vinnovera</a><br/>
+Nån webbyrå har gjort en webbplats åt sig själva.</p>
+]]></content>
+  </entry>
+  
+</feed>
