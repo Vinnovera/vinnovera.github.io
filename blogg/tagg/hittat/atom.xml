@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hittat | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/hittat/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-03-15T11:30:28+01:00</updated>
+  <updated>2014-03-26T15:08:53+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hittat på nätet #2]]></title>
+    <link href="http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-2/"/>
+    <updated>2014-03-14T14:51:55+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-2</id>
+    <content type="html"><![CDATA[<p>Dagens tema är SVG &ndash; det bästa sen skivat bröd.</p>
+
+<!--more-->
+
+
+<h2>Frame-by-frame animation using SVG and SMIL</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-2/svgandsmil.jpg" alt="Frame-by-frame animation using SVG and SMIL" />
+<a href="http://www.joningram.co.uk/article/svg-smil-frame-animation/">Frame-by-frame animation using SVG and SMIL</a><br>
+När den här artikeln skrevs fungerade SMIL animationer i SVG bara i webkit browsers. Sendan dess har fler hunnit ikapp.</p>
+
+<h2>Rethinking Responsive SVG</h2>
+
+<p><a href="http://coding.smashingmagazine.com/2014/03/05/rethinking-responsive-svg/">Rethinking Responsive SVG</a><br>
+Responsiva vektorbaserade ikoner som ändrar utseende beroende på tillgängligt utrymme. Det är ett av alla användingsområden av SVG bilder. Smashing Mag går igenom några olika metoder att åstadkomma det. Till exempel ett där SVG filen innehåller sin egen CSS och JavaScript.</p>
+
+<h2>Thoughts on Media Queries for Elements</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-2/mediaqueryforelement.jpg" alt="Thoughts on Media Queries for Elements" />
+<a href="http://www.jonathantneal.com/blog/thoughts-on-media-queries-for-elements/">Thoughts on Media Queries for Elements</a><br>
+Media Queries för element ligger högt på vår önskelista. Hur skulle det kunna se ut? Intressant är hur oändliga loopar kan hanteras.</p>
+
+<h2>A Q&amp;A on the Picture Element</h2>
+
+<p><a href="http://alistapart.com/blog/post/picture-element-qa">A Q&amp;A on the Picture Element</a><br>
+Responsiva bilder är något oerhört viktigt för dagens web. Men det har aldrig funnits någon standard, och de lösningar som finns är beroende av JavaScript. Nu har dock browser utvecklarna äntligen enats om att implementera <code>&lt;picture&gt;</code> elementet. Mozilla har till och med gått och sagt att de planerar implementera det Q1 2014.</p>
+
+<h2>Top JavaScript MVC Frameworks</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-2/topjsmvcframework.jpg" alt="Top JavaScript MVC Frameworks" />
+<a href="http://www.infoq.com/research/top-javascript-mvc-frameworks">Top JavaScript MVC Frameworks</a><br>
+InfoQ har gjort en enkät som undersöker vilket JavaScript MVC ramverk som går snabbast att komma igång med och hur mycket värde det tillför.</p>
+
+<h2>Do Not Use bodyParser with Express.js</h2>
+
+<p><a href="http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html">Do Not Use bodyParser with Express.js</a><br>
+Varje gång Express.js hanterar ett POST request med antingen <code>bodyParser()</code> eller <code>multipart()</code> skapas en temp fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hittat på nätet #1]]></title>
