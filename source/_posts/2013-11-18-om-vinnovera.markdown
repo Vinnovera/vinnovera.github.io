@@ -5,10 +5,10 @@ date: 2013-11-18 12:44:24 +0100
 description: test
 ---
 
-När farmor och farfar var små gick man till skräddare, bagaren, skomakaren och möbelsnickaren. Alla tog sitt hantverk på allvar och fann en njutning i att skapa resultat av hög kvalitet. Med omsorg och yrkesstolthet<!--more--> vårdade man sitt rykte inom sitt skrå.
+När farmor och farfar var små gick man till skräddare, bagaren, skomakaren och möbelsnickaren. Alla tog sitt hantverk på allvar och fann en njutning i att skapa resultat av hög kvalitet. Med omsorg och yrkesstolthet<!--more--> vårdade man sitt rykte inom skrået.
 
 
-Vi på Vinnovera ser webbgränssnitt för desktop, läsplattor och mobil som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.
+Vi på Vinnovera ser webbgränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.
 
 
 Oavsett teknisk plattform och bakomliggande system så som CMS (Content Management System) eller e-handelssystem, har alla webblösningar ett gränssnitt. Dessa gränssnitt utvecklas med HTML5, CSS och JavaScript. Vi är specialister på på dessa tekniker vilket gör att vi kan bidra med vårt hantverk i alla möjliga webbprojekt, stora som små, i egen regi eller tillsammans med andra leverantörer.
