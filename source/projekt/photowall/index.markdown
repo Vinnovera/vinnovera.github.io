@@ -46,7 +46,7 @@ Med ett stigande besökarantal på enheter med sämre internetuppkopplingar beh�
 * Minifiering och komprimering av resurser
 
 ### Continuous integration
-För att hålla en hög utvecklingstakt, hög kvalité på kodbasen och med ett utvecklarteam som är utspritt över Sverige och Ukraina, hade Vinnovera i uppgift att sätta upp en CI-lösning baserad på Jenkins.
+För att hålla en hög utvecklingstakt, hög kvalitet på kodbasen och med ett utvecklarteam som är utspritt över Sverige och Ukraina, hade Vinnovera i uppgift att sätta upp en CI-lösning baserad på Jenkins.
 
 ![Jenkins](/images/content/projects/photowall/jenkins.jpg)
 
