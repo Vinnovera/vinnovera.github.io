@@ -11,7 +11,7 @@ authorTel: 070-491 84 29
 authorMail: alexandra@vinnovera.se
 ---
 
-While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. There weren't any options in the product settings that matched what we wanted to achieve - adding product specific pdf-files and movies.
+While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. There weren't any options in <!-- more -->the product settings that matched what we wanted to achieve - adding product specific pdf-files and movies.
 
 The option we found to be suggested was to use metafields, a module for Shopify, but we didn't want to make a big hassle of poking around in the [Shopify API][1]. 
 
@@ -20,17 +20,15 @@ Our solution? We decided to use the product tags. If we wanted to add a pdf-file
 ![](https://photos-2.dropbox.com/t/0/AAABrpWUc3bcj4PVDukk6JZ0ORD0nqYf5fWzqCoudHhHYA/12/142551753/jpeg/2048x1536/3/1396864800/0/2/tags.jpg/-D_rJMN0VhoS_p9NAcirqcQxZkUpbi7rugvVZE15pD4)
 
 Code example for tags containing video:
-{% raw %}
-```
-{% for tag in product.tags %}
+
+```html
+{% raw %}{% for tag in product.tags %}
 	{% if tag contains 'video:'%}
-		<div class="g four-twelfths">
-			<div>
-				<iframe src="http://www.youtube.com/embed/{{ tag | replace: 'video:', ''}}"></iframe>
-			</div>
+		<div>
+			<iframe src="http://www.youtube.com/embed/{{ tag | replace: 'video:', ''}}"></iframe>
 		</div>
 	{% endif %}
-{% endfor %}
+{% endfor %}{% endraw %}
 ```
-{% endraw %}
+
 [1]: http://www.shopify.com/technology/3032322-new-feature-metafields#axzz2xvNXkLON
