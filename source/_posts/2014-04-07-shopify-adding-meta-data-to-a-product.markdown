@@ -17,7 +17,7 @@ The option we found to be suggested was to use metafields, a module for Shopify,
 
 Our solution? We decided to use the product tags. If we wanted to add a pdf-file to a product we added the tag ```file:filename.pdf``` or if we wanted to add a video we wrote ```video:youtubeID```. By doing this we could with ease control what was added to each product.
 
-![](https://photos-2.dropbox.com/t/0/AAABrpWUc3bcj4PVDukk6JZ0ORD0nqYf5fWzqCoudHhHYA/12/142551753/jpeg/2048x1536/3/1396864800/0/2/tags.jpg/-D_rJMN0VhoS_p9NAcirqcQxZkUpbi7rugvVZE15pD4)
+![](/images/content/posts/shopify-adding-meta-data/tags.jpg)
 
 Code example for tags containing video:
 
