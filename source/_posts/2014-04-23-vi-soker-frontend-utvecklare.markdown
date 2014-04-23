@@ -17,4 +17,4 @@ Hos oss får du jobba med **responsive webb, mobilsajter, webbappar** och andra 
 
 Vi har ett antal stora företag som kunder (som vi tyvärr inte får nämna vid namn förrän du kommer och träffar oss) och även ett gäng mindre. Just nu jobbar vi mycket med **[node.js](http://nodejs.org/)**, **[D3.js](http://d3js.org/)** och **[Backbone](http://backbonejs.org/)**.
 
-Låter det intressant? [Hör av dig till oss](/#kontakt).
+Låter det intressant?<br/> Hör av dig till Björn-Olle - [bjorn-olle@vinnovera.se](mailto:bjorn-olle@vinnovera.se), 070-171 67 27
