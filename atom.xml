@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-04-04T11:28:10+02:00</updated>
+  <updated>2014-04-23T09:22:13+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,170 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vi söker frontend-utvecklare!]]></title>
+    <link href="http://vinnovera.se/blogg/2014/04/23/vi-soker-frontend-utvecklare/"/>
+    <updated>2014-04-23T09:09:34+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/04/23/vi-soker-frontend-utvecklare</id>
+    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/content/posts/vi-soker-frontend-utvecklare/logotyp.jpg" alt="Vinnovera" />
+Vi letar efter dig som <strong>brinner för frontend-utveckling</strong> och vill utvecklas inom det området tillsammans med likasinnade. Du kan vara både junior som senior &ndash; <strong>oavsett arbetslivserfarenhet</strong> så har vi möjligheten att utvecklas. Många projekt på GitHub väger lika tungt som ett långt CV.</p>
+
+<!--more-->
+
+
+<p>Hos oss får du jobba med <strong>responsive webb, mobilsajter, webbappar</strong> och andra skojiga saker som har ett gränssnitt på webben. Alltid med <strong>kvalitet och hantverkskänsl i fokusa</strong>. Vi värdesätter att arbeta tillsammans och dela kunskap för att kunna genomföra projekt på bästa sätt.</p>
+
+<p>Vi har ett antal stora företag som kunder (som vi tyvärr inte får nämna vid namn förrän du kommer och träffar oss) och även ett gäng mindre. Just nu jobbar vi mycket med <strong>node.js, D3.js och Backbone</strong>.</p>
+
+<p>Låter det intressant? <a href="http://vinnovera.se/#kontakt">Hör av dig till oss</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hittat på nätet #3]]></title>
+    <link href="http://vinnovera.se/blogg/2014/04/11/hittat-pa-natet-number-3/"/>
+    <updated>2014-04-11T14:10:25+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/04/11/hittat-pa-natet-number-3</id>
+    <content type="html"><![CDATA[<p>I denna upplaga: mer SVG, mer underlines, nytt programmeringsspråk, verktyg och lite historia</p>
+
+<!--more-->
+
+
+<h2>Alla vägar leder till Xerox</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/burger.jpg" alt="The origin of the hamburger icon" />
+<a href="https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">The origin of the hamburger icon</a><br />
+Varifrån kommer alla ikoner? Var hamburgaren kommer ifrån kan du hitta här.</p>
+
+<h2>Kommentarsfält utöver det vanliga</h2>
+
+<p><a href="http://lattlast.se/kommentarsfalt">Centrum för lättläst lanserar ett kommentarsfält för alla</a><br />
+Centrum för lättläst lanserar Kommentarsfält för alla, som gör det lättare för alla att kommentera och diskutera artiklar och texter på nätet.</p>
+
+<h2>Network Link Conditioner</h2>
+
+<p><a href="http://nshipster.com/network-link-conditioner/">Network Link Conditioner</a><br />
+Simulera begränsade uppkopplingar när du utvecklar.</p>
+
+<h2>The Heartbleed Bug</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/heartbleed_explanation.jpg" alt="heartbleed_explanation" />
+<a href="http://xkcd.com/1354/">The Heartbleed Bug</a><br /></p>
+
+<h2>Javascript spel</h2>
+
+<p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted &ndash; a user javascript adventure game</a><br />
+Ett spel som går ut på att skriva javascript för att ta sig vidare till nästa level.</p>
+
+<h2>Support för Windows XP upphör</h2>
+
+<p><a href="http://windows.microsoft.com/en-us/windows/end-support-help">Windows XP support has ended</a><br />
+Efter 12 års support slutar Microsoft att ha underhåll för Windows XP. Då IE8 inte heller underhålls längre kan man utsätta sin dator för säkerhetsrisk om man fortsätter att använda produkterna.</p>
+
+<h2>Grilla ditt moderkort</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/tray.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
+<a href="http://ales.io/2014/03/09/how-to-bake-a-mac.html">How I resurrected my MacBook Pro by putting it in the oven</a><br />
+Efter en &ldquo;Blue Screen of Death&rdquo; plockade Aleš Kocjančič ut sitt moderkort ur sin MacBook Pro och körde det i ugnen på 170° Celsius i 7 minuter. Magiskt nog började datorn fungera igen.</p>
+
+<h2>doT.js</h2>
+
+<p><a href="http://olado.github.io/doT/index.html">The fastest + concise javascript template engine for Node.js and browsers.</a><br />
+En snabb och liten template-motor för node.js och browsers</p>
+
+<h2>SVG Sprites</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/svg-icon.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
+<a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/">Icon System with SVG Sprites</a><br />
+Ett alternativ till icon-fonts från Chris Coyier där man använder inline svgs istället.</p>
+
+<h2>Lär dig rita med ASCII</h2>
+
+<p><a href="http://asciiflow.com/">Asciiflow &ndash; ASCII Flow Diagram Tool</a><br />
+Ett fräsigt onlineverktyg där man kan rita, spara och mycket mer med hjälp av en slående ASCII-design.</p>
+
+<h2>Utveckligen av en utvecklare</h2>
+
+<p><a href="https://medium.com/p/db854689243">The Evolution of a Software Engineer</a><br />
+Ibland kan det ta tio år att komma tillbaka till början.</p>
+
+<h2>Vetenskapen om underlines</h2>
+
+<p><a href="https://medium.com/p/7c03a9274f9">Crafting link underlines on Medium</a><br />
+En artikel om hur en &ldquo;quick-fix&rdquo; blev ett en månads långt projekt för att fixa underlines på medium.com</p>
+
+<h2>Hack</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/facebook-hack.jpg" alt="Facebook Introduces ‘Hack,’ the Programming Language of the Future" />
+<a href="http://hacklang.org/">Facebook Introduces ‘Hack,’ the Programming Language of the Future</a>
+Hack &ndash; ett programmeringsspråk utvecklat av Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
+
+<h2>Världens minsta responsiva CSS-ramverk?</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="c">/* FLUIDITY v0.1.0 @mrmrs - http://mrmrs.cc MIT</span>
+</span><span class='line'><span class="c">*/</span>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> Responsive Utilities</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">*/</span>
+</span><span class='line'><span class="nt">img</span><span class="o">,</span> <span class="nt">canvas</span><span class="o">,</span> <span class="nt">iframe</span><span class="o">,</span> <span class="nt">video</span><span class="o">,</span> <span class="nt">svg</span> <span class="p">{</span> <span class="k">max-width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/* Wrap tables or pre elements in a div with this class */</span>
+</span><span class='line'><span class="nc">.overflow-container</span> <span class="p">{</span> <span class="k">overflow-y</span><span class="o">:</span> <span class="k">scroll</span><span class="p">;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/mrmrs/fluidity">A light-weight, fully-responsive css framework</a><br />
+Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs/fluidity/issues/13">Consider adding form elements</a>&rdquo; och &ldquo;<a href="https://github.com/mrmrs/fluidity/issues/6">Specify Version of Supported Browsers</a>&rdquo; ser det väldigt autentiskt ut.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Shopify - Adding meta data to a product]]></title>
+    <link href="http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product/"/>
+    <updated>2014-04-07T10:43:38+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product</id>
+    <content type="html"><![CDATA[<p>While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. There weren&rsquo;t any options in <!-- more -->the product settings that matched what we wanted to achieve &ndash; adding product specific pdf-files and movies.</p>
+
+<p>The option we found to be suggested was to use metafields, a module for Shopify, but we didn&rsquo;t want to make a big hassle of poking around in the <a href="http://www.shopify.com/technology/3032322-new-feature-metafields#axzz2xvNXkLON">Shopify API</a>.</p>
+
+<p>Our solution? We decided to use the product tags. If we wanted to add a pdf-file to a product we added the tag <code>file:filename.pdf</code> or if we wanted to add a video we wrote <code>video:youtubeID</code>. By doing this we could with ease control what was added to each product.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/shopify-adding-meta-data/tags.jpg" alt="" /></p>
+
+<p>Code example for tags containing video:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>{% for tag in product.tags %}
+</span><span class='line'>  {% if tag contains &#39;video:&#39;%}
+</span><span class='line'>      <span class="nt">&lt;div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">&quot;http://www.youtube.com/embed/{{ tag | replace: &#39;video:&#39;, &#39;&#39;}}&quot;</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  {% endif %}
+</span><span class='line'>{% endfor %}
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hittat på nätet #2]]></title>

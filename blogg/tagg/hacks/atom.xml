@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hacks | Vinnovera]]></title>
+  <link href="http://vinnovera.se/blogg/tagg/hacks/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-04-23T09:22:13+02:00</updated>
+  <id>http://vinnovera.se/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Shopify - Adding meta data to a product]]></title>
+    <link href="http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product/"/>
+    <updated>2014-04-07T10:43:38+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product</id>
+    <content type="html"><![CDATA[<p>While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. There weren&rsquo;t any options in <!-- more -->the product settings that matched what we wanted to achieve &ndash; adding product specific pdf-files and movies.</p>
+
+<p>The option we found to be suggested was to use metafields, a module for Shopify, but we didn&rsquo;t want to make a big hassle of poking around in the <a href="http://www.shopify.com/technology/3032322-new-feature-metafields#axzz2xvNXkLON">Shopify API</a>.</p>
+
+<p>Our solution? We decided to use the product tags. If we wanted to add a pdf-file to a product we added the tag <code>file:filename.pdf</code> or if we wanted to add a video we wrote <code>video:youtubeID</code>. By doing this we could with ease control what was added to each product.</p>
+
+<p><img src="/images/content/posts/shopify-adding-meta-data/tags.jpg" alt="" /></p>
+
+<p>Code example for tags containing video:</p>
+
+<p>```html
+{% for tag in product.tags %}</p>
+
+<pre><code>{% if tag contains 'video:'%}
+    &lt;div&gt;
+        &lt;iframe src="http://www.youtube.com/embed/{{ tag | replace: 'video:', ''}}"&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+{% endif %}
+</code></pre>
+
+<p>{% endfor %}
+```</p>
+]]></content>
+  </entry>
+  
+</feed>

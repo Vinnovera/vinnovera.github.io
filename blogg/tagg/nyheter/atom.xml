@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nyheter | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/nyheter/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-04-04T11:28:10+02:00</updated>
+  <updated>2014-04-23T09:22:13+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,104 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hittat på nätet #3]]></title>
+    <link href="http://vinnovera.se/blogg/2014/04/11/hittat-pa-natet-number-3/"/>
+    <updated>2014-04-11T14:10:25+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/04/11/hittat-pa-natet-number-3</id>
+    <content type="html"><![CDATA[<p>I denna upplaga: mer SVG, mer underlines, nytt programmeringsspråk, verktyg och lite historia</p>
+
+<!--more-->
+
+
+<h2>Alla vägar leder till Xerox</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-3/burger.jpg" alt="The origin of the hamburger icon" />
+<a href="https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">The origin of the hamburger icon</a><br />
+Varifrån kommer alla ikoner? Var hamburgaren kommer ifrån kan du hitta här.</p>
+
+<h2>Kommentarsfält utöver det vanliga</h2>
+
+<p><a href="http://lattlast.se/kommentarsfalt">Centrum för lättläst lanserar ett kommentarsfält för alla</a><br />
+Centrum för lättläst lanserar Kommentarsfält för alla, som gör det lättare för alla att kommentera och diskutera artiklar och texter på nätet.</p>
+
+<h2>Network Link Conditioner</h2>
+
+<p><a href="http://nshipster.com/network-link-conditioner/">Network Link Conditioner</a><br />
+Simulera begränsade uppkopplingar när du utvecklar.</p>
+
+<h2>The Heartbleed Bug</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-3/heartbleed_explanation.jpg" alt="heartbleed_explanation" />
+<a href="http://xkcd.com/1354/">The Heartbleed Bug</a><br /></p>
+
+<h2>Javascript spel</h2>
+
+<p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted &ndash; a user javascript adventure game</a><br />
+Ett spel som går ut på att skriva javascript för att ta sig vidare till nästa level.</p>
+
+<h2>Support för Windows XP upphör</h2>
+
+<p><a href="http://windows.microsoft.com/en-us/windows/end-support-help">Windows XP support has ended</a><br />
+Efter 12 års support slutar Microsoft att ha underhåll för Windows XP. Då IE8 inte heller underhålls längre kan man utsätta sin dator för säkerhetsrisk om man fortsätter att använda produkterna.</p>
+
+<h2>Grilla ditt moderkort</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-3/tray.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
+<a href="http://ales.io/2014/03/09/how-to-bake-a-mac.html">How I resurrected my MacBook Pro by putting it in the oven</a><br />
+Efter en &ldquo;Blue Screen of Death&rdquo; plockade Aleš Kocjančič ut sitt moderkort ur sin MacBook Pro och körde det i ugnen på 170° Celsius i 7 minuter. Magiskt nog började datorn fungera igen.</p>
+
+<h2>doT.js</h2>
+
+<p><a href="http://olado.github.io/doT/index.html">The fastest + concise javascript template engine for Node.js and browsers.</a><br />
+En snabb och liten template-motor för node.js och browsers</p>
+
+<h2>SVG Sprites</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-3/svg-icon.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
+<a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/">Icon System with SVG Sprites</a><br />
+Ett alternativ till icon-fonts från Chris Coyier där man använder inline svgs istället.</p>
+
+<h2>Lär dig rita med ASCII</h2>
+
+<p><a href="http://asciiflow.com/">Asciiflow &ndash; ASCII Flow Diagram Tool</a><br />
+Ett fräsigt onlineverktyg där man kan rita, spara och mycket mer med hjälp av en slående ASCII-design.</p>
+
+<h2>Utveckligen av en utvecklare</h2>
+
+<p><a href="https://medium.com/p/db854689243">The Evolution of a Software Engineer</a><br />
+Ibland kan det ta tio år att komma tillbaka till början.</p>
+
+<h2>Vetenskapen om underlines</h2>
+
+<p><a href="https://medium.com/p/7c03a9274f9">Crafting link underlines on Medium</a><br />
+En artikel om hur en &ldquo;quick-fix&rdquo; blev ett en månads långt projekt för att fixa underlines på medium.com</p>
+
+<h2>Hack</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-3/facebook-hack.jpg" alt="Facebook Introduces ‘Hack,’ the Programming Language of the Future" />
+<a href="http://hacklang.org/">Facebook Introduces ‘Hack,’ the Programming Language of the Future</a>
+Hack &ndash; ett programmeringsspråk utvecklat av Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
+
+<h2>Världens minsta responsiva CSS-ramverk?</h2>
+
+<p>```css
+/<em> FLUIDITY v0.1.0 @mrmrs &ndash; <a href="http://mrmrs.cc">http://mrmrs.cc</a> MIT
+</em>/
+/*
+ Responsive Utilities</p>
+
+<p>*/
+img, canvas, iframe, video, svg { max-width: 100%; }</p>
+
+<p>/<em> Wrap tables or pre elements in a div with this class </em>/
+.overflow-container { overflow-y: scroll; }
+```
+<a href="https://github.com/mrmrs/fluidity">A light-weight, fully-responsive css framework</a><br />
+Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs/fluidity/issues/13">Consider adding form elements</a>&rdquo; och &ldquo;<a href="https://github.com/mrmrs/fluidity/issues/6">Specify Version of Supported Browsers</a>&rdquo; ser det väldigt autentiskt ut.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hittat på nätet #2]]></title>
