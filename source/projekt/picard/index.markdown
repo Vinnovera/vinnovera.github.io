@@ -17,7 +17,7 @@ Uppdraget var att bygga en ny responsiv webbsida, föreberedd för e-handel.
 
 ## Vinnoveras roll
 
-Vinnoveras roll i projektet var att att leverera frontendkod och expertis inom HTML-utveckling i kombination med att stödja designer och interaktionsdesigner i designfasen. The Viral Company stod för design och interaktionsdesign och Agigen ansvarade för backendutveckling, vilket gjordes på en Magentoplattform.
+Vinnoveras roll i projektet var att att leverera frontendkod och expertis inom HTML-utveckling i kombination med att stödja designer och interaktionsdesigner i designfasen. [The Viral Company](http://theviralcompany.com/) stod för design och interaktionsdesign och Agigen ansvarade för backendutveckling, vilket gjordes på en Magentoplattform.
  
 ## Tekniker som använts
 * CSS media queries (responsive)
