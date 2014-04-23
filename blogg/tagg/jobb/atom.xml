@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Jobb | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/jobb/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-04-23T09:22:13+02:00</updated>
+  <updated>2014-04-23T09:42:07+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -26,7 +26,7 @@ Vi letar efter dig som <strong>brinner för frontend-utveckling</strong> och vil
 
 <p>Hos oss får du jobba med <strong>responsive webb, mobilsajter, webbappar</strong> och andra skojiga saker som har ett gränssnitt på webben. Alltid med <strong>kvalitet och hantverkskänsl i fokusa</strong>. Vi värdesätter att arbeta tillsammans och dela kunskap för att kunna genomföra projekt på bästa sätt.</p>
 
-<p>Vi har ett antal stora företag som kunder (som vi tyvärr inte får nämna vid namn förrän du kommer och träffar oss) och även ett gäng mindre. Just nu jobbar vi mycket med <strong>node.js, D3.js och Backbone</strong>.</p>
+<p>Vi har ett antal stora företag som kunder (som vi tyvärr inte får nämna vid namn förrän du kommer och träffar oss) och även ett gäng mindre. Just nu jobbar vi mycket med <strong><a href="http://nodejs.org/">node.js</a></strong>, <strong><a href="http://d3js.org/">D3.js</a></strong> och <strong><a href="http://backbonejs.org/">Backbone</a></strong>.</p>
 
 <p>Låter det intressant? <a href="/#kontakt">Hör av dig till oss</a>.</p>
 ]]></content>
