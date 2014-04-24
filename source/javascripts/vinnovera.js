@@ -30,7 +30,7 @@
 			e.stop();
 			
 			var hash = this.hash.substr(1),
-			    top  = document.id(hash).getPosition().y;
+				top  = document.id(hash).getPosition().y;
 			
 			bodyTween.start(0, top);
 		});
@@ -62,6 +62,22 @@
 				fxScroll.toElement(href);
 			});
 		}
+
+		document.body.addEvent('click:relay(.post article p img)', function (e) {
+			
+			var copy = this.clone();
+			copy.set('id', 'fullscreen_image');
+			copy.inject(document.body);
+
+			copy.addEvent('load', function(e) {
+				var jso = new jsOverlay({
+					content: 'fullscreen_image',
+					usePushState: false
+				});
+			});
+			
+		});
+
 	});
 	
 }();
