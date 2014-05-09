@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-04-23T15:52:31+02:00</updated>
+  <updated>2014-05-09T15:18:24+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hittat på nätet #4]]></title>
+    <link href="http://vinnovera.se/blogg/2014/05/09/hittat-pa-natet-number-4/"/>
+    <updated>2014-05-09T14:01:25+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/05/09/hittat-pa-natet-number-4</id>
+    <content type="html"><![CDATA[<p>Senaste länkspaningarna, den här gången med Photoshoputmanare, obskyra CSS-fakta, och såklart lite SVG</p>
+
+<!--more-->
+
+
+<h2>Istället för Photoshop</h2>
+
+<p>Inte sällan känns det fullständiga Photoshop som en smula omständigt och klumpigt när det kommer till att bygga webbplatser utifrån Photoshop-skisser. Vi ser här ett par lösningar som är menade att underlätta det arbetet.
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-4/parfait.png" alt="Project Parfait" />
+<a href="https://projectparfait.adobe.com/">Project Parfait</a><br/>
+Ett projekt i betastadie från Adobe själva som skall underlätta i arbetet med att ta fram CSS, mått och text från en PSD-fil.</p>
+
+<p><a href="http://photoshopkiller.com/">Photoshop Killer</a><br/>
+En reklamsajt med irritationsmoment relaterat till Photoshop med hög igenkänningsfaktor. Gör reklam för en kommande produkt, Avocode, som ser ut att göra ungefär samma saker som Project Parfait.</p>
+
+<p><a href="http://bohemiancoding.com/sketch/">Sketch</a>
+Ett alternativt designverktyg som ser ut att vara väl anpassat för många utmaningar i den moderna digitala designprocessen.</p>
+
+<h2>URL-funderingar</h2>
+
+<p>Hur URLer skall presenteras är en diskussion som är lite på modet just nu.</p>
+
+<p><a href="http://jakearchibald.com/2014/improving-the-url-bar/">Improving the URL Bar</a>
+Tydligare separation mellan domän och sökväg, kan det minska risken vid phishing-attacker? Och vilken del av en URL är viktigast för användaren att se egentligen?</p>
+
+<p><a href="http://news.bbc.co.uk/1/hi/8306631.stm">Berners-Lee &lsquo;sorry&rsquo; for slashes</a>
+Och så har vi den här gamla godingen där Tim Berners-Lee ber om ursäkt för //.</p>
+
+<h2>jQuery-trollande</h2>
+
+<p><a href="http://i.stack.imgur.com/A7NsC.gif">Add a number to another number in Javascript</a>
+Det är tydligt att fler och fler börjar vända sig mot att Javascript och jQuery blivit så tätt sammankopplat. Ett typiskt exempel på detta är det här Javascript-skojandet.</p>
+
+<h2>Isomer &ndash; En isometrisk spelmotor</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-4/isomer.png" alt="Isomer" />
+<a href="http://jdan.github.io/isomer/">Isomer</a>
+En spelmotor för isometriska spel som ser kul ut.</p>
+
+<h2>Obskyra CSS-fakta</h2>
+
+<p><a href="http://www.sitepoint.com/12-little-known-css-facts/">12 little known CSS facts</a>
+Det finns en del obskyra CSS-fakta, varav några roliga finns listade här. Kolla t.ex. in nummer 5 på listan som kan vara bra att ha koll på.</p>
+
+<h2>Arduino och matlagning</h2>
+
+<p><a href="https://www.youtube.com/watch?v=29qBI7IWFl4">BBQDuino</a>
+Ett roligt litet projekt som kombinerar Arduino och ett temperatursticka för att hjälpa till med den perfekta matlagningen.</p>
+
+<h2>Inline SVG vs Icon Fonts</h2>
+
+<p><a href="http://css-tricks.com/icon-fonts-vs-svg/">Inline SVG vs Icon Fonts [CAGEMATCH]</a>
+En ganska grundlig jämförelse mellan SVG och icon fonts, och SVG är enklare att ha kontroll över, kantujämnar mer regelbundet och är utöver browserstöd helt överlägset.</p>
+
+<h2>ET återfunnen</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-4/et.png" alt="ET" />
+En legend som vandrat runt sedan det uråldriga 80-talet är att väldiga mängder av datorspelsfloppen ET begravts någonstans i öknen i New Mexico, och tydligen har den visat sig vara sann.</p>
+
+<p><a href="https://www.youtube.com/watch?v=gULY34J3x0I">ET spelet</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=kGc3FMqxjaM">ET funnen</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Vi söker frontend-utvecklare!]]></title>
