@@ -14,7 +14,7 @@ De arbetar också med licensierade varumärken och är officiell partner för Di
 
 ## Vinnoveras roll
 
-Vår roll i projektet var projektledning, kravställning, interaktionsdesign och front-end-utveckling. Vi samarbetade med Kristoffer Gustafsson på Parsley.se som gjorde interaktion/design och LarvIT som kodade back-end tillsammans med Photowalls in-house-programmerare.
+Vår roll i projektet var projektledning, kravställning, interaktionsdesign och front-end-utveckling. Vi samarbetade med Kristoffer Gustafsson på [Parsley.se](http://parsley.se/) som gjorde interaktion/design och [LarvIT](http://larvit.se/) som kodade back-end tillsammans med Photowalls in-house-programmerare.
 
 ![Skärmdumpar photowall.se](/images/content/projects/photowall/responsive.jpg)
 

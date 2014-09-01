@@ -8,7 +8,7 @@ footer: true
 ---
 ![Skärmdump Adidas](/images/content/projects/adidas-messi/screenshot.jpg)
 
-Adidas ville skapa en aktivitet för att markandsföra Lionel Messis signatursko. Vi fick uppdraget att bygga spelmomentet och gränssnittet och den kreativa byrån The Viral Company stod för design och koncept.
+Adidas ville skapa en aktivitet för att markandsföra Lionel Messis signatursko. Vi fick uppdraget att bygga spelmomentet och gränssnittet och den kreativa byrån [The Viral Company](http://theviralcompany.com/) stod för design och koncept.
 
 ## Vinnoveras roll
 

@@ -1,0 +1,14 @@
+/*
+.post article p img {
+	cursor: pointer;
+}
+.jso-overlay {
+	background: rgb(0, 0, 0) transparent;
+	background: rgba(0, 0, 0, 0.9);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ee000000, endColorstr=#ee000000);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ee000000, endColorstr=#ee000000)";
+}
+.jso-closebutton {
+	cursor: pointer;
+}
+*/
