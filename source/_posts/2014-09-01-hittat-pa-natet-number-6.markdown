@@ -10,7 +10,7 @@ authorImage: /images/profiles/sandra.jpg
 authorTel: 070-491 84 29
 authorMail: alexandra@vinnovera.se
 ---
-
+En sommar full med Javascript, musik, verktyg, ramverk och folk som byter åsikter!
 <!--more-->
 
 ## Simpelt byggda med få element
