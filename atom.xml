@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-08-26T13:16:56+02:00</updated>
+  <updated>2014-09-02T12:26:16+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hittat på nätet #6]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6/"/>
+    <updated>2014-09-01T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h2>Simpelt byggda med få element</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/singlediv.jpg" alt="A Single Div" />
+<a href="http://a.singlediv.com/">A Single Div</a><br/>
+<a href="http://nicolasgallagher.com/pure-css-gui-icons/demo/#non">Pure CSS GUI icons</a><br/>
+Två exempel på vad man kan åstakomma med minimal kod.</p>
+
+<h2>Patterns för stora Javascript applikationer</h2>
+
+<p><a href="http://addyosmani.com/largescalejavascript/">Patterns For Large-Scale JavaScript Application Architecture</a><br/>
+Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, mediator och fasader.</p>
+
+<h2>Åsikter om JS-ramverk</h2>
+
+<p><a href="http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks">Opinionated Rundown of JS Frameworks</a><br/>
+Henrik Joreteg går igen för- och nackdelar med några populära Javascript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
+
+<h2>Service Worker</h2>
+
+<p><a href="http://jakearchibald.com/2014/service-worker-first-draft/">Service Worker &ndash; first draft published</a><br/>
+Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla Service Worker som bl.a. gör det möjligt att köra skript innan en sida existerar.</p>
+
+<h2>r2d3</h2>
+
+<p><a href="https://github.com/mhemesath/r2d3/">r2d3</a>  <br/>
+Nu har datavisualisering kommit till IE8, inklusive senare webbläsare! (Men vi gillar inte IE8)
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /></p>
+
+<h2>smallworld.js</h2>
+
+<p><a href="http://mikefowler.me/smallworld.js/">smallworld.js</a><br/>
+smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel översikt av en karta utan tunga bibliotek.</p>
+
+<h2>ish. 2.0</h2>
+
+<p><a href="http://bradfrostweb.com/demo/ish/">ish. 2.0</a><br/>
+Verktyg för att testa webbsidor i alla storlekar.
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/ish-manual.gif" alt="ish manual" /></p>
+
+<h2>Apfy me</h2>
+
+<p><a href="http://www.apfy.me/">apfy.me</a><br/>
+1. Hämta en sida och få HTML-svaret som XML<br/>
+2. Formatera XML output&#8217;en med XSLT<br/>
+3. Validera output med XSD<br/>
+4. Spara ner som ett API när du är klar!</p>
+
+<h2>Hejdå Node.js</h2>
+
+<p><a href="https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b">Farewell Node.js</a><br/>
+TJ Holowaychuk lämnar Node.js för att gå över till Go som passar hans nuvarande programmerings ambitioner bättre.</p>
+
+<h2>Prezi har gått över till Javascript</h2>
+
+<p><a href="https://medium.com/prezi-engineering/how-and-why-prezi-turned-to-javascript-56e0ca57d135">How and why Prezi turned to JavaScript</a><br/>
+En artikel om varför Prezi gick över till Javascript och vilket jättejobb de tyckte det var.</p>
+
+<h2>Säkrast går först!</h2>
+
+<p><a href="http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/">Google is now ranking websites with HTTPS higher in its search results</a><br/>
+Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
+
+<h2>Räkna BPM med Javascript och Spotify</h2>
+
+<p><a href="http://jmperezperez.com/beats-audio-api/">beats-audio-api</a><br/>
+1. Leta fram en låt på Spotify med hjälp av deras Web API<br/>
+2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API&#8217;t<br/>
+3. Lägg på ett lowbass filter<br/>
+4. Hitta toppar<br/>
+5. Räkna intervallet mellan toppar<br/>
+6. Gruppera dom</p>
+
+<h2>Hur utvecklare ser användare</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/users.gif" alt="As a software developer this is how we view ALL end users" /><br/>
+I vår bransch försöker man ofta lösa usability-problem som inte finns</p>
+
+<h2>Lite mer datavisualisering</h2>
+
+<p>Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" />
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript böcker" />
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" />
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
+
+<h2>Roliga korrelationer</h2>
+
+<p><a href="http://tylervigen.com/">Spurious Correlations</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hittat på nätet #5]]></title>
@@ -51,7 +151,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med. Men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x61;&#x73;&#100;&#64;&#x61;&#115;&#100;&#x2e;&#97;&#x73;&#x2e;">&#97;&#x73;&#x64;&#x40;&#x61;&#115;&#x64;&#x2e;&#x61;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x61;&#x73;&#100;&#x40;&#97;&#115;&#x64;&#x2e;&#97;&#x73;&#46;">&#97;&#x73;&#100;&#x40;&#97;&#115;&#100;&#x2e;&#97;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>

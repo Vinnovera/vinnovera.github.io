@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nyheter | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/nyheter/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-08-26T13:16:56+02:00</updated>
+  <updated>2014-09-02T12:26:16+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hittat på nätet #6]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6/"/>
+    <updated>2014-09-01T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h2>Simpelt byggda med få element</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-6/singlediv.jpg" alt="A Single Div" />
+<a href="http://a.singlediv.com/">A Single Div</a><br/>
+<a href="http://nicolasgallagher.com/pure-css-gui-icons/demo/#non">Pure CSS GUI icons</a><br/>
+Två exempel på vad man kan åstakomma med minimal kod.</p>
+
+<h2>Patterns för stora Javascript applikationer</h2>
+
+<p><a href="http://addyosmani.com/largescalejavascript/">Patterns For Large-Scale JavaScript Application Architecture</a><br/>
+Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, mediator och fasader.</p>
+
+<h2>Åsikter om JS-ramverk</h2>
+
+<p><a href="http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks">Opinionated Rundown of JS Frameworks</a><br/>
+Henrik Joreteg går igen för- och nackdelar med några populära Javascript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
+
+<h2>Service Worker</h2>
+
+<p><a href="http://jakearchibald.com/2014/service-worker-first-draft/">Service Worker &ndash; first draft published</a><br/>
+Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla Service Worker som bl.a. gör det möjligt att köra skript innan en sida existerar.</p>
+
+<h2>r2d3</h2>
+
+<p><a href="https://github.com/mhemesath/r2d3/">r2d3</a>  <br/>
+Nu har datavisualisering kommit till IE8, inklusive senare webbläsare! (Men vi gillar inte IE8)
+<img src="/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /></p>
+
+<h2>smallworld.js</h2>
+
+<p><a href="http://mikefowler.me/smallworld.js/">smallworld.js</a><br/>
+smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel översikt av en karta utan tunga bibliotek.</p>
+
+<h2>ish. 2.0</h2>
+
+<p><a href="http://bradfrostweb.com/demo/ish/">ish. 2.0</a><br/>
+Verktyg för att testa webbsidor i alla storlekar.
+<img src="/images/content/posts/hittat-pa-natet-number-6/ish-manual.gif" alt="ish manual" /></p>
+
+<h2>Apfy me</h2>
+
+<p><a href="http://www.apfy.me/">apfy.me</a><br/>
+1. Hämta en sida och få HTML-svaret som XML<br/>
+2. Formatera XML output'en med XSLT<br/>
+3. Validera output med XSD<br/>
+4. Spara ner som ett API när du är klar!</p>
+
+<h2>Hejdå Node.js</h2>
+
+<p><a href="https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b">Farewell Node.js</a><br/>
+TJ Holowaychuk lämnar Node.js för att gå över till Go som passar hans nuvarande programmerings ambitioner bättre.</p>
+
+<h2>Prezi har gått över till Javascript</h2>
+
+<p><a href="https://medium.com/prezi-engineering/how-and-why-prezi-turned-to-javascript-56e0ca57d135">How and why Prezi turned to JavaScript</a><br/>
+En artikel om varför Prezi gick över till Javascript och vilket jättejobb de tyckte det var.</p>
+
+<h2>Säkrast går först!</h2>
+
+<p><a href="http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/">Google is now ranking websites with HTTPS higher in its search results</a><br/>
+Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
+
+<h2>Räkna BPM med Javascript och Spotify</h2>
+
+<p><a href="http://jmperezperez.com/beats-audio-api/">beats-audio-api</a><br/>
+1. Leta fram en låt på Spotify med hjälp av deras Web API<br/>
+2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API't<br/>
+3. Lägg på ett lowbass filter<br/>
+4. Hitta toppar<br/>
+5. Räkna intervallet mellan toppar<br/>
+6. Gruppera dom</p>
+
+<h2>Hur utvecklare ser användare</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-6/users.gif" alt="As a software developer this is how we view ALL end users" /><br/>
+I vår bransch försöker man ofta lösa usability-problem som inte finns</p>
+
+<h2>Lite mer datavisualisering</h2>
+
+<p>Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.</p>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" />
+<img src="/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript böcker" />
+<img src="/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" />
+<img src="/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
+
+<h2>Roliga korrelationer</h2>
+
+<p><a href="http://tylervigen.com/">Spurious Correlations</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hittat på nätet #5]]></title>
@@ -51,7 +151,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med. Men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#97;&#x73;&#x64;&#64;&#97;&#x73;&#100;&#46;&#97;&#x73;&#x2e;">&#x61;&#x73;&#x64;&#64;&#x61;&#115;&#x64;&#x2e;&#x61;&#115;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x61;&#115;&#100;&#x40;&#x61;&#x73;&#x64;&#46;&#97;&#x73;&#x2e;">&#x61;&#x73;&#100;&#x40;&#x61;&#115;&#x64;&#46;&#97;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -286,68 +386,6 @@ InfoQ har gjort en enkät som undersöker vilket JavaScript MVC ramverk som går
 
 <p><a href="http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html">Do Not Use bodyParser with Express.js</a><br>
 Varje gång Express.js hanterar ett POST request med antingen <code>bodyParser()</code> eller <code>multipart()</code> skapas en temp fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hittat på nätet #1]]></title>
-    <link href="http://vinnovera.se/blogg/2014/03/03/hittat-pa-natet-number-1/"/>
-    <updated>2014-03-03T15:17:50+01:00</updated>
-    <id>http://vinnovera.se/blogg/2014/03/03/hittat-pa-natet-number-1</id>
-    <content type="html"><![CDATA[<p>Länkar till intressanta artiklar, verktyg och tjänster som vi tycker är värda att uppmärksamma.</p>
-
-<!--more-->
-
-
-<h2>Nytt API från Trafikverket</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-1/trafikapi.jpg" alt="TrafikAPI" />
-<a href="http://www.trafiklab.se/">Nytt API från Trafikverket &ndash; Öppet API (Beta)</a><br/>
-Ett samarbete med bland annat SL och Trafikverket erbjuder ett nytt öppet API med spännande trafikdata. Vi har redan börjat spåna på tjänster baserade på den här datan och möjligheterna är många.</p>
-
-<h2>Designing the Perfect Hyperlink</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-1/hyperlinks.jpg" alt="Hyperlinks" />
-<a href="http://sixrevisions.com/usability/hyperlink-design/">Designing the Perfect Hyperlink — It’s Not as Simple as You Think</a><br/>
-Webben är uppbyggd av hyperlänkar och det är värt att fundera ett extra varv på hur de skall formgivas. Det finns mycket att hämta i att respektera traditionerna, samtidigt som de i sig kan innebära problem.</p>
-
-<h2>Responsive prototypes in Axure RP7</h2>
-
-<p><a href="http://uxdesign.smashingmagazine.com/2014/02/26/creating-responsive-prototypes-adaptive-views-axure-rp-7/">Responsive prototypes in Axure RP7</a><br/>
-Axure RP är ett verktyg som används för &ldquo;wireframing&rdquo; och &ldquo;rapid prototyping&rdquo;. I RP7 finns det stöd för att göra prototyper av responsiva webbplatser, och har här publicerat en genomgång av hur de verktygen kan användas.</p>
-
-<h2>App-pocalypse Now</h2>
-
-<p><a href="http://blog.codinghorror.com/app-pocalypse-now/">App-pocalypse Now &ndash; I&rsquo;m getting pretty sick of being nagged to install your damn apps.</a><br/>
-När det gäller onlinetjänster blir det allt snårigare med huruvida de gör sig bäst som appar eller webbplatser, och inte sällan utvecklas t.ex. telefonappar som skulle fungera minst lika bra som en webbappar. Här är en bloggpost som lite raljant tar upp problemen med appmarknaden.</p>
-
-<h2>Hamburger Not the Best Choice?</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-1/icontest.jpg" alt="BurgerIcon" />
-<a href="http://exisweb.net/mobile-menu-abtest">Mobile Menu AB Tested: Hamburger Not the Best Choice?</a><br/>
-Det enda sättet att faktiskt veta hur användare interagerar med ens webbplats är att testa och mäta. Här bjuds vi på ett litet A/B-test på en webbplats som undersöker den numera ganska typiska smalskärmsikonen för att indikera en meny.</p>
-
-<h2>Golden Ratio Typography Calculator</h2>
-
-<p><a href="http://www.pearsonified.com/typography/">Golden Ratio Typography Calculator</a><br/>
-För den som önskar få hjälp med att avgöra lämpliga inställningar för teckensnitten på sin webbplats finns det här verktyget. Baserat på teckenmängd per rad, innehållets bredd, teckensnittets generella utseende och annat får man här stöd för att ta fram så behaglig brödtext som möjligt.</p>
-
-<h2>DHTMLConf 2014</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-1/dhtmlconf.jpg" alt="DHTMLConf" />
-<a href="http://dhtmlconf.com/">DHTMLConf 2014</a><br/>
-Det här verkar vara en väldigt givande tillställning, en DHTML-konferens som en del av JSFest.</p>
-
-<h2>ATOM</h2>
-
-<p><a href="http://atom.io/">ATOM &ndash; A hackable text editorfor the 21st Century</a><br/>
-GitHub är i lanseringstagen för sin nya textediter Atom, som kommer att vara byggd på för webbutvecklare bekanta teknologier för att underlätta utveckling av tillägg och att göra sin texteditor mer personlig.</p>
-
-<h2>Vinnovera</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-1/vinnovera.jpg" alt="DHTMLConf" />
-<a href="http://www.vinnovera.se/">Vinnovera</a><br/>
-Nån webbyrå har gjort en webbplats åt sig själva.</p>
 ]]></content>
   </entry>
   
