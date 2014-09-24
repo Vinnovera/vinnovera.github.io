@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-24T15:26:08+02:00</updated>
+  <updated>2014-09-24T15:31:37+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -131,10 +131,10 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
     <id>http://vinnovera.se/blogg/2014/09/01/hej-harald-och-mico</id>
     <content type="html"><![CDATA[<p><strong>Harald</strong> och <strong>Mico</strong> började i augusti som frontend-utvecklare på Vinnovera. Kul tycker vi!<!--more--></p>
 
-<p><img src="http://vinnovera.se/images/profiles/harald.jpg" alt="Harald" style="border-radius: 50%;display: block;margin: 0 0 0 20px; float:right" />
+<p><img src="http://vinnovera.se/images/profiles/harald.jpg" alt="Harald" class="portrait" />
 <strong>Harald</strong> har mångårig erfarenhet av interaktiva spel och lärohjälpmedel. På senare år har fokus legat på webbgränssnitt och frontend-utveckling. Med dessa kunskaper har Harald god förståelse för såväl interaktion och grafiska gränssnitt, samt hur man utvecklar dessa rent tekniskt. Utöver sin kärlek till frontend har han en musikstudio på söder där bland annat hans triphop-projekt &ldquo;Skuld&rdquo; håller hus.</p>
 
-<p><img src="http://vinnovera.se/images/profiles/michael.jpg" alt="Michael" style="border-radius: 50%;display: block;margin: 0 0 0 20px; float:right" />
+<p><img src="http://vinnovera.se/images/profiles/michael.jpg" alt="Michael" class="portrait" />
 <strong>Michael a.k.a. Mico</strong> har jobbat med webbutveckling sedan 1997 och har stor erfarenhet och kunskap av alla beståndsdelar i ett webbprojekt, från backend till frontend. Han har bland mycket annat startat och drivit hosting-företaget MrFriday. Frontend är dock det som ligger honom varmast om hjärtat. Mico driver även tidskriften &ldquo;Hilfe&rdquo; och reser till Japan så fort han får möjlighet.
 <strong>Stockholmsmässan</strong> under hösten och Mico kommer att jobba med <strong>A/B-test</strong> åt en av våra hemliga kunder.</p>
 
@@ -193,7 +193,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#97;&#115;&#100;&#x40;&#x61;&#x73;&#x64;&#46;&#97;&#x73;&#x2e;">&#x61;&#115;&#x64;&#64;&#97;&#x73;&#x64;&#46;&#x61;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#97;&#115;&#100;&#x40;&#x61;&#x73;&#100;&#x2e;&#x61;&#x73;&#46;">&#x61;&#x73;&#100;&#x40;&#97;&#115;&#x64;&#46;&#x61;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -223,7 +223,7 @@ Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika vikt
     <link href="http://vinnovera.se/blogg/2014/06/30/hej-daniel/"/>
     <updated>2014-06-30T10:27:15+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/06/30/hej-daniel</id>
-    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/daniel.jpg" alt="Daniel" style="border-radius: 50%;display: block;margin: 0 0 0 20px; float:right" />
+    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/daniel.jpg" alt="Daniel" class="portrait" />
 Under våren har det varit fullt ös på Vinnovera och vi kände att det var dags få in ytterligare en duktig frontend-utvecklare<!--more-->, gärna med fokus på applikationsutveckling med JavaScript. Som genom ett trollslag hörde <strong>Daniel</strong> av sig och vi fann varandra. Han är en kreativ problemlösare med stor passion och nyfikenhet för nya tekniker. När Daniel inte kodar komplexa <strong>webb-applikationer</strong> gillar han att baka surdegsbröd (som man vid väl valda tillfällen kan få smaka på kontoret) och vässa sitt löpsteg.</p>
 
 <p>Daniel började hos oss i juni och kommer att jobba med ett stort applikationsprojekt åt en av våra hemliga kunder.</p>
