@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-02T12:31:07+02:00</updated>
+  <updated>2014-09-24T08:58:22+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,11 +14,24 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Frontend-lunch på Vinnovera]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/23/frontend-lunch-pa-vinnovera/"/>
+    <updated>2014-09-23T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/23/frontend-lunch-pa-vinnovera</id>
+    <content type="html"><![CDATA[<p>Man brukar ju säga att alla behöver äta lunch&hellip; Lunch har därför blivit ett bra tillfälle för alla oss på Vinnovera att samlas och prata ny teknik, delar erfarenheter och visa egna projekt.<!--more--> Vi brukar gå igenom, diskutera och sammanställa länkar som sedan blir till vår artikelserie <a href="http://vinnovera.se/blogg/tagg/hittat/">&ldquo;Hittat på nätet&rdquo;</a>. Utöver det blir det ofta workshop kring något ämne som berör det vi jobbar med dagligen eller demo av egna projekt. Vi har under året bland annat pratat om <a href="http://vinnovera.se/blogg/2013/12/12/unit-testing/">&ldquo;Unit testing&rdquo;</a>, <a href="http://vinnovera.se/blogg/2014/02/19/garbage-collection/">&ldquo;Garbage collection&rdquo;</a>, <a href="http://vinnovera.se/blogg/2014/01/07/jquery-vs-mootools/">&ldquo;MooTools&rdquo;</a> och <a href="http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript/">&ldquo;Bildmanipulation&rdquo;</a> som sedan resulterat i artiklar här på bloggen. Luncherna har också blivit födelseplatsen och/eller katalysator för flera roliga projekt. T.ex. en responsiv lightbox (<a href="https://github.com/Vinnovera/jsOverlay">&ldquo;jsOverlay&rdquo;</a>), ett spel med Node.js och MongoDB, utvecklingsramverket <a href="https://github.com/Vinnovera/estrad">Estrad</a>, en lösning för responsiva bilder (<a href="https://github.com/Vinnovera/rimd">Rimd</a>) och mycket mer.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/frontend-lunch-pa-vinnovera/lunch.jpg" alt="Lunch" /></p>
+
+<p>Och till på köpet får man mat i magen!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hittat på nätet #6]]></title>
     <link href="http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6/"/>
     <updated>2014-09-01T10:27:15+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6</id>
-    <content type="html"><![CDATA[<p>En sommar full med Javascript, musik, verktyg, ramverk och folk som byter åsikter!</p>
+    <content type="html"><![CDATA[<p>En sommar full med JavaScript, musik, verktyg, ramverk och folk som byter åsikter!</p>
 
 <!--more-->
 
@@ -30,7 +43,7 @@
 <a href="http://nicolasgallagher.com/pure-css-gui-icons/demo/#non">Pure CSS GUI icons</a><br/>
 Två exempel på vad man kan åstakomma med minimal kod.</p>
 
-<h2>Patterns för stora Javascript applikationer</h2>
+<h2>Patterns för stora JavaScript-applikationer</h2>
 
 <p><a href="http://addyosmani.com/largescalejavascript/">Patterns For Large-Scale JavaScript Application Architecture</a><br/>
 Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, mediator och fasader.</p>
@@ -38,23 +51,25 @@ Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, m
 <h2>Åsikter om JS-ramverk</h2>
 
 <p><a href="http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks">Opinionated Rundown of JS Frameworks</a><br/>
-Henrik Joreteg går igen för- och nackdelar med några populära Javascript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
+Henrik Joreteg går igenom för- och nackdelar med några populära JavaScript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
 
 <h2>Service Worker</h2>
 
 <p><a href="http://jakearchibald.com/2014/service-worker-first-draft/">Service Worker &ndash; first draft published</a><br/>
-Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla Service Worker som bl.a. gör det möjligt att köra skript innan en sida existerar.</p>
+Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla &ldquo;Service Worker&rdquo; som bl.a. gör det möjligt att köra skript innan en sida existerar. Det gör det möjligt att skapa mer applikationslika webbsidor.</p>
 
 <h2>r2d3</h2>
 
 <p><a href="https://github.com/mhemesath/r2d3/">r2d3</a>  <br/>
-Nu har datavisualisering kommit till IE8, inklusive senare webbläsare! (Men vi gillar inte IE8)
-<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /></p>
+IE8 är kanske inte vår favoritwebbläsare, men nu har vi iallafall bättre möjligheter att jobba med datavisualisering där också.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /><br/>
+Fler spännande korrelationer: <a href="http://tylervigen.com/">Spurious Correlations</a></p>
 
 <h2>smallworld.js</h2>
 
 <p><a href="http://mikefowler.me/smallworld.js/">smallworld.js</a><br/>
-smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel översikt av en karta utan tunga bibliotek.</p>
+smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel kartöversikt utan tunga bibliotek.</p>
 
 <h2>ish. 2.0</h2>
 
@@ -66,19 +81,19 @@ Verktyg för att testa webbsidor i alla storlekar.
 
 <p><a href="http://www.apfy.me/">apfy.me</a><br/>
 1. Hämta en sida och få HTML-svaret som XML<br/>
-2. Formatera XML output&#8217;en med XSLT<br/>
+2. Formatera XML output:en med XSLT<br/>
 3. Validera output med XSD<br/>
 4. Spara ner som ett API när du är klar!</p>
 
 <h2>Hejdå Node.js</h2>
 
 <p><a href="https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b">Farewell Node.js</a><br/>
-TJ Holowaychuk lämnar Node.js för att gå över till Go som passar hans nuvarande programmerings ambitioner bättre.</p>
+TJ Holowaychuk lämnar Node.js för att gå över till &ldquo;Go&rdquo; som passar hans nuvarande programmeringsambitioner bättre.</p>
 
 <h2>Prezi har gått över till Javascript</h2>
 
 <p><a href="https://medium.com/prezi-engineering/how-and-why-prezi-turned-to-javascript-56e0ca57d135">How and why Prezi turned to JavaScript</a><br/>
-En artikel om varför Prezi gick över till Javascript och vilket jättejobb de tyckte det var.</p>
+En artikel om varför Prezi gick över till JavaScript och vilket jättejobb det innebar för dem.</p>
 
 <h2>Säkrast går först!</h2>
 
@@ -89,7 +104,7 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 
 <p><a href="http://jmperezperez.com/beats-audio-api/">beats-audio-api</a><br/>
 1. Leta fram en låt på Spotify med hjälp av deras Web API<br/>
-2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API&#8217;t<br/>
+2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API:et<br/>
 3. Lägg på ett lowbass filter<br/>
 4. Hitta toppar<br/>
 5. Räkna intervallet mellan toppar<br/>
@@ -98,20 +113,50 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 <h2>Hur utvecklare ser användare</h2>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/users.gif" alt="As a software developer this is how we view ALL end users" /><br/>
-I vår bransch försöker man ofta lösa usability-problem som inte finns</p>
+Vårt mål är alltid att skapa bra användarupplevelser, men i vår bransch försöker man ofta lösa usability-problem som inte finns.</p>
 
 <h2>Lite mer datavisualisering</h2>
 
 <p>Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.</p>
 
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" />
-<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript böcker" />
-<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" />
-<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" /></p>
 
-<h2>Roliga korrelationer</h2>
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript-böcker" /></p>
 
-<p><a href="http://tylervigen.com/">Spurious Correlations</a></p>
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" /></p>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hej Harald och Mico!]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/01/hej-harald-och-mico/"/>
+    <updated>2014-09-01T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/01/hej-harald-och-mico</id>
+    <content type="html"><![CDATA[<p><strong>Harald</strong> och <strong>Mico</strong> började i augusti som frontend-utvecklare på Vinnovera. Kul tycker vi!<!--more--></p>
+
+<p><img src="http://vinnovera.se/images/profiles/harald.jpg" alt="Harald" style="border-radius: 50%;display: block;margin: 0 0 0 20px; float:right" />
+<strong>Harald</strong> har mångårig erfarenhet av interaktiva spel och lärohjälpmedel. På senare år har fokus legat på webbgränssnitt och frontend-utveckling. Med dessa kunskaper har Harald god förståelse för såväl interaktion och grafiska gränssnitt, samt hur man utvecklar dessa rent tekniskt. Utöver sin kärlek till frontend har han en musikstudio på söder där bland annat hans triphop-projekt &ldquo;Skuld&rdquo; håller hus.</p>
+
+<p><img src="http://vinnovera.se/images/profiles/michael.jpg" alt="Michael" style="border-radius: 50%;display: block;margin: 0 0 0 20px; float:right" />
+<strong>Michael a.k.a. Mico</strong> har jobbat med webbutveckling sedan 1997 och har stor erfarenhet och kunskap av alla beståndsdelar i ett webbprojekt, från backend till frontend. Han har bland mycket annat startat och drivit hosting-företaget MrFriday. Frontend är dock det som ligger honom varmast om hjärtat. Mico driver även tidskriften &ldquo;Hilfe&rdquo; och reser till Japan så fort han får möjlighet.
+<strong>Stockholmsmässan</strong> under hösten och Mico kommer att jobba med <strong>A/B-test</strong> åt en av våra hemliga kunder.</p>
+
+<p><strong>Väääälkomna!</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Frontend för KitchenTime]]></title>
+    <link href="http://vinnovera.se/blogg/2014/08/04/kitchen-time/"/>
+    <updated>2014-08-04T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/08/04/kitchen-time</id>
+    <content type="html"><![CDATA[<p>Vår partner <strong><a href="http://www.enferno.se/">Enferno</a></strong> bad oss om hjälp med frontend-utveckling för deras kund <strong><a href="http://kitchentime.se/">KitchenTime</a></strong>.<!--more--> Enferno utvecklar e-handelsplattformen <strong>&ldquo;Storm&rdquo;</strong> som ger bra förutsättningar för arbete med frontend,  och vi har tidigare byggt <strong><a href="http://vinnovera.se/projekt/dackia">Däckia.se</a></strong> tillsammans med dem. Ingen tvekan om att vi ville hjälpa till alltså!
+<img src="http://vinnovera.se/images/content/posts/kitchen-time/screenshot-desktop.png" alt="Desktop" />
+<strong>Sandra</strong> hos oss byggde större delen av mallsidorna och resultatet blev en responsiv e-handel, utvecklad på kort tid och med gott resultat. Så är du ute efter kvalitetsprodukter för köket är det bara att surfa in på <strong><a href="http://kitchentime.se/">www.kitchentime.se</a></strong>
+<img src="http://vinnovera.se/images/content/posts/kitchen-time/screenshot-mobile.png" alt="Mobile" />
+Tack <strong>Enferno</strong> och <strong>KitchenTime</strong> för gott samarbete!</p>
 ]]></content>
   </entry>
   
@@ -129,7 +174,7 @@ I vår bransch försöker man ofta lösa usability-problem som inte finns</p>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-5/808cube.jpg" alt="808 Cube" />
 <a href="http://808cube.com/">808 Cube</a><br/>
-En mashup av den ikoniska Roland TR-808 trumm-maskinen med Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.</p>
+En mashup av Rolands ikoniska trummaskinen TR-808 och Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.</p>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-5/trigometry.jpg" alt="Icosidodecahedron" />
 <a href="http://thesassway.com/advanced/inverse-trigonometric-functions-with-sass">Inverse trigonometric functions with Sass</a><br/>
@@ -137,10 +182,10 @@ Jag kan inte stött på en situation då jag behövt använda sekans, cosekans e
 
 <h2>Hur stor är en glyph?</h2>
 
-<p>I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glypen, och det är de boxerna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.</p>
+<p>I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glyphen, och det är de boxarna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.</p>
 
 <p><a href="http://www.jasondavies.com/wordcloud/about/">How the Word Cloud Generator Works</a><br/>
-För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas element där pixel-datat räknas ut.</p>
+För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas-element där pixel-data räknas ut.</p>
 
 <p><a href="http://nodebox.github.io/opentype.js/index.html">opentype.js</a><br/>
 Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till och med modifiera dom.</p>
@@ -148,26 +193,26 @@ Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till o
 <h2>Grävande journalistik från DN Kultur</h2>
 
 <p><a href="http://www.dn.se/kultur-noje/varfor-ar-internet-i-norge-kjempefult/">Varför är Internet i Norge kjempefult?</a><br/>
-Jag vill påpeka att vi inte nödvändigtvis håller med. Men intressant läsning ändå.</p>
+Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsning ändå.</p>
 
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x61;&#115;&#100;&#64;&#x61;&#115;&#100;&#46;&#x61;&#115;&#x2e;">&#97;&#115;&#100;&#x40;&#97;&#115;&#x64;&#x2e;&#97;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#97;&#x73;&#100;&#64;&#x61;&#x73;&#100;&#x2e;&#x61;&#115;&#x2e;">&#97;&#115;&#x64;&#64;&#97;&#115;&#x64;&#x2e;&#x61;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
 
 <p><a href="https://github.com/blog/1845-psd-viewing-diffing">PSD Viewing &amp; Diffing</a><br/>
-GitHub stödjer nu visning och diffing av PSD filer.</p>
+GitHub stödjer nu visning och diffning av PSD-filer.</p>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-5/w6ehv.png" alt="Faraday cage" /><br/>
 <a href="http://stackoverflow.com/questions/4808433/is-it-possible-to-disable-the-network-in-ios-simulator/13831212#13831212">Is it possible to disable the network in iOS Simulator?</a><br/>
-Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens nätverk. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.</p>
+Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens uppkoppling. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.</p>
 
 <h3>General Update Pattern i D3</h3>
 
-<p>Patterns som borde vara mandatorisk när du använder D3</p>
+<p>Patterns som borde vara obligatoriska när du använder D3.js</p>
 
 <ul>
 <li><a href="http://bl.ocks.org/mbostock/3808218">Pattern 1</a></li>
@@ -175,6 +220,37 @@ Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika vikt
 <li><a href="http://bl.ocks.org/mbostock/3808234">Pattern 3</a></li>
 </ul>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hej Daniel!]]></title>
+    <link href="http://vinnovera.se/blogg/2014/06/30/hej-daniel/"/>
+    <updated>2014-06-30T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/06/30/hej-daniel</id>
+    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/daniel.jpg" alt="Daniel" style="border-radius: 50%;display: block;margin: 0 0 0 20px; float:right" />
+Under våren har det varit fullt ös på Vinnovera och vi kände att det var dags få in ytterligare en duktig frontend-utvecklare<!--more-->, gärna med fokus på applikationsutveckling med JavaScript. Som genom ett trollslag hörde <strong>Daniel</strong> av sig och vi fann varandra. Han är en kreativ problemlösare med stor passion och nyfikenhet för nya tekniker. När Daniel inte kodar komplexa <strong>webb-applikationer</strong> gillar han att baka surdegsbröd (som man vid väl valda tillfällen kan få smaka på kontoret) och vässa sitt löpsteg.</p>
+
+<p>Daniel började hos oss i juni och kommer att jobba med ett stort applikationsprojekt åt en av våra hemliga kunder.</p>
+
+<p><strong>Väääälkommen!</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hackathon på Skåvsjöholm]]></title>
+    <link href="http://vinnovera.se/blogg/2014/06/30/hackathon-pa-skavsjoholm/"/>
+    <updated>2014-06-30T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/06/30/hackathon-pa-skavsjoholm</id>
+    <content type="html"><![CDATA[<p>För ett trevligt miljöombyte åkte hela Vinnovera ut till Skåvsjöholm för två dagars hackathon, workshop och umgänge.<!--more--> Efter en kort resa checkade vi in, fick ett eget hus med sjöutsikt och packade upp våra laptops. En stor del av tiden lades på arbete med egna projekt och teknikutforskning. Det innebar bland annat partiklar med <strong>D3.js</strong>, vidareutveckling av <strong><a href="https://github.com/Vinnovera/estrad">Estrad</a></strong>, en <strong>scoreboard</strong>-app, utforskning av <strong>API:er för kollektivtrafik</strong> och <strong>isometrisk 3D</strong> med JavaScript.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/hackathon-pa-skavsjoholm/hacking.jpg" alt="Hacking" /></p>
+
+<p>Vi gick även igenom alla kundprojekt som är igång för att sprida kunskap, inspirera och bolla lösningar. Det är bra och lärorikt att ibland påminna sig om alla delar vi levererar till våra kunder &ndash; Allt från teknisk strategi och arkitektur till frontend-utveckling och utbildning.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/hackathon-pa-skavsjoholm/workshop.jpg" alt="Workshop" /></p>
+
+<p>Skåvsjöholm bjöd i övrigt på god mat, biljard, boule och bubbelbad. Det blev helt enkelt två trevliga, inspirerande och avslappnande dagar i skärgården!</p>
 ]]></content>
   </entry>
   
@@ -281,12 +357,12 @@ Vi letar efter dig som <strong>brinner för frontend-utveckling</strong> och vil
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/burger.jpg" alt="The origin of the hamburger icon" />
 <a href="https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">The origin of the hamburger icon</a><br />
-Varifrån kommer alla ikoner? Var hamburgaren kommer ifrån kan du hitta här.</p>
+Varifrån kommer alla ikoner?  Hamburgarens hitoria kan du hitta här.</p>
 
 <h2>Kommentarsfält utöver det vanliga</h2>
 
 <p><a href="http://lattlast.se/kommentarsfalt">Centrum för lättläst lanserar ett kommentarsfält för alla</a><br />
-Centrum för lättläst lanserar Kommentarsfält för alla, som gör det lättare för alla att kommentera och diskutera artiklar och texter på nätet.</p>
+Centrum för lättläst lanserar &ldquo;Kommentarsfält för alla&rdquo;, som  ökar tillgängligheten för kommentarer och diskussion på nätet.</p>
 
 <h2>Network Link Conditioner</h2>
 
@@ -301,7 +377,7 @@ Simulera begränsade uppkopplingar när du utvecklar.</p>
 <h2>Javascript spel</h2>
 
 <p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted &ndash; a user javascript adventure game</a><br />
-Ett spel som går ut på att skriva javascript för att ta sig vidare till nästa level.</p>
+Ett spel som går ut på att skriva JavaScript för att ta sig vidare till nästa level.</p>
 
 <h2>Support för Windows XP upphör</h2>
 
@@ -323,7 +399,7 @@ En snabb och liten template-motor för node.js och browsers</p>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/svg-icon.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
 <a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/">Icon System with SVG Sprites</a><br />
-Ett alternativ till icon-fonts från Chris Coyier där man använder inline svgs istället.</p>
+Ett alternativ till icon-fonts från Chris Coyier där man använder inline SVG.</p>
 
 <h2>Lär dig rita med ASCII</h2>
 
@@ -338,13 +414,13 @@ Ibland kan det ta tio år att komma tillbaka till början.</p>
 <h2>Vetenskapen om underlines</h2>
 
 <p><a href="https://medium.com/p/7c03a9274f9">Crafting link underlines on Medium</a><br />
-En artikel om hur en &ldquo;quick-fix&rdquo; blev ett en månads långt projekt för att fixa underlines på medium.com</p>
+En artikel om hur en &ldquo;quick-fix&rdquo; blev ett månadslångt projekt för att fixa underlines på medium.com</p>
 
 <h2>Hack</h2>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/facebook-hack.jpg" alt="Facebook Introduces ‘Hack,’ the Programming Language of the Future" />
 <a href="http://hacklang.org/">Facebook Introduces ‘Hack,’ the Programming Language of the Future</a>
-Hack &ndash; ett programmeringsspråk utvecklat av Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
+Hack &ndash; ett programmeringsspråk utvecklat av de Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Det används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
 
 <h2>Världens minsta responsiva CSS-ramverk?</h2>
 
@@ -381,7 +457,7 @@ Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs
     <link href="http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product/"/>
     <updated>2014-04-07T10:43:38+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product</id>
-    <content type="html"><![CDATA[<p>While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. There weren&rsquo;t any options in <!-- more -->the product settings that matched what we wanted to achieve &ndash; adding product specific pdf-files and movies.</p>
+    <content type="html"><![CDATA[<p>While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. <!-- more -->There weren&rsquo;t any options in the product settings that matched what we wanted to achieve &ndash; adding product specific pdf-files and movies.</p>
 
 <p>The option we found to be suggested was to use metafields, a module for Shopify, but we didn&rsquo;t want to make a big hassle of poking around in the <a href="http://www.shopify.com/technology/3032322-new-feature-metafields#axzz2xvNXkLON">Shopify API</a>.</p>
 
@@ -413,11 +489,26 @@ Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[På gång]]></title>
+    <link href="http://vinnovera.se/blogg/2014/03/20/pa-gang/"/>
+    <updated>2014-03-20T09:27:15+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/03/20/pa-gang</id>
+    <content type="html"><![CDATA[<p>Det är många roliga saker på gång hos oss under våren. <!--more-->Tyvärr får vi inte nämna alla kunder vid namn, men det är ett stort och utmanande <strong>webb-applikations</strong>-projekt på gång och vi fortsätter med <strong>e-handelsfrontend</strong> för mobil och tablet i ett annat omfattande projekt. Vi drar också igång ett nyttprojekt med <strong>Stockholmsmässan</strong> som kommer att innebära både spännande webb- och applikationsutveckling.</p>
+
+<p>Vi kommer att bland annat att jobba med <strong>Backbone.js</strong>, <strong>D3.js</strong> och <strong>Node.js</strong>, och som vanligt med fokus på att leverera teknisk hantverk och bra användarupplevelser.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/pa-gang/nodejs-logo.png" alt="Node.js logo" />
+<img src="http://vinnovera.se/images/content/posts/pa-gang/backbone-logo.png" alt="Backbone logo" />
+<img src="http://vinnovera.se/images/content/posts/pa-gang/d3-logo.png" alt="D3 logo" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hittat på nätet #2]]></title>
     <link href="http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-2/"/>
     <updated>2014-03-14T14:51:55+01:00</updated>
     <id>http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-2</id>
-    <content type="html"><![CDATA[<p>Dagens tema är SVG &ndash; det bästa sen skivat bröd.</p>
+    <content type="html"><![CDATA[<p>Dagens tema är SVG &ndash; det bästa sedan skivat bröd.</p>
 
 <!--more-->
 
@@ -426,12 +517,12 @@ Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-2/svgandsmil.jpg" alt="Frame-by-frame animation using SVG and SMIL" />
 <a href="http://www.joningram.co.uk/article/svg-smil-frame-animation/">Frame-by-frame animation using SVG and SMIL</a><br>
-När den här artikeln skrevs fungerade SMIL animationer i SVG bara i webkit browsers. Sendan dess har fler hunnit ikapp.</p>
+När den här artikeln skrevs fungerade SMIL animationer i SVG bara i webkit-browsers. Sedan dess har fler hunnit ikapp.</p>
 
 <h2>Rethinking Responsive SVG</h2>
 
 <p><a href="http://coding.smashingmagazine.com/2014/03/05/rethinking-responsive-svg/">Rethinking Responsive SVG</a><br>
-Responsiva vektorbaserade ikoner som ändrar utseende beroende på tillgängligt utrymme. Det är ett av alla användingsområden av SVG bilder. Smashing Mag går igenom några olika metoder att åstadkomma det. Till exempel ett där SVG filen innehåller sin egen CSS och JavaScript.</p>
+Responsiva vektorbaserade ikoner som ändrar utseende beroende på tillgängligt utrymme. Det är ett av alla användningsområden för SVG-bilder. Smashing Mag går igenom några olika metoder att åstadkomma detta, till exempel ett där SVG filen innehåller sin egen CSS och JavaScript.</p>
 
 <h2>Thoughts on Media Queries for Elements</h2>
 
@@ -442,18 +533,18 @@ Media Queries för element ligger högt på vår önskelista. Hur skulle det kun
 <h2>A Q&amp;A on the Picture Element</h2>
 
 <p><a href="http://alistapart.com/blog/post/picture-element-qa">A Q&amp;A on the Picture Element</a><br>
-Responsiva bilder är något oerhört viktigt för dagens web. Men det har aldrig funnits någon standard, och de lösningar som finns är beroende av JavaScript. Nu har dock browser utvecklarna äntligen enats om att implementera <code>&lt;picture&gt;</code> elementet. Mozilla har till och med gått och sagt att de planerar implementera det Q1 2014.</p>
+Responsiva bilder är något oerhört viktigt för dagens webb, men det har aldrig funnits någon standard och de lösningar som finns är beroende av JavaScript. Nu har dock browser-utvecklarna äntligen enats om att implementera <code>&lt;picture&gt;</code>-elementet. Mozilla har till och med sagt att de planerar implementera det redan Q1 2014.</p>
 
 <h2>Top JavaScript MVC Frameworks</h2>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-2/topjsmvcframework.jpg" alt="Top JavaScript MVC Frameworks" />
 <a href="http://www.infoq.com/research/top-javascript-mvc-frameworks">Top JavaScript MVC Frameworks</a><br>
-InfoQ har gjort en enkät som undersöker vilket JavaScript MVC ramverk som går snabbast att komma igång med och hur mycket värde det tillför.</p>
+InfoQ har gjort en enkät som undersöker vilket JavaScript-MVC-ramverk som går snabbast att komma igång med, och hur mycket värde det tillför.</p>
 
 <h2>Do Not Use bodyParser with Express.js</h2>
 
 <p><a href="http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html">Do Not Use bodyParser with Express.js</a><br>
-Varje gång Express.js hanterar ett POST request med antingen <code>bodyParser()</code> eller <code>multipart()</code> skapas en temp fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.</p>
+Varje gång Express.js hanterar ett POST-request med antingen <code>bodyParser()</code> eller <code>multipart()</code> skapas en temp-fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.</p>
 ]]></content>
   </entry>
   
@@ -1810,23 +1901,6 @@ Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjv
 
 
 <p>Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Om Vinnovera]]></title>
-    <link href="http://vinnovera.se/blogg/2013/11/18/om-vinnovera/"/>
-    <updated>2013-11-18T12:44:24+01:00</updated>
-    <id>http://vinnovera.se/blogg/2013/11/18/om-vinnovera</id>
-    <content type="html"><![CDATA[<p>När farmor och farfar var små gick man till skräddare, bagaren, skomakaren och möbelsnickaren. Alla tog sitt hantverk på allvar och fann en njutning i att skapa resultat av hög kvalitet. Med omsorg och yrkesstolthet<!--more--> vårdade man sitt rykte inom skrået.</p>
-
-<p>Vi på Vinnovera ser webbgränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
-
-<p>Oavsett teknisk plattform och bakomliggande system så som CMS (Content Management System) eller e-handelssystem, har alla webblösningar ett gränssnitt. Dessa gränssnitt utvecklas med HTML5, CSS och JavaScript. Vi är specialister på dessa tekniker vilket gör att vi kan bidra med vårt hantverk i alla möjliga webbprojekt, stora som små, i egen regi eller tillsammans med andra leverantörer.</p>
-
-<p>När vi får jobba med duktiga människor på både kund- och leverantörssidan, i projekt där kvalitet, användarupplevelse och affärsnytta är ledord, då trivs vi som bäst. Henry Ford sa en gång att kvalitet betyder att göra rätt när ingen ser på. För oss betyder det att kvalitet är varje projektmedlems ansvar. Vårt ansvarstagande och strävan efter kvalitet är också det alla på Vinnovera har gemensamt.</p>
-
-<p>Om du är på jakt efter webbkonsulter och tycker att detta låter klokt, eller om du är frontend-specialist och vill hitta en arbetsplats där du blir omgiven av folk som vill dela sin kunskap med dig, <a href="http://vinnovera.se/#kontakt">tveka inte att höra av dig</a>.</p>
 ]]></content>
   </entry>
   
