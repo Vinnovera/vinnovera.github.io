@@ -4,7 +4,7 @@
   <title><![CDATA[Category: På gång | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/pa-gang/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-24T15:31:37+02:00</updated>
+  <updated>2014-09-24T15:43:13+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -31,9 +31,9 @@ Tack <strong>Enferno</strong> och <strong>KitchenTime</strong> för gott samarbe
     <link href="http://vinnovera.se/blogg/2014/03/20/pa-gang/"/>
     <updated>2014-03-20T09:27:15+01:00</updated>
     <id>http://vinnovera.se/blogg/2014/03/20/pa-gang</id>
-    <content type="html"><![CDATA[<p>Det är många roliga saker på gång hos oss under våren. <!--more-->Tyvärr får vi inte nämna alla kunder vid namn, men det är ett stort och utmanande <strong>webb-applikations</strong>-projekt på gång och vi fortsätter med <strong>e-handelsfrontend</strong> för mobil och tablet i ett annat omfattande projekt. Vi drar också igång ett nyttprojekt med <strong>Stockholmsmässan</strong> som kommer att innebära både spännande webb- och applikationsutveckling.</p>
+    <content type="html"><![CDATA[<p>Det är många roliga saker på gång hos oss under våren. <!--more-->Tyvärr får vi inte nämna alla kunder vid namn, men det är ett stort och utmanande <strong>webb-applikations</strong>-projekt på gång och vi fortsätter med <strong>e-handelsfrontend</strong> för mobil och tablet i ett annat omfattande projekt. Vi drar också igång ett nytt projekt med <strong>Stockholmsmässan</strong> som kommer att innebära både spännande webb- och applikationsutveckling.</p>
 
-<p>Vi kommer att bland annat att jobba med <strong>Backbone.js</strong>, <strong>D3.js</strong> och <strong>Node.js</strong>, och som vanligt med fokus på att leverera teknisk hantverk och bra användarupplevelser.</p>
+<p>Vi kommer att bland annat att jobba med <a href="backbonejs.org">Backbone.js</a>, <a href="http://d3js.org/">D3.js</a> och <a href="http://nodejs.org/">Node.js</a>, och som vanligt med fokus på att leverera tekniskt hantverk och bra användarupplevelser.</p>
 
 <p><img src="/images/content/posts/pa-gang/nodejs-logo.png" alt="Node.js logo" />
 <img src="/images/content/posts/pa-gang/backbone-logo.png" alt="Backbone logo" />
