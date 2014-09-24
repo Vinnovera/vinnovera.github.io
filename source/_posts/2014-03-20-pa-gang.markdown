@@ -20,4 +20,4 @@ Vi kommer att bland annat att jobba med **Backbone.js**, **D3.js** och **Node.js
 
 [00]: /images/content/posts/pa-gang/nodejs-logo.png
 [01]: /images/content/posts/pa-gang/backbone-logo.png
-[02]: /images/content/posts/pa-gang/d3-logo.png
+[02]: /images/content/posts/pa-gang/D3-logo.png
