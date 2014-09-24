@@ -74,11 +74,7 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.
 3. Lägg på ett lowbass filter  
 4. Hitta toppar  
 5. Räkna intervallet mellan toppar  
-6. Gruppera dom  
-
-## Hur utvecklare ser användare
-![As a software developer this is how we view ALL end users][03]  
-Vårt mål är alltid att skapa bra användarupplevelser, men i vår bransch försöker man ofta lösa usability-problem som inte finns.
+6. Gruppera dom
 
 ## Lite mer datavisualisering
 Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.
