@@ -15,24 +15,24 @@ Bland avancerad CSS och D3, också, varför är internet fult i Norge?
 ## Kul med CSS
 ![808 Cube][00]
 [808 Cube][0]  
-En mashup av den ikoniska Roland TR-808 trumm-maskinen med Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.
+En mashup av Rolands ikoniska trummaskinen TR-808 och Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.
 
 ![Icosidodecahedron][01]
 [Inverse trigonometric functions with Sass][1]  
 Jag kan inte stött på en situation då jag behövt använda sekans, cosekans eller cotangens i Sass. Men när den dagen kommer har den fantastiska Ana Tudor lösningen. 
 
 ## Hur stor är en glyph?
-I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glypen, och det är de boxerna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.
+I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glyphen, och det är de boxarna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.
 
 [How the Word Cloud Generator Works][3]  
-För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas element där pixel-datat räknas ut.
+För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas-element där pixel-data räknas ut.
 
 [opentype.js][4]  
 Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till och med modifiera dom.
 
 ## Grävande journalistik från DN Kultur
 [Varför är Internet i Norge kjempefult?][2]  
-Jag vill påpeka att vi inte nödvändigtvis håller med. Men intressant läsning ändå.
+Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsning ändå.
 
 ## Bra att ha
 [Prefilling Forms with a Custom Bookmarklet][5]  
@@ -42,14 +42,14 @@ Alla användare heter inte Asd Asdfgh och har mailadressen asd@asd.as. Det är i
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.
 
 [PSD Viewing & Diffing][7]  
-GitHub stödjer nu visning och diffing av PSD filer. 
+GitHub stödjer nu visning och diffning av PSD-filer. 
 
 ![Faraday cage][011]  
 [Is it possible to disable the network in iOS Simulator?][11]  
-Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens nätverk. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.
+Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens uppkoppling. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.
 
 ### General Update Pattern i D3
-Patterns som borde vara mandatorisk när du använder D3
+Patterns som borde vara obligatoriska när du använder D3.js
 
 * [Pattern 1][8]
 * [Pattern 2][9]

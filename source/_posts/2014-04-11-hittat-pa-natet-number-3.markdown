@@ -17,11 +17,11 @@ I denna upplaga: mer SVG, mer underlines, nytt programmeringsspråk, verktyg och
 ##Alla vägar leder till Xerox
 ![The origin of the hamburger icon][01]
 [The origin of the hamburger icon][0]<br />
-Varifrån kommer alla ikoner? Var hamburgaren kommer ifrån kan du hitta här.
+Varifrån kommer alla ikoner?  Hamburgarens hitoria kan du hitta här.
 
 ##Kommentarsfält utöver det vanliga
 [Centrum för lättläst lanserar ett kommentarsfält för alla][1]<br />
-Centrum för lättläst lanserar Kommentarsfält för alla, som gör det lättare för alla att kommentera och diskutera artiklar och texter på nätet.
+Centrum för lättläst lanserar "Kommentarsfält för alla", som  ökar tillgängligheten för kommentarer och diskussion på nätet.
 
 ##Network Link Conditioner
 [Network Link Conditioner][2]<br />
@@ -33,7 +33,7 @@ Simulera begränsade uppkopplingar när du utvecklar.
 
 ##Javascript spel
 [Untrusted - a user javascript adventure game][4]<br />
-Ett spel som går ut på att skriva javascript för att ta sig vidare till nästa level.
+Ett spel som går ut på att skriva JavaScript för att ta sig vidare till nästa level.
 
 ##Support för Windows XP upphör
 [Windows XP support has ended][5]<br />
@@ -51,7 +51,7 @@ En snabb och liten template-motor för node.js och browsers
 ##SVG Sprites
 ![How I resurrected my MacBook Pro by putting it in the oven][04]
 [Icon System with SVG Sprites][8]<br />
-Ett alternativ till icon-fonts från Chris Coyier där man använder inline svgs istället.
+Ett alternativ till icon-fonts från Chris Coyier där man använder inline SVG.
 
 ##Lär dig rita med ASCII
 [Asciiflow - ASCII Flow Diagram Tool][9]<br />
@@ -63,12 +63,12 @@ Ibland kan det ta tio år att komma tillbaka till början.
 
 ##Vetenskapen om underlines
 [Crafting link underlines on Medium][11]<br />
-En artikel om hur en "quick-fix" blev ett en månads långt projekt för att fixa underlines på medium.com
+En artikel om hur en "quick-fix" blev ett månadslångt projekt för att fixa underlines på medium.com
 
 ##Hack
 ![Facebook Introduces ‘Hack,’ the Programming Language of the Future][05]
 [Facebook Introduces ‘Hack,’ the Programming Language of the Future][12]
-Hack - ett programmeringsspråk utvecklat av Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.
+Hack - ett programmeringsspråk utvecklat av de Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Det används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.
 
 ##Världens minsta responsiva CSS-ramverk?
 ```css

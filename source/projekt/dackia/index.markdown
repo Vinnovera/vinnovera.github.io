@@ -10,11 +10,11 @@ footer: true
 
 Däckia är en av Sveriges största däckservicekedjor och vänder sig till privatpersoner och företag runtom i Sverige. I kedjan ingår 86 Däckiaverkstäder och 65 samarbetspartners spridda från Ystad till Kiruna.
 
-Uppdraget var att bygga om den befintliga sajten och göra den responsive.
+Vi fick uppdraget att utveckla en responsiv version av deras befintliga sajt för att bättre uppfylla deras användares behov.
 
 ## Vinnoveras roll
 
-Vinnoveras roll i projektet var att att leverera frontendkod, och bistå med expertis inom gränssnitt för att stödja arbetet med grafisk design och interaktionsdesign. [Parsley](http://parsley.se/) stod för design och interaktionsdesign och [Enferno](http://www.enferno.se) ansvarade för e-handelssystem och backendutveckling. Sajten bygger på deras e-handelsplattform [Storm](http://www.enferno.se/enferno-storm/) och [N2 CMS](http://n2cms.com/).
+Vinnoveras roll i projektet var att ta fram ett grundkoncept för den responsiva anpassningen, leverera frontend och bistå med teknisk expertis för att stödja arbetet med grafisk design och interaktionsdesign. [Parsley](http://parsley.se/) stod för design och interaktionsdesign och [Enferno](http://www.enferno.se) ansvarade för e-handelssystem och backendutveckling. Sajten bygger på Enfernos e-handelsplattform [Storm](http://www.enferno.se/enferno-storm/) och [N2 CMS](http://n2cms.com/).
 
 ![Skärmdumpar dackia.se](/images/content/projects/dackia/responsive.jpg)
 
