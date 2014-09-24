@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-24T08:58:22+02:00</updated>
+  <updated>2014-09-24T15:23:07+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -110,11 +110,6 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 5. Räkna intervallet mellan toppar<br/>
 6. Gruppera dom</p>
 
-<h2>Hur utvecklare ser användare</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/users.gif" alt="As a software developer this is how we view ALL end users" /><br/>
-Vårt mål är alltid att skapa bra användarupplevelser, men i vår bransch försöker man ofta lösa usability-problem som inte finns.</p>
-
 <h2>Lite mer datavisualisering</h2>
 
 <p>Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.</p>
@@ -198,7 +193,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#97;&#x73;&#100;&#64;&#x61;&#x73;&#100;&#x2e;&#x61;&#115;&#x2e;">&#97;&#115;&#x64;&#64;&#97;&#115;&#x64;&#x2e;&#x61;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#97;&#x73;&#x64;&#64;&#x61;&#x73;&#100;&#x2e;&#x61;&#x73;&#x2e;">&#97;&#x73;&#x64;&#64;&#x61;&#115;&#x64;&#46;&#97;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
