@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-25T15:49:34+02:00</updated>
+  <updated>2014-09-25T17:17:14+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Nordic.js]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/25/nordicjs/"/>
+    <updated>2014-09-25T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/25/nordicjs</id>
+    <content type="html"><![CDATA[<p>Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på <a href="http://nordicjs.com/">Nordic.js</a>. Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen&hellip;</p>
+
+<p><strong>Daniel:</strong><br/>
+<a href="http://robertnyman.com/">Robert Nyman</a> från Mozilla gav ett intressant fördrag om Firefox uppdaterade verktyg för utvecklare. Bland annat möjligheten att enkelt se vilka event som är kopplade till ett specifikt element, hur man kan förhandsgranska CSS3-animationer samt ett smart sätt att se alla element som är kopplade till en specifik CSS-klass. En annan intressant nyhet var Firefox &ldquo;tools-adapter&rdquo; med vilken man kan debugga, inte bara i Firefox utan även i andra browsers. Robert pratade också om &ldquo;the five stages of development&rdquo; och att förhålla sig till problemlösning på ett konstruktivt sätt.</p>
+
+<p><strong>Mico:</strong><br/>
+<a href="http://www.sundh.com/blog/">Ellen Sundh</a> som visade upp några av sina IRL-tillämpningar av JavaScript-programmering var väldigt inspirerande. Att se relativt enkel programmering som jag kan förstå tillämpas utanför skärmen var kul för en som sitter med webb hela dagarna. Blir det kanske nästa projekt?</p>
+
+<p><strong>Gustav:</strong><br/>
+Jag gillade <a href="http://hakim.se/">Hakims</a> talk där han bl. a. visade små experiment han gjort i gränslandet mellan programmering, musik och konst. Enkelheten och lekfullheten i den han gjort var det som imponerade på mig. Det var också fascinerande att se hur andra använde hans små installationer för att skapa helt fantastiska nya verk.</p>
+
+<p><strong>Jakob:</strong><br/>
+Bäst var helt klart <a href="http://www.crockford.com/">Douglas Crockford</a> som ofta blir bashad för att vara en gammal mossig gubbe som fastnat i gamla vanor. Men som under sitt talk berättade hur han aktivt omvärderar och förfinar sitt sätt att skriva sin kod, på ett elegant sätt. Han har t.ex. slutat använda &ldquo;new&rdquo; och &ldquo;this&rdquo; helt och bashar istället tillbaka på alla som saknar &ldquo;Class&rdquo; och &ldquo;inheritance&rdquo;. Samtidigt lyckas han göra reklam för nästa ECMAscript-version, som han själv är med och spec:ar.</p>
+
+<p><strong>Sandra:</strong><br/>
+Jag tycker många talare hade intressanta ämnen, men jag fastnade främst för ett genomgående tema – att vi ofta fastnar i samma mönster och glömmer att ifrågasätta oss själva. <a href="http://robertnyman.com/">Robert Nyman</a> pratade t.ex. om hur många lämnade Firefox för Chrome devtools eftersom de inte tyckte om Firebug och har förmodligen inte ens testat Firefox devtools. <a href="https://twitter.com/nodebotanist">Kassandra Perch</a> tog upp hur fanatism kan hindra oss från att använda rätt ramverk på rätt ställe. Jag tror det fanns något hos alla talare som fick mig att tänka över hur jag kodar, hur jag bemöter nya uppgifter och hur jag kan lära mig att tänka annorlunda.</p>
+
+<p><strong>Per:</strong><br/>
+<a href="http://jina.me/">Jina Bolton</a> höll ett talk som som mest tangerade utveckling med JavaScript. Hon pratade istället om sitt arbete med &ldquo;Style Guides&rdquo;. Vi arbetar ofta med att leverera frontend till projekt där vi får grafisk design från en extern leverantör. Designen implementerar vi antingen direkt i systemet, eller så levererar vi statiska filer som backend-utvecklare lägger in i systemet. I sådana projekt är bra kommunikation väldigt viktigt i alla led.</p>
+
+<p>Ett tillfälle då kommunikationen kan brista är om det i designleveranser finns olika versioner av samma modul, utan tydlig information om vilken version som är den aktuella. För att underlätta arbetet och minska missförstånden ber vi ofta designern underhåller ett element-bibliotek, där &ldquo;states&rdquo; på interaktiva element och den senaste designen av alla moduler finns med. Precis samma problem kan så klart uppstå mellan oss och backend som ska implementera vår leverans, och &ldquo;Style Guides&rdquo; kan då vara ett bra verktyg. Om &ldquo;markup&rdquo; skiljer sig i två versioner av samma modul så ska det vara &ldquo;Style Guiden&rdquo; som styr.</p>
+
+<p>Det är dock svårt att hålla en &ldquo;Style Guide&rdquo; uppdaterad, och om man sätter sig ner och bygger den i efterhand tar det väldigt mycket tid. Det Bolton förespråkar är att alltid bygga modulerna i &ldquo;Style Guiden&rdquo; först, och sen använda det materialet för att göra ut &ldquo;templates&rdquo;. På så sätt går det inte åt någon extra tid för att underhålla &ldquo;Style Guiden&rdquo;, och man kan vara säker på att den alltid innehåller det senaste materialet.</p>
+
+<p><strong>Andreas:</strong><br/>
+Fantastiskt &ldquo;meetup&rdquo; på en otroligt fin plats i skärgården gjorde de två dagarna till ett sant nöje, och givande även för en non-coder som mig själv! Bra blandning på talare och en extra big-up till arrangörerna som bokat <a href="https://twitter.com/Bougie">Caroline Drucker</a> för prata om feminism och kvinnor i en hittills väldigt mansdominerad bransch. It has to change, now!</p>
+
+<p><strong>Björn-Olle:</strong><br/>
+För mig som inte längre kodar på heltid men ändå drivs av att hålla mig uppdaterad om teknik var det en mycket inspirerande och lärorik konferens. Innehållet var blandad på ett genomtänkt sätt &ndash; Allt från <a href="http://www.crockford.com/">Douglas Crockfords</a> ECMAscript-snack till <a href="http://nexxylove.tumblr.com/">Emily Rose:s</a> musikinstrument byggt av ett tangetbord. Mest diskussion och eftertanke gav <a href="https://twitter.com/Bougie">Caroline Druckers</a> talk &ldquo;I&rsquo;m a feminist and so can you!&rdquo;. Modigt och viktigt av arrangörerna att ha med detta tema på en konferens där de flesta förväntar sig teknik-tunga talks. Deras ambition att bygga ett bra och hållbart community kring JavaScript blir en tydlig drivkraft bakom arrangemanget. Det handlar inte bara om de senaste teknikerna utan också om hur vi behandlar varandra!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Frontend-lunch på Vinnovera]]></title>
@@ -194,7 +231,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x61;&#x73;&#x64;&#x40;&#97;&#x73;&#x64;&#x2e;&#x61;&#x73;&#46;">&#97;&#115;&#x64;&#64;&#97;&#x73;&#100;&#x2e;&#x61;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#97;&#115;&#100;&#x40;&#x61;&#115;&#x64;&#x2e;&#97;&#x73;&#46;">&#x61;&#115;&#100;&#64;&#97;&#115;&#x64;&#46;&#97;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -1447,456 +1484,6 @@ Jag tror att camanjs har störts potential att vara användbart. Biblioteket har
 (Egna bilder behövs för att testa skripten) <br />
 Länk till Javascript version: <a href="http://codepen.io/Sandra/pen/LjGgh">http://codepen.io/Sandra/pen/LjGgh</a> <br />
 Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjvJ">http://codepen.io/Sandra/pen/lrjvJ</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Unit Testing]]></title>
-    <link href="http://vinnovera.se/blogg/2013/12/12/unit-testing/"/>
-    <updated>2013-12-12T14:22:24+01:00</updated>
-    <id>http://vinnovera.se/blogg/2013/12/12/unit-testing</id>
-    <content type="html"><![CDATA[<p>När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.</p>
-
-<p>När vi utvecklar hållbara och långsiktiga applikationer är det viktigt att koden vi skriver beter sig konsekvent. Det måste gå att förutse hur en funktion eller ett plugin beter sig som vi har förväntat oss, även när den används under nya omständigheter.</p>
-
-<p>Det är därför vi måste testa.</p>
-
-<h2>Testning</h2>
-
-<h3>När och hur kan man testa</h3>
-
-<p>Det finns olika stadier av testning, inte sällan grupperade som “validation testing”, “integration testing” samt “unit testing” och det är det senare jag tänker ta upp i närmare detalj här, då det är den testprocess som ligger närmast mig som utvecklare. Men först en kvick genomgång av de olika stadierna.</p>
-
-<h4>Unit testing</h4>
-
-<p>Unit testing är när man bryter isär alla delar i en applikation i så små testbara enheter som möjligt, och testar varje enhet separat. Ofta är en unit t.ex. en funktion, men kan ibland också vara en hel modul eller ett interface såsom en klass. Varje unit testas ihop med ett dataset för att se att varje del är redo att användas.</p>
-
-<h4>Integration testing</h4>
-
-<p>När alla units är bedömda att vara fungerande så kan man testa dem ihop, vilket kallas för Integration testing. Här använder man sig oftast av testplaner, en systematisk testordning som skall spegla ett tänkt workflow. I det här skedet tittar man också på interaktioner mellan olika units för att se om de fungerar som tänkt.</p>
-
-<h4>Validation testing</h4>
-
-<p>I det här skedet testar man huruvida applikationen uppfyller de krav som ställts av beställare och användare. Den här typen av tester bör vara möjliga att utföra av en tredje part, utan insikt i hur applikationen är byggd rent tekniskt.</p>
-
-<h2>Testdriven utveckling</h2>
-
-<h3>Test först, kod sen</h3>
-
-<p>När man ägnar sig åt testdriven utveckling, så betyder det normalt att man börjar med att identifiera vad en applikation skall utföra, för att sedan bryta ned detta i sådana beståndsdelar att de går att identifiera som enskilda units. Sedan, istället för att direkt börja skriva programkod, så börjar man med att utveckla tester för varje unit. När alla testerna är färdigskrivna inleds arbetet med själva programkoden, och när alla tester validerar så är uniten färdig. Detta ger en tydligare bild av vad varje enskild del av applikationen skall klara av och hur den skall fungera.</p>
-
-<h3>Refactoring</h3>
-
-<p>Det andra alternativet, när det av olika anledningar inte är praktiskt att skriva tester i förväg, är att skriva om koden i efterhand för att göra den testningsbar. Detta innebär att förändra koden, utan att egentligen förändra vad koden är menad att göra.</p>
-
-<h2>Unit testing</h2>
-
-<h3>Vad är en unit</h3>
-
-<p>Så, vad är då en unit? En unit är de minsta beståndsdelarna vi kan bryta ned en applikation till. Oftast är det funktioner och metoder, men det kan ibland också röra sig om interfaces.</p>
-
-<h4>Metoder och funktioner</h4>
-
-<p>Det typiska för en testbar funktion är att den kräver att någonting stoppas in, och att vi får något annat tillbaka. T.ex. kan det här vara en funktion som förvandlar en datumform till en annan (från &lsquo;130402&rsquo; till &lsquo;Andra april, 2013&rsquo;), eller som gör en avståndsberäkning eller liknande. Det är dock också möjligt att göra tester av funktioner som inte svarar med något, utan som istället påverkar ett annat objekt.</p>
-
-<h4>Interface och klasser</h4>
-
-<p>Ibland behöver vi testa sådant som inte ger ett direkt resultat, som t.ex. att flytta på ett objekt. Det kan också vara så att det vi testar inte är ett publikt värde utan en privat variabel. I sådana fall skriver man tester mot interfacet snarare än en enskild metod. Man kör en metod med ett visst värde, och när metoden är genomförd görs en kontroll mot ett värde eller kontrollfunktion i interfacet för att se om förändringen är den förväntade. T.ex. kan vi köra funktionen &ldquo;moveBulletTowardsShip&rdquo; i ett spel, och när metoden är körd kan vi testa om vår &ldquo;bullet&rdquo; har flyttat sig på det vis vi förväntat oss.</p>
-
-<h3>Vad är ett test</h3>
-
-<h4>Vad stoppar vi in, vad föväntar vi oss ut</h4>
-
-<p>Låt säga att jag har en funktion som delar upp ett textstycke i ett antal enskilda rader, där varje rad är högst 60 tecken. Vad vi då låter testet skicka in till funktionen som vi testar är ett antal textstycken av olika längd. I varje test behöver vi också skicka med ett förväntat resultat, i det här fallet skulle vi t.ex. kunna titta på antalet rader vi får tillbaka, samt längden på varje enskild rad.</p>
-
-<h2>Ramverk för javascript</h2>
-
-<p>Det finns många olika ramverk som används för att testa javascript, som Buster.JS, Sinon.js, Jasmine, QUnit eller Mocha. Jag har här valt att titta närmare på QUnit och Mocha, då de är bra exempel på olika angreppsvinklar på javascript-testning.</p>
-
-<h3>QUnit</h3>
-
-<p>QUnit är ett relativt lättviktigt testramverk. Det är ett ramverk som fokuserar helt på att testa javascript som körs i browsern. Då det är det testramverk som används vid utveckling av jQuery är det ett verktyg som är särskilt enkelt att komma igång med om man behöver testa mycket DOM-manipulation.</p>
-
-<h4>Setup</h4>
-
-<p>Det som krävs för att köra tester med QUnit är att ta hem en javascriptfil och en css-fil, samt skapa en HTML-fil som kör testerna. HTML-filen behöver åtminstone en holder att skriva ut testresultaten i (&lsquo;qunit&rsquo;) och om du ska testa DOM-manipulation behövs en holder för QUnit att skapa DOM-elementen i (&lsquo;qunit-fixture&rsquo;).</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;head&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/qunit-1.12.0.css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;body&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;qunit&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;qunit-fixture&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>          <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;myList&quot;</span><span class="nt">&gt;&lt;/ul&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;script&gt;</span><span class="nb">window</span><span class="p">.</span><span class="nx">jQuery</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;script src=&quot;js/vendor/jquery-1.10.1.min.js&quot;&gt;&lt;\/script&gt;&#39;</span><span class="p">)</span><span class="nt">&lt;/script&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/vendor/qunit-1.12.0.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/main.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/tests.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>Tester</h4>
-
-<p>I exemplet ovan har jag själva funktionerna jag vill testa i main.js, och testerna i tests.js. Så här ser ett enkelt test ut:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;multiLineText-test&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">deepEqual</span><span class="p">(</span><span class="nx">multiLineText</span><span class="p">(</span><span class="s1">&#39;I have a thing to say&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">[</span><span class="s1">&#39;I have&#39;</span><span class="p">,</span> <span class="s1">&#39;a thing&#39;</span><span class="p">,</span> <span class="s1">&#39;to say&#39;</span><span class="p">]);</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Med QUnit skapas ett test genom att köra &ldquo;test&rdquo;-funktionen. Till den skickar man in en beskrivning av testet (&ldquo;multiLineText-test&rdquo;) samt en funktion. I den här funktionen kan du köra kod, samt framförallt göra s.k. &ldquo;assertions&rdquo;. QUnit har i huvudsak två typer av assertions, &ldquo;ok&rdquo; och &ldquo;equal&rdquo;. Till &ldquo;ok&rdquo; behöver man bara skicka in ett argument, och om argumentet är &ldquo;true&rdquo; är testet godkänt. Till &ldquo;equal&rdquo; skickar man in två argument, och om de stämmer överens är testet godkänt. I exemplet ovan används en variant på equal som används för att jämföra t.ex. objekt och listor.</p>
-
-<p>Här är ett exempel på ett test av DOM-manipulation</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;DOM manipulation&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Item 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Second item&#39;</span><span class="p">,</span> <span class="s1">&#39;Item the 3rd&#39;</span><span class="p">,</span> <span class="s1">&#39;Fourth one&#39;</span><span class="p">];</span>
-</span><span class='line'>  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-</span><span class='line'>      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myList&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;&#39;</span><span class="o">+</span><span class="nx">items</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">+</span><span class="s1">&#39;&lt;/li&gt;&#39;</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myList&#39;</span><span class="p">).</span><span class="nx">children</span><span class="p">().</span><span class="nx">length</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Mocha</h3>
-
-<p>Mocha är klart mer omfattande än QUnit, men har också fler användningsområden. En av de viktigare skillnaderna är att Mocha kan testa javascript utanför en browser, t.ex. i en Node-applikation. Du installerar Mocha via npm, och kör Mocha via terminalen.</p>
-
-<p>I min app.js har jag samma funktion som ovan (&ldquo;multiLineText&rdquo;, fast tillgängliggjord i exports):</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">exports</span><span class="p">.</span><span class="nx">multiLineText</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">myString</span><span class="p">,</span> <span class="nx">maxWidth</span><span class="p">){</span>
-</span><span class='line'>  <span class="p">...</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I roten på projektet har jag även skapat en folder som heter &ldquo;test&rdquo;, vilket är den folder Mocha letar efter tester i. Här har jag en fil som heter t.ex. &ldquo;mytest.js&rdquo;, som innehåller själva testet:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">assert</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;assert&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;../app&quot;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">describe</span><span class="p">(</span><span class="s2">&quot;multiLineText&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">it</span><span class="p">(</span><span class="s2">&quot;should return correct array&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">assert</span><span class="p">.</span><span class="nx">deepEqual</span><span class="p">(</span><span class="nx">app</span><span class="p">.</span><span class="nx">multiLineText</span><span class="p">(</span><span class="s1">&#39;I have a thing to say&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">[</span><span class="s1">&#39;I have&#39;</span><span class="p">,</span> <span class="s1">&#39;a thing&#39;</span><span class="p">,</span> <span class="s1">&#39;to say&#39;</span><span class="p">]);</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Sedan kör jag Mocha via terminalen via ett enkelt kommando:</p>
-
-<p>   mocha</p>
-
-<p>Jag får följande resultat att 1 test (av 1 möjliga) är lyckat:</p>
-
-<p>   1 passing (5 ms)</p>
-
-<p>Mocha har många kraftfulla features, som att få Mocha att köra tester automatiskt när kod har uppdaterats, eller att använda andra testbibliotek för att köra testerna (t.ex. Jasmine).</p>
-
-<h2>Exempelapplikation</h2>
-
-<p>Som avslutning tänkte jag visa en liten exempelapplikation, och exempel på hur man kan skriva tester till den. Applikationen skall klara av att visa ett diagram där en andel av ett antal figurer är markerade, t.ex. &ldquo;22 av 30 deltagare&rdquo;. Diagrammet skall vara en SVG-bild.</p>
-
-<h3>Krav- och funktionslista</h3>
-
-<p>För att kunna åstadkomma det här diagrammet behöver vi följande funktioner:</p>
-
-<ul>
-<li>En funktion som kan räkna ut antal figurer per rad, baserat på värdet och maxvärdet (t.ex. &ldquo;22&rdquo; och &ldquo;30&rdquo;)</li>
-<li>En funktion som ritar ut figurerna.</li>
-</ul>
-
-
-<h3>Test</h3>
-
-<p>Det första testet vi skriver är därför ett test som kontrollerar vår uträkningsfunktion. Vi vet att vi vill kunna skala antal figurer per rad baserat på maxantalet, samt behöver få ut antalet rader, kolumner, och vilka rader som är markerade, och hur många som är markerade per rad.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Get rows, columns and figurenumber&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="nx">deepEqual</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">rows</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">columns</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastMarkedRow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastRowLength</span><span class="o">:</span> <span class="mi">5</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'>  <span class="nx">deepEqual</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">66</span><span class="p">),</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">rows</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">columns</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastMarkedRow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastRowLength</span><span class="o">:</span> <span class="mi">6</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'>  <span class="nx">deepEqual</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">24</span><span class="p">),</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">rows</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">columns</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastMarkedRow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastRowLength</span><span class="o">:</span> <span class="mi">4</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Det nästa testet är till för att se så att vår DOM-manipulation gör vad vi förväntar oss. I det här fallet kollar jag att det finns rätt antal av &ldquo;märkta&rdquo; respektive &ldquo;omärkta&rdquo; figurer, samt kontrollerar att SVGn har rätt storlek.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;Create and manipulate SVG&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Create and manipulate SVG with 7 10&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">);</span>
-</span><span class='line'>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;qunit-fixture&#39;</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">svg</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">createChart</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="nx">svg</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .marked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .unmarked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">svg</span><span class="p">).</span><span class="nx">height</span><span class="p">(),</span> <span class="mi">40</span><span class="p">);</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Create and manipulate SVG with 24 66&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">);</span>
-</span><span class='line'>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;qunit-fixture&#39;</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">svg</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">createChart</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">66</span><span class="p">),</span> <span class="nx">svg</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .marked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">24</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .unmarked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">42</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">svg</span><span class="p">).</span><span class="nx">height</span><span class="p">(),</span> <span class="mi">20</span><span class="p">);</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Create and manipulate SVG with 13 24&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">);</span>
-</span><span class='line'>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;qunit-fixture&#39;</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">svg</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">createChart</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">24</span><span class="p">),</span> <span class="nx">svg</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .marked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">13</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .unmarked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">11</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">svg</span><span class="p">).</span><span class="nx">height</span><span class="p">(),</span> <span class="mi">30</span><span class="p">);</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Funktion</h3>
-
-<p>Först har vi funktionen som tar fram hur många figurer vi behöver visa:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">getChartSize</span><span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="nx">max</span><span class="p">){</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">rows</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastMarkedRow</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastRowLength</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class='line'>  <span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="nx">max</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">){</span>
-</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">max</span> <span class="o">&lt;=</span> <span class="mi">40</span><span class="p">){</span>
-</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">max</span> <span class="o">&lt;=</span> <span class="mi">140</span><span class="p">){</span>
-</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="nx">rows</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="nx">max</span> <span class="o">/</span> <span class="nx">columns</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">lastMarkedRow</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="nx">num</span> <span class="o">/</span> <span class="nx">columns</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">markedAtLastMarkedRow</span> <span class="o">=</span> <span class="nx">num</span> <span class="o">%</span> <span class="nx">columns</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">lastRowLength</span> <span class="o">=</span> <span class="nx">columns</span> <span class="o">-</span> <span class="p">((</span><span class="nx">rows</span> <span class="o">*</span> <span class="nx">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nx">max</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">return</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">rows</span><span class="o">:</span> <span class="nx">rows</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">columns</span><span class="o">:</span> <span class="nx">columns</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastMarkedRow</span><span class="o">:</span> <span class="nx">lastMarkedRow</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span><span class="o">:</span> <span class="nx">markedAtLastMarkedRow</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">lastRowLength</span><span class="o">:</span> <span class="nx">lastRowLength</span>
-</span><span class='line'>  <span class="p">};</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Sen så har vi funktionen som manipulerar en SVG på förväntat vis:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">createChart</span><span class="p">(</span><span class="nx">settings</span><span class="p">,</span> <span class="nx">svg</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">addedElements</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">100</span><span class="o">/</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span><span class="p">;</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">h</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">settings</span><span class="p">.</span><span class="nx">rows</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-</span><span class='line'>      <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">j</span><span class="o">&lt;</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span><span class="p">;</span><span class="nx">j</span><span class="o">++</span><span class="p">){</span>
-</span><span class='line'>          <span class="k">if</span><span class="p">(</span><span class="nx">addedElements</span> <span class="o">&lt;</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">lastMarkedRow</span> <span class="o">*</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span> <span class="o">-</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">markedAtLastMarkedRow</span><span class="p">)){</span>
-</span><span class='line'>              <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;rect&#39;</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;marked&#39;</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="nx">h</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="nx">w</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="nx">j</span><span class="o">*</span><span class="nx">w</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="nx">i</span><span class="o">*</span><span class="nx">h</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="s1">&#39;#ff0000&#39;</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">svg</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">rect</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">addedElements</span><span class="o">++</span><span class="p">;</span>
-</span><span class='line'>          <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">addedElements</span> <span class="o">&lt;</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span> <span class="o">*</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">rows</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">lastRowLength</span><span class="p">){</span>
-</span><span class='line'>              <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;rect&#39;</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;unmarked&#39;</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="nx">h</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="nx">w</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="nx">j</span><span class="o">*</span><span class="nx">w</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="nx">i</span><span class="o">*</span><span class="nx">h</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000ff&#39;</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">svg</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">rect</span><span class="p">);</span>
-</span><span class='line'>              <span class="nx">addedElements</span><span class="o">++</span><span class="p">;</span>
-</span><span class='line'>          <span class="p">}</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="nx">svg</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">rows</span><span class="o">*</span><span class="nx">h</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;px&#39;</span><span class="p">)</span>
-</span><span class='line'>  <span class="nx">svg</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span><span class="o">*</span><span class="nx">w</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;px&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.</p>
 ]]></content>
   </entry>
   
