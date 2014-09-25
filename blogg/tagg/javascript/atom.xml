@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JavaScript | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/javascript/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-25T17:17:14+02:00</updated>
+  <updated>2014-09-25T17:18:36+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,7 @@
     <link href="http://vinnovera.se/blogg/2014/09/25/nordicjs/"/>
     <updated>2014-09-25T10:27:15+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/09/25/nordicjs</id>
-    <content type="html"><![CDATA[<p>Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på <a href="http://nordicjs.com/">Nordic.js</a>. Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen&hellip;</p>
+    <content type="html"><![CDATA[<p>Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på <a href="http://nordicjs.com/">Nordic.js</a>.<!--more--> Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen&hellip;</p>
 
 <p><strong>Daniel:</strong><br/>
 <a href="http://robertnyman.com/">Robert Nyman</a> från Mozilla gav ett intressant fördrag om Firefox uppdaterade verktyg för utvecklare. Bland annat möjligheten att enkelt se vilka event som är kopplade till ett specifikt element, hur man kan förhandsgranska CSS3-animationer samt ett smart sätt att se alla element som är kopplade till en specifik CSS-klass. En annan intressant nyhet var Firefox &ldquo;tools-adapter&rdquo; med vilken man kan debugga, inte bara i Firefox utan även i andra browsers. Robert pratade också om &ldquo;the five stages of development&rdquo; och att förhålla sig till problemlösning på ett konstruktivt sätt.</p>
