@@ -17,6 +17,7 @@ authorMail: bjorn-olle@vinnovera.se
 
 <img src="/images/profiles/michael.jpg" alt="Michael" class="portrait" />
 **Michael a.k.a. Mico** har jobbat med webbutveckling sedan 1997 och har stor erfarenhet och kunskap av alla beståndsdelar i ett webbprojekt, från backend till frontend. Han har bland mycket annat startat och drivit hosting-företaget MrFriday. Frontend är dock det som ligger honom varmast om hjärtat. Mico driver även tidskriften "Hilfe" och reser till Japan så fort han får möjlighet.
-**Stockholmsmässan** under hösten och Mico kommer att jobba med **A/B-test** åt en av våra hemliga kunder.
+
+Harald kommer att sitta med ett uppdrag åt **Stockholmsmässan** under hösten och Mico kommer att jobba med **A/B-test** åt en av våra hemliga kunder.
 
 **Väääälkomna!**
