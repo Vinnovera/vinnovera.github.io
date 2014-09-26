@@ -9,16 +9,16 @@ authorDescription: Per Stenström jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/per.jpg
 authorMail: per@vinnovera.se
 ---
-Dagens tema är SVG - det bästa sen skivat bröd.
+Dagens tema är SVG - det bästa sedan skivat bröd.
 <!--more-->
 ## Frame-by-frame animation using SVG and SMIL
 ![Frame-by-frame animation using SVG and SMIL][03]
 [Frame-by-frame animation using SVG and SMIL][4]<br>
-När den här artikeln skrevs fungerade SMIL animationer i SVG bara i webkit browsers. Sendan dess har fler hunnit ikapp.
+När den här artikeln skrevs fungerade SMIL animationer i SVG bara i webkit-browsers. Sedan dess har fler hunnit ikapp.
 
 ## Rethinking Responsive SVG
 [Rethinking Responsive SVG][2]<br>
-Responsiva vektorbaserade ikoner som ändrar utseende beroende på tillgängligt utrymme. Det är ett av alla användingsområden av SVG bilder. Smashing Mag går igenom några olika metoder att åstadkomma det. Till exempel ett där SVG filen innehåller sin egen CSS och JavaScript.
+Responsiva vektorbaserade ikoner som ändrar utseende beroende på tillgängligt utrymme. Det är ett av alla användningsområden för SVG-bilder. Smashing Mag går igenom några olika metoder att åstadkomma detta, till exempel ett där SVG filen innehåller sin egen CSS och JavaScript.
 
 ## Thoughts on Media Queries for Elements
 ![Thoughts on Media Queries for Elements][02]
@@ -27,16 +27,16 @@ Media Queries för element ligger högt på vår önskelista. Hur skulle det kun
 
 ## A Q&A on the Picture Element
 [A Q&A on the Picture Element][5]<br>
-Responsiva bilder är något oerhört viktigt för dagens web. Men det har aldrig funnits någon standard, och de lösningar som finns är beroende av JavaScript. Nu har dock browser utvecklarna äntligen enats om att implementera `<picture>` elementet. Mozilla har till och med gått och sagt att de planerar implementera det Q1 2014.
+Responsiva bilder är något oerhört viktigt för dagens webb, men det har aldrig funnits någon standard och de lösningar som finns är beroende av JavaScript. Nu har dock browser-utvecklarna äntligen enats om att implementera `<picture>`-elementet. Mozilla har till och med sagt att de planerar implementera det redan Q1 2014.
 
 ## Top JavaScript MVC Frameworks
 ![Top JavaScript MVC Frameworks][01]
 [Top JavaScript MVC Frameworks][1]<br>
-InfoQ har gjort en enkät som undersöker vilket JavaScript MVC ramverk som går snabbast att komma igång med och hur mycket värde det tillför.
+InfoQ har gjort en enkät som undersöker vilket JavaScript-MVC-ramverk som går snabbast att komma igång med, och hur mycket värde det tillför.
 
 ## Do Not Use bodyParser with Express.js
 [Do Not Use bodyParser with Express.js][0]<br>
-Varje gång Express.js hanterar ett POST request med antingen `bodyParser()` eller `multipart()` skapas en temp fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.
+Varje gång Express.js hanterar ett POST-request med antingen `bodyParser()` eller `multipart()` skapas en temp-fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.
 
 [0]: http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html
 [1]: http://www.infoq.com/research/top-javascript-mvc-frameworks

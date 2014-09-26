@@ -11,7 +11,7 @@ authorTel: 070-491 84 29
 authorMail: alexandra@vinnovera.se
 ---
 
-While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. There weren't any options in <!-- more -->the product settings that matched what we wanted to achieve - adding product specific pdf-files and movies.
+While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. <!-- more -->There weren't any options in the product settings that matched what we wanted to achieve - adding product specific pdf-files and movies.
 
 The option we found to be suggested was to use metafields, a module for Shopify, but we didn't want to make a big hassle of poking around in the [Shopify API][1]. 
 

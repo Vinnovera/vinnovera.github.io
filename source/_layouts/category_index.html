@@ -28,8 +28,8 @@ layout: default
 		</header>
 	
 		<div>
-			{{ post.content | excerpt }}
-			<p><a href="{{ root_url }}{{ post.url }}">Läs mer</a></p>
+			{{ post.content | excerpt | strip_html }}
+			<p><a href="{{ root_url }}{{ post.url }}">Läs hela artikeln</a></p>
 		</div>
 	</article>
 	{% endfor %}

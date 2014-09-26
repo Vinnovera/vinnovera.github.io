@@ -12,7 +12,7 @@ footer: true
 
 ## Vinnoveras roll
 
-Vi hjälpte till med att ta fram det responsiva konceptet och utvecklade HTML-mallar. Därefter tog IIS över och ansvarade för implementationen i deras CMS.
+Vi hjälpte .SE med att ta fram det responsiva konceptet och utvecklade mallsidor efter detta. Vi levererade till deras interna utvecklingsavdelning som ansvarade för implementation i Wordpress.
 
 ![Skärmdumpar iis.se](/images/content/projects/iis/responsive.jpg)
 
