@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-26T16:05:28+02:00</updated>
+  <updated>2014-09-26T16:10:10+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Nordic.js]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/25/nordicjs/"/>
+    <updated>2014-09-25T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/25/nordicjs</id>
+    <content type="html"><![CDATA[<p>Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på <a href="http://nordicjs.com/">Nordic.js</a>.<!--more--> Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen&hellip;</p>
+
+<p><strong>Daniel:</strong><br/>
+<a href="http://robertnyman.com/">Robert Nyman</a> från Mozilla gav ett intressant fördrag om Firefox uppdaterade verktyg för utvecklare. Bland annat möjligheten att enkelt se vilka event som är kopplade till ett specifikt element, hur man kan förhandsgranska CSS3-animationer samt ett smart sätt att se alla element som är kopplade till en specifik CSS-klass. En annan intressant nyhet var Firefox &ldquo;tools-adapter&rdquo; med vilken man kan debugga, inte bara i Firefox utan även i andra browsers. Robert pratade också om &ldquo;the five stages of development&rdquo; och att förhålla sig till problemlösning på ett konstruktivt sätt.</p>
+
+<p><strong>Mico:</strong><br/>
+<a href="http://www.sundh.com/blog/">Ellen Sundh</a> som visade upp några av sina IRL-tillämpningar av JavaScript-programmering var väldigt inspirerande. Att se relativt enkel programmering som jag kan förstå tillämpas utanför skärmen var kul för en som sitter med webb hela dagarna. Blir det kanske nästa projekt?</p>
+
+<p><strong>Gustav:</strong><br/>
+Jag gillade <a href="http://hakim.se/">Hakims</a> talk där han bl. a. visade små experiment han gjort i gränslandet mellan programmering, musik och konst. Enkelheten och lekfullheten i den han gjort var det som imponerade på mig. Det var också fascinerande att se hur andra använde hans små installationer för att skapa helt fantastiska nya verk.</p>
+
+<p><strong>Jakob:</strong><br/>
+Bäst var helt klart <a href="http://www.crockford.com/">Douglas Crockford</a> som ofta blir bashad för att vara en gammal mossig gubbe som fastnat i gamla vanor. Men som under sitt talk berättade hur han aktivt omvärderar och förfinar sitt sätt att skriva sin kod, på ett elegant sätt. Han har t.ex. slutat använda &ldquo;new&rdquo; och &ldquo;this&rdquo; helt och bashar istället tillbaka på alla som saknar &ldquo;Class&rdquo; och &ldquo;inheritance&rdquo;. Samtidigt lyckas han göra reklam för nästa ECMAscript-version, som han själv är med och spec:ar.</p>
+
+<p><strong>Sandra:</strong><br/>
+Jag tycker många talare hade intressanta ämnen, men jag fastnade främst för ett genomgående tema – att vi ofta fastnar i samma mönster och glömmer att ifrågasätta oss själva. <a href="http://robertnyman.com/">Robert Nyman</a> pratade t.ex. om hur många lämnade Firefox för Chrome devtools eftersom de inte tyckte om Firebug och har förmodligen inte ens testat Firefox devtools. <a href="https://twitter.com/nodebotanist">Kassandra Perch</a> tog upp hur fanatism kan hindra oss från att använda rätt ramverk på rätt ställe. Jag tror det fanns något hos alla talare som fick mig att tänka över hur jag kodar, hur jag bemöter nya uppgifter och hur jag kan lära mig att tänka annorlunda.</p>
+
+<p><strong>Per:</strong><br/>
+<a href="http://jina.me/">Jina Bolton</a> höll ett talk som som mest tangerade utveckling med JavaScript. Hon pratade istället om sitt arbete med &ldquo;Style Guides&rdquo;. Vi arbetar ofta med att leverera frontend till projekt där vi får grafisk design från en extern leverantör. Designen implementerar vi antingen direkt i systemet, eller så levererar vi statiska filer som backend-utvecklare lägger in i systemet. I sådana projekt är bra kommunikation väldigt viktigt i alla led.</p>
+
+<p>Ett tillfälle då kommunikationen kan brista är om det i designleveranser finns olika versioner av samma modul, utan tydlig information om vilken version som är den aktuella. För att underlätta arbetet och minska missförstånden ber vi ofta designern underhåller ett element-bibliotek, där &ldquo;states&rdquo; på interaktiva element och den senaste designen av alla moduler finns med. Precis samma problem kan så klart uppstå mellan oss och backend som ska implementera vår leverans, och &ldquo;Style Guides&rdquo; kan då vara ett bra verktyg. Om &ldquo;markup&rdquo; skiljer sig i två versioner av samma modul så ska det vara &ldquo;Style Guiden&rdquo; som styr.</p>
+
+<p>Det är dock svårt att hålla en &ldquo;Style Guide&rdquo; uppdaterad, och om man sätter sig ner och bygger den i efterhand tar det väldigt mycket tid. Det Bolton förespråkar är att alltid bygga modulerna i &ldquo;Style Guiden&rdquo; först, och sen använda det materialet för att göra ut &ldquo;templates&rdquo;. På så sätt går det inte åt någon extra tid för att underhålla &ldquo;Style Guiden&rdquo;, och man kan vara säker på att den alltid innehåller det senaste materialet.</p>
+
+<p><strong>Andreas:</strong><br/>
+Fantastiskt &ldquo;meetup&rdquo; på en otroligt fin plats i skärgården gjorde de två dagarna till ett sant nöje, och givande även för en non-coder som mig själv! Bra blandning på talare och en extra big-up till arrangörerna som bokat <a href="https://twitter.com/Bougie">Caroline Drucker</a> för prata om feminism och kvinnor i en hittills väldigt mansdominerad bransch. It has to change, now!</p>
+
+<p><strong>Björn-Olle:</strong><br/>
+För mig som inte längre kodar på heltid men ändå drivs av att hålla mig uppdaterad om teknik var det en mycket inspirerande och lärorik konferens. Innehållet var blandad på ett genomtänkt sätt &ndash; Allt från <a href="http://www.crockford.com/">Douglas Crockfords</a> ECMAscript-snack till <a href="http://nexxylove.tumblr.com/">Emily Rose:s</a> musikinstrument byggt av ett tangetbord. Mest diskussion och eftertanke gav <a href="https://twitter.com/Bougie">Caroline Druckers</a> talk &ldquo;I&rsquo;m a feminist and so can you!&rdquo;. Modigt och viktigt av arrangörerna att ha med detta tema på en konferens där de flesta förväntar sig teknik-tunga talks. Deras ambition att bygga ett bra och hållbart community kring JavaScript blir en tydlig drivkraft bakom arrangemanget. Det handlar inte bara om de senaste teknikerna utan också om hur vi behandlar varandra!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Frontend-lunch på Vinnovera]]></title>
@@ -188,8 +225,9 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 <strong>Harald</strong> har mångårig erfarenhet av interaktiva spel och lärohjälpmedel. På senare år har fokus legat på webbgränssnitt och frontend-utveckling. Med dessa kunskaper har Harald god förståelse för såväl interaktion och grafiska gränssnitt, samt hur man utvecklar dessa rent tekniskt. Utöver sin kärlek till frontend har han en musikstudio på söder där bland annat hans triphop-projekt &ldquo;Skuld&rdquo; håller hus.</p>
 
 <p><img src="http://vinnovera.se/images/profiles/michael.jpg" alt="Michael" class="portrait" />
-<strong>Michael a.k.a. Mico</strong> har jobbat med webbutveckling sedan 1997 och har stor erfarenhet och kunskap av alla beståndsdelar i ett webbprojekt, från backend till frontend. Han har bland mycket annat startat och drivit hosting-företaget MrFriday. Frontend är dock det som ligger honom varmast om hjärtat. Mico driver även tidskriften &ldquo;Hilfe&rdquo; och reser till Japan så fort han får möjlighet.
-<strong>Stockholmsmässan</strong> under hösten och Mico kommer att jobba med <strong>A/B-test</strong> åt en av våra hemliga kunder.</p>
+<strong>Michael a.k.a. Mico</strong> har jobbat med webbutveckling sedan 1997 och har stor erfarenhet och kunskap av alla beståndsdelar i ett webbprojekt, från backend till frontend. Han har bland mycket annat startat och drivit hosting-företaget MrFriday. Frontend är dock det som ligger honom varmast om hjärtat. Mico driver även tidskriften &ldquo;Hilfe&rdquo; och reser till Japan så fort han får möjlighet.</p>
+
+<p>Harald kommer att sitta med ett uppdrag åt <strong>Stockholmsmässan</strong> under hösten och Mico kommer att jobba med <strong>A/B-test</strong> åt en av våra hemliga kunder.</p>
 
 <p><strong>Väääälkomna!</strong></p>
 ]]></content>
@@ -246,7 +284,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#97;&#x73;&#x64;&#64;&#x61;&#115;&#x64;&#46;&#x61;&#115;&#46;">&#x61;&#115;&#100;&#64;&#97;&#x73;&#x64;&#46;&#97;&#x73;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#x61;&#115;&#100;&#64;&#x61;&#x73;&#x64;&#x2e;&#97;&#115;&#46;">&#97;&#x73;&#x64;&#64;&#x61;&#115;&#x64;&#46;&#97;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -1163,342 +1201,6 @@ Alla variabler som instansieras utan “var”-keywordet tillhör även dom det 
 <img src="http://vinnovera.se/images/content/posts/vinnovera-pepparkakor/kavlat.jpg" alt="Kavlat" />
 <img src="http://vinnovera.se/images/content/posts/vinnovera-pepparkakor/gradda.jpg" alt="Gräddat" />
 <img src="http://vinnovera.se/images/content/posts/vinnovera-pepparkakor/fardiga.jpg" alt="Färdiga" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Bildmanipulering i JavaScript]]></title>
-    <link href="http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript/"/>
-    <updated>2013-12-13T16:17:13+01:00</updated>
-    <id>http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript</id>
-    <content type="html"><![CDATA[<p>När det läggs ett digitalt filter över en bild manipuleras pixeldatan i bilden. Färgerna i bilden räknas om för varje pixel och sedan visas en ny bild med de nya värderna. I fortsättningen kommer jag att använda termen filter för att beskriva manipuleringen<!--more--> av bildens data med hjälp av Javascript.</p>
-
-<p>Några vanligt förekommande filter är inverterade färger, sepia, blur, kontrastökning, gråskala med mera.</p>
-
-<p>I dagsläget är det vanligast att manipulera bilderna i t.ex. Photoshop innan de används på en hemsida, men det finns alternativ och ett av dom är Javascript.</p>
-
-<h2>Varför ska man använda filter?</h2>
-
-<p>De som underhåller webbplatser är oftast inte själva utvecklare eller grafiker. Vill de placera samma bild på flera olika ställen men med olika filter behöver de inte själva editera bilden med hjälp av externa verktyg.</p>
-
-<p>Om en sida har flera olika instanser av samma bild med olika filter, t.ex. porträttbilder av Andy Warhol, behöver browsern endast hämta bilden en gång. Det kan leda till en snabbare site med färre anrop.</p>
-
-<h2>Kan man använda filter?</h2>
-
-<p>Om browsern stödjer canvas-objektet kan man använda filter. Idag har följande browsers stöd för canvas:</p>
-
-<ul>
-<li>Internet Explorer 9+</li>
-<li>Firefox</li>
-<li>Opera</li>
-<li>Chrome</li>
-<li>Safari</li>
-<li>Mobile browsers</li>
-</ul>
-
-
-<p>I Android 4.0 ursprungs browser finns det, vad som antas vara, en bugg som gör att anges alpha i något annat än 0 eller 255 ändras pixelns färg istället.</p>
-
-<p>Prestandan för canvas skiljer sig åt på olika plattformar. Desktop har generellt bra prestanda men mobila browsers kan vara långsammare.</p>
-
-<h2>Hur fungerar filter?</h2>
-
-<p>Som nämnt tidigare handlar det om att räkna om värden i bildens pixeldata. För att kunna manipulera bilder behövs ett canvas att rita på och ett ImageData-objekt.</p>
-
-<p>Ett ImageData-objekt är en del av ett canvas, inte en bild eller en form. Objektet innehåller information för varje pixel inom den delen. Informationen består av fyra delar per pixel, RGBA:</p>
-
-<p>R &ndash; Röd    (0-255) <br />
-G &ndash; Grön   (0-255) <br />
-B &ndash; Blå        (0-255) <br />
-A &ndash; Alpha   (0-255, 0 = helt osynlig &ndash; 255 = helt synlig)</p>
-
-<p>Är en pixel röd och synlig har den värdet (255,0,0,255) och det är de värden som lagras i data-egenskapen hos ImageData-objektet. Principen för att rita på ett canvas är samma för bilder som för andra objekt, därför beskrivs först hur man ritar en simpel form.</p>
-
-<h3>Form</h3>
-
-<p>Koden nedan skapar ett objekt som är 100 x 100 px, där varje pixel är blå, och placerar objektet på ett canvas 10px från kanterna.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;myCanvas&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">//Skapa ett objekt att arbeta med</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">imageData</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">createImageData</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">//Loopa igenom pixlarna</span>
-</span><span class='line'><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">imageData</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">+=</span><span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">imageData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>      <span class="c1">//red</span>
-</span><span class='line'>    <span class="nx">imageData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>      <span class="c1">//green</span>
-</span><span class='line'>    <span class="nx">imageData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>    <span class="c1">//blue</span>
-</span><span class='line'>    <span class="nx">imageData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>    <span class="c1">//alpha</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">//Skriv ut objektet på canvaset</span>
-</span><span class='line'><span class="nx">ctx</span><span class="p">.</span><span class="nx">putImageData</span><span class="p">(</span><span class="nx">imageData</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Resultat:<br /><img src="https://lh3.googleusercontent.com/eMaoG_Om5swKW1iyfLoZ36M_zw7LRuYk0A6oxVqzYV7JKblIScg7ILDyGDiVkGCNh3S-BOKydcM18rtiZBt4-9Xvvi5BiCMMpupJPnzMiNmvc2qFkxBVHYJJlA" alt="" /></p>
-
-<h4>Funktioner</h4>
-
-<h5>createImageData():</h5>
-
-<p>Skapar ett nytt tomt ImageData-objekt. Objektets pixelvärden är ursprungligen (0,0,0,0), svarta och genomskinliga. Metoden används om det inte redan innan finns ett objekt att arbeta med, t.ex en bild, eller om ett objekt ska kopieras.</p>
-
-<p>Syntax:</p>
-
-<p>Det finns två versioner av metoden,</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">imgData</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">createImageData</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span><span class="nx">height</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>width = Bredden på det nya ImageData-objektet i px.</li>
-<li>height = Höjden på det nya ImageData-objektet i px.</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">imgData</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">createImageData</span><span class="p">(</span><span class="nx">imageData</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>imageData = ett annat ImageData-objekt.</li>
-</ul>
-
-
-<h5>putImageData():</h5>
-
-<p>Skriver ut pixeldatan från ett specificerat ImageData-objekt på canvaset.</p>
-
-<p>Syntax:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">ctx</span><span class="p">.</span><span class="nx">putImageData</span><span class="p">(</span><span class="nx">imgData</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">dirtyX</span><span class="p">,</span> <span class="nx">dirtyY</span><span class="p">,</span> <span class="nx">dirtyWidth</span><span class="p">,</span> <span class="nx">dirtyHeight</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>imgData = Det imageData-objekt som ska skrivas ut på canvaset.</li>
-<li>x = x-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
-<li>y = y-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
-<li>dirtyX = (optional) Det horizontella x-värdet att placera bilden på, angivet i px.</li>
-<li>dirtyY = (optional) Det horizontella y-värdet att placera bilden på, angivet i px.</li>
-<li>dirtyWidth = (optional) Bredden som ska användas för att rita ut bilden på canvaset.</li>
-<li>dirtyHeight =(optional) Höjden som ska användas för att rita ut bilden på canvaset.</li>
-</ul>
-
-
-<h3>Bild</h3>
-
-<p>För att manipulera en bild behövs två ytterligare funktioner, drawImage och getImageData. Funktionen createImageData används när man vill kopiera en existerande bild eller för att skapa en tom yta.</p>
-
-<p>Html:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">&quot;image&quot;</span> <span class="na">src=</span><span class="s">&quot;src.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span> <span class="na">width=</span><span class="s">&quot;220&quot;</span> <span class="na">height=</span><span class="s">&quot;277&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;myCanvas&quot;</span> <span class="na">width=</span><span class="s">&quot;220&quot;</span> <span class="na">height=</span><span class="s">&quot;277&quot;</span><span class="nt">&gt;&lt;/canvas&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Script:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;image&quot;</span><span class="p">).</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;myCanvas&quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="c1">//Hämta bild</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">img</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;image&quot;</span><span class="p">);</span>
-</span><span class='line'>  
-</span><span class='line'>      <span class="c1">//Rita ut bild på canvas</span>
-</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="nx">img</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="c1">//Hämta bilddata</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">imgData</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getImageData</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">c</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span><span class="nx">c</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="c1">// invertera färgerna i bilden</span>
-</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">imgData</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">+=</span><span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">imgData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">=</span><span class="mi">255</span><span class="o">-</span><span class="nx">imgData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-</span><span class='line'>      <span class="nx">imgData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">255</span><span class="o">-</span><span class="nx">imgData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-</span><span class='line'>      <span class="nx">imgData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">255</span><span class="o">-</span><span class="nx">imgData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">2</span><span class="p">];</span>
-</span><span class='line'>      <span class="nx">imgData</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="mi">255</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="c1">//Skriv ut den manipulerade bilden på canvaset</span>
-</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">putImageData</span><span class="p">(</span><span class="nx">imgData</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Resultat:<br /><img src="https://lh6.googleusercontent.com/BZDl6xazl4AZS4_vbJJK2ZzWN_MVIR8KWM3F7dwCTHGiI0Ryk-Ejqr8_GlsFN0JZH8w_dj61KYmrRL4Ad5_niAfjblRPSGIiA4gVDstauj-G7bkLTt2Q2O31Pg" alt="" /></p>
-
-<h4>Funktioner</h4>
-
-<h5>drawImage():</h5>
-
-<p>Ritar ut en bild, video eller ett canvas på ett canvas. Metoden kan även rita ut delar av en bild och ändra en bilds eller videos storlek.</p>
-
-<p>Syntax:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">context</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="nx">img</span><span class="p">,</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">);</span>
-</span><span class='line'><span class="nx">context</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="nx">img</span><span class="p">,</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span><span class="nx">width</span><span class="p">,</span><span class="nx">height</span><span class="p">);</span>
-</span><span class='line'><span class="nx">ctx</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="nx">img</span><span class="p">,</span><span class="nx">sx</span><span class="p">,</span><span class="nx">sy</span><span class="p">,</span><span class="nx">swidth</span><span class="p">,</span><span class="nx">sheight</span><span class="p">,</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span><span class="nx">width</span><span class="p">,</span><span class="nx">height</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>img = Det element som ska användas &ndash; bild, canvas eller video.</li>
-<li>x = x-koordinaten där elementet ska placeras.</li>
-<li>y = y-koordinaten där elementet ska placeras.</li>
-<li>width = (optional)  vidden av elementet som ska användas (öka el. minska strl på elem).</li>
-<li>height = (optional) höjden av elementet som ska användas (öka el. minska strl på elem).</li>
-<li>sx = (optional) x-koordinaten där bilden ska börja skäras.</li>
-<li>sy = (optional) y-koordinaten där bilden ska börja skäras.</li>
-<li>swidth = (optional) vidden av den beskurna bilden.</li>
-<li>sheight = (optional) höjden av den beskurna bilden.</li>
-</ul>
-
-
-<h5>getImageData():</h5>
-
-<p>Retunerar ett ImageData-objekt som kopierat pixeldatan från en specificerad del av canvaset.</p>
-
-<p>Syntax:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">ctx</span><span class="p">.</span><span class="nx">getImageData</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>x = x-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
-<li>y = y-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
-<li>width = Bredden på det du vill kopiera.</li>
-<li>height =Höjden på det du vill kopiera.</li>
-</ul>
-
-
-<h2>Slutsatser</h2>
-
-<p>När jag jämförde två sidor, en där jag hade två bilder och en där jag hade en bild som jag skrev ut två gånger med hjälp av filter-funktioner, fick jag följande resultat:</p>
-
-<table class="airy">
-<tr>
-<td></td>
-<td>Javascript</td>
-<td>två bilder</td>
-</tr>
-<tr>
-<td>Antal requests</td>
-<td>2</td>
-<td>3</td>
-</tr>
-<tr>
-<td>kb överfört</td>
-<td>149</td>
-<td>285</td>
-</tr>
-<tr>
-<td>paint (ms)</td>
-<td>3.0</td>
-<td>39.2</td>
-</tr>
-<tr>
-<td>hämta bild/bilder (ms)</td>
-<td>23</td>
-<td>150</td>
-</tr>
-<tr>
-<td>finished loading (ms)</td>
-<td>117</td>
-<td>198</td>
-</tr>
-</table>
-
-
-<p>Jag fick inte de resultat jag hade väntat mig och det beror främst på att jag trodde att paint-tiden skulle vara högre när jag använde canvas-objektet. Tittar man på ‘kb överfört’ tycker jag att man tydligt ser att fördelen men att använda filter är att man bara behöver ladda ner en bild. Tänker man den situationen i större skala med t.ex tio stycken bilder blir filter betydligt snabbare. Javascriptet jag använde var minimalt och använder man ett komplexare skript skulle tiden öka för att exekvera skriptet.</p>
-
-<p>Ett ytterligare alternativ som är värt att nämna är web-kit filter. Varför jag inte anser att det är användbart än är att två av de störta webbläsarna, Firefox och Internet Explorer, inte har stöd för det. Skulle de utveckla stöd kan det bli ett starkt alternativ.</p>
-
-<h3>Bibliotek</h3>
-
-<p>Jag tror inte att det kommer att vara tidseffektivt att skriva ett eget Javascript-plugin. Uträkningarna är komplexa och det krävs väldigt noga testning för att inte slöa ner webbsidor. Nedan är några av de bibliotek som jag hittat som verkar ha potential.</p>
-
-<p>Det bibliotek som verkar användas mest för tillfället är fabricjs. Det kan bero på att det innehåller väldigt mycket mer än bara filter &ndash; t.ex. former, drag-n-drop, resize med flera. Jag har även tittat på följande:</p>
-
-<ul>
-<li>Filterr2 <a href="https://github.com/alexmic/filtrr/tree/master/filtrr2">https://github.com/alexmic/filtrr/tree/master/filtrr2</a><br />
-Open source som inte känns helt färdigutvecklat. Senaste buggfixen var fem månader sedan.</li>
-<li>Pixastic <a href="http://www.pixastic.com/lib/docs/">http://www.pixastic.com/lib/docs</a><br />
-Ett gratis bibliotek där du själv kan välja vilka komponenter du vill ladda ner.</li>
-<li>glfx.js <a href="https://github.com/evanw/glfx.js">https://github.com/evanw/glfx.js</a><br />
-Ett bibliotek som använder WebGL. Stödjs endast av de senaste browsers.</li>
-<li>camanjs <a href="http://camanjs.com/">http://camanjs.com/</a><br />
-Jag tror att camanjs har störts potential att vara användbart. Biblioteket har noga utförd dokumentation, uppdateras kontinuerligt, uppmanar till tester och är helt gratis.</li>
-</ul>
-
-
-<h2>Referenser</h2>
-
-<ul>
-<li><a href="http://www.khronos.org/registry/typedarray/specs/latest/#7.1">http://www.khronos.org/registry/typedarray/specs/latest/#7.1</a></li>
-<li><a href="http://www.w3schools.com/tags/ref_canvas.asp">http://www.w3schools.com/tags/ref_canvas.asp</a></li>
-<li><a href="http://html5doctor.com/video-canvas-magic/">http://html5doctor.com/video-canvas-magic/</a></li>
-<li><a href="http://caniuse.com/css-filters">http://caniuse.com/css-filters</a></li>
-</ul>
-
-
-<p>Codepen :
-(Egna bilder behövs för att testa skripten) <br />
-Länk till Javascript version: <a href="http://codepen.io/Sandra/pen/LjGgh">http://codepen.io/Sandra/pen/LjGgh</a> <br />
-Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjvJ">http://codepen.io/Sandra/pen/lrjvJ</a></p>
 ]]></content>
   </entry>
   
