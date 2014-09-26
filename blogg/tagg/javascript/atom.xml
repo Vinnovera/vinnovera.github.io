@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: JavaScript | Vinnovera]]></title>
+  <title><![CDATA[Category: Javascript | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/javascript/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-25T17:18:36+02:00</updated>
+  <updated>2014-09-26T15:57:34+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,39 +14,968 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Nordic.js]]></title>
-    <link href="http://vinnovera.se/blogg/2014/09/25/nordicjs/"/>
-    <updated>2014-09-25T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/09/25/nordicjs</id>
-    <content type="html"><![CDATA[<p>Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på <a href="http://nordicjs.com/">Nordic.js</a>.<!--more--> Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen&hellip;</p>
+    <title type="html"><![CDATA[Garbage Collection]]></title>
+    <link href="http://vinnovera.se/blogg/2014/02/19/garbage-collection/"/>
+    <updated>2014-02-19T17:54:05+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/02/19/garbage-collection</id>
+    <content type="html"><![CDATA[<p>Garbage collection (GC) är automatiserad minneshantering i datorprogram. Det finns många olika algoritmer för garbage collection, men problemet som de alla försöker att lösa är detsamma: att identifiera använt minne som applikationen inte längre klarar av att nå, och rensa det.</p>
 
-<p><strong>Daniel:</strong><br/>
-<a href="http://robertnyman.com/">Robert Nyman</a> från Mozilla gav ett intressant fördrag om Firefox uppdaterade verktyg för utvecklare. Bland annat möjligheten att enkelt se vilka event som är kopplade till ett specifikt element, hur man kan förhandsgranska CSS3-animationer samt ett smart sätt att se alla element som är kopplade till en specifik CSS-klass. En annan intressant nyhet var Firefox &ldquo;tools-adapter&rdquo; med vilken man kan debugga, inte bara i Firefox utan även i andra browsers. Robert pratade också om &ldquo;the five stages of development&rdquo; och att förhålla sig till problemlösning på ett konstruktivt sätt.</p>
+<!--more-->
 
-<p><strong>Mico:</strong><br/>
-<a href="http://www.sundh.com/blog/">Ellen Sundh</a> som visade upp några av sina IRL-tillämpningar av JavaScript-programmering var väldigt inspirerande. Att se relativt enkel programmering som jag kan förstå tillämpas utanför skärmen var kul för en som sitter med webb hela dagarna. Blir det kanske nästa projekt?</p>
 
-<p><strong>Gustav:</strong><br/>
-Jag gillade <a href="http://hakim.se/">Hakims</a> talk där han bl. a. visade små experiment han gjort i gränslandet mellan programmering, musik och konst. Enkelheten och lekfullheten i den han gjort var det som imponerade på mig. Det var också fascinerande att se hur andra använde hans små installationer för att skapa helt fantastiska nya verk.</p>
+<p>Motsatsen till garbage collection är att programmeraren själv måste allokera minne och sen avallokera minnet när det inte längre används, t.ex. <code>malloc()</code> och <code>free()</code> i C och C++.</p>
 
-<p><strong>Jakob:</strong><br/>
-Bäst var helt klart <a href="http://www.crockford.com/">Douglas Crockford</a> som ofta blir bashad för att vara en gammal mossig gubbe som fastnat i gamla vanor. Men som under sitt talk berättade hur han aktivt omvärderar och förfinar sitt sätt att skriva sin kod, på ett elegant sätt. Han har t.ex. slutat använda &ldquo;new&rdquo; och &ldquo;this&rdquo; helt och bashar istället tillbaka på alla som saknar &ldquo;Class&rdquo; och &ldquo;inheritance&rdquo;. Samtidigt lyckas han göra reklam för nästa ECMAscript-version, som han själv är med och spec:ar.</p>
+<h2>Historien om garbage collection</h2>
 
-<p><strong>Sandra:</strong><br/>
-Jag tycker många talare hade intressanta ämnen, men jag fastnade främst för ett genomgående tema – att vi ofta fastnar i samma mönster och glömmer att ifrågasätta oss själva. <a href="http://robertnyman.com/">Robert Nyman</a> pratade t.ex. om hur många lämnade Firefox för Chrome devtools eftersom de inte tyckte om Firebug och har förmodligen inte ens testat Firefox devtools. <a href="https://twitter.com/nodebotanist">Kassandra Perch</a> tog upp hur fanatism kan hindra oss från att använda rätt ramverk på rätt ställe. Jag tror det fanns något hos alla talare som fick mig att tänka över hur jag kodar, hur jag bemöter nya uppgifter och hur jag kan lära mig att tänka annorlunda.</p>
+<p>Garbage collection uppfanns av John McCarty c:a 1959 när han arbetade med Lisp, som är ett av de första högnivåspråken. I sin uppsats <a href="http://www-formal.stanford.edu/jmc/recursive/node4.html#tex2html8">Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I</a> (1960) beskriver han en process som han kallar för &ldquo;reclamation cycle&rdquo;, eller “garbage collection”. Metoden John McCarty beskrev är idag kallad för “mark-and-sweep”, vilket är den metod JavaScript använder, om än en lite förfinad version.</p>
 
-<p><strong>Per:</strong><br/>
-<a href="http://jina.me/">Jina Bolton</a> höll ett talk som som mest tangerade utveckling med JavaScript. Hon pratade istället om sitt arbete med &ldquo;Style Guides&rdquo;. Vi arbetar ofta med att leverera frontend till projekt där vi får grafisk design från en extern leverantör. Designen implementerar vi antingen direkt i systemet, eller så levererar vi statiska filer som backend-utvecklare lägger in i systemet. I sådana projekt är bra kommunikation väldigt viktigt i alla led.</p>
+<h2>Garbage collection-algoritmer</h2>
 
-<p>Ett tillfälle då kommunikationen kan brista är om det i designleveranser finns olika versioner av samma modul, utan tydlig information om vilken version som är den aktuella. För att underlätta arbetet och minska missförstånden ber vi ofta designern underhåller ett element-bibliotek, där &ldquo;states&rdquo; på interaktiva element och den senaste designen av alla moduler finns med. Precis samma problem kan så klart uppstå mellan oss och backend som ska implementera vår leverans, och &ldquo;Style Guides&rdquo; kan då vara ett bra verktyg. Om &ldquo;markup&rdquo; skiljer sig i två versioner av samma modul så ska det vara &ldquo;Style Guiden&rdquo; som styr.</p>
+<p>Det finns många olika implementationer av garbage collection. I JavaScript är det först och främst “mark-and-sweep” som används, och i en lite mindre utsträckning “reference counting”.</p>
 
-<p>Det är dock svårt att hålla en &ldquo;Style Guide&rdquo; uppdaterad, och om man sätter sig ner och bygger den i efterhand tar det väldigt mycket tid. Det Bolton förespråkar är att alltid bygga modulerna i &ldquo;Style Guiden&rdquo; först, och sen använda det materialet för att göra ut &ldquo;templates&rdquo;. På så sätt går det inte åt någon extra tid för att underhålla &ldquo;Style Guiden&rdquo;, och man kan vara säker på att den alltid innehåller det senaste materialet.</p>
+<h3>Reference counting garbage collection</h3>
 
-<p><strong>Andreas:</strong><br/>
-Fantastiskt &ldquo;meetup&rdquo; på en otroligt fin plats i skärgården gjorde de två dagarna till ett sant nöje, och givande även för en non-coder som mig själv! Bra blandning på talare och en extra big-up till arrangörerna som bokat <a href="https://twitter.com/Bougie">Caroline Drucker</a> för prata om feminism och kvinnor i en hittills väldigt mansdominerad bransch. It has to change, now!</p>
+<p>Reference counting används i stort sett endast av Internet Explorer 6 och 7. Den här metoden räknar alla referenser till ett objekt, och tar bort alla objekt som inte längre har en referens.</p>
 
-<p><strong>Björn-Olle:</strong><br/>
-För mig som inte längre kodar på heltid men ändå drivs av att hålla mig uppdaterad om teknik var det en mycket inspirerande och lärorik konferens. Innehållet var blandad på ett genomtänkt sätt &ndash; Allt från <a href="http://www.crockford.com/">Douglas Crockfords</a> ECMAscript-snack till <a href="http://nexxylove.tumblr.com/">Emily Rose:s</a> musikinstrument byggt av ett tangetbord. Mest diskussion och eftertanke gav <a href="https://twitter.com/Bougie">Caroline Druckers</a> talk &ldquo;I&rsquo;m a feminist and so can you!&rdquo;. Modigt och viktigt av arrangörerna att ha med detta tema på en konferens där de flesta förväntar sig teknik-tunga talks. Deras ambition att bygga ett bra och hållbart community kring JavaScript blir en tydlig drivkraft bakom arrangemanget. Det handlar inte bara om de senaste teknikerna utan också om hur vi behandlar varandra!</p>
+<p>Det är dock möjligt fär två olika objekt att referera till varandra, utan att annars vara refererade till.
+```javascript
+function f() {</p>
+
+<pre><code>var o = {};
+var o2 = {};
+o.a = o2;
+o2.a = o;
+
+return “foo”;
+</code></pre>
+
+<p>}</p>
+
+<p>f();
+```</p>
+
+<p>I exemplet har o och o2 inga referenser utanför funktions-scopet. De kommer dock inte bli samlade av garbage collection eftersom de har referenser till varandra.</p>
+
+<p>En annan nackdel är att själva uppdateringen av referensräknaren kan kräva ganska stora resurser, om många referenser skapas och tas bort blir applikationen betydligt långsammare.</p>
+
+<p>En fördel med denna metod är att objektet tas bort så fort det inte längre har några referenser, och kräver inte att applikationen stannas för att garbage collection ska köras.</p>
+
+<p>En variant av den här metoden används bland annat i PHP.</p>
+
+<h3>Mark-and-sweep</h3>
+
+<p>Sedan 2012 använder i stort sett alla browsers den här algoritmen. Mark-and-sweep är en så kallad “tracing collector”. Den fungerar på det sättet att den startar vid root-objektet. I JavaScripts fall är det global-objektet. Från global letar algoritmen efter alla referenser den kan hitta, och sen alla referenser från dessa. På så sätt får garbage-collectorn ut alla objekt som går att komma åt, och tar bort alla objekt som inte går att nå.</p>
+
+<p>Den begränsning mark-and-sweep algoritmen har är att objekt måste göras explicit oåtkomliga. Denna begränsning är däremot inte speciellt besvärande, vilket lär vara anledningen till att ingen bryr sig speciellt mycket om garbage collection.</p>
+
+<h4>Stop-the-world</h4>
+
+<p>Vanliga mark-and-sweep garbage collectors kör hela mark och sen sweep vid samma tillfälle, och stannar all annan programexekvering under tiden. Det kan orsaka en märkbar frysning av programmet när garbage collection körs. Mer sofistikerade algoritmer kan utföra processen i bakgrunden utan att orsaka att exekveringen saktas ned.</p>
+
+<h4>Incremental GC</h4>
+
+<p>Firefox introducerade “incremental garbage collections” (IGC) i version 16. Vad IGC gör är att den delar upp mark-fasen av mark-and-sweep i flera cykler. Sweep-fasen pausar fortfarande browsern men den är nu betydligt kortare. Det fungerar bra så länge det inte används väldigt mycket minne, om för mycket minne används så hinner IGC inte med att garbage collecta och browsern går över till att köra en full mark-and-sweep.</p>
+
+<h4>Incremental Generational Garbage Collection</h4>
+
+<p>Incremental Generational Garbage Collection (IGGC) lades till Chrome och V8 i 2011. IGGC arbetar utifrån antagandet att de yngsta referenserna är de mest kortlivade och att garbage collectorn inte behöver kontrollera de äldsta referenserna varje cykel. Om ett objekt överlever en cykel flyttas det till en äldre generation.</p>
+
+<h2>Minneseffektiv kod</h2>
+
+<p>Det finns inte så mycket man behöver tänka på när man skriver JavaScript i relation till garbage collection, precis som det ska vara. Men det finns några saker som är värt att tänka på:</p>
+
+<p>För att minimera den tid som används av garbage collectorn bör man undvika att skapa för många objekt. Varje gång du använder <code>new</code> keywordet skapas ett nytt objekt. Men även när du skriver <code>[ ]</code> eller <code>{ }</code>. I JavaScript är även funktioner objekt.</p>
+
+<p>Dock kommer du aldrig komma ifrån att skapa garbage. Att invokera en funktion kräver minne, som sen behöver rensas även om funktionen i övrigt inte skapar någon garbage.</p>
+
+<h3>global scope</h3>
+
+<p>Ett objekt som skapas utanför något specifikt scope tillhör det globala scopet. Eftersom mark-and-sweep-algoritmen markerar alla objekt som går att nå från det globala scopet kommer globala objekt aldrig att rensas av garbage collectorn.
+Alla variabler som instansieras utan “var”-keywordet tillhör även dom det globala scopet.
+```javascript
+var b = &lsquo;foo&rsquo;;</p>
+
+<p>function test(){</p>
+
+<pre><code>var str = ‘Hej’;
+c = ‘Då’;
+</code></pre>
+
+<p>}</p>
+
+<p>test();
+<code>
+Efter det att</code>test()<code>körts går inte längre</code>str<code>att nås från</code>global<code>objectet och kommer såledas frias. Både</code>b<code>och</code>c``` variablerna tillhör det globala scopet och det minne de tar upp frigörs aldrig.</p>
+
+<h3>delete och null keywords</h3>
+
+<p>För att vara säker på att ett objekt blir borttaget av garbage collectorn kan du helt enkelt sätta dess värde till <code>null</code>. JavaScript har även ett <code>delete</code>-keyword. Även om det indirekt kan vara ett sätt att ta bort referensen till ett objkct, är det i första hand endast användbart när du vill sätta ett objekts property till <code>undefined</code>, istället för att sätta det till <code>null</code>. <code>delete</code> fungerar inte på variabler, utan returnerar då endast <code>false</code>.
+```javascript
+var s = {data: ‘test’};
+delete s.data;
+s.data === ‘test’; // false</p>
+
+<p>var m = ‘test’;
+delete m; // return false;
+m === ‘test’ // true</p>
+
+<p>m = null;
+m === ‘test’ // false
+<code>
+Vad som låter som ett rimligt antagande är att vi borde kunna använda</code>delete<code>tillsammans med root-objektet (</code>this<code>). Det antagandet stämmer dock inte.
+</code>javascript
+var x = {data: &lsquo;z&rsquo;};
+delete this.x; // return false
+this.x.data === &lsquo;z&rsquo;; // true
+delete this.x.data; // return true
+this.x.data === &lsquo;z&rsquo;; // false
+```</p>
+
+<h3>var keywordet</h3>
+
+<p>Var noga med hur du använder <code>var</code> keywordet.</p>
+
+<p>Speciellt i intervall där varje iteration är ett eget scope skapas det lätt väldigt mycket onödigt garbage.</p>
+
+<h3>Mindre function-scope</h3>
+
+<p>Var noga med dina funktions-scope. Det kan vara värt att dela en stor funktion i mindre. Det skapar garbage oftare men i mindre mängd. Det utnyttjar även den generationella garbage collectorn.</p>
+
+<p>I exemplet ska vi räkna ut den initiella <code>velocity.x</code>och <code>velocity.y</code>och för ett objekt. Det gjorde vi tidigare i konstruktorn av objektet, földen av det var att de hjälp-variabler vi använder i uträkningen inte gick ur scope förrän vi förstörde objektet. Nu går variablerna ur scope så fort <code>init()</code> metoden är klar.
+```javascript
+function init() {</p>
+
+<pre><code>var dx, dy, distance, dv, tx, ty, tv, dtv;
+
+// Distance of particle from the center across the x and y axis
+dx = options.x - options.center_x;
+dy = options.y - options.center_y;
+
+// Distance of particle from the center (radius of orbit)
+distance = Math.sqrt( dx * dx + dy * dy );
+
+// velocity towards center (gravity) through distance
+// We substitute the sum of masses with 1
+dv = (1 * options.gravity) / distance;
+
+// Tangental velocity
+dtv = Math.sqrt( dv );
+
+tx = dy * dtv;
+ty = dx * dtv;
+
+velocity.x += tx;
+velocity.y -= ty;
+</code></pre>
+
+<p>}
+```</p>
+
+<h3>Loopar</h3>
+
+<p>Istället för:
+```javascript
+setInterval(function(){</p>
+
+<pre><code>var foo = new bar();
+</code></pre>
+
+<p>}, 16);
+<code>
+skriv:
+</code>javascript
+var foo = new bar();
+setInterval(function(){</p>
+
+<pre><code>foo.init();
+</code></pre>
+
+<p>},16);
+```
+Det första exemplet skapar ett nytt objekt varje iteration, som är onåbart i nästa. Det andra exemplet skapar ett objekt som sen återanvänds, fast med nya värden.</p>
+
+<h3>Object pool</h3>
+
+<p>Det kan ibland vara bra att skapa en “objektpool”. När du ofta ska skapa och ta bort liknande objekt.  Det gör du genom att använda två arrayer:
+```javascript
+var activeObject = [],</p>
+
+<pre><code>objectPool   = [];
+</code></pre>
+
+<p><code>
+När du vill skapa ett nytt objekt plockar du det ur arrayen</code>objectPool<code>med oanvända objekt och lägger det i</code>activeObject``` arrayen. När du sen är klar med ditt objekt flyttar du tillbaka det till poolen. På så sätt skapas inga nya objekt efter startup och inget tas heller bort av garbage collectorn.</p>
+
+<p>Den här metoden är användbar när man animerar många objekt. Till exempel punkter i en graf.</p>
+
+<h2>Referenser</h2>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29">http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Memory_Management">https://developer.mozilla.org/en-US/docs/JavaScript/Memory_Management</a></li>
+<li><a href="http://docstore.mik.ua/orelly/webprog/jscript/ch11_03.htm">http://docstore.mik.ua/orelly/webprog/jscript/ch11_03.htm</a></li>
+<li><a href="http://buildnewgames.com/garbage-collector-friendly-code/">http://buildnewgames.com/garbage-collector-friendly-code/</a></li>
+<li><a href="https://blog.mozilla.org/dmandelin/2012/07/20/incremental-gc-now-in-firefox-aurora/">https://blog.mozilla.org/dmandelin/2012/07/20/incremental-gc-now-in-firefox-aurora/</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery vs Mootools]]></title>
+    <link href="http://vinnovera.se/blogg/2014/01/07/jquery-vs-mootools/"/>
+    <updated>2014-01-07T14:41:39+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/01/07/jquery-vs-mootools</id>
+    <content type="html"><![CDATA[<p>&ldquo;jQuery eller Mootools&rdquo; är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.</p>
+
+<p>Innan jag börjar jämföra dessa vill jag presentera dem lite<!--more--> först. Jag vill även påpeka att jag har jobbat med dessa två bibliotek ett par år, och även om jag har en favorit hoppas jag att det inte lyser igenom för mycket.</p>
+
+<h2>Vad är jQuery</h2>
+
+<p>jQuery behöver knappast någon presentation, har du jobbat med gränssnittsutveckling känns det rätt rimligt att anta att du någon gång har kommit över jQuery.</p>
+
+<p>jQuery är kort sagt ett javascript bibliotek som riktar in sig på att förenkla ditt sätt att arbeta med HTML manipulering, effekter, event med mera genom ett enkelt API som fungerar genom olika webbläsare.</p>
+
+<p>Jag ska inte tråka ut dig med siffror, men antalet användare är med marginal högst på marknaden (bland javascript bibliotek) och webbplatser som Wordpress och Wikipedia använder sig utav jQuery, vilket de även stolt visar upp.</p>
+
+<h2>Mootools</h2>
+
+<p>Jag har fått den uppfattningen att många tror att Mootools är gammalt och uråldrat. Vad det beror på vet jag inte och det är inget jag tänker analysera heller.</p>
+
+<p>Sanningen är dock den att Mootools uppdateras relativt ofta, inte lika ofta som jQuery men det behöver inte vara något dåligt.</p>
+
+<p>Mootools är ett javascript bibliotek precis som jQuery men ändå inte. Mootools inriktar sig på &ldquo;intermediate to advanced JavaScript developers&rdquo;. Istället för att förändra sättet du skriver Javascript på försöker Mootools göra det kraftfullare med en mer objekt orienterad approach. Även här finns cross-browser stöd, HTML manipulering, events och så vidare.</p>
+
+<h2>Tekniska skillnader</h2>
+
+<p>Jag börjar med de direkt synliga skillnaderna mellan dessa två bibliotek: syntax.</p>
+
+<p>&ldquo;jQuery has changed the way that millions of people write JavaScript&rdquo; &ndash; skriver jQuery på deras webbplats.</p>
+
+<p>Mycket riktigt skiljer sig jQuery en del från &ldquo;vanilla&rdquo; JavaScript. Mootools å andra sidan har fokuserat mer på att göra JavaScript kraftfullare, hellre än att ändra sättet att skriva på. Vi tittar på lite exempel.</p>
+
+<h3>Skapa ett element</h3>
+
+<p>Vi börjar med enklast möjliga, skapa ett HTML element som ska ha klassen &ldquo;new&rdquo; som vi sedan ska lägga till i body taggen.</p>
+
+<h4>jQuery</h4>
+
+<p>Enligt dokumentationen föreslås <a href="http://api.jquery.com/append/">append</a> funktionen:</p>
+
+<p><code>javascript
+$('body').append('&lt;div class="new" /&gt;');
+</code></p>
+
+<h4>Mootools</h4>
+
+<p>Mootools erbjuder en <a href="http://mootools.net/docs/core/Element/Element">Element</a> klass som vi använder för detta ändamål:</p>
+
+<p>```javascript
+var newElement = new Element(&lsquo;div&rsquo;, {</p>
+
+<pre><code>'class': 'new'
+</code></pre>
+
+<p>});</p>
+
+<p>document.body.grab(newElement);
+```</p>
+
+<h4>Vanilla</h4>
+
+<p>För att tydligt se likheter och skillnader jämför vi med ren och fin JavaScript:</p>
+
+<p>```javascript
+var newElement = document.createElement(&lsquo;div&rsquo;);</p>
+
+<p>newElement.className = &lsquo;new&rsquo;;
+document.body.appendChild(newElement);
+```</p>
+
+<h4>Summering</h4>
+
+<p>jQuery, med deras sätt att ändra på hur du skriver JavaScript, klarade uppgiften på 1 rad. I Mootools exemplet ser vi tydligt att det är mer objekt orienterat. Sista exemplet säger jag inte så mycket om, men som du ser är det väldigt likt Mootools exemplet.</p>
+
+<p>En sak du kanske märker om vi går tillbaka till Mootools exemplet är att jag även där (såsom i sista exemplet) använder <code>document.body</code> som alltså inte tillhör Mootools api:t. Mer om det längre ner.</p>
+
+<h3>Manipulera HTML dokument</h3>
+
+<p>Här finns en stor skillnad som är viktig att komma ihåg. Som nämnt tidigare förändrar jQuery sättet vi skriver på och detta blir väldigt tydligt här. För att kunna jobba med element i jQuery måste det vara ett <a href="http://api.jquery.com/jQuery/">jQuery objekt</a>. Mootools bygger ut JavaScript och kan därför användas rakt av.</p>
+
+<p>För att demonstrera detta ska vi hitta <strong>body</strong> taggen och lägga på en klass.</p>
+
+<h4>jQuery</h4>
+
+<p><code>javascript
+$('body').addClass('my-body');
+</code></p>
+
+<h4>Mootools</h4>
+
+<p><code>javascript
+document.body.addClass('my-body');
+</code></p>
+
+<h4>Summering</h4>
+
+<p>Det som händer när vi använder <code>$('body')</code> är att jQuery processar strängen &lsquo;body&rsquo;, försöker klura ut om vi vill hitta något eller skapa något och, när den är klar, returnerar en array som innehåller <code>document.body</code>. Alltså det vi använde direkt i Mootools exemplet. Du kan nog räkna ut själv vad som är snabbast. För att kunna snabba upp jQuery lite kan vi ändra koden enligt följande:</p>
+
+<p><code>javascript
+$(document.body).addClass('my-body');
+</code></p>
+
+<p>Det som händer nu är att jQuery vet vad vi vill och kan hitta elementet lite snabbare. Men som jag nämnde ovan, returneras en array, vilket gör att arrayen först loopas igenom och funktionen <a href="http://api.jquery.com/addClass/">addClass</a> läggs på varje item i arrayen, om det är ett element. Detta sker alltså även om vi från början visste att vi bara hade 1 element.</p>
+
+<h3>Ett sista exempel</h3>
+
+<p>Jag känner mig extra snäll idag, så jag bjuder på ett exempel till. Något som är kul och oftast används är <strong>effekter</strong>. Både jQuery och Mootools stödjer detta men skiljer sig väldigt mycket. I exemplena nedan ska vi få ett element att ändra bredd och färg med en övergång.</p>
+
+<h4>jQuery</h4>
+
+<p>```javascript
+$(&lsquo;#coolBox&rsquo;).animate({</p>
+
+<pre><code>width: '100px', 
+backgroundColor: '#ff0'
+</code></pre>
+
+<p>}, &lsquo;short&rsquo;, &lsquo;linear&rsquo;);
+```</p>
+
+<h4>Mootools</h4>
+
+<p>```javascript
+var coolBox = document.id(&lsquo;coolBox&rsquo;), morph = new Fx.Morph(coolBox, {</p>
+
+<pre><code>duration: 'short',
+transition: 'linear'
+</code></pre>
+
+<p>});</p>
+
+<p>morph.start({</p>
+
+<pre><code>width: '100px',
+backgroundColor: '#ff0'
+</code></pre>
+
+<p>});
+```</p>
+
+<h4>Summering</h4>
+
+<p>Ganska stora skillnader igen. jQuery klarar det på en rad och lite mer krävs för Mootools. Stora skillnaden är att Mootools erbjuder en <a href="http://mootools.net/docs/core/Fx/Fx.Morph">Morph</a> klass där du kan sätta en config (t.ex. duration och transition) och via funktionen <a href="http://mootools.net/docs/core/Fx/Fx.Morph#Fx-Morph:start">start</a> startar du animationen med dom css attributen du vill animera och configen som du satte tidigare används.</p>
+
+<h2>Inga mer exempel, vad gör vi nu?</h2>
+
+<p>Att välja mellan dessa två är inte lika enkelt som att välja mellan Coca Cola eller Pepsi. Oftast kommer du in i ett projekt eller jobbar i ett team, oftast kommer det också vara jQuery som gäller.</p>
+
+<p>Har man något att säga till om eller det är ditt eget projekt kan det vara värt att fundera på Mootools. Mootools blir väldigt kraftfullt i stora projekt, även i stora team. Med deras objekt orienterade sätt att jobba tvingas alla att skriva på samma sätt och jag personligen tycker att Mootools känns mer moget.</p>
+
+<p>Fördelen med jQuery är att det är snabbt att lära sig även om man inte talar JavaScript i sömnen. jQuery blir riktigt användbart för designers eller för utvecklare med liten till ingen förståelse för JavaScript.</p>
+
+<p>Självklart är det en stor fördel att känna till båda två. Det var allt, ut och lek nu!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bildmanipulering i JavaScript]]></title>
+    <link href="http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript/"/>
+    <updated>2013-12-13T16:17:13+01:00</updated>
+    <id>http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript</id>
+    <content type="html"><![CDATA[<p>När det läggs ett digitalt filter över en bild manipuleras pixeldatan i bilden. Färgerna i bilden räknas om för varje pixel och sedan visas en ny bild med de nya värderna. I fortsättningen kommer jag att använda termen filter för att beskriva manipuleringen<!--more--> av bildens data med hjälp av Javascript.</p>
+
+<p>Några vanligt förekommande filter är inverterade färger, sepia, blur, kontrastökning, gråskala med mera.</p>
+
+<p>I dagsläget är det vanligast att manipulera bilderna i t.ex. Photoshop innan de används på en hemsida, men det finns alternativ och ett av dom är Javascript.</p>
+
+<h2>Varför ska man använda filter?</h2>
+
+<p>De som underhåller webbplatser är oftast inte själva utvecklare eller grafiker. Vill de placera samma bild på flera olika ställen men med olika filter behöver de inte själva editera bilden med hjälp av externa verktyg.</p>
+
+<p>Om en sida har flera olika instanser av samma bild med olika filter, t.ex. porträttbilder av Andy Warhol, behöver browsern endast hämta bilden en gång. Det kan leda till en snabbare site med färre anrop.</p>
+
+<h2>Kan man använda filter?</h2>
+
+<p>Om browsern stödjer canvas-objektet kan man använda filter. Idag har följande browsers stöd för canvas:</p>
+
+<ul>
+<li>Internet Explorer 9+</li>
+<li>Firefox</li>
+<li>Opera</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Mobile browsers</li>
+</ul>
+
+
+<p>I Android 4.0 ursprungs browser finns det, vad som antas vara, en bugg som gör att anges alpha i något annat än 0 eller 255 ändras pixelns färg istället.</p>
+
+<p>Prestandan för canvas skiljer sig åt på olika plattformar. Desktop har generellt bra prestanda men mobila browsers kan vara långsammare.</p>
+
+<h2>Hur fungerar filter?</h2>
+
+<p>Som nämnt tidigare handlar det om att räkna om värden i bildens pixeldata. För att kunna manipulera bilder behövs ett canvas att rita på och ett ImageData-objekt.</p>
+
+<p>Ett ImageData-objekt är en del av ett canvas, inte en bild eller en form. Objektet innehåller information för varje pixel inom den delen. Informationen består av fyra delar per pixel, RGBA:</p>
+
+<p>R &ndash; Röd    (0-255) <br />
+G &ndash; Grön   (0-255) <br />
+B &ndash; Blå        (0-255) <br />
+A &ndash; Alpha   (0-255, 0 = helt osynlig &ndash; 255 = helt synlig)</p>
+
+<p>Är en pixel röd och synlig har den värdet (255,0,0,255) och det är de värden som lagras i data-egenskapen hos ImageData-objektet. Principen för att rita på ett canvas är samma för bilder som för andra objekt, därför beskrivs först hur man ritar en simpel form.</p>
+
+<h3>Form</h3>
+
+<p>Koden nedan skapar ett objekt som är 100 x 100 px, där varje pixel är blå, och placerar objektet på ett canvas 10px från kanterna.
+```javascript
+var c = document.getElementById(&ldquo;myCanvas&rdquo;);
+var ctx = c.getContext(&ldquo;2d&rdquo;);</p>
+
+<p>//Skapa ett objekt att arbeta med
+var imageData = ctx.createImageData(100,100);</p>
+
+<p>//Loopa igenom pixlarna
+for (var i=0; i&lt;imageData.data.length; i+=4) {</p>
+
+<pre><code>imageData.data[i+0] = 0;      //red
+imageData.data[i+1] = 0;      //green
+imageData.data[i+2] = 255;    //blue
+imageData.data[i+3] = 255;    //alpha
+</code></pre>
+
+<p>}</p>
+
+<p>//Skriv ut objektet på canvaset
+ctx.putImageData(imageData,10,10);
+```
+Resultat:<br /><img src="https://lh3.googleusercontent.com/eMaoG_Om5swKW1iyfLoZ36M_zw7LRuYk0A6oxVqzYV7JKblIScg7ILDyGDiVkGCNh3S-BOKydcM18rtiZBt4-9Xvvi5BiCMMpupJPnzMiNmvc2qFkxBVHYJJlA" alt="" /></p>
+
+<h4>Funktioner</h4>
+
+<h5>createImageData():</h5>
+
+<p>Skapar ett nytt tomt ImageData-objekt. Objektets pixelvärden är ursprungligen (0,0,0,0), svarta och genomskinliga. Metoden används om det inte redan innan finns ett objekt att arbeta med, t.ex en bild, eller om ett objekt ska kopieras.</p>
+
+<p>Syntax:</p>
+
+<p>Det finns två versioner av metoden,
+<code>javascript
+var imgData = ctx.createImageData(width,height);
+</code></p>
+
+<ul>
+<li>width = Bredden på det nya ImageData-objektet i px.</li>
+<li>height = Höjden på det nya ImageData-objektet i px.</li>
+</ul>
+
+
+<p><code>javascript
+var imgData = ctx.createImageData(imageData)
+</code></p>
+
+<ul>
+<li>imageData = ett annat ImageData-objekt.</li>
+</ul>
+
+
+<h5>putImageData():</h5>
+
+<p>Skriver ut pixeldatan från ett specificerat ImageData-objekt på canvaset.</p>
+
+<p>Syntax:
+<code>javascript
+ctx.putImageData(imgData, x, y, dirtyX, dirtyY, dirtyWidth, dirtyHeight)
+</code>
+*   imgData = Det imageData-objekt som ska skrivas ut på canvaset.
+*   x = x-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.
+*   y = y-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.
+*   dirtyX = (optional) Det horizontella x-värdet att placera bilden på, angivet i px.
+*   dirtyY = (optional) Det horizontella y-värdet att placera bilden på, angivet i px.
+*   dirtyWidth = (optional) Bredden som ska användas för att rita ut bilden på canvaset.
+*   dirtyHeight =(optional) Höjden som ska användas för att rita ut bilden på canvaset.</p>
+
+<h3>Bild</h3>
+
+<p>För att manipulera en bild behövs två ytterligare funktioner, drawImage och getImageData. Funktionen createImageData används när man vill kopiera en existerande bild eller för att skapa en tom yta.</p>
+
+<p>Html:
+<code>html
+&lt;img id="image" src="src.jpg" alt="" width="220" height="277"&gt;
+&lt;canvas id="myCanvas" width="220" height="277"&gt;&lt;/canvas&gt;
+</code>
+Script:
+```javascript
+document.getElementById(&ldquo;image&rdquo;).onload = function(){</p>
+
+<pre><code>var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+//Hämta bild
+var img = document.getElementById("image");
+
+    //Rita ut bild på canvas
+ctx.drawImage(img,0,0);
+
+//Hämta bilddata
+var imgData = ctx.getImageData(0,0,c.width,c.height);
+
+// invertera färgerna i bilden
+for (var i=0; i&lt;imgData.data.length; i+=4) {
+    imgData.data[i]=255-imgData.data[i];
+    imgData.data[i+1]=255-imgData.data[i+1];
+    imgData.data[i+2]=255-imgData.data[i+2];
+    imgData.data[i+3]=255;
+}
+
+//Skriv ut den manipulerade bilden på canvaset
+ctx.putImageData(imgData,0,0);
+</code></pre>
+
+<p>}
+```
+Resultat:<br /><img src="https://lh6.googleusercontent.com/BZDl6xazl4AZS4_vbJJK2ZzWN_MVIR8KWM3F7dwCTHGiI0Ryk-Ejqr8_GlsFN0JZH8w_dj61KYmrRL4Ad5_niAfjblRPSGIiA4gVDstauj-G7bkLTt2Q2O31Pg" alt="" /></p>
+
+<h4>Funktioner</h4>
+
+<h5>drawImage():</h5>
+
+<p>Ritar ut en bild, video eller ett canvas på ett canvas. Metoden kan även rita ut delar av en bild och ändra en bilds eller videos storlek.</p>
+
+<p>Syntax:
+<code>javascript
+context.drawImage(img,x,y);
+context.drawImage(img,x,y,width,height);
+ctx.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+</code>
+*   img = Det element som ska användas &ndash; bild, canvas eller video.
+*   x = x-koordinaten där elementet ska placeras.
+*   y = y-koordinaten där elementet ska placeras.
+*   width = (optional)  vidden av elementet som ska användas (öka el. minska strl på elem).
+*   height = (optional) höjden av elementet som ska användas (öka el. minska strl på elem).
+*   sx = (optional) x-koordinaten där bilden ska börja skäras.
+*   sy = (optional) y-koordinaten där bilden ska börja skäras.
+*   swidth = (optional) vidden av den beskurna bilden.
+*   sheight = (optional) höjden av den beskurna bilden.</p>
+
+<h5>getImageData():</h5>
+
+<p>Retunerar ett ImageData-objekt som kopierat pixeldatan från en specificerad del av canvaset.</p>
+
+<p>Syntax:
+<code>javascript
+ctx.getImageData(x, y, width, height)
+</code>
+*   x = x-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.
+*   y = y-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.
+*   width = Bredden på det du vill kopiera.
+*   height =Höjden på det du vill kopiera.</p>
+
+<h2>Slutsatser</h2>
+
+<p>När jag jämförde två sidor, en där jag hade två bilder och en där jag hade en bild som jag skrev ut två gånger med hjälp av filter-funktioner, fick jag följande resultat:</p>
+
+<table class="airy">
+<tr>
+<td></td>
+<td>Javascript</td>
+<td>två bilder</td>
+</tr>
+<tr>
+<td>Antal requests</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>kb överfört</td>
+<td>149</td>
+<td>285</td>
+</tr>
+<tr>
+<td>paint (ms)</td>
+<td>3.0</td>
+<td>39.2</td>
+</tr>
+<tr>
+<td>hämta bild/bilder (ms)</td>
+<td>23</td>
+<td>150</td>
+</tr>
+<tr>
+<td>finished loading (ms)</td>
+<td>117</td>
+<td>198</td>
+</tr>
+</table>
+
+
+<p>Jag fick inte de resultat jag hade väntat mig och det beror främst på att jag trodde att paint-tiden skulle vara högre när jag använde canvas-objektet. Tittar man på ‘kb överfört’ tycker jag att man tydligt ser att fördelen men att använda filter är att man bara behöver ladda ner en bild. Tänker man den situationen i större skala med t.ex tio stycken bilder blir filter betydligt snabbare. Javascriptet jag använde var minimalt och använder man ett komplexare skript skulle tiden öka för att exekvera skriptet.</p>
+
+<p>Ett ytterligare alternativ som är värt att nämna är web-kit filter. Varför jag inte anser att det är användbart än är att två av de störta webbläsarna, Firefox och Internet Explorer, inte har stöd för det. Skulle de utveckla stöd kan det bli ett starkt alternativ.</p>
+
+<h3>Bibliotek</h3>
+
+<p>Jag tror inte att det kommer att vara tidseffektivt att skriva ett eget Javascript-plugin. Uträkningarna är komplexa och det krävs väldigt noga testning för att inte slöa ner webbsidor. Nedan är några av de bibliotek som jag hittat som verkar ha potential.</p>
+
+<p>Det bibliotek som verkar användas mest för tillfället är fabricjs. Det kan bero på att det innehåller väldigt mycket mer än bara filter &ndash; t.ex. former, drag-n-drop, resize med flera. Jag har även tittat på följande:</p>
+
+<ul>
+<li>Filterr2 <a href="https://github.com/alexmic/filtrr/tree/master/filtrr2">https://github.com/alexmic/filtrr/tree/master/filtrr2</a><br />
+Open source som inte känns helt färdigutvecklat. Senaste buggfixen var fem månader sedan.</li>
+<li>Pixastic <a href="http://www.pixastic.com/lib/docs/">http://www.pixastic.com/lib/docs</a><br />
+Ett gratis bibliotek där du själv kan välja vilka komponenter du vill ladda ner.</li>
+<li>glfx.js <a href="https://github.com/evanw/glfx.js">https://github.com/evanw/glfx.js</a><br />
+Ett bibliotek som använder WebGL. Stödjs endast av de senaste browsers.</li>
+<li>camanjs <a href="http://camanjs.com/">http://camanjs.com/</a><br />
+Jag tror att camanjs har störts potential att vara användbart. Biblioteket har noga utförd dokumentation, uppdateras kontinuerligt, uppmanar till tester och är helt gratis.</li>
+</ul>
+
+
+<h2>Referenser</h2>
+
+<ul>
+<li><a href="http://www.khronos.org/registry/typedarray/specs/latest/#7.1">http://www.khronos.org/registry/typedarray/specs/latest/#7.1</a></li>
+<li><a href="http://www.w3schools.com/tags/ref_canvas.asp">http://www.w3schools.com/tags/ref_canvas.asp</a></li>
+<li><a href="http://html5doctor.com/video-canvas-magic/">http://html5doctor.com/video-canvas-magic/</a></li>
+<li><a href="http://caniuse.com/css-filters">http://caniuse.com/css-filters</a></li>
+</ul>
+
+
+<p>Codepen :
+(Egna bilder behövs för att testa skripten) <br />
+Länk till Javascript version: <a href="http://codepen.io/Sandra/pen/LjGgh">http://codepen.io/Sandra/pen/LjGgh</a> <br />
+Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjvJ">http://codepen.io/Sandra/pen/lrjvJ</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Unit Testing]]></title>
+    <link href="http://vinnovera.se/blogg/2013/12/12/unit-testing/"/>
+    <updated>2013-12-12T14:22:24+01:00</updated>
+    <id>http://vinnovera.se/blogg/2013/12/12/unit-testing</id>
+    <content type="html"><![CDATA[<p>När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.</p>
+
+<p>När vi utvecklar hållbara och långsiktiga applikationer är det viktigt att koden vi skriver beter sig konsekvent. Det måste gå att förutse hur en funktion eller ett plugin beter sig som vi har förväntat oss, även när den används under nya omständigheter.</p>
+
+<p>Det är därför vi måste testa.</p>
+
+<h2>Testning</h2>
+
+<h3>När och hur kan man testa</h3>
+
+<p>Det finns olika stadier av testning, inte sällan grupperade som “validation testing”, “integration testing” samt “unit testing” och det är det senare jag tänker ta upp i närmare detalj här, då det är den testprocess som ligger närmast mig som utvecklare. Men först en kvick genomgång av de olika stadierna.</p>
+
+<h4>Unit testing</h4>
+
+<p>Unit testing är när man bryter isär alla delar i en applikation i så små testbara enheter som möjligt, och testar varje enhet separat. Ofta är en unit t.ex. en funktion, men kan ibland också vara en hel modul eller ett interface såsom en klass. Varje unit testas ihop med ett dataset för att se att varje del är redo att användas.</p>
+
+<h4>Integration testing</h4>
+
+<p>När alla units är bedömda att vara fungerande så kan man testa dem ihop, vilket kallas för Integration testing. Här använder man sig oftast av testplaner, en systematisk testordning som skall spegla ett tänkt workflow. I det här skedet tittar man också på interaktioner mellan olika units för att se om de fungerar som tänkt.</p>
+
+<h4>Validation testing</h4>
+
+<p>I det här skedet testar man huruvida applikationen uppfyller de krav som ställts av beställare och användare. Den här typen av tester bör vara möjliga att utföra av en tredje part, utan insikt i hur applikationen är byggd rent tekniskt.</p>
+
+<h2>Testdriven utveckling</h2>
+
+<h3>Test först, kod sen</h3>
+
+<p>När man ägnar sig åt testdriven utveckling, så betyder det normalt att man börjar med att identifiera vad en applikation skall utföra, för att sedan bryta ned detta i sådana beståndsdelar att de går att identifiera som enskilda units. Sedan, istället för att direkt börja skriva programkod, så börjar man med att utveckla tester för varje unit. När alla testerna är färdigskrivna inleds arbetet med själva programkoden, och när alla tester validerar så är uniten färdig. Detta ger en tydligare bild av vad varje enskild del av applikationen skall klara av och hur den skall fungera.</p>
+
+<h3>Refactoring</h3>
+
+<p>Det andra alternativet, när det av olika anledningar inte är praktiskt att skriva tester i förväg, är att skriva om koden i efterhand för att göra den testningsbar. Detta innebär att förändra koden, utan att egentligen förändra vad koden är menad att göra.</p>
+
+<h2>Unit testing</h2>
+
+<h3>Vad är en unit</h3>
+
+<p>Så, vad är då en unit? En unit är de minsta beståndsdelarna vi kan bryta ned en applikation till. Oftast är det funktioner och metoder, men det kan ibland också röra sig om interfaces.</p>
+
+<h4>Metoder och funktioner</h4>
+
+<p>Det typiska för en testbar funktion är att den kräver att någonting stoppas in, och att vi får något annat tillbaka. T.ex. kan det här vara en funktion som förvandlar en datumform till en annan (från &lsquo;130402&rsquo; till &lsquo;Andra april, 2013&rsquo;), eller som gör en avståndsberäkning eller liknande. Det är dock också möjligt att göra tester av funktioner som inte svarar med något, utan som istället påverkar ett annat objekt.</p>
+
+<h4>Interface och klasser</h4>
+
+<p>Ibland behöver vi testa sådant som inte ger ett direkt resultat, som t.ex. att flytta på ett objekt. Det kan också vara så att det vi testar inte är ett publikt värde utan en privat variabel. I sådana fall skriver man tester mot interfacet snarare än en enskild metod. Man kör en metod med ett visst värde, och när metoden är genomförd görs en kontroll mot ett värde eller kontrollfunktion i interfacet för att se om förändringen är den förväntade. T.ex. kan vi köra funktionen &ldquo;moveBulletTowardsShip&rdquo; i ett spel, och när metoden är körd kan vi testa om vår &ldquo;bullet&rdquo; har flyttat sig på det vis vi förväntat oss.</p>
+
+<h3>Vad är ett test</h3>
+
+<h4>Vad stoppar vi in, vad föväntar vi oss ut</h4>
+
+<p>Låt säga att jag har en funktion som delar upp ett textstycke i ett antal enskilda rader, där varje rad är högst 60 tecken. Vad vi då låter testet skicka in till funktionen som vi testar är ett antal textstycken av olika längd. I varje test behöver vi också skicka med ett förväntat resultat, i det här fallet skulle vi t.ex. kunna titta på antalet rader vi får tillbaka, samt längden på varje enskild rad.</p>
+
+<h2>Ramverk för javascript</h2>
+
+<p>Det finns många olika ramverk som används för att testa javascript, som Buster.JS, Sinon.js, Jasmine, QUnit eller Mocha. Jag har här valt att titta närmare på QUnit och Mocha, då de är bra exempel på olika angreppsvinklar på javascript-testning.</p>
+
+<h3>QUnit</h3>
+
+<p>QUnit är ett relativt lättviktigt testramverk. Det är ett ramverk som fokuserar helt på att testa javascript som körs i browsern. Då det är det testramverk som används vid utveckling av jQuery är det ett verktyg som är särskilt enkelt att komma igång med om man behöver testa mycket DOM-manipulation.</p>
+
+<h4>Setup</h4>
+
+<p>Det som krävs för att köra tester med QUnit är att ta hem en javascriptfil och en css-fil, samt skapa en HTML-fil som kör testerna. HTML-filen behöver åtminstone en holder att skriva ut testresultaten i (&lsquo;qunit&rsquo;) och om du ska testa DOM-manipulation behövs en holder för QUnit att skapa DOM-elementen i (&lsquo;qunit-fixture&rsquo;).</p>
+
+<p>```html
+<html></p>
+
+<pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="css/qunit-1.12.0.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="qunit"&gt;&lt;/div&gt;
+    &lt;div id="qunit-fixture"&gt;
+        &lt;ul id="myList"&gt;&lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;script src="http://vinnovera.se//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.10.1.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+    &lt;script src="js/vendor/qunit-1.12.0.js"&gt;&lt;/script&gt;
+    &lt;script src="js/main.js"&gt;&lt;/script&gt;
+    &lt;script src="js/tests.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p></html>
+```</p>
+
+<h4>Tester</h4>
+
+<p>I exemplet ovan har jag själva funktionerna jag vill testa i main.js, och testerna i tests.js. Så här ser ett enkelt test ut:</p>
+
+<p>```javascript
+test(&ldquo;multiLineText-test&rdquo;, function() {</p>
+
+<pre><code>deepEqual(multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
+</code></pre>
+
+<p>});
+```
+Med QUnit skapas ett test genom att köra &ldquo;test&rdquo;-funktionen. Till den skickar man in en beskrivning av testet (&ldquo;multiLineText-test&rdquo;) samt en funktion. I den här funktionen kan du köra kod, samt framförallt göra s.k. &ldquo;assertions&rdquo;. QUnit har i huvudsak två typer av assertions, &ldquo;ok&rdquo; och &ldquo;equal&rdquo;. Till &ldquo;ok&rdquo; behöver man bara skicka in ett argument, och om argumentet är &ldquo;true&rdquo; är testet godkänt. Till &ldquo;equal&rdquo; skickar man in två argument, och om de stämmer överens är testet godkänt. I exemplet ovan används en variant på equal som används för att jämföra t.ex. objekt och listor.</p>
+
+<p>Här är ett exempel på ett test av DOM-manipulation</p>
+
+<p>```javascript
+test(&lsquo;DOM manipulation&rsquo;, function(){</p>
+
+<pre><code>var items = ['Item 1', 'Second item', 'Item the 3rd', 'Fourth one'];
+for(var i=0;i&lt;items.length;i++){
+    $('#myList').append('&lt;li&gt;'+items[i]+'&lt;/li&gt;');
+}
+equal($('#myList').children().length, 4);
+</code></pre>
+
+<p>});
+```</p>
+
+<h3>Mocha</h3>
+
+<p>Mocha är klart mer omfattande än QUnit, men har också fler användningsområden. En av de viktigare skillnaderna är att Mocha kan testa javascript utanför en browser, t.ex. i en Node-applikation. Du installerar Mocha via npm, och kör Mocha via terminalen.</p>
+
+<p>I min app.js har jag samma funktion som ovan (&ldquo;multiLineText&rdquo;, fast tillgängliggjord i exports):</p>
+
+<p>```javascript
+exports.multiLineText = function(myString, maxWidth){</p>
+
+<pre><code>...
+</code></pre>
+
+<p>}
+```
+I roten på projektet har jag även skapat en folder som heter &ldquo;test&rdquo;, vilket är den folder Mocha letar efter tester i. Här har jag en fil som heter t.ex. &ldquo;mytest.js&rdquo;, som innehåller själva testet:</p>
+
+<p>```javascript
+var assert = require(&ldquo;assert&rdquo;);
+var app = require(&ldquo;../app&rdquo;);</p>
+
+<p>describe(&ldquo;multiLineText&rdquo;, function() {</p>
+
+<pre><code>it("should return correct array", function() {
+    assert.deepEqual(app.multiLineText('I have a thing to say', 5), ['I have', 'a thing', 'to say']);
+});
+</code></pre>
+
+<p>});
+```
+Sedan kör jag Mocha via terminalen via ett enkelt kommando:</p>
+
+<p>   mocha</p>
+
+<p>Jag får följande resultat att 1 test (av 1 möjliga) är lyckat:</p>
+
+<p>   1 passing (5 ms)</p>
+
+<p>Mocha har många kraftfulla features, som att få Mocha att köra tester automatiskt när kod har uppdaterats, eller att använda andra testbibliotek för att köra testerna (t.ex. Jasmine).</p>
+
+<h2>Exempelapplikation</h2>
+
+<p>Som avslutning tänkte jag visa en liten exempelapplikation, och exempel på hur man kan skriva tester till den. Applikationen skall klara av att visa ett diagram där en andel av ett antal figurer är markerade, t.ex. &ldquo;22 av 30 deltagare&rdquo;. Diagrammet skall vara en SVG-bild.</p>
+
+<h3>Krav- och funktionslista</h3>
+
+<p>För att kunna åstadkomma det här diagrammet behöver vi följande funktioner:</p>
+
+<ul>
+<li>En funktion som kan räkna ut antal figurer per rad, baserat på värdet och maxvärdet (t.ex. &ldquo;22&rdquo; och &ldquo;30&rdquo;)</li>
+<li>En funktion som ritar ut figurerna.</li>
+</ul>
+
+
+<h3>Test</h3>
+
+<p>Det första testet vi skriver är därför ett test som kontrollerar vår uträkningsfunktion. Vi vet att vi vill kunna skala antal figurer per rad baserat på maxantalet, samt behöver få ut antalet rader, kolumner, och vilka rader som är markerade, och hur många som är markerade per rad.</p>
+
+<p>```javascript
+test(&lsquo;Get rows, columns and figurenumber&rsquo;, function(){</p>
+
+<pre><code>deepEqual(getChartSize(7,10), {
+    rows: 2,
+    columns: 5,
+    lastMarkedRow: 2,
+    markedAtLastMarkedRow: 2,
+    lastRowLength: 5
+});
+deepEqual(getChartSize(24,66), {
+    rows: 4,
+    columns: 20,
+    lastMarkedRow: 2,
+    markedAtLastMarkedRow: 4,
+    lastRowLength: 6
+});
+deepEqual(getChartSize(13,24), {
+    rows: 3,
+    columns: 10,
+    lastMarkedRow: 2,
+    markedAtLastMarkedRow: 3,
+    lastRowLength: 4
+});
+</code></pre>
+
+<p>});
+```
+Det nästa testet är till för att se så att vår DOM-manipulation gör vad vi förväntar oss. I det här fallet kollar jag att det finns rätt antal av &ldquo;märkta&rdquo; respektive &ldquo;omärkta&rdquo; figurer, samt kontrollerar att SVGn har rätt storlek.</p>
+
+<p>```javascript
+module(&lsquo;Create and manipulate SVG&rsquo;);
+test(&lsquo;Create and manipulate SVG with 7 10&rsquo;, function(){</p>
+
+<pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+document.getElementById('qunit-fixture').appendChild(svg);
+createChart(getChartSize(7, 10), svg);
+equal($('svg .marked').length, 7);
+equal($('svg .unmarked').length, 3);
+equal($(svg).height(), 40);
+</code></pre>
+
+<p>});
+test(&lsquo;Create and manipulate SVG with 24 66&rsquo;, function(){</p>
+
+<pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+document.getElementById('qunit-fixture').appendChild(svg);
+createChart(getChartSize(24, 66), svg);
+equal($('svg .marked').length, 24);
+equal($('svg .unmarked').length, 42);
+equal($(svg).height(), 20);
+</code></pre>
+
+<p>});
+test(&lsquo;Create and manipulate SVG with 13 24&rsquo;, function(){</p>
+
+<pre><code>var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+document.getElementById('qunit-fixture').appendChild(svg);
+createChart(getChartSize(13, 24), svg);
+equal($('svg .marked').length, 13);
+equal($('svg .unmarked').length, 11);
+equal($(svg).height(), 30);
+</code></pre>
+
+<p>});
+```</p>
+
+<h3>Funktion</h3>
+
+<p>Först har vi funktionen som tar fram hur många figurer vi behöver visa:</p>
+
+<p>```javascript
+function getChartSize(num, max){</p>
+
+<pre><code>var rows = 0,
+    columns = 0,
+    lastMarkedRow = 0,
+    markedAtLastMarkedRow = 0,
+    lastRowLength = 0
+;
+
+if(max &lt;= 10){
+    columns = 5;
+} else if(max &lt;= 40){
+    columns = 10;
+} else if(max &lt;= 140){
+    columns = 20;
+} else {
+    columns = 40;
+}
+
+rows = Math.ceil(max / columns);
+lastMarkedRow = Math.ceil(num / columns);
+markedAtLastMarkedRow = num % columns;
+lastRowLength = columns - ((rows * columns) - max);
+
+return {
+    rows: rows,
+    columns: columns,
+    lastMarkedRow: lastMarkedRow,
+    markedAtLastMarkedRow: markedAtLastMarkedRow,
+    lastRowLength: lastRowLength
+};
+</code></pre>
+
+<p>}
+```
+Sen så har vi funktionen som manipulerar en SVG på förväntat vis:</p>
+
+<p>```javascript
+function createChart(settings, svg) {</p>
+
+<pre><code>var addedElements = 0;
+var w = 100/settings.columns;
+var h = w;
+for(var i=0;i&lt;settings.rows;i++){
+    for(var j=0;j&lt;settings.columns;j++){
+        if(addedElements &lt; (settings.lastMarkedRow * settings.columns) - (settings.columns - settings.markedAtLastMarkedRow)){
+            var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            rect.setAttribute('class', 'marked');
+            rect.setAttribute('height', h);
+            rect.setAttribute('width', w);
+            rect.setAttribute('x', j*w);
+            rect.setAttribute('y', i*h);
+            rect.setAttribute('fill', '#ff0000');
+            svg.appendChild(rect);
+            addedElements++;
+        } else if(addedElements &lt; (settings.columns * (settings.rows-1)) + settings.lastRowLength){
+            var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            rect.setAttribute('class', 'unmarked');
+            rect.setAttribute('height', h);
+            rect.setAttribute('width', w);
+            rect.setAttribute('x', j*w);
+            rect.setAttribute('y', i*h);
+            rect.setAttribute('fill', '#0000ff');
+            svg.appendChild(rect);
+            addedElements++;
+        }
+    }
+}
+svg.setAttribute('height', (settings.rows*h)+'px')
+svg.setAttribute('width', (settings.columns*w)+'px');
+</code></pre>
+
+<p>}
+```</p>
+
+<p>Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.</p>
 ]]></content>
   </entry>
   

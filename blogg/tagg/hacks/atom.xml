@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacks | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/hacks/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-25T17:18:36+02:00</updated>
+  <updated>2014-09-26T15:57:34+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,7 @@
     <link href="http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product/"/>
     <updated>2014-04-07T10:43:38+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product</id>
-    <content type="html"><![CDATA[<p>While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. <!-- more -->There weren&rsquo;t any options in the product settings that matched what we wanted to achieve &ndash; adding product specific pdf-files and movies.</p>
+    <content type="html"><![CDATA[<p>While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. There weren&rsquo;t any options in <!-- more -->the product settings that matched what we wanted to achieve &ndash; adding product specific pdf-files and movies.</p>
 
 <p>The option we found to be suggested was to use metafields, a module for Shopify, but we didn&rsquo;t want to make a big hassle of poking around in the <a href="http://www.shopify.com/technology/3032322-new-feature-metafields#axzz2xvNXkLON">Shopify API</a>.</p>
 

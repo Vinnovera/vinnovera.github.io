@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-25T17:18:36+02:00</updated>
+  <updated>2014-09-26T15:57:34+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,52 +14,55 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Nordic.js]]></title>
-    <link href="http://vinnovera.se/blogg/2014/09/25/nordicjs/"/>
-    <updated>2014-09-25T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/09/25/nordicjs</id>
-    <content type="html"><![CDATA[<p>Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på <a href="http://nordicjs.com/">Nordic.js</a>.<!--more--> Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen&hellip;</p>
+    <title type="html"><![CDATA[Hittat på nätet #7]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/12/hittat-pa-natet-number-7/"/>
+    <updated>2014-09-12T15:10:45+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/12/hittat-pa-natet-number-7</id>
+    <content type="html"><![CDATA[<p>En liten kaosartad blandning av CSS- och JS-länkar.</p>
 
-<p><strong>Daniel:</strong><br/>
-<a href="http://robertnyman.com/">Robert Nyman</a> från Mozilla gav ett intressant fördrag om Firefox uppdaterade verktyg för utvecklare. Bland annat möjligheten att enkelt se vilka event som är kopplade till ett specifikt element, hur man kan förhandsgranska CSS3-animationer samt ett smart sätt att se alla element som är kopplade till en specifik CSS-klass. En annan intressant nyhet var Firefox &ldquo;tools-adapter&rdquo; med vilken man kan debugga, inte bara i Firefox utan även i andra browsers. Robert pratade också om &ldquo;the five stages of development&rdquo; och att förhålla sig till problemlösning på ett konstruktivt sätt.</p>
+<!--more-->
 
-<p><strong>Mico:</strong><br/>
-<a href="http://www.sundh.com/blog/">Ellen Sundh</a> som visade upp några av sina IRL-tillämpningar av JavaScript-programmering var väldigt inspirerande. Att se relativt enkel programmering som jag kan förstå tillämpas utanför skärmen var kul för en som sitter med webb hela dagarna. Blir det kanske nästa projekt?</p>
 
-<p><strong>Gustav:</strong><br/>
-Jag gillade <a href="http://hakim.se/">Hakims</a> talk där han bl. a. visade små experiment han gjort i gränslandet mellan programmering, musik och konst. Enkelheten och lekfullheten i den han gjort var det som imponerade på mig. Det var också fascinerande att se hur andra använde hans små installationer för att skapa helt fantastiska nya verk.</p>
+<h2>Konspirationsteorierna tornar upp sig&hellip;</h2>
 
-<p><strong>Jakob:</strong><br/>
-Bäst var helt klart <a href="http://www.crockford.com/">Douglas Crockford</a> som ofta blir bashad för att vara en gammal mossig gubbe som fastnat i gamla vanor. Men som under sitt talk berättade hur han aktivt omvärderar och förfinar sitt sätt att skriva sin kod, på ett elegant sätt. Han har t.ex. slutat använda &ldquo;new&rdquo; och &ldquo;this&rdquo; helt och bashar istället tillbaka på alla som saknar &ldquo;Class&rdquo; och &ldquo;inheritance&rdquo;. Samtidigt lyckas han göra reklam för nästa ECMAscript-version, som han själv är med och spec:ar.</p>
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-7/hivemind.jpg" alt="Hive mind" /><br/>
+<a href="https://www.quora.com/TJ-Holowaychuk-1/How-is-TJ-Holowaychuk-so-insanely-productive">TJ Holowaychuk</a><br/>
+Internet spekulerar om huruvida TJ Holowaychuk egentligen bara är en enda person :D</p>
 
-<p><strong>Sandra:</strong><br/>
-Jag tycker många talare hade intressanta ämnen, men jag fastnade främst för ett genomgående tema – att vi ofta fastnar i samma mönster och glömmer att ifrågasätta oss själva. <a href="http://robertnyman.com/">Robert Nyman</a> pratade t.ex. om hur många lämnade Firefox för Chrome devtools eftersom de inte tyckte om Firebug och har förmodligen inte ens testat Firefox devtools. <a href="https://twitter.com/nodebotanist">Kassandra Perch</a> tog upp hur fanatism kan hindra oss från att använda rätt ramverk på rätt ställe. Jag tror det fanns något hos alla talare som fick mig att tänka över hur jag kodar, hur jag bemöter nya uppgifter och hur jag kan lära mig att tänka annorlunda.</p>
+<h2>En intressant video om States och Events</h2>
 
-<p><strong>Per:</strong><br/>
-<a href="http://jina.me/">Jina Bolton</a> höll ett talk som som mest tangerade utveckling med JavaScript. Hon pratade istället om sitt arbete med &ldquo;Style Guides&rdquo;. Vi arbetar ofta med att leverera frontend till projekt där vi får grafisk design från en extern leverantör. Designen implementerar vi antingen direkt i systemet, eller så levererar vi statiska filer som backend-utvecklare lägger in i systemet. I sådana projekt är bra kommunikation väldigt viktigt i alla led.</p>
+<p><a href="https://www.youtube.com/watch?v=3ZLlRQJp5Fg">Youtube</a><br/>
+Enemy of the State: Handling State and Events in a Scalable and Maintainable Fashion</p>
 
-<p>Ett tillfälle då kommunikationen kan brista är om det i designleveranser finns olika versioner av samma modul, utan tydlig information om vilken version som är den aktuella. För att underlätta arbetet och minska missförstånden ber vi ofta designern underhåller ett element-bibliotek, där &ldquo;states&rdquo; på interaktiva element och den senaste designen av alla moduler finns med. Precis samma problem kan så klart uppstå mellan oss och backend som ska implementera vår leverans, och &ldquo;Style Guides&rdquo; kan då vara ett bra verktyg. Om &ldquo;markup&rdquo; skiljer sig i två versioner av samma modul så ska det vara &ldquo;Style Guiden&rdquo; som styr.</p>
+<h2>HTML5Doctor tipsar om HTML5&rsquo;s <main> element</h2>
 
-<p>Det är dock svårt att hålla en &ldquo;Style Guide&rdquo; uppdaterad, och om man sätter sig ner och bygger den i efterhand tar det väldigt mycket tid. Det Bolton förespråkar är att alltid bygga modulerna i &ldquo;Style Guiden&rdquo; först, och sen använda det materialet för att göra ut &ldquo;templates&rdquo;. På så sätt går det inte åt någon extra tid för att underhålla &ldquo;Style Guiden&rdquo;, och man kan vara säker på att den alltid innehåller det senaste materialet.</p>
+<p><a href="http://html5doctor.com/the-main-element/">The main element</a><br/>
+Tyvärr har vår &ldquo;älskade&rdquo; Internet Explorer(11) inte implementerat elementet korrekt. display: block krävs!</p>
 
-<p><strong>Andreas:</strong><br/>
-Fantastiskt &ldquo;meetup&rdquo; på en otroligt fin plats i skärgården gjorde de två dagarna till ett sant nöje, och givande även för en non-coder som mig själv! Bra blandning på talare och en extra big-up till arrangörerna som bokat <a href="https://twitter.com/Bougie">Caroline Drucker</a> för prata om feminism och kvinnor i en hittills väldigt mansdominerad bransch. It has to change, now!</p>
+<h2>Liquid fun &ndash; Partikelsystem i canvas (med fysik!)</h2>
 
-<p><strong>Björn-Olle:</strong><br/>
-För mig som inte längre kodar på heltid men ändå drivs av att hålla mig uppdaterad om teknik var det en mycket inspirerande och lärorik konferens. Innehållet var blandad på ett genomtänkt sätt &ndash; Allt från <a href="http://www.crockford.com/">Douglas Crockfords</a> ECMAscript-snack till <a href="http://nexxylove.tumblr.com/">Emily Rose:s</a> musikinstrument byggt av ett tangetbord. Mest diskussion och eftertanke gav <a href="https://twitter.com/Bougie">Caroline Druckers</a> talk &ldquo;I&rsquo;m a feminist and so can you!&rdquo;. Modigt och viktigt av arrangörerna att ha med detta tema på en konferens där de flesta förväntar sig teknik-tunga talks. Deras ambition att bygga ett bra och hållbart community kring JavaScript blir en tydlig drivkraft bakom arrangemanget. Det handlar inte bara om de senaste teknikerna utan också om hur vi behandlar varandra!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Frontend-lunch på Vinnovera]]></title>
-    <link href="http://vinnovera.se/blogg/2014/09/23/frontend-lunch-pa-vinnovera/"/>
-    <updated>2014-09-23T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/09/23/frontend-lunch-pa-vinnovera</id>
-    <content type="html"><![CDATA[<p>Man brukar ju säga att alla behöver äta lunch&hellip; Lunch har därför blivit ett bra tillfälle för alla oss på Vinnovera att samlas och prata ny teknik, delar erfarenheter och visa egna projekt.<!--more--> Vi brukar gå igenom, diskutera och sammanställa länkar som sedan blir till vår artikelserie <a href="http://vinnovera.se/blogg/tagg/hittat/">&ldquo;Hittat på nätet&rdquo;</a>. Utöver det blir det ofta workshop kring något ämne som berör det vi jobbar med dagligen eller demo av egna projekt. Vi har under året bland annat pratat om <a href="http://vinnovera.se/blogg/2013/12/12/unit-testing/">&ldquo;Unit testing&rdquo;</a>, <a href="http://vinnovera.se/blogg/2014/02/19/garbage-collection/">&ldquo;Garbage collection&rdquo;</a>, <a href="http://vinnovera.se/blogg/2014/01/07/jquery-vs-mootools/">&ldquo;MooTools&rdquo;</a> och <a href="http://vinnovera.se/blogg/2013/12/13/bildmanipulering-i-javascript/">&ldquo;Bildmanipulation&rdquo;</a> som sedan resulterat i artiklar här på bloggen. Luncherna har också blivit födelseplatsen och/eller katalysator för flera roliga projekt. T.ex. en responsiv lightbox (<a href="https://github.com/Vinnovera/jsOverlay">&ldquo;jsOverlay&rdquo;</a>), ett spel med Node.js och MongoDB, utvecklingsramverket <a href="https://github.com/Vinnovera/estrad">Estrad</a>, en lösning för responsiva bilder (<a href="https://github.com/Vinnovera/rimd">Rimd</a>) och mycket mer.</p>
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-7/liquidfun.jpg" alt="Liquid fun" /><br/>
+<a href="http://google.github.io/liquidfun/">Liquid fun</a></p>
 
-<p><img src="http://vinnovera.se/images/content/posts/frontend-lunch-pa-vinnovera/lunch.jpg" alt="Lunch" /></p>
+<h2>CSS-triggers</h2>
 
-<p>Och till på köpet får man mat i magen!</p>
+<p><a href="www.csstriggers.com">CSS Triggers</a><br/>
+Ibland kan det vara bra att veta hur pass prestandakrävande din CSS faktiskt är. Vi hittade en väldigt väl utförd lista med alla CSS-triggers.</p>
+
+<h2>Hårdvaruaccelererad Javascripts-animation</h2>
+
+<p><a href="http://julian.com/research/velocity/">Velocity.js</a><br/>
+Velocity.js ersätter jQuery&rsquo;s animate med bättre prestanda.</p>
+
+<h2>En liten lista med bra råd för ALLA programmerare där ute</h2>
+
+<p><a href="https://github.com/timoxley/best-practices">Best Practices</a></p>
+
+<h2>The useless web</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-7/uselessweb.jpg" alt="The useless web" /><br/>
+<a href="http://www.theuselessweb.com/">The useless web</a><br/>
+Bra site när du har tråkigt!</p>
 ]]></content>
   </entry>
   
@@ -68,7 +71,7 @@ För mig som inte längre kodar på heltid men ändå drivs av att hålla mig up
     <link href="http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6/"/>
     <updated>2014-09-01T10:27:15+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6</id>
-    <content type="html"><![CDATA[<p>En sommar full med JavaScript, musik, verktyg, ramverk och folk som byter åsikter!</p>
+    <content type="html"><![CDATA[<p>En sommar full med Javascript, musik, verktyg, ramverk och folk som byter åsikter!</p>
 
 <!--more-->
 
@@ -80,7 +83,7 @@ För mig som inte längre kodar på heltid men ändå drivs av att hålla mig up
 <a href="http://nicolasgallagher.com/pure-css-gui-icons/demo/#non">Pure CSS GUI icons</a><br/>
 Två exempel på vad man kan åstakomma med minimal kod.</p>
 
-<h2>Patterns för stora JavaScript-applikationer</h2>
+<h2>Patterns för stora Javascript applikationer</h2>
 
 <p><a href="http://addyosmani.com/largescalejavascript/">Patterns For Large-Scale JavaScript Application Architecture</a><br/>
 Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, mediator och fasader.</p>
@@ -88,25 +91,23 @@ Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, m
 <h2>Åsikter om JS-ramverk</h2>
 
 <p><a href="http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks">Opinionated Rundown of JS Frameworks</a><br/>
-Henrik Joreteg går igenom för- och nackdelar med några populära JavaScript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
+Henrik Joreteg går igen för- och nackdelar med några populära Javascript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
 
 <h2>Service Worker</h2>
 
 <p><a href="http://jakearchibald.com/2014/service-worker-first-draft/">Service Worker &ndash; first draft published</a><br/>
-Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla &ldquo;Service Worker&rdquo; som bl.a. gör det möjligt att köra skript innan en sida existerar. Det gör det möjligt att skapa mer applikationslika webbsidor.</p>
+Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla Service Worker som bl.a. gör det möjligt att köra skript innan en sida existerar.</p>
 
 <h2>r2d3</h2>
 
 <p><a href="https://github.com/mhemesath/r2d3/">r2d3</a>  <br/>
-IE8 är kanske inte vår favoritwebbläsare, men nu har vi iallafall bättre möjligheter att jobba med datavisualisering där också.</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /><br/>
-Fler spännande korrelationer: <a href="http://tylervigen.com/">Spurious Correlations</a></p>
+Nu har datavisualisering kommit till IE8, inklusive senare webbläsare! (Men vi gillar inte IE8)
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /></p>
 
 <h2>smallworld.js</h2>
 
 <p><a href="http://mikefowler.me/smallworld.js/">smallworld.js</a><br/>
-smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel kartöversikt utan tunga bibliotek.</p>
+smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel översikt av en karta utan tunga bibliotek.</p>
 
 <h2>ish. 2.0</h2>
 
@@ -118,19 +119,19 @@ Verktyg för att testa webbsidor i alla storlekar.
 
 <p><a href="http://www.apfy.me/">apfy.me</a><br/>
 1. Hämta en sida och få HTML-svaret som XML<br/>
-2. Formatera XML output:en med XSLT<br/>
+2. Formatera XML output&#8217;en med XSLT<br/>
 3. Validera output med XSD<br/>
 4. Spara ner som ett API när du är klar!</p>
 
 <h2>Hejdå Node.js</h2>
 
 <p><a href="https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b">Farewell Node.js</a><br/>
-TJ Holowaychuk lämnar Node.js för att gå över till &ldquo;Go&rdquo; som passar hans nuvarande programmeringsambitioner bättre.</p>
+TJ Holowaychuk lämnar Node.js för att gå över till Go som passar hans nuvarande programmerings ambitioner bättre.</p>
 
 <h2>Prezi har gått över till Javascript</h2>
 
 <p><a href="https://medium.com/prezi-engineering/how-and-why-prezi-turned-to-javascript-56e0ca57d135">How and why Prezi turned to JavaScript</a><br/>
-En artikel om varför Prezi gick över till JavaScript och vilket jättejobb det innebar för dem.</p>
+En artikel om varför Prezi gick över till Javascript och vilket jättejobb de tyckte det var.</p>
 
 <h2>Säkrast går först!</h2>
 
@@ -141,55 +142,29 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 
 <p><a href="http://jmperezperez.com/beats-audio-api/">beats-audio-api</a><br/>
 1. Leta fram en låt på Spotify med hjälp av deras Web API<br/>
-2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API:et<br/>
+2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API&#8217;t<br/>
 3. Lägg på ett lowbass filter<br/>
 4. Hitta toppar<br/>
 5. Räkna intervallet mellan toppar<br/>
 6. Gruppera dom</p>
 
+<h2>Hur utvecklare ser användare</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/users.gif" alt="As a software developer this is how we view ALL end users" /><br/>
+I vår bransch försöker man ofta lösa usability-problem som inte finns</p>
+
 <h2>Lite mer datavisualisering</h2>
 
 <p>Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.</p>
 
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" /></p>
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" />
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript böcker" />
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" />
+<img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
 
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript-böcker" /></p>
+<h2>Roliga korrelationer</h2>
 
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" /></p>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hej Harald och Mico!]]></title>
-    <link href="http://vinnovera.se/blogg/2014/09/01/hej-harald-och-mico/"/>
-    <updated>2014-09-01T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/09/01/hej-harald-och-mico</id>
-    <content type="html"><![CDATA[<p><strong>Harald</strong> och <strong>Mico</strong> började i augusti som frontend-utvecklare på Vinnovera. Kul tycker vi!<!--more--></p>
-
-<p><img src="http://vinnovera.se/images/profiles/harald.jpg" alt="Harald" class="portrait" />
-<strong>Harald</strong> har mångårig erfarenhet av interaktiva spel och lärohjälpmedel. På senare år har fokus legat på webbgränssnitt och frontend-utveckling. Med dessa kunskaper har Harald god förståelse för såväl interaktion och grafiska gränssnitt, samt hur man utvecklar dessa rent tekniskt. Utöver sin kärlek till frontend har han en musikstudio på söder där bland annat hans triphop-projekt &ldquo;Skuld&rdquo; håller hus.</p>
-
-<p><img src="http://vinnovera.se/images/profiles/michael.jpg" alt="Michael" class="portrait" />
-<strong>Michael a.k.a. Mico</strong> har jobbat med webbutveckling sedan 1997 och har stor erfarenhet och kunskap av alla beståndsdelar i ett webbprojekt, från backend till frontend. Han har bland mycket annat startat och drivit hosting-företaget MrFriday. Frontend är dock det som ligger honom varmast om hjärtat. Mico driver även tidskriften &ldquo;Hilfe&rdquo; och reser till Japan så fort han får möjlighet.</p>
-
-<p>Harald kommer att sitta med ett uppdrag åt <strong>Stockholmsmässan</strong> under hösten och Mico kommer att jobba med <strong>A/B-test</strong> åt en av våra hemliga kunder.</p>
-
-<p><strong>Väääälkomna!</strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Frontend för KitchenTime]]></title>
-    <link href="http://vinnovera.se/blogg/2014/08/04/kitchen-time/"/>
-    <updated>2014-08-04T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/08/04/kitchen-time</id>
-    <content type="html"><![CDATA[<p>Vår partner <strong><a href="http://www.enferno.se/">Enferno</a></strong> bad oss om hjälp med frontend-utveckling för deras kund <strong><a href="http://kitchentime.se/">KitchenTime</a></strong>.<!--more--> Enferno utvecklar e-handelsplattformen <strong>&ldquo;Storm&rdquo;</strong> som ger bra förutsättningar för arbete med frontend,  och vi har tidigare byggt <strong><a href="http://vinnovera.se/projekt/dackia">Däckia.se</a></strong> tillsammans med dem. Ingen tvekan om att vi ville hjälpa till alltså!
-<img src="http://vinnovera.se/images/content/posts/kitchen-time/screenshot-desktop.png" alt="Desktop" />
-<strong>Sandra</strong> hos oss byggde större delen av mallsidorna och resultatet blev en responsiv e-handel, utvecklad på kort tid och med gott resultat. Så är du ute efter kvalitetsprodukter för köket är det bara att surfa in på <strong><a href="http://kitchentime.se/">www.kitchentime.se</a></strong>
-<img src="http://vinnovera.se/images/content/posts/kitchen-time/screenshot-mobile.png" alt="Mobile" />
-Tack <strong>Enferno</strong> och <strong>KitchenTime</strong> för gott samarbete!</p>
+<p><a href="http://tylervigen.com/">Spurious Correlations</a></p>
 ]]></content>
   </entry>
   
@@ -207,7 +182,7 @@ Tack <strong>Enferno</strong> och <strong>KitchenTime</strong> för gott samarbe
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-5/808cube.jpg" alt="808 Cube" />
 <a href="http://808cube.com/">808 Cube</a><br/>
-En mashup av Rolands ikoniska trummaskinen TR-808 och Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.</p>
+En mashup av den ikoniska Roland TR-808 trumm-maskinen med Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.</p>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-5/trigometry.jpg" alt="Icosidodecahedron" />
 <a href="http://thesassway.com/advanced/inverse-trigonometric-functions-with-sass">Inverse trigonometric functions with Sass</a><br/>
@@ -215,10 +190,10 @@ Jag kan inte stött på en situation då jag behövt använda sekans, cosekans e
 
 <h2>Hur stor är en glyph?</h2>
 
-<p>I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glyphen, och det är de boxarna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.</p>
+<p>I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glypen, och det är de boxerna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.</p>
 
 <p><a href="http://www.jasondavies.com/wordcloud/about/">How the Word Cloud Generator Works</a><br/>
-För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas-element där pixel-data räknas ut.</p>
+För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas element där pixel-datat räknas ut.</p>
 
 <p><a href="http://nodebox.github.io/opentype.js/index.html">opentype.js</a><br/>
 Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till och med modifiera dom.</p>
@@ -226,26 +201,26 @@ Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till o
 <h2>Grävande journalistik från DN Kultur</h2>
 
 <p><a href="http://www.dn.se/kultur-noje/varfor-ar-internet-i-norge-kjempefult/">Varför är Internet i Norge kjempefult?</a><br/>
-Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsning ändå.</p>
+Jag vill påpeka att vi inte nödvändigtvis håller med. Men intressant läsning ändå.</p>
 
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x61;&#115;&#x64;&#64;&#x61;&#x73;&#x64;&#x2e;&#97;&#x73;&#46;">&#97;&#115;&#100;&#64;&#97;&#x73;&#x64;&#46;&#97;&#115;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x61;&#115;&#x64;&#x40;&#97;&#115;&#100;&#x2e;&#97;&#x73;&#x2e;">&#x61;&#115;&#x64;&#64;&#x61;&#x73;&#x64;&#46;&#97;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
 
 <p><a href="https://github.com/blog/1845-psd-viewing-diffing">PSD Viewing &amp; Diffing</a><br/>
-GitHub stödjer nu visning och diffning av PSD-filer.</p>
+GitHub stödjer nu visning och diffing av PSD filer.</p>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-5/w6ehv.png" alt="Faraday cage" /><br/>
 <a href="http://stackoverflow.com/questions/4808433/is-it-possible-to-disable-the-network-in-ios-simulator/13831212#13831212">Is it possible to disable the network in iOS Simulator?</a><br/>
-Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens uppkoppling. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.</p>
+Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens nätverk. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.</p>
 
 <h3>General Update Pattern i D3</h3>
 
-<p>Patterns som borde vara obligatoriska när du använder D3.js</p>
+<p>Patterns som borde vara mandatorisk när du använder D3</p>
 
 <ul>
 <li><a href="http://bl.ocks.org/mbostock/3808218">Pattern 1</a></li>
@@ -253,37 +228,6 @@ Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika vikt
 <li><a href="http://bl.ocks.org/mbostock/3808234">Pattern 3</a></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hej Daniel!]]></title>
-    <link href="http://vinnovera.se/blogg/2014/06/30/hej-daniel/"/>
-    <updated>2014-06-30T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/06/30/hej-daniel</id>
-    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/daniel.jpg" alt="Daniel" class="portrait" />
-Under våren har det varit fullt ös på Vinnovera och vi kände att det var dags få in ytterligare en duktig frontend-utvecklare<!--more-->, gärna med fokus på applikationsutveckling med JavaScript. Som genom ett trollslag hörde <strong>Daniel</strong> av sig och vi fann varandra. Han är en kreativ problemlösare med stor passion och nyfikenhet för nya tekniker. När Daniel inte kodar komplexa <strong>webb-applikationer</strong> gillar han att baka surdegsbröd (som man vid väl valda tillfällen kan få smaka på kontoret) och vässa sitt löpsteg.</p>
-
-<p>Daniel började hos oss i juni och kommer att jobba med ett stort applikationsprojekt åt en av våra hemliga kunder.</p>
-
-<p><strong>Väääälkommen!</strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hackathon på Skåvsjöholm]]></title>
-    <link href="http://vinnovera.se/blogg/2014/06/30/hackathon-pa-skavsjoholm/"/>
-    <updated>2014-06-30T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/06/30/hackathon-pa-skavsjoholm</id>
-    <content type="html"><![CDATA[<p>För ett trevligt miljöombyte åkte hela Vinnovera ut till Skåvsjöholm för två dagars hackathon, workshop och umgänge.<!--more--> Efter en kort resa checkade vi in, fick ett eget hus med sjöutsikt och packade upp våra laptops. En stor del av tiden lades på arbete med egna projekt och teknikutforskning. Det innebar bland annat partiklar med <strong>D3.js</strong>, vidareutveckling av <strong><a href="https://github.com/Vinnovera/estrad">Estrad</a></strong>, en <strong>scoreboard</strong>-app, utforskning av <strong>API:er för kollektivtrafik</strong> och <strong>isometrisk 3D</strong> med JavaScript.</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/hackathon-pa-skavsjoholm/hacking.jpg" alt="Hacking" /></p>
-
-<p>Vi gick även igenom alla kundprojekt som är igång för att sprida kunskap, inspirera och bolla lösningar. Det är bra och lärorikt att ibland påminna sig om alla delar vi levererar till våra kunder &ndash; Allt från teknisk strategi och arkitektur till frontend-utveckling och utbildning.</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/hackathon-pa-skavsjoholm/workshop.jpg" alt="Workshop" /></p>
-
-<p>Skåvsjöholm bjöd i övrigt på god mat, biljard, boule och bubbelbad. Det blev helt enkelt två trevliga, inspirerande och avslappnande dagar i skärgården!</p>
 ]]></content>
   </entry>
   
@@ -390,12 +334,12 @@ Vi letar efter dig som <strong>brinner för frontend-utveckling</strong> och vil
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/burger.jpg" alt="The origin of the hamburger icon" />
 <a href="https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">The origin of the hamburger icon</a><br />
-Varifrån kommer alla ikoner?  Hamburgarens hitoria kan du hitta här.</p>
+Varifrån kommer alla ikoner? Var hamburgaren kommer ifrån kan du hitta här.</p>
 
 <h2>Kommentarsfält utöver det vanliga</h2>
 
 <p><a href="http://lattlast.se/kommentarsfalt">Centrum för lättläst lanserar ett kommentarsfält för alla</a><br />
-Centrum för lättläst lanserar &ldquo;Kommentarsfält för alla&rdquo;, som  ökar tillgängligheten för kommentarer och diskussion på nätet.</p>
+Centrum för lättläst lanserar Kommentarsfält för alla, som gör det lättare för alla att kommentera och diskutera artiklar och texter på nätet.</p>
 
 <h2>Network Link Conditioner</h2>
 
@@ -410,7 +354,7 @@ Simulera begränsade uppkopplingar när du utvecklar.</p>
 <h2>Javascript spel</h2>
 
 <p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted &ndash; a user javascript adventure game</a><br />
-Ett spel som går ut på att skriva JavaScript för att ta sig vidare till nästa level.</p>
+Ett spel som går ut på att skriva javascript för att ta sig vidare till nästa level.</p>
 
 <h2>Support för Windows XP upphör</h2>
 
@@ -432,7 +376,7 @@ En snabb och liten template-motor för node.js och browsers</p>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/svg-icon.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
 <a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/">Icon System with SVG Sprites</a><br />
-Ett alternativ till icon-fonts från Chris Coyier där man använder inline SVG.</p>
+Ett alternativ till icon-fonts från Chris Coyier där man använder inline svgs istället.</p>
 
 <h2>Lär dig rita med ASCII</h2>
 
@@ -447,13 +391,13 @@ Ibland kan det ta tio år att komma tillbaka till början.</p>
 <h2>Vetenskapen om underlines</h2>
 
 <p><a href="https://medium.com/p/7c03a9274f9">Crafting link underlines on Medium</a><br />
-En artikel om hur en &ldquo;quick-fix&rdquo; blev ett månadslångt projekt för att fixa underlines på medium.com</p>
+En artikel om hur en &ldquo;quick-fix&rdquo; blev ett en månads långt projekt för att fixa underlines på medium.com</p>
 
 <h2>Hack</h2>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/facebook-hack.jpg" alt="Facebook Introduces ‘Hack,’ the Programming Language of the Future" />
 <a href="http://hacklang.org/">Facebook Introduces ‘Hack,’ the Programming Language of the Future</a>
-Hack &ndash; ett programmeringsspråk utvecklat av de Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Det används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
+Hack &ndash; ett programmeringsspråk utvecklat av Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
 
 <h2>Världens minsta responsiva CSS-ramverk?</h2>
 
@@ -490,7 +434,7 @@ Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs
     <link href="http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product/"/>
     <updated>2014-04-07T10:43:38+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/04/07/shopify-adding-meta-data-to-a-product</id>
-    <content type="html"><![CDATA[<p>While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. <!-- more -->There weren&rsquo;t any options in the product settings that matched what we wanted to achieve &ndash; adding product specific pdf-files and movies.</p>
+    <content type="html"><![CDATA[<p>While developing a Shopify site we encountered the issue of wanting to add custom content or meta data to a product page. There weren&rsquo;t any options in <!-- more -->the product settings that matched what we wanted to achieve &ndash; adding product specific pdf-files and movies.</p>
 
 <p>The option we found to be suggested was to use metafields, a module for Shopify, but we didn&rsquo;t want to make a big hassle of poking around in the <a href="http://www.shopify.com/technology/3032322-new-feature-metafields#axzz2xvNXkLON">Shopify API</a>.</p>
 
@@ -522,26 +466,11 @@ Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[På gång]]></title>
-    <link href="http://vinnovera.se/blogg/2014/03/20/pa-gang/"/>
-    <updated>2014-03-20T09:27:15+01:00</updated>
-    <id>http://vinnovera.se/blogg/2014/03/20/pa-gang</id>
-    <content type="html"><![CDATA[<p>Det är många roliga saker på gång hos oss under våren. <!--more-->Tyvärr får vi inte nämna alla kunder vid namn, men det är ett stort och utmanande <strong>webb-applikations</strong>-projekt på gång och vi fortsätter med <strong>e-handelsfrontend</strong> för mobil och tablet i ett annat omfattande projekt. Vi drar också igång ett nytt projekt med <strong>Stockholmsmässan</strong> som kommer att innebära både spännande webb- och applikationsutveckling.</p>
-
-<p>Vi kommer att bland annat att jobba med <a href="backbonejs.org">Backbone.js</a>, <a href="http://d3js.org/">D3.js</a> och <a href="http://nodejs.org/">Node.js</a>, och som vanligt med fokus på att leverera tekniskt hantverk och bra användarupplevelser.</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/pa-gang/nodejs-logo.png" alt="Node.js logo" />
-<img src="http://vinnovera.se/images/content/posts/pa-gang/backbone-logo.png" alt="Backbone logo" />
-<img src="http://vinnovera.se/images/content/posts/pa-gang/D3-logo.png" alt="D3 logo" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Hittat på nätet #2]]></title>
     <link href="http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-2/"/>
     <updated>2014-03-14T14:51:55+01:00</updated>
     <id>http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-2</id>
-    <content type="html"><![CDATA[<p>Dagens tema är SVG &ndash; det bästa sedan skivat bröd.</p>
+    <content type="html"><![CDATA[<p>Dagens tema är SVG &ndash; det bästa sen skivat bröd.</p>
 
 <!--more-->
 
@@ -550,12 +479,12 @@ Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-2/svgandsmil.jpg" alt="Frame-by-frame animation using SVG and SMIL" />
 <a href="http://www.joningram.co.uk/article/svg-smil-frame-animation/">Frame-by-frame animation using SVG and SMIL</a><br>
-När den här artikeln skrevs fungerade SMIL animationer i SVG bara i webkit-browsers. Sedan dess har fler hunnit ikapp.</p>
+När den här artikeln skrevs fungerade SMIL animationer i SVG bara i webkit browsers. Sendan dess har fler hunnit ikapp.</p>
 
 <h2>Rethinking Responsive SVG</h2>
 
 <p><a href="http://coding.smashingmagazine.com/2014/03/05/rethinking-responsive-svg/">Rethinking Responsive SVG</a><br>
-Responsiva vektorbaserade ikoner som ändrar utseende beroende på tillgängligt utrymme. Det är ett av alla användningsområden för SVG-bilder. Smashing Mag går igenom några olika metoder att åstadkomma detta, till exempel ett där SVG filen innehåller sin egen CSS och JavaScript.</p>
+Responsiva vektorbaserade ikoner som ändrar utseende beroende på tillgängligt utrymme. Det är ett av alla användingsområden av SVG bilder. Smashing Mag går igenom några olika metoder att åstadkomma det. Till exempel ett där SVG filen innehåller sin egen CSS och JavaScript.</p>
 
 <h2>Thoughts on Media Queries for Elements</h2>
 
@@ -566,18 +495,18 @@ Media Queries för element ligger högt på vår önskelista. Hur skulle det kun
 <h2>A Q&amp;A on the Picture Element</h2>
 
 <p><a href="http://alistapart.com/blog/post/picture-element-qa">A Q&amp;A on the Picture Element</a><br>
-Responsiva bilder är något oerhört viktigt för dagens webb, men det har aldrig funnits någon standard och de lösningar som finns är beroende av JavaScript. Nu har dock browser-utvecklarna äntligen enats om att implementera <code>&lt;picture&gt;</code>-elementet. Mozilla har till och med sagt att de planerar implementera det redan Q1 2014.</p>
+Responsiva bilder är något oerhört viktigt för dagens web. Men det har aldrig funnits någon standard, och de lösningar som finns är beroende av JavaScript. Nu har dock browser utvecklarna äntligen enats om att implementera <code>&lt;picture&gt;</code> elementet. Mozilla har till och med gått och sagt att de planerar implementera det Q1 2014.</p>
 
 <h2>Top JavaScript MVC Frameworks</h2>
 
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-2/topjsmvcframework.jpg" alt="Top JavaScript MVC Frameworks" />
 <a href="http://www.infoq.com/research/top-javascript-mvc-frameworks">Top JavaScript MVC Frameworks</a><br>
-InfoQ har gjort en enkät som undersöker vilket JavaScript-MVC-ramverk som går snabbast att komma igång med, och hur mycket värde det tillför.</p>
+InfoQ har gjort en enkät som undersöker vilket JavaScript MVC ramverk som går snabbast att komma igång med och hur mycket värde det tillför.</p>
 
 <h2>Do Not Use bodyParser with Express.js</h2>
 
 <p><a href="http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html">Do Not Use bodyParser with Express.js</a><br>
-Varje gång Express.js hanterar ett POST-request med antingen <code>bodyParser()</code> eller <code>multipart()</code> skapas en temp-fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.</p>
+Varje gång Express.js hanterar ett POST request med antingen <code>bodyParser()</code> eller <code>multipart()</code> skapas en temp fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.</p>
 ]]></content>
   </entry>
   
@@ -1484,6 +1413,473 @@ Jag tror att camanjs har störts potential att vara användbart. Biblioteket har
 (Egna bilder behövs för att testa skripten) <br />
 Länk till Javascript version: <a href="http://codepen.io/Sandra/pen/LjGgh">http://codepen.io/Sandra/pen/LjGgh</a> <br />
 Länk till version med två bilder :  <a href="http://codepen.io/Sandra/pen/lrjvJ">http://codepen.io/Sandra/pen/lrjvJ</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Unit Testing]]></title>
+    <link href="http://vinnovera.se/blogg/2013/12/12/unit-testing/"/>
+    <updated>2013-12-12T14:22:24+01:00</updated>
+    <id>http://vinnovera.se/blogg/2013/12/12/unit-testing</id>
+    <content type="html"><![CDATA[<p>När vi skriver kod så vill vi när det är möjligt kunna skriva kod som kommer att underlätta för oss också i framtiden. För att kunna skriva kod som ska vara möjlig att använda igen eller vara stabil under längre tid, behöver den vara möjlig<!--more--> att testa regelbundet. Den behöver också bestå av utbrytbara delar, så att delarna kan passas in igen i ett annat sammanhang längre fram, eller skrivas om vid behov utan att påverka sin omgivning.</p>
+
+<p>När vi utvecklar hållbara och långsiktiga applikationer är det viktigt att koden vi skriver beter sig konsekvent. Det måste gå att förutse hur en funktion eller ett plugin beter sig som vi har förväntat oss, även när den används under nya omständigheter.</p>
+
+<p>Det är därför vi måste testa.</p>
+
+<h2>Testning</h2>
+
+<h3>När och hur kan man testa</h3>
+
+<p>Det finns olika stadier av testning, inte sällan grupperade som “validation testing”, “integration testing” samt “unit testing” och det är det senare jag tänker ta upp i närmare detalj här, då det är den testprocess som ligger närmast mig som utvecklare. Men först en kvick genomgång av de olika stadierna.</p>
+
+<h4>Unit testing</h4>
+
+<p>Unit testing är när man bryter isär alla delar i en applikation i så små testbara enheter som möjligt, och testar varje enhet separat. Ofta är en unit t.ex. en funktion, men kan ibland också vara en hel modul eller ett interface såsom en klass. Varje unit testas ihop med ett dataset för att se att varje del är redo att användas.</p>
+
+<h4>Integration testing</h4>
+
+<p>När alla units är bedömda att vara fungerande så kan man testa dem ihop, vilket kallas för Integration testing. Här använder man sig oftast av testplaner, en systematisk testordning som skall spegla ett tänkt workflow. I det här skedet tittar man också på interaktioner mellan olika units för att se om de fungerar som tänkt.</p>
+
+<h4>Validation testing</h4>
+
+<p>I det här skedet testar man huruvida applikationen uppfyller de krav som ställts av beställare och användare. Den här typen av tester bör vara möjliga att utföra av en tredje part, utan insikt i hur applikationen är byggd rent tekniskt.</p>
+
+<h2>Testdriven utveckling</h2>
+
+<h3>Test först, kod sen</h3>
+
+<p>När man ägnar sig åt testdriven utveckling, så betyder det normalt att man börjar med att identifiera vad en applikation skall utföra, för att sedan bryta ned detta i sådana beståndsdelar att de går att identifiera som enskilda units. Sedan, istället för att direkt börja skriva programkod, så börjar man med att utveckla tester för varje unit. När alla testerna är färdigskrivna inleds arbetet med själva programkoden, och när alla tester validerar så är uniten färdig. Detta ger en tydligare bild av vad varje enskild del av applikationen skall klara av och hur den skall fungera.</p>
+
+<h3>Refactoring</h3>
+
+<p>Det andra alternativet, när det av olika anledningar inte är praktiskt att skriva tester i förväg, är att skriva om koden i efterhand för att göra den testningsbar. Detta innebär att förändra koden, utan att egentligen förändra vad koden är menad att göra.</p>
+
+<h2>Unit testing</h2>
+
+<h3>Vad är en unit</h3>
+
+<p>Så, vad är då en unit? En unit är de minsta beståndsdelarna vi kan bryta ned en applikation till. Oftast är det funktioner och metoder, men det kan ibland också röra sig om interfaces.</p>
+
+<h4>Metoder och funktioner</h4>
+
+<p>Det typiska för en testbar funktion är att den kräver att någonting stoppas in, och att vi får något annat tillbaka. T.ex. kan det här vara en funktion som förvandlar en datumform till en annan (från &lsquo;130402&rsquo; till &lsquo;Andra april, 2013&rsquo;), eller som gör en avståndsberäkning eller liknande. Det är dock också möjligt att göra tester av funktioner som inte svarar med något, utan som istället påverkar ett annat objekt.</p>
+
+<h4>Interface och klasser</h4>
+
+<p>Ibland behöver vi testa sådant som inte ger ett direkt resultat, som t.ex. att flytta på ett objekt. Det kan också vara så att det vi testar inte är ett publikt värde utan en privat variabel. I sådana fall skriver man tester mot interfacet snarare än en enskild metod. Man kör en metod med ett visst värde, och när metoden är genomförd görs en kontroll mot ett värde eller kontrollfunktion i interfacet för att se om förändringen är den förväntade. T.ex. kan vi köra funktionen &ldquo;moveBulletTowardsShip&rdquo; i ett spel, och när metoden är körd kan vi testa om vår &ldquo;bullet&rdquo; har flyttat sig på det vis vi förväntat oss.</p>
+
+<h3>Vad är ett test</h3>
+
+<h4>Vad stoppar vi in, vad föväntar vi oss ut</h4>
+
+<p>Låt säga att jag har en funktion som delar upp ett textstycke i ett antal enskilda rader, där varje rad är högst 60 tecken. Vad vi då låter testet skicka in till funktionen som vi testar är ett antal textstycken av olika längd. I varje test behöver vi också skicka med ett förväntat resultat, i det här fallet skulle vi t.ex. kunna titta på antalet rader vi får tillbaka, samt längden på varje enskild rad.</p>
+
+<h2>Ramverk för javascript</h2>
+
+<p>Det finns många olika ramverk som används för att testa javascript, som Buster.JS, Sinon.js, Jasmine, QUnit eller Mocha. Jag har här valt att titta närmare på QUnit och Mocha, då de är bra exempel på olika angreppsvinklar på javascript-testning.</p>
+
+<h3>QUnit</h3>
+
+<p>QUnit är ett relativt lättviktigt testramverk. Det är ett ramverk som fokuserar helt på att testa javascript som körs i browsern. Då det är det testramverk som används vid utveckling av jQuery är det ett verktyg som är särskilt enkelt att komma igång med om man behöver testa mycket DOM-manipulation.</p>
+
+<h4>Setup</h4>
+
+<p>Det som krävs för att köra tester med QUnit är att ta hem en javascriptfil och en css-fil, samt skapa en HTML-fil som kör testerna. HTML-filen behöver åtminstone en holder att skriva ut testresultaten i (&lsquo;qunit&rsquo;) och om du ska testa DOM-manipulation behövs en holder för QUnit att skapa DOM-elementen i (&lsquo;qunit-fixture&rsquo;).</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/qunit-1.12.0.css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;qunit&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;qunit-fixture&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;myList&quot;</span><span class="nt">&gt;&lt;/ul&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;script&gt;</span><span class="nb">window</span><span class="p">.</span><span class="nx">jQuery</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;script src=&quot;js/vendor/jquery-1.10.1.min.js&quot;&gt;&lt;\/script&gt;&#39;</span><span class="p">)</span><span class="nt">&lt;/script&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/vendor/qunit-1.12.0.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/main.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/tests.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Tester</h4>
+
+<p>I exemplet ovan har jag själva funktionerna jag vill testa i main.js, och testerna i tests.js. Så här ser ett enkelt test ut:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;multiLineText-test&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">deepEqual</span><span class="p">(</span><span class="nx">multiLineText</span><span class="p">(</span><span class="s1">&#39;I have a thing to say&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">[</span><span class="s1">&#39;I have&#39;</span><span class="p">,</span> <span class="s1">&#39;a thing&#39;</span><span class="p">,</span> <span class="s1">&#39;to say&#39;</span><span class="p">]);</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Med QUnit skapas ett test genom att köra &ldquo;test&rdquo;-funktionen. Till den skickar man in en beskrivning av testet (&ldquo;multiLineText-test&rdquo;) samt en funktion. I den här funktionen kan du köra kod, samt framförallt göra s.k. &ldquo;assertions&rdquo;. QUnit har i huvudsak två typer av assertions, &ldquo;ok&rdquo; och &ldquo;equal&rdquo;. Till &ldquo;ok&rdquo; behöver man bara skicka in ett argument, och om argumentet är &ldquo;true&rdquo; är testet godkänt. Till &ldquo;equal&rdquo; skickar man in två argument, och om de stämmer överens är testet godkänt. I exemplet ovan används en variant på equal som används för att jämföra t.ex. objekt och listor.</p>
+
+<p>Här är ett exempel på ett test av DOM-manipulation</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;DOM manipulation&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Item 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Second item&#39;</span><span class="p">,</span> <span class="s1">&#39;Item the 3rd&#39;</span><span class="p">,</span> <span class="s1">&#39;Fourth one&#39;</span><span class="p">];</span>
+</span><span class='line'>  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myList&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;&#39;</span><span class="o">+</span><span class="nx">items</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">+</span><span class="s1">&#39;&lt;/li&gt;&#39;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myList&#39;</span><span class="p">).</span><span class="nx">children</span><span class="p">().</span><span class="nx">length</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Mocha</h3>
+
+<p>Mocha är klart mer omfattande än QUnit, men har också fler användningsområden. En av de viktigare skillnaderna är att Mocha kan testa javascript utanför en browser, t.ex. i en Node-applikation. Du installerar Mocha via npm, och kör Mocha via terminalen.</p>
+
+<p>I min app.js har jag samma funktion som ovan (&ldquo;multiLineText&rdquo;, fast tillgängliggjord i exports):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">exports</span><span class="p">.</span><span class="nx">multiLineText</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">myString</span><span class="p">,</span> <span class="nx">maxWidth</span><span class="p">){</span>
+</span><span class='line'>  <span class="p">...</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I roten på projektet har jag även skapat en folder som heter &ldquo;test&rdquo;, vilket är den folder Mocha letar efter tester i. Här har jag en fil som heter t.ex. &ldquo;mytest.js&rdquo;, som innehåller själva testet:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">assert</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;assert&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;../app&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">describe</span><span class="p">(</span><span class="s2">&quot;multiLineText&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">it</span><span class="p">(</span><span class="s2">&quot;should return correct array&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">assert</span><span class="p">.</span><span class="nx">deepEqual</span><span class="p">(</span><span class="nx">app</span><span class="p">.</span><span class="nx">multiLineText</span><span class="p">(</span><span class="s1">&#39;I have a thing to say&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">[</span><span class="s1">&#39;I have&#39;</span><span class="p">,</span> <span class="s1">&#39;a thing&#39;</span><span class="p">,</span> <span class="s1">&#39;to say&#39;</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sedan kör jag Mocha via terminalen via ett enkelt kommando:</p>
+
+<p>   mocha</p>
+
+<p>Jag får följande resultat att 1 test (av 1 möjliga) är lyckat:</p>
+
+<p>   1 passing (5 ms)</p>
+
+<p>Mocha har många kraftfulla features, som att få Mocha att köra tester automatiskt när kod har uppdaterats, eller att använda andra testbibliotek för att köra testerna (t.ex. Jasmine).</p>
+
+<h2>Exempelapplikation</h2>
+
+<p>Som avslutning tänkte jag visa en liten exempelapplikation, och exempel på hur man kan skriva tester till den. Applikationen skall klara av att visa ett diagram där en andel av ett antal figurer är markerade, t.ex. &ldquo;22 av 30 deltagare&rdquo;. Diagrammet skall vara en SVG-bild.</p>
+
+<h3>Krav- och funktionslista</h3>
+
+<p>För att kunna åstadkomma det här diagrammet behöver vi följande funktioner:</p>
+
+<ul>
+<li>En funktion som kan räkna ut antal figurer per rad, baserat på värdet och maxvärdet (t.ex. &ldquo;22&rdquo; och &ldquo;30&rdquo;)</li>
+<li>En funktion som ritar ut figurerna.</li>
+</ul>
+
+
+<h3>Test</h3>
+
+<p>Det första testet vi skriver är därför ett test som kontrollerar vår uträkningsfunktion. Vi vet att vi vill kunna skala antal figurer per rad baserat på maxantalet, samt behöver få ut antalet rader, kolumner, och vilka rader som är markerade, och hur många som är markerade per rad.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Get rows, columns and figurenumber&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>  <span class="nx">deepEqual</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">rows</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">columns</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastMarkedRow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastRowLength</span><span class="o">:</span> <span class="mi">5</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'>  <span class="nx">deepEqual</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">66</span><span class="p">),</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">rows</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">columns</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastMarkedRow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastRowLength</span><span class="o">:</span> <span class="mi">6</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'>  <span class="nx">deepEqual</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">24</span><span class="p">),</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">rows</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">columns</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastMarkedRow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastRowLength</span><span class="o">:</span> <span class="mi">4</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Det nästa testet är till för att se så att vår DOM-manipulation gör vad vi förväntar oss. I det här fallet kollar jag att det finns rätt antal av &ldquo;märkta&rdquo; respektive &ldquo;omärkta&rdquo; figurer, samt kontrollerar att SVGn har rätt storlek.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;Create and manipulate SVG&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Create and manipulate SVG with 7 10&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">);</span>
+</span><span class='line'>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;qunit-fixture&#39;</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">svg</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">createChart</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="nx">svg</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .marked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .unmarked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">svg</span><span class="p">).</span><span class="nx">height</span><span class="p">(),</span> <span class="mi">40</span><span class="p">);</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Create and manipulate SVG with 24 66&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">);</span>
+</span><span class='line'>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;qunit-fixture&#39;</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">svg</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">createChart</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">66</span><span class="p">),</span> <span class="nx">svg</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .marked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">24</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .unmarked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">42</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">svg</span><span class="p">).</span><span class="nx">height</span><span class="p">(),</span> <span class="mi">20</span><span class="p">);</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Create and manipulate SVG with 13 24&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">);</span>
+</span><span class='line'>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;qunit-fixture&#39;</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">svg</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">createChart</span><span class="p">(</span><span class="nx">getChartSize</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">24</span><span class="p">),</span> <span class="nx">svg</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .marked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">13</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;svg .unmarked&#39;</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span> <span class="mi">11</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">equal</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">svg</span><span class="p">).</span><span class="nx">height</span><span class="p">(),</span> <span class="mi">30</span><span class="p">);</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Funktion</h3>
+
+<p>Först har vi funktionen som tar fram hur många figurer vi behöver visa:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">getChartSize</span><span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="nx">max</span><span class="p">){</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">rows</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastMarkedRow</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastRowLength</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>  <span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="nx">max</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">max</span> <span class="o">&lt;=</span> <span class="mi">40</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">max</span> <span class="o">&lt;=</span> <span class="mi">140</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">columns</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">rows</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="nx">max</span> <span class="o">/</span> <span class="nx">columns</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">lastMarkedRow</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="nx">num</span> <span class="o">/</span> <span class="nx">columns</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">markedAtLastMarkedRow</span> <span class="o">=</span> <span class="nx">num</span> <span class="o">%</span> <span class="nx">columns</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">lastRowLength</span> <span class="o">=</span> <span class="nx">columns</span> <span class="o">-</span> <span class="p">((</span><span class="nx">rows</span> <span class="o">*</span> <span class="nx">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nx">max</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">return</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">rows</span><span class="o">:</span> <span class="nx">rows</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">columns</span><span class="o">:</span> <span class="nx">columns</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastMarkedRow</span><span class="o">:</span> <span class="nx">lastMarkedRow</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">markedAtLastMarkedRow</span><span class="o">:</span> <span class="nx">markedAtLastMarkedRow</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">lastRowLength</span><span class="o">:</span> <span class="nx">lastRowLength</span>
+</span><span class='line'>  <span class="p">};</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sen så har vi funktionen som manipulerar en SVG på förväntat vis:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">createChart</span><span class="p">(</span><span class="nx">settings</span><span class="p">,</span> <span class="nx">svg</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">addedElements</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">100</span><span class="o">/</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">h</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">settings</span><span class="p">.</span><span class="nx">rows</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">j</span><span class="o">&lt;</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span><span class="p">;</span><span class="nx">j</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="k">if</span><span class="p">(</span><span class="nx">addedElements</span> <span class="o">&lt;</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">lastMarkedRow</span> <span class="o">*</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span> <span class="o">-</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">markedAtLastMarkedRow</span><span class="p">)){</span>
+</span><span class='line'>              <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;rect&#39;</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;marked&#39;</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="nx">h</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="nx">w</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="nx">j</span><span class="o">*</span><span class="nx">w</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="nx">i</span><span class="o">*</span><span class="nx">h</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="s1">&#39;#ff0000&#39;</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">svg</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">rect</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">addedElements</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>          <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">addedElements</span> <span class="o">&lt;</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span> <span class="o">*</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">rows</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">lastRowLength</span><span class="p">){</span>
+</span><span class='line'>              <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span> <span class="s1">&#39;rect&#39;</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;unmarked&#39;</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="nx">h</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="nx">w</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="nx">j</span><span class="o">*</span><span class="nx">w</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="nx">i</span><span class="o">*</span><span class="nx">h</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">rect</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000ff&#39;</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">svg</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">rect</span><span class="p">);</span>
+</span><span class='line'>              <span class="nx">addedElements</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>          <span class="p">}</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">svg</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">rows</span><span class="o">*</span><span class="nx">h</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;px&#39;</span><span class="p">)</span>
+</span><span class='line'>  <span class="nx">svg</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">columns</span><span class="o">*</span><span class="nx">w</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;px&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Om Vinnovera]]></title>
+    <link href="http://vinnovera.se/blogg/2013/11/18/om-vinnovera/"/>
+    <updated>2013-11-18T12:44:24+01:00</updated>
+    <id>http://vinnovera.se/blogg/2013/11/18/om-vinnovera</id>
+    <content type="html"><![CDATA[<p>När farmor och farfar var små gick man till skräddare, bagaren, skomakaren och möbelsnickaren. Alla tog sitt hantverk på allvar och fann en njutning i att skapa resultat av hög kvalitet. Med omsorg och yrkesstolthet<!--more--> vårdade man sitt rykte inom skrået.</p>
+
+<p>Vi på Vinnovera ser webbgränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+
+<p>Oavsett teknisk plattform och bakomliggande system så som CMS (Content Management System) eller e-handelssystem, har alla webblösningar ett gränssnitt. Dessa gränssnitt utvecklas med HTML5, CSS och JavaScript. Vi är specialister på dessa tekniker vilket gör att vi kan bidra med vårt hantverk i alla möjliga webbprojekt, stora som små, i egen regi eller tillsammans med andra leverantörer.</p>
+
+<p>När vi får jobba med duktiga människor på både kund- och leverantörssidan, i projekt där kvalitet, användarupplevelse och affärsnytta är ledord, då trivs vi som bäst. Henry Ford sa en gång att kvalitet betyder att göra rätt när ingen ser på. För oss betyder det att kvalitet är varje projektmedlems ansvar. Vårt ansvarstagande och strävan efter kvalitet är också det alla på Vinnovera har gemensamt.</p>
+
+<p>Om du är på jakt efter webbkonsulter och tycker att detta låter klokt, eller om du är frontend-specialist och vill hitta en arbetsplats där du blir omgiven av folk som vill dela sin kunskap med dig, <a href="http://vinnovera.se/#kontakt">tveka inte att höra av dig</a>.</p>
 ]]></content>
   </entry>
   
