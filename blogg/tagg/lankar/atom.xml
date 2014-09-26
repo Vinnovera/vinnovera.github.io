@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Länkar | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/lankar/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-09-26T15:57:34+02:00</updated>
+  <updated>2014-09-26T16:05:28+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -71,7 +71,7 @@ Bra site när du har tråkigt!</p>
     <link href="http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6/"/>
     <updated>2014-09-01T10:27:15+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6</id>
-    <content type="html"><![CDATA[<p>En sommar full med Javascript, musik, verktyg, ramverk och folk som byter åsikter!</p>
+    <content type="html"><![CDATA[<p>En sommar full med JavaScript, musik, verktyg, ramverk och folk som byter åsikter!</p>
 
 <!--more-->
 
@@ -83,7 +83,7 @@ Bra site när du har tråkigt!</p>
 <a href="http://nicolasgallagher.com/pure-css-gui-icons/demo/#non">Pure CSS GUI icons</a><br/>
 Två exempel på vad man kan åstakomma med minimal kod.</p>
 
-<h2>Patterns för stora Javascript applikationer</h2>
+<h2>Patterns för stora JavaScript-applikationer</h2>
 
 <p><a href="http://addyosmani.com/largescalejavascript/">Patterns For Large-Scale JavaScript Application Architecture</a><br/>
 Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, mediator och fasader.</p>
@@ -91,23 +91,25 @@ Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, m
 <h2>Åsikter om JS-ramverk</h2>
 
 <p><a href="http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks">Opinionated Rundown of JS Frameworks</a><br/>
-Henrik Joreteg går igen för- och nackdelar med några populära Javascript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
+Henrik Joreteg går igenom för- och nackdelar med några populära JavaScript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
 
 <h2>Service Worker</h2>
 
 <p><a href="http://jakearchibald.com/2014/service-worker-first-draft/">Service Worker &ndash; first draft published</a><br/>
-Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla Service Worker som bl.a. gör det möjligt att köra skript innan en sida existerar.</p>
+Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla &ldquo;Service Worker&rdquo; som bl.a. gör det möjligt att köra skript innan en sida existerar. Det gör det möjligt att skapa mer applikationslika webbsidor.</p>
 
 <h2>r2d3</h2>
 
 <p><a href="https://github.com/mhemesath/r2d3/">r2d3</a>  <br/>
-Nu har datavisualisering kommit till IE8, inklusive senare webbläsare! (Men vi gillar inte IE8)
-<img src="/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /></p>
+IE8 är kanske inte vår favoritwebbläsare, men nu har vi iallafall bättre möjligheter att jobba med datavisualisering där också.</p>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /><br/>
+Fler spännande korrelationer: <a href="http://tylervigen.com/">Spurious Correlations</a></p>
 
 <h2>smallworld.js</h2>
 
 <p><a href="http://mikefowler.me/smallworld.js/">smallworld.js</a><br/>
-smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel översikt av en karta utan tunga bibliotek.</p>
+smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel kartöversikt utan tunga bibliotek.</p>
 
 <h2>ish. 2.0</h2>
 
@@ -119,19 +121,19 @@ Verktyg för att testa webbsidor i alla storlekar.
 
 <p><a href="http://www.apfy.me/">apfy.me</a><br/>
 1. Hämta en sida och få HTML-svaret som XML<br/>
-2. Formatera XML output'en med XSLT<br/>
+2. Formatera XML output:en med XSLT<br/>
 3. Validera output med XSD<br/>
 4. Spara ner som ett API när du är klar!</p>
 
 <h2>Hejdå Node.js</h2>
 
 <p><a href="https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b">Farewell Node.js</a><br/>
-TJ Holowaychuk lämnar Node.js för att gå över till Go som passar hans nuvarande programmerings ambitioner bättre.</p>
+TJ Holowaychuk lämnar Node.js för att gå över till &ldquo;Go&rdquo; som passar hans nuvarande programmeringsambitioner bättre.</p>
 
 <h2>Prezi har gått över till Javascript</h2>
 
 <p><a href="https://medium.com/prezi-engineering/how-and-why-prezi-turned-to-javascript-56e0ca57d135">How and why Prezi turned to JavaScript</a><br/>
-En artikel om varför Prezi gick över till Javascript och vilket jättejobb de tyckte det var.</p>
+En artikel om varför Prezi gick över till JavaScript och vilket jättejobb det innebar för dem.</p>
 
 <h2>Säkrast går först!</h2>
 
@@ -142,29 +144,23 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 
 <p><a href="http://jmperezperez.com/beats-audio-api/">beats-audio-api</a><br/>
 1. Leta fram en låt på Spotify med hjälp av deras Web API<br/>
-2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API't<br/>
+2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API:et<br/>
 3. Lägg på ett lowbass filter<br/>
 4. Hitta toppar<br/>
 5. Räkna intervallet mellan toppar<br/>
 6. Gruppera dom</p>
 
-<h2>Hur utvecklare ser användare</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/users.gif" alt="As a software developer this is how we view ALL end users" /><br/>
-I vår bransch försöker man ofta lösa usability-problem som inte finns</p>
-
 <h2>Lite mer datavisualisering</h2>
 
 <p>Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.</p>
 
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" />
-<img src="/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript böcker" />
-<img src="/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" />
-<img src="/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
+<p><img src="/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" /></p>
 
-<h2>Roliga korrelationer</h2>
+<p><img src="/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript-böcker" /></p>
 
-<p><a href="http://tylervigen.com/">Spurious Correlations</a></p>
+<p><img src="/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" /></p>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
 ]]></content>
   </entry>
   
@@ -182,7 +178,7 @@ I vår bransch försöker man ofta lösa usability-problem som inte finns</p>
 
 <p><img src="/images/content/posts/hittat-pa-natet-number-5/808cube.jpg" alt="808 Cube" />
 <a href="http://808cube.com/">808 Cube</a><br/>
-En mashup av den ikoniska Roland TR-808 trumm-maskinen med Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.</p>
+En mashup av Rolands ikoniska trummaskinen TR-808 och Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.</p>
 
 <p><img src="/images/content/posts/hittat-pa-natet-number-5/trigometry.jpg" alt="Icosidodecahedron" />
 <a href="http://thesassway.com/advanced/inverse-trigonometric-functions-with-sass">Inverse trigonometric functions with Sass</a><br/>
@@ -190,10 +186,10 @@ Jag kan inte stött på en situation då jag behövt använda sekans, cosekans e
 
 <h2>Hur stor är en glyph?</h2>
 
-<p>I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glypen, och det är de boxerna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.</p>
+<p>I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glyphen, och det är de boxarna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.</p>
 
 <p><a href="http://www.jasondavies.com/wordcloud/about/">How the Word Cloud Generator Works</a><br/>
-För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas element där pixel-datat räknas ut.</p>
+För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas-element där pixel-data räknas ut.</p>
 
 <p><a href="http://nodebox.github.io/opentype.js/index.html">opentype.js</a><br/>
 Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till och med modifiera dom.</p>
@@ -201,26 +197,26 @@ Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till o
 <h2>Grävande journalistik från DN Kultur</h2>
 
 <p><a href="http://www.dn.se/kultur-noje/varfor-ar-internet-i-norge-kjempefult/">Varför är Internet i Norge kjempefult?</a><br/>
-Jag vill påpeka att vi inte nödvändigtvis håller med. Men intressant läsning ändå.</p>
+Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsning ändå.</p>
 
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#x61;&#115;&#x64;&#64;&#97;&#x73;&#100;&#46;&#x61;&#x73;&#46;">&#97;&#115;&#100;&#x40;&#97;&#115;&#x64;&#x2e;&#x61;&#115;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#x3a;&#97;&#x73;&#x64;&#x40;&#x61;&#115;&#x64;&#x2e;&#97;&#x73;&#46;">&#97;&#x73;&#100;&#x40;&#x61;&#x73;&#x64;&#46;&#97;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
 
 <p><a href="https://github.com/blog/1845-psd-viewing-diffing">PSD Viewing &amp; Diffing</a><br/>
-GitHub stödjer nu visning och diffing av PSD filer.</p>
+GitHub stödjer nu visning och diffning av PSD-filer.</p>
 
 <p><img src="/images/content/posts/hittat-pa-natet-number-5/w6ehv.png" alt="Faraday cage" /><br/>
 <a href="http://stackoverflow.com/questions/4808433/is-it-possible-to-disable-the-network-in-ios-simulator/13831212#13831212">Is it possible to disable the network in iOS Simulator?</a><br/>
-Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens nätverk. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.</p>
+Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens uppkoppling. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.</p>
 
 <h3>General Update Pattern i D3</h3>
 
-<p>Patterns som borde vara mandatorisk när du använder D3</p>
+<p>Patterns som borde vara obligatoriska när du använder D3.js</p>
 
 <ul>
 <li><a href="http://bl.ocks.org/mbostock/3808218">Pattern 1</a></li>
@@ -315,12 +311,12 @@ En legend som vandrat runt sedan det uråldriga 80-talet är att väldiga mängd
 
 <p><img src="/images/content/posts/hittat-pa-natet-number-3/burger.jpg" alt="The origin of the hamburger icon" />
 <a href="https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">The origin of the hamburger icon</a><br />
-Varifrån kommer alla ikoner? Var hamburgaren kommer ifrån kan du hitta här.</p>
+Varifrån kommer alla ikoner?  Hamburgarens hitoria kan du hitta här.</p>
 
 <h2>Kommentarsfält utöver det vanliga</h2>
 
 <p><a href="http://lattlast.se/kommentarsfalt">Centrum för lättläst lanserar ett kommentarsfält för alla</a><br />
-Centrum för lättläst lanserar Kommentarsfält för alla, som gör det lättare för alla att kommentera och diskutera artiklar och texter på nätet.</p>
+Centrum för lättläst lanserar &ldquo;Kommentarsfält för alla&rdquo;, som  ökar tillgängligheten för kommentarer och diskussion på nätet.</p>
 
 <h2>Network Link Conditioner</h2>
 
@@ -335,7 +331,7 @@ Simulera begränsade uppkopplingar när du utvecklar.</p>
 <h2>Javascript spel</h2>
 
 <p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted &ndash; a user javascript adventure game</a><br />
-Ett spel som går ut på att skriva javascript för att ta sig vidare till nästa level.</p>
+Ett spel som går ut på att skriva JavaScript för att ta sig vidare till nästa level.</p>
 
 <h2>Support för Windows XP upphör</h2>
 
@@ -357,7 +353,7 @@ En snabb och liten template-motor för node.js och browsers</p>
 
 <p><img src="/images/content/posts/hittat-pa-natet-number-3/svg-icon.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
 <a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/">Icon System with SVG Sprites</a><br />
-Ett alternativ till icon-fonts från Chris Coyier där man använder inline svgs istället.</p>
+Ett alternativ till icon-fonts från Chris Coyier där man använder inline SVG.</p>
 
 <h2>Lär dig rita med ASCII</h2>
 
@@ -372,13 +368,13 @@ Ibland kan det ta tio år att komma tillbaka till början.</p>
 <h2>Vetenskapen om underlines</h2>
 
 <p><a href="https://medium.com/p/7c03a9274f9">Crafting link underlines on Medium</a><br />
-En artikel om hur en &ldquo;quick-fix&rdquo; blev ett en månads långt projekt för att fixa underlines på medium.com</p>
+En artikel om hur en &ldquo;quick-fix&rdquo; blev ett månadslångt projekt för att fixa underlines på medium.com</p>
 
 <h2>Hack</h2>
 
 <p><img src="/images/content/posts/hittat-pa-natet-number-3/facebook-hack.jpg" alt="Facebook Introduces ‘Hack,’ the Programming Language of the Future" />
 <a href="http://hacklang.org/">Facebook Introduces ‘Hack,’ the Programming Language of the Future</a>
-Hack &ndash; ett programmeringsspråk utvecklat av Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
+Hack &ndash; ett programmeringsspråk utvecklat av de Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Det används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
 
 <h2>Världens minsta responsiva CSS-ramverk?</h2>
 

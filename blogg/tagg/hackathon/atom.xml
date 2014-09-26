@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hackathon | Vinnovera]]></title>
+  <link href="http://vinnovera.se/blogg/tagg/hackathon/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-09-26T16:05:28+02:00</updated>
+  <id>http://vinnovera.se/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hackathon på Skåvsjöholm]]></title>
+    <link href="http://vinnovera.se/blogg/2014/06/30/hackathon-pa-skavsjoholm/"/>
+    <updated>2014-06-30T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/06/30/hackathon-pa-skavsjoholm</id>
+    <content type="html"><![CDATA[<p>För ett trevligt miljöombyte åkte hela Vinnovera ut till Skåvsjöholm för två dagars hackathon, workshop och umgänge.<!--more--> Efter en kort resa checkade vi in, fick ett eget hus med sjöutsikt och packade upp våra laptops. En stor del av tiden lades på arbete med egna projekt och teknikutforskning. Det innebar bland annat partiklar med <strong>D3.js</strong>, vidareutveckling av <strong><a href="https://github.com/Vinnovera/estrad">Estrad</a></strong>, en <strong>scoreboard</strong>-app, utforskning av <strong>API:er för kollektivtrafik</strong> och <strong>isometrisk 3D</strong> med JavaScript.</p>
+
+<p><img src="/images/content/posts/hackathon-pa-skavsjoholm/hacking.jpg" alt="Hacking" /></p>
+
+<p>Vi gick även igenom alla kundprojekt som är igång för att sprida kunskap, inspirera och bolla lösningar. Det är bra och lärorikt att ibland påminna sig om alla delar vi levererar till våra kunder &ndash; Allt från teknisk strategi och arkitektur till frontend-utveckling och utbildning.</p>
+
+<p><img src="/images/content/posts/hackathon-pa-skavsjoholm/workshop.jpg" alt="Workshop" /></p>
+
+<p>Skåvsjöholm bjöd i övrigt på god mat, biljard, boule och bubbelbad. Det blev helt enkelt två trevliga, inspirerande och avslappnande dagar i skärgården!</p>
+]]></content>
+  </entry>
+  
+</feed>
