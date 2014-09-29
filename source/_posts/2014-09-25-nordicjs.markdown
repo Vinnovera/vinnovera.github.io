@@ -10,7 +10,10 @@ authorImage: /images/profiles/b-o.jpg
 authorTel: 070-171 67 27
 authorMail: bjorn-olle@vinnovera.se
 ---
-Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på [Nordic.js][7].<!--more--> Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen...
+Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på [Nordic.js][7].<!--more-->
+ 
+![Tidig morgon][00]
+Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen...
 
 ###Daniel  
 <img src="/images/profiles/daniel.jpg" class="portrait">
@@ -54,6 +57,10 @@ En av höjdpunkterna på Nordic.js för mig var [Hakims][6] [talk][61] där han 
 
 Hans sätt att utgå från en visuell idé för att sen försöka återskapa den i kod är precis varför jag lärde mig programmera som tonåring: Jag ville skapa interaktiv konst.
 
+###Jonas
+<img src="/images/profiles/jonas.jpg" class="portrait">
+Normalt sett så tycker jag bäst om relativt tunga och kodfyllda talks, men på Nordic.js föll jag särskilt för [Ellen Sundhs][3] inspirerande föredrag om att använda javascript för att koppla ihop internet med den fysiska världen. Projektet “Storklon” är imponerande och inspirerande i sin väldiga skala och det är kittlande att tänka att det är möjligt att använda javascript hela vägen från frontend via backend hela vägen till maskinen. Ett verkligt bevis för språkets mognad och möjligheter.
+
 [0]: http://robertnyman.com/
 [01]: http://www.slideshare.net/robnyman/five-stages-of-development-nordicjs
 [1]: https://twitter.com/nodebotanist
@@ -70,4 +77,4 @@ Hans sätt att utgå från en visuell idé för att sen försöka återskapa den
 [7]: http://nordicjs.com/
 [8]: http://nexxylove.tumblr.com/
 
-[00]: /images/content/posts/frontend-lunch-pa-vinnovera/lunch.jpg
+[00]: /images/content/posts/nordicjs/morning.jpg
