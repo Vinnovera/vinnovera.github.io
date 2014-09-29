@@ -12,42 +12,61 @@ authorMail: bjorn-olle@vinnovera.se
 ---
 Vi begav oss ut till Artipelag i Stockholms skärgård för två inspirerande, lärorika och roliga dagar på [Nordic.js][7].<!--more--> Det blev en otroligt välordnad och fin konferens av gänget bakom Sthlm.js, och vi ser redan fram emot nästa år. Här kommer några av våra tankar om upplevelsen...
 
-**Daniel:**  
-[Robert Nyman][0] från Mozilla gav ett intressant fördrag om Firefox uppdaterade verktyg för utvecklare. Bland annat möjligheten att enkelt se vilka event som är kopplade till ett specifikt element, hur man kan förhandsgranska CSS3-animationer samt ett smart sätt att se alla element som är kopplade till en specifik CSS-klass. En annan intressant nyhet var Firefox "tools-adapter" med vilken man kan debugga, inte bara i Firefox utan även i andra browsers. Robert pratade också om "the five stages of development" och att förhålla sig till problemlösning på ett konstruktivt sätt.
+###Daniel  
+<img src="/images/profiles/daniel.jpg" class="portrait">
+[Robert Nyman][0] från Mozilla gav ett [intressant fördrag][01] om Firefox uppdaterade verktyg för utvecklare. Bland annat möjligheten att enkelt se vilka event som är kopplade till ett specifikt element, hur man kan förhandsgranska CSS3-animationer samt ett smart sätt att se alla element som är kopplade till en specifik CSS-klass. En annan intressant nyhet var Firefox "tools-adapter" med vilken man kan debugga, inte bara i Firefox utan även i andra browsers. Robert pratade också om "the five stages of development" och att förhålla sig till problemlösning på ett konstruktivt sätt.
 
-**Mico:**  
+###Mico  
+<img src="/images/profiles/michael.jpg" class="portrait">
 [Ellen Sundh][3] som visade upp några av sina IRL-tillämpningar av JavaScript-programmering var väldigt inspirerande. Att se relativt enkel programmering som jag kan förstå tillämpas utanför skärmen var kul för en som sitter med webb hela dagarna. Blir det kanske nästa projekt?
 
-**Gustav:**  
-Jag gillade [Hakims][6] talk där han bl. a. visade små experiment han gjort i gränslandet mellan programmering, musik och konst. Enkelheten och lekfullheten i den han gjort var det som imponerade på mig. Det var också fascinerande att se hur andra använde hans små installationer för att skapa helt fantastiska nya verk.
+###Gustav  
+<img src="/images/profiles/gustav.jpg" class="portrait">
+Jag gillade [Hakims][6] [talk][61] där han bl. a. [visade små experiment][62] han gjort i gränslandet mellan programmering, musik och konst. Enkelheten och lekfullheten i den han gjort var det som imponerade på mig. Det var också fascinerande att se hur andra använde hans små installationer för att skapa helt fantastiska nya verk.
 
-**Jakob:**  
-Bäst var helt klart [Douglas Crockford][5] som ofta blir bashad för att vara en gammal mossig gubbe som fastnat i gamla vanor. Men som under sitt talk berättade hur han aktivt omvärderar och förfinar sitt sätt att skriva sin kod, på ett elegant sätt. Han har t.ex. slutat använda "new" och "this" helt och bashar istället tillbaka på alla som saknar "Class" och "inheritance". Samtidigt lyckas han göra reklam för nästa ECMAscript-version, som han själv är med och spec:ar.
+###Jakob  
+<img src="/images/profiles/jakob.jpg" class="portrait">
+Bäst var helt klart [Douglas Crockford][5] som ofta blir bashad för att vara en gammal mossig gubbe som fastnat i gamla vanor. Men som under [sitt talk][51] berättade hur han aktivt omvärderar och förfinar sitt sätt att skriva sin kod, på ett elegant sätt. Han har t.ex. slutat använda "new" och "this" helt och bashar istället tillbaka på alla som saknar "Class" och "inheritance". Samtidigt lyckas han göra reklam för nästa ECMAscript-version, som han själv är med och spec:ar.
 
-**Sandra:**  
-Jag tycker många talare hade intressanta ämnen, men jag fastnade främst för ett genomgående tema – att vi ofta fastnar i samma mönster och glömmer att ifrågasätta oss själva. [Robert Nyman][0] pratade t.ex. om hur många lämnade Firefox för Chrome devtools eftersom de inte tyckte om Firebug och har förmodligen inte ens testat Firefox devtools. [Kassandra Perch][1] tog upp hur fanatism kan hindra oss från att använda rätt ramverk på rätt ställe. Jag tror det fanns något hos alla talare som fick mig att tänka över hur jag kodar, hur jag bemöter nya uppgifter och hur jag kan lära mig att tänka annorlunda.
+###Sandra  
+<img src="/images/profiles/sandra.jpg" class="portrait">
+Jag tycker många talare hade intressanta ämnen, men jag fastnade främst för ett genomgående tema – att vi ofta fastnar i samma mönster och glömmer att ifrågasätta oss själva. [Robert Nyman][0] [pratade][01] t.ex. om hur många lämnade Firefox för Chrome devtools eftersom de inte tyckte om Firebug och har förmodligen inte ens testat Firefox devtools. [Kassandra Perch][1] [tog upp hur fanatism kan hindra oss][11] från att använda rätt ramverk på rätt ställe. Jag tror det fanns något hos alla talare som fick mig att tänka över hur jag kodar, hur jag bemöter nya uppgifter och hur jag kan lära mig att tänka annorlunda.
 
-**Per:**  
-[Jina Bolton][2] höll ett talk som som mest tangerade utveckling med JavaScript. Hon pratade istället om sitt arbete med "Style Guides". Vi arbetar ofta med att leverera frontend till projekt där vi får grafisk design från en extern leverantör. Designen implementerar vi antingen direkt i systemet, eller så levererar vi statiska filer som backend-utvecklare lägger in i systemet. I sådana projekt är bra kommunikation väldigt viktigt i alla led.
+###Per  
+<img src="/images/profiles/per.jpg" class="portrait">
+[Jina Bolton][2] [höll ett talk][21] som som mest tangerade utveckling med JavaScript. Hon pratade istället om sitt arbete med "Style Guides". Vi arbetar ofta med att leverera frontend till projekt där vi får grafisk design från en extern leverantör. Designen implementerar vi antingen direkt i systemet, eller så levererar vi statiska filer som backend-utvecklare lägger in i systemet. I sådana projekt är bra kommunikation väldigt viktigt i alla led.
 
 Ett tillfälle då kommunikationen kan brista är om det i designleveranser finns olika versioner av samma modul, utan tydlig information om vilken version som är den aktuella. För att underlätta arbetet och minska missförstånden ber vi ofta designern underhåller ett element-bibliotek, där "states" på interaktiva element och den senaste designen av alla moduler finns med. Precis samma problem kan så klart uppstå mellan oss och backend som ska implementera vår leverans, och "Style Guides" kan då vara ett bra verktyg. Om "markup" skiljer sig i två versioner av samma modul så ska det vara "Style Guiden" som styr.
 
 Det är dock svårt att hålla en "Style Guide" uppdaterad, och om man sätter sig ner och bygger den i efterhand tar det väldigt mycket tid. Det Bolton förespråkar är att alltid bygga modulerna i "Style Guiden" först, och sen använda det materialet för att göra ut "templates". På så sätt går det inte åt någon extra tid för att underhålla "Style Guiden", och man kan vara säker på att den alltid innehåller det senaste materialet.
 
-**Andreas:**  
-Fantastiskt "meetup" på en otroligt fin plats i skärgården gjorde de två dagarna till ett sant nöje, och givande även för en non-coder som mig själv! Bra blandning på talare och en extra big-up till arrangörerna som bokat [Caroline Drucker][4] för prata om feminism och kvinnor i en hittills väldigt mansdominerad bransch. It has to change, now!
+###Andreas
+<img src="/images/profiles/andreas.jpg" class="portrait">
+Fantastisk "meetup" på en otroligt fin plats i skärgården gjorde de två dagarna till ett sant nöje, och givande även för en non-coder som mig själv! Bra blandning på talare och en extra big-up till arrangörerna som bokat [Caroline Drucker][4] för prata om feminism och kvinnor i en hittills väldigt mansdominerad bransch. It has to change, now!
 
-**Björn-Olle:**  
+###Björn-Olle  
+<img src="/images/profiles/b-o.jpg" class="portrait">
 För mig som inte längre kodar på heltid men ändå drivs av att hålla mig uppdaterad om teknik var det en mycket inspirerande och lärorik konferens. Innehållet var blandad på ett genomtänkt sätt - Allt från [Douglas Crockfords][5] ECMAscript-snack till [Emily Rose:s][8] musikinstrument byggt av ett tangetbord. Mest diskussion och eftertanke gav [Caroline Druckers][4] talk "I'm a feminist and so can you!". Modigt och viktigt av arrangörerna att ha med detta tema på en konferens där de flesta förväntar sig teknik-tunga talks. Deras ambition att bygga ett bra och hållbart community kring JavaScript blir en tydlig drivkraft bakom arrangemanget. Det handlar inte bara om de senaste teknikerna utan också om hur vi behandlar varandra!
 
+###Harald  
+<img src="/images/profiles/harald.jpg" class="portrait">
+En av höjdpunkterna på Nordic.js för mig var [Hakims][6] [talk][61] där han [visade upp sina olika canvasprojekt][62]. Han har en fantastisk lekfullhet och konstnärlig approach till programmering, samtidigt som han låter nörda ner sig ordentligt genom att försöka begränsa storleken på sina applikationer. 
+
+Hans sätt att utgå från en visuell idé för att sen försöka återskapa den i kod är precis varför jag lärde mig programmera som tonåring: Jag ville skapa interaktiv konst.
 
 [0]: http://robertnyman.com/
+[01]: http://www.slideshare.net/robnyman/five-stages-of-development-nordicjs
 [1]: https://twitter.com/nodebotanist
+[11]: https://www.youtube.com/watch?v=Ah4jYzN60n8&list=UUTZ3O2cZo1b4JSwvhgBnAbw
 [2]: http://jina.me/
+[21]: https://speakerdeck.com/jina/living-design-systems
 [3]: http://www.sundh.com/blog/
 [4]: https://twitter.com/Bougie
 [5]: http://www.crockford.com/
+[51]: http://vimeo.com/97419177
 [6]: http://hakim.se/
+[61]: http://slides.com/hakim/nordic-js
+[62]: https://www.youtube.com/watch?v=02ilIJdI5ZI&list=UUTZ3O2cZo1b4JSwvhgBnAbw
 [7]: http://nordicjs.com/
 [8]: http://nexxylove.tumblr.com/
 
