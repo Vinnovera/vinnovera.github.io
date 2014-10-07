@@ -4,8 +4,8 @@ title: "Bildmanipulering i JavaScript"
 date: 2013-12-13 16:17:13 +0100
 comments: true
 categories: [Javascript, Filter]
-author: Alexandra Munter
-authorDescription: Alexandra Munter jobbar med frontend på Vinnovera.
+author: Alexandra Bjelkholm
+authorDescription: Alexandra Bjelkholm jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/sandra.jpg
 authorTel: 070-491 84 29
 authorMail: alexandra@vinnovera.se
