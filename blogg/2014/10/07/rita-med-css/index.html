@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Rita med CSS - Vinnovera</title>
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<meta name="description" content="Att få fram olika former och bilder med CSS kan ju inte vara så svårt. Eller? Efter att ha sett Lynn Fishers exempel på vad hon åstadkommit med &hellip;">
+		
+
+		<meta property="og:title" content="Rita med CSS - Vinnovera" />
+		<meta property="og:url" content="http://vinnovera.se/blogg/2014/10/07/rita-med-css/" />
+		<meta property="og:image" content="http://www.vinnovera.se/images/logoOgImage.png" />
+		<meta property="og:description" content="Att få fram olika former och bilder med CSS kan ju inte vara så svårt. Eller? Efter att ha sett Lynn Fishers exempel på vad hon åstadkommit med &hellip;" />
+
+		<!--[if lt IE 9]>
+		<script>
+		    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+		        i = e.length;
+		
+		    for(i; i--;) {
+		        document.createElement(e[i]);
+		    }
+		</script><![endif]-->
+
+		<link href="/favicon.ico?1" rel="icon">
+		<link href="/atom.xml" rel="alternate" title="Vinnovera" type="application/atom+xml">
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/vinnovera.css">
+<link rel="stylesheet" href="/stylesheets/overlay.css">
+		<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2035593-3']);
+	_gaq.push(['_trackPageview']);
+	
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+	</head>
+
+<body    >
+  <header id="header">
+	
+	
+		<h1>
+			<a href="/">Vinnovera</a>
+		</h1>
+	
+	
+	<a href="#" class="toggle-menu" id="toggle-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<nav id="navigation">
+		
+		<a href="/">Hem</a>
+		
+		<a href="/#projekt">Kunder &amp; projekt</a>
+		<a href="/#blogg">Blogg</a>
+		<a href="/#jobb">Vi</a>
+		<a href="/#kontakt">Kontakt</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
+	</nav>
+</header>
+
+<a href="#" class="to-top" id="scrollUp">Till toppen</a>
+  <nav class="post-navigation">
+	
+		<a class="basic-alignment next" href="/blogg/2014/09/25/nordicjs/" title="Nästa inlägg: Nordic.js">Nästa</a>
+	
+	
+</nav>
+
+<section class="wrapper post">
+	<article>
+		<header>
+			<h1>Rita med CSS</h1>
+			
+			
+			
+			<p class="meta">
+				<span>Alexandra Bjelkholm</span>
+				| <time datetime="2014-10-07T14:55:09+02:00" pubdate><span class='year'>2014</span>-<span class='month'>10</span>-<span class='day'>07</span></time>
+
+				|
+				
+				<a class='category' href='/blogg/tagg/css/'>CSS</a>
+				
+			</p>
+			
+		</header>
+	
+		<div>
+			<p>Att få fram olika former och bilder med CSS kan ju inte vara så svårt. Eller?</p>
+
+<!--more-->
+
+
+<p>Efter att ha sett Lynn Fishers <a href="http://a.singlediv.com/">exempel</a> på vad hon åstadkommit med endast en div tänkte jag att det var dags att dyka lite djupare i vissa CSS-tekniker. Jag ville begränsa mig till att endast använda ett HTML-element för att se vad jag kunde få fram. Jag började med att titta på vad man kan göra med gradient-backgrounds.</p>
+
+<h2>Gradient-backgrounds</h2>
+
+<p><img src="/images/content/posts/rita-med-css/gradients.jpg" alt="Gradients" /></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">1</span><span class="o">.</span>
+</span><span class='line'><span class="nc">.gradient-default</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="nb">purple</span> <span class="o">,</span><span class="nb">pink</span><span class="o">,</span> <span class="nb">white</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">2</span><span class="o">.</span>
+</span><span class='line'><span class="nc">.gradient-to-right</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">to</span> <span class="k">right</span><span class="o">,</span> <span class="nb">purple</span><span class="o">,</span> <span class="nb">pink</span><span class="o">,</span> <span class="nb">white</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">3</span><span class="o">.</span>
+</span><span class='line'><span class="nc">.gradient-to-top-right</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="o">,</span> <span class="nb">purple</span> <span class="o">,</span> <span class="nb">pink</span><span class="o">,</span> <span class="nb">white</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">4</span><span class="o">.</span>
+</span><span class='line'><span class="nc">.gradient-color-stop</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">-45</span><span class="n">deg</span><span class="o">,</span> <span class="nb">purple</span><span class="o">,</span> <span class="k">transparent</span> <span class="m">30</span><span class="o">%,</span> <span class="k">transparent</span> <span class="m">70</span><span class="o">%,</span> <span class="nb">purple</span><span class="p">)</span><span class="o">,</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="o">,</span> <span class="nb">purple</span><span class="o">,</span> <span class="nb">pink</span> <span class="m">10</span><span class="o">%,</span> <span class="nb">white</span> <span class="m">90</span><span class="o">%,</span> <span class="nb">purple</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">5</span><span class="o">.</span>
+</span><span class='line'><span class="nc">.gradient-radial</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">circle</span> <span class="n">at</span> <span class="k">top</span> <span class="k">right</span><span class="o">,</span> <span class="nb">white</span> <span class="m">30</span><span class="o">%,</span> <span class="nb">pink</span> <span class="m">30</span><span class="o">%,</span> <span class="nb">pink</span> <span class="m">60</span><span class="o">%,</span> <span class="nb">purple</span> <span class="m">60</span><span class="o">%</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">6</span><span class="o">.</span>
+</span><span class='line'><span class="nc">.gradient-radial-repeat</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">repeating</span><span class="o">-</span><span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">circle</span> <span class="n">at</span> <span class="k">top</span> <span class="k">right</span><span class="o">,</span> <span class="m">#fb7afb</span><span class="o">,</span> <span class="nb">purple</span> <span class="m">50px</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">7</span><span class="o">.</span>
+</span><span class='line'><span class="nc">.circle</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="nb">white</span><span class="o">,</span> <span class="nb">pink</span><span class="o">,</span> <span class="nb">purple</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>En av de första begränsningarna jag kände av var att man inte kan sätta en height på gradients, t.ex. att den bara syns mellan högra övre hörnet och 50px mot mitten. Alternativet är att man målar över delar av gradienten med en annan färg genom att lägga på ytterligare en linear-gradient med transparent-delar, som figur nr 4.</p>
+
+<h2>Box-shadow</h2>
+
+<p><img src="/images/content/posts/rita-med-css/eye.jpg" alt="Box shadow" /></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.eye</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin-top</span><span class="o">:</span> <span class="m">-75px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin-left</span><span class="o">:</span> <span class="m">-75px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">z-index</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#986c69</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">background</span><span class="o">:</span> <span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">circle</span><span class="o">,</span> <span class="m">#000</span> <span class="m">8</span><span class="o">%,</span> <span class="k">transparent</span> <span class="m">15</span><span class="o">%,</span> <span class="k">transparent</span> <span class="m">29</span><span class="o">%,</span> <span class="n">rgba</span><span class="p">(</span><span class="m">61</span><span class="o">,</span><span class="m">39</span><span class="o">,</span><span class="m">18</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">7</span><span class="p">)</span> <span class="m">33</span><span class="o">%,</span> <span class="k">transparent</span> <span class="m">38</span><span class="o">%</span><span class="p">)</span><span class="o">,</span> <span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">circle</span><span class="o">,</span> <span class="m">#543808</span><span class="o">,</span> <span class="m">#432501</span> <span class="m">25</span><span class="o">%,</span> <span class="m">#715432</span> <span class="m">35</span><span class="o">%,</span> <span class="nb">white</span> <span class="m">38</span><span class="o">%</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.eye</span><span class="nd">:after</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">-1px</span> <span class="m">-24px</span> <span class="m">1px</span> <span class="m">-7px</span> <span class="m">#eee</span><span class="o">,</span> <span class="m">0px</span> <span class="m">-25px</span> <span class="m">2px</span> <span class="m">-5px</span> <span class="m">#666</span><span class="o">,</span> <span class="m">-14px</span> <span class="m">-26px</span> <span class="m">1px</span> <span class="m">-9px</span> <span class="m">#eee</span><span class="o">,</span> <span class="m">-15px</span> <span class="m">-27px</span> <span class="m">2px</span> <span class="m">-7px</span> <span class="m">#666</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">z-index</span><span class="o">:</span> <span class="m">3</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">26px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">26px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Box-shadow känns helt magiskt när man börjar utforska det men det blev snabbt väldigt frustrerande. Jag trodde jag hade hittat det bästa sen SVG och om man inte begränsat sig till att endast använda ett HTML-element kan man säkert rita precis vad som helst med dessa två CSS-tekniker men jag insåg att jag endast hade tre former att röra mig med. Box-shadow kan ändra i storlek från sitt ursprungselement men den kan inte byta form så vill man bygga allt i en div har man diven, :after och :before att arbeta med.</p>
+
+<h2>Tre former, tre tekniker</h2>
+
+<p><img src="/images/content/posts/rita-med-css/ghost.jpg" alt="Shapes" /></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.ghost</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">160px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span> <span class="m">50</span><span class="o">%</span> <span class="m">0</span><span class="o">%</span> <span class="m">0</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.ghost</span><span class="nd">:before</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span> <span class="m">17px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">15px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">-15px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">0px</span> <span class="m">15px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">0px</span> <span class="m">-15px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">11px</span> <span class="m">-11px</span> <span class="m">0px</span> <span class="m">-2px</span> <span class="nb">green</span><span class="o">,</span> <span class="m">-11px</span> <span class="m">-11px</span> <span class="m">0px</span> <span class="m">-2px</span> <span class="nb">green</span><span class="o">,</span> <span class="m">-11px</span> <span class="m">11px</span> <span class="m">0px</span> <span class="m">-2px</span> <span class="nb">green</span><span class="o">,</span> <span class="m">11px</span> <span class="m">11px</span> <span class="m">0px</span> <span class="m">-2px</span> <span class="nb">green</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.ghost</span><span class="nd">:after</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">bottom</span><span class="o">:</span> <span class="m">-35px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">60px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="nb">red</span><span class="o">,</span><span class="m">120px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="nb">red</span><span class="o">,</span> <span class="m">49px</span> <span class="m">-82px</span> <span class="m">0px</span> <span class="m">-13px</span> <span class="nb">blue</span><span class="o">,</span> <span class="m">40px</span> <span class="m">-82px</span> <span class="m">0px</span> <span class="m">-5px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">120px</span> <span class="m">-82px</span> <span class="m">0px</span> <span class="m">-13px</span> <span class="nb">blue</span><span class="o">,</span> <span class="m">111px</span> <span class="m">-82px</span> <span class="m">0px</span> <span class="m">-5px</span> <span class="nb">white</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jag har i mina exempel valt att addera element för att rita men det går även att rita allt utom det man försöker få fram genom att subtrahera från en form istället. Jag tror att lär man sig bemästra de två sätten så kan man komma långt med tre former och tre tekniker.</p>
+
+<h2>Referenser</h2>
+
+<p><a href="http://a.singlediv.com/">A Single Div</a> <br/>
+<a href="http://css-tricks.com/css3-gradients/">CSS-tricks</a></p>
+
+		</div>
+	</article>
+	
+	
+		<article class="authorDescription">
+			<div>
+				
+					<img src="/images/profiles/sandra.jpg" alt="Alexandra Bjelkholm" />
+				
+			</div>
+			<div>
+				<h3>Alexandra Bjelkholm</h3>
+				<a href="mailto: alexandra@vinnovera.se">(alexandra@vinnovera.se)</a>
+				<p>Alexandra Bjelkholm jobbar med frontend på Vinnovera.</p>
+				<p>Vi är specialister på frontend-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+				<p><a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
+			</div>
+		</article>
+	
+	
+	
+	<div>
+		<div class="wrapper comments">
+			<h2>Kommentera</h2>
+			<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'vinnovera'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+		</div>
+	</div>
+	
+</section>
+
+  <footer role="contentinfo"><span class="adr">
+	<span class="street-address">Västerlånggatan 27</span>
+	<span class="postal-code">111 29</span>
+	<span class="locality">Stockholm</span>
+	<a class="map-link" href="https://www.google.com/maps/place/Vinnovera+AB/@59.3252213,18.0692205,17z/data=!3m1!4b1!4m2!3m1!1s0x465f77e26eb236e1:0x314b77ee3a5d5ea1">(Karta)</a>
+</span>
+
+<span class="tel">08 - 5000 10 90</span>
+<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a></footer>
+  <script src="/javascripts/components/mootools.js"></script>
+<script src="/javascripts/components/mootools-more.js"></script>
+<script src="/javascripts/components/jsoverlay.js"></script>
+<script src="/javascripts/vinnovera.js"></script>
+</body>
+</html>
