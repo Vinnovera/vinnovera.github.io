@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nyheter | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/nyheter/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-10-07T17:07:57+02:00</updated>
+  <updated>2014-10-08T10:33:21+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hej Per!]]></title>
+    <link href="http://vinnovera.se/blogg/2014/10/08/hej-per/"/>
+    <updated>2014-10-08T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/10/08/hej-per</id>
+    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/perlundgren.jpg" alt="Daniel" class="portrait" />
+I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more--> Eftersom vi redan har en Per på kontoret testar vi just nu smeknamn som bäst. Perka är frontend-utvecklare med huvudsakligt fokus på <strong>UX</strong> och <strong>grafisk design</strong>. Han har tidigare varit på MTV och efter det frilansat med webbutveckling och UX. Per L är även delaktig i att arrangera Norrköpings filmfestival.</p>
+
+<p>På Vinnovera kommer Lundgren att workshop:a fram bra lösningar tillsammans med våra kunder, kvalitetssäkra projekt och se till att vårt tekniska hantverk resulterar i <strong>bra användarupplevelser</strong>. Det känns kul att stärka upp UX-kompetensen och tillsammans med Perra kommer vi att leverera ännu bättre produkter till våra kunder.</p>
+
+<p><strong>Väääälkommen!</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hittat på nätet #7]]></title>
@@ -221,7 +235,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x61;&#x73;&#100;&#x40;&#x61;&#x73;&#100;&#46;&#97;&#x73;&#46;">&#97;&#115;&#100;&#x40;&#x61;&#x73;&#100;&#46;&#x61;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#97;&#115;&#x64;&#64;&#x61;&#x73;&#100;&#46;&#x61;&#115;&#x2e;">&#x61;&#x73;&#100;&#64;&#x61;&#115;&#x64;&#46;&#97;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -243,20 +257,6 @@ Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika vikt
 <li><a href="http://bl.ocks.org/mbostock/3808234">Pattern 3</a></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hej Daniel!]]></title>
-    <link href="http://vinnovera.se/blogg/2014/06/30/hej-daniel/"/>
-    <updated>2014-06-30T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/06/30/hej-daniel</id>
-    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/daniel.jpg" alt="Daniel" class="portrait" />
-Under våren har det varit fullt ös på Vinnovera och vi kände att det var dags få in ytterligare en duktig frontend-utvecklare<!--more-->, gärna med fokus på applikationsutveckling med JavaScript. Som genom ett trollslag hörde <strong>Daniel</strong> av sig och vi fann varandra. Han är en kreativ problemlösare med stor passion och nyfikenhet för nya tekniker. När Daniel inte kodar komplexa <strong>webb-applikationer</strong> gillar han att baka surdegsbröd (som man vid väl valda tillfällen kan få smaka på kontoret) och vässa sitt löpsteg.</p>
-
-<p>Daniel började hos oss i juni och kommer att jobba med ett stort applikationsprojekt åt en av våra hemliga kunder.</p>
-
-<p><strong>Väääälkommen!</strong></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Vi | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/vi/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-10-07T17:07:57+02:00</updated>
+  <updated>2014-10-08T10:33:21+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hej Per!]]></title>
+    <link href="http://vinnovera.se/blogg/2014/10/08/hej-per/"/>
+    <updated>2014-10-08T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/10/08/hej-per</id>
+    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/perlundgren.jpg" alt="Daniel" class="portrait" />
+I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more--> Eftersom vi redan har en Per på kontoret testar vi just nu smeknamn som bäst. Perka är frontend-utvecklare med huvudsakligt fokus på <strong>UX</strong> och <strong>grafisk design</strong>. Han har tidigare varit på MTV och efter det frilansat med webbutveckling och UX. Per L är även delaktig i att arrangera Norrköpings filmfestival.</p>
+
+<p>På Vinnovera kommer Lundgren att workshop:a fram bra lösningar tillsammans med våra kunder, kvalitetssäkra projekt och se till att vårt tekniska hantverk resulterar i <strong>bra användarupplevelser</strong>. Det känns kul att stärka upp UX-kompetensen och tillsammans med Perra kommer vi att leverera ännu bättre produkter till våra kunder.</p>
+
+<p><strong>Väääälkommen!</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Frontend-lunch på Vinnovera]]></title>
