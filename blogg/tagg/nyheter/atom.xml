@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nyheter | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/nyheter/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-10-08T10:33:21+02:00</updated>
+  <updated>2014-10-08T11:26:55+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hej Per!]]></title>
-    <link href="http://vinnovera.se/blogg/2014/10/08/hej-per/"/>
-    <updated>2014-10-08T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/10/08/hej-per</id>
+    <link href="http://vinnovera.se/blogg/2014/10/06/hej-per/"/>
+    <updated>2014-10-06T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/10/06/hej-per</id>
     <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/perlundgren.jpg" alt="Daniel" class="portrait" />
 I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more--> Eftersom vi redan har en Per på kontoret testar vi just nu smeknamn som bäst. Perka är frontend-utvecklare med huvudsakligt fokus på <strong>UX</strong> och <strong>grafisk design</strong>. Han har tidigare varit på MTV och efter det frilansat med webbutveckling och UX. Per L är även delaktig i att arrangera Norrköpings filmfestival.</p>
 
@@ -235,7 +235,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#97;&#115;&#x64;&#64;&#x61;&#x73;&#100;&#46;&#x61;&#115;&#x2e;">&#x61;&#x73;&#100;&#64;&#x61;&#115;&#x64;&#46;&#97;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#97;&#115;&#x64;&#64;&#97;&#115;&#x64;&#x2e;&#x61;&#115;&#46;">&#x61;&#x73;&#x64;&#64;&#97;&#x73;&#x64;&#x2e;&#x61;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>

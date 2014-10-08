@@ -4,7 +4,7 @@
   <title><![CDATA[Category: CSS | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/css/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-10-08T10:33:21+02:00</updated>
+  <updated>2014-10-08T11:26:55+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -30,7 +30,7 @@
 <p><img src="/images/content/posts/rita-med-css/gradients.jpg" alt="Gradients" /></p>
 
 <p>```css
-1.
+/<em> 1. </em>/
 .gradient-default {</p>
 
 <pre><code>background-image: linear-gradient(purple ,pink, white);
@@ -38,29 +38,55 @@
 
 <p>}</p>
 
-<ol>
-<li><p>.gradient-to-right {
-  background-image: linear-gradient(to right, purple, pink, white);
-}</p></li>
-<li><p>.gradient-to-top-right {
-  background-image: linear-gradient(45deg, purple , pink, white);
-}</p></li>
-<li><p>.gradient-color-stop {
-  background: linear-gradient(-45deg, purple, transparent 30%, transparent 70%, purple), linear-gradient(45deg, purple, pink 10%, white 90%, purple);
-}</p></li>
-<li><p>.gradient-radial {
-  background-image: radial-gradient(circle at top right, white 30%, pink 30%, pink 60%, purple 60%);
-}</p></li>
-<li><p>.gradient-radial-repeat {
-  background-image: repeating-radial-gradient(circle at top right, #fb7afb, purple 50px);
-}</p></li>
-<li><p>.circle {
-  background-image: radial-gradient(white, pink, purple);
-  border-radius: 50%;
-}
-```</p></li>
-</ol>
+<p>/<em> 2. </em>/
+.gradient-to-right {</p>
 
+<pre><code>background-image: linear-gradient(to right, purple, pink, white);
+</code></pre>
+
+<p>}</p>
+
+<p>/<em> 3. </em>/
+.gradient-to-top-right {</p>
+
+<pre><code>background-image: linear-gradient(45deg, purple , pink, white);
+</code></pre>
+
+<p>}</p>
+
+<p>/<em> 4. </em>/
+.gradient-color-stop {</p>
+
+<pre><code>background: linear-gradient(-45deg, purple, transparent 30%, transparent 70%, purple), linear-gradient(45deg, purple, pink 10%, white 90%, purple);
+</code></pre>
+
+<p>}</p>
+
+<p>/<em> 5. </em>/
+.gradient-radial {</p>
+
+<pre><code>background-image: radial-gradient(circle at top right, white 30%, pink 30%, pink 60%, purple 60%);
+</code></pre>
+
+<p>}</p>
+
+<p>/<em> 6. </em>/
+.gradient-radial-repeat {</p>
+
+<pre><code>background-image: repeating-radial-gradient(circle at top right, #fb7afb, purple 50px);
+</code></pre>
+
+<p>}</p>
+
+<p>/<em> 7. </em>/
+.circle {</p>
+
+<pre><code>background-image: radial-gradient(white, pink, purple);
+border-radius: 50%;
+</code></pre>
+
+<p>}
+```</p>
 
 <p>En av de första begränsningarna jag kände av var att man inte kan sätta en height på gradients, t.ex. att den bara syns mellan högra övre hörnet och 50px mot mitten. Alternativet är att man målar över delar av gradienten med en annan färg genom att lägga på ytterligare en linear-gradient med transparent-delar, som figur nr 4.</p>
 

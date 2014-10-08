@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-10-08T10:33:21+02:00</updated>
+  <updated>2014-10-08T11:26:55+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,20 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Hej Per!]]></title>
-    <link href="http://vinnovera.se/blogg/2014/10/08/hej-per/"/>
-    <updated>2014-10-08T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/10/08/hej-per</id>
-    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/perlundgren.jpg" alt="Daniel" class="portrait" />
-I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more--> Eftersom vi redan har en Per på kontoret testar vi just nu smeknamn som bäst. Perka är frontend-utvecklare med huvudsakligt fokus på <strong>UX</strong> och <strong>grafisk design</strong>. Han har tidigare varit på MTV och efter det frilansat med webbutveckling och UX. Per L är även delaktig i att arrangera Norrköpings filmfestival.</p>
-
-<p>På Vinnovera kommer Lundgren att workshop:a fram bra lösningar tillsammans med våra kunder, kvalitetssäkra projekt och se till att vårt tekniska hantverk resulterar i <strong>bra användarupplevelser</strong>. Det känns kul att stärka upp UX-kompetensen och tillsammans med Perra kommer vi att leverera ännu bättre produkter till våra kunder.</p>
-
-<p><strong>Väääälkommen!</strong></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Rita med CSS]]></title>
@@ -78,37 +64,37 @@ I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more-->
 <span class='line-number'>33</span>
 <span class='line-number'>34</span>
 <span class='line-number'>35</span>
-</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">1</span><span class="o">.</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="c">/* 1. */</span>
 </span><span class='line'><span class="nc">.gradient-default</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="nb">purple</span> <span class="o">,</span><span class="nb">pink</span><span class="o">,</span> <span class="nb">white</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="nt">2</span><span class="o">.</span>
+</span><span class='line'><span class="c">/* 2. */</span>
 </span><span class='line'><span class="nc">.gradient-to-right</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">to</span> <span class="k">right</span><span class="o">,</span> <span class="nb">purple</span><span class="o">,</span> <span class="nb">pink</span><span class="o">,</span> <span class="nb">white</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="nt">3</span><span class="o">.</span>
+</span><span class='line'><span class="c">/* 3. */</span>
 </span><span class='line'><span class="nc">.gradient-to-top-right</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="o">,</span> <span class="nb">purple</span> <span class="o">,</span> <span class="nb">pink</span><span class="o">,</span> <span class="nb">white</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="nt">4</span><span class="o">.</span>
+</span><span class='line'><span class="c">/* 4. */</span>
 </span><span class='line'><span class="nc">.gradient-color-stop</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">-45</span><span class="n">deg</span><span class="o">,</span> <span class="nb">purple</span><span class="o">,</span> <span class="k">transparent</span> <span class="m">30</span><span class="o">%,</span> <span class="k">transparent</span> <span class="m">70</span><span class="o">%,</span> <span class="nb">purple</span><span class="p">)</span><span class="o">,</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="o">,</span> <span class="nb">purple</span><span class="o">,</span> <span class="nb">pink</span> <span class="m">10</span><span class="o">%,</span> <span class="nb">white</span> <span class="m">90</span><span class="o">%,</span> <span class="nb">purple</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="nt">5</span><span class="o">.</span>
+</span><span class='line'><span class="c">/* 5. */</span>
 </span><span class='line'><span class="nc">.gradient-radial</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">circle</span> <span class="n">at</span> <span class="k">top</span> <span class="k">right</span><span class="o">,</span> <span class="nb">white</span> <span class="m">30</span><span class="o">%,</span> <span class="nb">pink</span> <span class="m">30</span><span class="o">%,</span> <span class="nb">pink</span> <span class="m">60</span><span class="o">%,</span> <span class="nb">purple</span> <span class="m">60</span><span class="o">%</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="nt">6</span><span class="o">.</span>
+</span><span class='line'><span class="c">/* 6. */</span>
 </span><span class='line'><span class="nc">.gradient-radial-repeat</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">repeating</span><span class="o">-</span><span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">circle</span> <span class="n">at</span> <span class="k">top</span> <span class="k">right</span><span class="o">,</span> <span class="m">#fb7afb</span><span class="o">,</span> <span class="nb">purple</span> <span class="m">50px</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="nt">7</span><span class="o">.</span>
+</span><span class='line'><span class="c">/* 7. */</span>
 </span><span class='line'><span class="nc">.circle</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">background-image</span><span class="o">:</span> <span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="nb">white</span><span class="o">,</span> <span class="nb">pink</span><span class="o">,</span> <span class="nb">purple</span><span class="p">);</span>
 </span><span class='line'>  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
@@ -258,6 +244,20 @@ I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more-->
 
 <p><a href="http://a.singlediv.com/">A Single Div</a> <br/>
 <a href="http://css-tricks.com/css3-gradients/">CSS-tricks</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hej Per!]]></title>
+    <link href="http://vinnovera.se/blogg/2014/10/06/hej-per/"/>
+    <updated>2014-10-06T10:27:15+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/10/06/hej-per</id>
+    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/perlundgren.jpg" alt="Daniel" class="portrait" />
+I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more--> Eftersom vi redan har en Per på kontoret testar vi just nu smeknamn som bäst. Perka är frontend-utvecklare med huvudsakligt fokus på <strong>UX</strong> och <strong>grafisk design</strong>. Han har tidigare varit på MTV och efter det frilansat med webbutveckling och UX. Per L är även delaktig i att arrangera Norrköpings filmfestival.</p>
+
+<p>På Vinnovera kommer Lundgren att workshop:a fram bra lösningar tillsammans med våra kunder, kvalitetssäkra projekt och se till att vårt tekniska hantverk resulterar i <strong>bra användarupplevelser</strong>. Det känns kul att stärka upp UX-kompetensen och tillsammans med Perra kommer vi att leverera ännu bättre produkter till våra kunder.</p>
+
+<p><strong>Väääälkommen!</strong></p>
 ]]></content>
   </entry>
   
@@ -563,7 +563,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x61;&#115;&#100;&#x40;&#97;&#x73;&#100;&#46;&#97;&#x73;&#x2e;">&#97;&#115;&#100;&#x40;&#x61;&#x73;&#100;&#x2e;&#97;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#97;&#x73;&#100;&#x40;&#97;&#x73;&#100;&#x2e;&#97;&#115;&#x2e;">&#x61;&#x73;&#100;&#64;&#x61;&#115;&#100;&#x2e;&#x61;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
