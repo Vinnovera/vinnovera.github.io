@@ -23,37 +23,37 @@ Efter att ha sett Lynn Fishers [exempel][0] på vad hon åstadkommit med endast 
 ![Gradients][00]  
 
 ```css
-1.
+/* 1. */
 .gradient-default {
 	background-image: linear-gradient(purple ,pink, white);
 }
 
-2.
+/* 2. */
 .gradient-to-right {
 	background-image: linear-gradient(to right, purple, pink, white);
 }
 
-3.
+/* 3. */
 .gradient-to-top-right {
 	background-image: linear-gradient(45deg, purple , pink, white);
 }
 
-4.
+/* 4. */
 .gradient-color-stop {
 	background: linear-gradient(-45deg, purple, transparent 30%, transparent 70%, purple), linear-gradient(45deg, purple, pink 10%, white 90%, purple);
 }
 
-5.
+/* 5. */
 .gradient-radial {
 	background-image: radial-gradient(circle at top right, white 30%, pink 30%, pink 60%, purple 60%);
 }
 
-6.
+/* 6. */
 .gradient-radial-repeat {
 	background-image: repeating-radial-gradient(circle at top right, #fb7afb, purple 50px);
 }
 
-7.
+/* 7. */
 .circle {
 	background-image: radial-gradient(white, pink, purple);
 	border-radius: 50%;
