@@ -17,12 +17,14 @@ layout: default
 					<span>{{ post.author }}</span> 
 				{% endif %}
 				| <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='year'>%Y</span>-<span class='month'>%m</span>-<span class='day'>%d</span>"}}</time>
-				|  
-			  {% if post %}
-			    {{ post.categories | category_links }}
-			  {% else %}
-			    {{ page.categories | category_links }}
-			  {% endif %}
+				|
+				<span class="categories">
+					{% if post %}
+						{{ post.categories | category_links }}
+					{% else %}
+						{{ page.categories | category_links }}
+					{% endif %}
+				</span>
 			</p>
 			{% endunless %}
 		</header>
