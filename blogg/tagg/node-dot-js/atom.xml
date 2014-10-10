@@ -4,7 +4,7 @@
   <title><![CDATA[Category: node.js | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/node-dot-js/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-10-10T15:14:40+02:00</updated>
+  <updated>2014-10-10T15:18:02+02:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,7 @@
     <link href="http://vinnovera.se/blogg/2014/10/10/nordicjs-lightning-talk/"/>
     <updated>2014-10-10T11:00:00+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/10/10/nordicjs-lightning-talk</id>
-    <content type="html"><![CDATA[<p>I slutet på dag två på <a href="http://nordicjs.com/">Nordic.js</a> höll jag ett 5min långt lightning talk om RaspberryPi, node.js och en luftvärmepump.<!--more-->
+    <content type="html"><![CDATA[<p>I slutet av dag två på <a href="http://nordicjs.com/">Nordic.js</a> höll jag ett 5min långt lightning talk om RaspberryPi, node.js och en luftvärmepump.<!--more-->
 Projektet finns på <a href="https://github.com/Vinnovera/ac-monitor">GitHub</a></p>
 
 <div class="video youtube">
