@@ -12,7 +12,7 @@ authorMail: jakob@vinnovera.se
 
 ---
 
-I slutet på dag två på <a href="http://nordicjs.com/">Nordic.js</a> höll jag ett 5min långt lightning talk om RaspberryPi, node.js och en luftvärmepump.<!--more-->
+I slutet av dag två på <a href="http://nordicjs.com/">Nordic.js</a> höll jag ett 5min långt lightning talk om RaspberryPi, node.js och en luftvärmepump.<!--more-->
 Projektet finns på <a href="https://github.com/Vinnovera/ac-monitor">GitHub</a>
 
 <div class="video youtube">
