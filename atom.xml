@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-10-10T15:18:02+02:00</updated>
+  <updated>2014-11-07T15:43:18+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt]]></title>
+    <link href="http://vinnovera.se/blogg/2014/11/07/svg-css-listor/"/>
+    <updated>2014-11-07T14:02:33+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/11/07/svg-css-listor</id>
+    <content type="html"><![CDATA[<p>Coola CSS-effekter, tillgängliga SVG-sprites i IE8, regler för kinesiskt Internet och hur känns det egentligen att sitta och stirra på klockan?</p>
+
+<!--more-->
+
+
+<h2>svg4everybody</h2>
+
+<p><a href="https://github.com/jonathantneal/svg4everybody">Svg for everybody</a><br/>
+SVG for Everybody gör att browsers som egentligen inte stödjer externa SVG spritemaps kan använda det.</p>
+
+<h2>Vägledning för webbutveckling</h2>
+
+<p><a href="http://webbriktlinjer.se/riktlinjer/">Vägledning för webbutveckling</a></p>
+
+<h2>Shape Morphing in CSS</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/svg-css-listor/bubbles.gif" alt="Bubbles" /><br/>
+<a href="http://css-tricks.com/shape-blobbing-css/">Shape Blobbing in CSS</a><br/>
+<a href="http://codepen.io/yoksel/pen/JnALF">Gif animation + CSS animation + Blend modes</a><br/>
+Genom att använda både blur och contrast filter kan man få en kvicksilvereffekt på element. Blandar man istället en gif, css och Blend modes kan man få en animerad schackrutig fågel. Fungerar snart i alla browsers utom IE.</p>
+
+<h2>Notes From Behind the Firewall: The State of Web Design in China</h2>
+
+<p><a href="http://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281">The State of Web Design in China</a><br/>
+Internet är inte lika fritt för alla att använda som de vill. I Kina får endast företag med en giltig kinesisk företagslicens hostas på kinesiska servrar. Det kontrolleras genom att alla kinesiska webbsidor måste registrera ett ICP-nummer som hosten frågar efter innan du kan skapa ett konto.</p>
+
+<h2>UX Directory</h2>
+
+<p><a href="http://abetteruserexperience.com/ux-directory/">UX Directory</a><br/>
+En lista över UX verktyg.</p>
+
+<h2>Walkway.js</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/svg-css-listor/ps4.jpg" alt="PS4" /><br/>
+<a href="https://github.com/ConnorAtherton/walkway">walkway</a><br/>
+<a href="http://www.polygon.com/a/ps4-review">ps4-review</a><br/>
+Ett lätt sätt att animera simplare SVG-element. Fungerar för tillfället endast för path- och lineelement.</p>
+
+<h2>Mobile Design Details: Avoid The Spinner</h2>
+
+<p><a href="http://www.lukew.com/ff/entry.asp?1797">Avoid The Spinner</a><br/>
+Att sitta och titta på klockan gör att tiden går långsammare. Tänk på om det kan finnas ett bättre sätt att visuellt visa att data laddas in utan att visa en spinner.</p>
+
+<h2>Wave Report</h2>
+
+<p><a href="http://wave.webaim.org/report#/vinnovera.se">Wave Report</a><br/>
+Web Accessibility Tool</p>
+
+<h2>Dagen då Vinnovera blev ett riktigt kontor</h2>
+
+<p><a href="https://www.facebook.com/video.php?v=10154835762895714">Vinnovera</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Nordic.js lightning talk]]></title>
@@ -578,7 +637,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x61;&#115;&#x64;&#64;&#x61;&#x73;&#x64;&#46;&#x61;&#x73;&#46;">&#97;&#x73;&#x64;&#x40;&#97;&#115;&#x64;&#x2e;&#x61;&#x73;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#97;&#115;&#x64;&#x40;&#x61;&#x73;&#100;&#46;&#97;&#x73;&#46;">&#97;&#x73;&#x64;&#x40;&#97;&#x73;&#100;&#x2e;&#97;&#x73;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -987,55 +1046,6 @@ GitHub är i lanseringstagen för sin nya textediter Atom, som kommer att vara b
 <p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-1/vinnovera.jpg" alt="DHTMLConf" />
 <a href="http://www.vinnovera.se/">Vinnovera</a><br/>
 Nån webbyrå har gjort en webbplats åt sig själva.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Inflyttningspresenten]]></title>
-    <link href="http://vinnovera.se/blogg/2014/02/28/inflyttningspresent-till-earth-people/"/>
-    <updated>2014-02-28T11:28:22+01:00</updated>
-    <id>http://vinnovera.se/blogg/2014/02/28/inflyttningspresent-till-earth-people</id>
-    <content type="html"><![CDATA[<p>Våra vänner på <a href="http://earthpeople.se/">earth people</a> har flyttat till nytt kontor i Gamla Stan. Eftersom <a href="https://twitter.com/fjallstrom">Peder</a> hos dem rantat om hur ointressanta 3D-skrivare är, så kände vi att en 3D-utskriven inflyttningspresent var på sin plats.</p>
-
-<!--more-->
-
-
-<h2>Bygget</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/inflyttningspresent-till-earth-people/bed.jpg" alt="Printbädd" />
-Utskriven logotyp i genomskinlig PLA</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/inflyttningspresent-till-earth-people/prototyper.jpg" alt="Prototyper" />
-Många versioner blev det</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/inflyttningspresent-till-earth-people/breadboard.jpg" alt="Breadboard-prototyp" />
-Breadboard-prototyp med RGB-lysdioder drivna av en Arduino</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/inflyttningspresent-till-earth-people/elektronik.jpg" alt="Elektronik" />
-Elektroniken nedskalad med ett ATtiny45-chip</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/inflyttningspresent-till-earth-people/lysdioder.jpg" alt="Lysdioder" />
-Lysdioder på ovansidan av foten</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/inflyttningspresent-till-earth-people/undersida.jpg" alt="Undersida" />
-Undersidan och locket till foten med Vinnoveras logga</p>
-
-<h2>Resultatet</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/inflyttningspresent-till-earth-people/farger.jpg" alt="Färger" /></p>
-
-<div class="video youtube">
-    <iframe width="640" height="360" src="http://vinnovera.se//www.youtube.com/embed/L3gmu9un4Ic?rel=0&autohide=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
-<h2>Mer!</h2>
-
-<ul>
-<li><a href="http://www.thingiverse.com/thing:260050">3D-modeller på Thingiverse</a></li>
-<li><a href="http://www.instructables.com/id/Attiny-RGB-Mood-Light/?ALLSTEPS">Instructables &ndash; Attiny RGB Mood Light</a></li>
-</ul>
-
 ]]></content>
   </entry>
   
