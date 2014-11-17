@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nyheter | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/nyheter/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-11-07T15:43:18+01:00</updated>
+  <updated>2014-11-17T16:39:01+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt - hittat på nätet #8]]></title>
+    <link href="http://vinnovera.se/blogg/2014/11/07/svg-css-listor/"/>
+    <updated>2014-11-07T14:02:33+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/11/07/svg-css-listor</id>
+    <content type="html"><![CDATA[<p>Coola CSS-effekter, tillgängliga SVG-sprites i IE8, regler för kinesiskt Internet och hur känns det egentligen att sitta och stirra på klockan?</p>
+
+<!--more-->
+
+
+<h2>svg4everybody</h2>
+
+<p><a href="https://github.com/jonathantneal/svg4everybody">Svg for everybody</a><br/>
+SVG for Everybody gör att browsers som egentligen inte stödjer externa SVG spritemaps kan använda det.</p>
+
+<h2>Vägledning för webbutveckling</h2>
+
+<p><a href="http://webbriktlinjer.se/riktlinjer/">Vägledning för webbutveckling</a></p>
+
+<h2>Shape Morphing in CSS</h2>
+
+<p><img src="/images/content/posts/svg-css-listor/bubbles.gif" alt="Bubbles" /><br/>
+<a href="http://css-tricks.com/shape-blobbing-css/">Shape Blobbing in CSS</a><br/>
+<a href="http://codepen.io/yoksel/pen/JnALF">Gif animation + CSS animation + Blend modes</a><br/>
+Genom att använda både blur och contrast filter kan man få en kvicksilvereffekt på element. Blandar man istället en gif, css och Blend modes kan man få en animerad schackrutig fågel. Fungerar snart i alla browsers utom IE.</p>
+
+<h2>Notes From Behind the Firewall: The State of Web Design in China</h2>
+
+<p><a href="http://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281">The State of Web Design in China</a><br/>
+Internet är inte lika fritt för alla att använda som de vill. I Kina får endast företag med en giltig kinesisk företagslicens hostas på kinesiska servrar. Det kontrolleras genom att alla kinesiska webbsidor måste registrera ett ICP-nummer som hosten frågar efter innan du kan skapa ett konto.</p>
+
+<h2>UX Directory</h2>
+
+<p><a href="http://abetteruserexperience.com/ux-directory/">UX Directory</a><br/>
+En lista över UX verktyg.</p>
+
+<h2>Walkway.js</h2>
+
+<p><img src="/images/content/posts/svg-css-listor/ps4.jpg" alt="PS4" /><br/>
+<a href="https://github.com/ConnorAtherton/walkway">walkway</a><br/>
+<a href="http://www.polygon.com/a/ps4-review">ps4-review</a><br/>
+Ett lätt sätt att animera simplare SVG-element. Fungerar för tillfället endast för path- och lineelement.</p>
+
+<h2>Mobile Design Details: Avoid The Spinner</h2>
+
+<p><a href="http://www.lukew.com/ff/entry.asp?1797">Avoid The Spinner</a><br/>
+Att sitta och titta på klockan gör att tiden går långsammare. Tänk på om det kan finnas ett bättre sätt att visuellt visa att data laddas in utan att visa en spinner.</p>
+
+<h2>Wave Report</h2>
+
+<p><a href="http://wave.webaim.org/report#/vinnovera.se">Wave Report</a><br/>
+Web Accessibility Tool</p>
+
+<h2>Dagen då Vinnovera blev ett riktigt kontor</h2>
+
+<p><a href="https://www.facebook.com/video.php?v=10154835762895714">Vinnovera</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hej Per!]]></title>
@@ -194,69 +253,6 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 <p>Harald kommer att sitta med ett uppdrag åt <strong>Stockholmsmässan</strong> under hösten och Mico kommer att jobba med <strong>A/B-test</strong> åt en av våra hemliga kunder.</p>
 
 <p><strong>Väääälkomna!</strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hittat på nätet #5]]></title>
-    <link href="http://vinnovera.se/blogg/2014/07/04/hittat-pa-natet-number-5/"/>
-    <updated>2014-07-04T14:01:25+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/07/04/hittat-pa-natet-number-5</id>
-    <content type="html"><![CDATA[<p>Bland avancerad CSS och D3, också, varför är internet fult i Norge?</p>
-
-<!--more-->
-
-
-<h2>Kul med CSS</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-5/808cube.jpg" alt="808 Cube" />
-<a href="http://808cube.com/">808 Cube</a><br/>
-En mashup av Rolands ikoniska trummaskinen TR-808 och Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.</p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-5/trigometry.jpg" alt="Icosidodecahedron" />
-<a href="http://thesassway.com/advanced/inverse-trigonometric-functions-with-sass">Inverse trigonometric functions with Sass</a><br/>
-Jag kan inte stött på en situation då jag behövt använda sekans, cosekans eller cotangens i Sass. Men när den dagen kommer har den fantastiska Ana Tudor lösningen.</p>
-
-<h2>Hur stor är en glyph?</h2>
-
-<p>I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glyphen, och det är de boxarna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.</p>
-
-<p><a href="http://www.jasondavies.com/wordcloud/about/">How the Word Cloud Generator Works</a><br/>
-För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas-element där pixel-data räknas ut.</p>
-
-<p><a href="http://nodebox.github.io/opentype.js/index.html">opentype.js</a><br/>
-Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till och med modifiera dom.</p>
-
-<h2>Grävande journalistik från DN Kultur</h2>
-
-<p><a href="http://www.dn.se/kultur-noje/varfor-ar-internet-i-norge-kjempefult/">Varför är Internet i Norge kjempefult?</a><br/>
-Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsning ändå.</p>
-
-<h2>Bra att ha</h2>
-
-<p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#97;&#115;&#x64;&#64;&#97;&#x73;&#x64;&#x2e;&#x61;&#115;&#x2e;">&#x61;&#115;&#100;&#x40;&#x61;&#115;&#x64;&#x2e;&#x61;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
-
-<p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
-Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
-
-<p><a href="https://github.com/blog/1845-psd-viewing-diffing">PSD Viewing &amp; Diffing</a><br/>
-GitHub stödjer nu visning och diffning av PSD-filer.</p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-5/w6ehv.png" alt="Faraday cage" /><br/>
-<a href="http://stackoverflow.com/questions/4808433/is-it-possible-to-disable-the-network-in-ios-simulator/13831212#13831212">Is it possible to disable the network in iOS Simulator?</a><br/>
-Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens uppkoppling. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.</p>
-
-<h3>General Update Pattern i D3</h3>
-
-<p>Patterns som borde vara obligatoriska när du använder D3.js</p>
-
-<ul>
-<li><a href="http://bl.ocks.org/mbostock/3808218">Pattern 1</a></li>
-<li><a href="http://bl.ocks.org/mbostock/3808221">Pattern 2</a></li>
-<li><a href="http://bl.ocks.org/mbostock/3808234">Pattern 3</a></li>
-</ul>
-
 ]]></content>
   </entry>
   
