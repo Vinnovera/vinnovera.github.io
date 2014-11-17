@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "SVG, CSS, listor och allt annat viktigt"
+title: "SVG, CSS, listor och allt annat viktigt - hittat på nätet #8"
 date: 2014-11-07 14:02:33 +0100
 comments: true
-categories: [SVG, CSS]
+categories: [SVG, CSS, Länkar, Nyheter, Hittat]
 author: Alexandra Bjelkholm
 authorDescription: Alexandra Bjelkholm jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/sandra.jpg
