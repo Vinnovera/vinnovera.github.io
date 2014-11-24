@@ -49,9 +49,6 @@ Att sitta och titta på klockan gör att tiden går långsammare. Tänk på om d
 [Wave Report][8]  
 Web Accessibility Tool
 
-##Dagen då Vinnovera blev ett riktigt kontor  
-[Vinnovera][9]  
-
 
 
 [0]: https://github.com/jonathantneal/svg4everybody
@@ -63,7 +60,6 @@ Web Accessibility Tool
 [6]: http://www.polygon.com/a/ps4-review
 [7]: http://www.lukew.com/ff/entry.asp?1797
 [8]: http://wave.webaim.org/report#/vinnovera.se
-[9]: https://www.facebook.com/video.php?v=10154835762895714
 [10]: https://github.com/ConnorAtherton/walkway
 
 [00]: /images/content/posts/svg-css-listor/bubbles.gif
