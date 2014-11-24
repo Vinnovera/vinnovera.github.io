@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Hej Max!"
+date: 2014-11-17 10:27:15 +0200
+comments: true
+categories: [Nyheter, Vi]
+author: Björn-Olle Rylander
+authorDescription: Björn-Olle är VD på Vinnovera.
+authorImage: /images/profiles/b-o.jpg
+authorTel: 070-171 67 27
+authorMail: bjorn-olle@vinnovera.se
+---
+<img src="/images/profiles/max.jpg" alt="Max" class="portrait" />
+Max är en frontend-utvecklare med en backend-utvecklares hjärna.<!--more--> Frankensteins monster tänker ni – men det betyder att han skriver bra kod och bygger lösningar som våra kunder (och deras användare) blir glada av. Sånt som vi på Vinnovera gillar helt enkelt! När han inte jobbar med frontend gillar Max att meka med bilar. En bil-mek med en frontend-utvecklares hjärna? Vi är iallafall glada att ha med Max i gänget!
+
+Max kommer, tillsammans med Gustav, att jobba med en av våra hemliga kunders e-handel. Han kommer även att drömma om en Dodge Charger -68.
+
+**Väääälkommen!**
