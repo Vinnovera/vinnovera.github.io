@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nyheter | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/nyheter/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-11-17T16:39:01+01:00</updated>
+  <updated>2014-11-24T12:29:18+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hej Max!]]></title>
+    <link href="http://vinnovera.se/blogg/2014/11/17/hej-max/"/>
+    <updated>2014-11-17T09:27:15+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/11/17/hej-max</id>
+    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/max.jpg" alt="Max" class="portrait" />
+Max är en frontend-utvecklare med en backend-utvecklares hjärna.<!--more--> Frankensteins monster tänker ni – men det betyder att han skriver bra kod och bygger lösningar som våra kunder (och deras användare) blir glada av. Sånt som vi på Vinnovera gillar helt enkelt! När han inte jobbar med frontend gillar Max att meka med bilar. En bil-mek med en frontend-utvecklares hjärna? Vi är iallafall glada att ha med Max i gänget!</p>
+
+<p>Max kommer, tillsammans med Gustav, att jobba med en av våra hemliga kunders e-handel. Han kommer även att drömma om en Dodge Charger -68.</p>
+
+<p><strong>Väääälkommen!</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt - hittat på nätet #8]]></title>
@@ -65,10 +79,6 @@ Att sitta och titta på klockan gör att tiden går långsammare. Tänk på om d
 
 <p><a href="http://wave.webaim.org/report#/vinnovera.se">Wave Report</a><br/>
 Web Accessibility Tool</p>
-
-<h2>Dagen då Vinnovera blev ett riktigt kontor</h2>
-
-<p><a href="https://www.facebook.com/video.php?v=10154835762895714">Vinnovera</a></p>
 ]]></content>
   </entry>
   
@@ -77,7 +87,7 @@ Web Accessibility Tool</p>
     <link href="http://vinnovera.se/blogg/2014/10/06/hej-per/"/>
     <updated>2014-10-06T10:27:15+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/10/06/hej-per</id>
-    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/perlundgren.jpg" alt="Daniel" class="portrait" />
+    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/profiles/perlundgren.jpg" alt="Max" class="portrait" />
 I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more--> Eftersom vi redan har en Per på kontoret testar vi just nu smeknamn som bäst. Perka är frontend-utvecklare med huvudsakligt fokus på <strong>UX</strong> och <strong>grafisk design</strong>. Han har tidigare varit på MTV och efter det frilansat med webbutveckling och UX. Per L är även delaktig i att arrangera Norrköpings filmfestival.</p>
 
 <p>På Vinnovera kommer Lundgren att workshop:a fram bra lösningar tillsammans med våra kunder, kvalitetssäkra projekt och se till att vårt tekniska hantverk resulterar i <strong>bra användarupplevelser</strong>. Det känns kul att stärka upp UX-kompetensen och tillsammans med Perra kommer vi att leverera ännu bättre produkter till våra kunder.</p>
@@ -234,25 +244,6 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 <p><img src="/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" /></p>
 
 <p><img src="/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hej Harald och Mico!]]></title>
-    <link href="http://vinnovera.se/blogg/2014/09/01/hej-harald-och-mico/"/>
-    <updated>2014-09-01T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/09/01/hej-harald-och-mico</id>
-    <content type="html"><![CDATA[<p><strong>Harald</strong> och <strong>Mico</strong> började i augusti som frontend-utvecklare på Vinnovera. Kul tycker vi!<!--more--></p>
-
-<p><img src="http://vinnovera.se/images/profiles/harald.jpg" alt="Harald" class="portrait" />
-<strong>Harald</strong> har mångårig erfarenhet av interaktiva spel och lärohjälpmedel. På senare år har fokus legat på webbgränssnitt och frontend-utveckling. Med dessa kunskaper har Harald god förståelse för såväl interaktion och grafiska gränssnitt, samt hur man utvecklar dessa rent tekniskt. Utöver sin kärlek till frontend har han en musikstudio på söder där bland annat hans triphop-projekt &ldquo;Skuld&rdquo; håller hus.</p>
-
-<p><img src="http://vinnovera.se/images/profiles/michael.jpg" alt="Michael" class="portrait" />
-<strong>Michael a.k.a. Mico</strong> har jobbat med webbutveckling sedan 1997 och har stor erfarenhet och kunskap av alla beståndsdelar i ett webbprojekt, från backend till frontend. Han har bland mycket annat startat och drivit hosting-företaget MrFriday. Frontend är dock det som ligger honom varmast om hjärtat. Mico driver även tidskriften &ldquo;Hilfe&rdquo; och reser till Japan så fort han får möjlighet.</p>
-
-<p>Harald kommer att sitta med ett uppdrag åt <strong>Stockholmsmässan</strong> under hösten och Mico kommer att jobba med <strong>A/B-test</strong> åt en av våra hemliga kunder.</p>
-
-<p><strong>Väääälkomna!</strong></p>
 ]]></content>
   </entry>
   
