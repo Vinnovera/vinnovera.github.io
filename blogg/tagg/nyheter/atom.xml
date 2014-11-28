@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nyheter | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/nyheter/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-11-24T12:29:18+01:00</updated>
+  <updated>2014-11-28T14:00:44+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -28,7 +28,7 @@ Max är en frontend-utvecklare med en backend-utvecklares hjärna.<!--more--> Fr
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt - hittat på nätet #8]]></title>
+    <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt - hittat på nätet #10]]></title>
     <link href="http://vinnovera.se/blogg/2014/11/07/svg-css-listor/"/>
     <updated>2014-11-07T14:02:33+01:00</updated>
     <id>http://vinnovera.se/blogg/2014/11/07/svg-css-listor</id>
@@ -48,7 +48,7 @@ SVG for Everybody gör att browsers som egentligen inte stödjer externa SVG spr
 
 <h2>Shape Morphing in CSS</h2>
 
-<p><img src="/images/content/posts/svg-css-listor/bubbles.gif" alt="Bubbles" /><br/>
+<p><img src="/images/content/posts/hittat-pa-natet-number-10/bubbles.gif" alt="Bubbles" /><br/>
 <a href="http://css-tricks.com/shape-blobbing-css/">Shape Blobbing in CSS</a><br/>
 <a href="http://codepen.io/yoksel/pen/JnALF">Gif animation + CSS animation + Blend modes</a><br/>
 Genom att använda både blur och contrast filter kan man få en kvicksilvereffekt på element. Blandar man istället en gif, css och Blend modes kan man få en animerad schackrutig fågel. Fungerar snart i alla browsers utom IE.</p>
@@ -65,7 +65,7 @@ En lista över UX verktyg.</p>
 
 <h2>Walkway.js</h2>
 
-<p><img src="/images/content/posts/svg-css-listor/ps4.jpg" alt="PS4" /><br/>
+<p><img src="/images/content/posts/hittat-pa-natet-number-10/ps4.jpg" alt="PS4" /><br/>
 <a href="https://github.com/ConnorAtherton/walkway">walkway</a><br/>
 <a href="http://www.polygon.com/a/ps4-review">ps4-review</a><br/>
 Ett lätt sätt att animera simplare SVG-element. Fungerar för tillfället endast för path- och lineelement.</p>
@@ -93,6 +93,62 @@ I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more-->
 <p>På Vinnovera kommer Lundgren att workshop:a fram bra lösningar tillsammans med våra kunder, kvalitetssäkra projekt och se till att vårt tekniska hantverk resulterar i <strong>bra användarupplevelser</strong>. Det känns kul att stärka upp UX-kompetensen och tillsammans med Perra kommer vi att leverera ännu bättre produkter till våra kunder.</p>
 
 <p><strong>Väääälkommen!</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trixiga personer och trixiga trix - hittat på nätet #8]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/26/trixiga-personer-och-trixiga-trix/"/>
+    <updated>2014-09-26T14:03:19+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/26/trixiga-personer-och-trixiga-trix</id>
+    <content type="html"><![CDATA[<p>För tidigt för halloween men så här trixigt har det inte varit på länge</p>
+
+<!--more-->
+
+
+<h2>Mycket jobb, och det är ju tufft.</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-8/sapporo.jpg" alt="how-to-compress-a-png-like-a-jpeg" /><br/>
+<a href="http://peterhrynkow.com/how-to-compress-a-png-like-a-jpeg">How to compress a png like a jpeg</a><br/>
+Det är alltid kul med personer som är lite trixiga och gör allt för att minimera laddtider. Metoden är kanske inte så användbar i sitt nuvarande skick men om någon sätter ihop en servermodul eller plugin till Photoshop för att trycka ut färdigmaskade SVG-bundlesså kan det nog bli något.</p>
+
+<h2>Grid layout!</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-8/grid_ie.gif" alt="Grid layout" /><br/>
+<a href="http://www.quirksmode.org/css/grid.html">Grid layout</a><br/>
+En del på kontoret var eld och lågor med andra såg framför sig en vända till med &ldquo;table-design&rdquo;. Vi får se var var vi hamnar.</p>
+
+<h2>Kanån?</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-8/doom.png" alt="Hacker exploits printer Web interface to install, run Doom" /><br/>
+<a href="http://arstechnica.com/security/2014/09/hacker-exploits-printer-web-interface-to-install-run-doom/">Hacker exploits printer Web interface to install, run Doom</a><br/>
+På tal om trixiga personer så kan man använda sina skills på många olika sätt. Varför inte haxa in Doom på kontorets Canon-skrivare. Gunilla på ekonomiavdelningen kanske inte är lika imponerad som IT-avdelningen. Kanån ta bort den här gubben??!!</p>
+
+<h2>Apple älskar HTML5</h2>
+
+<p><a href="http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8">Apple Shows Love for HTML5 with iOS 8</a><br/>
+Det spekulerades innan Apples senaste väckelsemöte om de verkligen skulle köra Flash men det visade sig att de fortsatte på HTML5-spåret. Apple älskar HTML5, och det är ju bra för oss. Här är lite sköna specar för att backa upp det:</p>
+
+<h2>Mera trix</h2>
+
+<p><a href="http://svgcircus.com/">SVG Circus</a><br/>
+Är du mindre tålmodig men vill ändå se hur det hoppar och skuttar? Dra i reglagen tills du är nöjd och spara ner en färdig custom made SVG-animation att pryda din hemsida med.</p>
+
+<h2>Få styr på saker och ting</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-8/cylon.png" alt="Cylonjs" /><br/>
+<a href="http://cylonjs.com/">Cylonjs</a><br/>
+Enlighet bland scripten är ju najs så varför inte styra även din robot med Javascript.</p>
+
+<h2>Semiautomatierat dragspelande, guldägg eller grammis?</h2>
+
+<p><a href="https://www.facebook.com/video.php?v=265820276890574&amp;set=vb.100003878107065&amp;type=2&amp;theater">Semiautomatierat dragspel</a><br/>
+Eftersom huvudpersonen ser ut som en Hipster från södermalm kan det röra sig om ett påhitt från någon kreativ reklambyrå med lite väl fria tyglar. Vi får se på årets guldäggsgala om Leoneed Antonov i sälva verket heter Christopher och bor i SOFO.</p>
+
+<h2>Förnyelsebar energi</h2>
+
+<p><a href="http://www.crockford.com/">Douglas Crockford&rsquo;s Wrrrld Wide Web</a><br/>
+Och vi fortsätter på samma spår. Svårt att säga om den här sidan är på riktigt med tanke på att designen inte uppdaterats det här årtusendet trots att herr Crockford själv är så mycket för att förnya. Men med en domän registrerad 1998, lutar det åt att det är äkta vara och att det bara är designen som inte är utsatt för ständig förnyelse. Vem har tid för design när det finns kod att förnya?</p>
 ]]></content>
   </entry>
   
@@ -146,104 +202,6 @@ Velocity.js ersätter jQuery&rsquo;s animate med bättre prestanda.</p>
 <p><img src="/images/content/posts/hittat-pa-natet-number-7/uselessweb.jpg" alt="The useless web" /><br/>
 <a href="http://www.theuselessweb.com/">The useless web</a><br/>
 Bra site när du har tråkigt!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hittat på nätet #6]]></title>
-    <link href="http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6/"/>
-    <updated>2014-09-01T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6</id>
-    <content type="html"><![CDATA[<p>En sommar full med JavaScript, musik, verktyg, ramverk och folk som byter åsikter!</p>
-
-<!--more-->
-
-
-<h2>Simpelt byggda med få element</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/singlediv.jpg" alt="A Single Div" />
-<a href="http://a.singlediv.com/">A Single Div</a><br/>
-<a href="http://nicolasgallagher.com/pure-css-gui-icons/demo/#non">Pure CSS GUI icons</a><br/>
-Två exempel på vad man kan åstakomma med minimal kod.</p>
-
-<h2>Patterns för stora JavaScript-applikationer</h2>
-
-<p><a href="http://addyosmani.com/largescalejavascript/">Patterns For Large-Scale JavaScript Application Architecture</a><br/>
-Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, mediator och fasader.</p>
-
-<h2>Åsikter om JS-ramverk</h2>
-
-<p><a href="http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks">Opinionated Rundown of JS Frameworks</a><br/>
-Henrik Joreteg går igenom för- och nackdelar med några populära JavaScript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
-
-<h2>Service Worker</h2>
-
-<p><a href="http://jakearchibald.com/2014/service-worker-first-draft/">Service Worker &ndash; first draft published</a><br/>
-Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla &ldquo;Service Worker&rdquo; som bl.a. gör det möjligt att köra skript innan en sida existerar. Det gör det möjligt att skapa mer applikationslika webbsidor.</p>
-
-<h2>r2d3</h2>
-
-<p><a href="https://github.com/mhemesath/r2d3/">r2d3</a>  <br/>
-IE8 är kanske inte vår favoritwebbläsare, men nu har vi iallafall bättre möjligheter att jobba med datavisualisering där också.</p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /><br/>
-Fler spännande korrelationer: <a href="http://tylervigen.com/">Spurious Correlations</a></p>
-
-<h2>smallworld.js</h2>
-
-<p><a href="http://mikefowler.me/smallworld.js/">smallworld.js</a><br/>
-smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel kartöversikt utan tunga bibliotek.</p>
-
-<h2>ish. 2.0</h2>
-
-<p><a href="http://bradfrostweb.com/demo/ish/">ish. 2.0</a><br/>
-Verktyg för att testa webbsidor i alla storlekar.
-<img src="/images/content/posts/hittat-pa-natet-number-6/ish-manual.gif" alt="ish manual" /></p>
-
-<h2>Apfy me</h2>
-
-<p><a href="http://www.apfy.me/">apfy.me</a><br/>
-1. Hämta en sida och få HTML-svaret som XML<br/>
-2. Formatera XML output:en med XSLT<br/>
-3. Validera output med XSD<br/>
-4. Spara ner som ett API när du är klar!</p>
-
-<h2>Hejdå Node.js</h2>
-
-<p><a href="https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b">Farewell Node.js</a><br/>
-TJ Holowaychuk lämnar Node.js för att gå över till &ldquo;Go&rdquo; som passar hans nuvarande programmeringsambitioner bättre.</p>
-
-<h2>Prezi har gått över till Javascript</h2>
-
-<p><a href="https://medium.com/prezi-engineering/how-and-why-prezi-turned-to-javascript-56e0ca57d135">How and why Prezi turned to JavaScript</a><br/>
-En artikel om varför Prezi gick över till JavaScript och vilket jättejobb det innebar för dem.</p>
-
-<h2>Säkrast går först!</h2>
-
-<p><a href="http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/">Google is now ranking websites with HTTPS higher in its search results</a><br/>
-Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
-
-<h2>Räkna BPM med Javascript och Spotify</h2>
-
-<p><a href="http://jmperezperez.com/beats-audio-api/">beats-audio-api</a><br/>
-1. Leta fram en låt på Spotify med hjälp av deras Web API<br/>
-2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API:et<br/>
-3. Lägg på ett lowbass filter<br/>
-4. Hitta toppar<br/>
-5. Räkna intervallet mellan toppar<br/>
-6. Gruppera dom</p>
-
-<h2>Lite mer datavisualisering</h2>
-
-<p>Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.</p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" /></p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript-böcker" /></p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" /></p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
 ]]></content>
   </entry>
   

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: SVG | Vinnovera]]></title>
-  <link href="http://vinnovera.se/blogg/tagg/svg/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Grid | Vinnovera]]></title>
+  <link href="http://vinnovera.se/blogg/tagg/grid/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
   <updated>2014-11-28T14:00:44+01:00</updated>
   <id>http://vinnovera.se/</id>
@@ -12,61 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt - hittat på nätet #10]]></title>
-    <link href="http://vinnovera.se/blogg/2014/11/07/svg-css-listor/"/>
-    <updated>2014-11-07T14:02:33+01:00</updated>
-    <id>http://vinnovera.se/blogg/2014/11/07/svg-css-listor</id>
-    <content type="html"><![CDATA[<p>Coola CSS-effekter, tillgängliga SVG-sprites i IE8, regler för kinesiskt Internet och hur känns det egentligen att sitta och stirra på klockan?</p>
-
-<!--more-->
-
-
-<h2>svg4everybody</h2>
-
-<p><a href="https://github.com/jonathantneal/svg4everybody">Svg for everybody</a><br/>
-SVG for Everybody gör att browsers som egentligen inte stödjer externa SVG spritemaps kan använda det.</p>
-
-<h2>Vägledning för webbutveckling</h2>
-
-<p><a href="http://webbriktlinjer.se/riktlinjer/">Vägledning för webbutveckling</a></p>
-
-<h2>Shape Morphing in CSS</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-10/bubbles.gif" alt="Bubbles" /><br/>
-<a href="http://css-tricks.com/shape-blobbing-css/">Shape Blobbing in CSS</a><br/>
-<a href="http://codepen.io/yoksel/pen/JnALF">Gif animation + CSS animation + Blend modes</a><br/>
-Genom att använda både blur och contrast filter kan man få en kvicksilvereffekt på element. Blandar man istället en gif, css och Blend modes kan man få en animerad schackrutig fågel. Fungerar snart i alla browsers utom IE.</p>
-
-<h2>Notes From Behind the Firewall: The State of Web Design in China</h2>
-
-<p><a href="http://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281">The State of Web Design in China</a><br/>
-Internet är inte lika fritt för alla att använda som de vill. I Kina får endast företag med en giltig kinesisk företagslicens hostas på kinesiska servrar. Det kontrolleras genom att alla kinesiska webbsidor måste registrera ett ICP-nummer som hosten frågar efter innan du kan skapa ett konto.</p>
-
-<h2>UX Directory</h2>
-
-<p><a href="http://abetteruserexperience.com/ux-directory/">UX Directory</a><br/>
-En lista över UX verktyg.</p>
-
-<h2>Walkway.js</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-10/ps4.jpg" alt="PS4" /><br/>
-<a href="https://github.com/ConnorAtherton/walkway">walkway</a><br/>
-<a href="http://www.polygon.com/a/ps4-review">ps4-review</a><br/>
-Ett lätt sätt att animera simplare SVG-element. Fungerar för tillfället endast för path- och lineelement.</p>
-
-<h2>Mobile Design Details: Avoid The Spinner</h2>
-
-<p><a href="http://www.lukew.com/ff/entry.asp?1797">Avoid The Spinner</a><br/>
-Att sitta och titta på klockan gör att tiden går långsammare. Tänk på om det kan finnas ett bättre sätt att visuellt visa att data laddas in utan att visa en spinner.</p>
-
-<h2>Wave Report</h2>
-
-<p><a href="http://wave.webaim.org/report#/vinnovera.se">Wave Report</a><br/>
-Web Accessibility Tool</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Trixiga personer och trixiga trix - hittat på nätet #8]]></title>

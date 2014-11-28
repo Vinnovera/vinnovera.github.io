@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Progressive enhancement | Vinnovera]]></title>
+  <link href="http://vinnovera.se/blogg/tagg/progressive-enhancement/atom.xml" rel="self"/>
+  <link href="http://vinnovera.se/"/>
+  <updated>2014-11-28T14:00:44+01:00</updated>
+  <id>http://vinnovera.se/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CSS, rulltrappor och device mode i Chrome - hittat på nätet #9]]></title>
+    <link href="http://vinnovera.se/blogg/2014/10/10/css-rulltrappor-och-device-mode/"/>
+    <updated>2014-10-10T14:36:56+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/10/10/css-rulltrappor-och-device-mode</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h2>Kom igång med CSS Shapes!</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-9/espresso.jpg" alt="CSS shapes" /><br/>
+<a href="http://www.html5rocks.com/en/tutorials/shapes/getting-started/">CSS shapes</a><br/>
+En enkel och bra genomgång om hur man kommer igång med CSS Shapes. Även om browserstödet i nuläget är ytterst begränsat, så är det här något som är på gång och som vi troligtvis kommer att att kunna använda brett i framtiden.</p>
+
+<h2>Konst med javasScript</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-9/var_t.png" alt="Learning about art, using JavaScript" /><br/>
+<a href="http://vart.institute/mondrian/">Learning about art, using JavaScript</a><br/>
+Jenn Schiffer återskapar Piet Mondrians klassiska konst med tabeller och javaScript</p>
+
+<h2>Webix &ndash; bygg avancerad UI/UX med bara några rader kod</h2>
+
+<p><a href="http://webix.com/">Webix</a><br/>
+Ett snabbt framework för att komma igång med en app om du inte har så stora krav på att själv kunna anpsassa och styra utseende och funktion. Extra plus i kanten för live-demon på sidan!</p>
+
+<h2>En trasig rulltrappa är fortfarande en trappa</h2>
+
+<p><a href="http://christianheilmann.com/2012/02/16/stumbling-on-the-escalator/">Stumbling on the escalator</a><br/>
+När en rulltrappa är trasig fungerar den fortfarande som en vanlig trappa. Så borde webbsidor också vara byggda. Christian Hellman slår ett slag för Progressive Enhancement-metodiken.</p>
+
+<h2>Inspiration till dina webbprojekt</h2>
+
+<p><a href="http://tympanus.net/codrops/category/playground/">Playground</a><br/>
+En gedigen samling experiment, plugins och kodsnuttar som kan ge inspiration till kommande webbprojekt.</p>
+
+<h2>Device mode i Google Chrome</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-9/emulation-drawer-UI-location.png" alt="Device Mode &amp; Mobile Emulation" /><br/>
+<a href="https://developer.chrome.com/devtools/docs/device-mode">Device Mode &amp; Mobile Emulation</a><br/>
+Äntligen kan man enkelt och direkt i Dev tools få en uppfattning om hur en sajt flödar i olika devicer/upplösningar. Man kan även inspektera break points i verktyget och gå direkt till den css som definerar en break point. Tjoho säger vi!</p>
+
+<h2>Hue x 2</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-9/jackman.png" alt="Hue" /><br/>
+Den här hittade vi och den var ju riktigt kul: <a href="http://huegrant.com/?hue=76">Hugh Grant</a>. Inte lika kul var det att upptäcka hur man hade löst det rent tekniskt. Det visade sig att det inte spelade någon roll vilket hue-värde man valde, sidan slumpade fram en ny bild varje gång. Per Stenström här på Vinnovera tog saken i egna händer och gjorde en bättre variant: <a href="http://pstenstrm.se/huejackman/?hue=70">Hugh Jackman</a>. :D</p>
+]]></content>
+  </entry>
+  
+</feed>

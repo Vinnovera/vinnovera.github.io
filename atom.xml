@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-11-24T12:29:18+01:00</updated>
+  <updated>2014-11-28T14:00:44+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -28,7 +28,7 @@ Max är en frontend-utvecklare med en backend-utvecklares hjärna.<!--more--> Fr
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt - hittat på nätet #8]]></title>
+    <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt - hittat på nätet #10]]></title>
     <link href="http://vinnovera.se/blogg/2014/11/07/svg-css-listor/"/>
     <updated>2014-11-07T14:02:33+01:00</updated>
     <id>http://vinnovera.se/blogg/2014/11/07/svg-css-listor</id>
@@ -48,7 +48,7 @@ SVG for Everybody gör att browsers som egentligen inte stödjer externa SVG spr
 
 <h2>Shape Morphing in CSS</h2>
 
-<p><img src="http://vinnovera.se/images/content/posts/svg-css-listor/bubbles.gif" alt="Bubbles" /><br/>
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-10/bubbles.gif" alt="Bubbles" /><br/>
 <a href="http://css-tricks.com/shape-blobbing-css/">Shape Blobbing in CSS</a><br/>
 <a href="http://codepen.io/yoksel/pen/JnALF">Gif animation + CSS animation + Blend modes</a><br/>
 Genom att använda både blur och contrast filter kan man få en kvicksilvereffekt på element. Blandar man istället en gif, css och Blend modes kan man få en animerad schackrutig fågel. Fungerar snart i alla browsers utom IE.</p>
@@ -65,7 +65,7 @@ En lista över UX verktyg.</p>
 
 <h2>Walkway.js</h2>
 
-<p><img src="http://vinnovera.se/images/content/posts/svg-css-listor/ps4.jpg" alt="PS4" /><br/>
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-10/ps4.jpg" alt="PS4" /><br/>
 <a href="https://github.com/ConnorAtherton/walkway">walkway</a><br/>
 <a href="http://www.polygon.com/a/ps4-review">ps4-review</a><br/>
 Ett lätt sätt att animera simplare SVG-element. Fungerar för tillfället endast för path- och lineelement.</p>
@@ -79,6 +79,54 @@ Att sitta och titta på klockan gör att tiden går långsammare. Tänk på om d
 
 <p><a href="http://wave.webaim.org/report#/vinnovera.se">Wave Report</a><br/>
 Web Accessibility Tool</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS, rulltrappor och device mode i Chrome - hittat på nätet #9]]></title>
+    <link href="http://vinnovera.se/blogg/2014/10/10/css-rulltrappor-och-device-mode/"/>
+    <updated>2014-10-10T14:36:56+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/10/10/css-rulltrappor-och-device-mode</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h2>Kom igång med CSS Shapes!</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-9/espresso.jpg" alt="CSS shapes" /><br/>
+<a href="http://www.html5rocks.com/en/tutorials/shapes/getting-started/">CSS shapes</a><br/>
+En enkel och bra genomgång om hur man kommer igång med CSS Shapes. Även om browserstödet i nuläget är ytterst begränsat, så är det här något som är på gång och som vi troligtvis kommer att att kunna använda brett i framtiden.</p>
+
+<h2>Konst med javasScript</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-9/var_t.png" alt="Learning about art, using JavaScript" /><br/>
+<a href="http://vart.institute/mondrian/">Learning about art, using JavaScript</a><br/>
+Jenn Schiffer återskapar Piet Mondrians klassiska konst med tabeller och javaScript</p>
+
+<h2>Webix &ndash; bygg avancerad UI/UX med bara några rader kod</h2>
+
+<p><a href="http://webix.com/">Webix</a><br/>
+Ett snabbt framework för att komma igång med en app om du inte har så stora krav på att själv kunna anpsassa och styra utseende och funktion. Extra plus i kanten för live-demon på sidan!</p>
+
+<h2>En trasig rulltrappa är fortfarande en trappa</h2>
+
+<p><a href="http://christianheilmann.com/2012/02/16/stumbling-on-the-escalator/">Stumbling on the escalator</a><br/>
+När en rulltrappa är trasig fungerar den fortfarande som en vanlig trappa. Så borde webbsidor också vara byggda. Christian Hellman slår ett slag för Progressive Enhancement-metodiken.</p>
+
+<h2>Inspiration till dina webbprojekt</h2>
+
+<p><a href="http://tympanus.net/codrops/category/playground/">Playground</a><br/>
+En gedigen samling experiment, plugins och kodsnuttar som kan ge inspiration till kommande webbprojekt.</p>
+
+<h2>Device mode i Google Chrome</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-9/emulation-drawer-UI-location.png" alt="Device Mode &amp; Mobile Emulation" /><br/>
+<a href="https://developer.chrome.com/devtools/docs/device-mode">Device Mode &amp; Mobile Emulation</a><br/>
+Äntligen kan man enkelt och direkt i Dev tools få en uppfattning om hur en sajt flödar i olika devicer/upplösningar. Man kan även inspektera break points i verktyget och gå direkt till den css som definerar en break point. Tjoho säger vi!</p>
+
+<h2>Hue x 2</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-9/jackman.png" alt="Hue" /><br/>
+Den här hittade vi och den var ju riktigt kul: <a href="http://huegrant.com/?hue=76">Hugh Grant</a>. Inte lika kul var det att upptäcka hur man hade löst det rent tekniskt. Det visade sig att det inte spelade någon roll vilket hue-värde man valde, sidan slumpade fram en ny bild varje gång. Per Stenström här på Vinnovera tog saken i egna händer och gjorde en bättre variant: <a href="http://pstenstrm.se/huejackman/?hue=70">Hugh Jackman</a>. :D</p>
 ]]></content>
   </entry>
   
@@ -342,6 +390,62 @@ I oktober började <strong>Per Lundgren</strong> jobba på Vinnovera.<!--more-->
 <p>På Vinnovera kommer Lundgren att workshop:a fram bra lösningar tillsammans med våra kunder, kvalitetssäkra projekt och se till att vårt tekniska hantverk resulterar i <strong>bra användarupplevelser</strong>. Det känns kul att stärka upp UX-kompetensen och tillsammans med Perra kommer vi att leverera ännu bättre produkter till våra kunder.</p>
 
 <p><strong>Väääälkommen!</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trixiga personer och trixiga trix - hittat på nätet #8]]></title>
+    <link href="http://vinnovera.se/blogg/2014/09/26/trixiga-personer-och-trixiga-trix/"/>
+    <updated>2014-09-26T14:03:19+02:00</updated>
+    <id>http://vinnovera.se/blogg/2014/09/26/trixiga-personer-och-trixiga-trix</id>
+    <content type="html"><![CDATA[<p>För tidigt för halloween men så här trixigt har det inte varit på länge</p>
+
+<!--more-->
+
+
+<h2>Mycket jobb, och det är ju tufft.</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-8/sapporo.jpg" alt="how-to-compress-a-png-like-a-jpeg" /><br/>
+<a href="http://peterhrynkow.com/how-to-compress-a-png-like-a-jpeg">How to compress a png like a jpeg</a><br/>
+Det är alltid kul med personer som är lite trixiga och gör allt för att minimera laddtider. Metoden är kanske inte så användbar i sitt nuvarande skick men om någon sätter ihop en servermodul eller plugin till Photoshop för att trycka ut färdigmaskade SVG-bundlesså kan det nog bli något.</p>
+
+<h2>Grid layout!</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-8/grid_ie.gif" alt="Grid layout" /><br/>
+<a href="http://www.quirksmode.org/css/grid.html">Grid layout</a><br/>
+En del på kontoret var eld och lågor med andra såg framför sig en vända till med &ldquo;table-design&rdquo;. Vi får se var var vi hamnar.</p>
+
+<h2>Kanån?</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-8/doom.png" alt="Hacker exploits printer Web interface to install, run Doom" /><br/>
+<a href="http://arstechnica.com/security/2014/09/hacker-exploits-printer-web-interface-to-install-run-doom/">Hacker exploits printer Web interface to install, run Doom</a><br/>
+På tal om trixiga personer så kan man använda sina skills på många olika sätt. Varför inte haxa in Doom på kontorets Canon-skrivare. Gunilla på ekonomiavdelningen kanske inte är lika imponerad som IT-avdelningen. Kanån ta bort den här gubben??!!</p>
+
+<h2>Apple älskar HTML5</h2>
+
+<p><a href="http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8">Apple Shows Love for HTML5 with iOS 8</a><br/>
+Det spekulerades innan Apples senaste väckelsemöte om de verkligen skulle köra Flash men det visade sig att de fortsatte på HTML5-spåret. Apple älskar HTML5, och det är ju bra för oss. Här är lite sköna specar för att backa upp det:</p>
+
+<h2>Mera trix</h2>
+
+<p><a href="http://svgcircus.com/">SVG Circus</a><br/>
+Är du mindre tålmodig men vill ändå se hur det hoppar och skuttar? Dra i reglagen tills du är nöjd och spara ner en färdig custom made SVG-animation att pryda din hemsida med.</p>
+
+<h2>Få styr på saker och ting</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-8/cylon.png" alt="Cylonjs" /><br/>
+<a href="http://cylonjs.com/">Cylonjs</a><br/>
+Enlighet bland scripten är ju najs så varför inte styra även din robot med Javascript.</p>
+
+<h2>Semiautomatierat dragspelande, guldägg eller grammis?</h2>
+
+<p><a href="https://www.facebook.com/video.php?v=265820276890574&amp;set=vb.100003878107065&amp;type=2&amp;theater">Semiautomatierat dragspel</a><br/>
+Eftersom huvudpersonen ser ut som en Hipster från södermalm kan det röra sig om ett påhitt från någon kreativ reklambyrå med lite väl fria tyglar. Vi får se på årets guldäggsgala om Leoneed Antonov i sälva verket heter Christopher och bor i SOFO.</p>
+
+<h2>Förnyelsebar energi</h2>
+
+<p><a href="http://www.crockford.com/">Douglas Crockford&rsquo;s Wrrrld Wide Web</a><br/>
+Och vi fortsätter på samma spår. Svårt att säga om den här sidan är på riktigt med tanke på att designen inte uppdaterats det här årtusendet trots att herr Crockford själv är så mycket för att förnya. Men med en domän registrerad 1998, lutar det åt att det är äkta vara och att det bara är designen som inte är utsatt för ständig förnyelse. Vem har tid för design när det finns kod att förnya?</p>
 ]]></content>
   </entry>
   
@@ -647,7 +751,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#97;&#115;&#100;&#64;&#x61;&#x73;&#x64;&#x2e;&#97;&#115;&#46;">&#97;&#115;&#x64;&#x40;&#x61;&#x73;&#100;&#x2e;&#97;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#97;&#x73;&#100;&#x40;&#97;&#x73;&#100;&#46;&#x61;&#115;&#46;">&#97;&#115;&#x64;&#x40;&#x61;&#115;&#100;&#46;&#97;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -934,66 +1038,6 @@ Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[På gång]]></title>
-    <link href="http://vinnovera.se/blogg/2014/03/20/pa-gang/"/>
-    <updated>2014-03-20T09:27:15+01:00</updated>
-    <id>http://vinnovera.se/blogg/2014/03/20/pa-gang</id>
-    <content type="html"><![CDATA[<p>Det är många roliga saker på gång hos oss under våren. <!--more-->Tyvärr får vi inte nämna alla kunder vid namn, men det är ett stort och utmanande <strong>webb-applikations</strong>-projekt på gång och vi fortsätter med <strong>e-handelsfrontend</strong> för mobil och tablet i ett annat omfattande projekt. Vi drar också igång ett nytt projekt med <strong>Stockholmsmässan</strong> som kommer att innebära både spännande webb- och applikationsutveckling.</p>
-
-<p>Vi kommer att bland annat att jobba med <a href="backbonejs.org">Backbone.js</a>, <a href="http://d3js.org/">D3.js</a> och <a href="http://nodejs.org/">Node.js</a>, och som vanligt med fokus på att leverera tekniskt hantverk och bra användarupplevelser.</p>
-
-<p><img src="http://vinnovera.se/images/content/posts/pa-gang/nodejs-logo.png" alt="Node.js logo" />
-<img src="http://vinnovera.se/images/content/posts/pa-gang/backbone-logo.png" alt="Backbone logo" />
-<img src="http://vinnovera.se/images/content/posts/pa-gang/D3-logo.png" alt="D3 logo" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hittat på nätet #2]]></title>
-    <link href="http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-2/"/>
-    <updated>2014-03-14T14:51:55+01:00</updated>
-    <id>http://vinnovera.se/blogg/2014/03/14/hittat-pa-natet-number-2</id>
-    <content type="html"><![CDATA[<p>Dagens tema är SVG &ndash; det bästa sedan skivat bröd.</p>
-
-<!--more-->
-
-
-<h2>Frame-by-frame animation using SVG and SMIL</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-2/svgandsmil.jpg" alt="Frame-by-frame animation using SVG and SMIL" />
-<a href="http://www.joningram.co.uk/article/svg-smil-frame-animation/">Frame-by-frame animation using SVG and SMIL</a><br>
-När den här artikeln skrevs fungerade SMIL animationer i SVG bara i webkit-browsers. Sedan dess har fler hunnit ikapp.</p>
-
-<h2>Rethinking Responsive SVG</h2>
-
-<p><a href="http://coding.smashingmagazine.com/2014/03/05/rethinking-responsive-svg/">Rethinking Responsive SVG</a><br>
-Responsiva vektorbaserade ikoner som ändrar utseende beroende på tillgängligt utrymme. Det är ett av alla användningsområden för SVG-bilder. Smashing Mag går igenom några olika metoder att åstadkomma detta, till exempel ett där SVG filen innehåller sin egen CSS och JavaScript.</p>
-
-<h2>Thoughts on Media Queries for Elements</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-2/mediaqueryforelement.jpg" alt="Thoughts on Media Queries for Elements" />
-<a href="http://www.jonathantneal.com/blog/thoughts-on-media-queries-for-elements/">Thoughts on Media Queries for Elements</a><br>
-Media Queries för element ligger högt på vår önskelista. Hur skulle det kunna se ut? Intressant är hur oändliga loopar kan hanteras.</p>
-
-<h2>A Q&amp;A on the Picture Element</h2>
-
-<p><a href="http://alistapart.com/blog/post/picture-element-qa">A Q&amp;A on the Picture Element</a><br>
-Responsiva bilder är något oerhört viktigt för dagens webb, men det har aldrig funnits någon standard och de lösningar som finns är beroende av JavaScript. Nu har dock browser-utvecklarna äntligen enats om att implementera <code>&lt;picture&gt;</code>-elementet. Mozilla har till och med sagt att de planerar implementera det redan Q1 2014.</p>
-
-<h2>Top JavaScript MVC Frameworks</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-2/topjsmvcframework.jpg" alt="Top JavaScript MVC Frameworks" />
-<a href="http://www.infoq.com/research/top-javascript-mvc-frameworks">Top JavaScript MVC Frameworks</a><br>
-InfoQ har gjort en enkät som undersöker vilket JavaScript-MVC-ramverk som går snabbast att komma igång med, och hur mycket värde det tillför.</p>
-
-<h2>Do Not Use bodyParser with Express.js</h2>
-
-<p><a href="http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html">Do Not Use bodyParser with Express.js</a><br>
-Varje gång Express.js hanterar ett POST-request med antingen <code>bodyParser()</code> eller <code>multipart()</code> skapas en temp-fil. De filerna tas inte bort igen av Express.js, vilket så klart är ett problem. Den här artikeln går igenom hur du kan hantera det.</p>
 ]]></content>
   </entry>
   
