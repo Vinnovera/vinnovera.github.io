@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-11-28T14:00:44+01:00</updated>
+  <updated>2014-11-28T14:03:10+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -87,7 +87,9 @@ Web Accessibility Tool</p>
     <link href="http://vinnovera.se/blogg/2014/10/10/css-rulltrappor-och-device-mode/"/>
     <updated>2014-10-10T14:36:56+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/10/10/css-rulltrappor-och-device-mode</id>
-    <content type="html"><![CDATA[<!--more-->
+    <content type="html"><![CDATA[<p>En inspirerande vecka med tankeställare.</p>
+
+<!--more-->
 
 
 <h2>Kom igång med CSS Shapes!</h2>
@@ -751,7 +753,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#97;&#x73;&#100;&#x40;&#97;&#x73;&#100;&#46;&#x61;&#115;&#46;">&#97;&#115;&#x64;&#x40;&#x61;&#115;&#100;&#46;&#97;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x61;&#115;&#x64;&#x40;&#x61;&#x73;&#100;&#x2e;&#x61;&#x73;&#46;">&#97;&#x73;&#100;&#x40;&#97;&#x73;&#100;&#46;&#x61;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>

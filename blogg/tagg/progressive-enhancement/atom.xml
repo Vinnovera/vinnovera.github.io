@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Progressive enhancement | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/progressive-enhancement/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-11-28T14:00:44+01:00</updated>
+  <updated>2014-11-28T14:03:10+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,9 @@
     <link href="http://vinnovera.se/blogg/2014/10/10/css-rulltrappor-och-device-mode/"/>
     <updated>2014-10-10T14:36:56+02:00</updated>
     <id>http://vinnovera.se/blogg/2014/10/10/css-rulltrappor-och-device-mode</id>
-    <content type="html"><![CDATA[<!--more-->
+    <content type="html"><![CDATA[<p>En inspirerande vecka med tankeställare.</p>
+
+<!--more-->
 
 
 <h2>Kom igång med CSS Shapes!</h2>
