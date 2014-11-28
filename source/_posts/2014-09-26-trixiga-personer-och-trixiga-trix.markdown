@@ -67,7 +67,7 @@ Och vi fortsätter på samma spår. Svårt att säga om den här sidan är på r
 [6]: https://www.facebook.com/video.php?v=265820276890574&set=vb.100003878107065&type=2&theater
 [7]: http://www.crockford.com/
 
-[00]: /images/content/posts/trixiga-personer/sapporo.jpg
-[01]: /images/content/posts/trixiga-personer/grid_ie.gif
-[02]: /images/content/posts/trixiga-personer/doom.png
-[03]: /images/content/posts/trixiga-personer/cylon.png
+[00]: /images/content/posts/hittat-pa-natet-number-8/sapporo.jpg
+[01]: /images/content/posts/hittat-pa-natet-number-8/grid_ie.gif
+[02]: /images/content/posts/hittat-pa-natet-number-8/doom.png
+[03]: /images/content/posts/hittat-pa-natet-number-8/cylon.png

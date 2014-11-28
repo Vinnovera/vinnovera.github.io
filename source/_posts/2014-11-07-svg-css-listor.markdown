@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SVG, CSS, listor och allt annat viktigt - hittat på nätet #9"
+title: "SVG, CSS, listor och allt annat viktigt - hittat på nätet #10"
 date: 2014-11-07 14:02:33 +0100
 comments: true
 categories: [SVG, CSS, Länkar, Nyheter, Hittat]
@@ -62,5 +62,5 @@ Web Accessibility Tool
 [8]: http://wave.webaim.org/report#/vinnovera.se
 [10]: https://github.com/ConnorAtherton/walkway
 
-[00]: /images/content/posts/svg-css-listor/bubbles.gif
-[01]: /images/content/posts/svg-css-listor/ps4.jpg
+[00]: /images/content/posts/hittat-pa-natet-number-10/bubbles.gif
+[01]: /images/content/posts/hittat-pa-natet-number-10/ps4.jpg
