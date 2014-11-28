@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Länkar | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/lankar/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-11-28T14:03:10+01:00</updated>
+  <updated>2014-11-28T15:53:22+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Web 3.0 är här - Hittat på nätet #11]]></title>
+    <link href="http://vinnovera.se/blogg/2014/11/28/Web-3.0-ar-har/"/>
+    <updated>2014-11-28T13:01:25+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/11/28/Web-3.0-ar-har</id>
+    <content type="html"><![CDATA[<p>Kan WebGL vara det bästa sen SVG?</p>
+
+<!--more-->
+
+
+<h2>Web 3.0</h2>
+
+<p><a href="http://elevr.com/mozvr-launches-with-elevr-player/">MozVR launches with eleVR player</a><br/>
+Web 2.0, eller Webben som det också kallas, får lämna plats åt Web 3.0. När vi bygger våra hemsidor i Virtual Reality.</p>
+
+<h2>Sa någon SVG?</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-11/vivus.jpg" alt="Vivus" /><br/>
+<a href="http://maxwellito.github.io/vivus/">Vivus</a><br/>
+Vivus är ett litet script för att animera SVG paths.</p>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-11/clippath.jpg" alt="Clipping in CSS and SVG" /><br/>
+<a href="http://sarasoueidan.com/blog/css-svg-clipping/">Clipping in CSS and SVG</a><br/>
+Tänk dig, clip-path tillsammans med shape-outside. Vad finns det  man inte kan göra med SVG?</p>
+
+<h2>Internet</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-11/fluid.jpg" alt="WebGL Fluid Experiment" />
+<a href="https://haxiomic.github.io/GPU-Fluid-Experiments/html5/?q=Medium">WebGL Fluid Experiment</a><br/>
+Jag fattar inte varför det här överhuvudtaget fungerar på intetnet. Det är typ lika ballt som SVG.</p>
+
+<p><a href="http://www.smashingmagazine.com/2014/11/18/the-state-of-animation-2014/">The State Of Animation 2014</a><br/>
+Web Animation API:t kan ta våra web native animationer till nästa nivå. Men vi får inte glömma bort lärdomarna och kompetensen från den forna flash världen.</p>
+
+<p><a href="http://microsoft.github.io/">Microsoft on GitHub</a><br/>
+Microsoft har släppt .NET som opensource, det ska även bli plattformsoberoende. Microsoft kommer enbart med glada nyheter.</p>
+
+<h2>Tympanus</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-11/slicebox.jpg" alt="Slicebox" /><br/>
+<a href="http://tympanus.net/Development/Slicebox/">Slicebox</a><br/>
+Väldigt snygg slideshow exempel. Använder sig av plugginnet <a href="https://github.com/niklasp/jquery-cuboid">jquery-cuboid</a>.</p>
+
+<p><a href="http://tympanus.net/Development/DragDropInteractions/sidebar.html">Drag and Drop Interaction Ideas</a><br/>
+Bra idéer om drag and drop. Problemet är att användare ofta inte förstår att man måste dra och istället vill klicka.</p>
+
+<h2>Användbart</h2>
+
+<p><a href="https://code.prod.facebook.com/posts/1505962329687926/flow-a-new-static-type-checker-for-javascript/">Flow, a new static type checker for JavaScript</a><br/>
+Statisk typning har alltid varit ett hett ämne, många gillar JavaScript just för att det inte är typat eller har klasser. Det finns dock prakistka skäl till att vara noga med typningen, som att inte orsaka en <a href="http://floitsch.blogspot.co.uk/2012/03/optimizing-for-v8-inlining.html">de-optimisering i Chrome</a>.</p>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-11/specificygraph.jpg" alt="The Specificity Graph" /><br/>
+<a href="http://csswizardry.com/2014/10/the-specificity-graph/">The Specificity Graph</a><br/>
+I ett väl strikturerat CSS dokument bör selektorerna struktureras efter specifitet, med lägst specifitet i början av filen och högst i slutet. Men blir inte alla moduler väldigt fragmenterade då?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SVG, CSS, listor och allt annat viktigt - hittat på nätet #10]]></title>
@@ -272,69 +329,6 @@ Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
 <p><img src="/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" /></p>
 
 <p><img src="/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hittat på nätet #5]]></title>
-    <link href="http://vinnovera.se/blogg/2014/07/04/hittat-pa-natet-number-5/"/>
-    <updated>2014-07-04T14:01:25+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/07/04/hittat-pa-natet-number-5</id>
-    <content type="html"><![CDATA[<p>Bland avancerad CSS och D3, också, varför är internet fult i Norge?</p>
-
-<!--more-->
-
-
-<h2>Kul med CSS</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-5/808cube.jpg" alt="808 Cube" />
-<a href="http://808cube.com/">808 Cube</a><br/>
-En mashup av Rolands ikoniska trummaskinen TR-808 och Rubiks kub. 808 Cube är gjort med CSS 3D och Web Audio API.</p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-5/trigometry.jpg" alt="Icosidodecahedron" />
-<a href="http://thesassway.com/advanced/inverse-trigonometric-functions-with-sass">Inverse trigonometric functions with Sass</a><br/>
-Jag kan inte stött på en situation då jag behövt använda sekans, cosekans eller cotangens i Sass. Men när den dagen kommer har den fantastiska Ana Tudor lösningen.</p>
-
-<h2>Hur stor är en glyph?</h2>
-
-<p>I ett projekt behövde vi linjera textrader av olika textstorlekar med varandra i en SVG. Varje bokstav ligger i en box med tomrum runt själva glyphen, och det är de boxarna som linjeras med varandra. För att lösa problemet behövde vi lista ut tomrummet runt varje glyph.</p>
-
-<p><a href="http://www.jasondavies.com/wordcloud/about/">How the Word Cloud Generator Works</a><br/>
-För att undvika textkollisioner i ett ordmoln skrivs texten ut i ett dolt canvas-element där pixel-data räknas ut.</p>
-
-<p><a href="http://nodebox.github.io/opentype.js/index.html">opentype.js</a><br/>
-Opentype.js ger dig däremot direkt tillgång till glyphen och låter dig till och med modifiera dom.</p>
-
-<h2>Grävande journalistik från DN Kultur</h2>
-
-<p><a href="http://www.dn.se/kultur-noje/varfor-ar-internet-i-norge-kjempefult/">Varför är Internet i Norge kjempefult?</a><br/>
-Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsning ändå.</p>
-
-<h2>Bra att ha</h2>
-
-<p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x61;&#x73;&#x64;&#x40;&#x61;&#x73;&#x64;&#x2e;&#97;&#x73;&#46;">&#97;&#x73;&#x64;&#x40;&#97;&#x73;&#100;&#46;&#97;&#x73;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
-
-<p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
-Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
-
-<p><a href="https://github.com/blog/1845-psd-viewing-diffing">PSD Viewing &amp; Diffing</a><br/>
-GitHub stödjer nu visning och diffning av PSD-filer.</p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-5/w6ehv.png" alt="Faraday cage" /><br/>
-<a href="http://stackoverflow.com/questions/4808433/is-it-possible-to-disable-the-network-in-ios-simulator/13831212#13831212">Is it possible to disable the network in iOS Simulator?</a><br/>
-Responsiv webb handlar inte bara om skalbara div:ar och bilder. Kanske lika viktigt är det att ta hänsyn till användarens uppkoppling. Användare har sällan lika bra anslutning i mobilen på bussen som på kontoret.</p>
-
-<h3>General Update Pattern i D3</h3>
-
-<p>Patterns som borde vara obligatoriska när du använder D3.js</p>
-
-<ul>
-<li><a href="http://bl.ocks.org/mbostock/3808218">Pattern 1</a></li>
-<li><a href="http://bl.ocks.org/mbostock/3808221">Pattern 2</a></li>
-<li><a href="http://bl.ocks.org/mbostock/3808234">Pattern 3</a></li>
-</ul>
-
 ]]></content>
   </entry>
   
