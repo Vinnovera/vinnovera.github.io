@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Robotlabb 2014 - Vinnovera</title>
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<meta name="description" content="Vi spenderade en hel dag åt att förkovra oss i Arduino, Zumo shield och problemlösning kring line-following och robotsumo. Arduino är en lite &hellip;">
+		
+
+		<meta property="og:title" content="Robotlabb 2014 - Vinnovera" />
+		<meta property="og:url" content="http://vinnovera.se/blogg/2014/12/04/robotlabb-2014/" />
+		<meta property="og:image" content="http://www.vinnovera.se/images/logoOgImage.png" />
+		<meta property="og:description" content="Vi spenderade en hel dag åt att förkovra oss i Arduino, Zumo shield och problemlösning kring line-following och robotsumo. Arduino är en lite &hellip;" />
+
+		<!--[if lt IE 9]>
+		<script>
+		    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+		        i = e.length;
+		
+		    for(i; i--;) {
+		        document.createElement(e[i]);
+		    }
+		</script><![endif]-->
+
+		<link href="/favicon.ico?1" rel="icon">
+		<link href="/atom.xml" rel="alternate" title="Vinnovera" type="application/atom+xml">
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/vinnovera.css">
+<link rel="stylesheet" href="/stylesheets/overlay.css">
+		<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2035593-3']);
+	_gaq.push(['_trackPageview']);
+	
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+	</head>
+
+<body    >
+  <header id="header">
+	
+	
+		<h1>
+			<a href="/">Vinnovera</a>
+		</h1>
+	
+	
+	<a href="#" class="toggle-menu" id="toggle-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<nav id="navigation">
+		
+		<a href="/">Hem</a>
+		
+		<a href="/#projekt">Kunder &amp; projekt</a>
+		<a href="/#blogg">Blogg</a>
+		<a href="/#vi">Vi</a>
+		<a href="/#kontakt">Kontakt</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
+	</nav>
+</header>
+
+<a href="#" class="to-top" id="scrollUp">Till toppen</a>
+  <nav class="post-navigation">
+	
+		<a class="basic-alignment next" href="/blogg/2014/11/28/Web-3.0-ar-har/" title="Nästa inlägg: Web 3.0 är här - Hittat på nätet #11">Nästa</a>
+	
+	
+</nav>
+
+<section class="wrapper post">
+	<article>
+		<header>
+			<h1>Robotlabb 2014</h1>
+			
+			
+			
+			<p class="meta">
+				<span>Andreas Edlund</span>
+				| <time datetime="2014-12-04T13:01:25+01:00" pubdate><span class='year'>2014</span>-<span class='month'>12</span>-<span class='day'>04</span></time>
+				|
+				<span class="categories">
+					
+					<a class='category' href='/blogg/tagg/arduino/'>Arduino</a>, <a class='category' href='/blogg/tagg/hackathon/'>Hackathon</a>, <a class='category' href='/blogg/tagg/makes/'>Makes</a>, <a class='category' href='/blogg/tagg/vi/'>Vi</a>, <a class='category' href='/blogg/tagg/workshop/'>Workshop</a>
+					
+				</span>
+			</p>
+			
+		</header>
+	
+		<div>
+			<p>Vi spenderade en hel dag åt att förkovra oss i Arduino, Zumo shield och problemlösning kring line-following och robotsumo.</p>
+
+<!--more-->
+
+
+<p><img src="/images/content/posts/robotlabb-2014/jakob-arduino.jpg" alt="Jakob i full färd med att berätta om Arduino" />
+<a href="http://www.arduino.cc">Arduino</a> är en lite minidator och fungerar som en brygga mellan digitalt och analogt. Arduino har en central roll i ”Maker-communityt&#8221; som växer stort världen över. Målet var bygga våra egna Arduino-bots för att kunna tävla i line-following och robotsumo!</p>
+
+<p><img src="/images/content/posts/robotlabb-2014/ellen-sundh.jpg" alt="Ellen Sundh" />
+Till vår hjälp och som inspiration hade vi bjudit hit maker-legenden <a href="http://www.sundh.com">Ellen Sundh</a> från <a href="http://codacollective.com/">Coda Collective</a>!</p>
+
+<p><img src="/images/content/posts/robotlabb-2014/zumo.jpg" alt="Pololu Zumo bot" />
+Roboten var en <a href="http://www.pololu.com/product/2510">Pololu Zumo bot</a>. Zumon fungerar som en &ldquo;shield&rdquo; som Arduinon kopplas på. Arduinon får då tillgång till accelerometer, gyro, kompass, IR-sensorer och två motorer. Allt som behövs för att kunna programmera en robot med en mängd färdigheter.</p>
+
+<p><img src="/images/content/posts/robotlabb-2014/hackstuga.jpg" alt="Hackstuga" />
+In progress &ndash; glad men fokuserad stämning i hackarstugan.</p>
+
+<p><img src="/images/content/posts/robotlabb-2014/ellen-presentation.jpg" alt="Ellen Sundh om problemlösning" />
+Efter en intensiv förmiddag av Arduionokodning behövdes lunch och Ellen Sundh passade på att prata om problemlösning och hur hon hanterat det i hennes projekt.</p>
+
+<p><img src="/images/content/posts/robotlabb-2014/coda-collective-trophy.jpg" alt="Coda Collective Trophy" />
+Ellen fick även en present av Jakob och Vinnovera, Coda Collectives logotyp föreställande en LED &ndash; 3D-printad. Mer om information om projektet finns på <a href="http://www.thingiverse.com/thing:579934">Thingiverse</a>.</p>
+
+<p><img src="/images/content/posts/robotlabb-2014/line-follow.jpg" alt="Line-follow" />
+Målet med dagen var att genomföra en sumotävling och en line-follow-tävling. Line-follow går ut att följa en linje på golvet, snabbast runt banan vinner!</p>
+
+<p><img src="/images/content/posts/robotlabb-2014/sumo.jpg" alt="Sumo" />
+Sumo går ut på att två botar är inuti en ring och ska putta ut varandra.</p>
+
+<p>Vad vi lyckades åstadkomma var över vår förväntan. Väldigt inspirerande och kul att ha möjlighet att flytta den digitala världen till den fysiska världen och vice versa. Vi filmade naturligtivs lite, enjoy!</p>
+
+<div class="video youtube">
+    <iframe width="640" height="360" src="//www.youtube.com/embed/es2l-uNOjbY?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+
+		</div>
+	</article>
+	
+	
+		<article class="authorDescription">
+			<div>
+				
+					<img src="/images/profiles/andreas.jpg" alt="Andreas Edlund" />
+				
+			</div>
+			<div>
+				<h3>Andreas Edlund</h3>
+				<a href="mailto: andreas@vinnovera.se">(andreas@vinnovera.se)</a>
+				<p>Andreas Edlund jobbar som projektledare på Vinnovera.</p>
+				<p>Vi är specialister på frontend-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+				<p><a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
+			</div>
+		</article>
+	
+	
+	
+	<div>
+		<div class="wrapper comments">
+			<h2>Kommentera</h2>
+			<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'vinnovera'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+		</div>
+	</div>
+	
+</section>
+
+  <footer role="contentinfo"><span class="adr">
+	<span class="street-address">Västerlånggatan 27</span>
+	<span class="postal-code">111 29</span>
+	<span class="locality">Stockholm</span>
+	<a class="map-link" href="https://www.google.com/maps/place/Vinnovera+AB/@59.3252213,18.0692205,17z/data=!3m1!4b1!4m2!3m1!1s0x465f77e26eb236e1:0x314b77ee3a5d5ea1">(Karta)</a>
+</span>
+
+<span class="tel">08 - 5000 10 90</span>
+<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a></footer>
+  <script src="/javascripts/components/mootools.js"></script>
+<script src="/javascripts/components/mootools-more.js"></script>
+<script src="/javascripts/components/jsoverlay.js"></script>
+<script src="/javascripts/vinnovera.js"></script>
+</body>
+</html>

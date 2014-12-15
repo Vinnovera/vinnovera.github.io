@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-11-28T15:53:22+01:00</updated>
+  <updated>2014-12-15T11:17:56+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Robotlabb 2014]]></title>
+    <link href="http://vinnovera.se/blogg/2014/12/04/robotlabb-2014/"/>
+    <updated>2014-12-04T13:01:25+01:00</updated>
+    <id>http://vinnovera.se/blogg/2014/12/04/robotlabb-2014</id>
+    <content type="html"><![CDATA[<p>Vi spenderade en hel dag åt att förkovra oss i Arduino, Zumo shield och problemlösning kring line-following och robotsumo.</p>
+
+<!--more-->
+
+
+<p><img src="http://vinnovera.se/images/content/posts/robotlabb-2014/jakob-arduino.jpg" alt="Jakob i full färd med att berätta om Arduino" />
+<a href="http://www.arduino.cc">Arduino</a> är en lite minidator och fungerar som en brygga mellan digitalt och analogt. Arduino har en central roll i ”Maker-communityt&#8221; som växer stort världen över. Målet var bygga våra egna Arduino-bots för att kunna tävla i line-following och robotsumo!</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/robotlabb-2014/ellen-sundh.jpg" alt="Ellen Sundh" />
+Till vår hjälp och som inspiration hade vi bjudit hit maker-legenden <a href="http://www.sundh.com">Ellen Sundh</a> från <a href="http://codacollective.com/">Coda Collective</a>!</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/robotlabb-2014/zumo.jpg" alt="Pololu Zumo bot" />
+Roboten var en <a href="http://www.pololu.com/product/2510">Pololu Zumo bot</a>. Zumon fungerar som en &ldquo;shield&rdquo; som Arduinon kopplas på. Arduinon får då tillgång till accelerometer, gyro, kompass, IR-sensorer och två motorer. Allt som behövs för att kunna programmera en robot med en mängd färdigheter.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/robotlabb-2014/hackstuga.jpg" alt="Hackstuga" />
+In progress &ndash; glad men fokuserad stämning i hackarstugan.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/robotlabb-2014/ellen-presentation.jpg" alt="Ellen Sundh om problemlösning" />
+Efter en intensiv förmiddag av Arduionokodning behövdes lunch och Ellen Sundh passade på att prata om problemlösning och hur hon hanterat det i hennes projekt.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/robotlabb-2014/coda-collective-trophy.jpg" alt="Coda Collective Trophy" />
+Ellen fick även en present av Jakob och Vinnovera, Coda Collectives logotyp föreställande en LED &ndash; 3D-printad. Mer om information om projektet finns på <a href="http://www.thingiverse.com/thing:579934">Thingiverse</a>.</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/robotlabb-2014/line-follow.jpg" alt="Line-follow" />
+Målet med dagen var att genomföra en sumotävling och en line-follow-tävling. Line-follow går ut att följa en linje på golvet, snabbast runt banan vinner!</p>
+
+<p><img src="http://vinnovera.se/images/content/posts/robotlabb-2014/sumo.jpg" alt="Sumo" />
+Sumo går ut på att två botar är inuti en ring och ska putta ut varandra.</p>
+
+<p>Vad vi lyckades åstadkomma var över vår förväntan. Väldigt inspirerande och kul att ha möjlighet att flytta den digitala världen till den fysiska världen och vice versa. Vi filmade naturligtivs lite, enjoy!</p>
+
+<div class="video youtube">
+    <iframe width="640" height="360" src="http://vinnovera.se//www.youtube.com/embed/es2l-uNOjbY?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Web 3.0 är här - Hittat på nätet #11]]></title>
@@ -810,7 +855,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x61;&#115;&#x64;&#64;&#97;&#115;&#100;&#46;&#97;&#x73;&#x2e;">&#97;&#115;&#x64;&#64;&#x61;&#115;&#x64;&#46;&#97;&#115;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#97;&#x73;&#100;&#64;&#97;&#115;&#x64;&#46;&#97;&#115;&#46;">&#x61;&#115;&#100;&#x40;&#x61;&#x73;&#100;&#46;&#x61;&#115;&#46;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -952,115 +997,6 @@ Vi letar efter dig som <strong>brinner för frontend-utveckling</strong> och vil
 <p>Vi har ett antal stora företag som kunder (som vi tyvärr inte får nämna vid namn förrän du kommer och träffar oss) och även ett gäng mindre. Just nu jobbar vi mycket med <strong><a href="http://nodejs.org/">node.js</a></strong>, <strong><a href="http://d3js.org/">D3.js</a></strong> och <strong><a href="http://backbonejs.org/">Backbone</a></strong>.</p>
 
 <p>Låter det intressant?<br/> Hör av dig till Björn-Olle &ndash; <a href="mailto:bjorn-olle@vinnovera.se">bjorn-olle@vinnovera.se</a>, 070-171 67 27</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hittat på nätet #3]]></title>
-    <link href="http://vinnovera.se/blogg/2014/04/11/hittat-pa-natet-number-3/"/>
-    <updated>2014-04-11T14:10:25+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/04/11/hittat-pa-natet-number-3</id>
-    <content type="html"><![CDATA[<p>I denna upplaga: mer SVG, mer underlines, nytt programmeringsspråk, verktyg och lite historia</p>
-
-<!--more-->
-
-
-<h2>Alla vägar leder till Xerox</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/burger.jpg" alt="The origin of the hamburger icon" />
-<a href="https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">The origin of the hamburger icon</a><br />
-Varifrån kommer alla ikoner?  Hamburgarens hitoria kan du hitta här.</p>
-
-<h2>Kommentarsfält utöver det vanliga</h2>
-
-<p><a href="http://lattlast.se/kommentarsfalt">Centrum för lättläst lanserar ett kommentarsfält för alla</a><br />
-Centrum för lättläst lanserar &ldquo;Kommentarsfält för alla&rdquo;, som  ökar tillgängligheten för kommentarer och diskussion på nätet.</p>
-
-<h2>Network Link Conditioner</h2>
-
-<p><a href="http://nshipster.com/network-link-conditioner/">Network Link Conditioner</a><br />
-Simulera begränsade uppkopplingar när du utvecklar.</p>
-
-<h2>The Heartbleed Bug</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/heartbleed_explanation.jpg" alt="heartbleed_explanation" />
-<a href="http://xkcd.com/1354/">The Heartbleed Bug</a><br /></p>
-
-<h2>Javascript spel</h2>
-
-<p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted &ndash; a user javascript adventure game</a><br />
-Ett spel som går ut på att skriva JavaScript för att ta sig vidare till nästa level.</p>
-
-<h2>Support för Windows XP upphör</h2>
-
-<p><a href="http://windows.microsoft.com/en-us/windows/end-support-help">Windows XP support has ended</a><br />
-Efter 12 års support slutar Microsoft att ha underhåll för Windows XP. Då IE8 inte heller underhålls längre kan man utsätta sin dator för säkerhetsrisk om man fortsätter att använda produkterna.</p>
-
-<h2>Grilla ditt moderkort</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/tray.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
-<a href="http://ales.io/2014/03/09/how-to-bake-a-mac.html">How I resurrected my MacBook Pro by putting it in the oven</a><br />
-Efter en &ldquo;Blue Screen of Death&rdquo; plockade Aleš Kocjančič ut sitt moderkort ur sin MacBook Pro och körde det i ugnen på 170° Celsius i 7 minuter. Magiskt nog började datorn fungera igen.</p>
-
-<h2>doT.js</h2>
-
-<p><a href="http://olado.github.io/doT/index.html">The fastest + concise javascript template engine for Node.js and browsers.</a><br />
-En snabb och liten template-motor för node.js och browsers</p>
-
-<h2>SVG Sprites</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/svg-icon.jpg" alt="How I resurrected my MacBook Pro by putting it in the oven" />
-<a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/">Icon System with SVG Sprites</a><br />
-Ett alternativ till icon-fonts från Chris Coyier där man använder inline SVG.</p>
-
-<h2>Lär dig rita med ASCII</h2>
-
-<p><a href="http://asciiflow.com/">Asciiflow &ndash; ASCII Flow Diagram Tool</a><br />
-Ett fräsigt onlineverktyg där man kan rita, spara och mycket mer med hjälp av en slående ASCII-design.</p>
-
-<h2>Utveckligen av en utvecklare</h2>
-
-<p><a href="https://medium.com/p/db854689243">The Evolution of a Software Engineer</a><br />
-Ibland kan det ta tio år att komma tillbaka till början.</p>
-
-<h2>Vetenskapen om underlines</h2>
-
-<p><a href="https://medium.com/p/7c03a9274f9">Crafting link underlines on Medium</a><br />
-En artikel om hur en &ldquo;quick-fix&rdquo; blev ett månadslångt projekt för att fixa underlines på medium.com</p>
-
-<h2>Hack</h2>
-
-<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-3/facebook-hack.jpg" alt="Facebook Introduces ‘Hack,’ the Programming Language of the Future" />
-<a href="http://hacklang.org/">Facebook Introduces ‘Hack,’ the Programming Language of the Future</a>
-Hack &ndash; ett programmeringsspråk utvecklat av de Facebook-anställda Bryan O’Sullivan, Julien Verlaguet, och Alok Menghrajani. Det används idag av Facebook som ersättare av PHP och beskrivs som ett språk som låter utvecklare snabbt bygga mjukvara utan att kompromissa på kvaliteten.</p>
-
-<h2>Världens minsta responsiva CSS-ramverk?</h2>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="c">/* FLUIDITY v0.1.0 @mrmrs - http://mrmrs.cc MIT</span>
-</span><span class='line'><span class="c">*/</span>
-</span><span class='line'><span class="c">/*</span>
-</span><span class='line'><span class="c"> Responsive Utilities</span>
-</span><span class='line'>
-</span><span class='line'><span class="c">*/</span>
-</span><span class='line'><span class="nt">img</span><span class="o">,</span> <span class="nt">canvas</span><span class="o">,</span> <span class="nt">iframe</span><span class="o">,</span> <span class="nt">video</span><span class="o">,</span> <span class="nt">svg</span> <span class="p">{</span> <span class="k">max-width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c">/* Wrap tables or pre elements in a div with this class */</span>
-</span><span class='line'><span class="nc">.overflow-container</span> <span class="p">{</span> <span class="k">overflow-y</span><span class="o">:</span> <span class="k">scroll</span><span class="p">;</span> <span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="https://github.com/mrmrs/fluidity">A light-weight, fully-responsive css framework</a><br />
-Troll eller på riktigt? Med issues som &ldquo;<a href="https://github.com/mrmrs/fluidity/issues/13">Consider adding form elements</a>&rdquo; och &ldquo;<a href="https://github.com/mrmrs/fluidity/issues/6">Specify Version of Supported Browsers</a>&rdquo; ser det väldigt autentiskt ut.</p>
 ]]></content>
   </entry>
   
