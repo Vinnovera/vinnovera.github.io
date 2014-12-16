@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Workshop | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/workshop/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-12-15T11:17:56+01:00</updated>
+  <updated>2014-12-16T10:27:52+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,36 +18,35 @@
     <link href="http://vinnovera.se/blogg/2014/12/04/robotlabb-2014/"/>
     <updated>2014-12-04T13:01:25+01:00</updated>
     <id>http://vinnovera.se/blogg/2014/12/04/robotlabb-2014</id>
-    <content type="html"><![CDATA[<p>Vi spenderade en hel dag åt att förkovra oss i Arduino, Zumo shield och problemlösning kring line-following och robotsumo.</p>
-
-<!--more-->
-
+    <content type="html"><![CDATA[<p>För att utmana vår problemlösningsförmåga och skapa nördig julstämning spenderade vi en heldag på kontoret tillsammans med minidatorn <strong><a href="http://www.arduino.cc">Arduino</a></strong> och den programmeringsbara roboten <strong><a href="http://www.pololu.com/product/2510">Zumo</a></strong>. <!--more-->Målet var att genomföra sumobrottning för robotar och en &ldquo;line-follow&rdquo;-tävling. Line-follow går ut på att roboten ska följa en linje på golvet – snabbast runt banan vinner! Sumobrottningen sker i en upptejpad ring, där det gäller att knuffa ut sin motståndare på smartast sätt.</p>
 
 <p><img src="/images/content/posts/robotlabb-2014/jakob-arduino.jpg" alt="Jakob i full färd med att berätta om Arduino" />
-<a href="http://www.arduino.cc">Arduino</a> är en lite minidator och fungerar som en brygga mellan digitalt och analogt. Arduino har en central roll i ”Maker-communityt" som växer stort världen över. Målet var bygga våra egna Arduino-bots för att kunna tävla i line-following och robotsumo!</p>
+<a href="http://www.arduino.cc">Arduino</a> är en minidator som fungerar som en brygga mellan den digitala och analoga världen. Den har fått en central roll i ”Maker-communityt" som växer stort världen över. Här är Jakob i full färd med att berätta om Arduino och dess möjligheter för den hänförda publiken.</p>
 
 <p><img src="/images/content/posts/robotlabb-2014/ellen-sundh.jpg" alt="Ellen Sundh" />
-Till vår hjälp och som inspiration hade vi bjudit hit maker-legenden <a href="http://www.sundh.com">Ellen Sundh</a> från <a href="http://codacollective.com/">Coda Collective</a>!</p>
+Till vår hjälp och som inspiration hade vi bjudit in maker-legenden <a href="http://www.sundh.com">Ellen Sundh</a> från <a href="http://codacollective.com/">Coda Collective</a>!</p>
 
 <p><img src="/images/content/posts/robotlabb-2014/zumo.jpg" alt="Pololu Zumo bot" />
-Roboten var en <a href="http://www.pololu.com/product/2510">Pololu Zumo bot</a>. Zumon fungerar som en &ldquo;shield&rdquo; som Arduinon kopplas på. Arduinon får då tillgång till accelerometer, gyro, kompass, IR-sensorer och två motorer. Allt som behövs för att kunna programmera en robot med en mängd färdigheter.</p>
+Roboten vi jobbade med var en <a href="http://www.pololu.com/product/2510">Pololu Zumo bot</a>. Zumon fungerar som en &ldquo;shield&rdquo; som Arduinon kopplas ihop med. Man får på så sätt tillgång till accelerometer, gyro, kompass, IR-sensorer och två motorer. Allt som behövs för att kunna programmera en egen robot med en mängd färdigheter och egen personlighet.</p>
 
 <p><img src="/images/content/posts/robotlabb-2014/hackstuga.jpg" alt="Hackstuga" />
 In progress &ndash; glad men fokuserad stämning i hackarstugan.</p>
 
 <p><img src="/images/content/posts/robotlabb-2014/ellen-presentation.jpg" alt="Ellen Sundh om problemlösning" />
-Efter en intensiv förmiddag av Arduionokodning behövdes lunch och Ellen Sundh passade på att prata om problemlösning och hur hon hanterat det i hennes projekt.</p>
+Efter en intensiv förmiddag behövdes lunch och Ellen Sundh passade på att visa ett antal projekt hon jobbat med. Det blev en inspirerande presentation med fokus på problemlösning och hur hon hanterar det i utmanande projekt.</p>
 
 <p><img src="/images/content/posts/robotlabb-2014/coda-collective-trophy.jpg" alt="Coda Collective Trophy" />
-Ellen fick även en present av Jakob och Vinnovera, Coda Collectives logotyp föreställande en LED &ndash; 3D-printad. Mer om information om projektet finns på <a href="http://www.thingiverse.com/thing:579934">Thingiverse</a>.</p>
+Som tack för all hjälp fick Ellen en present av Jakob och Vinnovera: Coda Collectives logotyp, föreställande en LED &ndash; 3D-printad i ett antal olika material. Mer om information om det projektet finns på <a href="http://www.thingiverse.com/thing:579934">Thingiverse</a>.</p>
 
 <p><img src="/images/content/posts/robotlabb-2014/line-follow.jpg" alt="Line-follow" />
-Målet med dagen var att genomföra en sumotävling och en line-follow-tävling. Line-follow går ut att följa en linje på golvet, snabbast runt banan vinner!</p>
+&ldquo;Line-follow&rdquo;-banan är redo, och robotorna är på uppvärmning inför den prestigefyllda tävlingen.</p>
 
 <p><img src="/images/content/posts/robotlabb-2014/sumo.jpg" alt="Sumo" />
-Sumo går ut på att två botar är inuti en ring och ska putta ut varandra.</p>
+Här är sumobrottningen i full gång!</p>
 
-<p>Vad vi lyckades åstadkomma var över vår förväntan. Väldigt inspirerande och kul att ha möjlighet att flytta den digitala världen till den fysiska världen och vice versa. Vi filmade naturligtivs lite, enjoy!</p>
+<p>Vad vi lyckades åstadkomma med våra robotar och minidatorer under en dag var över allas förväntan. Det var inspirerande och kul att med de kunskaper vi har inom webb och programmering kunna flytta den digitala världen till den fysiska världen och vice versa. På köpet fick vi ett gäng små robotar med egna personligheter – Vinnoveras nya husdjur.</p>
+
+<p>Vi filmade naturligtivs också, enjoy!</p>
 
 <div class="video youtube">
     <iframe width="640" height="360" src="http://vinnovera.se//www.youtube.com/embed/es2l-uNOjbY?rel=0" frameborder="0" allowfullscreen></iframe>
