@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Länkar | Vinnovera]]></title>
   <link href="http://vinnovera.se/blogg/tagg/lankar/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-12-16T10:27:52+01:00</updated>
+  <updated>2015-01-29T13:15:53+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,72 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript och arkitektur - Hittat på nätet #12]]></title>
+    <link href="http://vinnovera.se/blogg/2015/01/29/hittat-pa-natet-number-12/"/>
+    <updated>2015-01-29T14:00:00+01:00</updated>
+    <id>http://vinnovera.se/blogg/2015/01/29/hittat-pa-natet-number-12</id>
+    <content type="html"><![CDATA[<p>Javascriptmarknaden är i rörelse. Nya ramverk och teknologier lanseras konstant och många har åsikter om vilken som är den bästa vägen framåt.</p>
+
+<!--more-->
+
+
+<h2>Planning A Front-end JavaScript Application</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-12/postit.jpg" alt="Post-it" />
+<a href="http://developer.telerik.com/featured/planning-front-end-javascript-application/">developer.telerik.com</a>
+En rejäl checklista för att planera en javascriptapplikation, från val av verktyg och arkitektur till utvecklingsstrategi.</p>
+
+<h2>JavaScript Application Architecture On The Road To 2015</h2>
+
+<p><a href="https://medium.com/@addyosmani/javascript-application-architecture-on-the-road-to-2015-d8125811101b">medium.com</a>
+En matig artikel om javascriptapplikationer som tar upp flera olika problemområden och deras potentiella lösningar. Om composition, eventhantering, shadow DOM, offline-hantering och mer.</p>
+
+<h2>The State of JavaScript in 2015</h2>
+
+<p><a href="http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/">breck-mckye.com</a>
+Med stora förändringar och hög hastighet på javascriptmarknaden, vad är läget med javascript 2015?</p>
+
+<h2>Asynchronous JavaScript and Promises</h2>
+
+<p><a href="https://medium.com/innoarchitech-innovation-architecture-technology/asynchronous-javascript-and-promises-be4efecf247b">medium.com</a>
+Ett talk om promises i javascript.</p>
+
+<h2>Reactive MVC and the Virtual DOM</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-12/zelda.jpg" alt="Zelda" />
+<a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom/">futurice.com</a>
+En tydlig och rolig förklaring av virtuell DOM.</p>
+
+<h2>On the accessibility of web components. Again.</h2>
+
+<p><a href="http://www.brucelawson.co.uk/2014/on-the-accessibility-of-web-components-again/">brucelawson.co.uk</a>
+Om vad web components kommer att innebära för accessibility och de risker som finns involverade.</p>
+
+<h2>Regulex</h2>
+
+<p><a href="http://jex.im/regulex/#!embed=false&amp;flags=&amp;re=%5E(a%7Cb)*%3F%24">jex.im/regulex</a>
+Ett verktyg som hjälper till med att visualisera regular expressions.</p>
+
+<h2>Tridiv</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-12/xwing.png" alt="X-Wing" />
+<a href="http://tridiv.com/">tridiv.com</a>
+Ett verktyg som hjälper dig att skapa 3D-modeller med CSS och HTML.</p>
+
+<h2>Pixact.ly</h2>
+
+<p><a href="http://pixact.ly/">pixact.ly</a>
+Ett webbaserat spel där du kan testa ditt pixelögonmått.</p>
+
+<h2>Live coding in VR</h2>
+
+<p><img src="/images/content/posts/hittat-pa-natet-number-12/vrcoding.png" alt="VR Coding" />
+<a href="https://www.youtube.com/watch?v=db-7J5OaSag">youtube.com</a>
+Framtiden är här! En film som visar live coding i VR med Oculus, Firfox WebVR, javascript och Three.js</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Web 3.0 är här - Hittat på nätet #11]]></title>
@@ -231,104 +297,6 @@ Velocity.js ersätter jQuery&rsquo;s animate med bättre prestanda.</p>
 <p><img src="/images/content/posts/hittat-pa-natet-number-7/uselessweb.jpg" alt="The useless web" /><br/>
 <a href="http://www.theuselessweb.com/">The useless web</a><br/>
 Bra site när du har tråkigt!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hittat på nätet #6]]></title>
-    <link href="http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6/"/>
-    <updated>2014-09-01T10:27:15+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/09/01/hittat-pa-natet-number-6</id>
-    <content type="html"><![CDATA[<p>En sommar full med JavaScript, musik, verktyg, ramverk och folk som byter åsikter!</p>
-
-<!--more-->
-
-
-<h2>Simpelt byggda med få element</h2>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/singlediv.jpg" alt="A Single Div" />
-<a href="http://a.singlediv.com/">A Single Div</a><br/>
-<a href="http://nicolasgallagher.com/pure-css-gui-icons/demo/#non">Pure CSS GUI icons</a><br/>
-Två exempel på vad man kan åstakomma med minimal kod.</p>
-
-<h2>Patterns för stora JavaScript-applikationer</h2>
-
-<p><a href="http://addyosmani.com/largescalejavascript/">Patterns For Large-Scale JavaScript Application Architecture</a><br/>
-Ett förslag på hur man kan bygga upp sin app-struktur med hjälp av moduler, mediator och fasader.</p>
-
-<h2>Åsikter om JS-ramverk</h2>
-
-<p><a href="http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks">Opinionated Rundown of JS Frameworks</a><br/>
-Henrik Joreteg går igenom för- och nackdelar med några populära JavaScript-ramverk för att sedan fronta deras egna ramverk Ampersand.</p>
-
-<h2>Service Worker</h2>
-
-<p><a href="http://jakearchibald.com/2014/service-worker-first-draft/">Service Worker &ndash; first draft published</a><br/>
-Google, Samsung, Mozilla m.fl. har arbetat tillsammans för att utveckla &ldquo;Service Worker&rdquo; som bl.a. gör det möjligt att köra skript innan en sida existerar. Det gör det möjligt att skapa mer applikationslika webbsidor.</p>
-
-<h2>r2d3</h2>
-
-<p><a href="https://github.com/mhemesath/r2d3/">r2d3</a>  <br/>
-IE8 är kanske inte vår favoritwebbläsare, men nu har vi iallafall bättre möjligheter att jobba med datavisualisering där också.</p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/IEvsMurderrate.jpg" alt="IE vs Murder rate" /><br/>
-Fler spännande korrelationer: <a href="http://tylervigen.com/">Spurious Correlations</a></p>
-
-<h2>smallworld.js</h2>
-
-<p><a href="http://mikefowler.me/smallworld.js/">smallworld.js</a><br/>
-smallworld.js skapades för att fylla tomrummet att kunna rendera en enkel kartöversikt utan tunga bibliotek.</p>
-
-<h2>ish. 2.0</h2>
-
-<p><a href="http://bradfrostweb.com/demo/ish/">ish. 2.0</a><br/>
-Verktyg för att testa webbsidor i alla storlekar.
-<img src="/images/content/posts/hittat-pa-natet-number-6/ish-manual.gif" alt="ish manual" /></p>
-
-<h2>Apfy me</h2>
-
-<p><a href="http://www.apfy.me/">apfy.me</a><br/>
-1. Hämta en sida och få HTML-svaret som XML<br/>
-2. Formatera XML output:en med XSLT<br/>
-3. Validera output med XSD<br/>
-4. Spara ner som ett API när du är klar!</p>
-
-<h2>Hejdå Node.js</h2>
-
-<p><a href="https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b">Farewell Node.js</a><br/>
-TJ Holowaychuk lämnar Node.js för att gå över till &ldquo;Go&rdquo; som passar hans nuvarande programmeringsambitioner bättre.</p>
-
-<h2>Prezi har gått över till Javascript</h2>
-
-<p><a href="https://medium.com/prezi-engineering/how-and-why-prezi-turned-to-javascript-56e0ca57d135">How and why Prezi turned to JavaScript</a><br/>
-En artikel om varför Prezi gick över till JavaScript och vilket jättejobb det innebar för dem.</p>
-
-<h2>Säkrast går först!</h2>
-
-<p><a href="http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/">Google is now ranking websites with HTTPS higher in its search results</a><br/>
-Google rankar nu sidor med HTTPS högre i sökresultaten.</p>
-
-<h2>Räkna BPM med Javascript och Spotify</h2>
-
-<p><a href="http://jmperezperez.com/beats-audio-api/">beats-audio-api</a><br/>
-1. Leta fram en låt på Spotify med hjälp av deras Web API<br/>
-2. Använd den 30 sekunders långa MP3-förhandsgranskningen som source från Audio API:et<br/>
-3. Lägg på ett lowbass filter<br/>
-4. Hitta toppar<br/>
-5. Räkna intervallet mellan toppar<br/>
-6. Gruppera dom</p>
-
-<h2>Lite mer datavisualisering</h2>
-
-<p>Fler excellenta exempel på hur data kan representeras mer eller mindre förståeligt och korrekt.</p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/rabbitduck.jpg" alt="rabbit or duck or both" /></p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/jsbok.jpg" alt="javascript-böcker" /></p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/procent.jpg" alt="rabbit or duck or both" /></p>
-
-<p><img src="/images/content/posts/hittat-pa-natet-number-6/ie.jpg" alt="IE as bicycles" /></p>
 ]]></content>
   </entry>
   

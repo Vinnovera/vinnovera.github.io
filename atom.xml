@@ -4,7 +4,7 @@
   <title><![CDATA[Vinnovera]]></title>
   <link href="http://vinnovera.se/atom.xml" rel="self"/>
   <link href="http://vinnovera.se/"/>
-  <updated>2014-12-16T10:27:52+01:00</updated>
+  <updated>2015-01-29T13:15:53+01:00</updated>
   <id>http://vinnovera.se/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,72 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript och arkitektur - Hittat på nätet #12]]></title>
+    <link href="http://vinnovera.se/blogg/2015/01/29/hittat-pa-natet-number-12/"/>
+    <updated>2015-01-29T14:00:00+01:00</updated>
+    <id>http://vinnovera.se/blogg/2015/01/29/hittat-pa-natet-number-12</id>
+    <content type="html"><![CDATA[<p>Javascriptmarknaden är i rörelse. Nya ramverk och teknologier lanseras konstant och många har åsikter om vilken som är den bästa vägen framåt.</p>
+
+<!--more-->
+
+
+<h2>Planning A Front-end JavaScript Application</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-12/postit.jpg" alt="Post-it" />
+<a href="http://developer.telerik.com/featured/planning-front-end-javascript-application/">developer.telerik.com</a>
+En rejäl checklista för att planera en javascriptapplikation, från val av verktyg och arkitektur till utvecklingsstrategi.</p>
+
+<h2>JavaScript Application Architecture On The Road To 2015</h2>
+
+<p><a href="https://medium.com/@addyosmani/javascript-application-architecture-on-the-road-to-2015-d8125811101b">medium.com</a>
+En matig artikel om javascriptapplikationer som tar upp flera olika problemområden och deras potentiella lösningar. Om composition, eventhantering, shadow DOM, offline-hantering och mer.</p>
+
+<h2>The State of JavaScript in 2015</h2>
+
+<p><a href="http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/">breck-mckye.com</a>
+Med stora förändringar och hög hastighet på javascriptmarknaden, vad är läget med javascript 2015?</p>
+
+<h2>Asynchronous JavaScript and Promises</h2>
+
+<p><a href="https://medium.com/innoarchitech-innovation-architecture-technology/asynchronous-javascript-and-promises-be4efecf247b">medium.com</a>
+Ett talk om promises i javascript.</p>
+
+<h2>Reactive MVC and the Virtual DOM</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-12/zelda.jpg" alt="Zelda" />
+<a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom/">futurice.com</a>
+En tydlig och rolig förklaring av virtuell DOM.</p>
+
+<h2>On the accessibility of web components. Again.</h2>
+
+<p><a href="http://www.brucelawson.co.uk/2014/on-the-accessibility-of-web-components-again/">brucelawson.co.uk</a>
+Om vad web components kommer att innebära för accessibility och de risker som finns involverade.</p>
+
+<h2>Regulex</h2>
+
+<p><a href="http://jex.im/regulex/#!embed=false&amp;flags=&amp;re=%5E(a%7Cb)*%3F%24">jex.im/regulex</a>
+Ett verktyg som hjälper till med att visualisera regular expressions.</p>
+
+<h2>Tridiv</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-12/xwing.png" alt="X-Wing" />
+<a href="http://tridiv.com/">tridiv.com</a>
+Ett verktyg som hjälper dig att skapa 3D-modeller med CSS och HTML.</p>
+
+<h2>Pixact.ly</h2>
+
+<p><a href="http://pixact.ly/">pixact.ly</a>
+Ett webbaserat spel där du kan testa ditt pixelögonmått.</p>
+
+<h2>Live coding in VR</h2>
+
+<p><img src="http://vinnovera.se/images/content/posts/hittat-pa-natet-number-12/vrcoding.png" alt="VR Coding" />
+<a href="https://www.youtube.com/watch?v=db-7J5OaSag">youtube.com</a>
+Framtiden är här! En film som visar live coding i VR med Oculus, Firfox WebVR, javascript och Three.js</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Robotlabb 2014]]></title>
@@ -854,7 +920,7 @@ Jag vill påpeka att vi inte nödvändigtvis håller med, men intressant läsnin
 <h2>Bra att ha</h2>
 
 <p><a href="http://css-tricks.com/prefilling-forms-custom-bookmarklet/">Prefilling Forms with a Custom Bookmarklet</a><br/>
-Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#97;&#115;&#100;&#64;&#x61;&#x73;&#100;&#x2e;&#97;&#115;&#46;">&#97;&#x73;&#100;&#x40;&#x61;&#115;&#x64;&#x2e;&#97;&#x73;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
+Alla användare heter inte Asd Asdfgh och har mailadressen <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#97;&#115;&#x64;&#x40;&#97;&#x73;&#100;&#46;&#x61;&#115;&#x2e;">&#97;&#115;&#100;&#64;&#97;&#115;&#x64;&#46;&#97;&#115;&#x2e;</a> Det är inte heller kul att skriva det varje gång du ska testa ett formulär.</p>
 
 <p><a href="http://usesparingly.tumblr.com/">Use sparingly</a><br/>
 Det är inte alltid lätt att hänga med i jargongen. Use sparingly är en användbar fusklapp.</p>
@@ -977,25 +1043,6 @@ En legend som vandrat runt sedan det uråldriga 80-talet är att väldiga mängd
 <p><a href="https://www.youtube.com/watch?v=gULY34J3x0I">ET spelet</a></p>
 
 <p><a href="https://www.youtube.com/watch?v=kGc3FMqxjaM">ET funnen</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Vi söker frontend-utvecklare!]]></title>
-    <link href="http://vinnovera.se/blogg/2014/04/23/vi-soker-frontend-utvecklare/"/>
-    <updated>2014-04-23T09:09:34+02:00</updated>
-    <id>http://vinnovera.se/blogg/2014/04/23/vi-soker-frontend-utvecklare</id>
-    <content type="html"><![CDATA[<p><img src="http://vinnovera.se/images/content/posts/vi-soker-frontend-utvecklare/logotyp.jpg" alt="Vinnovera" />
-Vi letar efter dig som <strong>brinner för frontend-utveckling</strong> och vill utvecklas inom det området tillsammans med likasinnade. Du kan vara både junior som senior &ndash; <strong>oavsett arbetslivserfarenhet</strong> så har du möjlighet att utvecklas hos oss. Många projekt på GitHub väger lika tungt som ett långt CV.</p>
-
-<!--more-->
-
-
-<p>Hos oss får du jobba med <strong>responsive webb, mobilsajter, webbappar</strong> och andra skojiga saker som har ett gränssnitt på webben. Alltid med <strong>kvalitet och hantverkskänsla i fokus</strong>. Vi värdesätter att arbeta tillsammans och dela kunskap för att kunna genomföra projekt på bästa sätt.</p>
-
-<p>Vi har ett antal stora företag som kunder (som vi tyvärr inte får nämna vid namn förrän du kommer och träffar oss) och även ett gäng mindre. Just nu jobbar vi mycket med <strong><a href="http://nodejs.org/">node.js</a></strong>, <strong><a href="http://d3js.org/">D3.js</a></strong> och <strong><a href="http://backbonejs.org/">Backbone</a></strong>.</p>
-
-<p>Låter det intressant?<br/> Hör av dig till Björn-Olle &ndash; <a href="mailto:bjorn-olle@vinnovera.se">bjorn-olle@vinnovera.se</a>, 070-171 67 27</p>
 ]]></content>
   </entry>
   
