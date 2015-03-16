@@ -13,7 +13,6 @@ var
 	more        = require('metalsmith-more'),
 	slug        = require('metalsmith-slug'),
 	permalinks  = require('metalsmith-permalinks'),
-	paginate    = require('metalsmith-paginate'),
 	stylus      = require('metalsmith-stylus'),
 	nib         = require('nib'),
 	stylusLib   = require('stylus');
@@ -34,12 +33,16 @@ renderer.code = function(code, language){
 
 module.exports = function(callback) {
 	return metalsmith(__dirname)
+
+		// Variables used in templates
 		.use(define({
 			site: {
 				disqus_short_name:          'vinnovera',
 				disqus_show_comment_count:  false
 			}
 		}))
+
+		// Generate tag index
 		.use(tags({
 			handle: 'tags',                  // yaml key for tag list in you pages
 			path: 'blogg/tagg',                   // path for result pages
@@ -47,6 +50,8 @@ module.exports = function(callback) {
 			sortBy: 'date',                  // provide posts sorted by 'date' (optional)
 			reverse: true                    // sort direction (optional)
 		}))
+
+		// Create a collection of all blog entries
 		.use(collections({
 			posts: {
 				pattern: 'blogg/*.markdown',
@@ -54,46 +59,47 @@ module.exports = function(callback) {
 				reverse: true
 			}
 		}))
-		/*	.use(pagination({
-		 'collections.posts': {
-		 perPage: 5,
-		 template: 'posts.html',
-		 first: 'posts.html',
-		 path: 'page/:num/index.html',
-		 pageMetadata: {
-		 title: 'Archive'
-		 }
-		 }
-		 }))*/
-		.use(paginate({
-			perPage: 10,
-			path: 'blogg'
-		}))
+
+		// Create url friendly slugs
 		.use(slug({
 			patterns: ['blogg/*.markdown'],
 			property: 'title'
 		}))
+
+		// Render markdown to HTML
 		.use(markdown({
 			renderer: renderer
 		}))
+
+		// Create permalink paths frpm date and slug
 		.use(permalinks({
 			pattern: 'blogg/:date/:slug',
 			date: 'YYYY/MM/DD'
 		}))
+
+		// Create excerpts with <!--more-->
 		.use(more())
+
+		// Partials support in templates
 		.use(partial({
 			directory: './templates/partials',
 			engine: 'handlebars'
 		}))
+
+		// Render templates with handlebars
 		.use(templates({
 			engine: 'handlebars'
 		}))
+
+		// Render CSS with stylus
 		.use(stylus({
 			use: [nib()],
 			define: {
 				url: stylusLib.url()
 			}
 		}))
+
+		// GO!
 		.build(function (err, files) {
 			if (err) {
 				console.log(err);
