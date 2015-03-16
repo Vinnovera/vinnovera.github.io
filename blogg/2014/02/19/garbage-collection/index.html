@@ -1,45 +1,34 @@
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Garbage Collection - Vinnovera</title>
-		
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		
-		<meta name="description" content="Garbage collection (GC) är automatiserad minneshantering i datorprogram. Det finns många olika algoritmer för garbage collection, men problemet som &hellip;">
-		
+<head>
+	<meta charset="utf-8">
+	<title>Garbage Collection</title>
 
-		<meta property="og:title" content="Garbage Collection - Vinnovera" />
-		<meta property="og:url" content="http://vinnovera.se/blogg/2014/02/19/garbage-collection/" />
-		<meta property="og:image" content="http://www.vinnovera.se/images/logoOgImage.png" />
-		<meta property="og:description" content="Garbage collection (GC) är automatiserad minneshantering i datorprogram. Det finns många olika algoritmer för garbage collection, men problemet som &hellip;" />
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+	<script>
+	    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+	        i = e.length;
 
-		<!--[if lt IE 9]>
-		<script>
-		    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
-		        i = e.length;
-		
-		    for(i; i--;) {
-		        document.createElement(e[i]);
-		    }
-		</script><![endif]-->
+	    for(i; i--;) {
+	        document.createElement(e[i]);
+	    }
+	</script><![endif]-->
 
-		<link href="/favicon.ico?1" rel="icon">
-		<link href="/atom.xml" rel="alternate" title="Vinnovera" type="application/atom+xml">
+	<link href="/favicon.ico?1" rel="icon">
+	<link href="" rel="alternate" title="" type="application/atom+xml">
 
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/stylesheets/vinnovera.css">
-<link rel="stylesheet" href="/stylesheets/overlay.css">
-		<script type="text/javascript">
+
+	<script type="text/javascript">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-2035593-3']);
 	_gaq.push(['_trackPageview']);
-	
+
 	(function() {
 		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -47,16 +36,14 @@
 	})();
 </script>
 
-	</head>
+</head>
 
-<body    >
-  <header id="header">
-	
+<body >
+<header id="header">
 	
 		<h1>
 			<a href="/">Vinnovera</a>
 		</h1>
-	
 	
 	<a href="#" class="toggle-menu" id="toggle-menu">
 		<span></span>
@@ -64,9 +51,7 @@
 		<span></span>
 	</a>
 	<nav id="navigation">
-		
 		<a href="/">Hem</a>
-		
 		<a href="/#projekt">Kunder &amp; projekt</a>
 		<a href="/#blogg">Blogg</a>
 		<a href="/#vi">Vi</a>
@@ -76,288 +61,130 @@
 </header>
 
 <a href="#" class="to-top" id="scrollUp">Till toppen</a>
-  <nav class="post-navigation">
-	
-		<a class="basic-alignment next" href="/blogg/2014/01/07/jquery-vs-mootools/" title="Nästa inlägg: jQuery vs Mootools">Nästa</a>
-	
-	
-		<a class="basic-alignment prev" href="/blogg/2014/02/28/inflyttningspresent-till-earth-people/" title="Föregående inlägg: Inflyttningspresenten">Föregående</a>
-	
-</nav>
-
-<section class="wrapper post">
-	<article>
-		<header>
-			<h1>Garbage Collection</h1>
-			
-			
-			
-			<p class="meta">
-				<span>Per Stenström</span>
-				| <time datetime="2014-02-19T17:54:05+01:00" pubdate><span class='year'>2014</span>-<span class='month'>02</span>-<span class='day'>19</span></time>
-				|
-				<span class="categories">
-					
-					<a class='category' href='/blogg/tagg/garbage-collection/'>Garbage Collection</a>, <a class='category' href='/blogg/tagg/javascript/'>Javascript</a>
-					
-				</span>
-			</p>
-			
-		</header>
-	
-		<div>
-			<p>Garbage collection (GC) är automatiserad minneshantering i datorprogram. Det finns många olika algoritmer för garbage collection, men problemet som de alla försöker att lösa är detsamma: att identifiera använt minne som applikationen inte längre klarar av att nå, och rensa det.</p>
-
+	<nav class="post-navigation">
+			<a class="basic-alignment next" href="/blogg/2014/01/07/jquery-vs-mootools" title="Nästa inlägg: jQuery vs Mootools">Nästa</a>
+			<a class="basic-alignment prev" href="/blogg/2014/02/28/inflyttningspresenten" title="Föregående inlägg: Inflyttningspresenten">Föregående</a>
+	</nav>
+	<section class="wrapper post">
+		<article>
+			<header>
+				<h1>Garbage Collection</h1>
+					<p class="meta">
+						<span>Per Stenström</span>
+						| <time datetime="2014-02-19T18:54" pubdate><span class='year'>2014</span>-<span class='month'>02</span>-<span class='day'>19</span></time>
+						|
+						<span class="categories">
+							<a href="/blogg/tagg/javascript/">Javascript</a>, <a href="/blogg/tagg/garbage-collection/">Garbage-Collection</a>
+						</span>
+					</p>
+			</header>
+			<div>
+				<p>Garbage collection (GC) är automatiserad minneshantering i datorprogram. Det finns många olika algoritmer för garbage collection, men problemet som de alla försöker att lösa är detsamma: att identifiera använt minne som applikationen inte längre klarar av att nå, och rensa det.
 <!--more-->
-
-
-<p>Motsatsen till garbage collection är att programmeraren själv måste allokera minne och sen avallokera minnet när det inte längre används, t.ex. <code>malloc()</code> och <code>free()</code> i C och C++.</p>
-
-<h2>Historien om garbage collection</h2>
-
-<p>Garbage collection uppfanns av John McCarty c:a 1959 när han arbetade med Lisp, som är ett av de första högnivåspråken. I sin uppsats <a href="http://www-formal.stanford.edu/jmc/recursive/node4.html#tex2html8">Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I</a> (1960) beskriver han en process som han kallar för &ldquo;reclamation cycle&rdquo;, eller “garbage collection”. Metoden John McCarty beskrev är idag kallad för “mark-and-sweep”, vilket är den metod JavaScript använder, om än en lite förfinad version.</p>
-
-<h2>Garbage collection-algoritmer</h2>
-
+Motsatsen till garbage collection är att programmeraren själv måste allokera minne och sen avallokera minnet när det inte längre används, t.ex. <code>malloc()</code> och <code>free()</code> i C och C++.</p>
+<h2 id="historien-om-garbage-collection">Historien om garbage collection</h2>
+<p>Garbage collection uppfanns av John McCarty c:a 1959 när han arbetade med Lisp, som är ett av de första högnivåspråken. I sin uppsats <a href="http://www-formal.stanford.edu/jmc/recursive/node4.html#tex2html8">Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I</a> (1960) beskriver han en process som han kallar för &quot;reclamation cycle&quot;, eller “garbage collection”. Metoden John McCarty beskrev är idag kallad för “mark-and-sweep”, vilket är den metod JavaScript använder, om än en lite förfinad version.</p>
+<h2 id="garbage-collection-algoritmer">Garbage collection-algoritmer</h2>
 <p>Det finns många olika implementationer av garbage collection. I JavaScript är det först och främst “mark-and-sweep” som används, och i en lite mindre utsträckning “reference counting”.</p>
-
-<h3>Reference counting garbage collection</h3>
-
+<h3 id="reference-counting-garbage-collection">Reference counting garbage collection</h3>
 <p>Reference counting används i stort sett endast av Internet Explorer 6 och 7. Den här metoden räknar alla referenser till ett objekt, och tar bort alla objekt som inte längre har en referens.</p>
-
 <p>Det är dock möjligt fär två olika objekt att referera till varandra, utan att annars vara refererade till.</p>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> o = {};
+    <span class="hljs-keyword">var</span> o2 = {};
+    o.a = o2;
+    o2.a = o;
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">f</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{};</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">o2</span> <span class="o">=</span> <span class="p">{};</span>
-</span><span class='line'>  <span class="nx">o</span><span class="p">.</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">o2</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">o2</span><span class="p">.</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">o</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">return</span> <span class="err">“</span><span class="nx">foo</span><span class="err">”</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">f</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
+    <span class="hljs-keyword">return</span> “foo”;
+}
 
-
-<p>I exemplet har o och o2 inga referenser utanför funktions-scopet. De kommer dock inte bli samlade av garbage collection eftersom de har referenser till varandra.</p>
-
+f();</code></pre><p>I exemplet har o och o2 inga referenser utanför funktions-scopet. De kommer dock inte bli samlade av garbage collection eftersom de har referenser till varandra.</p>
 <p>En annan nackdel är att själva uppdateringen av referensräknaren kan kräva ganska stora resurser, om många referenser skapas och tas bort blir applikationen betydligt långsammare.</p>
-
 <p>En fördel med denna metod är att objektet tas bort så fort det inte längre har några referenser, och kräver inte att applikationen stannas för att garbage collection ska köras.</p>
-
 <p>En variant av den här metoden används bland annat i PHP.</p>
-
-<h3>Mark-and-sweep</h3>
-
+<h3 id="mark-and-sweep">Mark-and-sweep</h3>
 <p>Sedan 2012 använder i stort sett alla browsers den här algoritmen. Mark-and-sweep är en så kallad “tracing collector”. Den fungerar på det sättet att den startar vid root-objektet. I JavaScripts fall är det global-objektet. Från global letar algoritmen efter alla referenser den kan hitta, och sen alla referenser från dessa. På så sätt får garbage-collectorn ut alla objekt som går att komma åt, och tar bort alla objekt som inte går att nå.</p>
-
 <p>Den begränsning mark-and-sweep algoritmen har är att objekt måste göras explicit oåtkomliga. Denna begränsning är däremot inte speciellt besvärande, vilket lär vara anledningen till att ingen bryr sig speciellt mycket om garbage collection.</p>
-
-<h4>Stop-the-world</h4>
-
+<h4 id="stop-the-world">Stop-the-world</h4>
 <p>Vanliga mark-and-sweep garbage collectors kör hela mark och sen sweep vid samma tillfälle, och stannar all annan programexekvering under tiden. Det kan orsaka en märkbar frysning av programmet när garbage collection körs. Mer sofistikerade algoritmer kan utföra processen i bakgrunden utan att orsaka att exekveringen saktas ned.</p>
-
-<h4>Incremental GC</h4>
-
+<h4 id="incremental-gc">Incremental GC</h4>
 <p>Firefox introducerade “incremental garbage collections” (IGC) i version 16. Vad IGC gör är att den delar upp mark-fasen av mark-and-sweep i flera cykler. Sweep-fasen pausar fortfarande browsern men den är nu betydligt kortare. Det fungerar bra så länge det inte används väldigt mycket minne, om för mycket minne används så hinner IGC inte med att garbage collecta och browsern går över till att köra en full mark-and-sweep.</p>
-
-<h4>Incremental Generational Garbage Collection</h4>
-
+<h4 id="incremental-generational-garbage-collection">Incremental Generational Garbage Collection</h4>
 <p>Incremental Generational Garbage Collection (IGGC) lades till Chrome och V8 i 2011. IGGC arbetar utifrån antagandet att de yngsta referenserna är de mest kortlivade och att garbage collectorn inte behöver kontrollera de äldsta referenserna varje cykel. Om ett objekt överlever en cykel flyttas det till en äldre generation.</p>
-
-<h2>Minneseffektiv kod</h2>
-
+<h2 id="minneseffektiv-kod">Minneseffektiv kod</h2>
 <p>Det finns inte så mycket man behöver tänka på när man skriver JavaScript i relation till garbage collection, precis som det ska vara. Men det finns några saker som är värt att tänka på:</p>
-
 <p>För att minimera den tid som används av garbage collectorn bör man undvika att skapa för många objekt. Varje gång du använder <code>new</code> keywordet skapas ett nytt objekt. Men även när du skriver <code>[ ]</code> eller <code>{ }</code>. I JavaScript är även funktioner objekt.</p>
-
 <p>Dock kommer du aldrig komma ifrån att skapa garbage. Att invokera en funktion kräver minne, som sen behöver rensas även om funktionen i övrigt inte skapar någon garbage.</p>
-
-<h3>global scope</h3>
-
+<h3 id="global-scope">global scope</h3>
 <p>Ett objekt som skapas utanför något specifikt scope tillhör det globala scopet. Eftersom mark-and-sweep-algoritmen markerar alla objekt som går att nå från det globala scopet kommer globala objekt aldrig att rensas av garbage collectorn.
 Alla variabler som instansieras utan “var”-keywordet tillhör även dom det globala scopet.</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> b = <span class="hljs-string">'foo'</span>;
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="s1">&#39;foo&#39;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">function</span> <span class="nx">test</span><span class="p">(){</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="err">‘</span><span class="nx">Hej</span><span class="err">’</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">c</span> <span class="o">=</span> <span class="err">‘</span><span class="nx">D</span><span class="err">å’</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">test</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">var</span> str = ‘Hej’;
+    c = ‘Då’;
+}
 
-
-<p>Efter det att <code>test()</code> körts går inte längre <code>str</code> att nås från <code>global</code> objectet och kommer såledas frias. Både <code>b</code> och <code>c</code> variablerna tillhör det globala scopet och det minne de tar upp frigörs aldrig.</p>
-
-<h3>delete och null keywords</h3>
-
+test();</code></pre><p>Efter det att <code>test()</code> körts går inte längre <code>str</code> att nås från <code>global</code> objectet och kommer såledas frias. Både <code>b</code> och <code>c</code> variablerna tillhör det globala scopet och det minne de tar upp frigörs aldrig.</p>
+<h3 id="delete-och-null-keywords">delete och null keywords</h3>
 <p>För att vara säker på att ett objekt blir borttaget av garbage collectorn kan du helt enkelt sätta dess värde till <code>null</code>. JavaScript har även ett <code>delete</code>-keyword. Även om det indirekt kan vara ett sätt att ta bort referensen till ett objkct, är det i första hand endast användbart när du vill sätta ett objekts property till <code>undefined</code>, istället för att sätta det till <code>null</code>. <code>delete</code> fungerar inte på variabler, utan returnerar då endast <code>false</code>.</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> s = {data: ‘test’};
+<span class="hljs-keyword">delete</span> s.data;
+s.data === ‘test’; <span class="hljs-comment">// false</span>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="err">‘</span><span class="nx">test</span><span class="err">’</span><span class="p">};</span>
-</span><span class='line'><span class="k">delete</span> <span class="nx">s</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span>
-</span><span class='line'><span class="nx">s</span><span class="p">.</span><span class="nx">data</span> <span class="o">===</span> <span class="err">‘</span><span class="nx">test</span><span class="err">’</span><span class="p">;</span> <span class="c1">// false</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="err">‘</span><span class="nx">test</span><span class="err">’</span><span class="p">;</span>
-</span><span class='line'><span class="k">delete</span> <span class="nx">m</span><span class="p">;</span> <span class="c1">// return false;</span>
-</span><span class='line'><span class="nx">m</span> <span class="o">===</span> <span class="err">‘</span><span class="nx">test</span><span class="err">’</span> <span class="c1">// true</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">m</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
-</span><span class='line'><span class="nx">m</span> <span class="o">===</span> <span class="err">‘</span><span class="nx">test</span><span class="err">’</span> <span class="c1">// false</span>
-</span></code></pre></td></tr></table></div></figure>
+<span class="hljs-keyword">var</span> m = ‘test’;
+<span class="hljs-keyword">delete</span> m; <span class="hljs-comment">// return false;</span>
+m === ‘test’ <span class="hljs-comment">// true</span>
 
-
-<p>Vad som låter som ett rimligt antagande är att vi borde kunna använda <code>delete</code> tillsammans med root-objektet (<code>this</code>). Det antagandet stämmer dock inte.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="s1">&#39;z&#39;</span><span class="p">};</span>
-</span><span class='line'><span class="k">delete</span> <span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span> <span class="c1">// return false</span>
-</span><span class='line'><span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="p">.</span><span class="nx">data</span> <span class="o">===</span> <span class="s1">&#39;z&#39;</span><span class="p">;</span> <span class="c1">// true</span>
-</span><span class='line'><span class="k">delete</span> <span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span> <span class="c1">// return true</span>
-</span><span class='line'><span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="p">.</span><span class="nx">data</span> <span class="o">===</span> <span class="s1">&#39;z&#39;</span><span class="p">;</span> <span class="c1">// false</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>var keywordet</h3>
-
+m = <span class="hljs-literal">null</span>;
+m === ‘test’ <span class="hljs-comment">// false</span></code></pre><p>Vad som låter som ett rimligt antagande är att vi borde kunna använda <code>delete</code> tillsammans med root-objektet (<code>this</code>). Det antagandet stämmer dock inte.</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> x = {data: <span class="hljs-string">'z'</span>};
+<span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.x; <span class="hljs-comment">// return false</span>
+<span class="hljs-keyword">this</span>.x.data === <span class="hljs-string">'z'</span>; <span class="hljs-comment">// true</span>
+<span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.x.data; <span class="hljs-comment">// return true</span>
+<span class="hljs-keyword">this</span>.x.data === <span class="hljs-string">'z'</span>; <span class="hljs-comment">// false</span></code></pre><h3 id="var-keywordet">var keywordet</h3>
 <p>Var noga med hur du använder <code>var</code> keywordet.</p>
-
 <p>Speciellt i intervall där varje iteration är ett eget scope skapas det lätt väldigt mycket onödigt garbage.</p>
-
-<h3>Mindre function-scope</h3>
-
+<h3 id="mindre-function-scope">Mindre function-scope</h3>
 <p>Var noga med dina funktions-scope. Det kan vara värt att dela en stor funktion i mindre. Det skapar garbage oftare men i mindre mängd. Det utnyttjar även den generationella garbage collectorn.</p>
-
 <p>I exemplet ska vi räkna ut den initiella <code>velocity.x</code>och <code>velocity.y</code>och för ett objekt. Det gjorde vi tidigare i konstruktorn av objektet, földen av det var att de hjälp-variabler vi använder i uträkningen inte gick ur scope förrän vi förstörde objektet. Nu går variablerna ur scope så fort <code>init()</code> metoden är klar.</p>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">init</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> dx, dy, distance, dv, tx, ty, tv, dtv;
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">dx</span><span class="p">,</span> <span class="nx">dy</span><span class="p">,</span> <span class="nx">distance</span><span class="p">,</span> <span class="nx">dv</span><span class="p">,</span> <span class="nx">tx</span><span class="p">,</span> <span class="nx">ty</span><span class="p">,</span> <span class="nx">tv</span><span class="p">,</span> <span class="nx">dtv</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">// Distance of particle from the center across the x and y axis</span>
-</span><span class='line'>  <span class="nx">dx</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">x</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">center_x</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">dy</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">center_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">// Distance of particle from the center (radius of orbit)</span>
-</span><span class='line'>  <span class="nx">distance</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span> <span class="nx">dx</span> <span class="o">*</span> <span class="nx">dx</span> <span class="o">+</span> <span class="nx">dy</span> <span class="o">*</span> <span class="nx">dy</span> <span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">// velocity towards center (gravity) through distance</span>
-</span><span class='line'>  <span class="c1">// We substitute the sum of masses with 1</span>
-</span><span class='line'>  <span class="nx">dv</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">*</span> <span class="nx">options</span><span class="p">.</span><span class="nx">gravity</span><span class="p">)</span> <span class="o">/</span> <span class="nx">distance</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">// Tangental velocity</span>
-</span><span class='line'>  <span class="nx">dtv</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span> <span class="nx">dv</span> <span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="nx">tx</span> <span class="o">=</span> <span class="nx">dy</span> <span class="o">*</span> <span class="nx">dtv</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">ty</span> <span class="o">=</span> <span class="nx">dx</span> <span class="o">*</span> <span class="nx">dtv</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="nx">velocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">+=</span> <span class="nx">tx</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">velocity</span><span class="p">.</span><span class="nx">y</span> <span class="o">-=</span> <span class="nx">ty</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+    <span class="hljs-comment">// Distance of particle from the center across the x and y axis</span>
+    dx = options.x - options.center_x;
+    dy = options.y - options.center_y;
 
+    <span class="hljs-comment">// Distance of particle from the center (radius of orbit)</span>
+    distance = <span class="hljs-built_in">Math</span>.sqrt( dx * dx + dy * dy );
 
-<h3>Loopar</h3>
+    <span class="hljs-comment">// velocity towards center (gravity) through distance</span>
+    <span class="hljs-comment">// We substitute the sum of masses with 1</span>
+    dv = (<span class="hljs-number">1</span> * options.gravity) / distance;
 
+    <span class="hljs-comment">// Tangental velocity</span>
+    dtv = <span class="hljs-built_in">Math</span>.sqrt( dv );
+
+    tx = dy * dtv;
+    ty = dx * dtv;
+
+    velocity.x += tx;
+    velocity.y -= ty;
+}</code></pre><h3 id="loopar">Loopar</h3>
 <p>Istället för:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bar</span><span class="p">();</span>
-</span><span class='line'><span class="p">},</span> <span class="mi">16</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>skriv:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bar</span><span class="p">();</span>
-</span><span class='line'><span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="nx">foo</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
-</span><span class='line'><span class="p">},</span><span class="mi">16</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Det första exemplet skapar ett nytt objekt varje iteration, som är onåbart i nästa. Det andra exemplet skapar ett objekt som sen återanvänds, fast med nya värden.</p>
-
-<h3>Object pool</h3>
-
+<pre><code class="hljs javascript">setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> bar();
+}, <span class="hljs-number">16</span>);</code></pre><p>skriv:</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> bar();
+setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    foo.init();
+},<span class="hljs-number">16</span>);</code></pre><p>Det första exemplet skapar ett nytt objekt varje iteration, som är onåbart i nästa. Det andra exemplet skapar ett objekt som sen återanvänds, fast med nya värden.</p>
+<h3 id="object-pool">Object pool</h3>
 <p>Det kan ibland vara bra att skapa en “objektpool”. När du ofta ska skapa och ta bort liknande objekt.  Det gör du genom att använda två arrayer:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">activeObject</span> <span class="o">=</span> <span class="p">[],</span>
-</span><span class='line'>    <span class="nx">objectPool</span>   <span class="o">=</span> <span class="p">[];</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>När du vill skapa ett nytt objekt plockar du det ur arrayen <code>objectPool</code>med oanvända objekt och lägger det i <code>activeObject</code> arrayen. När du sen är klar med ditt objekt flyttar du tillbaka det till poolen. På så sätt skapas inga nya objekt efter startup och inget tas heller bort av garbage collectorn.</p>
-
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> activeObject = [],
+    objectPool   = [];</code></pre><p>När du vill skapa ett nytt objekt plockar du det ur arrayen <code>objectPool</code>med oanvända objekt och lägger det i <code>activeObject</code> arrayen. När du sen är klar med ditt objekt flyttar du tillbaka det till poolen. På så sätt skapas inga nya objekt efter startup och inget tas heller bort av garbage collectorn.</p>
 <p>Den här metoden är användbar när man animerar många objekt. Till exempel punkter i en graf.</p>
-
-<h2>Referenser</h2>
-
+<h2 id="referenser">Referenser</h2>
 <ul>
 <li><a href="http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29">http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Memory_Management">https://developer.mozilla.org/en-US/docs/JavaScript/Memory_Management</a></li>
@@ -366,32 +193,25 @@ Alla variabler som instansieras utan “var”-keywordet tillhör även dom det 
 <li><a href="https://blog.mozilla.org/dmandelin/2012/07/20/incremental-gc-now-in-firefox-aurora/">https://blog.mozilla.org/dmandelin/2012/07/20/incremental-gc-now-in-firefox-aurora/</a></li>
 </ul>
 
-
-		</div>
-	</article>
-	
-	
-		<article class="authorDescription">
-			<div>
-				
-					<img src="/images/profiles/per.jpg" alt="Per Stenström" />
-				
-			</div>
-			<div>
-				<h3>Per Stenström</h3>
-				<a href="mailto: per@vinnovera.se">(per@vinnovera.se)</a>
-				<p>Per Stenström jobbar med frontend på Vinnovera.</p>
-				<p>Vi är specialister på frontend-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
-				<p><a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
 			</div>
 		</article>
-	
-	
-	
-	<div>
-		<div class="wrapper comments">
-			<h2>Kommentera</h2>
-			<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
+			<article class="authorDescription">
+				<div>
+						<img src="/images/profiles/per.jpg" alt="Per Stenström" />
+				</div>
+				<div>
+					<h3>Per Stenström</h3>
+					<a href="mailto: per@vinnovera.se">(per@vinnovera.se)</a>
+					<p>Per Stenström jobbar med frontend på Vinnovera.</p>
+					<p>Vi är specialister på frontend-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+					<p><a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
+				</div>
+			</article>
+
+			<div>
+				<div class="wrapper comments">
+					<h2>Kommentera</h2>
+					<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'vinnovera'; // required: replace example with your forum shortname
 
@@ -403,21 +223,22 @@ Alla variabler som instansieras utan “var”-keywordet tillhör även dom det 
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
-		</div>
-	</div>
-	
-</section>
+				</div>
+			</div>
+	</section>
 
-  <footer role="contentinfo"><span class="adr">
-	<span class="street-address">Västerlånggatan 27</span>
-	<span class="postal-code">111 29</span>
-	<span class="locality">Stockholm</span>
-	<a class="map-link" href="https://www.google.com/maps/place/Vinnovera+AB/@59.3252213,18.0692205,17z/data=!3m1!4b1!4m2!3m1!1s0x465f77e26eb236e1:0x314b77ee3a5d5ea1">(Karta)</a>
-</span>
+<footer role="contentinfo">
+	<span class="adr">
+		<span class="street-address">Västerlånggatan 27</span>
+		<span class="postal-code">111 29</span>
+		<span class="locality">Stockholm</span>
+		<a class="map-link" href="https://www.google.com/maps/place/Vinnovera+AB/@59.3252213,18.0692205,17z/data=!3m1!4b1!4m2!3m1!1s0x465f77e26eb236e1:0x314b77ee3a5d5ea1">(Karta)</a>
+	</span>
 
-<span class="tel">08 - 5000 10 90</span>
-<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a></footer>
-  <script src="/javascripts/components/mootools.js"></script>
+	<span class="tel">08 - 5000 10 90</span>
+	<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a>
+</footer>
+<script src="/javascripts/components/mootools.js"></script>
 <script src="/javascripts/components/mootools-more.js"></script>
 <script src="/javascripts/components/jsoverlay.js"></script>
 <script src="/javascripts/vinnovera.js"></script>

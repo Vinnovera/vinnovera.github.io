@@ -1,0 +1,9 @@
+.sans {
+  font-family: 'Roboto Slab';
+}
+.serif {
+  font-family: Roboto, "Helvetica Neue Light", Arial;
+}
+.mono {
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace false;
+}
