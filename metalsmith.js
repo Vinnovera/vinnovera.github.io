@@ -9,7 +9,6 @@ var
 	partial     = require('metalsmith-partial'),
 	tags        = require('metalsmith-tags'),
 	collections = require('metalsmith-collections'),
-	define      = require('metalsmith-define'),
 	more        = require('metalsmith-more'),
 	slug        = require('metalsmith-slug'),
 	permalinks  = require('metalsmith-permalinks'),
@@ -34,13 +33,17 @@ renderer.code = function(code, language){
 module.exports = function(callback) {
 	return metalsmith(__dirname)
 
-		// Variables used in templates
-		.use(define({
+		// Global properties used by plugins and templates
+		.metadata({
 			site: {
+				title: 'Vinnovera.se',
+				url: 'http://vinnovera.se',
+				author: 'Vinnovera',
+
 				disqus_short_name:          'vinnovera',
 				disqus_show_comment_count:  false
 			}
-		}))
+		})
 
 		// Generate tag index
 		.use(tags({

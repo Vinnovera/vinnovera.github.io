@@ -13,7 +13,6 @@
     "marked": "^0.3.3",
     "metalsmith": "^1.2.0",
     "metalsmith-collections": "^0.6.0",
-    "metalsmith-define": "^1.0.0",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-more": "^0.2.0",
     "metalsmith-partial": "^0.1.0",
