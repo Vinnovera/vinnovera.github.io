@@ -22,13 +22,13 @@ Our solution? We decided to use the product tags. If we wanted to add a pdf-file
 Code example for tags containing video:
 
 ```html
-{% raw %}{% for tag in product.tags %}
+{% for tag in product.tags %}
 	{% if tag contains 'video:'%}
 		<div>
 			<iframe src="http://www.youtube.com/embed/\{\{ tag | replace: 'video:', ''\}\}"></iframe>
 		</div>
 	{% endif %}
-{% endfor %}{% endraw %}
+{% endfor %}
 ```
 
 [1]: http://www.shopify.com/technology/3032322-new-feature-metafields#axzz2xvNXkLON
