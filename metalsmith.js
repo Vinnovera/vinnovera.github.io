@@ -12,6 +12,7 @@ var
 	more        = require('metalsmith-more'),
 	slug        = require('metalsmith-slug'),
 	permalinks  = require('metalsmith-permalinks'),
+	feed        = require('metalsmith-feed'),
 	stylus      = require('metalsmith-stylus'),
 	nib         = require('nib'),
 	stylusLib   = require('stylus');
@@ -39,6 +40,8 @@ module.exports = function(callback) {
 				title: 'Vinnovera.se',
 				url: 'http://vinnovera.se',
 				author: 'Vinnovera',
+
+				subscribe_rss: 'http://vinnovera.se/rss.xml',
 
 				disqus_short_name:          'vinnovera',
 				disqus_show_comment_count:  false
@@ -92,6 +95,11 @@ module.exports = function(callback) {
 		// Render templates with handlebars
 		.use(templates({
 			engine: 'handlebars'
+		}))
+
+		// Generate RSS
+		.use(feed({
+			collection: 'posts'
 		}))
 
 		// Render CSS with stylus
