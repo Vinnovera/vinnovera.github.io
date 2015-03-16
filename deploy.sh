@@ -3,7 +3,7 @@ echo "## Clearing deploy folder"
 rm -rf deploy
 
 echo "## Clone repository"
-git clone https://github.com/Vinnovera/vinnovera.github.io.git deploy
+git clone https://github.com/Vinnovera/vinnovera.github.io.git -b master deploy
 
 echo "## Building website"
 gulp build
