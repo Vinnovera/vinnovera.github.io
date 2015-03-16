@@ -1,0 +1,73 @@
+---
+template: post.html
+title: "Web 3.0 är här - Hittat på nätet #11"
+date: 2014-11-28 14:01:25 
+comments: true
+author: Per Stenström
+tags: [Länkar, Nyheter, Hittat]
+authorDescription: Per Stenström jobbar med frontend på Vinnovera.
+authorImage: /images/profiles/per.jpg
+authorMail: per@vinnovera.se
+---
+
+Kan WebGL vara det bästa sen SVG?
+<!--more-->
+
+## Web 3.0
+[MozVR launches with eleVR player][5]  
+Web 2.0, eller Webben som det också kallas, får lämna plats åt Web 3.0. När vi bygger våra hemsidor i Virtual Reality. 
+
+## Sa någon SVG?
+![Vivus][04]  
+[Vivus][4]  
+Vivus är ett litet script för att animera SVG paths.
+
+![Clipping in CSS and SVG][06]  
+[Clipping in CSS and SVG][6]  
+Tänk dig, clip-path tillsammans med shape-outside. Vad finns det  man inte kan göra med SVG?
+
+## Internet
+![WebGL Fluid Experiment][09]
+[WebGL Fluid Experiment][9]  
+Jag fattar inte varför det här överhuvudtaget fungerar på intetnet. Det är typ lika ballt som SVG.
+
+[The State Of Animation 2014][0]  
+Web Animation API:t kan ta våra web native animationer till nästa nivå. Men vi får inte glömma bort lärdomarna och kompetensen från den forna flash världen.
+
+[Microsoft on GitHub][8]  
+Microsoft har släppt .NET som opensource, det ska även bli plattformsoberoende. Microsoft kommer enbart med glada nyheter. 
+
+## Tympanus
+![Slicebox][02]  
+[Slicebox][2]  
+Väldigt snygg slideshow exempel. Använder sig av plugginnet [jquery-cuboid][2.1].
+
+[Drag and Drop Interaction Ideas][7]  
+Bra idéer om drag and drop. Problemet är att användare ofta inte förstår att man måste dra och istället vill klicka. 
+
+## Användbart
+[Flow, a new static type checker for JavaScript][1]  
+Statisk typning har alltid varit ett hett ämne, många gillar JavaScript just för att det inte är typat eller har klasser. Det finns dock prakistka skäl till att vara noga med typningen, som att inte orsaka en [de-optimisering i Chrome][1.1].
+
+![The Specificity Graph][03]  
+[The Specificity Graph][3]  
+I ett väl strikturerat CSS dokument bör selektorerna struktureras efter specifitet, med lägst specifitet i början av filen och högst i slutet. Men blir inte alla moduler väldigt fragmenterade då?
+
+[0]:http://www.smashingmagazine.com/2014/11/18/the-state-of-animation-2014/
+[1]: https://code.prod.facebook.com/posts/1505962329687926/flow-a-new-static-type-checker-for-javascript/
+[1.1]: http://floitsch.blogspot.co.uk/2012/03/optimizing-for-v8-inlining.html
+[2]: http://tympanus.net/Development/Slicebox/
+[2.1]: https://github.com/niklasp/jquery-cuboid
+[3]: http://csswizardry.com/2014/10/the-specificity-graph/
+[4]: http://maxwellito.github.io/vivus/
+[5]: http://elevr.com/mozvr-launches-with-elevr-player/
+[6]: http://sarasoueidan.com/blog/css-svg-clipping/
+[7]: http://tympanus.net/Development/DragDropInteractions/sidebar.html
+[8]: http://microsoft.github.io/
+[9]: https://haxiomic.github.io/GPU-Fluid-Experiments/html5/?q=Medium
+
+[02]: /images/content/posts/hittat-pa-natet-number-11/slicebox.jpg
+[03]: /images/content/posts/hittat-pa-natet-number-11/specificygraph.jpg
+[04]: /images/content/posts/hittat-pa-natet-number-11/vivus.jpg
+[06]: /images/content/posts/hittat-pa-natet-number-11/clippath.jpg
+[09]: /images/content/posts/hittat-pa-natet-number-11/fluid.jpg

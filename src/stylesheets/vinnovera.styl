@@ -1,0 +1,901 @@
+@import "core/_utilities.styl"
+@import "_config.styl"
+@import "components/_normalize.styl"
+@import "core/_typo.styl"
+@import "modules/_post-navigation.styl"
+@import "modules/_jsoverlay.styl"
+@import "highlight/hybrid.styl"
+@import "highlight/highlight.styl"
+
+.clearfix
+	&:before,
+	&:after
+		content: " "
+		display: table
+
+html
+	-webkit-font-smoothing: antialiased
+	
+body
+	text-rendering: optimizeLegibility
+	font: 400 16px/20px "Roboto Slab", serif
+	color: $gray
+	
+	> .to-top
+		width: 60px
+		height: 60px
+		text-indent: -9999px
+		background-image: url('../images/logoSymbolBlack.png')
+		position: fixed
+		top:  -60px
+		left: 10px
+		z-index:  5
+		opacity: 0
+		transition: opacity .5s
+		border: 0px
+		
+		+bp(retina)
+			background: url('../images/logoSymbolBlack@2x.png') no-repeat
+			background-size: 60px 60px
+		
+		&.visible
+			opacity: 1
+			top: 10px
+			
+			+bp(slick-rick)
+				opacity: 0
+		
+		
+	> footer
+		padding: 40px 0
+		text-align:  center
+		border-top: 1px solid #ccc
+		
+		span, a
+			margin: 0 8px
+			
+			+bp(masta-killa)
+				display: block
+				text-align: right
+				margin: 0
+		> span
+				
+			+bp(masta-killa)
+				border-bottom: 1px solid #ccc
+				padding-bottom: 20px
+				margin-top: 20px
+				position: relative
+			
+			&:before
+				+bp(masta-killa)
+					content: "Telefon"
+					position: absolute
+					left: 0
+					top: 0
+					color: #666
+						
+			&:first-child
+				&:before
+					+bp(masta-killa)
+						content: "Adress"
+	
+		> a
+			+bp(masta-killa)
+				margin-top: 20px
+				position: relative
+				
+				&:before
+					content: "E-post"
+					position: absolute
+					left: 0
+					top: 0
+					color: #666
+				
+		+bp(masta-killa)
+			margin: 0px 20px 40px
+			padding: 0
+	
+	> header
+		height: 80px
+		background:  $black
+		position: relative
+		z-index: 2
+		
+		&.small
+			position: fixed
+			top: 0
+			left: -20px
+			right: -20px
+			height: 40px
+			background: white
+			z-index: 1
+			box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2)
+			
+			> h1
+				width: 60px
+				height: 60px
+				margin-top:  -30px
+				background-image: url('../images/logoSymbolBlack.png')
+			
+			> nav > a
+				font-size: 14px
+				line-height: 40px
+				color: $black
+		
+		> h1
+			width: 38px
+			height: 38px
+			background: url('../images/logo.png') no-repeat
+			margin: 0
+			text-indent: -9999px
+			position: absolute
+			top: 50%
+			left: 40px
+			margin-top: -19px
+			
+			+bp(retina)
+				background: url('../images/logox2.png') no-repeat
+				background-size: 150px 38px
+			
+			+bp(danger-doom)
+				left: 20px
+			
+			+bp(slick-rick)
+				&.index
+					display: none
+			
+			> a
+				display: block
+				width: 100%
+				height: 100%
+				border: 0
+			
+		> nav
+			text-align: center
+			
+			> a, > span
+				line-height: 80px
+				padding: 0 15px
+				color: white
+				text-decoration: none
+				font-size: 20px
+				font-family: $brandFontStack
+				border: 0px
+				
+				&:hover
+					color: $whitehover
+				
+			> span
+				&:hover
+					color: white
+					
+				&.labs
+					width: 200px
+					height: 123px
+					position: absolute
+					top: 0
+					right: 0
+					text-indent: -9999px
+					background: url('../images/labs.png') no-repeat
+					padding: 0
+					
+			+bp(danger-doom)
+				padding-left: 58px
+				
+				
+	> section
+		padding: 100px 0
+		
+		+bp(slick-rick)
+			padding: 50px 0
+		
+		&.about
+			background: $blue
+			color: white
+				
+			> .wrapper
+				max-width: 750px
+				margin: 0 auto
+				padding: 0 20px
+				
+				> img
+					display: block
+					margin: 0 auto 50px
+					
+				.hisspitch
+					font: 300 34px/1.2 $brandFontStack
+					a
+						color: white
+						text-decoration: none
+						border-bottom: 2px solid white
+						
+					+bp(masta-killa)
+						font-size: 24px
+					
+					strong
+						font-weight: 400
+				
+				> .contact
+					font-size: 18px
+					text-align: center
+					margin-top: 50px
+					line-height: 1.5
+						
+					a
+						color: white
+						margin: 0 8px
+						&:hover
+							color: $whitehover
+						
+					span
+						margin: 0 8px
+					
+					
+					+bp(masta-killa)
+						a
+							display: inline-block
+						> span
+							display: block
+							
+							> span:first-child
+								display: block
+					
+		&.what-we-do
+			h1
+				font-size: 42px
+				line-height: 48px
+			h2
+				font-size: 26px
+			p
+				line-height: 23px
+			a
+				color: $gray
+				text-decoration: none
+				
+			.link
+				color: $blue
+				text-decoration: underline
+				
+				&:hover
+					color: #3790cf
+		
+			> .featured
+				border-bottom: 1px solid #eee
+				overflow: hidden
+				
+				.wrapper
+					overflow: hidden
+					position: relative
+					min-height: 322px
+				
+				.img
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 62%
+					padding-right: 40px
+					box-sizing: border-box
+					
+					+bp(ol-dirty-bastard)
+						position: static
+						width: 100%
+						padding: 0
+						text-align: center
+						border-bottom: 1px solid #eee
+
+					> img
+						display: block
+						margin: 0 auto
+						
+				.content
+					padding-top: 40px
+					float: right
+					width: 38%
+					
+					+bp(ol-dirty-bastard)
+						float: none
+						width: 100%
+						margin-bottom: 20px
+				
+				+bp(ol-dirty-bastard)
+					margin: 0 20px
+					border-bottom: 1px solid #ddd
+					> div
+						padding: 0 
+					
+						
+			.category
+				color: #666
+				font-family: $brandFontStack
+				display: block
+				
+			.projects
+				@extend .clearfix
+				margin-left: -30px
+				margin-top: 40px
+				overflow: hidden
+				word-spacing: 0
+				letter-spacing: -0.25em
+				
+				+bp(masta-killa)
+					margin-top: 0
+					margin-left: 0
+					
+				> article
+					display: inline-block
+					width: 33.333%
+					padding-left: 30px
+					padding-bottom: 30px
+					word-spacing: normal
+					letter-spacing: normal
+					vertical-align: top
+					box-sizing: border-box
+					
+					+bp(ol-dirty-bastard)
+						width: 50%
+						margin-bottom: 40px
+						
+					+bp(masta-killa)
+						width: 100%
+						padding-bottom: 20px
+						margin: 40px 0 0
+						padding-left: 0px
+						border-bottom: 1px solid #ddd
+					
+					.category
+						padding-top: 20px
+						margin-top: 0
+						margin-bottom:  0
+						
+					img
+						display: block
+						margin-bottom: 0
+						
+		&.project-listing
+			overflow: hidden
+			
+			a
+				color: $gray
+				
+			.link
+				color: $blue
+				
+			.category
+				color: #666
+				font-family: $brandFontStack
+				display: block
+			
+			article
+				width: 33.333%
+				padding-left: 30px
+				box-sizing: border-box
+				float: left
+				margin-top: 30px
+				
+				.category
+					padding-top: 20px
+					margin-top: 0
+					margin-bottom:  0
+					
+				> img
+					display: block
+					margin-bottom: 0
+			
+		&.blog
+			background: $orange
+			color: white
+			
+			h1
+				font-size: 42px
+				text-align: left
+				width: 50%
+				box-sizing: border-box
+				padding-right: 20px
+				color: white
+				line-height: 48px
+				
+				> a
+					font: inherit
+					color: inherit
+					border: 0
+					padding-bottom: 10px
+					border-bottom: 5px solid white
+					text-decoration: none
+					display: block
+					
+				+bp(ol-dirty-bastard)
+					width: 100%
+				
+			h2
+				color: white
+				font-weight: 700
+				
+			.link
+				color: white
+				text-decoration: none
+				padding-bottom: 2px
+				border-bottom: 2px solid white
+				
+			.articles
+				margin-left: -40px
+				overflow: hidden
+				word-spacing: -1px
+				font-size: 0
+				
+				> article
+					display: inline-block
+					width: 50%
+					padding-left: 40px
+					box-sizing: border-box
+					margin-top: 20px
+					word-spacing: normal
+					font-size: 16px
+					line-height: 23px
+					vertical-align: top
+					
+					+bp(ol-dirty-bastard)
+						width: 100%
+					
+					> .inner
+						min-height: 212px
+						padding-bottom: 20px
+						border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+						
+						> a
+							color: white
+							text-decoration: none
+				
+						.link
+							color: white
+							&:hover
+								color: $whitehover
+						
+						time
+							display: block
+							font-size: 11px
+							margin-top: -15px
+							
+			.more
+				text-align: center
+				padding: 80px 0 0
+
+				a
+					font-size: 20px
+					&:hover
+						color: $whitehover
+
+
+		&.people
+			padding-bottom: 0
+			
+			h1
+				font-size: 42px
+				line-height: 48px
+			.humans
+				margin-left: -30px
+				margin-top: -30px
+				word-spacing: -1px
+				font-size: 0
+				text-align: center
+				
+				> article
+					display:  inline-block
+					width: 20%
+					font-size: 14px
+					word-spacing:  normal
+					padding-left: 30px
+					margin-top: 30px
+					vertical-align: top
+					box-sizing: border-box
+					text-align: center
+					font-size: 12px
+					
+					+bp(gza)
+						width: 25%
+						
+					+bp(ol-dirty-bastard)
+						width: 33.333%
+						
+					+bp(masta-killa)
+						width: 50%
+					
+					> img
+						border-radius: 50%
+						display: block
+						margin: 0 auto 10px
+						
+					> strong
+						display: block
+						font-size: 15px
+						font-family: $brandFontStack
+						font-weight:  600
+						
+					> span
+						display: block
+			
+		&.contact
+			padding-bottom: 0
+			
+			> h1
+				font-size: 42px
+				line-height: 48px
+				
+			> div
+				height: 580px
+				position: relative
+				
+				+bp(masta-killa)
+					display: none
+				
+				> a
+					display: block
+					width: 100%
+					height: 100%
+					background: url('../images/map.png') center center no-repeat
+					background-size: cover
+					position: absolute
+					top: 0
+					left: 0
+					border: 0px
+					z-index: 1
+				
+				.wrapper
+					height: 100%
+				
+				article
+					position: absolute
+					top: 50%
+					left: 0
+					padding: 20px
+					background: white
+					box-sizing: border-box
+					width: 370px
+					max-width: 100%
+					height: 225px
+					margin-top: -140px
+					z-index: 2
+					
+					> section
+						overflow: hidden
+						padding-top: 20px
+						margin-top: 20px
+						border-top: 1px solid #ccc
+						
+						&:first-child
+							padding-top: 0
+							margin-top: 0
+							border: none
+						
+						> .label
+							float: left
+							color: #666
+							
+						> .value
+							float: right
+							text-align: right
+							
+							> span
+								display: block
+								> a
+									line-height: 25px
+							
+		&.post
+			max-width: 640px
+			font-size: 19px
+			line-height: 29px
+			
+			+bp(slick-rick)
+				padding-top: 50px
+				font-size: 16px
+				line-height: 23px
+
+			.categories
+				display: inline-block
+
+			h2
+				font-size: 28px
+				+bp(q-tip)
+					font-size: 24px
+					line-height: 1.2
+			
+			h3, h4
+				margin-bottom: -15px
+
+			li a
+				max-width: 100%
+				overflow: hidden
+				display: inline-block
+				text-overflow: ellipsis
+				vertical-align: top
+				white-space: nowrap
+
+			div a:visited
+				color: #609
+				border-color: #609
+
+			.portrait
+				float: right
+				display: block
+				border-radius: 50%
+				margin: 0 0 0 20px
+
+				+bp(q-tip)
+					float: none
+					display: block
+					margin: 0 auto 10px
+
+			.authorDescription
+				background-color: #333
+				color: white
+				padding: 20px
+				overflow: hidden
+				font-size: 12px
+				line-height: 20px
+				
+				> div
+					width: 75%
+					display: inline-block
+					box-sizing: border-box
+					float: left
+					padding-left: 20px
+					vertical-align: top
+					
+					&:first-child
+						width: 25%
+						padding: 0
+						
+						> a
+							text-align: center
+							display: block
+							
+					+bp(slick-rick)
+						width: 100%
+						&:first-child
+							display: none
+							
+					p
+						margin-top: 10px
+					a
+						color: white
+						
+						&.tel
+							text-decoration: none
+						&:visited
+							color: white				
+					img
+						display: block
+						border-radius: 50%
+						margin: 0 auto 10px
+				h3
+					margin: 0 8px 0 0
+					display: inline
+					font-size: 18px
+					
+					+ a
+						text-decoration: none
+						padding-top: 2px
+				
+			.comments
+				max-width: 600px
+				margin-top: 80px
+			
+				h2
+					text-align: center
+					margin-bottom: 20px
+					font-size: 24px
+					
+			&.listing
+				h1
+					margin-bottom: 60px
+					+bp(q-tip)
+						font-size: 36px
+				> article
+					margin-top: 40px
+			
+					> header > h2
+						font-size: 32px
+						margin-bottom: 15px
+						text-align: center
+						
+						> a
+							text-decoration: none
+							color: #333
+		
+			> article
+				margin-bottom: 60px
+
+				> header
+					padding-bottom: 20px
+					border-bottom: 2px solid #666
+					margin-bottom: 40px
+					
+					> h1
+						margin-bottom: 15px
+						> a
+							border: 0
+							text-decoration: none
+							color: #333
+						+bp(q-tip)
+							font-size: 30px
+							font-size: 9vw
+					> p
+						margin: 0
+						text-align:  center
+						
+						> a
+							text-decoration: none
+							border-bottom: 2px solid $blue
+					
+					
+				h2
+					margin-top: 30px
+					
+					+ p
+						margin-top: 0px
+					+ ul
+						margin-top: 0px
+					
+				h3
+					margin-top: 30px
+				
+				p
+					margin: 30px 0 0
+					
+				ul
+					margin: 30px 0
+
+				.video
+					margin-top: 30px
+					position: relative
+
+					&.youtube
+						padding-bottom: 56%
+
+					> iframe
+						position: absolute
+						width: 100%
+						height: 100%
+					
+		.comments
+			max-width: 600px
+			
+			h2
+				text-align: center
+				margin-bottom: 20px
+							
+		&.post-extra
+			background: $orange
+			color: white
+			
+			h2
+				color: white
+				padding-bottom: 10px
+				border-bottom: 2px solid white
+				margin-bottom: 30px
+			
+			.splits
+				margin-left: -40px
+				@extend .clearfix
+				
+				> .split-half
+					float: left
+					padding-left:  40px
+					width: 50%
+					box-sizing: border-box
+					
+			.post
+				padding-top: 20px
+				margin-top: 20px
+				border-top: 1px solid white
+				
+				&:first-child
+					padding-top: 0
+					margin-top: 0
+					border-top: none
+			
+				a
+					color: white
+					display: block
+					
+			.link
+				color: white
+				text-decoration: none
+				padding-bottom: 2px
+				border-bottom: 2px solid white
+			
+.wrapper
+	max-width:  960px
+	margin: 0 auto
+	@extend .clearfix
+	position: relative
+	padding-left: 20px
+	padding-right: 20px
+	
+.fetch
+	text-align: center
+	margin-top: 40px
+	
+	> a
+		border-radius: 3px
+		background: $blue
+		color: white !important
+		padding: 10px 20px
+		font-family: $brandFontStack
+		font-weight: 700
+
+.toggle-menu
+	height: 32px
+	width:  32px
+	background-color:  #333
+	display: none
+	border-radius: 3px
+	position: absolute
+	right: 40px
+	top: 50%
+	margin-top: -16px
+	padding: 10px 7px
+	box-sizing: border-box
+	border: 0px
+	
+	+bp(slick-rick)
+		display: block
+		+ nav
+			position: absolute
+			top: 80px
+			width: 100%
+			background-color: #fff
+			text-align: left
+			height: 0px
+			overflow: hidden
+			transition: height .3s
+			padding: 0
+			> a, > span
+				display: block
+				color: #333
+				line-height: 55px
+				border-bottom: 1px solid #ddd
+				text-decoration: none
+				&:hover
+					color: #666
+			> span
+				&:hover
+					color: #333
+					
+		> span
+			width: 18px
+			height: 2px
+			background: white
+			margin-bottom: 3px
+			display: block
+			transition: opacity 0.3s, transform 0.3s
+		
+		&.open
+			+ nav
+				height: 280px
+				transition: height .3s
+			> span
+				&:first-child
+					transform: rotate(45deg) translate(4px, 4px)
+					+ span
+						opacity: 0
+				&:last-child
+					transform: rotate(-45deg) translate(3px, -3px)
+		&:before
+			display: table
+			content: "Meny"
+			position: absolute
+			top: 5px
+			left: -53px
+			color: #fff
+			font-family: Roboto,"Helvetica Neue Light",Arial
+
+table
+	&.airy
+		margin-top: 15px
+		
+		td
+			padding-right: 20px
+			text-align: center
+			
+			&:first-child
+				text-align: left

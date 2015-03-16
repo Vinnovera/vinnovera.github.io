@@ -1,0 +1,33 @@
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+{{!--
+	{% capture description}}{{#if page.title}}{{page.content | markdownify | strip_html}}{% else}}{{#if page.description}}{{page.description | strip_html}}{% else}}{{content | raw_content | strip_html}}{{/if}}{{/if}}{{/capture}}
+	<meta name="description" content="{{description | condense_spaces | truncate:150}}">
+	{{#if page.keywords}}<meta name="keywords" content="{{page.keywords}}">{{/if}}
+
+	<meta property="og:title" content="{{#if page.title}}{{#if site.titlecase}}{{page.title | titlecase}}{% else}}{{page.title}}{{/if}} - {{/if}}{{site.title}}{{#if page.indextitle}} - {{page.indextitle}} {{/if}}" />
+	<meta property="og:url" content="{{site.url}}{{page.url | remove:'index.html'}}" />
+	<meta property="og:image" content="http://www.vinnovera.se/images/logoOgImage.png" />
+	<meta property="og:description" content="{{description | condense_spaces | truncate:150}}" />
+--}}
+	<!--[if lt IE 9]>
+	<script>
+	    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+	        i = e.length;
+
+	    for(i; i--;) {
+	        document.createElement(e[i]);
+	    }
+	</script><![endif]-->
+
+	<link href="/favicon.ico?1" rel="icon">
+	<link href="{{site.subscribe_rss}}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
+	{{{partial "stylesheets.html"}}}
+	{{{partial "google_analytics.html"}}}
+</head>

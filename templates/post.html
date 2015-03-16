@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+{{{ partial "head.html" }}}
+<body {{#if index}}class="index"{{/if}}>
+{{{ partial "header.html" }}}
+	<nav class="post-navigation">
+		{{#if next}}
+			<a class="basic-alignment next" href="/{{next.path}}" title="Nästa inlägg: {{next.title}}">Nästa</a>
+		{{/if}}
+		{{#if previous}}
+			<a class="basic-alignment prev" href="/{{previous.path}}" title="Föregående inlägg: {{previous.title}}">Föregående</a>
+		{{/if}}
+	</nav>
+	<section class="wrapper post">
+		<article>
+			<header>
+				<h1>{{title}}</h1>
+				{{#if tags}}
+					<p class="meta">
+						<span>{{author}}</span>
+						| <time datetime="{{formatDate date "%Y-%m-%dT%H:%M"}}" pubdate><span class='year'>{{formatDate date "%Y"}}</span>-<span class='month'>{{formatDate date "%m"}}</span>-<span class='day'>{{formatDate date "%d"}}</span></time>
+						|
+						<span class="categories">
+							{{#tags}}{{#gt @index 0}}, {{/gt}}<a href="{{path}}">{{tag}}</a>{{/tags}}
+						</span>
+					</p>
+				{{/if}}
+			</header>
+			<div>
+				{{{ contents }}}
+			</div>
+		</article>
+		{{#if authorDescription }}
+			<article class="authorDescription">
+				<div>
+					{{#if authorImage}}
+						<img src="{{authorImage}}" alt="{{author}}" />
+					{{else}}
+						<img src="/images/logoPost.png" alt="Vinnovera" />
+					{{/if}}
+				</div>
+				<div>
+					<h3>{{author}}</h3>
+					<a href="mailto: {{authorMail}}">({{authorMail}})</a>
+					<p>{{authorDescription}}</p>
+					<p>Vi är specialister på frontend-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+					<p><a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
+				</div>
+			</article>
+		{{else}}
+			<article class="authorDescription">
+				<div>
+					<img src="/images/logoPost.png" alt="Vinnovera" />
+				</div>
+				<div>
+					<h3>Vinnovera</h3>
+					<a href="mailto: info@vinnovera.se">(info@vinnovera.se)</a>
+					<p>{{authorDescription}}</p>
+					<p>Vi är specialister på frontend-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+					<p><a href="/">Tillbaka till startsidan</a></p>
+				</div>
+			</article>
+		{{/if}}
+
+		{{#if comments}}
+			<div>
+				<div class="wrapper comments">
+					<h2>Kommentera</h2>
+					<div id="disqus_thread" aria-live="polite">{{{partial "disqus.html"}}}</div>
+				</div>
+			</div>
+		{{/if}}
+	</section>
+
+{{{ partial "footer.html" }}}
+{{{ partial "scripts.html" }}}
+</body>
+</html>

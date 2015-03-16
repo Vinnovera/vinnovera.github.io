@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+{{{ partial "head.html" }}}
+<body {{#if index}}class="index"{{/if}}>
+{{{ partial "header.html" }}}
+<section class="wrapper post listing">
+	<h1>{{tag}}</h1>
+
+	{{#each posts}}
+		<article>
+			<header>
+				<h2><a href="{{path}}">{{title}}</a></h2>
+				{{#if tags}}
+					<p class="meta">
+						<span>{{author}}</span>
+						| <time datetime="{{formatDate date "%Y-%m-%dT%H:%M"}}" pubdate><span class='year'>{{formatDate date "%Y"}}</span>-<span class='month'>{{formatDate date "%m"}}</span>-<span class='day'>{{formatDate date "%d"}}</span></time>
+						|
+						<span class="categories">
+							{{#tags}}{{#gt @index 0}}, {{/gt}}<a href="{{path}}">{{tag}}</a>{{/tags}}
+						</span>
+					</p>
+				{{/if}}
+			</header>
+
+			<div>
+				{{stripHTML less}}
+				<p><a href="/{{path}}">Läs hela artikeln</a></p>
+			</div>
+		</article>
+	{{/each}}
+</section>
+{{{ partial "footer.html" }}}
+{{{ partial "scripts.html" }}}
+</body>
+</html>

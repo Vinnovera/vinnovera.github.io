@@ -1,0 +1,18 @@
+---
+template: post.html
+title: "Hej Per!"
+date: 2014-10-06 10:27:15 
+comments: true
+tags: [Nyheter, Vi]
+author: Björn-Olle Rylander
+authorDescription: Björn-Olle är VD på Vinnovera.
+authorImage: /images/profiles/b-o.jpg
+authorTel: 070-171 67 27
+authorMail: bjorn-olle@vinnovera.se
+---
+<img src="/images/profiles/perlundgren.jpg" alt="Max" class="portrait" />
+I oktober började **Per Lundgren** jobba på Vinnovera.<!--more--> Eftersom vi redan har en Per på kontoret testar vi just nu smeknamn som bäst. Perka är frontend-utvecklare med huvudsakligt fokus på **UX** och **grafisk design**. Han har tidigare varit på MTV och efter det frilansat med webbutveckling och UX. Per L är även delaktig i att arrangera Norrköpings filmfestival.
+
+På Vinnovera kommer Lundgren att workshop:a fram bra lösningar tillsammans med våra kunder, kvalitetssäkra projekt och se till att vårt tekniska hantverk resulterar i **bra användarupplevelser**. Det känns kul att stärka upp UX-kompetensen och tillsammans med Perra kommer vi att leverera ännu bättre produkter till våra kunder. 
+
+**Väääälkommen!**
