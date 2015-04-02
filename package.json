@@ -21,7 +21,7 @@
     "metalsmith-serve": "^0.0.3",
     "metalsmith-slug": "^0.0.5",
     "metalsmith-stylus": "git+https://github.com/Vinnovera/metalsmith-stylus.git",
-    "metalsmith-tags": "^0.6.1",
+    "metalsmith-tags": "^0.8.2",
     "metalsmith-templates": "^0.6.0",
     "metalsmith-watch": "^0.2.0",
     "nib": "^1.1.0",
