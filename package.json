@@ -18,7 +18,7 @@
     "metalsmith-more": "^0.2.0",
     "metalsmith-partial": "^0.1.0",
     "metalsmith-permalinks": "^0.4.0",
-    "metalsmith-tags": "^0.6.1",
+    "metalsmith-tags": "git+https://github.com/Vinnovera/metalsmith-tags.git",
     "metalsmith-stylus": "^0.2.1",
     "metalsmith-slug": "^0.0.5",
     "nib": "^1.1.0",

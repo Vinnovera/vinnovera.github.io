@@ -26,9 +26,10 @@ handlebars.registerHelper('stripHTML', function(text) {
 var renderer = new marked.Renderer();
 
 renderer.code = function(code, language){
-  return '<pre><code class="hljs ' + language + '">' +
-    highlight.highlight(language, code).value +
-    '</code></pre>';
+	return
+		'<pre><code class="hljs ' + language + '">' +
+			highlight.highlight(language, code).value +
+		'</code></pre>';
 };
 
 module.exports = function(callback) {
@@ -50,11 +51,12 @@ module.exports = function(callback) {
 
 		// Generate tag index
 		.use(tags({
-			handle: 'tags',                  // yaml key for tag list in you pages
-			path: 'blogg/tagg',                   // path for result pages
-			template: 'tag.html',    // template to use for tag listing
-			sortBy: 'date',                  // provide posts sorted by 'date' (optional)
-			reverse: true                    // sort direction (optional)
+			handle:     'tags',                  // yaml key for tag list in you pages
+			path:       'blogg/tagg/:slug/index.html',                   // path for result pages
+			pathPage:   'blogg/tagg/:slug/:num/index.html',
+			template:   'tag.html',    // template to use for tag listing
+			sortBy:     'date',                  // provide posts sorted by 'date' (optional)
+			reverse:    true                    // sort direction (optional)
 		}))
 
 		// Create a collection of all blog entries
@@ -113,8 +115,9 @@ module.exports = function(callback) {
 		// GO!
 		.build(function (err, files) {
 			if (err) {
-				console.log(err);
+				console.log(arguments);
 			}
 			callback();
 		});
+
 }

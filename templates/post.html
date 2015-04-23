@@ -21,7 +21,7 @@
 						| <time datetime="{{formatDate date "%Y-%m-%dT%H:%M"}}" pubdate><span class='year'>{{formatDate date "%Y"}}</span>-<span class='month'>{{formatDate date "%m"}}</span>-<span class='day'>{{formatDate date "%d"}}</span></time>
 						|
 						<span class="categories">
-							{{#tags}}{{#gt @index 0}}, {{/gt}}<a href="{{path}}">{{tag}}</a>{{/tags}}
+							{{#tags}}{{#gt @index 0}}, {{/gt}}<a href="/{{path}}">{{tag}}</a>{{/tags}}
 						</span>
 					</p>
 				{{/if}}
