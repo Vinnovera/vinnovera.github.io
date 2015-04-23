@@ -1,4 +1,6 @@
 var
+	meta        = require('./meta'),
+
 	metalsmith  = require('metalsmith'),
 	handlebars  = require('handlebars'),
 	helpers     = require('handlebars-helpers'),
@@ -36,18 +38,7 @@ module.exports = function(callback) {
 	return metalsmith(__dirname)
 
 		// Global properties used by plugins and templates
-		.metadata({
-			site: {
-				title: 'Vinnovera.se',
-				url: 'http://vinnovera.se',
-				author: 'Vinnovera',
-
-				subscribe_rss: 'http://vinnovera.se/rss.xml',
-
-				disqus_short_name:          'vinnovera',
-				disqus_show_comment_count:  false
-			}
-		})
+		.metadata(meta)
 
 		// Generate tag index
 		.use(tags({
@@ -87,6 +78,17 @@ module.exports = function(callback) {
 
 		// Create excerpts with <!--more-->
 		.use(more())
+
+		.use(function(files){
+			var id, file;
+			for (id in files) {
+				if (files.hasOwnProperty(id)) {
+					file = files[id];
+					file.title          = (file.title        || meta.site.title || '').toString();
+					file.description    = (file.description  || file.less || meta.site.description || '').toString();
+				}
+			}
+		})
 
 		// Partials support in templates
 		.use(partial({
