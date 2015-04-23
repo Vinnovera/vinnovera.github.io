@@ -1,1 +1,5 @@
 vinnovera.esproj
+.idea
+build
+deploy
+node_modules
