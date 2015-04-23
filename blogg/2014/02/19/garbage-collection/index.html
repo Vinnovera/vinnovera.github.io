@@ -7,6 +7,8 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:description" content="" />
+
 	<!--[if lt IE 9]>
 	<script>
 	    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
@@ -74,7 +76,7 @@
 						| <time datetime="2014-02-19T18:54" pubdate><span class='year'>2014</span>-<span class='month'>02</span>-<span class='day'>19</span></time>
 						|
 						<span class="categories">
-							<a href=""></a>, <a href=""></a>
+							<a href="/blogg/tagg/javascript/">Javascript</a>, <a href="/blogg/tagg/garbage-collection/">Garbage-Collection</a>
 						</span>
 					</p>
 			</header>
@@ -89,16 +91,7 @@ Motsatsen till garbage collection är att programmeraren själv måste allokera 
 <h3 id="reference-counting-garbage-collection">Reference counting garbage collection</h3>
 <p>Reference counting används i stort sett endast av Internet Explorer 6 och 7. Den här metoden räknar alla referenser till ett objekt, och tar bort alla objekt som inte längre har en referens.</p>
 <p>Det är dock möjligt fär två olika objekt att referera till varandra, utan att annars vara refererade till.</p>
-<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">var</span> o = {};
-    <span class="hljs-keyword">var</span> o2 = {};
-    o.a = o2;
-    o2.a = o;
-
-    <span class="hljs-keyword">return</span> “foo”;
-}
-
-f();</code></pre><p>I exemplet har o och o2 inga referenser utanför funktions-scopet. De kommer dock inte bli samlade av garbage collection eftersom de har referenser till varandra.</p>
+undefined<p>I exemplet har o och o2 inga referenser utanför funktions-scopet. De kommer dock inte bli samlade av garbage collection eftersom de har referenser till varandra.</p>
 <p>En annan nackdel är att själva uppdateringen av referensräknaren kan kräva ganska stora resurser, om många referenser skapas och tas bort blir applikationen betydligt långsammare.</p>
 <p>En fördel med denna metod är att objektet tas bort så fort det inte längre har några referenser, och kräver inte att applikationen stannas för att garbage collection ska köras.</p>
 <p>En variant av den här metoden används bland annat i PHP.</p>
@@ -118,71 +111,23 @@ f();</code></pre><p>I exemplet har o och o2 inga referenser utanför funktions-s
 <h3 id="global-scope">global scope</h3>
 <p>Ett objekt som skapas utanför något specifikt scope tillhör det globala scopet. Eftersom mark-and-sweep-algoritmen markerar alla objekt som går att nå från det globala scopet kommer globala objekt aldrig att rensas av garbage collectorn.
 Alla variabler som instansieras utan “var”-keywordet tillhör även dom det globala scopet.</p>
-<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> b = <span class="hljs-string">'foo'</span>;
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span></span>{
-    <span class="hljs-keyword">var</span> str = ‘Hej’;
-    c = ‘Då’;
-}
-
-test();</code></pre><p>Efter det att <code>test()</code> körts går inte längre <code>str</code> att nås från <code>global</code> objectet och kommer såledas frias. Både <code>b</code> och <code>c</code> variablerna tillhör det globala scopet och det minne de tar upp frigörs aldrig.</p>
+undefined<p>Efter det att <code>test()</code> körts går inte längre <code>str</code> att nås från <code>global</code> objectet och kommer såledas frias. Både <code>b</code> och <code>c</code> variablerna tillhör det globala scopet och det minne de tar upp frigörs aldrig.</p>
 <h3 id="delete-och-null-keywords">delete och null keywords</h3>
 <p>För att vara säker på att ett objekt blir borttaget av garbage collectorn kan du helt enkelt sätta dess värde till <code>null</code>. JavaScript har även ett <code>delete</code>-keyword. Även om det indirekt kan vara ett sätt att ta bort referensen till ett objkct, är det i första hand endast användbart när du vill sätta ett objekts property till <code>undefined</code>, istället för att sätta det till <code>null</code>. <code>delete</code> fungerar inte på variabler, utan returnerar då endast <code>false</code>.</p>
-<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> s = {data: ‘test’};
-<span class="hljs-keyword">delete</span> s.data;
-s.data === ‘test’; <span class="hljs-comment">// false</span>
-
-<span class="hljs-keyword">var</span> m = ‘test’;
-<span class="hljs-keyword">delete</span> m; <span class="hljs-comment">// return false;</span>
-m === ‘test’ <span class="hljs-comment">// true</span>
-
-m = <span class="hljs-literal">null</span>;
-m === ‘test’ <span class="hljs-comment">// false</span></code></pre><p>Vad som låter som ett rimligt antagande är att vi borde kunna använda <code>delete</code> tillsammans med root-objektet (<code>this</code>). Det antagandet stämmer dock inte.</p>
-<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> x = {data: <span class="hljs-string">'z'</span>};
-<span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.x; <span class="hljs-comment">// return false</span>
-<span class="hljs-keyword">this</span>.x.data === <span class="hljs-string">'z'</span>; <span class="hljs-comment">// true</span>
-<span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.x.data; <span class="hljs-comment">// return true</span>
-<span class="hljs-keyword">this</span>.x.data === <span class="hljs-string">'z'</span>; <span class="hljs-comment">// false</span></code></pre><h3 id="var-keywordet">var keywordet</h3>
+undefined<p>Vad som låter som ett rimligt antagande är att vi borde kunna använda <code>delete</code> tillsammans med root-objektet (<code>this</code>). Det antagandet stämmer dock inte.</p>
+undefined<h3 id="var-keywordet">var keywordet</h3>
 <p>Var noga med hur du använder <code>var</code> keywordet.</p>
 <p>Speciellt i intervall där varje iteration är ett eget scope skapas det lätt väldigt mycket onödigt garbage.</p>
 <h3 id="mindre-function-scope">Mindre function-scope</h3>
 <p>Var noga med dina funktions-scope. Det kan vara värt att dela en stor funktion i mindre. Det skapar garbage oftare men i mindre mängd. Det utnyttjar även den generationella garbage collectorn.</p>
 <p>I exemplet ska vi räkna ut den initiella <code>velocity.x</code>och <code>velocity.y</code>och för ett objekt. Det gjorde vi tidigare i konstruktorn av objektet, földen av det var att de hjälp-variabler vi använder i uträkningen inte gick ur scope förrän vi förstörde objektet. Nu går variablerna ur scope så fort <code>init()</code> metoden är klar.</p>
-<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">init</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">var</span> dx, dy, distance, dv, tx, ty, tv, dtv;
-
-    <span class="hljs-comment">// Distance of particle from the center across the x and y axis</span>
-    dx = options.x - options.center_x;
-    dy = options.y - options.center_y;
-
-    <span class="hljs-comment">// Distance of particle from the center (radius of orbit)</span>
-    distance = <span class="hljs-built_in">Math</span>.sqrt( dx * dx + dy * dy );
-
-    <span class="hljs-comment">// velocity towards center (gravity) through distance</span>
-    <span class="hljs-comment">// We substitute the sum of masses with 1</span>
-    dv = (<span class="hljs-number">1</span> * options.gravity) / distance;
-
-    <span class="hljs-comment">// Tangental velocity</span>
-    dtv = <span class="hljs-built_in">Math</span>.sqrt( dv );
-
-    tx = dy * dtv;
-    ty = dx * dtv;
-
-    velocity.x += tx;
-    velocity.y -= ty;
-}</code></pre><h3 id="loopar">Loopar</h3>
+undefined<h3 id="loopar">Loopar</h3>
 <p>Istället för:</p>
-<pre><code class="hljs javascript">setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
-    <span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> bar();
-}, <span class="hljs-number">16</span>);</code></pre><p>skriv:</p>
-<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> bar();
-setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
-    foo.init();
-},<span class="hljs-number">16</span>);</code></pre><p>Det första exemplet skapar ett nytt objekt varje iteration, som är onåbart i nästa. Det andra exemplet skapar ett objekt som sen återanvänds, fast med nya värden.</p>
+undefined<p>skriv:</p>
+undefined<p>Det första exemplet skapar ett nytt objekt varje iteration, som är onåbart i nästa. Det andra exemplet skapar ett objekt som sen återanvänds, fast med nya värden.</p>
 <h3 id="object-pool">Object pool</h3>
 <p>Det kan ibland vara bra att skapa en “objektpool”. När du ofta ska skapa och ta bort liknande objekt.  Det gör du genom att använda två arrayer:</p>
-<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> activeObject = [],
-    objectPool   = [];</code></pre><p>När du vill skapa ett nytt objekt plockar du det ur arrayen <code>objectPool</code>med oanvända objekt och lägger det i <code>activeObject</code> arrayen. När du sen är klar med ditt objekt flyttar du tillbaka det till poolen. På så sätt skapas inga nya objekt efter startup och inget tas heller bort av garbage collectorn.</p>
+undefined<p>När du vill skapa ett nytt objekt plockar du det ur arrayen <code>objectPool</code>med oanvända objekt och lägger det i <code>activeObject</code> arrayen. När du sen är klar med ditt objekt flyttar du tillbaka det till poolen. På så sätt skapas inga nya objekt efter startup och inget tas heller bort av garbage collectorn.</p>
 <p>Den här metoden är användbar när man animerar många objekt. Till exempel punkter i en graf.</p>
 <h2 id="referenser">Referenser</h2>
 <ul>
