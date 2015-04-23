@@ -121,15 +121,47 @@
 <p>QUnit är ett relativt lättviktigt testramverk. Det är ett ramverk som fokuserar helt på att testa javascript som körs i browsern. Då det är det testramverk som används vid utveckling av jQuery är det ett verktyg som är särskilt enkelt att komma igång med om man behöver testa mycket DOM-manipulation.</p>
 <h4 id="setup">Setup</h4>
 <p>Det som krävs för att köra tester med QUnit är att ta hem en javascriptfil och en css-fil, samt skapa en HTML-fil som kör testerna. HTML-filen behöver åtminstone en holder att skriva ut testresultaten i (&#39;qunit&#39;) och om du ska testa DOM-manipulation behövs en holder för QUnit att skapa DOM-elementen i (&#39;qunit-fixture&#39;).</p>
-undefined<h4 id="tester">Tester</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/qunit-1.12.0.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"qunit"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"qunit-fixture"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myList"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="applescript">window.jQuery || document.<span class="hljs-command">write</span>('&lt;<span class="hljs-keyword">script</span> src=<span class="hljs-string">"js/vendor/jquery-1.10.1.min.js"</span>&gt;&lt;\/<span class="hljs-keyword">script</span>&gt;')</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/vendor/qunit-1.12.0.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/main.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/tests.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre><h4 id="tester">Tester</h4>
 <p>I exemplet ovan har jag själva funktionerna jag vill testa i main.js, och testerna i tests.js. Så här ser ett enkelt test ut:</p>
-undefined<p>Med QUnit skapas ett test genom att köra &quot;test&quot;-funktionen. Till den skickar man in en beskrivning av testet (&quot;multiLineText-test&quot;) samt en funktion. I den här funktionen kan du köra kod, samt framförallt göra s.k. &quot;assertions&quot;. QUnit har i huvudsak två typer av assertions, &quot;ok&quot; och &quot;equal&quot;. Till &quot;ok&quot; behöver man bara skicka in ett argument, och om argumentet är &quot;true&quot; är testet godkänt. Till &quot;equal&quot; skickar man in två argument, och om de stämmer överens är testet godkänt. I exemplet ovan används en variant på equal som används för att jämföra t.ex. objekt och listor.</p>
+<pre><code class="hljs javascript">test(<span class="hljs-string">"multiLineText-test"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    deepEqual(multiLineText(<span class="hljs-string">'I have a thing to say'</span>, <span class="hljs-number">5</span>), [<span class="hljs-string">'I have'</span>, <span class="hljs-string">'a thing'</span>, <span class="hljs-string">'to say'</span>]);
+});</code></pre><p>Med QUnit skapas ett test genom att köra &quot;test&quot;-funktionen. Till den skickar man in en beskrivning av testet (&quot;multiLineText-test&quot;) samt en funktion. I den här funktionen kan du köra kod, samt framförallt göra s.k. &quot;assertions&quot;. QUnit har i huvudsak två typer av assertions, &quot;ok&quot; och &quot;equal&quot;. Till &quot;ok&quot; behöver man bara skicka in ett argument, och om argumentet är &quot;true&quot; är testet godkänt. Till &quot;equal&quot; skickar man in två argument, och om de stämmer överens är testet godkänt. I exemplet ovan används en variant på equal som används för att jämföra t.ex. objekt och listor.</p>
 <p>Här är ett exempel på ett test av DOM-manipulation</p>
-undefined<h3 id="mocha">Mocha</h3>
+<pre><code class="hljs javascript">test(<span class="hljs-string">'DOM manipulation'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">var</span> items = [<span class="hljs-string">'Item 1'</span>, <span class="hljs-string">'Second item'</span>, <span class="hljs-string">'Item the 3rd'</span>, <span class="hljs-string">'Fourth one'</span>];
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>;i&lt;items.length;i++){
+        $(<span class="hljs-string">'#myList'</span>).append(<span class="hljs-string">'&lt;li&gt;'</span>+items[i]+<span class="hljs-string">'&lt;/li&gt;'</span>);
+    }
+    equal($(<span class="hljs-string">'#myList'</span>).children().length, <span class="hljs-number">4</span>);
+});</code></pre><h3 id="mocha">Mocha</h3>
 <p>Mocha är klart mer omfattande än QUnit, men har också fler användningsområden. En av de viktigare skillnaderna är att Mocha kan testa javascript utanför en browser, t.ex. i en Node-applikation. Du installerar Mocha via npm, och kör Mocha via terminalen.</p>
 <p>I min app.js har jag samma funktion som ovan (&quot;multiLineText&quot;, fast tillgängliggjord i exports):</p>
-undefined<p>I roten på projektet har jag även skapat en folder som heter &quot;test&quot;, vilket är den folder Mocha letar efter tester i. Här har jag en fil som heter t.ex. &quot;mytest.js&quot;, som innehåller själva testet:</p>
-undefined<p>Sedan kör jag Mocha via terminalen via ett enkelt kommando:</p>
+<pre><code class="hljs javascript">exports.multiLineText = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(myString, maxWidth)</span></span>{
+    ...
+}</code></pre><p>I roten på projektet har jag även skapat en folder som heter &quot;test&quot;, vilket är den folder Mocha letar efter tester i. Här har jag en fil som heter t.ex. &quot;mytest.js&quot;, som innehåller själva testet:</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">"assert"</span>);
+<span class="hljs-keyword">var</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">"../app"</span>);
+
+describe(<span class="hljs-string">"multiLineText"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    it(<span class="hljs-string">"should return correct array"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        assert.deepEqual(app.multiLineText(<span class="hljs-string">'I have a thing to say'</span>, <span class="hljs-number">5</span>), [<span class="hljs-string">'I have'</span>, <span class="hljs-string">'a thing'</span>, <span class="hljs-string">'to say'</span>]);
+    });
+});</code></pre><p>Sedan kör jag Mocha via terminalen via ett enkelt kommando:</p>
 <p>   mocha</p>
 <p>Jag får följande resultat att 1 test (av 1 möjliga) är lyckat:</p>
 <p>   1 passing (5 ms)</p>
@@ -144,11 +176,118 @@ undefined<p>Sedan kör jag Mocha via terminalen via ett enkelt kommando:</p>
 </ul>
 <h3 id="test">Test</h3>
 <p>Det första testet vi skriver är därför ett test som kontrollerar vår uträkningsfunktion. Vi vet att vi vill kunna skala antal figurer per rad baserat på maxantalet, samt behöver få ut antalet rader, kolumner, och vilka rader som är markerade, och hur många som är markerade per rad.</p>
-undefined<p>Det nästa testet är till för att se så att vår DOM-manipulation gör vad vi förväntar oss. I det här fallet kollar jag att det finns rätt antal av &quot;märkta&quot; respektive &quot;omärkta&quot; figurer, samt kontrollerar att SVGn har rätt storlek.</p>
-undefined<h3 id="funktion">Funktion</h3>
+<pre><code class="hljs javascript">test(<span class="hljs-string">'Get rows, columns and figurenumber'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    deepEqual(getChartSize(<span class="hljs-number">7</span>,<span class="hljs-number">10</span>), {
+        rows: <span class="hljs-number">2</span>,
+        columns: <span class="hljs-number">5</span>,
+        lastMarkedRow: <span class="hljs-number">2</span>,
+        markedAtLastMarkedRow: <span class="hljs-number">2</span>,
+        lastRowLength: <span class="hljs-number">5</span>
+    });
+    deepEqual(getChartSize(<span class="hljs-number">24</span>,<span class="hljs-number">66</span>), {
+        rows: <span class="hljs-number">4</span>,
+        columns: <span class="hljs-number">20</span>,
+        lastMarkedRow: <span class="hljs-number">2</span>,
+        markedAtLastMarkedRow: <span class="hljs-number">4</span>,
+        lastRowLength: <span class="hljs-number">6</span>
+    });
+    deepEqual(getChartSize(<span class="hljs-number">13</span>,<span class="hljs-number">24</span>), {
+        rows: <span class="hljs-number">3</span>,
+        columns: <span class="hljs-number">10</span>,
+        lastMarkedRow: <span class="hljs-number">2</span>,
+        markedAtLastMarkedRow: <span class="hljs-number">3</span>,
+        lastRowLength: <span class="hljs-number">4</span>
+    });
+});</code></pre><p>Det nästa testet är till för att se så att vår DOM-manipulation gör vad vi förväntar oss. I det här fallet kollar jag att det finns rätt antal av &quot;märkta&quot; respektive &quot;omärkta&quot; figurer, samt kontrollerar att SVGn har rätt storlek.</p>
+<pre><code class="hljs javascript"><span class="hljs-built_in">module</span>(<span class="hljs-string">'Create and manipulate SVG'</span>);
+test(<span class="hljs-string">'Create and manipulate SVG with 7 10'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">var</span> svg = <span class="hljs-built_in">document</span>.createElementNS(<span class="hljs-string">'http://www.w3.org/2000/svg'</span>, <span class="hljs-string">'svg'</span>);
+    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'qunit-fixture'</span>).appendChild(svg);
+    createChart(getChartSize(<span class="hljs-number">7</span>, <span class="hljs-number">10</span>), svg);
+    equal($(<span class="hljs-string">'svg .marked'</span>).length, <span class="hljs-number">7</span>);
+    equal($(<span class="hljs-string">'svg .unmarked'</span>).length, <span class="hljs-number">3</span>);
+    equal($(svg).height(), <span class="hljs-number">40</span>);
+});
+test(<span class="hljs-string">'Create and manipulate SVG with 24 66'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">var</span> svg = <span class="hljs-built_in">document</span>.createElementNS(<span class="hljs-string">'http://www.w3.org/2000/svg'</span>, <span class="hljs-string">'svg'</span>);
+    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'qunit-fixture'</span>).appendChild(svg);
+    createChart(getChartSize(<span class="hljs-number">24</span>, <span class="hljs-number">66</span>), svg);
+    equal($(<span class="hljs-string">'svg .marked'</span>).length, <span class="hljs-number">24</span>);
+    equal($(<span class="hljs-string">'svg .unmarked'</span>).length, <span class="hljs-number">42</span>);
+    equal($(svg).height(), <span class="hljs-number">20</span>);
+});
+test(<span class="hljs-string">'Create and manipulate SVG with 13 24'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">var</span> svg = <span class="hljs-built_in">document</span>.createElementNS(<span class="hljs-string">'http://www.w3.org/2000/svg'</span>, <span class="hljs-string">'svg'</span>);
+    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'qunit-fixture'</span>).appendChild(svg);
+    createChart(getChartSize(<span class="hljs-number">13</span>, <span class="hljs-number">24</span>), svg);
+    equal($(<span class="hljs-string">'svg .marked'</span>).length, <span class="hljs-number">13</span>);
+    equal($(<span class="hljs-string">'svg .unmarked'</span>).length, <span class="hljs-number">11</span>);
+    equal($(svg).height(), <span class="hljs-number">30</span>);
+});</code></pre><h3 id="funktion">Funktion</h3>
 <p>Först har vi funktionen som tar fram hur många figurer vi behöver visa:</p>
-undefined<p>Sen så har vi funktionen som manipulerar en SVG på förväntat vis:</p>
-undefined<p>Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.</p>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getChartSize</span><span class="hljs-params">(num, max)</span></span>{
+    <span class="hljs-keyword">var</span> rows = <span class="hljs-number">0</span>,
+        columns = <span class="hljs-number">0</span>,
+        lastMarkedRow = <span class="hljs-number">0</span>,
+        markedAtLastMarkedRow = <span class="hljs-number">0</span>,
+        lastRowLength = <span class="hljs-number">0</span>
+    ;
+
+    <span class="hljs-keyword">if</span>(max &lt;= <span class="hljs-number">10</span>){
+        columns = <span class="hljs-number">5</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(max &lt;= <span class="hljs-number">40</span>){
+        columns = <span class="hljs-number">10</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(max &lt;= <span class="hljs-number">140</span>){
+        columns = <span class="hljs-number">20</span>;
+    } <span class="hljs-keyword">else</span> {
+        columns = <span class="hljs-number">40</span>;
+    }
+
+    rows = <span class="hljs-built_in">Math</span>.ceil(max / columns);
+    lastMarkedRow = <span class="hljs-built_in">Math</span>.ceil(num / columns);
+    markedAtLastMarkedRow = num % columns;
+    lastRowLength = columns - ((rows * columns) - max);
+
+    <span class="hljs-keyword">return</span> {
+        rows: rows,
+        columns: columns,
+        lastMarkedRow: lastMarkedRow,
+        markedAtLastMarkedRow: markedAtLastMarkedRow,
+        lastRowLength: lastRowLength
+    };
+}</code></pre><p>Sen så har vi funktionen som manipulerar en SVG på förväntat vis:</p>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createChart</span><span class="hljs-params">(settings, svg)</span> </span>{
+    <span class="hljs-keyword">var</span> addedElements = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">var</span> w = <span class="hljs-number">100</span>/settings.columns;
+    <span class="hljs-keyword">var</span> h = w;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>;i&lt;settings.rows;i++){
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> j=<span class="hljs-number">0</span>;j&lt;settings.columns;j++){
+            <span class="hljs-keyword">if</span>(addedElements &lt; (settings.lastMarkedRow * settings.columns) - (settings.columns - settings.markedAtLastMarkedRow)){
+                <span class="hljs-keyword">var</span> rect = <span class="hljs-built_in">document</span>.createElementNS(<span class="hljs-string">'http://www.w3.org/2000/svg'</span>, <span class="hljs-string">'rect'</span>);
+                rect.setAttribute(<span class="hljs-string">'class'</span>, <span class="hljs-string">'marked'</span>);
+                rect.setAttribute(<span class="hljs-string">'height'</span>, h);
+                rect.setAttribute(<span class="hljs-string">'width'</span>, w);
+                rect.setAttribute(<span class="hljs-string">'x'</span>, j*w);
+                rect.setAttribute(<span class="hljs-string">'y'</span>, i*h);
+                rect.setAttribute(<span class="hljs-string">'fill'</span>, <span class="hljs-string">'#ff0000'</span>);
+                svg.appendChild(rect);
+                addedElements++;
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(addedElements &lt; (settings.columns * (settings.rows-<span class="hljs-number">1</span>)) + settings.lastRowLength){
+                <span class="hljs-keyword">var</span> rect = <span class="hljs-built_in">document</span>.createElementNS(<span class="hljs-string">'http://www.w3.org/2000/svg'</span>, <span class="hljs-string">'rect'</span>);
+                rect.setAttribute(<span class="hljs-string">'class'</span>, <span class="hljs-string">'unmarked'</span>);
+                rect.setAttribute(<span class="hljs-string">'height'</span>, h);
+                rect.setAttribute(<span class="hljs-string">'width'</span>, w);
+                rect.setAttribute(<span class="hljs-string">'x'</span>, j*w);
+                rect.setAttribute(<span class="hljs-string">'y'</span>, i*h);
+                rect.setAttribute(<span class="hljs-string">'fill'</span>, <span class="hljs-string">'#0000ff'</span>);
+                svg.appendChild(rect);
+                addedElements++;
+            }
+        }
+    }
+    svg.setAttribute(<span class="hljs-string">'height'</span>, (settings.rows*h)+<span class="hljs-string">'px'</span>)
+    svg.setAttribute(<span class="hljs-string">'width'</span>, (settings.columns*w)+<span class="hljs-string">'px'</span>);
+}</code></pre><p>Jag har kört testerna medan jag skrivit funktionerna, och konstaterat att när testerna klaras av så uppfyller funktionerna de krav jag har, och mycket riktigt är applikationen färdig när alla krav och tester är uppfyllda.</p>
 
 			</div>
 		</article>

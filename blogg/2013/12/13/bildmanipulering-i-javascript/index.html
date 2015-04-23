@@ -116,23 +116,38 @@ A - Alpha     (0-255, 0 = helt osynlig - 255 = helt synlig)</p>
 <p>Är en pixel röd och synlig har den värdet (255,0,0,255) och det är de värden som lagras i data-egenskapen hos ImageData-objektet. Principen för att rita på ett canvas är samma för bilder som för andra objekt, därför beskrivs först hur man ritar en simpel form.</p>
 <h3 id="form">Form</h3>
 <p>Koden nedan skapar ett objekt som är 100 x 100 px, där varje pixel är blå, och placerar objektet på ett canvas 10px från kanterna.</p>
-undefined<p>Resultat:<br /><img src="https://lh3.googleusercontent.com/eMaoG_Om5swKW1iyfLoZ36M_zw7LRuYk0A6oxVqzYV7JKblIScg7ILDyGDiVkGCNh3S-BOKydcM18rtiZBt4-9Xvvi5BiCMMpupJPnzMiNmvc2qFkxBVHYJJlA" alt=""></p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> c = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myCanvas"</span>);
+<span class="hljs-keyword">var</span> ctx = c.getContext(<span class="hljs-string">"2d"</span>);
+
+<span class="hljs-comment">//Skapa ett objekt att arbeta med</span>
+<span class="hljs-keyword">var</span> imageData = ctx.createImageData(<span class="hljs-number">100</span>,<span class="hljs-number">100</span>);
+
+<span class="hljs-comment">//Loopa igenom pixlarna</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i&lt;imageData.data.length; i+=<span class="hljs-number">4</span>) {
+    imageData.data[i+<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;      <span class="hljs-comment">//red</span>
+    imageData.data[i+<span class="hljs-number">1</span>] = <span class="hljs-number">0</span>;      <span class="hljs-comment">//green</span>
+    imageData.data[i+<span class="hljs-number">2</span>] = <span class="hljs-number">255</span>;    <span class="hljs-comment">//blue</span>
+    imageData.data[i+<span class="hljs-number">3</span>] = <span class="hljs-number">255</span>;    <span class="hljs-comment">//alpha</span>
+}
+
+<span class="hljs-comment">//Skriv ut objektet på canvaset</span>
+ctx.putImageData(imageData,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>);</code></pre><p>Resultat:<br /><img src="https://lh3.googleusercontent.com/eMaoG_Om5swKW1iyfLoZ36M_zw7LRuYk0A6oxVqzYV7JKblIScg7ILDyGDiVkGCNh3S-BOKydcM18rtiZBt4-9Xvvi5BiCMMpupJPnzMiNmvc2qFkxBVHYJJlA" alt=""></p>
 <h4 id="funktioner">Funktioner</h4>
 <h5 id="createimagedata-">createImageData():</h5>
 <p>Skapar ett nytt tomt ImageData-objekt. Objektets pixelvärden är ursprungligen (0,0,0,0), svarta och genomskinliga. Metoden används om det inte redan innan finns ett objekt att arbeta med, t.ex en bild, eller om ett objekt ska kopieras.</p>
 <p>Syntax:</p>
 <p>Det finns två versioner av metoden,</p>
-undefined<p><ul></p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> imgData = ctx.createImageData(width,height);</code></pre><p><ul></p>
 <p><li>width = Bredden på det nya ImageData-objektet i px.</li></p>
 <p><li>height = Höjden på det nya ImageData-objektet i px.</li>
 </ul></p>
-undefined<p><ul></p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> imgData = ctx.createImageData(imageData)</code></pre><p><ul></p>
 <p><li>imageData = ett annat ImageData-objekt.</li>
 </ul></p>
 <h5 id="putimagedata-">putImageData():</h5>
 <p>Skriver ut pixeldatan från ett specificerat ImageData-objekt på canvaset.</p>
 <p>Syntax:</p>
-undefined<ul>
+<pre><code class="hljs javascript">ctx.putImageData(imgData, x, y, dirtyX, dirtyY, dirtyWidth, dirtyHeight)</code></pre><ul>
 <li>imgData = Det imageData-objekt som ska skrivas ut på canvaset.</li>
 <li>x = x-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
 <li>y = y-koordinaten för det övre vänstra hörnet av ImageData-objektet, angivet i px.</li>
@@ -144,13 +159,39 @@ undefined<ul>
 <h3 id="bild">Bild</h3>
 <p>För att manipulera en bild behövs två ytterligare funktioner, drawImage och getImageData. Funktionen createImageData används när man vill kopiera en existerande bild eller för att skapa en tom yta.</p>
 <p>Html:</p>
-undefined<p>Script:</p>
-undefined<p>Resultat:<br /><img src="https://lh6.googleusercontent.com/BZDl6xazl4AZS4_vbJJK2ZzWN_MVIR8KWM3F7dwCTHGiI0Ryk-Ejqr8_GlsFN0JZH8w_dj61KYmrRL4Ad5_niAfjblRPSGIiA4gVDstauj-G7bkLTt2Q2O31Pg" alt=""></p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"image"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"220"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"277"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">canvas</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myCanvas"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"220"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"277"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">canvas</span>&gt;</span></code></pre><p>Script:</p>
+<pre><code class="hljs javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"image"</span>).onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">var</span> c = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myCanvas"</span>);
+    <span class="hljs-keyword">var</span> ctx = c.getContext(<span class="hljs-string">"2d"</span>);
+
+    <span class="hljs-comment">//Hämta bild</span>
+    <span class="hljs-keyword">var</span> img = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"image"</span>);
+
+        <span class="hljs-comment">//Rita ut bild på canvas</span>
+    ctx.drawImage(img,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+
+    <span class="hljs-comment">//Hämta bilddata</span>
+    <span class="hljs-keyword">var</span> imgData = ctx.getImageData(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,c.width,c.height);
+
+    <span class="hljs-comment">// invertera färgerna i bilden</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i&lt;imgData.data.length; i+=<span class="hljs-number">4</span>) {
+        imgData.data[i]=<span class="hljs-number">255</span>-imgData.data[i];
+        imgData.data[i+<span class="hljs-number">1</span>]=<span class="hljs-number">255</span>-imgData.data[i+<span class="hljs-number">1</span>];
+        imgData.data[i+<span class="hljs-number">2</span>]=<span class="hljs-number">255</span>-imgData.data[i+<span class="hljs-number">2</span>];
+        imgData.data[i+<span class="hljs-number">3</span>]=<span class="hljs-number">255</span>;
+    }
+
+    <span class="hljs-comment">//Skriv ut den manipulerade bilden på canvaset</span>
+    ctx.putImageData(imgData,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+}</code></pre><p>Resultat:<br /><img src="https://lh6.googleusercontent.com/BZDl6xazl4AZS4_vbJJK2ZzWN_MVIR8KWM3F7dwCTHGiI0Ryk-Ejqr8_GlsFN0JZH8w_dj61KYmrRL4Ad5_niAfjblRPSGIiA4gVDstauj-G7bkLTt2Q2O31Pg" alt=""></p>
 <h4 id="funktioner">Funktioner</h4>
 <h5 id="drawimage-">drawImage():</h5>
 <p>Ritar ut en bild, video eller ett canvas på ett canvas. Metoden kan även rita ut delar av en bild och ändra en bilds eller videos storlek.</p>
 <p>Syntax:</p>
-undefined<ul>
+<pre><code class="hljs javascript">context.drawImage(img,x,y);
+context.drawImage(img,x,y,width,height);
+ctx.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);</code></pre><ul>
 <li>img = Det element som ska användas - bild, canvas eller video.</li>
 <li>x = x-koordinaten där elementet ska placeras.</li>
 <li>y = y-koordinaten där elementet ska placeras.</li>
@@ -164,7 +205,7 @@ undefined<ul>
 <h5 id="getimagedata-">getImageData():</h5>
 <p>Retunerar ett ImageData-objekt som kopierat pixeldatan från en specificerad del av canvaset.</p>
 <p>Syntax:</p>
-undefined<ul>
+<pre><code class="hljs javascript">ctx.getImageData(x, y, width, height)</code></pre><ul>
 <li>x = x-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
 <li>y = y-koordinaten för det övre vänstra hörnet som den ska börja kopiera från, angivet i px.</li>
 <li>width = Bredden på det du vill kopiera.</li>

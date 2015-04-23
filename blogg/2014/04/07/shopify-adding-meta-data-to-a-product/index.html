@@ -93,7 +93,13 @@
 <p>Our solution? We decided to use the product tags. If we wanted to add a pdf-file to a product we added the tag <code>file:filename.pdf</code> or if we wanted to add a video we wrote <code>video:youtubeID</code>. By doing this we could with ease control what was added to each product.</p>
 <p><img src="/images/content/posts/shopify-adding-meta-data/tags.jpg" alt=""></p>
 <p>Code example for tags containing video:</p>
-undefined
+<pre><code class="hljs html">{% for tag in product.tags %}
+    {% if tag contains 'video:'%}
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/\{\{ tag | replace: 'video:', ''\}\}"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    {% endif %}
+{% endfor %}</code></pre>
 			</div>
 		</article>
 			<article class="authorDescription">

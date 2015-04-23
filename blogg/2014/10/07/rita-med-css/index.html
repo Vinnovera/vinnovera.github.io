@@ -93,13 +93,104 @@
 <p>Efter att ha sett Lynn Fishers <a href="http://a.singlediv.com/">exempel</a> på vad hon åstadkommit med endast en div tänkte jag att det var dags att dyka lite djupare i vissa CSS-tekniker. Jag ville begränsa mig till att endast använda ett HTML-element för att se vad jag kunde få fram. Jag började med att titta på vad man kan göra med gradient-backgrounds.</p>
 <h2 id="gradient-backgrounds">Gradient-backgrounds</h2>
 <p><img src="/images/content/posts/rita-med-css/gradients.jpg" alt="Gradients">  </p>
-undefined<p>En av de första begränsningarna jag kände av var att man inte kan sätta en height på gradients, t.ex. att den bara syns mellan högra övre hörnet och 50px mot mitten. Alternativet är att man målar över delar av gradienten med en annan färg genom att lägga på ytterligare en linear-gradient med transparent-delar, som figur nr 4.</p>
+<pre><code class="hljs css"><span class="hljs-comment">/* 1. */</span>
+<span class="hljs-class">.gradient-default</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(purple ,pink, white)</span></span>;
+}</span>
+
+<span class="hljs-comment">/* 2. */</span>
+<span class="hljs-class">.gradient-to-right</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(to right, purple, pink, white)</span></span>;
+}</span>
+
+<span class="hljs-comment">/* 3. */</span>
+<span class="hljs-class">.gradient-to-top-right</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(<span class="hljs-number">45deg</span>, purple , pink, white)</span></span>;
+}</span>
+
+<span class="hljs-comment">/* 4. */</span>
+<span class="hljs-class">.gradient-color-stop</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(-<span class="hljs-number">45deg</span>, purple, transparent <span class="hljs-number">30%</span>, transparent <span class="hljs-number">70%</span>, purple), <span class="hljs-function">linear-gradient</span>(<span class="hljs-number">45deg</span>, purple, pink <span class="hljs-number">10%</span>, white <span class="hljs-number">90%</span>, purple)</span></span>;
+}</span>
+
+<span class="hljs-comment">/* 5. */</span>
+<span class="hljs-class">.gradient-radial</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">radial-gradient</span>(circle at top right, white <span class="hljs-number">30%</span>, pink <span class="hljs-number">30%</span>, pink <span class="hljs-number">60%</span>, purple <span class="hljs-number">60%</span>)</span></span>;
+}</span>
+
+<span class="hljs-comment">/* 6. */</span>
+<span class="hljs-class">.gradient-radial-repeat</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">repeating-radial-gradient</span>(circle at top right, <span class="hljs-hexcolor">#fb7afb</span>, purple <span class="hljs-number">50px</span>)</span></span>;
+}</span>
+
+<span class="hljs-comment">/* 7. */</span>
+<span class="hljs-class">.circle</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">radial-gradient</span>(white, pink, purple)</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+}</span></code></pre><p>En av de första begränsningarna jag kände av var att man inte kan sätta en height på gradients, t.ex. att den bara syns mellan högra övre hörnet och 50px mot mitten. Alternativet är att man målar över delar av gradienten med en annan färg genom att lägga på ytterligare en linear-gradient med transparent-delar, som figur nr 4.</p>
 <h2 id="box-shadow">Box-shadow</h2>
 <p><img src="/images/content/posts/rita-med-css/eye.jpg" alt="Box shadow"></p>
-undefined<p>Box-shadow känns helt magiskt när man börjar utforska det men det blev snabbt väldigt frustrerande. Jag trodde jag hade hittat det bästa sen SVG och om man inte begränsat sig till att endast använda ett HTML-element kan man säkert rita precis vad som helst med dessa två CSS-tekniker men jag insåg att jag endast hade tre former att röra mig med. Box-shadow kan ändra i storlek från sitt ursprungselement men den kan inte byta form så vill man bygga allt i en div har man diven, :after och :before att arbeta med.</p>
+<pre><code class="hljs css"><span class="hljs-class">.eye</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">150px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">150px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> -<span class="hljs-number">75px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> -<span class="hljs-number">75px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#986c69</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">radial-gradient</span>(circle, <span class="hljs-hexcolor">#000</span> <span class="hljs-number">8%</span>, transparent <span class="hljs-number">15%</span>, transparent <span class="hljs-number">29%</span>, <span class="hljs-function">rgba</span>(<span class="hljs-number">61</span>,<span class="hljs-number">39</span>,<span class="hljs-number">18</span>,<span class="hljs-number">0.7</span>) <span class="hljs-number">33%</span>, transparent <span class="hljs-number">38%</span>), <span class="hljs-function">radial-gradient</span>(circle, <span class="hljs-hexcolor">#543808</span>, <span class="hljs-hexcolor">#432501</span> <span class="hljs-number">25%</span>, <span class="hljs-hexcolor">#715432</span> <span class="hljs-number">35%</span>, white <span class="hljs-number">38%</span>)</span></span>;
+}</span>
+
+<span class="hljs-rule"><span class="hljs-attribute">.eye</span>:<span class="hljs-value">after {
+    display: block</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">""</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> -<span class="hljs-number">1px</span> -<span class="hljs-number">24px</span> <span class="hljs-number">1px</span> -<span class="hljs-number">7px</span> <span class="hljs-hexcolor">#eee</span>, <span class="hljs-number">0px</span> -<span class="hljs-number">25px</span> <span class="hljs-number">2px</span> -<span class="hljs-number">5px</span> <span class="hljs-hexcolor">#666</span>, -<span class="hljs-number">14px</span> -<span class="hljs-number">26px</span> <span class="hljs-number">1px</span> -<span class="hljs-number">9px</span> <span class="hljs-hexcolor">#eee</span>, -<span class="hljs-number">15px</span> -<span class="hljs-number">27px</span> <span class="hljs-number">2px</span> -<span class="hljs-number">7px</span> <span class="hljs-hexcolor">#666</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">3</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">26px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">26px</span></span></span>;
+}</code></pre><p>Box-shadow känns helt magiskt när man börjar utforska det men det blev snabbt väldigt frustrerande. Jag trodde jag hade hittat det bästa sen SVG och om man inte begränsat sig till att endast använda ett HTML-element kan man säkert rita precis vad som helst med dessa två CSS-tekniker men jag insåg att jag endast hade tre former att röra mig med. Box-shadow kan ändra i storlek från sitt ursprungselement men den kan inte byta form så vill man bygga allt i en div har man diven, :after och :before att arbeta med.</p>
 <h2 id="tre-former-tre-tekniker">Tre former, tre tekniker</h2>
 <p><img src="/images/content/posts/rita-med-css/ghost.jpg" alt="Shapes"></p>
-undefined<p>Jag har i mina exempel valt att addera element för att rita men det går även att rita allt utom det man försöker få fram genom att subtrahera från en form istället. Jag tror att lär man sig bemästra de två sätten så kan man komma långt med tre former och tre tekniker.</p>
+<pre><code class="hljs css"><span class="hljs-class">.ghost</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">170px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">160px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span> <span class="hljs-number">50%</span> <span class="hljs-number">0%</span> <span class="hljs-number">0%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
+}</span>
+
+<span class="hljs-rule"><span class="hljs-attribute">.ghost</span>:<span class="hljs-value">before {
+    display: block</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">""</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">18px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">17px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">20px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">20px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> yellow</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> white, -<span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> white, <span class="hljs-number">0px</span> <span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> white, <span class="hljs-number">0px</span> -<span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> white, <span class="hljs-number">11px</span> -<span class="hljs-number">11px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">2px</span> green, -<span class="hljs-number">11px</span> -<span class="hljs-number">11px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">2px</span> green, -<span class="hljs-number">11px</span> <span class="hljs-number">11px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">2px</span> green, <span class="hljs-number">11px</span> <span class="hljs-number">11px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">2px</span> green</span></span>;
+}
+
+<span class="hljs-rule"><span class="hljs-attribute">.ghost</span>:<span class="hljs-value">after {
+    display: block</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">""</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> -<span class="hljs-number">35px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">80px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">60px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> red,<span class="hljs-number">120px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> red, <span class="hljs-number">49px</span> -<span class="hljs-number">82px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">13px</span> blue, <span class="hljs-number">40px</span> -<span class="hljs-number">82px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">5px</span> white, <span class="hljs-number">120px</span> -<span class="hljs-number">82px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">13px</span> blue, <span class="hljs-number">111px</span> -<span class="hljs-number">82px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">5px</span> white</span></span>;
+}</code></pre><p>Jag har i mina exempel valt att addera element för att rita men det går även att rita allt utom det man försöker få fram genom att subtrahera från en form istället. Jag tror att lär man sig bemästra de två sätten så kan man komma långt med tre former och tre tekniker.</p>
 <h2 id="referenser">Referenser</h2>
 <p><a href="http://a.singlediv.com/">A Single Div</a><br><a href="http://css-tricks.com/css3-gradients/">CSS-tricks</a></p>
 
