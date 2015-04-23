@@ -28,10 +28,7 @@ handlebars.registerHelper('stripHTML', function(text) {
 var renderer = new marked.Renderer();
 
 renderer.code = function(code, language){
-	return
-		'<pre><code class="hljs ' + language + '">' +
-			highlight.highlight(language, code).value +
-		'</code></pre>';
+	return '<pre><code class="hljs ' + language + '">' + highlight.highlight(language, code).value + '</code></pre>';
 };
 
 module.exports = function(callback) {
