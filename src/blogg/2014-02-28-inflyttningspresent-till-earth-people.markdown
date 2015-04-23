@@ -4,7 +4,7 @@ title: "Inflyttningspresenten"
 date: 2014-02-28 11:28:22 
 comments: true
 author: Jakob Öhman
-tags: [3D-printing,Arduino,Makes]
+tags: 3D-printing,Arduino,Makes
 authorDescription: Jakob Öhman jobbar som teknisk projektledare på Vinnovera.
 authorImage: /images/profiles/jakob.jpg
 authorMail: jakob@vinnovera.se

@@ -3,7 +3,7 @@ template: post.html
 title: "Unit Testing"
 date: 2013-12-12 14:22:24 
 comments: true
-tags: [Javascript, Unit Testing]
+tags: Javascript, Unit Testing
 author: Jonas Stattin
 authorDescription: Jonas Stattin jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/jonas.jpg

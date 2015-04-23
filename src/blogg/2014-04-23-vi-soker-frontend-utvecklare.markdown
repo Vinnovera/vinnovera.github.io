@@ -3,7 +3,7 @@ template: post.html
 title: "Vi söker frontend-utvecklare!"
 date: 2014-04-23 09:09:34 
 comments: true
-tags: [Jobb]
+tags: Jobb
 author: Björn-Olle Rylander
 authorDescription: Björn-Olle är VD på Vinnovera
 authorImage: /images/profiles/b-o.jpg

@@ -3,7 +3,7 @@ template: post.html
 title: "Frontend-lunch på Vinnovera"
 date: 2014-09-23 10:27:15 
 comments: true
-tags: [Frontend-lunch, Vi]
+tags: Frontend-lunch, Vi
 author: Björn-Olle Rylander
 authorDescription: Björn-Olle är VD på Vinnovera.
 authorImage: /images/profiles/b-o.jpg

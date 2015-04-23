@@ -4,7 +4,7 @@ title: "Vinnovera-pepparkakor"
 date: 2013-12-14 09:54:32 
 comments: true
 author: Jakob Öhman
-tags: [3D-printing,Makes]
+tags: 3D-printing,Makes
 authorDescription: Jakob Öhman jobbar som teknisk projektledare på Vinnovera.
 authorImage: /images/profiles/jakob.jpg
 authorMail: jakob@vinnovera.se

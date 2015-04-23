@@ -3,7 +3,7 @@ template: post.html
 title: "Javascript, javascript, javascript - Hittat på nätet #13"
 date: 2015-02-10 15:00:00 
 comments: true
-tags: [Länkar, Nyheter, Hittat]
+tags: Länkar, Nyheter, Hittat
 author: Max von Krusenstierna
 authorDescription: Max von Krusenstierna jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/max.jpg

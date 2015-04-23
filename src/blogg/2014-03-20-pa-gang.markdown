@@ -3,7 +3,7 @@ template: post.html
 title: "På gång"
 date: 2014-03-20 10:27:15 
 comments: true
-tags: [På gång]
+tags: På gång
 author: Björn-Olle Rylander
 authorDescription: Björn-Olle är VD på Vinnovera.
 authorImage: /images/profiles/b-o.jpg

@@ -3,7 +3,7 @@ template: post.html
 title: "Rita med CSS"
 date: 2014-10-07 14:55:09 
 comments: true
-tags: [CSS]
+tags: CSS
 author: Alexandra Bjelkholm
 authorDescription: Alexandra Bjelkholm jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/sandra.jpg

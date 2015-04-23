@@ -3,7 +3,7 @@ template: post.html
 title: "Bildmanipulering i JavaScript"
 date: 2013-12-13 16:17:13 
 comments: true
-tags: [Javascript, Filter]
+tags: Javascript, Filter
 author: Alexandra Bjelkholm
 authorDescription: Alexandra Bjelkholm jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/sandra.jpg

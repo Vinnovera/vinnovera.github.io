@@ -3,7 +3,7 @@ template: post.html
 title: "Trixiga personer och trixiga trix - hittat på nätet #8"
 date: 2014-09-26 13:03:19 
 comments: true
-tags: [Grid, SVG, Länkar, Nyheter, Hittat]
+tags: Grid, SVG, Länkar, Nyheter, Hittat
 author: Michael Uvnäs
 authorDescription: Michael Uvnäs jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/michael.jpg

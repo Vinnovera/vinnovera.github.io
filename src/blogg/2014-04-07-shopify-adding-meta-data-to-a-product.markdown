@@ -3,7 +3,7 @@ template: post.html
 title: "Shopify - Adding meta data to a product"
 date: 2014-04-07 10:43:38 
 comments: true
-tags: [Shopify, Hacks]
+tags: Shopify, Hacks
 author: Alexandra Munter
 authorDescription: Alexandra Munter jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/sandra.jpg

@@ -3,7 +3,7 @@ template: post.html
 title: "Javascript och arkitektur - Hittat på nätet #12"
 date: 2015-01-29 15:00:00 
 comments: true
-tags: [Länkar, Nyheter, Hittat]
+tags: Länkar, Nyheter, Hittat
 author: Jonas Stattin
 authorDescription: Jonas Stattin jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/jonas.jpg

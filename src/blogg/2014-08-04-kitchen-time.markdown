@@ -3,7 +3,7 @@ template: post.html
 title: "Frontend för KitchenTime"
 date: 2014-08-04 10:27:15 
 comments: true
-tags: [På gång, Projekt]
+tags: På gång, Projekt
 author: Björn-Olle Rylander
 authorDescription: Björn-Olle är VD på Vinnovera.
 authorImage: /images/profiles/b-o.jpg

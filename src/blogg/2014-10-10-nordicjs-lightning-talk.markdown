@@ -3,7 +3,7 @@ template: post.html
 title: "Nordic.js lightning talk"
 date: 2014-10-10 11:00:00 
 comments: true
-tags: [JavaScript,Konferens,Makes,RaspberryPI,node.js]
+tags: JavaScript,Konferens,Makes,RaspberryPI,node.js
 author: Jakob Öhman
 authorDescription: Jakob Öhman jobbar som teknisk projektledare på Vinnovera.
 authorImage: /images/profiles/jakob.jpg

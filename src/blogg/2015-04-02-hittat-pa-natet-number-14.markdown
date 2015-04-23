@@ -3,7 +3,7 @@ template: post.html
 title: "Tillgänglighet och väldigt många frameworks – Hittat på nätet #14"
 date: 2015-04-02 10:52:24 
 comments: true
-tags: [Länkar, Nyheter, Hittat]
+tags: Länkar, Nyheter, Hittat
 author: Per Stenström
 authorDescription: Per Stenström jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/per.jpg

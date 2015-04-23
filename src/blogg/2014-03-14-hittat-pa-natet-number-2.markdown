@@ -4,7 +4,7 @@ title: "Hittat på nätet #2"
 date: 2014-03-14 14:51:55 
 comments: true
 author: Per Stenström
-tags: [Länkar, Nyheter, Hittat]
+tags: Länkar, Nyheter, Hittat
 authorDescription: Per Stenström jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/per.jpg
 authorMail: per@vinnovera.se

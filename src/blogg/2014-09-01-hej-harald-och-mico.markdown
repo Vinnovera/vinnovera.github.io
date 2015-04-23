@@ -3,7 +3,7 @@ template: post.html
 title: "Hej Harald och Mico!"
 date: 2014-09-01 10:27:15 
 comments: true
-tags: [Nyheter, Vi]
+tags: Nyheter, Vi
 author: Björn-Olle Rylander
 authorDescription: Björn-Olle är VD på Vinnovera.
 authorImage: /images/profiles/b-o.jpg

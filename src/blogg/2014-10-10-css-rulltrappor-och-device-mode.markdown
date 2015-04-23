@@ -3,7 +3,7 @@ template: post.html
 title: "CSS, rulltrappor och device mode i Chrome - hittat på nätet #9"
 date: 2014-10-10 13:36:56 
 comments: true
-tags: [CSS, Progressive enhancement, Development tools]
+tags: CSS, Progressive enhancement, Development tools
 author: Gustav Frykholm
 authorDescription: Gustav Frykholm jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/gustav.jpg

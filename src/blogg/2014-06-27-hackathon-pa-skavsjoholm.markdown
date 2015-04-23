@@ -3,7 +3,7 @@ template: post.html
 title: "Hackathon på Skåvsjöholm"
 date: 2014-06-30 10:27:15 
 comments: true
-tags: [Hackathon, Workshop, Vi]
+tags: Hackathon, Workshop, Vi
 author: Björn-Olle Rylander
 authorDescription: Björn-Olle är VD på Vinnovera.
 authorImage: /images/profiles/b-o.jpg

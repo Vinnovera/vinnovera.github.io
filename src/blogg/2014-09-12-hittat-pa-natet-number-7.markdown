@@ -3,7 +3,7 @@ template: post.html
 title: "Hittat på nätet #7"
 date: 2014-09-12 15:10:45 
 comments: true
-tags: [Länkar, Nyheter, Hittat]
+tags: Länkar, Nyheter, Hittat
 author: Harald Mellbom
 authorDescription: Harald Mellbom jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/harald.jpg

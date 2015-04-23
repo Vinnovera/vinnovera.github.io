@@ -4,7 +4,7 @@ title: "Hittat på nätet #1"
 date: 2014-03-03 15:17:50 
 comments: true
 author: Jonas Stattin
-tags: [Länkar, Nyheter, Hittat]
+tags: Länkar, Nyheter, Hittat
 authorDescription: Jonas Stattin jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/jonas.jpg
 authorMail: jonas@vinnovera.se

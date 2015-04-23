@@ -4,7 +4,7 @@ title: "Robotlabb 2014"
 date: 2014-12-04 14:01:25 
 comments: true
 author: Andreas Edlund
-tags: [Vi,Makes,Arduino,Hackathon,Workshop]
+tags: Vi,Makes,Arduino,Hackathon,Workshop
 authorDescription: Andreas Edlund jobbar som projektledare på Vinnovera.
 authorImage: /images/profiles/andreas.jpg
 authorMail: andreas@vinnovera.se

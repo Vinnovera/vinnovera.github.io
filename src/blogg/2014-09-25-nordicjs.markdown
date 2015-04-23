@@ -3,7 +3,7 @@ template: post.html
 title: "Nordic.js"
 date: 2014-09-25 10:27:15 
 comments: true
-tags: [Konferens, JavaScript]
+tags: Konferens, JavaScript
 author: Björn-Olle Rylander
 authorDescription: Björn-Olle är VD på Vinnovera.
 authorImage: /images/profiles/b-o.jpg

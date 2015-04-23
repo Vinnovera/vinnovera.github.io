@@ -3,7 +3,7 @@ template: post.html
 title: "Hittat på nätet #6"
 date: 2014-09-01 10:27:15 
 comments: true
-tags: [Länkar, Nyheter, Hittat]
+tags: Länkar, Nyheter, Hittat
 author: Alexandra Bjelkholm
 authorDescription: Alexandra Bjelkholm jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/sandra.jpg

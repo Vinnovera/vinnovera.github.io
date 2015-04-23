@@ -3,7 +3,7 @@ template: post.html
 title: "Hittat på nätet #3"
 date: 2014-04-11 14:10:25 
 comments: true
-tags: [Länkar, Nyheter, Hittat]
+tags: Länkar, Nyheter, Hittat
 author: Alexandra Munter
 authorDescription: Alexandra Munter jobbar med frontend på Vinnovera.
 authorImage: /images/profiles/sandra.jpg
