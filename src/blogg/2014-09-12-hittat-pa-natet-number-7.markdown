@@ -5,7 +5,7 @@ date: 2014-09-12 15:10:45
 comments: true
 tags: Länkar, Nyheter, Hittat
 author: Harald Mellbom
-authorDescription: Harald Mellbom jobbar med frontend på Vinnovera.
+authorDescription: Harald Mellbom jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/harald.jpg
 authorTel: 073-677 65 19
 authorMail: harald@vinnovera.se

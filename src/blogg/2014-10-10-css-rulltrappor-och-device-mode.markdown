@@ -5,7 +5,7 @@ date: 2014-10-10 13:36:56
 comments: true
 tags: CSS, Progressive enhancement, Development tools
 author: Gustav Frykholm
-authorDescription: Gustav Frykholm jobbar med frontend på Vinnovera.
+authorDescription: Gustav Frykholm jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/gustav.jpg
 authorTel: 070-743 51 31
 authorMail: gustav@vinnovera.se

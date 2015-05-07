@@ -5,7 +5,7 @@ date: 2015-02-10 15:00:00
 comments: true
 tags: Länkar, Nyheter, Hittat
 author: Max von Krusenstierna
-authorDescription: Max von Krusenstierna jobbar med frontend på Vinnovera.
+authorDescription: Max von Krusenstierna jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/max.jpg
 authorTel: 076-870 10 55
 authorMail: max@vinnovera.se
@@ -15,7 +15,7 @@ Javascriptutveckling in i 2015. ECMAScript 6 ser ut att bli ett stort kliv fram�
 
 ### [Generation Javascript][2]
 ![Javascript][04]
-Artikel som bl.a. går igenom de mörka aspekterna med hög dependency-stack i frontend-projekt och hur de tar utvecklaren längre och längre bort från koden. Det som kan studeras som ett typiskt hantverk eller "craftmanship" som det så vackert heter på engelska, ser annorlunda ut i en sådan värld.
+Artikel som bl.a. går igenom de mörka aspekterna med hög dependency-stack i front-end-projekt och hur de tar utvecklaren längre och längre bort från koden. Det som kan studeras som ett typiskt hantverk eller "craftmanship" som det så vackert heter på engelska, ser annorlunda ut i en sådan värld.
 
 ### [Javascript in 2015][1]
 <div class="video youtube">

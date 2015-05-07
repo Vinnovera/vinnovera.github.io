@@ -14,7 +14,7 @@ För ett trevligt miljöombyte åkte hela Vinnovera ut till Skåvsjöholm för t
 
 ![Hacking][00]
 
-Vi gick även igenom alla kundprojekt som är igång för att sprida kunskap, inspirera och bolla lösningar. Det är bra och lärorikt att ibland påminna sig om alla delar vi levererar till våra kunder - Allt från teknisk strategi och arkitektur till frontend-utveckling och utbildning.
+Vi gick även igenom alla kundprojekt som är igång för att sprida kunskap, inspirera och bolla lösningar. Det är bra och lärorikt att ibland påminna sig om alla delar vi levererar till våra kunder - Allt från teknisk strategi och arkitektur till front-end-utveckling och utbildning.
 
 ![Workshop][01]
 

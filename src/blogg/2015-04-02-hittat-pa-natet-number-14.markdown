@@ -5,7 +5,7 @@ date: 2015-04-02 10:52:24
 comments: true
 tags: Länkar, Nyheter, Hittat
 author: Per Stenström
-authorDescription: Per Stenström jobbar med frontend på Vinnovera.
+authorDescription: Per Stenström jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/per.jpg
 authorMail: per@vinnovera.se
 ---

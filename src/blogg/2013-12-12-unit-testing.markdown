@@ -5,7 +5,7 @@ date: 2013-12-12 14:22:24
 comments: true
 tags: Javascript, Unit Testing
 author: Jonas Stattin
-authorDescription: Jonas Stattin jobbar med frontend på Vinnovera.
+authorDescription: Jonas Stattin jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/jonas.jpg
 authorMail: jonas@vinnovera.se
 ---

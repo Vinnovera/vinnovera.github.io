@@ -17,4 +17,4 @@ Oavsett teknisk plattform och bakomliggande system har alla webblösningar ett g
 Vi trivs som bäst när vi får jobba med duktiga människor på både kund- och leverantörssidan - i projekt där kvalitet, användarupplevelse och affärsnytta är ledord. Henry Ford sa en gång att kvalitet betyder att göra rätt när ingen ser på. För oss betyder det att kvalitet är varje projektmedlems ansvar. Vårt ansvarstagande och strävan efter kvalitet är också det som alla på Vinnovera har gemensamt.
 
 
-Om du är på jakt efter webbkonsulter och tycker att detta låter klokt, eller om du är frontend-utvecklare och vill hitta en arbetsplats där du blir omgiven av folk som vill dela sin kunskap med dig - <a href="/#kontakt">Tveka inte att höra av dig</a>.
+Om du är på jakt efter webbkonsulter och tycker att detta låter klokt, eller om du är front-end-utvecklare och vill hitta en arbetsplats där du blir omgiven av folk som vill dela sin kunskap med dig - <a href="/#kontakt">Tveka inte att höra av dig</a>.

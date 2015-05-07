@@ -37,7 +37,7 @@ Jag tycker många talare hade intressanta ämnen, men jag fastnade främst för 
 
 ###Per  
 <img src="/images/profiles/per.jpg" class="portrait">
-[Jina Bolton][2] [höll ett talk][21] som som mest tangerade utveckling med JavaScript. Hon pratade istället om sitt arbete med "Style Guides". Vi arbetar ofta med att leverera frontend till projekt där vi får grafisk design från en extern leverantör. Designen implementerar vi antingen direkt i systemet, eller så levererar vi statiska filer som backend-utvecklare lägger in i systemet. I sådana projekt är bra kommunikation väldigt viktigt i alla led.
+[Jina Bolton][2] [höll ett talk][21] som som mest tangerade utveckling med JavaScript. Hon pratade istället om sitt arbete med "Style Guides". Vi arbetar ofta med att leverera front-end till projekt där vi får grafisk design från en extern leverantör. Designen implementerar vi antingen direkt i systemet, eller så levererar vi statiska filer som backend-utvecklare lägger in i systemet. I sådana projekt är bra kommunikation väldigt viktigt i alla led.
 
 Ett tillfälle då kommunikationen kan brista är om det i designleveranser finns olika versioner av samma modul, utan tydlig information om vilken version som är den aktuella. För att underlätta arbetet och minska missförstånden ber vi ofta designern underhåller ett element-bibliotek, där "states" på interaktiva element och den senaste designen av alla moduler finns med. Precis samma problem kan så klart uppstå mellan oss och backend som ska implementera vår leverans, och "Style Guides" kan då vara ett bra verktyg. Om "markup" skiljer sig i två versioner av samma modul så ska det vara "Style Guiden" som styr.
 
@@ -59,7 +59,7 @@ Hans sätt att utgå från en visuell idé för att sen försöka återskapa den
 
 ###Jonas
 <img src="/images/profiles/jonas.jpg" class="portrait">
-Normalt sett så tycker jag bäst om relativt tunga och kodfyllda talks, men på Nordic.js föll jag särskilt för [Ellen Sundhs][3] inspirerande föredrag om att använda javascript för att koppla ihop internet med den fysiska världen. Projektet “Storklon” är imponerande och inspirerande i sin väldiga skala och det är kittlande att tänka att det är möjligt att använda javascript hela vägen från frontend via backend hela vägen till maskinen. Ett verkligt bevis för språkets mognad och möjligheter.
+Normalt sett så tycker jag bäst om relativt tunga och kodfyllda talks, men på Nordic.js föll jag särskilt för [Ellen Sundhs][3] inspirerande föredrag om att använda javascript för att koppla ihop internet med den fysiska världen. Projektet “Storklon” är imponerande och inspirerande i sin väldiga skala och det är kittlande att tänka att det är möjligt att använda javascript hela vägen från front-end via backend hela vägen till maskinen. Ett verkligt bevis för språkets mognad och möjligheter.
 
 [0]: http://robertnyman.com/
 [01]: http://www.slideshare.net/robnyman/five-stages-of-development-nordicjs

@@ -5,7 +5,7 @@ date: 2014-10-07 14:55:09
 comments: true
 tags: CSS
 author: Alexandra Bjelkholm
-authorDescription: Alexandra Bjelkholm jobbar med frontend på Vinnovera.
+authorDescription: Alexandra Bjelkholm jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/sandra.jpg
 authorTel: 070-491 84 29
 authorMail: alexandra@vinnovera.se

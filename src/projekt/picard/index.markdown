@@ -17,7 +17,7 @@ Vårt uppdraget var att bygga en responsiv sajt år Picard, föreberedd för e-h
 
 ## Vinnoveras roll
 
-Vinnoveras roll i projektet var att  leverera frontend och teknisk expertis, i kombination med att stödja designer och interaktionsdesigner i designfasen. [The Viral Company](http://theviralcompany.com/) tog fram design och interaktionsdesign, och Agigen ansvarade för backend-utveckling på platformen Magento.
+Vinnoveras roll i projektet var att  leverera front-end och teknisk expertis, i kombination med att stödja designer och interaktionsdesigner i designfasen. [The Viral Company](http://theviralcompany.com/) tog fram design och interaktionsdesign, och Agigen ansvarade för backend-utveckling på platformen Magento.
  
 ## Tekniker som använts
 * CSS media queries (responsive)

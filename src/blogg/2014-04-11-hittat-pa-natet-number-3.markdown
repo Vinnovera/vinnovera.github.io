@@ -5,7 +5,7 @@ date: 2014-04-11 14:10:25
 comments: true
 tags: Länkar, Nyheter, Hittat
 author: Alexandra Munter
-authorDescription: Alexandra Munter jobbar med frontend på Vinnovera.
+authorDescription: Alexandra Munter jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/sandra.jpg
 authorTel: 070-491 84 29
 authorMail: alexandra@vinnovera.se

@@ -5,7 +5,7 @@ date: 2014-09-26 13:03:19
 comments: true
 tags: Grid, SVG, Länkar, Nyheter, Hittat
 author: Michael Uvnäs
-authorDescription: Michael Uvnäs jobbar med frontend på Vinnovera.
+authorDescription: Michael Uvnäs jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/michael.jpg
 authorTel: 070-797 74 87
 authorMail: michael@vinnovera.se

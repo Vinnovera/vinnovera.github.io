@@ -5,7 +5,7 @@ date: 2014-01-07 14:41:39
 comments: true
 author: Tobias Bleckert
 tags: Javascript, jQuery, Mootools
-authorDescription: Tobias Bleckert jobbar med frontend på Vinnovera.
+authorDescription: Tobias Bleckert jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/tobias.jpg
 authorMail: tobias@vinnovera.se
 ---

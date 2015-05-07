@@ -5,7 +5,7 @@ date: 2014-11-07 14:02:33
 comments: true
 tags: SVG, CSS, Länkar, Nyheter, Hittat
 author: Alexandra Bjelkholm
-authorDescription: Alexandra Bjelkholm jobbar med frontend på Vinnovera.
+authorDescription: Alexandra Bjelkholm jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/sandra.jpg
 authorTel: 070-491 84 29
 authorMail: alexandra@vinnovera.se

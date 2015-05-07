@@ -1,6 +1,6 @@
 ---
 template: post.html
-title: "Vi söker frontend-utvecklare!"
+title: "Vi söker front-end-utvecklare!"
 date: 2014-04-23 09:09:34 
 comments: true
 tags: Jobb
@@ -11,7 +11,7 @@ authorTel: 070-171 67 27
 authorMail: bjorn-olle@vinnovera.se
 ---
 ![Vinnovera](/images/content/posts/vi-soker-frontend-utvecklare/logotyp.jpg)
-Vi letar efter dig som **brinner för frontend-utveckling** och vill utvecklas inom det området tillsammans med likasinnade. Du kan vara både junior som senior - **oavsett arbetslivserfarenhet** så har du möjlighet att utvecklas hos oss. Många projekt på GitHub väger lika tungt som ett långt CV.
+Vi letar efter dig som **brinner för front-end-utveckling** och vill utvecklas inom det området tillsammans med likasinnade. Du kan vara både junior som senior - **oavsett arbetslivserfarenhet** så har du möjlighet att utvecklas hos oss. Många projekt på GitHub väger lika tungt som ett långt CV.
 <!--more-->
 Hos oss får du jobba med **responsive webb, mobilsajter, webbappar** och andra skojiga saker som har ett gränssnitt på webben. Alltid med **kvalitet och hantverkskänsla i fokus**. Vi värdesätter att arbeta tillsammans och dela kunskap för att kunna genomföra projekt på bästa sätt.
 

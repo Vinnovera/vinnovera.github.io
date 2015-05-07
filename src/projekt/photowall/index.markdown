@@ -14,12 +14,12 @@ De arbetar också med licensierade varumärken och är officiell partner för Di
 
 ## Vinnoveras roll
 
-Vår roll i projektet var projektledning, kravställning, interaktionsdesign och frontend-utveckling. Vi samarbetade med Kristoffer Gustafsson på [Parsley.se](http://parsley.se/) som gjorde grafisk design och [LarvIT](http://larvit.se/) som stod för backend tillsammans med Photowalls egna utvecklingsavdelning.
+Vår roll i projektet var projektledning, kravställning, interaktionsdesign och front-end-utveckling. Vi samarbetade med Kristoffer Gustafsson på [Parsley.se](http://parsley.se/) som gjorde grafisk design och [LarvIT](http://larvit.se/) som stod för backend tillsammans med Photowalls egna utvecklingsavdelning.
 
 ![Skärmdumpar photowall.se](/images/content/projects/photowall/responsive.jpg)
 
 ## Teknik
-### Frontend
+### Front-end
 Mycket av utmaningen med projektet låg i en kodbas som hanterar olika typer av enheter, skärmstorlekar och interaktionssätt. Eftersom motiven storleksanpassas i webbläsaren av kunden, behövde gränssnittet fungera både på en dator med mus och tangentbord och en mobiltelefon med pekskärm.
 
 ![Beskräning på desktop](/images/content/projects/photowall/crop1.jpg)
@@ -38,8 +38,8 @@ Mycket av utmaningen med projektet låg i en kodbas som hanterar olika typer av 
 * J.Resig JavaScript Micro-Templating - http://ejohn.org/blog/javascript-micro-templating/
 * jQuery - http://jquery.com/
 
-### Frontend-optimeringar
-Med ett stigande besökarantal på enheter med sämre internetuppkoppling behövdes ett mer optimerat frontend. Vinnovera hjälpte Photowall att optimera sajten med en cachelösning byggd på Varnish. Det lades även stort fokus på att få ner storleken och antalet resurser som laddas in när sajten besöks.
+### Front-end-optimeringar
+Med ett stigande besökarantal på enheter med sämre internetuppkoppling behövdes ett mer optimerat front-end. Vinnovera hjälpte Photowall att optimera sajten med en cachelösning byggd på Varnish. Det lades även stort fokus på att få ner storleken och antalet resurser som laddas in när sajten besöks.
 
 #### Tekniker som använts
 * Varnish cache - https://www.varnish-software.com/

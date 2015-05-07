@@ -5,7 +5,7 @@ date: 2013-12-13 16:17:13
 comments: true
 tags: Javascript, Filter
 author: Alexandra Bjelkholm
-authorDescription: Alexandra Bjelkholm jobbar med frontend på Vinnovera.
+authorDescription: Alexandra Bjelkholm jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/sandra.jpg
 authorTel: 070-491 84 29
 authorMail: alexandra@vinnovera.se

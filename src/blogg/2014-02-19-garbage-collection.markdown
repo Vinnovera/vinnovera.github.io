@@ -5,7 +5,7 @@ date: 2014-02-19 17:54:05
 comments: true
 author: Per Stenström
 tags: Javascript, Garbage Collection
-authorDescription: Per Stenström jobbar med frontend på Vinnovera.
+authorDescription: Per Stenström jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/per.jpg
 authorMail: per@vinnovera.se
 ---

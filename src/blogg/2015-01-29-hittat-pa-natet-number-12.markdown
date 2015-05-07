@@ -5,7 +5,7 @@ date: 2015-01-29 15:00:00
 comments: true
 tags: Länkar, Nyheter, Hittat
 author: Jonas Stattin
-authorDescription: Jonas Stattin jobbar med frontend på Vinnovera.
+authorDescription: Jonas Stattin jobbar med front-end på Vinnovera.
 authorImage: /images/profiles/jonas.jpg
 authorTel: 070-003 97 25
 authorMail: jonas@vinnovera.se
