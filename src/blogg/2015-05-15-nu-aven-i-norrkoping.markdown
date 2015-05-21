@@ -12,10 +12,10 @@ authorMail: bjorn-olle@vinnovera.se
 ---
 ![Torg](/images/content/posts/nu-aven-i-norrkoping/torg.jpg)
 
-Next step of world domination: Från och med maj har Vinnovera en filial i Norrköping! <!--more-->
-Lokalpatrioten Per Lundgren kommer på deltid att missionera front-end och UX från vår kontorsplats hos vännerna på ["Katapultkontoret"](http://www.katapultkontoret.se/). 
+**Next step of world domination:** Från och med maj har Vinnovera en filial i Norrköping! <!--more-->
+Lokalpatrioten **Per Lundgren** kommer att lägga en del av sina veckor på att missionera front-end och UX från vårt kontor hos vännerna på ["Katapultkontoret"](http://www.katapultkontoret.se/). 
 <img src="/images/profiles/perlundgren.jpg" alt="Per" class="portrait" />
-Vi i Stockholm hoppas förstås att han är hos oss i Gamla stan lika mycket som förut, men utnyttjar även chansen till skamlös PR som en sån här expansion ger :) Så om du befinner dig i krokarna, behöver ett miljöombyte eller bara är nyfiken på Norpans cyber-status vet du var du ska gå! 
+Men alla Stockholmare kan vara lugna - resterande tid tillbringar han som vanligt hos oss i Gamla stan. Så om du befinner dig i krokarna, behöver ett miljöombyte eller bara är nyfiken på Norpans cyber-status vet du nu var du ska vända dig! 
 
 Vi är förstås intresserade av att både komma i kontakt med lokala kunder som vill göra roliga projekt tillsammans med oss, och träffa duktiga personer som brinner för front-end och problemlösning på webben.
 
