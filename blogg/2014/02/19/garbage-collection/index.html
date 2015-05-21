@@ -98,7 +98,7 @@ Motsatsen till garbage collection är att programmeraren själv måste allokera 
 <h3 id="reference-counting-garbage-collection">Reference counting garbage collection</h3>
 <p>Reference counting används i stort sett endast av Internet Explorer 6 och 7. Den här metoden räknar alla referenser till ett objekt, och tar bort alla objekt som inte längre har en referens.</p>
 <p>Det är dock möjligt fär två olika objekt att referera till varandra, utan att annars vara refererade till.</p>
-<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> o = {};
     <span class="hljs-keyword">var</span> o2 = {};
     o.a = o2;
@@ -129,7 +129,7 @@ f();</code></pre><p>I exemplet har o och o2 inga referenser utanför funktions-s
 Alla variabler som instansieras utan “var”-keywordet tillhör även dom det globala scopet.</p>
 <pre><code class="hljs javascript"><span class="hljs-keyword">var</span> b = <span class="hljs-string">'foo'</span>;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span></span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>)</span>{
     <span class="hljs-keyword">var</span> str = ‘Hej’;
     c = ‘Då’;
 }
@@ -157,7 +157,7 @@ m === ‘test’ <span class="hljs-comment">// false</span></code></pre><p>Vad s
 <h3 id="mindre-function-scope">Mindre function-scope</h3>
 <p>Var noga med dina funktions-scope. Det kan vara värt att dela en stor funktion i mindre. Det skapar garbage oftare men i mindre mängd. Det utnyttjar även den generationella garbage collectorn.</p>
 <p>I exemplet ska vi räkna ut den initiella <code>velocity.x</code>och <code>velocity.y</code>och för ett objekt. Det gjorde vi tidigare i konstruktorn av objektet, földen av det var att de hjälp-variabler vi använder i uträkningen inte gick ur scope förrän vi förstörde objektet. Nu går variablerna ur scope så fort <code>init()</code> metoden är klar.</p>
-<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">init</span><span class="hljs-params">()</span> </span>{
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">init</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> dx, dy, distance, dv, tx, ty, tv, dtv;
 
     <span class="hljs-comment">// Distance of particle from the center across the x and y axis</span>
@@ -181,11 +181,11 @@ m === ‘test’ <span class="hljs-comment">// false</span></code></pre><p>Vad s
     velocity.y -= ty;
 }</code></pre><h3 id="loopar">Loopar</h3>
 <p>Istället för:</p>
-<pre><code class="hljs javascript">setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+<pre><code class="hljs javascript">setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
     <span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> bar();
 }, <span class="hljs-number">16</span>);</code></pre><p>skriv:</p>
 <pre><code class="hljs javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> bar();
-setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
     foo.init();
 },<span class="hljs-number">16</span>);</code></pre><p>Det första exemplet skapar ett nytt objekt varje iteration, som är onåbart i nästa. Det andra exemplet skapar ett objekt som sen återanvänds, fast med nya värden.</p>
 <h3 id="object-pool">Object pool</h3>
