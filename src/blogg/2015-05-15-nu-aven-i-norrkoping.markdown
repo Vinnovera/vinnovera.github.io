@@ -21,4 +21,4 @@ Vi är förstås intresserade av att både komma i kontakt med lokala kunder som
 
 ![Kontor](/images/content/posts/nu-aven-i-norrkoping/kontor.jpg)
 
-Kontakta [Björn-Olle](bjorn-olle@vinnovera.se), VD på Vinnovera, eller [Per](per.lundgren@vinnovera.se), som är på plats i Norrköping, om ni vill veta mer eller bara komma förbi på en fika. 
+Kontakta [Björn-Olle](mailto:bjorn-olle@vinnovera.se), VD på Vinnovera, eller [Per](mailto:per.lundgren@vinnovera.se), som är på plats i Norrköping, om ni vill veta mer eller bara komma förbi på en fika. 
