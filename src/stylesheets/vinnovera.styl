@@ -1,9 +1,11 @@
 @import "core/_utilities.styl"
 @import "_config.styl"
 @import "components/_normalize.styl"
+@import "components/_royalslider.styl"
 @import "core/_typo.styl"
 @import "modules/_post-navigation.styl"
 @import "modules/_jsoverlay.styl"
+@import "modules/_emojis.styl"
 @import "highlight/hybrid.styl"
 @import "highlight/highlight.styl"
 
@@ -67,19 +69,26 @@ body
 				margin-top: 20px
 				position: relative
 			
-			&:before
-				+bp(masta-killa)
-					content: "Telefon"
-					position: absolute
-					left: 0
-					top: 0
-					color: #666
+			&.tel
+				&:before
+					+bp(masta-killa)
+						content: "Telefon"
+						position: absolute
+						left: 0
+						top: 0
+						color: #666
 						
-			&:first-child
+			&.adr
 				&:before
 					+bp(masta-killa)
 						content: "Adress"
-	
+						position: absolute
+						left: 0
+						top: 0
+						color: #666
+			&.headline
+				margin-top 100px
+				text-align left
 		> a
 			+bp(masta-killa)
 				margin-top: 20px
@@ -189,7 +198,26 @@ body
 		
 		+bp(slick-rick)
 			padding: 50px 0
+		.more
+			text-align: center
+			padding: 80px 0 0
+
+			a
+				font-size: 20px
+		.link
+			text-decoration: none
+			padding-bottom: 2px
+			border-bottom: 2px solid $blue
 		
+		.background-image
+			background: url('http://placehold.it/1920x320') center center no-repeat
+			background-size: cover
+			min-height: 320px
+			max-width: 128000px
+			margin: 20px auto
+			width: 100%
+			display: block
+			
 		&.about
 			background: $blue
 			color: white
@@ -255,7 +283,7 @@ body
 				
 			.link
 				color: $blue
-				text-decoration: underline
+				//text-decoration: underline
 				
 				&:hover
 					color: #3790cf
@@ -381,7 +409,6 @@ body
 				> img
 					display: block
 					margin-bottom: 0
-			
 		&.blog
 			background: $orange
 			color: white
@@ -457,65 +484,677 @@ body
 							margin-top: -15px
 							
 			.more
-				text-align: center
-				padding: 80px 0 0
-
-				a
-					font-size: 20px
-					&:hover
+				a:hover
 						color: $whitehover
 
 
 		&.people
-			padding-bottom: 0
-			
+			background: $orange
+			color: white
+			padding 100px 0 40px
 			h1
 				font-size: 42px
 				line-height: 48px
-			.humans
-				margin-left: -30px
-				margin-top: -30px
-				word-spacing: -1px
-				font-size: 0
+				color: white
+			h2
+				font-size: 32px
+				color: white
 				text-align: center
+			.background-image
+				background-image: url('../images/humans2.jpg')
+				//display none
+			.wrapper
+				overflow: hidden
+				max-width: 99999px
+			.hisspitch
+				font: 300 30px/1.2 $brandFontStack
+				max-width: 750px
+				margin: 20px auto 30px
+				+bp(masta-killa)
+					font-size: 24px
+			.link
+				color white
+				border-color white
+			.bildspel-wrapper
+				opacity 0
+				position relative
+				overflow visible
+				margin-top 40px
+				+bp(slider-break)
+					max-width 750px
+					overflow hidden
+					margin 30px auto 0
+					padding-top 40px
+					display block
+				&.start
+					.slide-controls
+						opacity 0
+						top -50px
+					/*#bildspel
+						.rsSlide
+							opacity 0
+							transition opacity .4s ease-out
+							&.rsActiveSlide
+								opacity 1
+						.rsVisibleNearbyWrap:hover
+							.rsSlide
+								opacity 1*/
+				&.visible
+					opacity 1
+				.slide-controls
+					width 100%
+					clear both
+					margin 0 0 40px
+					text-align center
+					position relative
+					z-index 0
+					vertical-align middle
+					opacity 1
+					top 0px
+					transition opacity 150ms ease-in-out, top 100ms ease-out
+					transition-delay 0s,50ms
+					+bp(slider-break)
+						display none
+					i
+						font-style normal
+						width 30px
+						height 16px
+						border-radius 4px
+						border 1px solid white
+						margin 0 5px
+						padding 6px 0
+						font-size 18px
+						position relative
+						border-bottom 3px solid white
+						text-align center
+						color white
+						display inline-block
+						cursor pointer
+						&.prev
+							-ms-transform scaleX(-1)
+							-webkit-transform scaleX(-1)
+							transform scaleX(-1)
+							&::before
+								content '\279E'
+								line-height 0
+						&.next::before
+							content '\279E'
+						&.home
+							&::before
+								content '0'
+								font-size 0
+							&.active
+							&:hover
+								border none
+								top -1px
+								-ms-transform scale(1.1)
+								-webkit-transform scale(1.1)
+								transform scale(1.1)
+							padding 12px
+							border none
+							background url('../images/home.svg') no-repeat center center
+						&.active
+						&:hover
+							top 2px
+							border-bottom 1px solid white
+
 				
-				> article
-					display:  inline-block
-					width: 20%
-					font-size: 14px
-					word-spacing:  normal
-					padding-left: 30px
-					margin-top: 30px
-					vertical-align: top
-					box-sizing: border-box
-					text-align: center
-					font-size: 12px
-					
+			#bildspel
+				width 100%
+				height 280px
+				overflow visible
+				position relative
+				z-index 1
+				+bp(slider-break)
+					width 200%
+					height auto
+					overflow hidden
+					display block
+					padding 0
+					text-align left
+					transition margin .2s ease-in-out
+					&.detail-active
+						margin-left -100%
+						.list
+							//transition-delay .3s
+							//transition opacity .2s ease-out
+							opacity 0
+						.detail
+							opacity 1
+					&.list-active
+						margin-left 0
+						.list
+							opacity 1
+						.detail
+							opacity 0
+							position relative
+							.rsItem
+								position absolute
+								top 0
+						
+				&::before
+				&::after
+					content ''
+					height 60%
+					width 42%
+					position absolute
+					top 0
+					z-index 2
+					pointer-events: none
+				&::before
+					//background-image linear-gradient(90deg,$orange,rgba($orange, 0))
+					left -20px
+					left 0
+				&::after
+					//background-image linear-gradient(-90deg,$orange,rgba($orange, 0))
+					right -20px
+					right 0
+				.list
+				.detail
+					width 50%
+					float left
+					opacity 0
+				.list
+					transition none
+					.rsImg
+						display none
+				.detail
+					color black
+					//transition opacity .2s ease-out
+					>div
+						padding 20px 0 30px
+						.rsImg
+							margin 0 auto
+							display block
+							max-width 190px
+							position relative
+							z-index 1
+						figure
+							margin-top -50px
+							padding-top 32px
+							position relative
+							z-index 0
+							header
+								position relative
+								.rsItem-link
+									font-family $brandFontStack
+									position absolute
+									top -20px
+									right -5px
+									height 20px
+									text-align right
+									font-size 80%
+									font-style normal
+									&::before
+										content '\25C0 Lista'
+										display inline-block
+										border-bottom 2px solid black
+										
+								
+				.rsVisibleNearbyWrap	
+					z-index 1
+					overflow visible
+				.visibleNearby
+					background none
+				.rsGCaption
+					margin-bottom 30px
+				.rsCaption
+					margin: -60px auto 0
+					padding: 30px 2% 0
+					max-width: 550px
+					color: $black
+					z-index: 0
+					position: relative
+					display: block
+					float: none
+					overflow visible
+					+bp(dr-dre)
+						margin -100px auto 0
 					+bp(gza)
-						width: 25%
-						
+						margin -70px auto 0
 					+bp(ol-dirty-bastard)
-						width: 33.333%
+						margin -40px auto 0
+				.humansCaption
+					padding 60px 0 20px
+					max-width 750px
+					+bp(slider-break)
+						padding-top 0
+				&.visible
+					opacity 1
+				.rsContainer
+					overflow visible
+				.rsSlide
+					-ms-transform scale(0.6)
+					-webkit-transform scale(0.6)
+					transform scale(0.6)
+					z-index: 0
+					filter: grayscale(100%)
+					-webkit-filter: grayscale(100%)
+					opacity 0.9
+					transition transform 200ms ease-in-out, padding 300ms ease-out, opacity 200ms ease-in
+					.rsImg
+					/.detail >div .rsImg
+						border-radius 50%
+						margin-top 0!important
+						max-width 100%
+					&.rsActiveSlide
+						z-index: 10
+						opacity 1
+						position: relative
+						transform scale(1)
+						padding-top 50px
+						filter: grayscale(0%)
+						-webkit-filter: grayscale(0%)
+						+bp(dr-dre)
+							-ms-transform scale(1.3)
+							-webkit-transform scale(1.3)
+							transform scale(1.3)
+						+bp(tupac)
+							-ms-transform scale(1.1)
+							-webkit-transform scale(1.1)
+							transform scale(1.1)
+						+bp(q-tip)
+							-ms-transform scale(2)
+							-webkit-transform scale(2)
+							transform scale(2)
+					+bp(ol-dirty-bastard)
+						-ms-transform scale(0.7)
+						-webkit-transform scale(0.7)
+						transform scale(0.7)
+					+bp(q-tip)
+						-ms-transform scale(0.9)
+						-webkit-transform scale(0.9)
+						transform scale(0.9)
 						
+			.humans
+				text-align: left
+				width: 100%
+				margin: 0 auto
+				overflow: visible
+				position: relative
+				&::before
+				&::after
+					content ''
+					height 100%
+					width 50%
+					position absolute
+					top 0
+					z-index 2
+					pointer-events: none
+				&::before
+					background-image linear-gradient(90deg,$orange,rgba($orange, 0))
+					left -20px
+					left 0
+				&::after
+					background-image linear-gradient(-90deg,$orange,rgba($orange, 0))
+					right -20px
+					right 0
+				.inner-wrapper
+					width: 200%
+					//width: 400%
+					//margin-left: -150%
+					margin-left: -50%
+					text-align: center
+					+bp(gza)
+						width: 320%
+					+bp(ol-dirty-bastard)
+						width: 480%
+						
+					> article
+						display:  inline-block
+						position: relative
+						width: 7%
+						max-width: 180px
+						font-size: 14px
+						word-spacing:  normal
+						padding-left: 20px
+						padding-right: 20px
+						margin-top: 40px
+						vertical-align: top
+						box-sizing: border-box
+						text-align: center
+						font-size: 12px
+						transition: all .2s ease-in
+						
+						
+						> img
+							border-radius: 50%
+							display: block
+							margin: 0 auto 10px
+							cursor pointer
+							-webkit-filter: grayscale(100%)
+						&:hover
+							img
+								-webkit-filter: grayscale(0%)
+							
+						> strong
+							display: block
+							font-size: 15px
+							font-family: $brandFontStack
+							font-weight:  600
+							
+						> span
+							cursor pointer
+							&.tel
+								display: none
+						> a
+							display: none
+						&.active
+							width: 14%
+							max-width: 340px
+							z-index: 3
+							strong
+								display: none
+							span
+								display: none
+							img
+								-webkit-filter: grayscale(0%)
+								width: 74%
+							+bp(gza)
+								width: 11%
+					/*		
 					+bp(masta-killa)
-						width: 50%
+						> article
+							width: 25%*/
+			.humans-list
+				max-width 750px
+				margin 0 auto 40px
+				display block
+				text-align: center
+				.inner-wrapper
+					width 100%
+				article
+					display: inline-block
+					//width: 150px
+					width: 80px
+					min-height: 80px
+					vertical-align: top
 					
-					> img
+					img
+						max-width: 64px
+						border 5px solid transparent
+						border-radius: 50%
+						-webkit-filter: grayscale(100%)
+						cursor: pointer
+						clear: both
+						display: block
+						margin: 0 auto
+						&:hover
+							-webkit-filter: grayscale(0%)
+					span
+						display: none
+						width 100%
+						font-size 82%
+						line-height 1.1
+						&.tel
+							display none
+					strong
+						clear: both
+						width 100%
+						font-family: $brandFontStack
+						display block
+						display: none
+					a
+						display none
+						
+					&.active
+						img
+							border 5px solid white
+							-webkit-filter: grayscale(0%)
+			
+			.humans-grid
+				text-align: center
+				padding: 60px 0 20px
+				display block
+				.inner-wrapper
+					width 100%
+					line-height 1.1
+				article
+					display: inline-block
+					width: 140px
+					min-height: 170px
+					max-width: 49%
+					vertical-align: top
+					text-align: center
+					cursor pointer
+					position relative
+					line-height 1.1
+					overflow hidden
+					&::before
+						content 'Läs mer \25B6'
+						padding 0px 0 0
+						display inline-block
+						text-align center
+						float none
+						font-size 90%
+						font-family: $brandFontStack
+						//text-transform uppercase
+						border-bottom 2px solid black
+						position relative
+						text-align center
+						background white
+						transition bottom .2s ease-out
+						bottom -60px
+						opacity 0
+						z-index 0
+					&:hover
+						span
+						strong
+							opacity 0
+						img
+							max-width 84px
+							margin 3px auto 5px
+						&::before
+							opacity 1
+							bottom -110px
+					&:active
+					&:focus
+						img
+							margin 5px auto 5px						
+
+					+bp(slider-break)
+						font-size 92%
+						line-height 1.05
+						padding 10px 0 0
+						&::after
+							font-family: $brandFontStack
+							display block
+							padding 6px 0 3px
+							display inline-block
+							border-bottom 2px solid white
+							content 'Läs mer \25B6'
+							font-size 90%
+							text-transform none
+							font-weight normal
+						&::before
+							display none
+						&:hover
+							span
+							strong
+								opacity 1
+							img
+								max-width 80px
+								margin 5px auto 5px
+					img
+						max-width: 80px
 						border-radius: 50%
 						display: block
-						margin: 0 auto 10px
+						margin: 5px auto 5px
+						position relative
+						z-index 1
+						transition margin .2s ease-in-out
+					span
+					strong
+						opacity 1
+						transition opacity .1s linear
+					span
+						width: 100%
+						font-size 80%
+						display block
+						padding 4px 0
+						&.tel
+							display none
 						
-					> strong
-						display: block
-						font-size: 15px
+					strong
 						font-family: $brandFontStack
-						font-weight:  600
-						
-					> span
+						width 100%
+						display block
+					a
+						display: none
+
+			.humans-grid-list
+				text-align: center
+				padding: 60px 0 20px
+				display block
+				.inner-wrapper
+					width 100%
+					line-height 1.1
+				article
+					display: inline-block
+					width: 220px
+					max-width: 49%
+					min-height: 80px
+					vertical-align: top
+					padding-bottom: 20px
+					text-align: left
+					+bp(slider-break)
+						font-size 92%
+						line-height 1.05
+						&::after
+							font-family: $brandFontStack
+							content 'Läs mer'
+							border-bottom 2px solid white
+							padding 3px 0
+							display inline-block
+							float none
+							font-size 80%
+					img
+						width: 26%
+						border-radius: 50%
+						-webkit-filter: grayscale(0%)
+						cursor: pointer
 						display: block
+						margin: 0px 4% 35px 0px
+						float: left
+						&:hover
+							-webkit-filter: grayscale(100%)
+					span
+						width: 70%
+						font-size 80%
+						float: left
+						line-height: 1
+						&.tel
+							display none
+						
+					strong
+						font-family: $brandFontStack
+						width 70%
+						display block
+						float left
+					a
+						display: none
+					
+									
+			.active-human
+				margin: -30px auto 260px
+				max-width: 750px
+				color: $black
+				position relative
+				z-index 2
+				> article
+				/.rsCaption
+				/.detail > div > figure
+					padding 0 6%
+					margin 0 8%
+					+bp(ol-dirty-bastard)
+						margin 0
+					display block
+					text-align: left
+					background: white
+					//box-shadow: 6px 6px 0px rgba(0,0,0,0.25)
+					header
+						font: 18px/1.4 $brandFontStack
+						text-align center
+						font-size 16px
+						padding 40px 0 20px
+						
+						strong
+							font-size 18px
+							display block
+							width 100%
+					>div
+						line-height 1.5
+						text-align left
+					footer
+						padding 20px 0 40px
+						clear both
+						float none
+						>div
+							width 50%
+							float left
+							margin 20px 0 0
+							span
+							a
+								display block
+							.em
+								display inline-block
+							+bp(ol-dirty-bastard)
+								width 100%
+				.counter
+					width 100%
+					color white
+					display block
+					clear both
+					text-align center
+					padding 20px 0 10px
+				.arrow
+				/.rsArrow
+					font: 300 32px/0.8 $brandFontStack
+					+bp(ol-dirty-bastard)
+						font-size 64px
+					position absolute
+					top 25%
+					display block
+					width 32px
+					height 32px
+					color white
+					opacity 1
+					cursor pointer
+					text-align center
+					z-index 20
+					&:hover
+						opacity 0.6
+					&::before
+						display block
+					&.arrow-right
+					/.rsArrowRight
+						right 0
+						&::before
+							content '>'
+						+bp(ol-dirty-bastard)
+							right 34%
+							top 0
+					&.arrow-left
+					/.rsArrowLeft
+						left 0
+						&::before
+							content '<'
+						+bp(ol-dirty-bastard)
+							left 34%
+							top 0
+						
 			
+			
+		&.call-to-action
+			//display none
+			.more
+				padding: 60px 0 20px
+				text-align: left
+				a
+					font-size: 24px
 		&.contact
 			padding-bottom: 0
+			position relative
 			
 			> h1
 				font-size: 42px
@@ -524,7 +1163,24 @@ body
 			> div
 				height: 580px
 				position: relative
-				
+				&.nkpg
+					max-width 350px
+					height 60%
+					width 50%
+					position absolute
+					right 2%
+					bottom 6%
+					border 12px solid white
+					z-index 1
+					> a
+						background-image url('../images/map_nkpg.png')
+						//background-size auto
+					article
+						height auto
+						width 100%
+						top auto
+						bottom 0
+						
 				+bp(masta-killa)
 					display: none
 				
@@ -539,6 +1195,7 @@ body
 					left: 0
 					border: 0px
 					z-index: 1
+
 				
 				.wrapper
 					height: 100%
