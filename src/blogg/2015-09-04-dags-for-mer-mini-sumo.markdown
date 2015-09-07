@@ -10,8 +10,9 @@ authorImage: /images/profiles/b-o.jpg
 authorTel: 070-171 67 27
 authorMail: bjorn-olle@vinnovera.se
 ---
-![Nordic.js Mini-Sumo Robo Clash](/images/content/posts/dags-for-mer-mini-sumo/nordicjs-robo-clash.png)
 Vinnovera kommer att ordna Mini-sumo-workshop och turnering på [Nordic.js][0]. [Häng med vettja!][1] Läs mer på länken och hör gärna av dig till oss om du vill veta mer om Mini-sumo. <!--more-->
+
+![Nordic.js Mini-Sumo Robo Clash](/images/content/posts/dags-for-mer-mini-sumo/nordicjs-robo-clash.png)
 
 [0]: http://nordicjs.com
 [1]: http://nordicjs-robo-clash.confetti.events/
