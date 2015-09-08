@@ -131,7 +131,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myList"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="applescript">window.jQuery || document.<span class="hljs-command">write</span>('&lt;<span class="hljs-keyword">script</span> src=<span class="hljs-string">"js/vendor/jquery-1.10.1.min.js"</span>&gt;&lt;\/<span class="hljs-keyword">script</span>&gt;')</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="handlebars"><span class="xml">window.jQuery || document.write('<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/vendor/jquery-1.10.1.min.js"</span>&gt;</span><span class="handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">\</span>/<span class="hljs-attribute">script</span>&gt;</span>')</span></span></span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/vendor/qunit-1.12.0.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/main.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/tests.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
@@ -168,8 +168,8 @@ describe(<span class="hljs-string">"multiLineText"</span>, <span class="hljs-fun
 <p>Mocha har många kraftfulla features, som att få Mocha att köra tester automatiskt när kod har uppdaterats, eller att använda andra testbibliotek för att köra testerna (t.ex. Jasmine).</p>
 <h2 id="exempelapplikation">Exempelapplikation</h2>
 <p>Som avslutning tänkte jag visa en liten exempelapplikation, och exempel på hur man kan skriva tester till den. Applikationen skall klara av att visa ett diagram där en andel av ett antal figurer är markerade, t.ex. &quot;22 av 30 deltagare&quot;. Diagrammet skall vara en SVG-bild.</p>
-<h3 id="krav-och-funktionslista">Krav- och funktionslista</h3>
-<p>För att kunna åstadkomma det här diagrammet behöver vi följande funktioner:</p>
+<p>###Krav- och funktionslista
+För att kunna åstadkomma det här diagrammet behöver vi följande funktioner:</p>
 <ul>
 <li>En funktion som kan räkna ut antal figurer per rad, baserat på värdet och maxvärdet (t.ex. &quot;22&quot; och &quot;30&quot;)</li>
 <li>En funktion som ritar ut figurerna.</li>
