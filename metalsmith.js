@@ -40,8 +40,8 @@ module.exports = function(callback) {
 		// Generate tag index
 		.use(tags({
 			handle:     'tags',                  // yaml key for tag list in you pages
-			path:       'blogg/tagg/:slug/index.html',                   // path for result pages
-			pathPage:   'blogg/tagg/:slug/:num/index.html',
+			path:       'blogg/tagg/:slug/index.md',                   // path for result pages
+			pathPage:   'blogg/tagg/:slug/:num/index.md',
 			template:   'tag.html',    // template to use for tag listing
 			sortBy:     'date',                  // provide posts sorted by 'date' (optional)
 			reverse:    true                    // sort direction (optional)

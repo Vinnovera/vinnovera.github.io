@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+{{{ partial "head.html" }}}
+<body {{#if index}}class="index"{{/if}}>
+{{{ partial "header.html" }}}
+<section class="wrapper">
+	<header>
+		<h1>{{title}}</h1>
+	</header>
+	<div class="labs-filter">
+		<a href="#">JS</a>
+		<a href="#">Html</a>
+		<a href="#">Css</a>
+	</div>
+	<div class="labs">
+		<article class="labs-item">
+			<div>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. Phasellus ac convallis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. Phasellus ac convallis augue.</p>
+					</section>
+					<span class="category html"></span>
+					<span class="category css"></span>
+				</div>
+			</div>
+		</article>
+		<article class="labs-item">
+			<div>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. </p>
+					</section>
+					<span class="category javascript"></span>
+				</div>
+			</div>
+		</article>
+		<article class="labs-item">
+			<div>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. Phasellus ac convallis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</section>
+						<span class="category html"></span>
+						<span class="category javascript"></span>
+				</div>
+			</div>
+		</article>
+		<article class="labs-item">
+			<div>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus.</p> <p>Phasellus ac convallis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. Phasellus ac convallis augue.</p>
+					</section>
+					<span class="category other"></span>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>
+
+{{{ partial "footer.html" }}}
+{{{ partial "scripts.html" }}}
+
+<script src="/javascripts/components/isotope.pkgd.min.js"></script>
+<script src="/javascripts/components/packery.pkgd.min.js"></script>
+<script type="text/javascript">
+	window.addEvent('load', function () {
+		var elem = document.querySelector('.labs');
+
+		if (typeof elem !== "undefined" && elem !== null) {
+			var iso = new Isotope(elem, {
+				// options
+				layoutMode: 'packery',
+				itemSelector: '.labs-item'
+			});
+		}
+	})
+</script>
+</body>
+</html>
