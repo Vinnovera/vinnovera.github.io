@@ -59,10 +59,10 @@
 
 				var href = this.getAttribute('href').split('#')[1];
 
-				//if(typeof href != "undefined") {
+				if(typeof href != "undefined") {
 					e.stop();
 					fxScroll.toElement(href);
-				//}
+				}
 			});
 		}
 
