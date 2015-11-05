@@ -1446,7 +1446,6 @@ table.airy td:first-child {
   overflow: hidden;
   text-indent: -9000px;
   width: 10px;
-  background-color: #f00;
 }
 .labs .labs-item section {
   display: table-cell;
@@ -1456,26 +1455,29 @@ table.airy td:first-child {
   height: 100%;
   width: 15px;
 }
-.labs .labs-item .html {
-  background: #3fa9f5;
-}
-.labs .labs-item .css {
-  background: #f15a24;
-}
-.labs .labs-item .javascript {
-  background: #ed1c24;
-}
-.labs .labs-item .other {
-  background: #39b54a;
-}
 .labs-filter > a {
   display: table-cell;
   vertical-align: middle;
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background-color: #000;
   color: #fff;
   text-align: center;
   text-decoration: none;
+}
+span.html,
+a.html {
+  background-color: #3fa9f5;
+}
+span.css,
+a.css {
+  background-color: #f15a24;
+}
+span.javascript,
+a.javascript {
+  background-color: #ed1c24;
+}
+span.other,
+a.other {
+  background-color: #39b54a;
 }
