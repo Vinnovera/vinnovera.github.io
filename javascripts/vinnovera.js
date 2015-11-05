@@ -56,10 +56,13 @@
 			});
 			
 			document.body.addEvent('click:relay(#navigation > a)', function (e) {
-				e.stop();
 
 				var href = this.getAttribute('href').split('#')[1];
-				fxScroll.toElement(href);
+
+				//if(typeof href != "undefined") {
+					e.stop();
+					fxScroll.toElement(href);
+				//}
 			});
 		}
 

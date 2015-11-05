@@ -1427,3 +1427,55 @@ table.airy td {
 table.airy td:first-child {
   text-align: left;
 }
+/* Labs*/
+.labs .labs-item {
+  border-bottom: solid #000 1px;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  float: left;
+}
+.labs .labs-item > div {
+  display: table;
+}
+.labs .labs-item > div > div {
+  display: table-row;
+}
+.labs .labs-item span {
+  display: table-cell;
+  overflow: hidden;
+  text-indent: -9000px;
+  width: 10px;
+  background-color: #f00;
+}
+.labs .labs-item section {
+  display: table-cell;
+  padding: 0 20px 0 0;
+}
+.labs .labs-item .category {
+  height: 100%;
+  width: 15px;
+}
+.labs .labs-item .html {
+  background: #3fa9f5;
+}
+.labs .labs-item .css {
+  background: #f15a24;
+}
+.labs .labs-item .javascript {
+  background: #ed1c24;
+}
+.labs .labs-item .other {
+  background: #39b54a;
+}
+.labs-filter > a {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}

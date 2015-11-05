@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Specialister på front-end-utveckling med HTML5, CSS och JavaScript - Vinnovera</title>
+	<title>Labs - Vinnovera</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
@@ -10,8 +10,8 @@
 
 	<meta name="description" content="Vi är specialister på front-end-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk.">
 
-	<meta property="og:title" content="Specialister på front-end-utveckling med HTML5, CSS och JavaScript" />
-	<meta property="og:url" content="http://vinnovera.se/blogg/tagg/mootools" />
+	<meta property="og:title" content="Labs" />
+	<meta property="og:url" content="http://vinnovera.se/labs" />
 	<meta property="og:image" content="http://vinnovera.se/images/logoOgImage.png" />
 	<meta property="og:description" content="Vi är specialister på front-end-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk." />
 
@@ -70,29 +70,65 @@
 </header>
 
 <a href="#" class="to-top" id="scrollUp">Till toppen</a>
-<section class="wrapper post listing">
-	<h1>Mootools</h1>
-
-		<article>
-			<header>
-				<h2><a href="/blogg/2014/01/07/jquery-vs-mootools">jQuery vs Mootools</a></h2>
-					<p class="meta">
-						<span>Tobias Bleckert</span>
-						| <time datetime="2014-01-07T15:41" pubdate><span class='year'>2014</span>-<span class='month'>01</span>-<span class='day'>07</span></time>
-						|
-						<span class="categories">
-							<a href="/blogg/tagg/javascript/index.md">Javascript</a>, <a href="/blogg/tagg/jquery/index.md">jQuery</a>, <a href="/blogg/tagg/mootools/index.md">Mootools</a>
-						</span>
-					</p>
-			</header>
-
+<section class="wrapper">
+	<header>
+		<h1>Labs</h1>
+	</header>
+	<div class="labs-filter">
+		<a href="#">JS</a>
+		<a href="#">Html</a>
+		<a href="#">Css</a>
+	</div>
+	<div class="labs">
+		<article class="labs-item">
 			<div>
-				&amp;quot;jQuery eller Mootools&amp;quot; är frågan många utvecklare ställer sig. Det är möjligt att ämnet har blivit något uttjatat genom åren, men det avgör du nog bäst själv.
-Innan jag börjar jämföra dessa vill jag presentera dem lite
-				<p><a href="/blogg/2014/01/07/jquery-vs-mootools">Läs hela artikeln</a></p>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. Phasellus ac convallis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. Phasellus ac convallis augue.</p>
+					</section>
+					<span class="category html"></span>
+					<span class="category css"></span>
+				</div>
 			</div>
 		</article>
+		<article class="labs-item">
+			<div>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. </p>
+					</section>
+					<span class="category javascript"></span>
+				</div>
+			</div>
+		</article>
+		<article class="labs-item">
+			<div>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. Phasellus ac convallis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</section>
+						<span class="category html"></span>
+						<span class="category javascript"></span>
+				</div>
+			</div>
+		</article>
+		<article class="labs-item">
+			<div>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus.</p> <p>Phasellus ac convallis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. Phasellus ac convallis augue.</p>
+					</section>
+					<span class="category other"></span>
+				</div>
+			</div>
+		</article>
+	</div>
 </section>
+
 <footer role="contentinfo">
 	<span class="adr">
 		<span class="street-address">Västerlånggatan 27</span>
@@ -108,5 +144,21 @@ Innan jag börjar jämföra dessa vill jag presentera dem lite
 <script src="/javascripts/components/mootools-more.js"></script>
 <script src="/javascripts/components/jsoverlay.js"></script>
 <script src="/javascripts/vinnovera.js"></script>
+
+<script src="/javascripts/components/isotope.pkgd.min.js"></script>
+<script src="/javascripts/components/packery.pkgd.min.js"></script>
+<script type="text/javascript">
+	window.addEvent('load', function () {
+		var elem = document.querySelector('.labs');
+
+		if (typeof elem !== "undefined" && elem !== null) {
+			var iso = new Isotope(elem, {
+				// options
+				layoutMode: 'packery',
+				itemSelector: '.labs-item'
+			});
+		}
+	})
+</script>
 </body>
 </html>
