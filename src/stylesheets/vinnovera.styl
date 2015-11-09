@@ -924,7 +924,7 @@ table
 		left: 50%
 		width: 200px
 
-section.sumo:first-of-type
+section.sumo:nth-of-type(2)
 	padding-bottom: 0
 	
 .sumo:nth-of-type(odd)
@@ -941,6 +941,12 @@ section.sumo:first-of-type
 	width: 100%
 	max-width: 100%
 	padding: 100px 0px
+	line-height: 29px
+	
+	h1
+		text-align: left
+		margin-bottom: 15px
+		font-size: 35px
 	
 	.sumo-images
 		background: $blue
@@ -948,7 +954,6 @@ section.sumo:first-of-type
 		margin-top: 100px
 		letter-spacing: -4px
 	
-		
 		img
 			position: relative
 			width: 25%
@@ -959,13 +964,22 @@ section.sumo:first-of-type
 			
 	.sumo-slideshow
 		margin-top: 50px
+		max-width: 100%
 		
 		ul 
+			max-width: 100%
 			padding-left: 0
+			
+			&:after
+				content: ''
+				clear: both
+				display: block
+			
 			li
-				display: inline-block
+				float: left
 				list-style-type: none
-				width: 16.12%
+				width: 25%
+				margin-bottom: 0px
 				
 				img
 					width: 100%
@@ -974,9 +988,23 @@ section.sumo:first-of-type
 	iframe
 		display: block
 		margin: 50px auto
+	
+	blockquote
+		text-align: left
+					
+		.quote			
+			&:before, &:after
+				content: '"'
+				font-size: 30px
 		
-	.quote
-		text-align: center
+		footer
+			margin-top: 1em
+			text-transform: capitalize
+			
+			&:before
+				content: '- '
+			
+			
 		
 	
 
