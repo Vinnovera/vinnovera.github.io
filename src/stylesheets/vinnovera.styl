@@ -927,7 +927,7 @@ table
 section.sumo:first-of-type
 	padding-bottom: 0
 	
-.sumo:nth-of-type(even)
+.sumo:nth-of-type(odd)
 	background: $blue
 	
 	*
@@ -960,12 +960,23 @@ section.sumo:first-of-type
 	.sumo-slideshow
 		margin-top: 50px
 		
-		img
-			width: 16.12%	
+		ul 
+			padding-left: 0
+			li
+				display: inline-block
+				list-style-type: none
+				width: 16.12%
+				
+				img
+					width: 100%
+				
 			
 	iframe
 		display: block
 		margin: 50px auto
+		
+	.quote
+		text-align: center
 		
 	
 

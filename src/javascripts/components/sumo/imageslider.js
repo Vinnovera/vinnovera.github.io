@@ -111,7 +111,7 @@
 		preventDefault(e);
 	}
 	function onOrientationChange(e){
-		var listelems = document.getElementById('sliderwrapper').getElementsByTagName('ul').getElementsByTagName('li');
+		var listelems = document.getElementById('imageslider').getElementsByTagName('li');
 		for(var i=0;i<listelems.length;i++){
 			listelems[i].style.height = (window.innerHeight - 40) + 'px';
 		}
