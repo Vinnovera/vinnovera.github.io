@@ -1449,7 +1449,7 @@ table.airy td:first-child {
   left: 50%;
   width: 200px;
 }
-section.sumo:first-of-type {
+section.sumo:nth-of-type(2) {
   padding-bottom: 0;
 }
 .sumo:nth-of-type(odd) {
@@ -1466,6 +1466,12 @@ section.sumo:first-of-type {
   width: 100%;
   max-width: 100%;
   padding: 100px 0px;
+  line-height: 29px;
+}
+.sumo h1 {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 35px;
 }
 .sumo .sumo-images {
   background: #3fa9f5;
@@ -1481,14 +1487,22 @@ section.sumo:first-of-type {
 }
 .sumo .sumo-slideshow {
   margin-top: 50px;
+  max-width: 100%;
 }
 .sumo .sumo-slideshow ul {
+  max-width: 100%;
   padding-left: 0;
 }
+.sumo .sumo-slideshow ul:after {
+  content: '';
+  clear: both;
+  display: block;
+}
 .sumo .sumo-slideshow ul li {
-  display: inline-block;
+  float: left;
   list-style-type: none;
-  width: 16.12%;
+  width: 25%;
+  margin-bottom: 0px;
 }
 .sumo .sumo-slideshow ul li img {
   width: 100%;
@@ -1497,6 +1511,18 @@ section.sumo:first-of-type {
   display: block;
   margin: 50px auto;
 }
-.sumo .quote {
-  text-align: center;
+.sumo blockquote {
+  text-align: left;
+}
+.sumo blockquote .quote:before,
+.sumo blockquote .quote:after {
+  content: '"';
+  font-size: 30px;
+}
+.sumo blockquote footer {
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+.sumo blockquote footer:before {
+  content: '- ';
 }

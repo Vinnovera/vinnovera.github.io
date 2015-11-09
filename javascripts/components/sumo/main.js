@@ -27,17 +27,17 @@
   
 
   var quotes = [
-    ["It was the most fucking awesome fun that I had in a long time. Kudos to everyone who attended!!"],
-    ["Spectacular! Insane amounts of fun was had!"],
-    ["It was awesome. I'm just mad I didn't win!"],
-    ["It was awesome, more people should have tried it!"]
+    ["It was the most fucking awesome fun that I had in a long time. Kudos to everyone who attended!!", "random attendee"],
+    ["Spectacular! Insane amounts of fun was had!", "random attendee"],
+    ["It was awesome. I'm just mad I didn't win!", "random attendee"],
+    ["It was awesome, more people should have tried it!", "random attendee"]
   ];
 
   var random = quotes[Math.floor(Math.random() * quotes.length)];
 
   console.log(random);
   function quote() {
-  	element.innerHTML = "<p class='quote'>&ldquo;"+ random +"&rdquo;</p>";
+  	element.innerHTML = "<p class='quote'>"+ random[0] + "</p><footer>" + random[1] + "</footer>";
     //return "<p>&ldquo;"+  +"&rdquo;</p>";
   }
 
