@@ -1427,57 +1427,76 @@ table.airy td {
 table.airy td:first-child {
   text-align: left;
 }
-/* Labs*/
-.labs .labs-item {
-  border-bottom: solid #000 1px;
-  padding: 0;
-  margin: 0;
-  width: 50%;
-  float: left;
+/***** SUMO *****/
+.sumo-header {
+  height: 500px;
+  background: url("/images/sumo/sumo-bot.gif") center center no-repeat;
+  background-size: cover;
 }
-.labs .labs-item > div {
-  display: table;
+.sumo-header a {
+  background: url("/images/logoSymbolBlack@2x.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
 }
-.labs .labs-item > div > div {
-  display: table-row;
+.sumo-header img {
+  position: absolute;
+  margin-left: -100px;
+  top: 100px;
+  left: 50%;
+  width: 200px;
 }
-.labs .labs-item span {
-  display: table-cell;
-  overflow: hidden;
-  text-indent: -9000px;
-  width: 10px;
+section.sumo:first-of-type {
+  padding-bottom: 0;
 }
-.labs .labs-item section {
-  display: table-cell;
-  padding: 0 20px 0 0;
+.sumo:nth-of-type(odd) {
+  background: #3fa9f5;
 }
-.labs .labs-item .category {
-  height: 100%;
-  width: 15px;
-}
-.labs-filter > a {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
+.sumo:nth-of-type(odd) * {
   color: #fff;
+}
+.sumo * {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.sumo {
+  width: 100%;
+  max-width: 100%;
+  padding: 100px 0px;
+}
+.sumo .sumo-images {
+  background: #3fa9f5;
+  max-width: 100%;
+  margin-top: 100px;
+  letter-spacing: -4px;
+}
+.sumo .sumo-images img {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+}
+.sumo .sumo-slideshow {
+  margin-top: 50px;
+}
+.sumo .sumo-slideshow ul {
+  padding-left: 0;
+}
+.sumo .sumo-slideshow ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 16.12%;
+}
+.sumo .sumo-slideshow ul li img {
+  width: 100%;
+}
+.sumo iframe {
+  display: block;
+  margin: 50px auto;
+}
+.sumo .quote {
   text-align: center;
-  text-decoration: none;
-}
-span.html,
-a.html {
-  background-color: #3fa9f5;
-}
-span.css,
-a.css {
-  background-color: #f15a24;
-}
-span.javascript,
-a.javascript {
-  background-color: #ed1c24;
-}
-span.other,
-a.other {
-  background-color: #39b54a;
 }
