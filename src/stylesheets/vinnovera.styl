@@ -6,6 +6,7 @@
 @import "modules/_jsoverlay.styl"
 @import "highlight/hybrid.styl"
 @import "highlight/highlight.styl"
+@import "sumo/sumo.styl"
 
 .clearfix
 	&:before,
@@ -901,112 +902,7 @@ table
 			&:first-child
 				text-align: left
 				
-/***** SUMO *****/
 
-.sumo-header
-	height: 500px
-	background: url('/images/sumo/sumo-bot.gif') center center no-repeat
-	background-size: cover
-	
-	a
-		background: url('/images/logoSymbolBlack@2x.png') center center no-repeat
-		background-size: cover
-		position: absolute 
-		width: 50px
-		height: 50px
-		top: 10px
-		left: 10px
-		
-	img 
-		position: absolute
-		margin-left: -100px
-		top: 100px
-		left: 50%
-		width: 200px
-
-section.sumo:nth-of-type(2)
-	padding-bottom: 0
-	
-.sumo:nth-of-type(odd)
-	background: $blue
-	
-	*
-		color: white	
-		
-.sumo *
-	max-width: 640px
-	margin: 0 auto
-	
-.sumo 
-	width: 100%
-	max-width: 100%
-	padding: 100px 0px
-	line-height: 29px
-	
-	h1
-		text-align: left
-		margin-bottom: 15px
-		font-size: 35px
-	
-	.sumo-images
-		background: $blue
-		max-width: 100%
-		margin-top: 100px
-		letter-spacing: -4px
-	
-		img
-			position: relative
-			width: 25%
-			height: 100%
-			display: inline-block
-
-
-			
-	.sumo-slideshow
-		margin-top: 50px
-		max-width: 100%
-		
-		ul 
-			max-width: 100%
-			padding-left: 0
-			
-			&:after
-				content: ''
-				clear: both
-				display: block
-			
-			li
-				float: left
-				list-style-type: none
-				width: 25%
-				margin-bottom: -8px
-				
-				img
-					width: 100%
-				
-			
-	iframe
-		display: block
-		margin: 50px auto
-	
-	blockquote
-		text-align: left
-					
-		.quote			
-			&:before, &:after
-				content: '"'
-				font-size: 30px
-		
-		footer
-			margin-top: 1em
-			text-transform: capitalize
-			
-			&:before
-				content: '- '
-			
-			
-		
-	
 
 
 
