@@ -1,64 +1,46 @@
 (function(){
 
-	var 
+	var
 		jso,
 		iscrollSlider,
 		clickAndTouchPosition,
 		clickMargin = 8,
 		firstOpen = true
-	;
+		;
 
-	window.addEvent('domready', function () {
-		//addEvent('click', document.getElementById('openoverlay'), onOpenBtnClick);
-		addEvent('click', document.getElementById('openoverlay'),openImageSlider)
+	$(document).ready(function() {
+		addEvent('click', document.getElementById('openoverlay'), onOpenBtnClick);
 	});
 
-	function openImageSlider(e){
+	function onOpenBtnClick(e){
 		preventDefault(e);
 
-		// These are the images we wish to load
-		//Ersätt med li
-		/*var items = [
-			{url:'img/nasa/12372208463_385729b160_o.jpg', id:'nasa-0'},
-			{url:'img/nasa/12372503404_f1e11b653a_o.jpg', id:'nasa-1'},
-			{url:'img/nasa/12464994965_2569b4472e_o.jpg', id:'nasa-2'},
-			{url:'img/nasa/12644030263_d78f34ea07_o.jpg', id:'nasa-3'},
-			{url:'img/nasa/12752402055_947e748c90_o.jpg', id:'nasa-4'},
-			{url:'img/nasa/12801808743_11e311245e_o.jpg', id:'nasa-5'}
-		];*/
+		//copy Html from page
+		var $imageslider_holder = $('#imageslider_holder').clone();
 
-		// Create html based on image data and template NO
+		var sliderWrapper = document.createElement('div');
+		sliderWrapper.setAttribute('id', 'sliderwrapper');
+		sliderWrapper.className = 'sliderwrapper';
+		sliderWrapper.innerHTML = $imageslider_holder.html();
+		document.body.appendChild(sliderWrapper);
 
-		//hämta ul'n
-		//var template = _.template(document.getElementById('imageSliderTemplate').innerHTML, {items:items});
-		var sumo_imageslider_wrapper_HTML = document.getElementById('sumo-imageSlider-wrapper').innerHTML;
-
-		// Create a wrapper for everything and add to DOM
-		var imageslider_holder = document.createElement('div');
-		imageslider_holder.setAttribute('id', 'sliderwrapper');
-		imageslider_holder.className = 'sliderwrapper';
-		imageslider_holder.innerHTML = sumo_imageslider_wrapper_HTML;
-		document.body.appendChild(imageslider_holder);
-
-		var ul = document.getElementById('sliderwrapper').getElementsByTagName('ul');
-		//var listelems = ul.getElementsByTagName('li');
 		// Set the width of the scroller and scroll elements in percentages based on no of elements
-		//ul.style.width = listelems.length*100+'%';
-		
-		/*for(var i=0;i<listelems.length;i++){
+		var listelems = document.querySelectorAll('#sliderwrapper li');
+		$('#sliderwrapper > ul').width((listelems.length*100)+'%');
+		for(var i=0;i<listelems.length;i++){
 			listelems[i].style.width = (100/listelems.length) + '%';
-		}*/
+		}
 
 		// And handle resizing and similar troubles
 		if(firstOpen){
 			addEvent('orientationchange', window, onOrientationChange);
-	 		addEvent('resize', window, onOrientationChange);
+			addEvent('resize', window, onOrientationChange);
 		}
 		onOrientationChange(null);
-		
+
 		// Create the overlay
 		jso = new jsOverlay({
-			content: 'imageslider_holder',
+			content: 'sliderwrapper',
 			scrollable: false,
 			modal: false,
 			additionalStyleClasses: {
@@ -68,7 +50,7 @@
 
 		// Create the iScroll (only for browsers which iScroll supports)
 		if (document.addEventListener){
-			iscrollSlider = new IScroll('#imageslider_holder', {
+			iscrollSlider = new IScroll('#sliderwrapper', {
 				scrollX: true,
 				scrollY: false,
 				momentum: false,
@@ -86,12 +68,12 @@
 		addEvent('mouseup', document.getElementById('imageslider_holder'), downEnd);
 		addEvent('touchstart', document.getElementById('imageslider_holder'), downStart);
 		addEvent('touchend', document.getElementById('imageslider_holder'), downEnd);
-		var linkelems = document.getElementById('imageslider').getElementsByTagName('a');
+		var linkelems = document.getElementById('imageslider_holder').getElementsByTagName('a');
 		for(var i=0;i<linkelems.length;i++){
 			addEvent('click', linkelems[i], onImageLinkClick);
 		}
 
- 		firstOpen = false;
+		firstOpen = false;
 	}
 
 	function downStart(e){
@@ -111,9 +93,9 @@
 		preventDefault(e);
 	}
 	function onOrientationChange(e){
-		var listelems = document.getElementById('imageslider').getElementsByTagName('li');
-		for(var i=0;i<listelems.length;i++){
-			listelems[i].style.height = (window.innerHeight - 40) + 'px';
+		var $listelems = $('#sliderwrapper').children('ul').children('li');
+		for(var i=0;i<$listelems.length;i++){
+			$listelems[i].height = (window.innerHeight - 40) + 'px';
 		}
 	}
 
@@ -131,11 +113,11 @@
 	}
 	function preventDefault(e){
 		var evt = e || window.event;
-		if(evt.preventDefault){  
-			evt.preventDefault();  
-		}else{  
-			evt.returnValue = false;  
-			evt.cancelBubble=true;  
+		if(evt.preventDefault){
+			evt.preventDefault();
+		}else{
+			evt.returnValue = false;
+			evt.cancelBubble=true;
 		}
 	}
 	function getClickOrTouchPosition(e){
