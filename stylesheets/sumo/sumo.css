@@ -1,0 +1,126 @@
+/***** SUMO *****/
+.sumo-header {
+  height: 500px;
+  background: url("/images/sumo/sumo-bot.gif") center center no-repeat;
+  background-size: cover;
+}
+.sumo-header a {
+  background: url("/images/logoSymbolBlack@2x.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+}
+.sumo-header img {
+  position: absolute;
+  margin-left: -100px;
+  top: 100px;
+  left: 50%;
+  width: 200px;
+}
+section.sumo:nth-of-type(2) {
+  padding-bottom: 0;
+}
+.sumo:nth-of-type(odd) {
+  background: $blue;
+}
+.sumo:nth-of-type(odd) * {
+  color: #fff;
+}
+.sumo * {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.sumo {
+  width: 100%;
+  max-width: 100%;
+  padding: 100px 0px;
+  line-height: 29px;
+}
+.sumo h1 {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.sumo .sumo-images {
+  background: $blue;
+  max-width: 100%;
+  margin-top: 100px;
+  letter-spacing: -4px;
+}
+.sumo .sumo-images img {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+}
+.sumo .sumo-slideshow {
+  margin-top: 50px;
+  max-width: 100%;
+}
+.sumo .sumo-slideshow ul {
+  max-width: 100%;
+  padding-left: 0;
+}
+.sumo .sumo-slideshow ul:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.sumo .sumo-slideshow ul li {
+  float: left;
+  list-style-type: none;
+  width: 25%;
+  margin-bottom: -8px;
+}
+.sumo .sumo-slideshow ul li img {
+  width: 100%;
+}
+.sumo iframe {
+  display: block;
+  margin: 50px auto;
+}
+.sumo blockquote {
+  text-align: left;
+}
+.sumo blockquote .quote:before,
+.sumo blockquote .quote:after {
+  content: '"';
+  font-size: 30px;
+}
+.sumo blockquote footer {
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+.sumo blockquote footer:before {
+  content: '- ';
+}
+/* Slider CSS */
+.sliderwrapper {
+  width: 100%;
+  height: 100%;
+}
+.sliderwrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.sliderwrapper ul li {
+  text-align: center;
+  background: url("ajax-loader.gif") no-repeat 50% 50%;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.sliderwrapper ul li img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}

@@ -3,47 +3,23 @@
 	'use strict';
 
 	$(document).ready(function() {
-		var scrollUp = $('#scrollUp');
 
 		bindClickEvents();
 
-		if(typeof scrollUp != 'undefined' && scrollUp != null) {
-
-			// Show to top button
-			$(window).scroll(function () {
-				if ($(window).scrollTop() >= 200) {
-					scrollUp.addClass('visible');
-				} else {
-					scrollUp.removeClass('visible');
-				}
-			});
-
-		}
-
-		if($('body').hasClass('index')) {
-
-		}
-
-		$('.post article p img').on('click', function (e) {
-			var copy = $(e.target).clone();
-			copy.attr('id', 'fullscreen_image');
-			$('body').append(copy);
-
-
-			copy.on('load', function(e) {
-				var jso = new jsOverlay({
-					content: 'fullscreen_image',
-					usePushState: false
-				});
-			});
-
+		// Show to top button
+		$(window).scroll(function () {
+			checkIfWindowScrolledShowTarget($('#scrollUp'), 200, 'visible');
 		});
 	});
 
 	function bindClickEvents() {
 		$('#toggle-menu').on('click', onToggleMenuClick);
 		$('#scrollUp').on('click', onScrollUpClick);
-		$('#navigation > a').on('click', onNavigationScrollClick);
+		$('.post article p img').on('click', openJSOverlayFromArticleImage);
+
+		if($('body').hasClass('index')) {
+			$('#navigation > a').on('click', onNavigationScrollClick);
+		}
 	}
 
 	function onToggleMenuClick(e) {
@@ -76,5 +52,26 @@
 				scrollTop: $('#' + href).offset().top},
 			800
 		);
+	}
+
+	function openJSOverlayFromArticleImage(e) {
+		var $copy = $(e.target).clone();
+		$copy.attr('id', 'fullscreen_image');
+		$('body').append(copy);
+
+		$copy.on('load', function(e) {
+			var jso = new jsOverlay({
+				content: 'fullscreen_image',
+				usePushState: false
+			});
+		});
+	}
+
+	function checkIfWindowScrolledShowTarget(target, distance, cssClass) {
+		if ($(window).scrollTop() >= distance) {
+			target.addClass(cssClass);
+		} else {
+			target.removeClass(cssClass);
+		}
 	}
 }();
