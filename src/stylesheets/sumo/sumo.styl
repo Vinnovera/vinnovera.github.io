@@ -44,6 +44,29 @@ section.sumo:nth-of-type(2)
 		text-align: left
 		margin-bottom: 15px
 		font-size: 35px
+		
+	h2 
+		font-size: 20px
+		line-height: 1.5em
+		color: $blue
+		margin-bottom: 15px
+		
+	.video 
+	    position: relative
+	    padding: 0 0 55.9375%
+	    height: 0
+    
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100% 
+			/*display: block
+			margin: 50px auto*/
+		
+	.contentList
+		margin: 15px auto
 
 	.sumo-images
 		background: $blue
@@ -80,16 +103,19 @@ section.sumo:nth-of-type(2)
 
 				img
 					width: 100%
-
-
-	iframe
-		display: block
-		margin: 50px auto
+					
+	
 
 	blockquote
 		text-align: left
+		margin: 0 auto
+		width: 50%
+		
 
 		.quote
+			font-style: italic
+			font-size: 25px
+			
 			&:before, &:after
 				content: '"'
 				font-size: 30px
