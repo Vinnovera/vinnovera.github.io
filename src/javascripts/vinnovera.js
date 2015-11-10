@@ -58,7 +58,7 @@
 		var copy = $(e.target).clone();
 		copy.attr('id', 'fullscreen_image');
 		$('body').append(copy);
-		
+
 		copy.on('load', function(e) {
 			var jso = new jsOverlay({
 				content: 'fullscreen_image',
