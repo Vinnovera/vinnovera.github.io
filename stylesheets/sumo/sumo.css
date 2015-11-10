@@ -44,6 +44,27 @@ section.sumo:nth-of-type(2) {
   margin-bottom: 15px;
   font-size: 35px;
 }
+.sumo h2 {
+  font-size: 20px;
+  line-height: 1.5em;
+  color: $blue;
+  margin-bottom: 15px;
+}
+.sumo .video iframe,
+.sumo position: relative iframe,
+.sumo padding: 0 0 55.9375% iframe,
+.sumo height: 0 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/*display: block
+			margin: 50px auto*/
+}
+.sumo .contentList {
+  margin: 15px auto;
+}
 .sumo .sumo-images {
   background: $blue;
   max-width: 100%;
@@ -56,34 +77,36 @@ section.sumo:nth-of-type(2) {
   height: 100%;
   display: inline-block;
 }
-.sumo .sumo-slideshow {
+.sumo .imageslider_holder {
   margin-top: 50px;
   max-width: 100%;
 }
-.sumo .sumo-slideshow ul {
+.sumo .imageslider_holder ul {
   max-width: 100%;
   padding-left: 0;
 }
-.sumo .sumo-slideshow ul:after {
+.sumo .imageslider_holder ul:after {
   content: '';
   clear: both;
   display: block;
 }
-.sumo .sumo-slideshow ul li {
+.sumo .imageslider_holder ul li {
   float: left;
   list-style-type: none;
   width: 25%;
   margin-bottom: -8px;
 }
-.sumo .sumo-slideshow ul li img {
+.sumo .imageslider_holder ul li img {
   width: 100%;
-}
-.sumo iframe {
-  display: block;
-  margin: 50px auto;
 }
 .sumo blockquote {
   text-align: left;
+  margin: 0 auto;
+  width: 50%;
+}
+.sumo blockquote .quote {
+  font-style: italic;
+  font-size: 25px;
 }
 .sumo blockquote .quote:before,
 .sumo blockquote .quote:after {

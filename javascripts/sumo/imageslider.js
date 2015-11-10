@@ -9,12 +9,11 @@
 		;
 
 	$(document).ready(function() {
-		$('#imageslider_holder img').on('click', onImageClick);
+		addEvent('click', document.getElementById('openoverlay'), onImageClick);
 	});
 
 	function onImageClick(e){
 		preventDefault(e);
-		console.log($(e.target));
 
 		//copy Html from page
 		var $imageslider_holder = $('#imageslider_holder').clone();
@@ -26,7 +25,7 @@
 		onOrientationChange(null);
 
 		createJSOverlay('sliderwrapper', false, false);
-		//createIScroll('#sliderwrapper', 200);
+		createIScroll('#sliderwrapper', 200);
 
 		addEvents();
 
@@ -117,7 +116,6 @@
 			content: content,
 			scrollable: scrollable,
 			modal: modal,
-			usePushState: false,
 			additionalStyleClasses: {
 				closebutton: 'btn btn-block btn-lg btn-primary'
 			}
