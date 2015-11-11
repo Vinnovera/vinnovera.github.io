@@ -20,8 +20,15 @@
 
 }();*/
 
-(function() {
-  "use strict";
+$(document).ready(function() {
+
+  loadFancybox();
+  randomQuotes();
+
+});
+
+
+function randomQuotes() {
 
   var element = document.getElementById("quotes");
   
@@ -35,14 +42,15 @@
 
   var random = quotes[Math.floor(Math.random() * quotes.length)];
 
-  console.log(random);
-  function quote() {
-  	element.innerHTML = "<p class='quote'>"+ random[0] + "</p><footer>" + random[1] + "</footer>";
-    //return "<p>&ldquo;"+  +"&rdquo;</p>";
-  }
+    function quote() {
+    	element.innerHTML = "<p class='quote'>"+ random[0] + "</p><footer>" + random[1] + "</footer>";
+
+    }
 
   quote();
 
-  //element.innerHTML = rand(quotes);
+};
 
-}());
+function loadFancybox() {
+  $(".fancybox").fancybox();
+};
