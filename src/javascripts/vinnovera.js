@@ -3,7 +3,6 @@
 	'use strict';
 
 	$(document).ready(function() {
-
 		bindEvents();
 	});
 
@@ -57,20 +56,25 @@
 	}
 
 	function onArticleImageClick(e) {
-		var $copy = $(e.target).clone();
-		copyImageToOverlay($copy);
+		var
+			$copy = $(e.target).clone(),
+			id    = 'fullscreen_image';
+
+		loadOverlayContent(id, $copy, createOverlay);
 	}
 
-	function copyImageToOverlay($content) {
-		$content.attr('id', 'fullscreen_image');
+	function loadOverlayContent(id, $content, callback) {
+		callback = callback || function() {};
+
+		$content.attr('id', id);
 		$('body').append($content);
 
 		$content.on('load', function() {
-			openOverlay('fullscreen_image')
+			callback(id, $content);
 		});
 	}
 
-	function openOverlay(id) {
+	function createOverlay(id) {
 		var jso = new jsOverlay({
 			content: id,
 			usePushState: false
