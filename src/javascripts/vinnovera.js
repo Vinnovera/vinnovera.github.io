@@ -4,7 +4,7 @@
 
 	$(document).ready(function() {
 
-		bindClickEvents();
+		bindEvents();
 
 		// Show to top button
 		$(window).scroll(function () {
@@ -12,29 +12,31 @@
 		});
 	});
 
-	function bindClickEvents() {
+	function bindEvents() {
 		$('#toggle-menu').on('click', onToggleMenuClick);
 		$('#scrollUp').on('click', onScrollUpClick);
-		$('.post article p img').on('click', openJSOverlayFromArticleImage);
+		$('.post article p img').on('click', onOpenJSOverlayFromArticleImage);
 
 		if($('body').hasClass('index')) {
-			$('#navigation > a').on('click', onNavigationScrollClick);
+			$('#navigation > a').on('click', onNavigationScroll);
 		}
 	}
 
 	function onToggleMenuClick(e) {
 		e.preventDefault();
+		toggleMenu($(e.target));
+	}
 
-		var $self = $(e.target);
+	function toggleMenu($target) {
 
-		if(!$self.attr('id') == ('toggle-menu')) {
-			$self = $('#toggle-menu');
+		if($target.attr('id') != 'toggle-menu') {
+			$target = $('#toggle-menu');
 		}
 
-		if($self.hasClass('open')) {
-			$self.removeClass('open');
+		if($target.hasClass('open')) {
+			$target.removeClass('open');
 		} else {
-			$self.addClass('open');
+			$target.addClass('open');
 		}
 	}
 
@@ -43,7 +45,7 @@
 		$('html, body').animate({scrollTop: 0}, 1000);
 	}
 
-	function onNavigationScrollClick(e) {
+	function onNavigationScroll(e) {
 		e.preventDefault();
 
 		var href = $(e.target).attr('href').split('#')[1];
@@ -54,24 +56,32 @@
 		);
 	}
 
-	function openJSOverlayFromArticleImage(e) {
-		var copy = $(e.target).clone();
-		copy.attr('id', 'fullscreen_image');
-		$('body').append(copy);
+	function onOpenJSOverlayFromArticleImage(e) {
+		var $copy = $(e.target).clone();
+		articleImageEvent($copy);
+	}
 
-		copy.on('load', function(e) {
-			var jso = new jsOverlay({
-				content: 'fullscreen_image',
-				usePushState: false
-			});
+	function articleImageEvent($content) {
+		$content.attr('id', 'fullscreen_image');
+		$('body').append($content);
+
+		$content.on('load', function() {
+			openOverlay('fullscreen_image')
 		});
 	}
 
-	function checkIfWindowScrolledShowTarget(target, distance, cssClass) {
+	function openOverlay(id) {
+		var jso = new jsOverlay({
+			content: id,
+			usePushState: false
+		});
+	}
+
+	function checkIfWindowScrolledShowTarget($target, distance, cssClass) {
 		if ($(window).scrollTop() >= distance) {
-			target.addClass(cssClass);
+			$target.addClass(cssClass);
 		} else {
-			target.removeClass(cssClass);
+			$target.removeClass(cssClass);
 		}
 	}
 }();
