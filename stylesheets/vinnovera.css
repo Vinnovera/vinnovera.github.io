@@ -447,6 +447,7 @@ p {
 }
 .sumo-header {
   height: 500px;
+  height: 80vh;
   background: url("/images/sumo/sumo-bot.gif") center center no-repeat;
   background-size: cover;
 }
@@ -462,7 +463,7 @@ p {
 .sumo-header img {
   position: absolute;
   margin-left: -100px;
-  top: 100px;
+  top: 30%;
   left: 50%;
   width: 200px;
 }
@@ -581,6 +582,7 @@ section.sumo:nth-of-type(2) {
   opacity: 0;
 }
 .sumo blockquote .quote {
+  margin: 0;
   font-style: italic;
   font-size: 25px;
 }
@@ -898,12 +900,6 @@ body > .to-top {
   border: 0px;
   -webkit-transform: translateZ(0);
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  body > .to-top {
-    background: url("../images/logoSymbolBlack@2x.png") no-repeat;
-    background-size: 60px 60px;
-  }
-}
 body > .to-top.visible {
   opacity: 1;
   top: 10px;
@@ -1008,12 +1004,6 @@ body > header > h1 {
   top: 50%;
   left: 40px;
   margin-top: -19px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  body > header > h1 {
-    background: url("../images/logox2.png") no-repeat;
-    background-size: 150px 38px;
-  }
 }
 @media (max-width: 815px) {
   body > header > h1 {
