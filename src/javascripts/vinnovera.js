@@ -10,14 +10,11 @@
 		$('#toggle-menu').on('click', onToggleMenuClick);
 		$('#scrollUp').on('click', onScrollUpClick);
 		$('.post article p img').on('click', onArticleImageClick);
+		$(window).on('scroll', onWindowScroll);
 
 		if($('body').hasClass('index')) {
 			$('#navigation > a').on('click', onNavigationScroll);
 		}
-
-		$(window).scroll(function () {
-			checkIfWindowScrolledShowTarget($('#scrollUp'), 200, 'visible');
-		});
 	}
 
 	function onToggleMenuClick(e) {
@@ -81,11 +78,19 @@
 		});
 	}
 
-	function checkIfWindowScrolledShowTarget($target, distance, cssClass) {
-		if ($(window).scrollTop() >= distance) {
-			$target.addClass(cssClass);
+	function onWindowScroll() {
+		if ($(window).scrollTop() >= 200) {
+			toggleScrollUp(false);
 		} else {
-			$target.removeClass(cssClass);
+			toggleScrollUp(true);
+		}
+	}
+
+	function toggleScrollUp(condition) {
+		if(condition) {
+			$('#scrollUp').removeClass('visible');
+		} else {
+			$('#scrollUp').addClass('visible');
 		}
 	}
 }();
