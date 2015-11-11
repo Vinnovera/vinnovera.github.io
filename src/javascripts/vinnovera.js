@@ -5,21 +5,20 @@
 	$(document).ready(function() {
 
 		bindEvents();
-
-		// Show to top button
-		$(window).scroll(function () {
-			checkIfWindowScrolledShowTarget($('#scrollUp'), 200, 'visible');
-		});
 	});
 
 	function bindEvents() {
 		$('#toggle-menu').on('click', onToggleMenuClick);
 		$('#scrollUp').on('click', onScrollUpClick);
-		$('.post article p img').on('click', onOpenJSOverlayFromArticleImage);
+		$('.post article p img').on('click', onArticleImageClick);
 
 		if($('body').hasClass('index')) {
 			$('#navigation > a').on('click', onNavigationScroll);
 		}
+
+		$(window).scroll(function () {
+			checkIfWindowScrolledShowTarget($('#scrollUp'), 200, 'visible');
+		});
 	}
 
 	function onToggleMenuClick(e) {
@@ -42,7 +41,7 @@
 
 	function onScrollUpClick(e) {
 		e.preventDefault();
-		$('html, body').animate({scrollTop: 0}, 1000);
+		animatedScrollTop($('html, body'), 0, 1000);
 	}
 
 	function onNavigationScroll(e) {
@@ -50,18 +49,19 @@
 
 		var href = $(e.target).attr('href').split('#')[1];
 
-		$('html, body').animate( {
-				scrollTop: $('#' + href).offset().top},
-			800
-		);
+		animatedScrollTop($('html, body'), $('#' + href).offset().top, 800);
 	}
 
-	function onOpenJSOverlayFromArticleImage(e) {
+	function animatedScrollTop($target, position, speed){
+		$target.animate({scrollTop: position}, speed);
+	}
+
+	function onArticleImageClick(e) {
 		var $copy = $(e.target).clone();
-		articleImageEvent($copy);
+		copyImageToOverlay($copy);
 	}
 
-	function articleImageEvent($content) {
+	function copyImageToOverlay($content) {
 		$content.attr('id', 'fullscreen_image');
 		$('body').append($content);
 
