@@ -3,75 +3,89 @@
 	'use strict';
 
 	$(document).ready(function() {
+		bindEvents();
+	});
 
-		bindClickEvents();
+	function bindEvents() {
+		$('#toggle-menu').on('click', onToggleMenuClick);
+		$('#scrollUp').on('click', onScrollUpClick);
+		$('.post article p img').on('click', onArticleImageClick);
 
-		// Show to top button
+		if($('body').hasClass('index')) {
+			$('#navigation > a').on('click', onNavigationScroll);
+		}
+
 		$(window).scroll(function () {
 			checkIfWindowScrolledShowTarget($('#scrollUp'), 200, 'visible');
 		});
-	});
-
-	function bindClickEvents() {
-		$('#toggle-menu').on('click', onToggleMenuClick);
-		$('#scrollUp').on('click', onScrollUpClick);
-		$('.post article p img').on('click', openJSOverlayFromArticleImage);
-
-		if($('body').hasClass('index')) {
-			$('#navigation > a').on('click', onNavigationScrollClick);
-		}
 	}
 
 	function onToggleMenuClick(e) {
 		e.preventDefault();
+		toggleMenu($(e.target));
+	}
 
-		var $self = $(e.target);
+	function toggleMenu($target) {
 
-		if(!$self.attr('id') == ('toggle-menu')) {
-			$self = $('#toggle-menu');
+		if($target.attr('id') != 'toggle-menu') {
+			$target = $('#toggle-menu');
 		}
 
-		if($self.hasClass('open')) {
-			$self.removeClass('open');
+		if($target.hasClass('open')) {
+			$target.removeClass('open');
 		} else {
-			$self.addClass('open');
+			$target.addClass('open');
 		}
 	}
 
 	function onScrollUpClick(e) {
 		e.preventDefault();
-		$('html, body').animate({scrollTop: 0}, 1000);
+		animatedScrollTop($('html, body'), 0, 1000);
 	}
 
-	function onNavigationScrollClick(e) {
+	function onNavigationScroll(e) {
 		e.preventDefault();
 
 		var href = $(e.target).attr('href').split('#')[1];
 
-		$('html, body').animate( {
-				scrollTop: $('#' + href).offset().top},
-			800
-		);
+		animatedScrollTop($('html, body'), $('#' + href).offset().top, 800);
 	}
 
-	function openJSOverlayFromArticleImage(e) {
-		var copy = $(e.target).clone();
-		copy.attr('id', 'fullscreen_image');
-		$('body').append(copy);
+	function animatedScrollTop($target, position, speed){
+		$target.animate({scrollTop: position}, speed);
+	}
 
-		copy.on('load', function(e) {
-			var jso = new jsOverlay({
-				content: 'fullscreen_image',
-				usePushState: false
-			});
+	function onArticleImageClick(e) {
+		var
+			$copy = $(e.target).clone(),
+			id    = 'fullscreen_image';
+
+		loadOverlayContent(id, $copy, createOverlay);
+	}
+
+	function loadOverlayContent(id, $content, callback) {
+		callback = callback || function() {};
+
+		$content.attr('id', id);
+		$('body').append($content);
+
+		$content.on('load', function() {
+			callback(id, $content);
 		});
 	}
 
-	function checkIfWindowScrolledShowTarget(target, distance, cssClass) {
+	function createOverlay(id) {
+		var jso = new jsOverlay({
+			content: id,
+			usePushState: false
+		});
+	}
+
+	function checkIfWindowScrolledShowTarget($target, distance, cssClass) {
 		if ($(window).scrollTop() >= distance) {
-			target.addClass(cssClass);
+			$target.addClass(cssClass);
 		} else {
-			target.removeClass(cssClass);
+			$target.removeClass(cssClass);
 		}
 	}
 }();
