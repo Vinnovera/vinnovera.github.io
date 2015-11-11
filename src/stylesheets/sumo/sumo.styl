@@ -2,6 +2,7 @@
 
 .sumo-header
 	height: 500px
+	height: 80vh
 	background: url('/images/sumo/sumo-bot.gif') center center no-repeat
 	background-size: cover
 
@@ -9,15 +10,15 @@
 		background: url('/images/logoSymbolBlack@2x.png') center center no-repeat
 		background-size: cover
 		position: absolute
-		width: 50px
-		height: 50px
-		top: 10px
-		left: 10px
+		width: 75px
+		height: 75px
+		top: 20px
+		left: 20px
 
 	img
 		position: absolute
 		margin-left: -100px
-		top: 100px
+		top: 30%
 		left: 50%
 		width: 200px
 
@@ -126,15 +127,25 @@ section.sumo:nth-of-type(2)
 
 	blockquote
 		text-align: left
-		margin: 0 auto		
+		margin: 0 auto
+		opacity 1
+		transition: all 0.3s ease-in-out
+		
+		&.fadeOut
+			opacity: 0		
 
 		.quote
+			margin: 0
 			font-style: italic
 			font-size: 25px
 			
 			
-			&:before, &:after
-				content: '"'
+			&:before
+				content: '\201C '
+				font-size: 30px
+				
+			&:after
+				content: ' \201D'
 				font-size: 30px
 
 		footer
