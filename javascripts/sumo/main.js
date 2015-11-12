@@ -20,21 +20,28 @@ function randomQuotes() {
 
 	$("#quotes").html("<p class='quote'>"+ quotes[0][0] + "</p><footer>" + quotes[0][1] + "</footer>")
 
-	var interval = setInterval(function() {
+	var interval = setInterval(setQuote, 5000),
+		currentQuote;
 
-		var i = Math.round((Math.random()) * quotes.length);
+	function setQuote() {
 
-		if (i == quotes.length) {
-			--i;
+		var randomQuote = quotes[(Math.round((Math.random()) * quotes.length)) - 1];
+
+		if (randomQuote === currentQuote) {
+			setQuote();
+			return;
 		}
+
+		currentQuote = randomQuote;
+		
 		$('#quotes').addClass('fadeOut');
 			var timer = setTimeout(function() {
-				$("#quotes p.quote").text(quotes[i][0]);
-				$("#quotes footer").text(quotes[i][1]);
+				$("#quotes p.quote").text(randomQuote[0]);
+				$("#quotes footer").text(randomQuote[1]);
 				$('#quotes').removeClass('fadeOut');
 			clearTimeout(timer);
 		}, 500);
-	}, 5000);
+	}
 };
 
 

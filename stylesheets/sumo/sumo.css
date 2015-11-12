@@ -21,8 +21,15 @@
   left: 50%;
   width: 200px;
 }
+section.sumo:first-of-type {
+  padding: 0;
+  height: 310px;
+}
 section.sumo:nth-of-type(2) {
   padding-bottom: 0;
+}
+section.sumo:nth-of-type(3) {
+  background: $orange;
 }
 .sumo:nth-of-type(odd) {
   background: $blue;
@@ -35,14 +42,6 @@ section.sumo:nth-of-type(2) {
 }
 .sumo:last-of-type ul {
   margin: 0;
-}
-.sumo .sumo-content,
-.sumo blockquote {
-  width: 80%;
-  max-width: 640px;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin: 0 auto;
 }
 .sumo {
   width: 100%;
@@ -61,6 +60,49 @@ section.sumo:nth-of-type(2) {
   color: $blue;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+.sumo .sumo-content,
+.sumo blockquote {
+  width: 80%;
+  max-width: 640px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0 auto;
+}
+.sumo .sumo-content:first-of-type {
+  display: table;
+  height: 100%;
+}
+.sumo .sumo-content:first-of-type blockquote {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 auto;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.sumo .sumo-content:first-of-type blockquote.fadeOut {
+  opacity: 0;
+}
+.sumo .sumo-content:first-of-type blockquote .quote {
+  margin: 0;
+  font-style: italic;
+  font-size: 25px;
+}
+.sumo .sumo-content:first-of-type blockquote .quote:before {
+  content: '\201C';
+  font-size: 30px;
+}
+.sumo .sumo-content:first-of-type blockquote .quote:after {
+  content: '\201D';
+  font-size: 30px;
+}
+.sumo .sumo-content:first-of-type blockquote footer {
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+.sumo .sumo-content:first-of-type blockquote footer:before {
+  content: '- ';
 }
 .sumo .contentList {
   margin: 15px auto;
@@ -117,35 +159,6 @@ bp(slick-rick)
 }
 .sumo .imageslider_holder ul li img {
   width: 100%;
-}
-.sumo blockquote {
-  text-align: left;
-  margin: 0 auto;
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-.sumo blockquote.fadeOut {
-  opacity: 0;
-}
-.sumo blockquote .quote {
-  margin: 0;
-  font-style: italic;
-  font-size: 25px;
-}
-.sumo blockquote .quote:before {
-  content: '\201C ';
-  font-size: 30px;
-}
-.sumo blockquote .quote:after {
-  content: ' \201D';
-  font-size: 30px;
-}
-.sumo blockquote footer {
-  margin-top: 1em;
-  text-transform: capitalize;
-}
-.sumo blockquote footer:before {
-  content: '- ';
 }
 /* Slider CSS */
 .sliderwrapper {
