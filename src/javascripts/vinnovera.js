@@ -1,86 +1,96 @@
 !function () {
-	
+
 	'use strict';
-	
-	window.addEvent('domready', function () {
-	
-		var scroll, scrollUp = document.id('scrollUp'), bodyTween;
-		
-		// Body animation
-		bodyTween = new Fx.Scroll(window);
-		
-		// Show to top button
-		window.addEvent('scroll', function (e) {
-			scroll = document.documentElement.scrollTop || document.body.scrollTop;
-			if (scroll > 200) {
-				scrollUp.addClass('visible');
-			} else {
-				scrollUp.removeClass('visible');
-			}
-		});
-		
-		// Scroll to top
-		scrollUp.addEvent('click', function (e) {
-			e.stop();
-			
-			bodyTween.start(0, 0);
-		});
-		
-		document.body.addEvent('click:relay(.startpage > a)', function (e) {
-			e.stop();
-			
-			var hash = this.hash.substr(1),
-				top  = document.id(hash).getPosition().y;
-			
-			bodyTween.start(0, top);
-		});
-		
-		document.body.addEvent('click:relay(#toggle-menu)', function (e) {
-			e.stop();
-			
-			var open = this.hasClass('open');
-			
-			if(open) {
-				this.removeClass('open');
-			} else {
-				this.addClass('open');
-			}
-		});
-		
-		if(document.body.hasClass('index')) {
-			var fxScroll = new Fx.Scroll($(document.body), {
-				wait: false,
-				duration: 800,
-				offset: {'x': 0, 'y': 0},
-				transition: Fx.Transitions.Quad.easeInOut
-			});
-			
-			document.body.addEvent('click:relay(#navigation > a)', function (e) {
 
-				var href = this.getAttribute('href').split('#')[1];
+	$(document).ready(function() {
+		bindEvents();
+	});
 
-				if(typeof href != "undefined") {
-					e.stop();
-					fxScroll.toElement(href);
-				}
-			});
+	function bindEvents() {
+		$('#toggle-menu').on('click', onToggleMenuClick);
+		$('#scrollUp').on('click', onScrollUpClick);
+		$('.post article p img').on('click', onArticleImageClick);
+		$(window).on('scroll', onWindowScroll);
+
+		if($('body').hasClass('index')) {
+			$('#navigation > a').on('click', onNavigationScroll);
+		}
+	}
+
+	function onToggleMenuClick(e) {
+		e.preventDefault();
+		toggleMenu($(e.target));
+	}
+
+	function toggleMenu($target) {
+
+		if($target.attr('id') != 'toggle-menu') {
+			$target = $('#toggle-menu');
 		}
 
-		document.body.addEvent('click:relay(.post article p img)', function (e) {
-			
-			var copy = this.clone();
-			copy.set('id', 'fullscreen_image');
-			copy.inject(document.body);
+		if($target.hasClass('open')) {
+			$target.removeClass('open');
+		} else {
+			$target.addClass('open');
+		}
+	}
 
-			copy.addEvent('load', function(e) {
-				var jso = new jsOverlay({
-					content: 'fullscreen_image',
-					usePushState: false
-				});
-			});
-			
+	function onScrollUpClick(e) {
+		e.preventDefault();
+		animatedScrollTop($('html, body'), 0, 1000);
+	}
+
+	function onNavigationScroll(e) {
+		e.preventDefault();
+
+		var href = $(e.target).attr('href').split('#')[1];
+
+		animatedScrollTop($('html, body'), $('#' + href).offset().top, 800);
+	}
+
+	function animatedScrollTop($target, position, speed){
+		$target.animate({scrollTop: position}, speed);
+	}
+
+	function onArticleImageClick(e) {
+		var
+			$copy = $(e.target).clone(),
+			id    = 'fullscreen_image';
+
+		loadOverlayContent(id, $copy, createOverlay);
+	}
+
+	function loadOverlayContent(id, $content, callback) {
+		callback = callback || function() {};
+
+		$content.attr('id', id);
+		$('body').append($content);
+
+		$content.on('load', function() {
+			callback(id, $content);
 		});
+	}
 
-	});
-	
+	function createOverlay(id) {
+		var jso = new jsOverlay({
+			content: id,
+			usePushState: false
+		});
+	}
+
+	function onWindowScroll() {
+		if ($(window).scrollTop() >= 200) {
+			toggleScrollUp(false);
+		} else {
+			toggleScrollUp(true);
+		}
+	}
+
+	function toggleScrollUp(condition) {
+		if(condition) {
+			$('#scrollUp').removeClass('visible');
+		} else {
+			$('#scrollUp').addClass('visible');
+		}
+	}
 }();
