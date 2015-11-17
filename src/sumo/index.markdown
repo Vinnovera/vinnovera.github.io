@@ -1,5 +1,5 @@
 ---
 template: sumo.html
-title: "sumo"
+title: "Robot Sumo"
 footer: false
 ---
