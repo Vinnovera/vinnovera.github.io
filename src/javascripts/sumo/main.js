@@ -33,14 +33,15 @@ function randomQuotes() {
 		}
 
 		currentQuote = randomQuote;
-		
-		$('#quotes').addClass('fadeOut');
-			var timer = setTimeout(function() {
+		if(typeof randomQuote != 'undefined') {
+			$('#quotes').addClass('fadeOut');
+			var timer = setTimeout(function () {
 				$("#quotes p.quote").text(randomQuote[0]);
 				$("#quotes footer").text(randomQuote[1]);
 				$('#quotes').removeClass('fadeOut');
-			clearTimeout(timer);
-		}, 500);
+				clearTimeout(timer);
+			}, 500);
+		}
 	}
 };
 
