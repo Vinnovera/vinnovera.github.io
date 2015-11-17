@@ -11,11 +11,11 @@ function randomQuotes() {
 		["Spectacular! Insane amounts of fun was had!", "Nordic.js Mini-Sumo Robo Clash Attendee"],
 		["It was awesome. I'm just mad I didn't win!", "Nordic.js Mini-Sumo Robo Clash Attendee"],
 		["It was awesome, more people should have tried it!", "Nordic.js Mini-Sumo Robo Clash Attendee"],
-		["Was very funny to watch.", "Nordic.js Mini-Sumo Robo Clash Attendee"],
-		["Funny and unexpected.", "Nordic.js Mini-Sumo Robo Clash Attendee"],
+		["Was very funny to watch.", "Nordic.js Mini-Sumo Robo Clash Spectator"],
+		["Funny and unexpected.", "Nordic.js Mini-Sumo Robo Clash Spectator"],
 		["It was great fun! Possibly there should be more than one ring at a time to make it move at a better pace.", "Nordic.js Mini-Sumo Robo Clash Attendee"],
-		["Great fun to watch. Would like to attend next time.", "Nordic.js Mini-Sumo Robo Clash Attendee"],
-		["Cool!", "Nordic.js Mini-Sumo Robo Clash Attendee"]
+		["Great fun to watch. Would like to attend next time.", "Nordic.js Mini-Sumo Robo Clash Spectator"],
+		["Cool!", "Nordic.js Mini-Sumo Robo Clash Spectator"]
 	];
 
 	$("#quotes").html("<p class='quote'>"+ quotes[0][0] + "</p><footer>" + quotes[0][1] + "</footer>")
