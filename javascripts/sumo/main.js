@@ -7,7 +7,7 @@ $(document).ready(function() {
 function randomQuotes() {
 
 	var quotes = [
-		["It was the most fucking awesome fun that I had in a long time. Kudos to everyone who attended!!", "Nordic.js Mini-Sumo Robo Clash Attendee"],
+		["It was the most f**ing awesome fun that I had in a long time. Kudos to everyone who attended!!", "Nordic.js Mini-Sumo Robo Clash Attendee"],
 		["Spectacular! Insane amounts of fun was had!", "Nordic.js Mini-Sumo Robo Clash Attendee"],
 		["It was awesome. I'm just mad I didn't win!", "Nordic.js Mini-Sumo Robo Clash Attendee"],
 		["It was awesome, more people should have tried it!", "Nordic.js Mini-Sumo Robo Clash Attendee"],
@@ -18,7 +18,7 @@ function randomQuotes() {
 		["Cool!", "Nordic.js Mini-Sumo Robo Clash Spectator"]
 	];
 
-	$("#quotes").html("<p class='quote'>"+ quotes[0][0] + "</p><footer>" + quotes[0][1] + "</footer>")
+	$("#quotes").html("<p class='quote'>"+ quotes[1][0] + "</p><footer>" + quotes[1][1] + "</footer>")
 
 	var interval = setInterval(setQuote, 5000),
 		currentQuote;
