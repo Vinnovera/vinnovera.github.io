@@ -106,7 +106,6 @@ section.sumo:nth-of-type(3) {
 }
 .sumo .sumo-content:first-of-type blockquote footer {
   margin-top: 1em;
-  text-transform: capitalize;
 }
 .sumo .sumo-content:first-of-type blockquote footer:before {
   content: '- ';
