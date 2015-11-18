@@ -25,7 +25,7 @@ function randomQuotes() {
 
 	function setQuote() {
 
-		var randomQuote = quotes[(Math.round((Math.random()) * quotes.length)) - 1];
+		var randomQuote = quotes[Math.round(Math.random() * (quotes.length - 1))];
 
 		if (randomQuote === currentQuote) {
 			setQuote();
@@ -33,15 +33,14 @@ function randomQuotes() {
 		}
 
 		currentQuote = randomQuote;
-		if(typeof randomQuote != 'undefined') {
-			$('#quotes').addClass('fadeOut');
-			var timer = setTimeout(function () {
-				$("#quotes p.quote").text(randomQuote[0]);
-				$("#quotes footer").text(randomQuote[1]);
-				$('#quotes').removeClass('fadeOut');
-				clearTimeout(timer);
-			}, 500);
-		}
+
+		$('#quotes').addClass('fadeOut');
+		var timer = setTimeout(function () {
+			$("#quotes p.quote").text(randomQuote[0]);
+			$("#quotes footer").text(randomQuote[1]);
+			$('#quotes').removeClass('fadeOut');
+			clearTimeout(timer);
+		}, 500);
 	}
 };
 
