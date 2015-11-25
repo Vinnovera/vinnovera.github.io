@@ -80,14 +80,15 @@
 		<li>Kortfattat, kanske bara en länk?</li>
 		<li>Vid behov kan undersida skapas</li>
 	</ul>
-	<div class="labs-filter">
-		<a href="#" class="javascript">JS</a>
-		<a href="#" class="html">Html</a>
-		<a href="#" class="css">Css</a>
-		<a href="#" class="other">Annat</a>
+	<div id="labs-filter" class="labs-filter">
+		<button class="javascript" data-filter=".js">JS</button>
+		<button class="html" data-filter=".html">Html</button>
+		<button class="css" data-filter=".css">Css</button>
+		<button class="sumo" data-filter=".sumo">Sumo</button>
+		<button class="all" data-filter="*">Alla</button>
 	</div>
 	<div class="labs">
-		<article class="labs-item">
+		<article class="labs-item css html">
 			<div>
 				<div>
 					<section>
@@ -99,7 +100,19 @@
 				</div>
 			</div>
 		</article>
-		<article class="labs-item">
+		<article class="labs-item css other">
+			<div>
+				<div>
+					<section>
+						<h2>Titel</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus.</p>
+					</section>
+					<span class="category other"></span>
+					<span class="category css"></span>
+				</div>
+			</div>
+		</article>
+		<article class="labs-item js">
 			<div>
 				<div>
 					<section>
@@ -110,7 +123,7 @@
 				</div>
 			</div>
 		</article>
-		<article class="labs-item">
+		<article class="labs-item html js">
 			<div>
 				<div>
 					<section>
@@ -122,7 +135,7 @@
 				</div>
 			</div>
 		</article>
-		<article class="labs-item">
+		<article class="labs-item other">
 			<div>
 				<div>
 					<section>
@@ -147,25 +160,12 @@
 	<span class="tel">08 - 5000 10 90</span>
 	<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a>
 </footer>
-<script src="/javascripts/components/mootools.js"></script>
-<script src="/javascripts/components/mootools-more.js"></script>
+<script src="/javascripts/components/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/components/jsoverlay.js"></script>
 <script src="/javascripts/vinnovera.js"></script>
 
 <script src="/javascripts/components/isotope.pkgd.min.js"></script>
 <script src="/javascripts/components/packery.pkgd.min.js"></script>
-<script type="text/javascript">
-	window.addEvent('load', function () {
-		var elem = document.querySelector('.labs');
-
-		if (typeof elem !== "undefined" && elem !== null) {
-			var iso = new Isotope(elem, {
-				// options
-				layoutMode: 'packery',
-				itemSelector: '.labs-item'
-			});
-		}
-	})
-</script>
+<script src="/javascripts/labs.js" type="text/javascript"></script>
 </body>
 </html>
