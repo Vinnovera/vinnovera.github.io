@@ -41,11 +41,13 @@
 	}
 
 	function onNavigationScroll(e) {
-		e.preventDefault();
-
 		var href = $(e.target).attr('href').split('#')[1];
 
-		animatedScrollTop($('html, body'), $('#' + href).offset().top, 800);
+		if(typeof href != 'undefined') {
+			e.preventDefault();
+
+			animatedScrollTop($('html, body'), $('#' + href).offset().top, 800);
+		}
 	}
 
 	function animatedScrollTop($target, position, speed){
