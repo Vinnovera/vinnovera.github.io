@@ -13,12 +13,13 @@ function bindEvents() {
 
 function initIsotop() {
 	var $grid = $('.grid').isotope({
-		itemSelector: '.labs-item',
-		layoutMode: 'packery'
+		itemSelector: '.labs-item'
 	});
 }
 
 function onFilterButton(e) {
+	e.preventDefault();
+
 	var filterValue = $(e.target).attr('data-filter');
 	$('.labs').isotope({ filter: filterValue });
 }
