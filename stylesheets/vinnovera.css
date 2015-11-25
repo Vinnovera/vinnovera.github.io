@@ -1437,43 +1437,28 @@ table.airy td:first-child {
   width: 50%;
   float: left;
 }
-.labs .labs-item > div {
-  display: table;
+.labs .labs-item section {
+  padding-bottom: 20px;
   margin: 0 30px 30px 0;
   border-bottom: 2px solid #666;
 }
-.labs .labs-item > div > div {
-  display: table-row;
-}
-.labs .labs-item span {
-  display: table-cell;
-  overflow: hidden;
-  text-indent: -9000px;
-  width: 10px;
-}
-.labs .labs-item section {
-  display: table-cell;
-  padding: 0 20px 0 0;
-}
-.labs .labs-item section p {
-  padding-bottom: 20px;
-}
-.labs .labs-item .category {
-  height: 100%;
-  width: 15px;
-}
 .labs-filter {
   margin: 30px 0;
+  border-left: 1px solid #000;
+  letter-spacing: -6px;
 }
 .labs-filter > button {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
+  font-family: Roboto, "Helvetica Neue Light", Arial;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  padding: 0 15px;
+  background: none;
+  border: none;
+  border-right: 1px solid #000;
+}
+.labs-filter > button:hover {
+  color: #666;
 }
 span.html,
 button.html {

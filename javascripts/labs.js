@@ -13,8 +13,7 @@ function bindEvents() {
 
 function initIsotop() {
 	var $grid = $('.grid').isotope({
-		itemSelector: '.labs-item',
-		layoutMode: 'packery'
+		itemSelector: '.labs-item'
 	});
 }
 
