@@ -74,62 +74,91 @@
 	<header>
 		<h1>Labs</h1>
 	</header>
-	<ul>
-		<li>Alla inlägg listas</li>
-		<li>Inlägg ska kunna filtreras, sorteras</li>
-		<li>Kortfattat, kanske bara en länk?</li>
-		<li>Vid behov kan undersida skapas</li>
-	</ul>
-	<div class="labs-filter">
-		<a href="#" class="javascript">JS</a>
-		<a href="#" class="html">Html</a>
-		<a href="#" class="css">Css</a>
-		<a href="#" class="other">Annat</a>
+	<div id="labs-filter" class="labs-filter">
+		<button data-filter=".js">JS</button>
+		<button data-filter=".html">Html</button>
+		<button data-filter=".css">Css</button>
+		<button data-filter=".sumo">Sumo</button>
+		<button data-filter=".trix">Trix</button>
+		<button data-filter="*">Alla</button>
 	</div>
 	<div class="labs">
-		<article class="labs-item">
+		<article class="labs-item css">
+			<section>
+				<h2>Margin auto with position absolute</h2>
+				<div class="fifty-fifty">
+					<p data-preview="true" data-height="268" data-theme-id="0" data-slug-hash="myaWVJ" data-default-tab="result" data-user="pstenstrm" class='codepen'>See the Pen <a href='http://codepen.io/pstenstrm/pen/myaWVJ/'>Margin auto with position absolute</a> by Per Stenström (<a href='http://codepen.io/pstenstrm'>@pstenstrm</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+					<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="fifty-fifty">
+					<p>Jag beskriver vad som händer i koden och är uppdelad i två ytor att jobba med</p>
+				</div>
+			</section>
+		</article>
+		<article class="labs-item trix">
+			<section>
+				<h2>Codepen: Click-to-Play Embeds</h2>
+				<p>Just add <code>data-preview="true"</code> to the HTML embed code.</p>
+				<blockquote>Starting now, oEmbed embedded Pens will load in a preview state! This is a much lighter-weight and simpler view, featuring the Pen’s title, author, and a Run Pen button.</blockquote>
+			</section>
+		</article>
+		<article class="labs-item css js html sumo">
+			<section>
+				<h2>En bild, lite text och länk till ett blogginlägg</h2>
+				<div class="fifty-fifty">
+					<p>Jag beskriver vad som händer i koden och är uppdelad i två ytor att jobba med.</p>
+					<p>Att köpa:</p>
+					<ul>
+						<li>Bjällra</li>
+						<li>Konstsnö</li>
+						<li>Pepparkaksdeg</li>
+						<li>Resistorer</li>
+					</ul>
+					<a href="#">Läs mer om mig</a>
+				</div>
+				<div class="fifty-fifty">
+					<img src="http://placekitten.com/1024/750" alt="Gustav">
+				</div>
+			</section>
+		</article>
+		<article class="labs-item css js">
+			<section>
+				<h2>Standard menu /w burger</h2>
+				<p data-preview="true" data-height="268" data-theme-id="0" data-slug-hash="yyqvVg" data-default-tab="result" data-user="029" class='codepen'>See the Pen <a href='http://codepen.io/029/pen/yyqvVg/'>Standard menu /w burger</a> by Haren (<a href='http://codepen.io/029'>@029</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+				<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+			</section>
+		</article>
+		<article class="labs-item css html">
 			<div>
 				<div>
 					<section>
-						<h2>Titel</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus.</p>
+						<h2>Evenly distributed menu trick</h2>
+						<p data-preview="true" data-height="268" data-theme-id="0" data-slug-hash="ByrMbJ" data-default-tab="result" data-user="029" class='codepen'>See the Pen <a href='http://codepen.io/029/pen/ByrMbJ/'>Evenly distributed menu trick</a> by Haren (<a href='http://codepen.io/029'>@029</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 					</section>
-					<span class="category html"></span>
-					<span class="category css"></span>
 				</div>
 			</div>
 		</article>
-		<article class="labs-item">
+		<article class="labs-item html css">
 			<div>
 				<div>
 					<section>
-						<h2>Titel</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. </p>
+						<h2>Comic-style bubble</h2>
+						<p data-preview="true" data-height="268" data-theme-id="0" data-slug-hash="gbozra" data-default-tab="result" data-user="029" class='codepen'>See the Pen <a href='http://codepen.io/029/pen/gbozra/'>Comic-style bubble</a> by Haren (<a href='http://codepen.io/029'>@029</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+						<p>Jag beskriver lite mer och längre vad som händer i koden ovan för man fattar ju ingenting av det här exemplet utan massa rader med text under. Det är svårt med kod oj oj oj.</p>
 					</section>
-					<span class="category javascript"></span>
 				</div>
 			</div>
 		</article>
-		<article class="labs-item">
+		<article class="labs-item html css">
 			<div>
 				<div>
 					<section>
-						<h2>Titel</h2>
-						<p>Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus. </p>
-						</section>
-						<span class="category html"></span>
-						<span class="category javascript"></span>
-				</div>
-			</div>
-		</article>
-		<article class="labs-item">
-			<div>
-				<div>
-					<section>
-						<h2>Titel</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum porttitor volutpat. Praesent dictum rutrum velit a sollicitudin. Donec at tincidunt orci, ut convallis lectus.</p>
+						<h2>Align elements, text and stuff to a baseline</h2>
+						<p data-height="268" data-theme-id="0" data-slug-hash="KwZQZY" data-default-tab="result" data-user="029" data-preview="true" class='codepen'>See the Pen <a href='http://codepen.io/029/pen/KwZQZY/'>Align elements, text and stuff to a baseline</a> by Haren (<a href='http://codepen.io/029'>@029</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 					</section>
-					<span class="category other"></span>
 				</div>
 			</div>
 		</article>
@@ -147,25 +176,12 @@
 	<span class="tel">08 - 5000 10 90</span>
 	<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a>
 </footer>
-<script src="/javascripts/components/mootools.js"></script>
-<script src="/javascripts/components/mootools-more.js"></script>
+<script src="/javascripts/components/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/components/jsoverlay.js"></script>
 <script src="/javascripts/vinnovera.js"></script>
 
 <script src="/javascripts/components/isotope.pkgd.min.js"></script>
 <script src="/javascripts/components/packery.pkgd.min.js"></script>
-<script type="text/javascript">
-	window.addEvent('load', function () {
-		var elem = document.querySelector('.labs');
-
-		if (typeof elem !== "undefined" && elem !== null) {
-			var iso = new Isotope(elem, {
-				// options
-				layoutMode: 'packery',
-				itemSelector: '.labs-item'
-			});
-		}
-	})
-</script>
+<script src="/javascripts/labs.js" type="text/javascript"></script>
 </body>
 </html>
