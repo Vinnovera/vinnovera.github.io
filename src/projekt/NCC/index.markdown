@@ -10,7 +10,7 @@ footer: true
 
 ![Skärmdump ncc.se](/images/content/projects/ncc/desktop.jpg)
 
-##Vinnoveras roll
+## Vinnoveras roll
 Vi har jobbat med [**NCC**][0] sedan 2009, då vi gav stöd i kravställningsprocessen och gjorde interaktionsdesign för **“Boende”**-delen av deras webbplats. Den centrala frågeställningen då var *“Hur visualiserar man en bostad som ännu inte är byggd för en potentiell kund?”*, en utmaning som även fortsätter vara en viktig del av NCC:s närvaro på webben.
 
 Vi har sedan dess genomfört ett antal projekt tillsammans, och under våren 2011 fick vi det prestigefyllda uppdraget att kravställa och göra interaktionsdesign för NCC:s kommande version av **hela koncernens webbplats**.  Ett uppdrag som även innebar front-end-utveckling av responsiva sidmallar och funktioner under realiseringen av projektet. Det har varit utmanande och lärorikt på många sätt, och våra goda kunskaper inom kravställning, front-end-arkitektur och utveckling har kommit till stor nytta.
@@ -21,7 +21,7 @@ Vårt arbete med NCC:s digital närvaro fortsätter och frågan om hur man visar
 
 ![Skärmdump ncc.se](/images/content/projects/ncc/mobile.jpg)
 
-##Vi hjälper NCC med:
+## Vi hjälper NCC med:
 
 * **Front-end-arkitektur:** Generella metoder och guidelines för front-end-utveckling och samarbete med backend - med hänsyn till användarupplevelse, framtida förvaltning och vidareutveckling.
 
@@ -33,7 +33,7 @@ Vårt arbete med NCC:s digital närvaro fortsätter och frågan om hur man visar
 
 * **Stöd och support vid implementering:** Säkerställa gränssnittets kvalitet och användarupplevelse vid CMS-implementation.
 
-##Tekniker som använts:
+## Tekniker som använts:
 * CSS media queries (responsive)
 * InuitCSS - http://inuitcss.com/
 * Sass CSS - http://sass-lang.com/
