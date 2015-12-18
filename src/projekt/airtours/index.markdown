@@ -13,8 +13,9 @@ footer: true
 Airtours sätter stor vikt vid sin höga kundnöjdhet och att de har återkommande nöjda kunder. Att boka en resa genom dem ska vara tryggt, av hög kvalitet och levereras på ett personligt och trevligt sätt.* 
 
 ## Vinnoveras roll
+Vinnovera hjälper Airtours med expertkompetens inom front-end.. Målet med uppdraget är sätta upp struktur och arbetssätt för front-end-utveckling som passar Airtours förutsättningar. Resultatet av vårt arbete kommer att ge deras egna utvecklare möjlighet till långsiktig förvaltning och vidareutveckling.
 
-Vinnovera hjälper Airtours med expertkompetens i front-end. Målet med uppdraget är sätta upp struktur och arbetssätt för front-end-utveckling som passar Airtours förutsättningar. Resultatet av vårt arbete ska ge deras egna utvecklare möjlighet till långsiktig förvaltning och vidareutveckling.
-
+> ***"Att ta hjälp av Vinnovera är som att köpa en lyxprodukt inom front-end"***<br/>
+> Maria Söderberg - Online Manager - Airtours
 
 [0]: http://www.airtours.se/

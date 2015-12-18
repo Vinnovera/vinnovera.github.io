@@ -17,6 +17,6 @@ Vinnovera hjälper Kvinna till kvinna med deras digital närvaro.
 
 ## Vinnoveras roll
 
-Vi har genom åren utvecklat ett antal webblösningar åt Kvinna till kvinna. Bland annat organisationens responsiva webbplats, bloggar, kampanjsajter och ett intrantät för deras volontärer. I vårt uppdrag ligger ansvar för webbkoncept, UX, webbdesign, front-end och teknisk utveckling. Alla lösningar bygger på plattformen Wordpress med språkstöd och e-handel.
+Vi har jobbat med Kvinna till kvinna sedan 2011 och har genom åren utvecklat ett antal webblösningar åt dem. Bland annat organisationens responsiva webbplats, bloggar, kampanjsajter och ett intranät för deras volontärorganisation. I vårt uppdrag ligger ansvar för webbkoncept, UX, webbdesign, front-end och teknisk utveckling. Lösningarna bygger på plattformen Wordpress och har språkstöd, insamlingsfunktionalitet och e-handel.
 
 [0]: http://kvinnatillkvinna.se/
