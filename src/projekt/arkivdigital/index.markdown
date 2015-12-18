@@ -11,7 +11,7 @@ footer: true
 
 *Vare sig du är nybörjare eller mer erfaren kan du med hjälp av [ArkivDigitals][0] applikation enkelt släktforska via internet. Totalt har de cirka 56 miljoner färgbilder på kyrkböcker och andra historiska dokument. Verksamhet drivs av personer som brinner för släktforskning och utvecklas utifrån det perspektivet. Applikationen förbättras hela tiden tack vare samarbete med släktforskare och intresseorganisationer.*
 
-“ArkivDigital online” är utvecklad av ArkivDigitals egna teknikavdelning och bygger på webbteknik som paketeras till desktop-appar med hjälp av ramverket [“Elektron”][1]. På så sätt kan de smidigt skapa appar som fungerar på både Windows och OSX, och enkelt auto-uppdatera dessa.
+“ArkivDigital online” är utvecklad av ArkivDigitals egna teknikavdelning och bygger på webbteknik som paketeras till desktop-appar med hjälp av ramverket [“Electron”][1]. På så sätt kan de smidigt skapa appar som fungerar på både Windows och OSX, och enkelt auto-uppdatera dessa.
  
 ## Vinnoveras roll
 ArkivDigital har anlitat Vinnovera för att göra löpande UX-utvärderingar av deras applikation i samband med att en ny version utvecklas. Vårt uppdrag baseras på deras egna krav, feedback från beta-användare och vår egen expertis inom UX.
