@@ -10,15 +10,14 @@ authorImage: /images/profiles/daniel.jpg
 authorMail: daniel@vinnovera.se
 ---
 
-Läs mer om ECMAScript 6.
+Som vi skrev tidigare i år så ser EcmaScript 6 ut att bli ett stort kliv framåt i
+modularisering och struktur för Javascript som vi känner till det idag. EcmaScript 
+är som bekant standarden för Javascript och tolkas av webbläsaren.
 <!--more-->
 
 
-Som vi skrev tidigare i år så ser EcmaScript 6 ut att bli ett stort kliv framåt i
-modularisering och struktur för Javascript som vi känner till det idag. EcmaScript 
-är som bekant standarden för Javascript och tolkas av webbläsaren. I dagsläget är 
-det ECMAScript 5 som är officiellt men dess efterföljare EcmaScript 6 är under 
-utveckling och högst atktuell då dennu har nu blivit godlänt av ECMA International. 
+I dagsläget är det ECMAScript 5 som är officiellt men dess efterföljare EcmaScript 6 
+är under utveckling och högst atktuell då dennu har nu blivit godlänt av ECMA International. 
 ECMAScript 6 innebär förändingar av syntaxen som förbättrar och förenklar språket.
 
 ## Historia
@@ -42,6 +41,30 @@ För att tydliggöra det hela kan Ecmascript ses som en delmängd av Javascrip
 d.v.s. Ecmascript kan tolkas av en Javascript- eller JScript-kompatibel tolk medan en 
 Ecmascript-tolk generellt inte behöver klara av att tolka all Javascript- eller JScript-kod 
 för att vara kompatibel med ECMA-262
+
+## Nyheter i ECMAScript 6
+ES6 är en stor förbättring av ES5 och specifikationen av standarden har nästan 600 sidor 
+jämfört med ES5 som hade 245 stycken. ES6 tillför många eftertraktade saker, såsom moduler 
+och klasser. Trots att ES6 är en stor uppgradering är den fullt bakåtkompatibel med tidigare 
+versioner. I dagsläget har inte någon webbläsare full support för ES6 och det lär ta 
+ytterligare omkring ett år innan detta sker.
+
+## 1. Block-scope variabler
+
+##Let
+ECMAScript 6 introducerar en ny typ av variabel kallad ”let”. Den här är en så kallad block-scope
+variabel. Let-variabler kan användas var som helst men är av särskilt intresse att använda i till 
+exempel loopar för att försäkra sig om att variabeln endast är tillgänglig i den kontexten där 
+den exekveras.
+
+![blockscope](/images/content/posts/es6-en-overblick/blockscope1.jpg)
+
+
+
+
+
+
+
 
 
 ## The Cost of Frameworks
