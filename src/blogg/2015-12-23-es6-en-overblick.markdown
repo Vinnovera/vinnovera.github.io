@@ -52,17 +52,17 @@ ytterligare omkring ett år innan detta sker.
 ## 1. Block-scope variabler
 
 ## Let
-ECMAScript 6 introducerar en ny typ av variabel kallad ”let”. Den här är en så kallad block-scope
-variabel. Let-variabler kan användas var som helst men är av särskilt intresse att använda i till 
-exempel loopar för att försäkra sig om att variabeln endast är tillgänglig i den kontexten där 
-den exekveras.
+ECMAScript 6 introducerar en ny typ av variabel kallad ”let”. Den här är en så kallad block-
+scope variabel. Let-variabler kan användas var som helst men är av särskilt intresse att använda 
+i till exempel loopar för att försäkra sig om att variabeln endast är tillgänglig i den 
+kontexten där den exekveras.
 
 ![let blockscope](/images/content/posts/es6-en-overblick/blockscope1.jpg)
 
 ## Konstanter
-En annan ny typ av block-scope variabler är konstanter (”const”). De beter sig på samma sätt som 
-”let” men  är ”read-only” och deras värde går inte att ändra när den väl är deklarerad. Könstanter 
-måste dessutom initieras vid deklarering.
+En annan ny typ av block-scope variabler är konstanter (”const”). De beter sig på samma sätt 
+som ”let” men  är ”read-only” och deras värde går inte att ändra när den väl är deklarerad. 
+Konstanter måste dessutom initieras vid deklarering.
 
 ![constant blockscope](/images/content/posts/es6-en-overblick/blockscope2.jpg)
 
@@ -70,6 +70,12 @@ måste dessutom initieras vid deklarering.
 Default-argument är en ny del av ECMAScript 6. Ett vanligt mönster i JavaScript ser ut så här 
 och innebär att y sätts till 1 om y är “falsy". Med ES6 skrivs detta om på ett enklare och mer 
 komprimerat sätt.
+
+![arguments](/images/content/posts/es6-en-overblick/default1.jpg)
+
+Variabeln y sätts här till 1 om y är “falsy". Med ECMAScript 6 skrivs detta på ett enklare 
+och mer komprimerat sätt.
+
 
 
 
