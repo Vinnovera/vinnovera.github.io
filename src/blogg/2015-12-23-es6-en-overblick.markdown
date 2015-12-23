@@ -51,7 +51,7 @@ ytterligare omkring ett år innan detta sker.
 
 ## 1. Block-scope variabler
 
-##Let
+## Let
 ECMAScript 6 introducerar en ny typ av variabel kallad ”let”. Den här är en så kallad block-scope
 variabel. Let-variabler kan användas var som helst men är av särskilt intresse att använda i till 
 exempel loopar för att försäkra sig om att variabeln endast är tillgänglig i den kontexten där 
