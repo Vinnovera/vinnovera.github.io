@@ -94,7 +94,7 @@ ECMAScript introducerar moduler som hanterar dependencies. Detta görs med ”ex
 ”import”. Alla metoder som skall vara åtkomliga för andra moduler föregås av nyckelordet 
 ”export”.
 
-![modules export import](/images/content/posts/es6-en-overblick/export1.jpg)
+![modules export import](/images/content/posts/es6-en-overblick/export1.png)
 
 Dessa importeras med nyckelordet import.
 
