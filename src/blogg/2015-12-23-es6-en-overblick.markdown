@@ -82,6 +82,35 @@ och mer komprimerat sätt.
 När en metod tar emot ett okänt antal argument kan dessa som  bekant identifieras
 Med ”arguments”-objektet. För att kunna iterera över detta krävs i ECMAScript 5 följande:
 
+![arguments rest](/images/content/posts/es6-en-overblick/rest1.jpg)
+
+Rest-argument i ES6 skrivs med tre föregående punkter (…items) och görs automatiskt
+om till en riktig array.
+
+![arguments rest](/images/content/posts/es6-en-overblick/rest2.jpg)
+
+## 4. Moduler 
+ECMAScript introducerar moduler som hanterar dependencies. Detta görs med ”export” och 
+”import”. Alla metoder som skall vara åtkomliga för andra moduler föregås av nyckelordet 
+”export”.
+
+![modules export import](/images/content/posts/es6-en-overblick/export1.jpg)
+
+Dessa importeras med nyckelordet import.
+
+![modules export import](/images/content/posts/es6-en-overblick/export2.jpg)
+
+Det är också möjligt att skriva ovanstående mer komprimerat.
+
+![modules export import](/images/content/posts/es6-en-overblick/export3.jpg)
+
+## 5. Objekt
+Objekt kan med ES6 skrivas mer på ett mer effektivt sätt än tidigare.
+
+
+
+
+
 
 
 
