@@ -71,11 +71,16 @@ Default-argument är en ny del av ECMAScript 6. Ett vanligt mönster i JavaScrip
 och innebär att y sätts till 1 om y är “falsy". Med ES6 skrivs detta om på ett enklare och mer 
 komprimerat sätt.
 
-![arguments](/images/content/posts/es6-en-overblick/default1.jpg)
+![arguments default](/images/content/posts/es6-en-overblick/default1.jpg)
 
 Variabeln y sätts här till 1 om y är “falsy". Med ECMAScript 6 skrivs detta på ett enklare 
 och mer komprimerat sätt.
 
+![arguments default](/images/content/posts/es6-en-overblick/default2.jpg)
+
+## 3. Rest argument
+När en metod tar emot ett okänt antal argument kan dessa som  bekant identifieras
+Med ”arguments”-objektet. För att kunna iterera över detta krävs i ECMAScript 5 följande:
 
 
 
