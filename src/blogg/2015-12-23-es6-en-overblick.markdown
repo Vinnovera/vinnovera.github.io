@@ -59,7 +59,6 @@ Let är är en så kallad block-scoped variabel. Dessa kan användas var som hel
 intresse i till exempel loopar eftersom den till skillnad från variabler av typen “var”, endast är 
 tillgänglig i det specifika blocket där den är initierad och hostas inte till
 högst upp i scoopet där den existerar.
-
 ![let blockscope](/images/content/posts/es6-en-overblick/let.jpg)
 
 #### Konstanter
@@ -70,22 +69,20 @@ förändrats när det en gång är initierat, de är med andra ord  ”read-only
 initieras vid deklarering.
 ![constant blockscope](/images/content/posts/es6-en-overblick/constants.jpg)
 
-### Slutsats
+#### Slutsats
 Vi kan konstatera att block-scope variabeln “let” ger mer flexibilitet i ES6 då den fyller 
 ett behov av att vara tillgänglig i ett mindre begränsat scope. Den ger också mindre sido-
 effekter eftersom den inte hoistas så som variabler av typen “var” gör. Konstanter fyller 
 ett tomrum och gör att koden blir mer effektiv och validerad bättre.
-
 
 ### 2. Default argument
 Default-argument är en ny del av ECMAScript 6, vilket innebär att man kan ange ett arguments 
 default-värde redan i deklareringen av en funktion.
 ![arguments default](/images/content/posts/es6-en-overblick/default.jpg)
 
-### Slutsats
+#### Slutsats
 Att definiera ett arguments default-värde redan vid deklarering av funktionen ger bättre
 struktur och skapar en effektivare kod med bättre prestanda.
-
 
 ### 3. Rest argument
 En metod tar emot ett okänt antal argument kan identifiera dessa med nyckelordet ”arguments”.
@@ -95,7 +92,7 @@ en array manuellt. Med ES6 anger man tre punkter framför argumentet och det gö
 om till en riktig array.
 ![arguments rest](/images/content/posts/es6-en-overblick/rest.jpg)
 
-### Slutsats
+#### Slutsats
  Även här kan vi se att ES6 skapar en kod som är mer effektiv, mer flexibel,
 effektiv och har bättre struktur.
 
@@ -107,7 +104,7 @@ stjärna. Man anger då också ett alias för modulen. Detta alias blir namnet p
 där modulen importeras med alla tillgängliga variabler och metoder från den andra modulen som properties.
 ![modules export import](/images/content/posts/es6-en-overblick/export.jpg)
 
-### Slutsats
+#### Slutsats
  Stöd för dependencies tar bort behovet att tredjeparts-beroenden, vilket minskar kod, requests och ökar 
 prestanda. Det ökar också modulariteten och flexibiliteten i språket.
 
@@ -115,7 +112,7 @@ prestanda. Det ökar också modulariteten och flexibiliteten i språket.
 Objekt kan med ES6 skrivas mer på ett mer effektivt sätt än tidigare.
 ![objects](/images/content/posts/es6-en-overblick/objects.jpg)
 
-### Slutsats
+#### Slutsats
  Stöd för dependencies tar bort behovet att tredjeparts-beroenden, vilket minskar
 kod, requests och ökar prestanda. Det ökar också modulariteten och flexibiliteten
 i språket.
@@ -125,7 +122,7 @@ Med ES6 går det att skriva funktioner / metoder mer kompakt och kortfattat då 
 längre behövs skrivas ut, utan endast funktionsnamnet.
 ![methods](/images/content/posts/es6-en-overblick/methods.jpg)
 
-### Slutsats
+#### Slutsats
  ES6 gör så att syntaxen blir mer kompakt och tar bort onödiga delar. Koden blir
 mer lättläst, kompakt och effektiv.
 
@@ -135,7 +132,7 @@ med Array.map.  Med ES6 behöver man inte längre skriva ut ordet function som e
 pil och föregås av argument.
 ![functions anonymous](/images/content/posts/es6-en-overblick/anonymous_function.jpg)
 
-### Slutsats
+#### Slutsats
  Ytterligare delar i syntaxen som förfinas, onödiga delar tas bort vilket gör det hela
 lättare att läsa, koden exekveras snabbare och blir mer effektiv.
 
@@ -146,7 +143,7 @@ instantieringen av klassen. I dagsläget kan man bara skapa klass-liknande konst
 funktioner som påminner om de föregående.
 ![classes](/images/content/posts/es6-en-overblick/classes.jpg)
 
-### Slutsats
+#### Slutsats
 Klasser har support för sub- och superklasser vilket gör det enklare att hantera arv än 
 tidigare vilket i sin tur kan medföra bättre modularitet och ett mer “vuxet” språk likt
 Java och C++. Detta kan också vara en fördel vid stora applikationer eftersom det skapar
