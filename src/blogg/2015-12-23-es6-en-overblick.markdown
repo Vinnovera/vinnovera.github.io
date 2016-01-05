@@ -47,8 +47,7 @@ ES6 är en stor förbättring av ES5 och specifikationen av standarden har näst
 jämfört med ES5 som hade 245 stycken. ES6 tillför många eftertraktade saker, såsom moduler 
 och klasser. Trots att ES6 är en stor uppgradering är den fullt bakåtkompatibel med tidigare 
 versioner. I dagsläget har inte någon webbläsare full support för ES6 och det lär ta 
-ytterligare omkring ett år innan detta sker.
-
+ytterligare omkring ett år innan detta sker.  
 1. Ny typ av block-scope variabler
 Två intressanta nya variabeltyper i ES6 är “let” och “konstanter”. Dessa fyller ett tomrum
 i den nuvarande standarden och ger mer struktur. Båda dessa är så kallade block-scope
