@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ES2015, Babel och är roboten din bästa drinking buddy? – Hittat på nätet #15 - Vinnovera</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="Javascript är inte längre vad du trodde det var. ES6, eller ES2015 som det numera heter, kommer och finns redan på fler och fler ställen.
+ Och i...">
+
+	<meta property="og:title" content="ES2015, Babel och är roboten din bästa drinking buddy? – Hittat på nätet #15" />
+	<meta property="og:url" content="http://vinnovera.se/blogg/2016/01/16/es2015-babel-och-ar-roboten-din-basta-drinking-buddy-hittat-pa-natet-15" />
+	<meta property="og:image" content="http://vinnovera.se/images/logoOgImage.png" />
+	<meta property="og:description" content="Javascript är inte längre vad du trodde det var. ES6, eller ES2015 som det numera heter, kommer och finns redan på fler och fler ställen.
+ Och i..." />
+
+
+	<!--[if lt IE 9]>
+	<script>
+	    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+	        i = e.length;
+
+	    for(i; i--;) {
+	        document.createElement(e[i]);
+	    }
+	</script><![endif]-->
+
+	<link href="/favicon.ico" rel="icon">
+	<link href="http://vinnovera.se/rss.xml" rel="alternate" title="Vinnovera" type="application/rss+xml">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/vinnovera.css">
+
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2035593-3']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</head>
+
+<body >
+<header id="header">
+	
+		<h1>
+			<a href="/">Vinnovera</a>
+		</h1>
+	
+	<a href="#" class="toggle-menu" id="toggle-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<nav id="navigation">
+		<a href="/">Hem</a>
+		<a href="/#projekt">Kunder &amp; projekt</a>
+		<a href="/#blogg">Blogg</a>
+		<a href="/#vi">Vi</a>
+		<a href="/#kontakt">Kontakt</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
+	</nav>
+</header>
+
+<a href="#" class="to-top" id="scrollUp">Till toppen</a>
+	<nav class="post-navigation">
+			<a class="basic-alignment next" href="/blogg/2015/12/08/arets-julklapp" title="Nästa inlägg: Årets julklapp">Nästa</a>
+	</nav>
+	<section class="wrapper post">
+		<article>
+			<header>
+				<h1>ES2015, Babel och är roboten din bästa drinking buddy? – Hittat på nätet #15</h1>
+					<p class="meta">
+						<span>Jonas Myrenås</span>
+						| <time datetime="2016-01-16T16:00" pubdate><span class='year'>2016</span>-<span class='month'>01</span>-<span class='day'>16</span></time>
+						|
+						<span class="categories">
+							<a href="/blogg/tagg/lankar/">Länkar</a>, <a href="/blogg/tagg/nyheter/">Nyheter</a>, <a href="/blogg/tagg/hittat/">Hittat</a>
+						</span>
+					</p>
+			</header>
+			<div>
+				<p>Javascript är inte längre vad du trodde det var. ES6, eller ES2015 som det numera heter, kommer och finns redan på fler och fler ställen.
+ Och inte bara ES2015, utan ES2016. Och ES2017. Allt på en gång! 
+<!--more--></p>
+<p><img src="/images/content/posts/hittat-pa-natet-number-16/CWeYEUvWoAA5Z3V.png" alt="ES6 first impressions"></p>
+<p>I fem års tid hände det ingenting med Javascript som språk. Same old syntax. Nu kommer allt på en gång. Och med transpilers som Babel så kan du köra inte bara ES2015 utan ES2016 eller ES2017 eller egentligen vad som helst. 
+Bara det finns en polyfill så kommer folk att köra på det. 
+Och vill du kunna förstå vad det där libbet du vill använda egentligen gör, så är det dags att lära dig läsa syntaxen.</p>
+<h2 id="kom-ig-ng-med-babel6-och-webpack">Kom igång med Babel6 och webpack</h2>
+<p><a href="http://jamesknelson.com/using-es6-in-the-browser-with-babel-6-and-webpack/">jamesknelson.com/using-es6-in-the-browser-with-babel-6-and-webpack</a> 
+En bra guide att komma igång med Babel6 ihop med Webpack för att kunna skriva ES6 &amp; ES7 (dvs ES2015 resp ES2016). </p>
+<h2 id="boilerplate-f-r-react-redux-uniloc">Boilerplate för React/Redux/Uniloc</h2>
+<p><a href="http://unicornstandard.com/packages/boilerplate.html">unicornstandard.com</a> 
+Redux är ett intressant alternativ till Flux som tar steget något längre. Vill du köra hot module replacement? Check out Redux. Uniloc är en flavour av routing. Actors har James K Nelson uppfunnit själv, patternat kallas Sagas i andra språk om det låter bekant. Jag är inte lika säker på att det är framtiden, men check it out.</p>
+<h2 id="css-easing-animation-tool">CSS Easing Animation tool</h2>
+<p><img src="/images/content/posts/hittat-pa-natet-number-16/ceasing.png" alt="Ceasing">
+<a href="https://matthewlein.com/ceaser/">matthewlein.com/ceaser</a> Gör dina animationer sådär proffsigt smootha utan att lägga ner någon tid alls. Sno en easing från Matthew Lein. </p>
+<h2 id="hur-funkar-container-queries-och-modulariteten-">Hur funkar Container queries och modulariteten?</h2>
+<p><a href="http://d6u.github.io/react-container-query/">react-container-query</a> För att arkitekturellt kunna köra modulspåret fullt ut så räcker inte media queries till i alla sammanhang. Container queries försöker lösa en del av den problematiken. 
+Tyvärr är browserstödet just nu obefintligt men det är ett område att hålla koll på.</p>
+<h2 id="vad-h-nde-med-ux-trender-2015-">Vad hände med UX-trender 2015?</h2>
+<p><a href="http://thenextweb.com/dd/2015/12/25/5-of-the-best-interaction-design-trends-of-2015/">thenextweb.com/5-of-the-best-interaction-design-trends-of-2015</a> Trender kom, trender gick. Några gamla raggsockor var fortfarande aktuella. Persuasive design samt Delightful design gick våra UXare igång på.</p>
+<h2 id="sf-hackat-ntligen-">SF hackat! Äntligen!</h2>
+<p><a href="http://feber.se/webb/art/340061/ffs_bio_hittar_biofilmer_som_v/">feber.se/ffs_bio_hittar_biofilmer_som_v</a> Screen scraping när den är som bäst. Shortcuts till just den filmen du vill se. </p>
+<h2 id="-ber-f-r-bud-branchen-">Über för bud-branchen?</h2>
+<p><a href="http://urb-it.com/sa-har-funkar-det/">urb-it.com</a> Urb it levererar ditt webbköp åt dig inom en timme. Vill du tjäna en hacka? Leverera paket åt andra. </p>
+<h2 id="slutligen-v-nner-l-ter-inte-v-nner-dricka-ensamma-men-vem-r-egentligen-din-b-sta-v-n-">Slutligen; Vänner låter inte vänner dricka ensamma. Men vem är egentligen din bästa vän?</h2>
+<p><img src="http://3.bp.blogspot.com/-1ZpsMYdi-s4/Vn7BoTfgC7I/AAAAAAABWKo/lqYGJcdtUR4/s1600/5.gif" alt="robot dringking buddy"></p>
+
+			</div>
+		</article>
+			<article class="authorDescription">
+				<div>
+						<img src="/images/profiles/jonasmyrenas.jpg" alt="Jonas Myrenås" />
+				</div>
+				<div>
+					<h3>Jonas Myrenås</h3>
+					<a href="mailto: jonas.myrenas@vinnovera.se">(jonas.myrenas@vinnovera.se)</a>
+					<p>Jonas Myrenås är webutvecklare och front-end tech-lead på Vinnovera.</p>
+					<p>Vi är specialister på front-end och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+					<p><a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
+				</div>
+			</article>
+
+			<div>
+				<div class="wrapper comments">
+					<h2>Kommentera</h2>
+					<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'vinnovera'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+				</div>
+			</div>
+	</section>
+
+<footer role="contentinfo">
+	<span class="adr">
+		<span class="street-address">Västerlånggatan 27</span>
+		<span class="postal-code">111 29</span>
+		<span class="locality">Stockholm</span>
+		<a class="map-link" href="https://www.google.com/maps/place/Vinnovera+AB/@59.3252213,18.0692205,17z/data=!3m1!4b1!4m2!3m1!1s0x465f77e26eb236e1:0x314b77ee3a5d5ea1">(Karta)</a>
+	</span>
+
+	<span class="tel">08 - 5000 10 90</span>
+	<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a>
+</footer>
+<script src="/javascripts/components/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/components/jsoverlay.js"></script>
+<script src="/javascripts/vinnovera.js"></script>
+</body>
+</html>

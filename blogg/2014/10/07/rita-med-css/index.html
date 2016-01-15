@@ -144,8 +144,8 @@
     <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">radial-gradient</span>(circle, <span class="hljs-hexcolor">#000</span> <span class="hljs-number">8%</span>, transparent <span class="hljs-number">15%</span>, transparent <span class="hljs-number">29%</span>, <span class="hljs-function">rgba</span>(<span class="hljs-number">61</span>,<span class="hljs-number">39</span>,<span class="hljs-number">18</span>,<span class="hljs-number">0.7</span>) <span class="hljs-number">33%</span>, transparent <span class="hljs-number">38%</span>), <span class="hljs-function">radial-gradient</span>(circle, <span class="hljs-hexcolor">#543808</span>, <span class="hljs-hexcolor">#432501</span> <span class="hljs-number">25%</span>, <span class="hljs-hexcolor">#715432</span> <span class="hljs-number">35%</span>, white <span class="hljs-number">38%</span>)</span></span>;
 }</span>
 
-<span class="hljs-rule"><span class="hljs-attribute">.eye</span>:<span class="hljs-value">after {
-    display: block</span></span>;
+<span class="hljs-class">.eye</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block</span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
@@ -155,7 +155,7 @@
     <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">3</span></span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">26px</span></span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">26px</span></span></span>;
-}</code></pre><p>Box-shadow känns helt magiskt när man börjar utforska det men det blev snabbt väldigt frustrerande. Jag trodde jag hade hittat det bästa sen SVG och om man inte begränsat sig till att endast använda ett HTML-element kan man säkert rita precis vad som helst med dessa två CSS-tekniker men jag insåg att jag endast hade tre former att röra mig med. Box-shadow kan ändra i storlek från sitt ursprungselement men den kan inte byta form så vill man bygga allt i en div har man diven, :after och :before att arbeta med.</p>
+}</span></code></pre><p>Box-shadow känns helt magiskt när man börjar utforska det men det blev snabbt väldigt frustrerande. Jag trodde jag hade hittat det bästa sen SVG och om man inte begränsat sig till att endast använda ett HTML-element kan man säkert rita precis vad som helst med dessa två CSS-tekniker men jag insåg att jag endast hade tre former att röra mig med. Box-shadow kan ändra i storlek från sitt ursprungselement men den kan inte byta form så vill man bygga allt i en div har man diven, :after och :before att arbeta med.</p>
 <h2 id="tre-former-tre-tekniker">Tre former, tre tekniker</h2>
 <p><img src="/images/content/posts/rita-med-css/ghost.jpg" alt="Shapes"></p>
 <pre><code class="hljs css"><span class="hljs-class">.ghost</span> <span class="hljs-rules">{
@@ -167,8 +167,8 @@
     <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
 }</span>
 
-<span class="hljs-rule"><span class="hljs-attribute">.ghost</span>:<span class="hljs-value">before {
-    display: block</span></span>;
+<span class="hljs-class">.ghost</span><span class="hljs-pseudo">:before</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block</span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">""</span></span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">18px</span></span></span>;
@@ -178,10 +178,10 @@
     <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> yellow</span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> white, -<span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> white, <span class="hljs-number">0px</span> <span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> white, <span class="hljs-number">0px</span> -<span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> white, <span class="hljs-number">11px</span> -<span class="hljs-number">11px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">2px</span> green, -<span class="hljs-number">11px</span> -<span class="hljs-number">11px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">2px</span> green, -<span class="hljs-number">11px</span> <span class="hljs-number">11px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">2px</span> green, <span class="hljs-number">11px</span> <span class="hljs-number">11px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">2px</span> green</span></span>;
-}
+}</span>
 
-<span class="hljs-rule"><span class="hljs-attribute">.ghost</span>:<span class="hljs-value">after {
-    display: block</span></span>;
+<span class="hljs-class">.ghost</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block</span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">""</span></span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> -<span class="hljs-number">35px</span></span></span>;
@@ -190,7 +190,7 @@
     <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">60px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> red,<span class="hljs-number">120px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> red, <span class="hljs-number">49px</span> -<span class="hljs-number">82px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">13px</span> blue, <span class="hljs-number">40px</span> -<span class="hljs-number">82px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">5px</span> white, <span class="hljs-number">120px</span> -<span class="hljs-number">82px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">13px</span> blue, <span class="hljs-number">111px</span> -<span class="hljs-number">82px</span> <span class="hljs-number">0px</span> -<span class="hljs-number">5px</span> white</span></span>;
-}</code></pre><p>Jag har i mina exempel valt att addera element för att rita men det går även att rita allt utom det man försöker få fram genom att subtrahera från en form istället. Jag tror att lär man sig bemästra de två sätten så kan man komma långt med tre former och tre tekniker.</p>
+}</span></code></pre><p>Jag har i mina exempel valt att addera element för att rita men det går även att rita allt utom det man försöker få fram genom att subtrahera från en form istället. Jag tror att lär man sig bemästra de två sätten så kan man komma långt med tre former och tre tekniker.</p>
 <h2 id="referenser">Referenser</h2>
 <p><a href="http://a.singlediv.com/">A Single Div</a><br><a href="http://css-tricks.com/css3-gradients/">CSS-tricks</a></p>
 
