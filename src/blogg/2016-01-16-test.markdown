@@ -1,0 +1,27 @@
+---
+template: post.html
+title: "Hej Jonas!"
+date: 2016-01-16 15:00:00
+comments: true
+tags: Nyheter, Vi
+author: Osborne von Waldegg
+authorDescription: Osborne jobbar med User Experience på Vinnovera.
+authorImage: /images/profiles/osborne.jpg
+authorMail: osborne@vinnovera.se
+---
+
+<img src="/images/profiles/jonasmyrenas.jpg" alt="Jonas" class="portrait" />Tweedgubben Jonas Myrenås är Vinnoveras nyaste tillskott. Eller nytt och nytt… Han har jobbat med webb sen 90-talet och höjer ju medelåldern på firman snarare än det motsatta.
+<!--more-->
+
+Själv beskriver han sig som webbutvecklare till skillnad från Vinnoveras övriga frontendutvecklare. Fin i kanten eller bara fullast i stacken? Jonas egna kommentar:
+
+"Jag sysslar med webb, ergo webbutvecklare"  Jaha ja, ’nuff said!
+
+Jonas vill helst jobba i roliga projekt med reell nytta för såväl kund som slutanvändare och det passar ju som hand i handske här på Vinnovera. Han brinner lite extra för tillgänglighet och andra demokratiska aspekter.
+
+När han inte utvecklar webb är han gärna i skogen där han kan ägna timmar åt att åla i snön för att spåra lodjur som han sedan drömmer om att lyckas fota. Ibland hittar han blommor och insekter. De är lättare att fånga på bild...
+
+Kort sagt en sansad, saklig naturnörd som är sugen på livet.
+
+Välkommen hit Jonas!
+
