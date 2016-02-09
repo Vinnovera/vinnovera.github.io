@@ -1,6 +1,6 @@
 ---
 template: post.html
-title: "ES6 - Arrow functions"
+title: "ES6 - Pilfunktioner"
 date: 2015-12-23 13:43:24
 comments: true
 tags: Nyheter
@@ -15,15 +15,14 @@ modularisering och struktur för Javascript som vi känner till det idag. En de 
 i ES6 är pil-funktioner.
 <!--more-->
 
-# Pilfunktioner
-Pil-funktioner finns sedan tidigare i många andra språk, t ex C#. Dessa är alltid
+Pilfunktioner finns sedan tidigare i många andra språk, t ex C#. Dessa är alltid
 anonyma och har en kortare och mer komprimerad syntax än vanliga anonyma funktioner
 vilket betyder mindre kod och mer effektivt att skriva. Det nya pil-tecknet karaktäriserar
 pil-funktionen.
 
 ![arrow-sign](/images/content/posts/es6-en-overblick/arrow-function1.png)
 
-## Returnerar alltid
+## Returnerar alltid något
 Ordet function försvinner och kvar är endast argument följt av piltecknet.
 En pil-funktion returnerar alltid något och behöver därmed inte skrivas ut,
 liksom måsvingar. Dessa båda är valfria och kan användas om funktions-kroppen
@@ -33,12 +32,12 @@ gör fler saker än att bara returnera något.
 
 
 ## Scope
-Pil-funktioner beter sig annorlunda än vanliga anonyma funktioner på det sättet att 
+Pilfunktioner beter sig annorlunda än vanliga anonyma funktioner på det sättet att 
 de binder till dess omgivande scope istället för till dess inre. Det gör att man inte 
 behöver spara en referens till det yttre scopet.
 
-![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-this1.png)
-![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-this2.png)
+![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-scopt1.png)
+![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-scope2.png)
 
 
 
