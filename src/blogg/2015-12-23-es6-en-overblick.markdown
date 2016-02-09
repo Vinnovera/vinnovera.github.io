@@ -37,11 +37,16 @@ Pilfunktioner beter sig annorlunda än vanliga anonyma funktioner på det sätte
 de binder till dess omgivande scope istället för till dess inre. Det gör att man inte 
 behöver spara en referens till det yttre scopet.
 
-![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-scope1.png)
-![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-scope2.png)
+![scope](/images/content/posts/es6-en-overblick/arrow-function-scope1.png)
+![scope](/images/content/posts/es6-en-overblick/arrow-function-scope2.png)
 
 
+## Argument
+Vid inga eller fler argument krävs parentes, men inte vid endast ett argument. För att
+returnera ett objekt måste det omges av en parentes.
 
+![arguments](/images/content/posts/es6-en-overblick/arrow-function-argument1.png)
+![arguments](/images/content/posts/es6-en-overblick/arrow-function-argument2.png)
 
 
 
