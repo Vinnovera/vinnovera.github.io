@@ -15,6 +15,7 @@ modularisering och struktur för Javascript som vi känner till det idag. En de 
 i ES6 är pil-funktioner.
 <!--more-->
 
+## Effektivitet
 Pilfunktioner finns sedan tidigare i många andra språk, t ex C#. Dessa är alltid
 anonyma och har en kortare och mer komprimerad syntax än vanliga anonyma funktioner
 vilket betyder mindre kod och mer effektivt att skriva. Det nya pil-tecknet karaktäriserar
@@ -36,7 +37,7 @@ Pilfunktioner beter sig annorlunda än vanliga anonyma funktioner på det sätte
 de binder till dess omgivande scope istället för till dess inre. Det gör att man inte 
 behöver spara en referens till det yttre scopet.
 
-![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-scopt1.png)
+![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-scope1.png)
 ![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function-scope2.png)
 
 
