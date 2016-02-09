@@ -1,6 +1,6 @@
 ---
 template: post.html
-title: "ES6 - En överblick"
+title: "ES6 - Arrow functions"
 date: 2015-12-23 13:43:24
 comments: true
 tags: Nyheter
@@ -11,9 +11,26 @@ authorMail: daniel@vinnovera.se
 ---
 
 Som vi skrev tidigare i år så ser EcmaScript 6 ut att bli ett stort kliv framåt i
-modularisering och struktur för Javascript som vi känner till det idag. EcmaScript 
-är som bekant standarden för Javascript och tolkas av webbläsaren.
+modularisering och struktur för Javascript som vi känner till det idag. En de nyheterna
+i ES6 är pil-funktioner.
 <!--more-->
+
+Pil-funktioner finns sedan tidigare i många andra språk, t ex C#. Dessa är alltid
+anonyma och har en kortare och mer komprimerad syntax än vanliga anonyma funktioner
+vilket betyder mindre kod och mer effektivt att skriva. Det nya pil-tecknet karaktäriserar
+pil-funktionen
+
+![let blockscope](/images/content/posts/es6-en-overblick/arrow-functions1.png)
+
+Pil-funktioner beter sig
+annorlunda än vanliga anonyma funktioner på det sättet att de binder till dess
+omgivande scope istället för till dess inre. Det gör att man inte behöver spara
+en referens till det yttre scopet.
+
+
+
+
+
 
 I dagsläget är det ECMAScript 5 som är officiellt men dess efterföljare EcmaScript 6 
 är under utveckling och högst atktuell då dennu har nu blivit godlänt av ECMA International. 
@@ -152,6 +169,28 @@ bra struktur.
 ### 9. Statiska metoder
 ES6 har stöd för statiska metoder i en klass. Dessa kan användas utan att man instantierar
 klassen, exempelvis för utility-metoder. 
+
+#### Slutsats
+ Stöd för dependencies tar bort behovet att tredjeparts-beroenden, vilket minskar
+kod, requests och ökar prestanda. Det ökar också modulariteten och flexibiliteten
+i språket.
+
+### 10. Arv
+ES6 har också fullt support för arv med sub och super-klasser. En sub-klass använder 
+nyckelordet “extends” vid deklarationen. En sub-klass använder nyckelordet “super” 
+för att komma åt en metod i super-klassen.
+
+#### Subklasser
+
+
+#### Superklasser
+
+#### Slutsats
+ Stöd för dependencies tar bort behovet att tredjeparts-beroenden, vilket minskar
+kod, requests och ökar prestanda. Det ökar också modulariteten och flexibiliteten
+i språket.
+
+
 
 
 
