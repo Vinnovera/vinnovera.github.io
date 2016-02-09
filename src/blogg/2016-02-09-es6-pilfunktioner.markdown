@@ -1,7 +1,7 @@
 ---
 template: post.html
 title: "ES6 - Pilfunktioner"
-date: 2015-02-09 13:43:24
+date: 2016-02-09 13:43:24
 comments: true
 tags: Nyheter
 author: Daniel Jansson
@@ -21,7 +21,7 @@ anonyma och har en kortare och mer komprimerad syntax än vanliga anonyma funkti
 vilket betyder mindre kod och mer effektivt att skriva. Det nya pil-tecknet karaktäriserar
 pil-funktionen.
 
-![arrow-sign](/images/content/posts/es6-en-overblick/arrow-function1.png)
+![arrow-sign](/images/content/posts/es6-pilfunktioner/arrow-function1.png)
 
 ## Returnerar alltid något
 Ordet function försvinner och kvar är endast argument följt av piltecknet.
@@ -29,7 +29,7 @@ En pil-funktion returnerar alltid något och behöver därmed inte skrivas ut,
 liksom måsvingar. Dessa båda är valfria och kan användas om funktions-kroppen
 gör fler saker än att bara returnera något.
 
-![arrow-functions](/images/content/posts/es6-en-overblick/arrow-function2.png)
+![arrow-functions](/images/content/posts/es6-pilfunktioner/arrow-function2.png)
 
 
 ## Scope
@@ -37,16 +37,16 @@ Pilfunktioner beter sig annorlunda än vanliga anonyma funktioner på det sätte
 de binder till dess omgivande scope istället för till dess inre. Det gör att man inte 
 behöver spara en referens till det yttre scopet.
 
-![scope](/images/content/posts/es6-en-overblick/arrow-function-scope1.png)
-![scope](/images/content/posts/es6-en-overblick/arrow-function-scope2.png)
+![scope](/images/content/posts/es6-pilfunktioner/arrow-function-scope1.png)
+![scope](/images/content/posts/es6-pilfunktioner/arrow-function-scope2.png)
 
 
 ## Argument
 Vid inga eller fler argument krävs parentes, men inte vid endast ett argument. För att
 returnera ett objekt måste det omges av en parentes.
 
-![arguments](/images/content/posts/es6-en-overblick/arrow-function-argument1.png)
-![arguments](/images/content/posts/es6-en-overblick/arrow-function-argument2.png)
+![arguments](/images/content/posts/es6-pilfunktioner/arrow-function-argument1.png)
+![arguments](/images/content/posts/es6-pilfunktioner/arrow-function-argument2.png)
 
 
 ## Sammanfattning
