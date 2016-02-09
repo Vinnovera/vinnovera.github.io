@@ -18,9 +18,21 @@ i ES6 är pil-funktioner.
 Pil-funktioner finns sedan tidigare i många andra språk, t ex C#. Dessa är alltid
 anonyma och har en kortare och mer komprimerad syntax än vanliga anonyma funktioner
 vilket betyder mindre kod och mer effektivt att skriva. Det nya pil-tecknet karaktäriserar
-pil-funktionen
+pil-funktionen.
 
-![let blockscope](/images/content/posts/es6-en-overblick/arrow-functions1.png)
+![arrow-sign](/images/content/posts/es6-en-overblick/arrow-functions1.png)
+
+Ordet function försvinner och kvar är endast argument följt av piltecknet.
+En pil-funktion returnerar alltid något och behöver därmed inte skrivas ut,
+liksom måsvingar. Dessa båda är valfria och kan användas om funktions-kroppen
+gör fler saker än att bara returnera något.
+
+![arrow-functions](/images/content/posts/es6-en-overblick/arrow-functions2.png)
+
+
+
+
+
 
 Pil-funktioner beter sig
 annorlunda än vanliga anonyma funktioner på det sättet att de binder till dess
