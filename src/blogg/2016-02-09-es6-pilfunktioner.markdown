@@ -11,7 +11,7 @@ authorMail: daniel@vinnovera.se
 ---
 
 Som vi skrev tidigare i år så ser EcmaScript 6 ut att bli ett stort kliv framåt i
-modularisering och struktur för Javascript som vi känner till det idag. En de nyheterna
+modularisering och struktur för Javascript som vi känner till det idag. En av nyheterna
 i ES6 är pil-funktioner.
 <!--more-->
 
