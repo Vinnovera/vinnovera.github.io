@@ -1,7 +1,7 @@
 ---
 template: post.html
 title: "ES6 - Pilfunktioner"
-date: 2016-02-09 13:43:24
+date: 2016-03-07 13:43:24
 comments: true
 tags: Nyheter
 author: Daniel Jansson
