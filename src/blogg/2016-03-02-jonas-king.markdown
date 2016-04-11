@@ -10,7 +10,9 @@ authorImage: /images/profiles/jakob.jpg
 authorMail: jakob@vinnovera.se
 ---
 ![King](/images/content/posts/jonas-king/king_logo.gif)
-<img src="/images/profiles/jonasmyrenas.jpg" alt="Jonas" class="portrait" />I samband med att Myrenås påbörjade sin exit från Handelbanken, ett tech lead uppdrag på 10 månader, fick vi en förfrågan direkt från Midasplayer. Efter en kvalitativ intervjuprocess påbörjade vår Techlead sitt uppdrag på Midasplayer den 1 mars.
+<img src="/images/profiles/jonasmyrenas.jpg" alt="Jonas" class="portrait" />
+
+I samband med att Myrenås påbörjade sin exit från Handelbanken, ett tech lead uppdrag på 10 månader, fick vi en förfrågan direkt från Midasplayer. Efter en kvalitativ intervjuprocess påbörjade vår Techlead sitt uppdrag på Midasplayer den 1 mars.
 <!--more-->
 
 *-Jonas, i korta drag, vad är din roll på Midasplayer? Vad är omfattningen på uppdraget, var i stan sitter du om dagarna och spelar du Candy Crush?*
