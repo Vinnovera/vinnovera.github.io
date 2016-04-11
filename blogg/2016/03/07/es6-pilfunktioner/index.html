@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ES6 - Pilfunktioner - Vinnovera</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="EcmaSctript 6 (ES6), som numera kallas EcmaScript 2015, godkändes förra året av
+EcmaScript International och är högst relevant för oss utvecklar...">
+
+	<meta property="og:title" content="ES6 - Pilfunktioner" />
+	<meta property="og:url" content="http://vinnovera.se/blogg/2016/03/07/es6-pilfunktioner" />
+	<meta property="og:image" content="http://vinnovera.se/images/logoOgImage.png" />
+	<meta property="og:description" content="EcmaSctript 6 (ES6), som numera kallas EcmaScript 2015, godkändes förra året av
+EcmaScript International och är högst relevant för oss utvecklar..." />
+
+
+	<!--[if lt IE 9]>
+	<script>
+	    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+	        i = e.length;
+
+	    for(i; i--;) {
+	        document.createElement(e[i]);
+	    }
+	</script><![endif]-->
+
+	<link href="/favicon.ico" rel="icon">
+	<link href="http://vinnovera.se/rss.xml" rel="alternate" title="Vinnovera" type="application/rss+xml">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/vinnovera.css">
+
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2035593-3']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</head>
+
+<body >
+<header id="header">
+	
+		<h1>
+			<a href="/">Vinnovera</a>
+		</h1>
+	
+	<a href="#" class="toggle-menu" id="toggle-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<nav id="navigation">
+		<a href="/">Hem</a>
+		<a href="/#projekt">Kunder &amp; projekt</a>
+		<a href="/#blogg">Blogg</a>
+		<a href="/#vi">Vi</a>
+		<a href="/#kontakt">Kontakt</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
+	</nav>
+</header>
+
+<a href="#" class="to-top" id="scrollUp">Till toppen</a>
+	<nav class="post-navigation">
+			<a class="basic-alignment next" href="/blogg/2016/03/02/jonas-king" title="Nästa inlägg: Jonas @ King">Nästa</a>
+			<a class="basic-alignment prev" href="/blogg/2016/04/01/hej-jennie" title="Föregående inlägg: Hej Jennie!">Föregående</a>
+	</nav>
+	<section class="wrapper post">
+		<article>
+			<header>
+				<h1>ES6 - Pilfunktioner</h1>
+					<p class="meta">
+						<span>Daniel Jansson</span>
+						| <time datetime="2016-03-07T14:43" pubdate><span class='year'>2016</span>-<span class='month'>03</span>-<span class='day'>07</span></time>
+						|
+						<span class="categories">
+							<a href="/blogg/tagg/nyheter/">Nyheter</a>
+						</span>
+					</p>
+			</header>
+			<div>
+				<p>EcmaSctript 6 (ES6), som numera kallas EcmaScript 2015, godkändes förra året av
+EcmaScript International och är högst relevant för oss utvecklare. Det är den 
+största uppdateringen sedan språket skapades och det börjar nu närma sig andra,
+mer mogna programmeringsspråk i syntax och innehåll.  Specifikationen presenterar
+många intressanta nyheter, bland annat pilfunktioner, som jag tänker presentera 
+och visa exempel på i det här blogginlägget. 
+<!--more--></p>
+<p>Pilfunktioner är alltid anonyma och har en kortare och mer komprimerad syntax än
+anonyma funktioner i EcmaSctript 5 (ES5), vilket betyder mindre och utrymmeseffektivare
+kod, men dessvärre också en något mer svårläst kod. </p>
+<p>Det som karaktäriserar pilfunktioner är ett piltecken:&nbsp;=&gt;  </p>
+<p>En pilfunktion skrivs utan att ange ordet &quot;function&quot;, i stället anges endast argument
+följt av piltecknet. En pilfunktion returnerar alltid något och därför behöver inte 
+heller &quot;return&quot; skrivas ut. </p>
+<p>Exemplet nedan illustrerar iteration över en array med pilfunktion i ES6 utan måsvingar
+och dess motsvarighet i ES5:  </p>
+<p><span style="color: orange;"><strong>ES6</strong></span><br>[1, 2, 3, 4].<span style="color: brown;">map</span>((num, index)) =&gt; num * 2 + index);  </p>
+<p><span style="color: orange;"><strong>ES5</strong></span><br>[1, 2, 3, 4].<span style="color: brown;">map</span>(<span style="color: green;">function</span>(num, index)) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: purple;">return</span> num * 2 + index);<br>}</p>
+<p>Måsvingar är valfria och kan användas om funktionen är mer
+komplex. Notera dock att om måsvingar används, måste &quot;return&quot; skrivas ut på samma sätt
+som i ES5. </p>
+<p>Exemplet nedan illustrerar samma iteration över en array med pilfunktion i ES6 men
+denna gång med måsvingar:  </p>
+<p><span style="color: orange;"><strong>ES6</strong></span><br>[1, 2, 3, 4].<span style="color: brown;">map</span>((num, index)) =&gt; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">let</span> multiplier = index * 2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: purple;">return</span> num * multiplier;<br>}  </p>
+<h2 id="parentes-vara-eller-icke-vara">Parentes - vara eller icke vara</h2>
+<p>Det är intressant att notera att pilfunktioner i ES6 gör att man inte behöver använda parentes 
+vid anrop med endast ett argument, men att vid inga eller fler än ett argument krävs parentes, 
+så som i ES5. </p>
+<p>Exemplen nedan illustrerar pilfunktion med olika antal argument och dess motsvarigheter i ES5:  </p>
+<p><span style="color: orange;"><strong>ES6</strong></span><br><span style="color: blue;">let</span> sum = ( ) =&gt; 1 + 2; &nbsp;<span style="color: grey;">//inga argument</span><br><span style="color: blue;">let</span> square = x =&gt; x + x;  &nbsp;<span style="color: grey;"> //ett argument</span><br><span style="color: blue;">let</span> value = (x, y) =&gt; x + y;  &nbsp;<span style="color: grey;">//flera argument</span>  </p>
+<p><span style="color: orange;"><strong>ES5</strong></span><br><span style="color: grey;">//inga argument</span><br><span style="color: blue;">var</span> sum = <span style="color: green;">function</span>( ) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: purple;">return</span> 1 + 2;<br>}<br><span style="color: grey;">//ett argument</span><br><span style="color: blue;">var</span> square = <span style="color: green;">function</span>(x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: purple;">return</span> x + x;<br>}<br><span style="color: grey;">//flera argument</span><br><span style="color: blue;">var</span> value = <span style="color: green;">function</span>(x, y) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: purple;">return</span> x + y;<br>}</p>
+<p>Notera också att det med pilfunktioner i ES6 krävs parentes runt ett returnerat objekt. Detta för att
+inte orsaka feltolkning av kod, eftersom måsvingar både omger ett objekt och en funktionskropp. Detta
+gäller endast om man skriver den mer kortfattade varianten utan måsvingar runt funktionskroppen.</p>
+<p>Exemplen nedan visar hur en pilfunktion returnerar ett objekt och dess motsvarigheter i ES5:  </p>
+<p><span style="color: orange;"><strong>ES6</strong></span><br><span style="color: grey;">/*utan måsvingar runt funktionskroppen måste parentes omge</span><br><span style="color: grey;">objektet*/</span><br><span style="color: blue;">var</span> func = ( ) =&gt; ({ foo: 1 });</p>
+<p><span style="color: grey;">//med måsvingar runt funktionskroppen behövs inte parentesen</span><br><span style="color: blue;">var</span> func = ( ) =&gt; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: purple;">return</span> { foo: 1 };<br>}</p>
+<p><span style="color: orange;"><strong>ES5</strong></span><br><span style="color: blue;">var</span> func = <span style="color: green;">function</span>( ) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: purple;">return</span> { foo: 1 };<br>}</p>
+<p>Pilfunktioner har dessutom ett helt annat sätt att förhålla sig till ”scope” än sin föregångare.<br /></p>
+<h2 id="intelligentare-n-sin-f-reg-ngare">Intelligentare än sin föregångare</h2>
+<p>Vid användandet av ”this” inuti en pilfunktion behöver man i ES6 inte spara en referens till
+korrekt ”scope” utanför funktionen, eftersom pilfunktioner automatiskt binder ”this” till det
+omgivande ”scopet”. Det omständiga sättet i ES5 att ständigt behöva skapa referenser till det ”scope”
+man vill anropa, slipper man därmed i ES6. </p>
+<p>Exemplet nedan visar hur en konstruktorfunktion hanterar scope i ES6 och i ES5 
+vid exekvering av en loop.  </p>
+<p><span style="color: orange;"><strong>ES6</strong></span><br><span style="color: green;">class</span> Person( ) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = 0;  </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setInterval(( ) =&gt; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age++;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 1000);<br>}<br><span style="color: blue;">var</span> person = <span style="color: red;">new</span> Person( );  </p>
+<p><span style="color: orange;"><strong>ES5</strong></span><br><span style="color: green;">function</span> Person( ) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">var</span> self = this;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.age = 0;  </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setInterval(<span style="color: green;">function</span>( ) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.age++;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 1000);<br>}<br><span style="color: blue;">var</span> person = <span style="color: red;">new</span> Person( );  </p>
+<h2 id="sammanfattning">Sammanfattning</h2>
+<p>Pilfunktioner skrivs i ES6 med en minimal syntax, vilket gör att det går snabbare ett skriva
+och minskar den programmatiska storleken.  Dessutom finns en inbyggd intelligens i hanteringen
+av ”scope”, vilket ytterligare reducerar kodmängden. Den mer kompakta syntaxen försämrar dock
+läsbarheten något, och den får då ge efter för det mer effektiva uttrycket. </p>
+
+			</div>
+		</article>
+			<article class="authorDescription">
+				<div>
+						<img src="/images/profiles/daniel.jpg" alt="Daniel Jansson" />
+				</div>
+				<div>
+					<h3>Daniel Jansson</h3>
+					<a href="mailto: daniel@vinnovera.se">(daniel@vinnovera.se)</a>
+					<p>Daniel Jansson jobbar som front-end utvecklare på Vinnovera.</p>
+					<p>Vi är specialister på front-end och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+					<p><a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
+				</div>
+			</article>
+
+			<div>
+				<div class="wrapper comments">
+					<h2>Kommentera</h2>
+					<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'vinnovera'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+				</div>
+			</div>
+	</section>
+
+<footer role="contentinfo">
+	<span class="adr">
+		<span class="street-address">Västerlånggatan 27</span>
+		<span class="postal-code">111 29</span>
+		<span class="locality">Stockholm</span>
+		<a class="map-link" href="https://www.google.com/maps/place/Vinnovera+AB/@59.3252213,18.0692205,17z/data=!3m1!4b1!4m2!3m1!1s0x465f77e26eb236e1:0x314b77ee3a5d5ea1">(Karta)</a>
+	</span>
+
+	<span class="tel">08 - 5000 10 90</span>
+	<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a>
+</footer>
+<script src="/javascripts/components/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/components/jsoverlay.js"></script>
+<script src="/javascripts/vinnovera.js"></script>
+</body>
+</html>
