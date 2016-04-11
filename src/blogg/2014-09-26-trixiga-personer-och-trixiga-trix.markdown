@@ -69,5 +69,4 @@ Och vi fortsätter på samma spår. Svårt att säga om den här sidan är på r
 
 [00]: /images/content/posts/hittat-pa-natet-number-8/sapporo.jpg
 [01]: /images/content/posts/hittat-pa-natet-number-8/grid_ie.gif
-[02]: /images/content/posts/hittat-pa-natet-number-8/doom.png
 [03]: /images/content/posts/hittat-pa-natet-number-8/cylon.png
