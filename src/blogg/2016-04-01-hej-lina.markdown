@@ -1,0 +1,29 @@
+---
+template: post.html
+title: "Hej Lina!"
+date: 2016-04-01 15:00:00
+comments: true
+tags: Nyheter, Vi
+author: Osborne von Waldegg
+authorDescription: Osborne jobbar med User Experience på Vinnovera.
+authorImage: /images/profiles/osborne.jpg
+authorMail: osborne@vinnovera.se
+---
+<img src="/images/profiles/lina.jpg" alt="Lina" class="portrait" />
+Lina Jenkens har börjat! En envis öländsk friluftsnissa som hatar ogräs och har kommit till oss för att öka debiteringsgraden…
+<!--more-->
+Det låter kanske läskigt men handlar mest om att hon ska se till att skapa struktur så att utvecklarna har koll på allt och slipper känna sig stressade.
+
+Lina är projektledare såväl professionellt som hemmavid.
+
+*"- Utan tvekan är jag ett kontrollfreak som styr projekten även hemma."*
+
+Hemma är Gustavsberg som hon menar är den naturliga platsen för smålänningar i Stockholm. Här får hon ro och miljön med vatten och natur känns bekant hemifrån.
+
+När hon inte jobbar är hon antingen ute och yoggar eller jogar eller hur det nu var. Hon får energi av familjen som består av en femårig son och en holländsk make som hon träffade i USA innan de flyttade till Sverige och Amsterdam och sen tillbaka. Krångligt? Kanske, men kort sagt har hon hunnit med att bo och jobba lite varstans.
+
+*"— Mestadels har det varit mindre bolag så jag är van att hugga i med olika saker beroende på behov, säger hon. Jag är också van vid konsultsvängen där allt ska hända NU NU NU."*
+
+Bra säger Vi, det kan Vi behöva.
+
+**Välkommen Lina!**
