@@ -11,22 +11,22 @@ authorMail: daniel@vinnovera.se
 ---
 
 EcmaSctript 6 (ES6), som numera kallas EcmaScript 2015, godkändes förra året av
-EcmaScript International och är högst relevant för oss utvecklare. Det är den 
-största uppdateringen sedan språket skapades och det börjar nu närma sig andra,
+EcmaScript International och är högst relevant för oss utvecklare. <!--more-->
+Det är den största uppdateringen sedan språket skapades och det börjar nu närma sig andra,
 mer mogna programmeringsspråk i syntax och innehåll.  Specifikationen presenterar
-många intressanta nyheter, bland annat pilfunktioner, som jag tänker presentera 
-och visa exempel på i det här blogginlägget. 
-<!--more-->
+många intressanta nyheter, bland annat pilfunktioner, som jag tänker presentera
+och visa exempel på i det här blogginlägget.
+
 
 Pilfunktioner är alltid anonyma och har en kortare och mer komprimerad syntax än
 anonyma funktioner i EcmaSctript 5 (ES5), vilket betyder mindre och utrymmeseffektivare
-kod, men dessvärre också en något mer svårläst kod. 
+kod, men dessvärre också en något mer svårläst kod.
 
 Det som karaktäriserar pilfunktioner är ett piltecken:&nbsp;=>  
 
 En pilfunktion skrivs utan att ange ordet "function", i stället anges endast argument
-följt av piltecknet. En pilfunktion returnerar alltid något och därför behöver inte 
-heller "return" skrivas ut. 
+följt av piltecknet. En pilfunktion returnerar alltid något och därför behöver inte
+heller "return" skrivas ut.
 
 Exemplet nedan illustrerar iteration över en array med pilfunktion i ES6 utan måsvingar
 och dess motsvarighet i ES5:  
@@ -41,7 +41,7 @@ och dess motsvarighet i ES5:
 
 Måsvingar är valfria och kan användas om funktionen är mer
 komplex. Notera dock att om måsvingar används, måste "return" skrivas ut på samma sätt
-som i ES5. 
+som i ES5.
 
 Exemplet nedan illustrerar samma iteration över en array med pilfunktion i ES6 men
 denna gång med måsvingar:  
@@ -53,9 +53,9 @@ denna gång med måsvingar:
 }  
 
 ## Parentes - vara eller icke vara
-Det är intressant att notera att pilfunktioner i ES6 gör att man inte behöver använda parentes 
-vid anrop med endast ett argument, men att vid inga eller fler än ett argument krävs parentes, 
-så som i ES5. 
+Det är intressant att notera att pilfunktioner i ES6 gör att man inte behöver använda parentes
+vid anrop med endast ett argument, men att vid inga eller fler än ett argument krävs parentes,
+så som i ES5.
 
 Exemplen nedan illustrerar pilfunktion med olika antal argument och dess motsvarigheter i ES5:  
 
@@ -105,9 +105,9 @@ Pilfunktioner har dessutom ett helt annat sätt att förhålla sig till ”scope
 Vid användandet av ”this” inuti en pilfunktion behöver man i ES6 inte spara en referens till
 korrekt ”scope” utanför funktionen, eftersom pilfunktioner automatiskt binder ”this” till det
 omgivande ”scopet”. Det omständiga sättet i ES5 att ständigt behöva skapa referenser till det ”scope”
-man vill anropa, slipper man därmed i ES6. 
+man vill anropa, slipper man därmed i ES6.
 
-Exemplet nedan visar hur en konstruktorfunktion hanterar scope i ES6 och i ES5 
+Exemplet nedan visar hur en konstruktorfunktion hanterar scope i ES6 och i ES5
 vid exekvering av en loop.  
 
 <span style="color: orange;">**ES6**</span>  
@@ -135,4 +135,4 @@ vid exekvering av en loop.
 Pilfunktioner skrivs i ES6 med en minimal syntax, vilket gör att det går snabbare ett skriva
 och minskar den programmatiska storleken.  Dessutom finns en inbyggd intelligens i hanteringen
 av ”scope”, vilket ytterligare reducerar kodmängden. Den mer kompakta syntaxen försämrar dock
-läsbarheten något, och den får då ge efter för det mer effektiva uttrycket. 
+läsbarheten något, och den får då ge efter för det mer effektiva uttrycket.
