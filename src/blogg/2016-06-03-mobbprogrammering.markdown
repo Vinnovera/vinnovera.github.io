@@ -1,6 +1,6 @@
 ---
 template: post.html
-title: "Mobbprogramming"
+title: "Mobbprogrammering"
 date: 2016-06-03 09:00:00
 comments: true
 tags: Nyheter, Vi
