@@ -10,7 +10,7 @@ authorImage: /images/profiles/daniel.jpg
 authorMail: daniel@vinnovera.se
 ---
 
-EcmaSctript 6 (ES6), som numera kallas EcmaScript 2015, godkändes förra året av
+EcmaScript 6 (ES6), som numera kallas EcmaScript 2015, godkändes förra året av
 EcmaScript International och är högst relevant för oss utvecklare. <!--more-->
 Det är den största uppdateringen sedan språket skapades och det börjar nu närma sig andra,
 mer mogna programmeringsspråk i syntax och innehåll.  Specifikationen presenterar
