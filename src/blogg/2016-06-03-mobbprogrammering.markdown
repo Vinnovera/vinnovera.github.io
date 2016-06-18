@@ -16,6 +16,7 @@ pröva konceptet.
 <div class="video youtube">
 	<iframe width="640" height="360" src="//www.youtube.com/embed/nhn5g7oujzI?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
+<br>
 I korthet går det ut på att man sitter ihop i en grupp där man turas om att skriva. Den som skriver kallas Driver och de andra kallas Navigators. 
 Samma namngivning som för parprogrammering, tänker den uppmärksamme, och så är det ju. Man roterar sedan med fördel på förutbestämda tidsintervall, lämpligen runt 15 minuter.
 
