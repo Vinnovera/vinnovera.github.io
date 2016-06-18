@@ -1,6 +1,6 @@
 ---
 template: post.html
-title: "Mob programming"
+title: "Mobbprogramming"
 date: 2016-06-03 09:00:00
 comments: true
 tags: Nyheter, Vi
@@ -9,11 +9,13 @@ authorDescription: Jonas är Tech lead på Vinnovera. När han inte pysslar med 
 authorImage: /images/profiles/jonasmyrenas.jpg
 authorMail: jonas.myrenas@vinnovera.se
 ---
-
 I många år har det surrats om parprogrammering i utvecklarkretsar, men de senaste åren har detta koncept tagits 
 ett steg längre till programmering i grupp, s.k. Mob programming. Detta lät ju spännande så vi bestämde oss för att 
 pröva konceptet.
-
+<!--more-->
+<div class="video youtube">
+	<iframe width="640" height="360" src="//www.youtube.com/embed/nhn5g7oujzI?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 I korthet går det ut på att man sitter ihop i en grupp där man turas om att skriva. Den som skriver kallas Driver och de andra kallas Navigators. 
 Samma namngivning som för parprogrammering, tänker den uppmärksamme, och så är det ju. Man roterar sedan med fördel på förutbestämda tidsintervall, lämpligen runt 15 minuter.
 
