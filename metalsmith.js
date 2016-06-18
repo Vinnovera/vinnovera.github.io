@@ -22,7 +22,11 @@ var
 helpers.register(handlebars, {});
 
 handlebars.registerHelper('stripHTML', function(text) {
-	return text.toString().replace(/(<([^>]+)>)/ig, '');
+	if (text) {
+		return text.toString().replace(/(<([^>]+)>)/ig, '');
+	}
+
+	return ''
 });
 
 var renderer = new marked.Renderer();
