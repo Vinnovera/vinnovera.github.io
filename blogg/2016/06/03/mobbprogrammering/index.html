@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mobbprogrammering - Vinnovera</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="I många år har det surrats om parprogrammering i utvecklarkretsar, men de senaste åren har detta koncept tagits 
+ett steg längre till programmer...">
+
+	<meta property="og:title" content="Mobbprogrammering" />
+	<meta property="og:url" content="http://vinnovera.se/blogg/2016/06/03/mobbprogrammering" />
+	<meta property="og:image" content="http://vinnovera.se/images/logoOgImage.png" />
+	<meta property="og:description" content="I många år har det surrats om parprogrammering i utvecklarkretsar, men de senaste åren har detta koncept tagits 
+ett steg längre till programmer..." />
+
+
+	<!--[if lt IE 9]>
+	<script>
+	    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+	        i = e.length;
+
+	    for(i; i--;) {
+	        document.createElement(e[i]);
+	    }
+	</script><![endif]-->
+
+	<link href="/favicon.ico" rel="icon">
+	<link href="http://vinnovera.se/rss.xml" rel="alternate" title="Vinnovera" type="application/rss+xml">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/vinnovera.css">
+
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2035593-3']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</head>
+
+<body >
+<header id="header">
+	
+		<h1>
+			<a href="/">Vinnovera</a>
+		</h1>
+	
+	<a href="#" class="toggle-menu" id="toggle-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<nav id="navigation">
+		<a href="/">Hem</a>
+		<a href="/#projekt">Kunder &amp; projekt</a>
+		<a href="/#blogg">Blogg</a>
+		<a href="/#vi">Vi</a>
+		<a href="/#kontakt">Kontakt</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
+	</nav>
+</header>
+
+<a href="#" class="to-top" id="scrollUp">Till toppen</a>
+	<nav class="post-navigation">
+			<a class="basic-alignment next" href="/blogg/2016/04/01/hej-lina" title="Nästa inlägg: Hej Lina!">Nästa</a>
+	</nav>
+	<section class="wrapper post">
+		<article>
+			<header>
+				<h1>Mobbprogrammering</h1>
+					<p class="meta">
+						<span>Jonas Myrenås</span>
+						| <time datetime="2016-06-03T11:00" pubdate><span class='year'>2016</span>-<span class='month'>06</span>-<span class='day'>03</span></time>
+						|
+						<span class="categories">
+							<a href="/blogg/tagg/nyheter/">Nyheter</a>, <a href="/blogg/tagg/vi/">Vi</a>
+						</span>
+					</p>
+			</header>
+			<div>
+				<p>I många år har det surrats om parprogrammering i utvecklarkretsar, men de senaste åren har detta koncept tagits 
+ett steg längre till programmering i grupp, s.k. Mob programming. Detta lät ju spännande så vi bestämde oss för att 
+pröva konceptet.
+<!--more--></p>
+<p><div class="video youtube">
+    <iframe width="640" height="360" src="//www.youtube.com/embed/nhn5g7oujzI?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+<br>
+I korthet går det ut på att man sitter ihop i en grupp där man turas om att skriva. Den som skriver kallas Driver och de andra kallas Navigators. 
+Samma namngivning som för parprogrammering, tänker den uppmärksamme, och så är det ju. Man roterar sedan med fördel på förutbestämda tidsintervall, lämpligen runt 15 minuter.</p>
+<p>Vi delade upp oss i två team, för att få lagom stora team. Det slutade med lite sjukavhopp på ett team på 4 pers och 
+ett på 6. Det ena teamet bestämde sig för att de ville göra den ultimata infinite scroll:en och den andra ville testa ett koncept på 
+utvecklad Blocket-sökning. Mer om koncepten nedan. Vi hade två dagar på oss och det gällde att både finputsa på 
+metodik samt att komma fram till något resultat som impade åtminstonde något på den andra gruppen.</p>
+<p>Själv tillhörde jag 6-personers-gruppen som körde Blocket sök. Vi lade upp ett koncept som gick ut på att under 
+två dagar ta fram en prototyp för en tänkt produktägare att visa upp för sina finansiärer. Konceptet skulle innebära
+en form av sökning efter produkter som listar dem beroende på pris inkluderat reskostnader för att hämta upp dem. 
+Per Lundgren fick agera produktägare och även styra UX/design. Vi körde 3 repor om 15 minuter och sedan ett kort informellt retro
+kombinerat med bensträckare. </p>
+<p>Efter två dagar hade vi en färdig fungerande prototyp som gick mot ett mockat blocket-api, googles kart-api och som listade och 
+sorterade sökresultat efter totalpris uträknat på grundpris + reskostnad för bilresa från besökarens till annonsörens position. 
+Detta skrivet i ett för gruppen totalt nytt js-ramverk, Vue.js. Det nya ramverket benade vi ut gemensamt och kunskapsspridningen på det 
+är helt oöverträffad. Mission accomplished!</p>
+<p>Den andra gruppen hade bestämt sig för att en vanlig standard infinite scroll kunde förbättras. De utgick från en tekniskt färdig fungerande 
+lösning tagen från en stor svensk retail-kedja där några teammedlemmar implementerat den. Några features som de lade till var möjlighet 
+till total översikt av scrollens längd, snyggare topmeny som inte var i vägen på mobila lösningar, navigering till detalj och tillbaka 
+igen till rätt scrollposition, med mera. Där vårt team fokuserade på att få ut en snabb visuellt tilltalande prototyp fokuserade detta teamet mer 
+på teknisk finputsad lösning. Med hjälp av en snygg liten tjänst vid namn NGrok kunde alla få upp deras kod på sina 
+respektive devicer och konstatera att lösningen de fått till var klockren. Mission accomplished!</p>
+<p>  <img src="/images/content/posts/barcelona-workshop/barcelona_gruppbild.jpg" alt="Gruppbild Barcelona" class="" /></p>
+<p>Så vad tyckte då de olika teamen om mob programming? Några farhågor som vädrades före experimentet var att det skulle kännas ineffektivt 
+att inte dela upp sig, eller att det skulle vara risk att man mentalt zonade ut om man bara satt bredvid den som hade tangentbordet. Båda dessa 
+farhågor kom på skam visade det sig. Vid vår slutliga retro uttryckte så gott som alla positiva ordalag. Det känndes överlag som teamen 
+presterade resultat med hög kvalitet, kunskapsspridningen i teamet var total, effektiviteten var hög och alla hade haft ruskigt roligt! 
+För att verkligen hårdtesta metodiken och farhågan om utzoning hade vi dessutom på kvällen dag två besökt inte mindre än fyra olika 
+tapas-restauranger i Barcelonas down-town. Trots detta distraktionsmoment var fokusen total dag två. Ingen somnade, 
+ingen strö-kollade mobilen, ingen gäspade! </p>
+<p>Våra tips om du vill testa:</p>
+<ul>
+<li>Korta iterationer, 15 minuter sedan rotation.</li>
+<li>Planera in bensträckare. Det är intensivt arbete för hjärnan.</li>
+<li>Börja var dag med att scrambla rotationslistan, så att inte en person alltid hamnar efter sammma föregående person.</li>
+<li>Lämpliga lokaler och lämplig utrustning. Diskussionerna gick rätt högljutt till ibland så man vill kanske ha ett eget rum. </li>
+<li>Projektor eller stor rejäl TV så alla ser ordentligt. Bra med dedikerad dator med flera IDE:er installerade om teamets medlemmar föredrar olika. Att byta dator tar för lång tid. </li>
+<li>Planera in egentid för mail och hjärnpaus.</li>
+<li>Olika personer har olika krav, kör retro ofta i början för att fånga upp allas önskemål</li>
+</ul>
+<p>Så kommer vi att använda mob programming i verkliga projekt? Absolut! Några teammedlemmar sade sig vilja ta metodiken till sina 
+respektive kunder direkt på måndag morgon. Andra, som jag själv som sitter som ensam frontendutvecklare i produkten jag jobbar med får kanske 
+lägga det på is ett tag men en vacker dag så uppstår ett lämpligt tillfälle och då kommer jag definitivt att rekommendera det. </p>
+
+			</div>
+		</article>
+			<article class="authorDescription">
+				<div>
+						<img src="/images/profiles/jonasmyrenas.jpg" alt="Jonas Myrenås" />
+				</div>
+				<div>
+					<h3>Jonas Myrenås</h3>
+					<a href="mailto: jonas.myrenas@vinnovera.se">(jonas.myrenas@vinnovera.se)</a>
+					<p>Jonas är Tech lead på Vinnovera. När han inte pysslar med det hjälper han King med frontendutveckling i deras interna verktyg.</p>
+					<p>Vi är specialister på front-end och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk. Vi vill jobba med kunder som tycker att kvalitet är viktigt, tänker långsiktigt och vill skapa webbupplevelser med det där lilla extra.</p>
+					<p><a href="/blogg">Tillbaka till bloggen</a> | <a href="/blogg/2013/11/18/om-vinnovera/">Mer om Vinnovera</a></p>
+				</div>
+			</article>
+
+			<div>
+				<div class="wrapper comments">
+					<h2>Kommentera</h2>
+					<div id="disqus_thread" aria-live="polite"><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'vinnovera'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+				</div>
+			</div>
+	</section>
+
+<footer role="contentinfo">
+	<span class="adr">
+		<span class="street-address">Västerlånggatan 27</span>
+		<span class="postal-code">111 29</span>
+		<span class="locality">Stockholm</span>
+		<a class="map-link" href="https://www.google.com/maps/place/Vinnovera+AB/@59.3252213,18.0692205,17z/data=!3m1!4b1!4m2!3m1!1s0x465f77e26eb236e1:0x314b77ee3a5d5ea1">(Karta)</a>
+	</span>
+
+	<span class="tel">08 - 5000 10 90</span>
+	<a href="mailto:info@vinnovera.se" class="email">info@vinnovera.se</a>
+</footer>
+<script src="/javascripts/components/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/components/jsoverlay.js"></script>
+<script src="/javascripts/vinnovera.js"></script>
+</body>
+</html>
