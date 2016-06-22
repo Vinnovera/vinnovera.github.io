@@ -43,6 +43,8 @@ igen till rätt scrollposition, med mera. Där vårt team fokuserade på att få
 på teknisk finputsad lösning. Med hjälp av en snygg liten tjänst vid namn NGrok kunde alla få upp deras kod på sina 
 respektive devicer och konstatera att lösningen de fått till var klockren. Mission accomplished!
   
+  <img src="/images/content/posts/barcelona-workshop/barcelona_gruppbild.jpg" alt="Gruppbild Barcelona" class="" />
+
 Så vad tyckte då de olika teamen om mob programming? Några farhågor som vädrades före experimentet var att det skulle kännas ineffektivt 
 att inte dela upp sig, eller att det skulle vara risk att man mentalt zonade ut om man bara satt bredvid den som hade tangentbordet. Båda dessa 
 farhågor kom på skam visade det sig. Vid vår slutliga retro uttryckte så gott som alla positiva ordalag. Det känndes överlag som teamen 
@@ -64,3 +66,4 @@ Våra tips om du vill testa:
 Så kommer vi att använda mob programming i verkliga projekt? Absolut! Några teammedlemmar sade sig vilja ta metodiken till sina 
 respektive kunder direkt på måndag morgon. Andra, som jag själv som sitter som ensam frontendutvecklare i produkten jag jobbar med får kanske 
 lägga det på is ett tag men en vacker dag så uppstår ett lämpligt tillfälle och då kommer jag definitivt att rekommendera det. 
+
