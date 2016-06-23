@@ -1,0 +1,14 @@
+{
+	"site": {
+		"name":         "Vinnovera",
+		"url":          "http://vinnovera.se",
+		"author":       "Vinnovera",
+		"title":        "Specialister på front-end-utveckling med HTML5, CSS och JavaScript",
+		"description":  "Vi är specialister på front-end-utveckling och ser gränssnitt för desktop, surfplattor och mobiltelefoner som vårt hantverk.",
+
+		"subscribe_rss": "http://vinnovera.se/rss.xml",
+
+		"disqus_short_name": "vinnovera",
+		"disqus_show_comment_count": false
+	}
+}

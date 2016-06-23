@@ -1,0 +1,45 @@
+{
+  "name": "vinnovera.se",
+  "version": "2.0.0",
+  "description": "Make sure you checkout the ```source``` branch!",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.0.1",
+    "grunt": "^0.4.5",
+    "gulp": "^3.8.11",
+    "handlebars": "^2.0.0",
+    "handlebars-helpers": "^0.5.8",
+    "highlight.js": "^8.4.0",
+    "marked": "^0.3.3",
+    "metalsmith": "^1.2.0",
+    "metalsmith-collections": "^0.6.0",
+    "metalsmith-define": "^1.0.0",
+    "metalsmith-feed": "^0.0.6",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-more": "^0.2.0",
+    "metalsmith-partial": "^0.1.0",
+    "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-serve": "^0.0.3",
+    "metalsmith-slug": "^0.0.5",
+    "metalsmith-stylus": "^0.2.1",
+    "metalsmith-tags": "git+https://github.com/Vinnovera/metalsmith-tags.git",
+    "metalsmith-templates": "^0.6.0",
+    "metalsmith-watch": "^0.2.0",
+    "nib": "^1.1.0",
+    "stylus": "^0.50.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gewfy@github.com/Vinnovera/vinnovera.github.io.git"
+  },
+  "author": "Jakob Öhman <jakob@vinnovera.se> (http://vinnovera.se/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vinnovera/vinnovera.github.io/issues"
+  },
+  "homepage": "https://github.com/Vinnovera/vinnovera.github.io"
+}

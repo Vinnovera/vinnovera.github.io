@@ -1,0 +1,207 @@
+/***** SUMO *****/
+.to-front
+	background: url('/images/logoSymbolBlack@2x.png') center center no-repeat
+	background-size: cover
+	position: fixed
+	width: 75px
+	height: 75px
+	top: 20px
+	left: 20px
+	z-index:  5
+	border: 0px
+
+
+.sumo-header
+	height: 500px
+	height: 80vh
+	background: url('/images/sumo/sumo-bot.gif') center center no-repeat
+	background-size: cover
+
+	img
+		position: absolute
+		margin-left: -150px
+		top: 25%
+		left: 50%
+		width: 300px
+		
+section.sumo:first-of-type
+	padding: 0
+	height: 250px
+
+	+bp(danger-doom)
+		height: 310px
+
+	+bp(q-tip)
+		height: 380px
+
+section.sumo:nth-of-type(2)
+	padding-bottom: 0
+	
+section.sumo:nth-of-type(3)
+	background: $orange
+
+.sumo:nth-of-type(odd)
+	background: $blue
+	
+	*
+		color: white
+		
+.sumo:last-of-type
+	padding-bottom: 0
+	
+	ul
+		margin: 0
+
+
+.sumo
+	width: 100%
+	max-width: 100%
+	padding: 70px 0px
+	line-height: 29px
+	&.with-video
+		padding-bottom 0;
+	h1
+		text-align: left
+		margin-bottom: 15px
+		font-size: 35px
+		
+	h2 
+		font-size: 20px
+		line-height: 1.5em
+		color: $blue
+		margin-top: 15px
+		margin-bottom: 0
+	
+	.sumo-content
+		width: 80%
+		max-width: 640px
+		padding-left: 10%
+		padding-right: 10%
+		margin: 0 auto
+
+	.sumo-content:first-of-type
+		display: table
+		height: 100%
+		
+		blockquote
+			display: table-cell
+			vertical-align: middle
+			text-align: left
+			margin: 0 auto
+			opacity 1
+			transition: all 0.3s ease-in-out
+			
+			&.fadeOut
+				opacity: 0		
+
+			.quote
+				margin: 0
+				font-style: italic
+				font-size: 25px
+				
+				
+				&:before
+					content: '\201C'
+					font-size: 30px
+					
+				&:after
+					content: '\201D'
+					font-size: 30px
+
+			footer
+				margin-top: 1em
+
+				&:before
+					content: '- '
+		
+	.contentList
+		margin: 0 auto
+
+	.sumo-images
+		background: $blue
+		max-width: 100%
+		margin-top: 50px
+		letter-spacing: -4px
+
+		img
+			//position: relative
+			width: 25%
+			height: 100%
+			float: left
+			
+			+bp(slick-rick)
+				width: 50%
+				
+		&:after
+			clear: both
+			content: ''
+			display: block 
+					
+			
+	.sumo-video
+		position: relative
+		padding: 0 0 55.9375%
+		height: 0
+		margin: 50px auto 0
+
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+
+	.imageslider_holder
+		margin-top: 50px
+		max-width: 100%
+
+		ul
+			max-width: 100%
+			padding-left: 0
+
+			&:after
+				content: ''
+				clear: both
+				display: block
+
+			li
+				float: left
+				list-style-type: none
+				width: 25%
+				margin-bottom: -8px
+				
+				+bp(slick-rick)
+					width: 50%
+
+				img
+					width: 100%
+
+	
+
+/* Slider CSS */
+.sliderwrapper
+	width: 100%;
+	height: 100%;
+
+	ul
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+
+		display: table;
+		table-layout: fixed;
+
+		li
+			text-align: center;
+			background: url('ajax-loader.gif') no-repeat 50% 50%;
+			display: table-cell;
+			vertical-align: middle;
+			position: relative;
+
+			img
+				max-width: 100%;
+				max-height: 100%;
+				vertical-align: middle;

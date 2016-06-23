@@ -1,0 +1,35 @@
+<head>
+	<meta charset="utf-8">
+	<title>{{title}} - {{site.name}}</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="{{stripHTML (truncate description 150 "...")}}">
+	{{#if keywords}}
+		<meta name="keywords" content="{{keywords}}">
+	{{/if}}
+
+	<meta property="og:title" content="{{title}}" />
+	<meta property="og:url" content="{{site.url}}/{{path}}" />
+	<meta property="og:image" content="{{site.url}}/images/logoOgImage.png" />
+	<meta property="og:description" content="{{stripHTML (truncate description 150 "...")}}" />
+
+
+	<!--[if lt IE 9]>
+	<script>
+	    var e = ['header', 'hgroup', 'nav', 'article', 'aside', 'section', 'footer'],
+	        i = e.length;
+
+	    for(i; i--;) {
+	        document.createElement(e[i]);
+	    }
+	</script><![endif]-->
+
+	<link href="/favicon.ico" rel="icon">
+	<link href="{{site.subscribe_rss}}" rel="alternate" title="{{site.name}}" type="application/rss+xml">
+
+	{{{partial "stylesheets.html"}}}
+	{{{partial "google_analytics.html"}}}
+</head>

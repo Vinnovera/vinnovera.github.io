@@ -1,0 +1,30 @@
+<header id="header">
+	
+	{{#if index}}
+		<h1 class="index">Vinnovera</h1>
+	{{else}}
+		<h1>
+			<a href="/">Vinnovera</a>
+		</h1>
+	{{/if}}
+	
+	<a href="#" class="toggle-menu" id="toggle-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<nav id="navigation">
+		{{#if index }}
+			<span>Hem</span>
+		{{else}}
+		<a href="/">Hem</a>
+		{{/if}}
+		<a href="/#projekt">Kunder &amp; projekt</a>
+		<a href="/#blogg">Blogg</a>
+		<a href="/#vi">Vi</a>
+		<a href="/#kontakt">Kontakt</a>
+		<!--a class="labs" href="http://labs.vinnovera.se">Labs</a-->
+	</nav>
+</header>
+
+<a href="#" class="to-top" id="scrollUp">Till toppen</a>
