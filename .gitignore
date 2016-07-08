@@ -1,5 +1,5 @@
 build
-.idea
+.idea/
 node_modules
 deploy
 .DS_Store
